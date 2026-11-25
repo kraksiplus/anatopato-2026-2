@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Neutrófilos < 500/mm³ implican riesgo de infección grave fulminante; complicación típica es la angina agranulocítica, con hongos profundos (Candida, Aspergillus). [p. 586-587]",
+    "Hiperplasia folicular reactiva: arquitectura conservada y macrófagos tingible; linfoma folicular: t(14;18) BCL2+, folículos monótonos sin tingible. [p. 589, 600]",
+    "LLA: TdT+ en > 95%, mieloperoxidasa negativa; se cura en 75-85% de niños pero solo 35-40% de adultos. [p. 594-597]",
+    "LLC: CD5+ CD23+, del(13q14.3) miR-15a/16-1, centros de proliferación patognomónicos; síndrome de Richter en 5-10%. [p. 597-599]",
+    "Mieloma múltiple: criterios CRAB, proteína M IgG 55%, CD138+, Bence Jones principal causa de insuficiencia renal. [p. 607-609]",
+    "Neoplasias mieloproliferativas: BCR-ABL en LMC (cromosoma Philadelphia), JAK2 V617F en > 97% de la policitemia vera con eritropoyetina baja. [p. 621-625]"
+  ],
+  "topics": [
+    "Leucopenia y leucocitosis: mecanismos y marcas reactivas (Döhle, granulaciones tóxicas)",
+    "Linfoadenitis: hiperplasia folicular, paracortical y sinusal; LHH",
+    "Neoplasias linfoides B: LLA, LLC, folicular, LBDCG, Burkitt, manto, mieloma",
+    "Linfoma de Hodgkin: subtipos, Reed-Sternberg, Ann Arbor y NF-κB/PD-L1",
+    "Neoplasias mieloides: LMA, SMD y síndromes mieloproliferativos (LMC, PCV, TE, mielofibrosis)",
+    "Bazo y timo: hiperesplenismo, asplenia, timoma y miastenia grave"
+  ],
+  "callouts": [
+    {
+      "section": "Proliferaciones reactivas de los leucocitos y ganglios linfáticos",
+      "title": "Reactivo vs neoplásico en el ganglio",
+      "text": "La hiperplasia folicular reactiva conserva la arquitectura, muestra folículos de tamaños variables, mitosis, macrófagos de cuerpos tingible y polaridad clara/oscura; el linfoma folicular es monótono y BCL2+ por t(14;18). La hiperplasia paracortical (inmunoblastos) es típica de infecciones víricas como la mononucleosis. [p. 589, 600]"
+    },
+    {
+      "section": "Neoplasias linfoides",
+      "title": "Marcadores que definen diagnóstico y pronóstico",
+      "text": "LLC/LLP es CD5+ CD23+, el manto es CD5+ CD23- con ciclina D1 (t(11;14)) y Burkitt es CD10+ BCL6+ BCL2- con t(8;14) y cielo estrellado. En Hodgkin clásico la célula de Reed-Sternberg es PAX5+ CD15+ CD30+ CD45-, mientras el predominio linfocítico nodular es CD20+ CD15- CD30-. [p. 597-602, 612, 614]"
+    },
+    {
+      "section": "Neoplasias mieloides",
+      "title": "Tirosina cinasas y curabilidad",
+      "text": "La t(15;17) PML-RARA se cura en más del 90% con ácido retinoico todo-trans más trióxido de arsénico, y los inhibidores de BCR-ABL logran remisión en > 90% de la LMC sin erradicar la célula madre. La fase de gasto (mielofibrosis) y la crisis blástica (IKZF1 en las linfoides) marcan la progresión. [p. 620, 623-624]"
+    }
+  ]
+}

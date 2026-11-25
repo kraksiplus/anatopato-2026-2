@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enfermedades ambientales y nutricionales · Anatomía Patológica UBB</title>
+<meta name="description" content="Enfermedades ambientales y nutricionales. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Enfermedades ambientales y nutricionales · Anatomía Patológica UBB">
+<meta property="og:description" content="Enfermedades ambientales y nutricionales. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Capítulo 9. Enfermedades ambientales y nutricionales</h1>
+    <p class="lede">Guía 09 de 10. Resumen completo del capítulo 9 con 20 filas de tabla. Sin citas por página: material del Certamen 1.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>09 de 10</strong></div><div><span>Capítulo</span><strong>9</strong></div><div><span>Páginas</span><strong>405-452</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>20</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-efectos-del-cambio-climatico-sobre-la-salud">Efectos del cambio climático sobre la salud</a></li>
+        <li><a href="#sec-03-toxicidad-de-los-agentes-quimicos-y-fisicos">Toxicidad de los agentes químicos y físicos</a></li>
+        <li><a href="#sec-04-contaminacion-ambiental">Contaminación ambiental</a></li>
+        <li><a href="#sec-05-riesgos-profesionales-para-la-salud">Riesgos profesionales para la salud</a></li>
+        <li><a href="#sec-06-efectos-del-tabaco">Efectos del tabaco</a></li>
+        <li><a href="#sec-07-efectos-del-alcohol">Efectos del alcohol</a></li>
+        <li><a href="#sec-08-lesiones-por-farmacos-terapeuticos-y-drogas-de-abuso">Lesiones por fármacos terapéuticos y drogas de abuso</a></li>
+        <li><a href="#sec-09-danos-por-agentes-fisicos">Daños por agentes físicos</a></li>
+        <li><a href="#sec-10-enfermedades-nutricionales">Enfermedades nutricionales</a></li>
+        <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="08_Enfermedades_Infecciosas.html" title="Enfermedades infecciosas">08</a>
+        <a href="10_Lactancia_Infancia.html" title="Enfermedades de la lactancia y la infancia">10</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 9 del Robbins y Cotran, 10ª edición: páginas impresas 405-452 (48 páginas).</div><p class="small">Este resumen del Certamen 1 se redactó antes de adoptar la cita por página; se publica sin reescribirlo. El <a href="manual.html">Manual del Certamen 1</a> incluye el índice tema-clase-Robbins y las fuentes.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Los xenobióticos se metabolizan en fase I (citocromo P-450) y fase II (conjugación); el metabolismo puede detoxificar o activar metabolitos tóxicos (tetracloruro de carbono, benzo[a]pireno).</li><li>El CO tiene 200 veces más afinidad por la hemoglobina: carboxihemoglobina que no transporta O2, hipoxia, lesión de ganglios basales y color rojo cereza.</li><li>Metales: plomo (encefalopatía, neuropatía, anemia con punteado basófilo), mercurio (Minamata), arsénico (cáncer) y cadmio (EPOC, itai-itai).</li><li>El tabaco causa el 90% de los cánceres de pulmón con efecto multiplicativo con alcohol y amianto; el alcohol produce cirrosis, Wernicke-Kórsakov, miocardiopatía y síndrome alcohólico fetal.</li><li>Paracetamol: necrosis centrolobulillar por NAPQI, se trata con N-acetilcisteína; la radiación ionizante daña el ADN, causa fibrosis y cáncer (&gt;100 mSv).</li><li>Marasmo (déficit calórico, emaciación, albúmina normal) frente a kwashiorkor (déficit proteico, edema, hipoalbuminemia, hígado graso).</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>Las <strong>enfermedades ambientales</strong> son las causadas por exposición a agentes químicos y físicos del ambiente, el trabajo y el entorno personal, incluidas las de origen nutricional. El comportamiento individual pesa más que el ambiente en los países de ingresos altos.</li>
+<li>El <strong>cambio climático</strong> se perfila como la principal causa global de enfermedad ambiental del siglo XXI (calor, contaminación, infecciones transmitidas por vectores, desnutrición y elevación del nivel del mar).</li>
+<li>Los <strong>xenobióticos</strong> penetran por inhalación, ingestión o piel y se metabolizan en dos fases (I: oxidación/reducción/hidrólisis por el <strong>citocromo P-450</strong>; II: conjugación), lo que puede detoxificarlos o activarlos a metabolitos tóxicos.</li>
+<li>Los metales pesados más importantes son <strong>plomo, mercurio, arsénico y cadmio</strong>, con efectos neurológicos, renales, hematológicos y carcinógenos.</li>
+<li>El <strong>tabaco</strong> es la causa de muerte evitable más frecuente; el <strong>alcohol</strong> en exceso (y la delgada frontera de la moderación) daña hígado, tubo digestivo, sistema nervioso, corazón y feto.</li>
+<li>Las lesiones por <strong>agentes físicos</strong> incluyen traumatismos, quemaduras, hipertermia/hipotermia, lesión eléctrica y <strong>radiación ionizante</strong> (daño del ADN, fibrosis, carcinogenia).</li>
+<li>En nutrición: <strong>malnutrición aguda grave</strong> (marasmo y kwashiorkor), trastornos alimentarios (anorexia, bulimia), deficiencias de vitaminas (A, D, C y del grupo B) y <strong>obesidad</strong>, con su cortejo de síndrome metabólico y riesgo de cáncer.</li>
+</ul></div>
+
+</section><section id="sec-02-efectos-del-cambio-climatico-sobre-la-salud" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Efectos del cambio climático sobre la salud</h2>
+<p>La Tierra se ha calentado de forma significativa (los años 2014-2018 fueron los más cálidos desde 1880). La causa principal es el aumento de <strong>gases de efecto invernadero</strong> (CO₂ por combustión de fósiles, ozono y metano), con una concentración de CO₂ (~410 ppm en 2019) sin precedentes en 650.000 años. Se prevé una elevación de 2 a 5 °C para 2100.</p>
+<p>Repercusiones sobre la salud:</p>
+<ul>
+<li><strong>Enfermedades cardiovasculares, cerebrovasculares y respiratorias</strong> agravadas por olas de calor y contaminación.</li>
+<li><strong>Enfermedades infecciosas</strong> transmitidas por alimentos y agua (gastroenteritis, cólera) y por <strong>vectores</strong> (paludismo, dengue), por cambios en la distribución de mosquitos.</li>
+<li><strong>Desnutrición</strong> por pérdida de productividad agrícola (descenso del 10% al 25% hacia 2080 en países de ingresos bajos).</li>
+<li><strong>Elevación del nivel del mar</strong> (60 a 180 cm en 2100) y desplazamiento de poblaciones costeras, con inestabilidad, guerra y pobreza.</li>
+</ul>
+<p>El <strong>Acuerdo de París</strong> (2015) busca limitar el aumento a menos de 2 °C (idealmente 1,5 °C) respecto a la era preindustrial.</p>
+
+</section><section id="sec-03-toxicidad-de-los-agentes-quimicos-y-fisicos" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>Toxicidad de los agentes químicos y físicos</h2>
+<ul>
+<li>La <strong>toxicología</strong> estudia la distribución, los efectos y los mecanismos de los tóxicos. La dosis define el veneno. Los <strong>xenobióticos</strong> son sustancias exógenas presentes en aire, agua, alimentos y suelo.</li>
+<li>Se absorben por pulmón, tubo digestivo y piel; pueden actuar en el punto de entrada o distribuirse por la sangre, almacenarse (grasa, hueso, cerebro) y excretarse.</li>
+<li><strong>Metabolismo en dos fases</strong> (fig. 9.3): <strong>fase I</strong> (hidrólisis, oxidación, reducción; la enzima clave es el <strong>citocromo P-450</strong>, abundante en el retículo endoplásmico de los hepatocitos) y <strong>fase II</strong> (glucuronidación, sulfatación, metilación, conjugación con glutatión). El metabolismo puede producir <strong>metabolitos reactivos</strong> y <strong>especies reactivas del oxígeno (ERO)</strong>.</li>
+<li>Ejemplos de activación tóxica: el tetracloruro de carbono (radical triclorometilo en el hígado) y el benzo[a]pireno del humo del tabaco (aductos de ADN en el pulmón).</li>
+<li>La actividad del P-450 varía por <strong>polimorfismos</strong> y por <strong>inducción/inhibición</strong> (el alcohol y el tabaco inducen; el ayuno disminuye), lo que altera la susceptibilidad individual.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Fase I no siempre detoxifica</span>El P-450 puede activar xenobióticos: el tetracloruro de carbono genera el radical triclorometilo que necrosa el hígado, y el benzo[a]pireno del tabaco forma aductos de ADN en el pulmón. La inducción por alcohol o tabaco y los polimorfismos explican la susceptibilidad individual.</div>
+</section><section id="sec-04-contaminacion-ambiental" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>Contaminación ambiental</h2>
+<h3 id="contaminación-del-aire">Contaminación del aire</h3>
+<ul>
+<li><strong>Externo</strong>: la EPA controla seis contaminantes. El <strong>ozono</strong> a nivel del suelo (distinto del ozono estratosférico protector, dañado por los clorofluorocarbonos) se forma por reacción de óxidos de nitrógeno y compuestos orgánicos volátiles con la luz solar, y lesiona el epitelio respiratorio por radicales libres. El <strong>dióxido de azufre</strong> (centrales de carbón; se convierte en ácidos) y la <strong>materia en partículas</strong> (las <strong>&lt;10 µm</strong> son las más dañinas) causan morbimortalidad respiratoria y cardiovascular.</li>
+<li><strong>Monóxido de carbono (CO)</strong>: gas incoloro e inodoro de la combustión incompleta. La hemoglobina tiene <strong>200 veces más afinidad</strong> por el CO que por el oxígeno; la <strong>carboxihemoglobina</strong> no transporta O₂. La intoxicación crónica puede causar lesiones isquémicas del SNC (ganglios basales); la aguda da color rojo cereza en piel y mucosas. Es una causa importante de muerte accidental y suicida.</li>
+<li><strong>Interno</strong>: humo de tabaco, CO, dióxido de nitrógeno, amianto, humo de combustión de biomasa (un tercio de la población mundial), <strong>bioaerosoles</strong>, <strong>radón</strong> (gas radiactivo; segunda causa de cáncer de pulmón y primera en no fumadores) y <strong>formaldehído</strong> (carcinógeno). El "síndrome del edificio enfermo" es un problema esquivo.</li>
+</ul>
+<h3 id="metales-como-contaminantes-medioambientales">Metales como contaminantes medioambientales</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Contaminación ambiental" tabindex="0"><table>
+<thead>
+<tr>
+<th>Metal</th>
+<th>Fuentes y efectos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plomo</strong></td>
+<td>Pintura antigua, agua contaminada (crisis de Flint), minería e industria. Se une a grupos sulfhidrilo e interfiere en el metabolismo del calcio. Los niños absorben más (&gt;50%). Causa <strong>encefalopatía</strong> y déficit cognitivo en niños, <strong>neuropatía periférica</strong> (mano y pie caídos) en adultos, anemia microcítica con <strong>punteado basófilo</strong>, líneas de plomo en encías, enfermedad tubulointersticial renal, gota saturnina y alteración de la remodelación ósea</td>
+</tr>
+<tr>
+<td><strong>Mercurio</strong></td>
+<td>Pescado contaminado (metilmercurio), vapores (amalgamas dentales). El metilmercurio es liposoluble y se acumula en el cerebro. La <strong>enfermedad de Minamata</strong> (parálisis cerebral, sordera, ceguera) por consumo de pescado contaminado. Lesiona el SNC y el riñón (necrosis tubular, síndrome nefrótico)</td>
+</tr>
+<tr>
+<td><strong>Arsénico</strong></td>
+<td>Agua subterránea (Bangladés, Chile, China), conservantes de madera, herbicidas. Interfiere en la fosforilación oxidativa. Causa neuropatía sensitivomotora, hipertensión y arritmias, hiperpigmentación e hiperqueratosis, y <strong>cáncer</strong> de pulmón, vejiga y piel (lesiones en palmas y plantas)</td>
+</tr>
+<tr>
+<td><strong>Cadmio</strong></td>
+<td>Pilas de níquel-cadmio, fertilizantes, fundiciones. Causa <strong>enfermedad pulmonar obstructiva</strong>, lesión tubular renal y anomalías óseas (osteoporosis y osteomalacia: enfermedad <strong>itai-itai</strong> en Japón). Se asocia a cáncer de pulmón</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-05-riesgos-profesionales-para-la-salud" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>Riesgos profesionales para la salud</h2>
+<ul>
+<li>Los <strong>disolventes orgánicos</strong> (cloroformo, tetracloruro de carbono) causan mareo, depresión del SNC y toxicidad hepática y renal; el <strong>benceno</strong> se relaciona con leucemia mieloide aguda.</li>
+<li>Los <strong>hidrocarburos policíclicos</strong> (combustión, hollín) son carcinógenos potentes (cáncer de pulmón y vejiga); los <strong>organoclorados</strong> (DDT, bifenilos policlorados y dioxina/TCDD) resisten la degradación y son lipófilos, con efectos endocrinos y <strong>cloracné</strong>; el <strong>bisfenol A (BPA)</strong> de los plásticos es un interruptor endocrino; el <strong>cloruro de vinilo</strong> causa <strong>angiosarcoma hepático</strong>.</li>
+<li>Las <strong>neumoconiosis</strong> son enfermedades pulmonares crónicas por inhalación de polvos minerales (carbón, sílice, amianto, berilio).</li>
+</ul>
+
+</section><section id="sec-06-efectos-del-tabaco" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>Efectos del tabaco</h2>
+<ul>
+<li>Fumar es la <strong>causa de muerte evitable más frecuente</strong>. El humo contiene más de 7.000 sustancias y más de 60 carcinógenos (hidrocarburos policíclicos, nitrosaminas, aminas aromáticas). La <strong>nicotina</strong> es muy adictiva y también perjudica al feto.</li>
+<li>Causa el <strong>90% de los cánceres de pulmón</strong> (riesgo proporcional a los paquetes/año) y se asocia a cánceres de esófago, páncreas, vejiga, riñón, cérvix, médula ósea, hígado y colon. Interactúa de forma <strong>multiplicativa</strong> con el alcohol (cánceres oral, laríngeo y esofágico) y con el amianto y el uranio (cáncer de pulmón).</li>
+<li>Enfermedades no malignas: bronquitis, <strong>EPOC</strong> y enfisema, agravamiento del asma, <strong>ateroesclerosis</strong> (infarto y accidente cerebrovascular; efecto multiplicativo con hipertensión e hipercolesterolemia), y mayor riesgo de diabetes de tipo 2, artritis reumatoide, degeneración macular, embarazo ectópico y disfunción eréctil. El tabaquismo materno causa aborto, prematuridad y retraso del crecimiento intrauterino.</li>
+<li>El <strong>fumador pasivo</strong> también tiene mayor riesgo de cáncer de pulmón y de cardiopatía coronaria (medible por la <strong>cotinina</strong>). El <strong>vapeo</strong> se ha asociado desde 2019 a una lesión pulmonar aguda grave.</li>
+</ul>
+
+</section><section id="sec-07-efectos-del-alcohol" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>Efectos del alcohol</h2>
+<ul>
+<li>El consumo excesivo es un problema de salud más extendido que las drogas ilícitas. Más del 50% de las muertes se deben a accidentes, homicidios y suicidios; unas 15.000 anuales a cirrosis.</li>
+<li><strong>Metabolismo</strong>: el etanol se oxida a <strong>acetaldehído</strong> por la <strong>alcohol deshidrogenasa</strong> (principal, citosol), el <strong>citocromo P-450 (CYP2E1)</strong> y la catalasa; el acetaldehído se convierte en acetato por la <strong>aldehído deshidrogenasa</strong>. El acetaldehído es tóxico y explica algunos efectos agudos. Cerca del <strong>50% de los asiáticos</strong> tiene una variante de baja actividad (<strong>ALDH2*2</strong>).</li>
+<li><strong>Mecanismos tóxicos</strong>: la oxidación por la ADH reduce el NAD, lo que favorece el <strong>hígado graso</strong> y la acidosis láctica; el CYP2E1 genera <strong>ERO</strong>; el alcohol favorece la liberación de <strong>endotoxina</strong> y la producción de TNF por los macrófagos.</li>
+<li><strong>Efectos agudos</strong> (SNC): depresión inicial de estructuras subcorticales con desinhibición, y con dosis mayores depresión cortical y de los centros bulbares (parada respiratoria).</li>
+<li><strong>Efectos crónicos</strong>: hígado (esteatosis, hepatitis alcohólica y <strong>cirrosis</strong> con hipertensión portal y carcinoma hepatocelular); tubo digestivo (gastritis, úlceras, varices); SNC (déficit de <strong>tiamina</strong>, síndrome de <strong>Wernicke-Kórsakov</strong>, atrofia cerebelosa); corazón (<strong>miocardiopatía alcohólica</strong>, hipertensión, descenso de HDL); <strong>pancreatitis</strong>; <strong>síndrome alcohólico fetal</strong>; <strong>carcinogenia</strong> (cavidad oral, esófago, hígado, mama) y malnutrición.</li>
+<li>El consumo moderado (~20-30 g/día) puede ser protector frente a la cardiopatía coronaria.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Del hígado graso a la cirrosis</span>La oxidación por la alcohol deshidrogenasa reduce el NAD y favorece el hígado graso y la acidosis láctica; el CYP2E1 genera especies reactivas del oxígeno y la endotoxina dispara TNF. Cerca del 50% de los asiáticos tiene la ALDH2*2 de baja actividad.</div>
+</section><section id="sec-08-lesiones-por-farmacos-terapeuticos-y-drogas-de-abuso" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>Lesiones por fármacos terapéuticos y drogas de abuso</h2>
+<h3 id="reacciones-farmacológicas-adversas">Reacciones farmacológicas adversas</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Lesiones por fármacos terapéuticos y drogas de abuso" tabindex="0"><table>
+<thead>
+<tr>
+<th>Fármaco</th>
+<th>Efectos adversos principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anticoagulantes</strong> (warfarina, dabigatrán)</td>
+<td>Hemorragia potencialmente mortal; complicaciones trombóticas por infratratamiento</td>
+</tr>
+<tr>
+<td><strong>Tratamiento hormonal de la menopausia (THM)</strong></td>
+<td>La combinación estrógenos-progesterona aumenta el riesgo de <strong>cáncer de mama</strong> (tras 5-6 años), accidente cerebrovascular y <strong>tromboembolia venosa</strong>; no previene la cardiopatía crónica. Efecto protector sobre la ateroesclerosis solo en mujeres jóvenes (ventana terapéutica)</td>
+</tr>
+<tr>
+<td><strong>Anticonceptivos orales (ACO)</strong></td>
+<td>Protegen frente a cáncer de endometrio y ovario; pueden aumentar el riesgo de <strong>cáncer de cérvix</strong> (con VPH) y elevan 2-4 veces el riesgo de <strong>trombosis</strong>; asociados a <strong>adenoma hepático</strong></td>
+</tr>
+<tr>
+<td><strong>Paracetamol</strong></td>
+<td>La sobredosis (50% de las insuficiencias hepáticas agudas en EE. UU.) produce <strong>necrosis centrolobulillar</strong>: el metabolito <strong>NAPQI</strong> (vía CYP2E1) agota el glutatión y forma aductos proteicos. Se trata precozmente con <strong>N-acetilcisteína</strong></td>
+</tr>
+<tr>
+<td><strong>Ácido acetilsalicílico</strong></td>
+<td>Sobredosis: alcalosis respiratoria seguida de acidosis metabólica. Toxicidad crónica (<strong>salicilismo</strong>): gastritis erosiva con hemorragia, bloqueo irreversible del <strong>tromboxano A₂</strong> (tendencia hemorrágica) y, con la fenacetina, <strong>nefropatía analgésica</strong> con necrosis papilar</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="drogas-de-abuso">Drogas de abuso</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Lesiones por fármacos terapéuticos y drogas de abuso" tabindex="0"><table>
+<thead>
+<tr>
+<th>Droga</th>
+<th>Efectos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cocaína</strong></td>
+<td>Bloquea la recaptación de dopamina y noradrenalina. Causa euforia intensa y gran adicción. Efectos cardiovasculares graves (vasoconstricción coronaria, isquemia, infarto y arritmias mortales, incluso con la primera dosis), hipertermia y convulsiones, hipoxia fetal y aborto, perforación del tabique nasal y miocardiopatía dilatada</td>
+</tr>
+<tr>
+<td><strong>Opioides y opiáceos</strong> (heroína, oxicodona)</td>
+<td>Epidemia de sobredosis en Norteamérica. <strong>Muerte súbita</strong> por depresión respiratoria (pureza desconocida, adición de fentanilo); lesión pulmonar (edema, granulomas por talco), <strong>infecciones</strong> (endocarditis, sobre todo tricuspídea, hepatitis y VIH) y enfermedad renal (amiloidosis, glomeruloesclerosis focal)</td>
+</tr>
+<tr>
+<td><strong>Anfetaminas y metanfetamina</strong></td>
+<td>Liberan dopamina; causan euforia seguida de "caída", violencia, confusión y psicosis</td>
+</tr>
+<tr>
+<td><strong>Marihuana</strong></td>
+<td>Droga ilegal más consumida; el <strong>THC</strong> produce euforia y relajación. Deterioro cognitivo y psicomotor, taquicardia, efectos respiratorios (bronquitis, carcinógenos), síndrome de hiperemesis por cannabis y posible dependencia</td>
+</tr>
+<tr>
+<td><strong>Otras</strong></td>
+<td>PCP/ketamina, <strong>LSD</strong> (el alucinógeno más potente), éxtasis (MDMA) y "sales de baño" (catinonas). La ketamina en dosis bajas se ha aprobado para la depresión grave</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-09-danos-por-agentes-fisicos" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>Daños por agentes físicos</h2>
+<h3 id="traumatismos-mecánicos">Traumatismos mecánicos</h3>
+<p>Las fuerzas mecánicas producen abrasiones, contusiones, laceraciones, heridas incisas y por punción. Las lesiones óseas y craneales se tratan en los capítulos 26 y 28.</p>
+<h3 id="lesiones-térmicas">Lesiones térmicas</h3>
+<p><strong>Quemaduras</strong>: la gravedad depende de la profundidad, el porcentaje de superficie corporal, las lesiones por inhalación y la precocidad del tratamiento. Se clasifican en <strong>superficiales</strong> (epidermis), de <strong>grosor parcial</strong> (dermis) y de <strong>grosor completo</strong> (tejido subcutáneo y, a veces, músculo). Las principales amenazas son el <strong>shock</strong> (por desplazamiento de líquidos, con edema generalizado), la <strong>sepsis</strong> (casi todas las quemaduras se colonizan; <em>Pseudomonas aeruginosa</em>, SARM, <em>Candida</em>) y la <strong>insuficiencia respiratoria</strong> (inhalación de gases hidrosolubles y liposolubles). El tratamiento precoz (escisión e injerto) mejora el pronóstico.</p>
+<p><strong>Hipertermia</strong>: calambres por calor (pérdida de electrolitos), <strong>insolación</strong> (colapso por hipovolemia) y <strong>golpe de calor</strong> (fallo de la termorregulación, temperatura &gt; 40 °C, disfunción multiorgánica y rabdomiólisis por alteración del receptor de rianodina <strong>RYR1</strong>). La <strong>hipertermia maligna</strong> es un trastorno genético del RYR1 desencadenado por anestésicos (mortalidad del 80% sin tratamiento).</p>
+<p><strong>Hipotermia</strong>: por exposición al frío (frecuente en personas sin hogar). A ~32 °C aparece pérdida de conciencia. Lesiona por efectos directos (cristalización) e indirectos (vasoconstricción, edema, isquemia: "pie de trinchera").</p>
+<p><strong>Lesión eléctrica</strong>: quemaduras y fibrilación ventricular o fallo de los centros cardiorrespiratorio y bulbar; depende del amperaje, la duración y la trayectoria. La corriente alterna induce <strong>espasmo muscular tetánico</strong> (la víctima no puede soltarse). El rayo causa fulminación.</p>
+<h3 id="lesión-por-radiación-ionizante">Lesión por radiación ionizante</h3>
+<ul>
+<li>La radiación <strong>no ionizante</strong> (UV, infrarroja) mueve o hace vibrar los átomos; la <strong>ionizante</strong> (rayos X y γ, partículas α y β, neutrones) desprende electrones y genera una cascada de ionización, con <strong>radicales libres</strong> y daño del ADN. Cerca del 50% de la dosis que recibe la población de EE. UU. es de origen médico (sobre todo la TC).</li>
+<li><strong>Unidades</strong>: curie (Ci, emisión), gray (Gy, dosis absorbida), sievert (Sv, dosis equivalente, según la eficacia biológica relativa).</li>
+<li>Determinantes de los efectos: <strong>fraccionamiento</strong> (las dosis divididas permiten reparación; las células normales se reparan mejor que las tumorales), <strong>tamaño del campo</strong>, <strong>proliferación celular</strong> (tejidos de división rápida: gónadas, médula ósea, tejido linfoide y mucosa digestiva) y <strong>oxigenación</strong> (los tumores hipóxicos son menos sensibles).</li>
+<li><strong>Efectos morfológicos</strong>: alteraciones cromosómicas (deleciones, translocaciones, fragmentación), tumefacción y apoptosis nuclear, células gigantes, y cambios citoplásmicos. La constelación (pleomorfismo, células gigantes, mitosis anómalas) imita a las células cancerosas.</li>
+<li><strong>Efectos vasculares y fibrosis</strong>: daño endotelial con estrechamiento u oclusión vascular y fibrosis intersticial (a menudo meses o años después).</li>
+<li><strong>Radiación corporal total</strong>: por debajo de 1 Sv, síntomas mínimos; con dosis mayores aparecen los <strong>síndromes agudos por radiación</strong>, que afectan sucesivamente a los sistemas hematopoyético, digestivo y nervioso central. La linfopenia aparece en horas; la aplasia medular puede ser transitoria o permanente.</li>
+<li><strong>Carcinogenia</strong>: el daño del ADN (sobre todo las roturas de doble hebra, reparadas por unión de extremos no homólogos) causa mutaciones. Las dosis agudas &gt; 100 mSv aumentan el riesgo de cáncer; hay evidencia significativa desde 50 mSv y "razonable" desde 5 mSv. El riesgo es mayor en niños. El <strong>radón</strong> y sus productos de desintegración (polonio 214 y 218) causan cáncer de pulmón.</li>
+</ul>
+
+</section><section id="sec-10-enfermedades-nutricionales" class="card">
+<div class="section-kicker"><span class="n">10</span> Sección</div>
+<h2>Enfermedades nutricionales</h2>
+<h3 id="insuficiencia-dietética">Insuficiencia dietética</h3>
+<p>Una dieta adecuada aporta calorías, aminoácidos y ácidos grasos, y vitaminas y minerales. La malnutrición es <strong>primaria</strong> (falta en la dieta) o <strong>secundaria</strong> (por malabsorción, alteración del uso o almacenamiento, pérdida excesiva o mayor necesidad). Causas: pobreza, enfermedades agudas y crónicas (caquexia del cáncer y el sida), alcoholismo crónico, ignorancia, restricción dietética autoimpuesta y otras.</p>
+<h3 id="malnutrición-aguda-grave-mag">Malnutrición aguda grave (MAG)</h3>
+<p>La OMS la define por una proporción peso/talla <strong>tres desviaciones estándar por debajo</strong> de lo normal. Sus dos extremos son el <strong>marasmo</strong> y el <strong>kwashiorkor</strong> (compartimentos proteínicos <strong>somático</strong> y <strong>visceral</strong>, respectivamente).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades nutricionales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Forma</th>
+<th>Mecanismo</th>
+<th>Rasgos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Marasmo</strong></td>
+<td>Carencia grave de <strong>calorías</strong></td>
+<td>Emaciación por catabolismo del músculo y la grasa subcutánea; albúmina normal o poco reducida; cabeza "demasiado grande"; anemia y déficit inmunitario</td>
+</tr>
+<tr>
+<td><strong>Kwashiorkor</strong></td>
+<td>Privación <strong>proteica</strong> con calorías relativamente suficientes</td>
+<td><strong>Hipoalbuminemia con edema</strong> generalizado; hígado graso; lesiones cutáneas "en pintura descascarillada"; cambios del cabello; apatía. Grasa y músculo relativamente preservados</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ambos se acompañan de deficiencias de micronutrientes e infecciones intercurrentes. El <strong>microbioma intestinal</strong> parece contribuir (trasplantes fecales de niños con MAG inducen malnutrición en ratones). En países de ingresos altos, la malnutrición secundaria (depleción de grasa y músculo, edema maleolar) es frecuente en ancianos, encamados y enfermos crónicos.</p>
+<h3 id="anorexia-nerviosa-y-bulimia">Anorexia nerviosa y bulimia</h3>
+<ul>
+<li><strong>Anorexia nerviosa</strong>: inanición autoinducida, la mortalidad más alta entre los trastornos psiquiátricos. Cursa con <strong>amenorrea</strong> (por descenso de GnRH), intolerancia al frío, bradicardia, estreñimiento, deshidratación y osteoporosis. La <strong>transformación gelatinosa de la médula ósea</strong> (aumento de grasa con depósito mucinoso) es prácticamente patognomónica. Complicación grave: arritmias y muerte súbita por <strong>hipopotasemia</strong>.</li>
+<li><strong>Bulimia</strong>: atracones seguidos de vómito inducido; más frecuente y de mejor pronóstico. Complicaciones por el vómito y el uso de laxantes y diuréticos: desequilibrios electrolíticos (hipopotasemia), aspiración pulmonar y rotura esofágica o gástrica.</li>
+</ul>
+<h3 id="deficiencias-vitamínicas">Deficiencias vitamínicas</h3>
+<p>Trece vitaminas: <strong>liposolubles</strong> (A, D, E, K) e <strong>hidrosolubles</strong> (C y complejo B). La deficiencia puede ser primaria o secundaria (malabsorción de grasas, transporte, almacenamiento o conversión).</p>
+<ul>
+<li><strong>Vitamina A</strong> (retinol, retinal, ácido retinoico): esencial para la <strong>visión</strong> (rodopsina), la diferenciación y el crecimiento celular (metaplasia escamosa y queratinización si falta) y la inmunidad. Metabolismo: absorción intestinal, almacenamiento hepático (células de Ito), transporte por RBP. <strong>Deficiencia</strong>: ceguera nocturna, <strong>xeroftalmía</strong> (manchas de Bitot, <strong>queratomalacia</strong> y ceguera), metaplasia escamosa del epitelio respiratorio y urinario (infecciones, cálculos), dermatosis folicular y aumento de la mortalidad por infecciones (sarampión, neumonía, diarrea). <strong>Toxicidad</strong>: cefalea, vómitos, seudotumor cerebral; crónica con dolor óseo y fracturas; retinoides teratógenos.</li>
+<li><strong>Vitamina D</strong>: mantiene el calcio y el fosfato. Se sintetiza en la piel a partir del <strong>7-deshidrocolesterol</strong> por radiación UVB (90% de los requerimientos), se convierte en el hígado a <strong>25-OH-D</strong> y en el riñón (por la <strong>1-hidroxilasa</strong>, regulada por PTH y fosfato) a <strong>1,25-(OH)₂-D</strong>. Estimula la absorción intestinal (TRPV6), la reabsorción renal (TRPV5), la expresión de <strong>RANKL</strong> (diferenciación de osteoclastos) y la mineralización ósea (osteocalcina). También tiene efectos inmunomoduladores y antiproliferativos. <strong>Deficiencia</strong>: <strong>raquitismo</strong> (niños: sobrecrecimiento de cartílago epifisario, rosario raquítico, tórax de paloma, arqueamiento de piernas) y <strong>osteomalacia</strong> (adultos: exceso de osteoide no mineralizado, fracturas). <strong>Toxicidad</strong>: hipercalcemia y calcificaciones metastásicas.</li>
+<li><strong>Vitamina C</strong> (ácido ascórbico): necesaria para la <strong>síntesis de colágeno</strong> (hidroxilación de prolina y lisina), la síntesis de neurotransmisores y como antioxidante. Su déficit causa <strong>escorbuto</strong>: mala cicatrización, tendencia hemorrágica (encías, piel, periostio), dolor articular y alteraciones óseas. No sintetizamos vitamina C (dependemos de la dieta). Las megadosis no previenen el resfriado ni el cáncer y pueden causar sobrecarga de hierro, anemia hemolítica (déficit de G6PD) y cálculos de oxalato.</li>
+</ul>
+<p>Tablas de referencia (9.9 y 9.10): la <strong>vitamina E</strong> es antioxidante; la <strong>vitamina K</strong> participa en la coagulación (déficit: diátesis hemorrágica); las vitaminas del grupo <strong>B</strong> (tiamina, riboflavina, niacina, piridoxina, B₁₂, folato, etc.) son coenzimas, con déficits como <strong>beriberi</strong>, <strong>pelagra</strong>, <strong>anemia perniciosa</strong> y defectos del tubo neural. Oligoelementos: <strong>cinc</strong>, <strong>hierro</strong> (anemia microcítica hipocrómica), <strong>yodo</strong> (bocio), <strong>cobre</strong>, <strong>flúor</strong>, <strong>selenio</strong>.</p>
+<h3 id="obesidad">Obesidad</h3>
+<p>La <strong>obesidad</strong> es una acumulación de tejido adiposo suficiente para afectar a la salud; se mide por el <strong>índice de masa corporal (IMC = kg/m²)</strong>: normal 18,5-25, sobrepeso 25-30 y obesidad &gt; 30. La <strong>obesidad central (visceral)</strong> confiere mayor riesgo que la subcutánea. Es una epidemia (más de 1.900 millones de adultos con sobrepeso u obesidad en 2015) y un problema también creciente en países de ingresos bajos.</p>
+<p>Es un trastorno de la <strong>homeostasis de la energía</strong>, regulada por el hipotálamo (núcleo arqueado) con tres componentes:</p>
+<ul>
+<li><strong>Señales aferentes</strong>: <strong>leptina</strong> (adipocitos), <strong>grelina</strong> (estómago; la única hormona orexígena), <strong>insulina</strong> (páncreas), <strong>PYY</strong> y <strong>GLP-1</strong> (íleon y colon).</li>
+<li><strong>Procesamiento central</strong>: neuronas <strong>POMC/CART</strong> (anorexígenas, "freno") y neuronas <strong>NPY/AgRP</strong> (orexígenas, "acelerador"), con neuronas de segundo orden (MC3/4R y receptores Y1/Y5).</li>
+<li><strong>Señales eferentes</strong>: vías catabólica y anabólica que controlan la ingesta y el gasto energético.</li>
+</ul>
+<p>Piezas clave:</p>
+<ul>
+<li>La <strong>leptina</strong> reduce la ingesta y aumenta el gasto; en la obesidad hay <strong>resistencia a la leptina</strong>. Las mutaciones de la leptina o su receptor (raras) y del <strong>MC4R</strong> (4-5% de las obesidades masivas) causan obesidad.</li>
+<li>La <strong>adiponectina</strong> (producida por el tejido adiposo) estimula la oxidación de ácidos grasos, aumenta la sensibilidad a la insulina y tiene efectos antiinflamatorios y cardioprotectores; sus concentraciones son <strong>menores en obesos</strong>.</li>
+<li>El <strong>tejido adiposo pardo</strong> gasta energía por termogenia sin escalofríos (abundante en recién nacidos).</li>
+<li>El tejido adiposo blanco produce citocinas (TNF, IL-6, IL-1) que crean un <strong>estado proinflamatorio crónico</strong> (proteína C reactiva elevada).</li>
+<li>El <strong>microbioma intestinal</strong> podría contribuir (los ratones colonizados con microbiota de obesos ganan peso).</li>
+</ul>
+<p><strong>Consecuencias clínicas</strong>: resistencia a la insulina e <strong>hiperinsulinemia</strong>, <strong>diabetes de tipo 2</strong>, <strong>síndrome metabólico</strong> (inflamación por activación del inflamasoma y liberación de IL-1), <strong>hipertensión</strong>, dislipidemia (hipertrigliceridemia y HDL bajo) con cardiopatía coronaria, <strong>esteatosis hepática no alcohólica</strong>, <strong>colelitiasis</strong> (6 veces más frecuente), apnea obstructiva del sueño y síndrome de hipoventilación (de Pickwick), artrosis y estado proinflamatorio.</p>
+<p><strong>Obesidad y cáncer</strong>: mayor incidencia de cánceres de esófago, tiroides, colon, riñón (hombres) y esófago, endometrio, vesícula y riñón (mujeres). Mecanismos: hiperinsulinemia con aumento del <strong>IGF-1</strong> (mitógeno que activa RAS y PI3K/AKT), mayor producción de <strong>estrógenos</strong> (con descenso de SHBG), menor adiponectina (que suprime la proliferación y promueve la apoptosis, en parte vía p53 y p21) y el estado proinflamatorio.</p>
+<h3 id="dieta-y-cáncer">Dieta y cáncer</h3>
+<p>Los cánceres varían hasta 100 veces según la geografía y cambiando de dieta (p. ej., el cáncer de colon en japoneses emigrados). Preocupan tres aspectos: carcinógenos exógenos (la <strong>aflatoxina</strong> produce la mutación del codón 249 de TP53 en el carcinoma hepatocelular), síntesis endógena de carcinógenos (nitrosaminas y nitrosamidas en el estómago a partir de nitritos y aminas) y falta de factores protectores. La ingesta elevada de <strong>grasa animal</strong> y baja de <strong>fibra</strong> se ha implicado en el cáncer de colon (ácidos biliares y flora). No hay prueba definitiva de que una dieta concreta cause o prevenga el cáncer, pero evitar la obesidad con una dieta saludable es prudente.</p>
+<h3 id="dieta-y-enfermedades-sistémicas">Dieta y enfermedades sistémicas</h3>
+<ul>
+<li>La reducción de grasas saturadas de origen animal desciende el colesterol sérico (10-15%); los suplementos de <strong>ácidos grasos ω-3</strong> no han demostrado reducir la enfermedad cardiovascular en metaanálisis grandes.</li>
+<li>La <strong>restricción de sodio</strong> reduce la hipertensión; la <strong>fibra</strong> puede prevenir la diverticulosis; la <strong>restricción calórica</strong> prolonga la vida en animales de experimentación.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Marasmo vs kwashiorkor</span>Marasmo: carencia calórica grave, emaciación por catabolismo de músculo y grasa, albúmina normal. Kwashiorkor: privación proteica con hipoalbuminemia, edema generalizado, hígado graso y lesiones cutáneas en pintura descascarillada.</div>
+</section><section id="sec-11-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">11</span> Sección</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>El cambio climático aumenta enfermedades cardiovasculares y respiratorias, infecciones (transmitidas por agua, alimentos y vectores) y desnutrición; eleva el nivel del mar.</li>
+<li>Los xenobióticos se metabolizan en fase I (<strong>citocromo P-450</strong>) y fase II (conjugación), lo que puede detoxificar o activar a metabolitos tóxicos (tetracloruro de carbono, benzo[a]pireno).</li>
+<li><strong>CO</strong>: afinidad 200 veces mayor por la hemoglobina (carboxihemoglobina); causa hipoxia sistémica y lesiones de los ganglios basales; color rojo cereza en la intoxicación aguda.</li>
+<li>Metales: <strong>plomo</strong> (encefalopatía infantil, neuropatía periférica, anemia con punteado basófilo, líneas de plomo), <strong>mercurio</strong> (Minamata, SNC y riñón), <strong>arsénico</strong> (cáncer de pulmón, vejiga y piel), <strong>cadmio</strong> (EPOC, riñón, itai-itai).</li>
+<li>El <strong>radón</strong> es la segunda causa de cáncer de pulmón (primera en no fumadores); el <strong>bisfenol A</strong> es un interruptor endocrino; el <strong>cloruro de vinilo</strong> causa angiosarcoma hepático.</li>
+<li><strong>Tabaco</strong>: 90% de los cánceres de pulmón; efecto multiplicativo con alcohol y amianto; causa EPOC, ateroesclerosis y bajo peso fetal.</li>
+<li><strong>Alcohol</strong>: metabolizado por ADH, CYP2E1 y catalasa a acetaldehído; el NAD reducido causa hígado graso; efectos crónicos en hígado (cirrosis), SNC (Wernicke-Kórsakov), corazón, páncreas y feto; carcinógeno.</li>
+<li><strong>Paracetamol</strong>: la sobredosis causa necrosis centrolobulillar por <strong>NAPQI</strong>; se trata con N-acetilcisteína. <strong>Aspirina</strong>: salicilismo, gastritis y bloqueo del tromboxano A₂.</li>
+<li>Drogas: <strong>cocaína</strong> (isquemia miocárdica, hipertermia, convulsiones), <strong>opioides</strong> (muerte por depresión respiratoria, endocarditis tricuspídea, hepatitis y VIH), marihuana y anfetaminas.</li>
+<li><strong>Quemaduras</strong>: clasificación por profundidad (superficial, grosor parcial, grosor completo); amenazas: shock, sepsis (<em>Pseudomonas</em>) e insuficiencia respiratoria.</li>
+<li><strong>Golpe de calor</strong> (RYR1, rabdomiólisis) e <strong>hipertermia maligna</strong> (genética, desencadenada por anestésicos). <strong>Hipotermia</strong>: pie de trinchera.</li>
+<li><strong>Radiación ionizante</strong>: daño del ADN (radicales libres), mayor sensibilidad de los tejidos en división, fibrosis vascular tardía y carcinogenia (dosis &gt; 100 mSv claramente; &gt; 50 mSv con evidencia).</li>
+<li><strong>MAG</strong>: <strong>marasmo</strong> (déficit calórico, emaciación, albúmina normal) y <strong>kwashiorkor</strong> (déficit proteico, edema, hígado graso, hipoalbuminemia).</li>
+<li><strong>Anorexia nerviosa</strong>: amenorrea, transformación gelatinosa de la médula ósea, hipopotasemia con arritmias.</li>
+<li><strong>Vitamina A</strong>: visión, diferenciación epitelial e inmunidad; déficit: xeroftalmía y queratomalacia. <strong>Vitamina D</strong>: homeostasis del calcio (25-OH-D y 1,25-(OH)₂-D); déficit: raquitismo y osteomalacia. <strong>Vitamina C</strong>: síntesis de colágeno; déficit: escorbuto.</li>
+<li><strong>Obesidad</strong>: regulación por leptina, grelina, insulina, PYY y GLP-1, con circuitos POMC/CART y NPY/AgRP; causa síndrome metabólico y aumenta el riesgo de cáncer (IGF-1, estrógenos, adiponectina, inflamación).</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

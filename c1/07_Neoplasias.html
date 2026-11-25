@@ -1,0 +1,1465 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neoplasias · Anatomía Patológica UBB</title>
+<meta name="description" content="Neoplasias. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Neoplasias · Anatomía Patológica UBB">
+<meta property="og:description" content="Neoplasias. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Capítulo 7. Neoplasias</h1>
+    <p class="lede">Guía 07 de 10. Resumen completo del capítulo 7 con 84 filas de tabla. Sin citas por página: material del Certamen 1.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>07 de 10</strong></div><div><span>Capítulo</span><strong>7</strong></div><div><span>Páginas</span><strong>267-338</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>84</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-nomenclatura">Nomenclatura</a></li>
+        <li><a href="#sec-03-caracteristicas-de-las-neoplasias-benignas-y-malignas">Características de las neoplasias benignas y malignas</a></li>
+        <li><a href="#sec-04-epidemiologia-de-los-tumores-malignos">Epidemiología de los tumores malignos</a></li>
+        <li><a href="#sec-05-bases-moleculares-de-los-tumores-malignos-alteraciones-geneticas">Bases moleculares de los tumores malignos: alteraciones genéticas y epigenéticas</a></li>
+        <li><a href="#sec-06-autosuficiencia-respecto-de-las-senales-de-crecimiento-oncogenes">Autosuficiencia respecto de las señales de crecimiento: oncogenes</a></li>
+        <li><a href="#sec-07-insensibilidad-a-la-inhibicion-del-crecimiento-genes-supresores-">Insensibilidad a la inhibición del crecimiento: genes supresores de tumores</a></li>
+        <li><a href="#sec-08-alteraciones-metabolicas-efecto-warburg-autofagia-y-oncometaboli">Alteraciones metabólicas: efecto Warburg, autofagia y oncometabolitos</a></li>
+        <li><a href="#sec-09-evasion-de-la-muerte-celular">Evasión de la muerte celular</a></li>
+        <li><a href="#sec-10-potencial-de-replicacion-ilimitado">Potencial de replicación ilimitado</a></li>
+        <li><a href="#sec-11-angiogenia">Angiogenia</a></li>
+        <li><a href="#sec-12-invasion-y-metastasis-fases-moleculares">Invasión y metástasis: fases moleculares</a></li>
+        <li><a href="#sec-13-evasion-de-la-vigilancia-inmunitaria">Evasión de la vigilancia inmunitaria</a></li>
+        <li><a href="#sec-14-inestabilidad-genomica-y-sistemas-de-reparacion-del-adn">Inestabilidad genómica y sistemas de reparación del ADN</a></li>
+        <li><a href="#sec-15-inflamacion-promovida-por-el-tumor">Inflamación promovida por el tumor</a></li>
+        <li><a href="#sec-16-cambios-cromosomicos-y-oncogenes-activados">Cambios cromosómicos y oncogenes activados</a></li>
+        <li><a href="#sec-17-cambios-epigeneticos-y-arn-no-codificantes">Cambios epigenéticos y ARN no codificantes</a></li>
+        <li><a href="#sec-18-carcinogenia-quimica-y-en-multiples-etapas">Carcinogenia química y en múltiples etapas</a></li>
+        <li><a href="#sec-19-carcinogenia-por-radiacion">Carcinogenia por radiación</a></li>
+        <li><a href="#sec-20-carcinogenia-microbiana-virus-oncogenos">Carcinogenia microbiana: virus oncógenos</a></li>
+        <li><a href="#sec-21-aspectos-clinicos-de-las-neoplasias">Aspectos clínicos de las neoplasias</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="06_Sistema_Inmunitario.html" title="Enfermedades del sistema inmunitario">06</a>
+        <a href="08_Enfermedades_Infecciosas.html" title="Enfermedades infecciosas">08</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 7 del Robbins y Cotran, 10ª edición: páginas impresas 267-338 (72 páginas).</div><p class="small">Este resumen del Certamen 1 se redactó antes de adoptar la cita por página; se publica sin reescribirlo. El <a href="manual.html">Manual del Certamen 1</a> incluye el índice tema-clase-Robbins y las fuentes.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Neoplasia: trastorno genético clonal con parénquima y estroma; benigno vs maligno se define por diferenciación, invasión local y metástasis, no por velocidad de crecimiento.</li><li>Carcinogenia multietápica: mutación iniciadora, luego mutaciones conductoras (dominantes en oncogenes) y pasajeras; supresores se pierden de forma recesiva (dos golpes de Knudson).</li><li>Ocho características distintivas (Hanahan y Weinberg): señales de crecimiento, evasión de inhibidores, efecto Warburg, evasión de apoptosis, replicación ilimitada, angiogenia, invasión/metástasis y evasión inmunitaria; habilitadoras: inestabilidad genómica e inflamación.</li><li>Diseminación: carcinomas vía linfática, sarcomas vía hematógena (hígado y pulmón); siembra en cavidades con seudomixoma peritoneal; ~30% de tumores sólidos ya metastásicos al diagnóstico.</li><li>Eje RB (G1/S) y TP53 (guardián del genoma: arresto, senescencia o apoptosis) inactivados en la mayoría de los cánceres; VPH bloquea ambos con E7 y E6.</li><li>Clínica: caquexia mediada por TNF, IL-1 e IL-6; síndromes paraneoplásicos en ~10%; estadificación TNM con creciente componente molecular.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>Una <strong>neoplasia</strong> es un trastorno genético del crecimiento celular, desencadenado por mutaciones adquiridas o, menos frecuentemente, heredadas, que afectan a una sola célula y a su descendencia clonal. Los tumores son clonales y constan de dos componentes: <strong>parénquima</strong> (células tumorales) y <strong>estroma</strong> reactivo (tejido conjuntivo, vasos sanguíneos y células inmunitarias).</li>
+<li>La distinción entre tumor benigno y maligno se basa en la <strong>diferenciación</strong> (anaplasia), la <strong>invasión local</strong> y la <strong>metástasis</strong>; la velocidad de crecimiento no discrimina de forma fiable.</li>
+<li>El daño genético no letal está en el corazón de la carcinogenia. La célula iniciada adquiere de forma escalonada <strong>mutaciones conductoras</strong> y acumula muchas <strong>mutaciones pasajeras</strong>; el tumor evoluciona por selección darwiniana (progresión tumoral) y puede generar subclones resistentes al tratamiento.</li>
+<li>Los tumores malignos presentan ocho <strong>características distintivas</strong>: autosuficiencia en señales de crecimiento, insensibilidad a la inhibición del crecimiento, metabolismo alterado (efecto Warburg), evasión de la apoptosis, potencial replicativo ilimitado, angiogenia sostenida, capacidad de invadir y metastatizar y evasión de la vigilancia inmunitaria. Dos características habilitadoras las aceleran: inestabilidad genómica e inflamación promovida por el tumor.</li>
+<li>Dos grandes grupos de genes causales: <strong>oncogenes</strong> (ganancia de función, comportamiento dominante) y <strong>genes supresores de tumores</strong> (pérdida de función, generalmente recesiva: ambos alelos; excepción: haploinsuficiencia). También participan genes de reparación del ADN.</li>
+<li>La mayoría de los tumores malignos son esporádicos (aproximadamente el 95%); los factores medioambientales dominan el riesgo y la edad es una influencia importante.</li>
+<li>Los carcinomas se diseminan típicamente por vía linfática; los sarcomas por vía hematógena. La diseminación a distancia confirma malignidad.</li>
+<li>La carcinogenia es un proceso en múltiples etapas: ningún oncogén ni microorganismo causa por sí solo un tumor; se requieren mutaciones complementarias acumuladas.</li>
+</ul></div>
+
+</section><section id="sec-02-nomenclatura" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Nomenclatura</h2>
+<ul>
+<li><strong>Neoplasia</strong> significa nuevo crecimiento; la <strong>oncología</strong> (en griego oncos = tumor) es el estudio de los tumores. Tumor, que originalmente describía una hinchazón inflamatoria, hoy se equipara a neoplasia.</li>
+<li>El estroma es determinante para el crecimiento y la diseminación. El estroma colágeno abundante estimulado por el tumor se llama <strong>desmoplasia</strong>; los tumores desmoplásicos, por ejemplo algunos cánceres de mama, son duros (escirros).</li>
+</ul>
+<h3 id="tumores-benignos">Tumores benignos</h3>
+<ul>
+<li>Permanecen localizados en su sitio de origen y suelen ser susceptibles de extirpación; el paciente generalmente sobrevive. Excepción: en lugares vulnerables (cerebro), incluso un tumor benigno puede ser mortal.</li>
+<li>Mesenquimatosos: sufijo <strong>-oma</strong> (fibroma, condroma, lipoma).</li>
+<li>Epiteliales: <strong>adenoma</strong> (origen glandular, aunque no formen glándulas), <strong>papiloma</strong> (proyecciones verrugosas o digitiformes sobre superficies epiteliales), <strong>cistoadenoma</strong> (gran masa quística, p. ej., en ovario), <strong>cistoadenoma papilar</strong> (proyecciones papilares hacia espacios quísticos). Si una neoplasia produce una proyección muy visible por encima de una superficie mucosa se llama <strong>pólipo</strong>; si posee tejido glandular, pólipo adenomatoso.</li>
+</ul>
+<h3 id="tumores-malignos">Tumores malignos</h3>
+<ul>
+<li>Pueden invadir y destruir estructuras adyacentes y <strong>metastatizar</strong>; colectivamente se llaman <strong>cánceres</strong> (del latín, cangrejo).</li>
+<li><strong>Sarcomas</strong>: malignos de tejidos mesenquimatosos sólidos (fibrosarcoma, condrosarcoma).</li>
+<li><strong>Leucemias</strong> (literalmente, sangre blanca) y <strong>linfomas</strong>: tumores de células formadoras de sangre y de linfocitos o sus precursores.</li>
+<li><strong>Carcinomas</strong>: malignos epiteliales. Si se asemejan al epitelio escamoso estratificado, carcinoma <strong>epidermoide</strong>; si crecen en patrón glandular, <strong>adenocarcinoma</strong>. El órgano de origen se añade si se conoce (adenocarcinoma de células renales, carcinoma epidermoide broncógeno). En aproximadamente el 2% de los casos el origen es desconocido: tumor maligno indiferenciado.</li>
+</ul>
+<h3 id="tumores-mixtos-teratomas-hamartomas-y-coristomas">Tumores mixtos, teratomas, hamartomas y coristomas</h3>
+<ul>
+<li><strong>Tumor mixto</strong>: más de una línea de diferenciación a partir de un solo clon. Ejemplo clásico: <strong>adenoma pleomorfo</strong> de la glándula salival, con elementos epiteliales dispersos en un estroma mixoide que puede contener cartílago u hueso. Cuando es maligno se llama tumor mixto maligno de origen salival.</li>
+<li>La gran mayoría de las neoplasias derivan de una sola capa germinativa. Excepción: el <strong>teratoma</strong>, de células germinativas totipotenciales de gónadas (a veces de restos embrionarios en la línea media), con tejidos maduros o inmaduros de más de una capa germinativa (a veces las tres). El teratoma quístico de ovario (quiste dermoide) se diferencia sobre todo por líneas ectodérmicas: piel, pelo, glándulas sebáceas, estructuras dentales.</li>
+<li>Nombres inadecuados pero arraigados: <strong>linfoma, melanoma, mesotelioma y seminoma</strong> designan neoplasias malignas pese a sugerir benignidad.</li>
+<li><strong>Hamartoma</strong>: masa desorganizada compuesta por células autóctonas del tejido afectado; la mayoría tienen aberraciones cromosómicas clonales adquiridas por mutación somática, por lo que hoy se consideran neoplasias benignas.</li>
+<li><strong>Coristoma</strong>: resto de células heterotópicas fuera de lugar (p. ej., tejido pancreático bien organizado en la submucosa gástrica o del intestino delgado). No es neoplasia, aunque el nombre lo sugiere.</li>
+</ul>
+
+</section><section id="sec-03-caracteristicas-de-las-neoplasias-benignas-y-malignas" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>Características de las neoplasias benignas y malignas</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: Características de las neoplasias benignas y malignas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Benignos</th>
+<th>Malignos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diferenciación y anaplasia</td>
+<td>Bien diferenciados; estructura a menudo habitual del tejido de origen</td>
+<td>De moderados a anaplásicos (sin diferenciación); estructura a menudo atípica</td>
+</tr>
+<tr>
+<td>Velocidad de crecimiento</td>
+<td>Habitualmente progresiva y lenta; pueden detenerse o retroceder; mitosis infrecuentes y normales</td>
+<td>Errática, puede ser lenta o rápida; figuras mitóticas pueden ser numerosas y anormales</td>
+</tr>
+<tr>
+<td>Invasión local</td>
+<td>Masas cohesivas, expandibles y bien delimitadas; no invaden ni infiltran</td>
+<td>Localmente invasivos, infiltran el tejido circundante; a veces engañosamente cohesivos y expansivos</td>
+</tr>
+<tr>
+<td>Metástasis</td>
+<td>Ausentes</td>
+<td>Frecuentes; más probables en tumores grandes e indiferenciados</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="diferenciación-y-anaplasia">Diferenciación y anaplasia</h3>
+<ul>
+<li><strong>Diferenciación</strong>: grado en que las células parenquimatosas neoplásicas se asemejan a las normales correspondientes, morfológica y funcionalmente. La ausencia de diferenciación se denomina <strong>anaplasia</strong>.</li>
+<li>Los tumores benignos están bien diferenciados (el lipoma puede ser irreconocible como tumoral salvo por el crecimiento en masa discreta). La malignidad puede revelarse más por la infiltración y la metástasis que por la citología: los adenocarcinomas tiroideos bien diferenciados forman folículos de aspecto normal, y algunas células de carcinomas epidermoides son idénticas a las normales. En el otro extremo, los tumores muy <strong>anaplásicos</strong> muestran poca o ninguna diferenciación, apariencia altamente predictiva de comportamiento maligno. Entre ambos extremos están los moderadamente diferenciados.</li>
+<li>Cambios morfológicos reveladores de malignidad:
+<ul>
+<li><strong>Pleomorfismo</strong>: variación del tamaño y la forma de células y núcleos; incluye células gigantes tumorales (núcleo polimórfico único o varios núcleos hipercromáticos grandes; no confundir con células de Langhans inflamatorias ni con células gigantes por cuerpo extraño, derivadas de macrófagos).</li>
+<li>Morfología nuclear anormal: núcleos desproporcionadamente grandes, relación núcleo-citoplasma que puede acercarse a 1:1 (normal 1:4 a 1:6), núcleo de forma variable e irregular, cromatina gruesamente agrupada o adherida a la membrana nuclear, hipercromatismo, nucléolos anormalmente grandes.</li>
+<li><strong>Mitosis</strong>: los tumores indiferenciados contienen muchas mitosis (alta tasa proliferativa). La presencia de mitosis no equivale a malignidad (epitelio intestinal en recambio rápido, hiperplasias). Más importantes son las figuras mitóticas anómalas y atípicas.</li>
+<li><strong>Pérdida de polaridad</strong>: orientación anormal entre las células anaplásicas y respecto de estructuras de soporte como las membranas basales; crecimiento desorganizado en capas o masas.</li>
+<li>Otros: estroma vascular a menudo insuficiente; muchos tumores malignos de crecimiento rápido desarrollan áreas de <strong>necrosis isquémica</strong>.</li>
+</ul></li>
+<li>Función: los tumores bien diferenciados suelen conservar funciones normales (tumores endocrinos que secretan hormonas detectables en sangre; carcinoma epidermoide que sintetiza queratina; carcinoma hepatocelular que sintetiza bilis). Los tumores anaplásicos suelen perder las funciones del tejido de origen, pero a veces adquieren funciones nuevas: algunos carcinomas broncógenos sintetizan corticotropina, hormona paratiroidea, insulina o glucagón, dando lugar a síndromes paraneoplásicos.</li>
+</ul>
+<h3 id="metaplasia-displasia-y-carcinoma-in-situ">Metaplasia, displasia y carcinoma in situ</h3>
+<ul>
+<li><strong>Metaplasia</strong>: reemplazo de un tipo de célula por otro tipo, casi siempre asociado a lesión con reparación y regeneración tisular. Ejemplos: esófago de Barrett (el reflujo gastroesofágico daña el epitelio escamoso, sustituido por epitelio glandular más adecuado para el ambiente ácido), metaplasia escamosa del epitelio bronquial en fumadores crónicos. El epitelio metaplásico es propenso a la transformación maligna.</li>
+<li><strong>Displasia</strong>: crecimiento desordenado; se encuentra principalmente en epitelio. Presenta pleomorfismo, núcleos grandes hipercromáticos con relación núcleo-citoplasma elevada, desorden arquitectural y pérdida de diferenciación ordenada; en el epitelio escamoso la maduración desde la capa basal hasta la superficie puede fallar, y las mitosis se observan en todo el epitelio, no solo en la capa basal.</li>
+<li><strong>Carcinoma in situ</strong>: cuando la displasia es grave y afecta a todo el espesor del epitelio sin atravesar la membrana basal. Se observa en piel, mama, vejiga y cérvix. Presenta todas las características citológicas de malignidad y, sin tratamiento, tiene alta probabilidad de progresión a tumor invasivo; puede persistir años antes de infiltrar.</li>
+<li>La displasia es reversible si se elimina la causa desencadenante (al menos las moderadas); no siempre progresa. Algunas mutaciones tumorales pueden estar presentes en displasias leves. En un campo con epitelio metaplásico, no todo el epitelio metaplásico es displásico.</li>
+</ul>
+<h3 id="invasión-local">Invasión local</h3>
+<ul>
+<li>Los tumores benignos, que crecen y se expanden lentamente, desarrollan una <strong>cápsula</strong> de tejido fibroso: matriz extracelular (MEC) depositada por células del estroma como fibroblastos, activados por el daño hipóxico de la presión del tumor en expansión. Crea un plano tisular que hace el tumor palpable, móvil y fácilmente extirpable por enucleación. Excepción: los <strong>hemangiomas</strong> a menudo no están encapsulados, infiltran el sitio (dermis, hígado) y pueden ser irresecables si son extensos.</li>
+<li>Los tumores malignos están mal delimitados, sin planos de división. Los de crecimiento lento pueden desarrollar una cápsula aparente (<strong>seudoencapsulación</strong>), pero la histología muestra hileras de células tumorales que penetran el margen e infiltran estructuras adyacentes (patrón tipo cangrejo). Obliga a extirpar un margen amplio de tejido aparentemente normal.</li>
+<li>La invasividad, junto con el desarrollo de metástasis, es el factor que mejor discrimina entre benigno y maligno.</li>
+</ul>
+<h3 id="metástasis">Metástasis</h3>
+<ul>
+<li><strong>Metástasis</strong>: diseminación de un tumor a sitios físicamente discontinuos con el primario; señala inequívocamente un tumor como maligno. La invasividad permite a las células penetrar en vasos sanguíneos, vasos linfáticos y cavidades corporales.</li>
+<li>Algunos malignos casi nunca metastatizan: los <strong>gliomas</strong> (células gliales del sistema nervioso central) y los <strong>carcinomas basocelulares</strong> de la piel, que invaden de forma precoz. Invasividad y metástasis son propiedades separables.</li>
+<li>Las <strong>leucemias y linfomas</strong> (tumores líquidos) proceden de células que normalmente circulan; a menudo están diseminados al diagnóstico y siempre se consideran malignos, a diferencia de los tumores sólidos.</li>
+<li>Aproximadamente el 30% de los tumores sólidos (excluidos los cutáneos no melanomatosos) se presentan como enfermedad metastásica. La probabilidad de metástasis se correlaciona con la falta de diferenciación, la invasión agresiva, el crecimiento rápido y el gran tamaño, con innumerables excepciones.</li>
+<li>La diseminación metastásica reduce notablemente la posibilidad de curación; además, muchos tumores ya se han diseminado en el momento del diagnóstico inicial.</li>
+</ul>
+<h3 id="vías-de-propagación">Vías de propagación</h3>
+<p>Las tres vías: siembra directa en cavidades o superficies corporales, diseminación linfática y diseminación hematógena. La diseminación yatrógena por instrumental quirúrgico es poco común (por eso nunca se biopsian masas testiculares).</p>
+<ol type="1">
+<li><strong>Siembra de cavidades y superficies</strong>: ocurre cuando la neoplasia maligna penetra en un campo abierto natural sin barreras físicas. La cavidad más afectada es la peritoneal (también pleural, pericárdica, subaracnoidea y articular). Es característica de los carcinomas de ovario; las células pueden permanecer en la superficie de las vísceras sin penetrar. Los carcinomas apendiculares u ováricos secretores de moco llenan el peritoneo con masa gelatinosa: <strong>seudomixoma peritoneal</strong>.</li>
+<li><strong>Diseminación linfática</strong>: la vía más común para la diseminación inicial de los <strong>carcinomas</strong> (los sarcomas también la usan a veces). Los tumores no contienen vasos linfáticos funcionales; bastan los vasos linfáticos de los márgenes del tumor infiltrante. El patrón sigue las vías naturales del drenaje: carcinoma de mama (cuadrantes superiores externos) a ganglios axilares y luego infraclaviculares y supraclaviculares; carcinoma pulmonar central a ganglios traqueobronquiales y mediastínicos perihiliares. Los ganglios locales pueden saltarse (<strong>metástasis saltatorias</strong>). En el cáncer de mama el análisis de los ganglios axilares determina pronóstico y tratamiento; para evitar la morbilidad de la disección axilar se usa la <strong>biopsia del ganglio centinela</strong> (el primer ganglio del territorio regional que recibe la linfa del primario), con marcadores radiomarcados o pigmentos. Los ganglios agrandados no siempre albergan metástasis (la respuesta inmunitaria frente al tumor puede producir hiperplasia); solo el examen microscópico lo define.</li>
+<li><strong>Diseminación hematógena</strong>: característica de los <strong>sarcomas</strong>, aunque también en carcinomas. La penetración de vasos pequeños en el tumor primario es un dato ominoso asociado a esta vía. Suelen afectarse venas pequeñas; las arterias son más resistentes. Ocurre diseminación arterial cuando las células atraviesan lechos capilares pulmonares o derivaciones arteriovenosas, o cuando tumores pulmonares producen émbolos tumorales. Con la invasión venosa, las células se detienen en el primer lecho capilar: por eso el <strong>hígado</strong> y los <strong>pulmones</strong> son los más afectados. Los tumores cerca de la columna vertebral embolizan por el plexo paravertebral, produciendo metástasis vertebrales frecuentes de carcinomas de tiroides y de próstata. Algunos carcinomas crecen dentro de venas grandes: el de células renales invade la vena renal y alcanza la vena cava inferior hasta el corazón derecho; el hepatocelular penetra en radículas portales y hepáticas pese a lo cual puede no metastatizar de forma generalizada.</li>
+</ol>
+
+<div class="warnbox"><span class="box-title">Lo que discrimina malignidad</span>Invasividad y metástasis son el factor que mejor discrimina benigno de maligno; la velocidad de crecimiento y las mitosis no bastan, pues hay mitosis normales en tejidos de recambio rápido. Gliomas y carcinomas basocelulares invaden precozmente pero casi nunca metastatizan: invasión y metástasis son propiedades separables.</div>
+</section><section id="sec-04-epidemiologia-de-los-tumores-malignos" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>Epidemiología de los tumores malignos</h2>
+<h3 id="impacto-global">Impacto global</h3>
+<ul>
+<li>En 2018 los tumores malignos fueron responsables de más de 9,5 millones de fallecimientos en el mundo, casi 1 de cada 6 muertes totales. Debido al aumento del tamaño y la edad de la población se prevé hacia 2030 unos 21,4 millones de casos y 13,2 millones de muertes.</li>
+<li>Tumores más comunes: en hombres, próstata, pulmón y colon/recto; en mujeres, mama, pulmón y colon/recto. Los cánceres de pulmón, mama (en mujeres), próstata y colon/recto constituyen más del 50% de los diagnósticos y de las muertes por tumores en EE. UU.</li>
+<li>La mortalidad ajustada por edad disminuyó aproximadamente un 20% en hombres desde 1990 y un 10% en mujeres desde 1991. La reducción del uso de tabaco explica la del cáncer de pulmón; la mejora en detección y tratamiento redujo la del colorrectal, la de mama en mujeres y la de próstata. La <strong>citología cervicovaginal</strong> explica en gran parte la fuerte disminución de las muertes por cáncer de cérvix en EE. UU. en la última mitad de siglo.</li>
+<li>En mujeres, aunque los carcinomas de mama tienen una frecuencia 2,5 veces superior a los de pulmón, el cáncer de pulmón causa ahora más muertes.</li>
+<li>Las personas hispanas en EE. UU. tienen menor frecuencia de los tumores comunes de la población caucásica no hispana y mayor incidencia de cáncer de estómago, hígado, cérvix y vesícula biliar, así como de ciertas leucemias.</li>
+</ul>
+<h3 id="factores-medioambientales">Factores medioambientales</h3>
+<p>Son los factores de riesgo dominantes para la mayoría de los tumores malignos. Evidencias: el seguimiento del cáncer de pulmón con los cambios en el hábito de fumar; la fuerte caída del cáncer de estómago durante el siglo XX y el aumento reciente del de hígado (obesidad y hepatitis B y C); la amplia variación geográfica de la incidencia (el tumor más común del hombre varía según la región). Factores establecidos:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Epidemiología de los tumores malignos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Relación con tumores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microorganismos infecciosos</td>
+<td>Causan directa o indirectamente cerca del 15% de los tumores del mundo; carga tres veces mayor en el mundo en desarrollo; VPH en carcinomas de cérvix y tumores de cabeza y cuello</td>
+</tr>
+<tr>
+<td>Tabaquismo</td>
+<td>El factor ambiental más importante de muerte prematura en EE. UU.; implica boca, faringe, laringe, esófago, páncreas y vejiga, y cerca del 90% de los cánceres de pulmón</td>
+</tr>
+<tr>
+<td>Alcohol</td>
+<td>Carcinoma de orofaringe (salvo labio), laringe, esófago; por cirrosis alcohólica, carcinoma hepatocelular; efecto sinérgico con tabaco</td>
+</tr>
+<tr>
+<td>Dieta</td>
+<td>La dieta rica en grasas y pobre en fibra se ha relacionado con el cáncer de colon; la variación geográfica del colorrectal, próstata y mama se ha atribuido a la dieta</td>
+</tr>
+<tr>
+<td>Obesidad</td>
+<td>Aproximadamente el 14% de las muertes por tumores en hombres y el 20% en mujeres se asocian a la obesidad</td>
+</tr>
+<tr>
+<td>Antecedentes reproductivos</td>
+<td>La exposición acumulada a estrógenos sin oposición de progesterona aumenta el riesgo de cáncer de mama y de endometrio</td>
+</tr>
+<tr>
+<td>Carcinógenos ambientales</td>
+<td>Rayos ultravioleta, polución, arsénico en aguas, metotrexato, asbestos, carne a la brasa, dieta rica en grasas (ver carcinogenia química)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="edad">Edad</h3>
+<ul>
+<li>La mayoría de los carcinomas aparecen en mayores de 55 años; los tumores malignos son la principal causa de muerte en mujeres de 40 a 79 años y hombres de 60 a 79. La incidencia creciente con la edad se explica probablemente por la acumulación de mutaciones somáticas y por la disminución de la capacidad inmunitaria.</li>
+<li>Los tumores malignos causan aproximadamente el 10% de las muertes de niños menores de 15 años en EE. UU., solo superadas por los accidentes. Los tumores pediátricos se deben en mayor medida a mutaciones hereditarias (particularmente en genes supresores) y menos a carcinógenos ambientales; por eso los carcinomas son muy infrecuentes en niños. La leucemia aguda y las neoplasias del sistema nervioso central causan aproximadamente el 60% de las muertes infantiles por tumores. Entre las neoplasias comunes de la infancia están los tumores de células azules redondas pequeñas: neuroblastoma, tumor de Wilms, retinoblastoma, leucemia linfoblástica aguda y rabdomiosarcoma.</li>
+</ul>
+<h3 id="inflamación-crónica-lesiones-precursoras-e-inmunodeficiencia">Inflamación crónica, lesiones precursoras e inmunodeficiencia</h3>
+<ul>
+<li><strong>Inflamación crónica</strong>: relación propuesta por Virchow (1863). Ejemplos de la tabla 7.4: asbestosis y silicosis (mesotelioma, carcinoma pulmonar); enfermedad inflamatoria intestinal (carcinoma colorrectal); liquen escleroso (carcinoma escamoso vulvar); pancreatitis (carcinoma de páncreas); colecistitis crónica (cáncer de vesícula biliar); esofagitis por reflujo, esófago de Barrett (carcinoma esofágico); síndrome de Sjögren, tiroiditis de Hashimoto (linfoma MALT); opistorquiasis (colangiocarcinoma, carcinoma de colon); H. pylori (adenocarcinoma gástrico, linfoma MALT); hepatitis B y C (carcinoma hepatocelular); osteomielitis con senos que drenan (carcinoma cutáneo de seno); virus del papiloma humano, cervicitis crónica (carcinoma cervical); esquistosomiasis con cistitis crónica (carcinoma de vejiga). Mecanismo: proliferación compensadora que repara el daño, posible aumento de la reserva de células madre tisulares y producción por las células inmunitarias de especies reactivas de oxígeno con daño del ADN. El diagnóstico y tratamiento de la gastritis por H. pylori alivia este riesgo de cáncer gástrico.</li>
+<li><strong>Lesiones precursoras</strong>: cambios morfológicos localizados que identifican un campo de epitelio con mayor riesgo de transformación; adoptan forma de hiperplasia, metaplasia o displasia. Ejemplo clásico hiperplásico: la hiperplasia endometrial por estimulación estrogénica sostenida. Ejemplo de neoplasia benigna precursora: el adenoma velloso del colon, que progresa a cáncer en aproximadamente el 50% de los casos si no se trata. La mayoría de los tumores benignos se transforman de forma infrecuente (leiomioma, adenoma pleomorfo) o no se transforman en absoluto (lipoma).</li>
+<li><strong>Inmunodeficiencia</strong>: los pacientes inmunodeprimidos, en particular con déficit de inmunidad de linfocitos T, tienen mayor riesgo de tumores, especialmente de los causados por virus oncógenos (linfomas, ciertos carcinomas, algunos sarcomas y proliferaciones seudosarcomatosas).</li>
+</ul>
+<h3 id="predisposición-genética">Predisposición genética</h3>
+<ul>
+<li>En algunas familias los tumores son rasgo hereditario, generalmente por mutaciones de la línea germinal en un gen supresor de tumores. Aproximadamente el 95% de los tumores en EE. UU. son <strong>esporádicos</strong>; la evaluación de las contribuciones hereditarias es difícil por las interacciones complejas.</li>
+<li>Ejemplo de interacción: en mujeres portadoras de mutaciones de la línea germinativa en <strong>BRCA1</strong> o <strong>BRCA2</strong>, el riesgo de cáncer de mama es casi 3 veces mayor en las nacidas después de 1940, quizás por cambios en los antecedentes reproductivos.</li>
+<li>Los factores genéticos también modulan carcinógenos ambientales: la variación (polimorfismos) de enzimas como el citocromo P-450 influye en la conversión de procarcinógenos en carcinógenos activos; un polimorfismo de un gen P-450 confiere susceptibilidad al cáncer de pulmón inducido por tabaquismo.</li>
+</ul>
+
+</section><section id="sec-05-bases-moleculares-de-los-tumores-malignos-alteraciones-geneticas" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>Bases moleculares de los tumores malignos: alteraciones genéticas y epigenéticas</h2>
+<p>Temas genómicos generales:</p>
+<ul>
+<li>El daño genético no letal está en el corazón de la carcinogenia. La causa puede ser ambiental (mutaciones adquiridas por virus, sustancias químicas o productos del metabolismo que dañan el ADN como las especies reactivas de oxígeno, o que alteran la expresión por vía epigenética, como los oncometabolitos), heredada en la línea germinal o espontánea y aleatoria.</li>
+<li>Los tumores son <strong>clonales</strong>: provienen de la expansión de una sola célula precursora dañada; todas las células del tumor comparten las mutaciones presentes en el momento de la transformación.</li>
+<li>Cuatro clases de genes son los principales objetivos de las mutaciones: <strong>protooncogenes</strong> promotores del crecimiento, <strong>genes supresores de tumores</strong>, genes responsables de la <strong>reparación del ADN</strong> y genes que gobiernan la <strong>apoptosis</strong> (menor muerte, mayor supervivencia).</li>
+<li>Las mutaciones activadoras de protooncogenes son de ganancia de función y los oncogenes resultan <strong>dominantes</strong> (basta una copia). Las mutaciones de genes supresores suelen ser de pérdida de función y comportarse como <strong>recesivas</strong> (ambos alelos); excepción: la <strong>haploinsuficiencia</strong> en la que la pérdida de un solo alelo basta.</li>
+<li>La primera mutación conductora es la <strong>mutación iniciadora</strong>, mantenida en todas las células posteriores. Ninguna parece transformadora por sí sola; el pródromo preclínico puede ser largo: en la leucemia linfoblástica aguda infantil se encuentran células con mutaciones iniciadoras en sangre hasta una década antes del diagnóstico. Esta persistencia sugiere origen en células con propiedades de <strong>células madre tumorales</strong>, con capacidad de autorrenovación.</li>
+<li>Las mutaciones que producen inestabilidad genómica elevan la frecuencia de mutaciones sin consecuencias fenotípicas, las <strong>mutaciones pasajeras</strong> (mucho más numerosas que las conductoras, que pueden llegar a ser centenas o miles). Otras mutaciones contribuyen interfiriendo las respuestas inmunitarias o alterando las interacciones con el estroma.</li>
+<li>Cuando el tumor se hace clínicamente evidente (masa de aproximadamente 1 g) ha pasado por un mínimo de 30 duplicaciones celulares. Durante la expansión surgen subclones genéticamente distintos que compiten por nutrientes y nichos; los más aptos dominan la masa tumoral (<strong>progresión tumoral</strong>). En estudios de secuenciación de carcinomas de células renales se identificaron mutaciones presentes en todos los sitios (propias de la célula fundadora) y mutaciones exclusivas de algunos sitios (adquiridas después), lo que permite construir árboles genealógicos tumorales. El tratamiento eficaz es una presión selectiva: los tumores que reaparecen tras el tratamiento casi siempre son resistentes a su readministración.</li>
+<li>Aberraciones <strong>epigenéticas</strong>: la metilación del ADN tiende a silenciar genes y las modificaciones de histonas potencian o inhiben la expresión. La metilación aberrante explica el silenciamiento de algunos genes supresores. A diferencia de las mutaciones, los cambios epigenéticos son posiblemente reversibles con fármacos.</li>
+</ul>
+<h3 id="características-distintivas-de-los-tumores-malignos">Características distintivas de los tumores malignos</h3>
+<p>Ocho cambios fundamentales de la fisiología celular (modelo de Hanahan y Weinberg) y dos características habilitadoras:</p>
+<ol type="1">
+<li>Autosuficiencia respecto de las señales de crecimiento (activación de oncogenes).</li>
+<li>Insensibilidad a las señales inhibidoras del crecimiento (inactivación de genes supresores).</li>
+<li>Metabolismo celular alterado (glucólisis aeróbica, efecto Warburg).</li>
+<li>Evasión de la apoptosis.</li>
+<li>Potencial replicativo ilimitado (evasión de la senescencia y la catástrofe mitótica).</li>
+<li>Angiogenia sostenida.</li>
+<li>Capacidad de invadir y metastatizar.</li>
+<li>Capacidad de eludir la respuesta inmunitaria del huésped. Habilitadoras: <strong>inestabilidad genómica</strong> e <strong>inflamación promovida por el tumor</strong>.</li>
+</ol>
+
+</section><section id="sec-06-autosuficiencia-respecto-de-las-senales-de-crecimiento-oncogenes" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>Autosuficiencia respecto de las señales de crecimiento: oncogenes</h2>
+<ul>
+<li>Un <strong>oncogén</strong> es un gen mutado que causa crecimiento excesivo sin señales externas. Los oncogenes son versiones mutadas o sobreexpresadas de genes normales (<strong>protooncogenes</strong>) y codifican <strong>oncoproteinas</strong> constitutivamente activas y resistentes al control por señales externas.</li>
+<li>La señalización fisiológica por factores de crecimiento sigue estos pasos: unión del factor a su receptor específico; activación transitoria del receptor; transmisión de la señal por transductores citoplásmicos y segundos mensajeros; activación de factores de transcripción y cambios epigenéticos; expresión de genes del ciclo celular y de genes de supervivencia y de cambios metabólicos.</li>
+<li>Vías de señalización implicadas en tumores: receptor tirosina cinasa, receptor acoplado a proteína G, JAK/STAT, WNT, Notch, Hedgehog, TGF-β/SMAD y NF-κB.</li>
+</ul>
+<h3 id="oncoproteinas-y-crecimiento-celular">Oncoproteinas y crecimiento celular</h3>
+<ul>
+<li><strong>Factores de crecimiento</strong>: acción normalmente <strong>paracrina</strong>. Algunas células tumorales sintetizan el factor al que responden (<strong>bucle autocrino</strong>): los glioblastomas expresan frecuentemente PDGF y su receptor PDGFR, y muchos sarcomas sobreexpresan TGF y su receptor (el receptor del factor de crecimiento epidérmico, EGFR).</li>
+<li><strong>Receptores del factor de crecimiento</strong> (receptores tirosina cinasas, los más importantes en tumores): normalmente se activan de forma transitoria, pasan a estado dimérico activo y autofosforilan residuos de tirosina que reclutan RAS y PI3K. Se activan de forma constitutiva por mutaciones puntuales, reordenamientos o amplificaciones (tabla 7.5). Ejemplos de importancia clínica:
+<ul>
+<li><strong>ERBB1 (EGFR)</strong>: mutaciones puntuales activadoras en un subconjunto de adenocarcinomas de pulmón; los tumores responden a inhibidores de EGFR. La resistencia aparece a menudo por otras mutaciones del EGFR que impiden la unión del fármaco o por amplificación de <strong>MET</strong>.</li>
+<li><strong>ERBB2 (HER2)</strong>: en cánceres de mama no se activa por mutación puntual sino por <strong>amplificación</strong>; sobreexpresión del receptor HER2. Responden bien a anticuerpos o fármacos que inhiben HER2, que además de bloquear el crecimiento inducen apoptosis y regresión tumoral.</li>
+<li><strong>ALK</strong>: receptor tirosina cinasa que puede ser constitutivamente activo por reordenamiento. En un subconjunto de adenocarcinomas de pulmón, una deleción en el cromosoma 5 fusiona ALK con <strong>EML4</strong>; la proteína quimérica EML4-ALK tiene actividad tirosina cinasa constitutiva. Los inhibidores de EGFR y ALK producen respuestas similares en los adenocarcinomas de pulmón con estas lesiones, pero los tratamientos dirigidos no suelen ser curativos en tumores avanzados.</li>
+</ul></li>
+<li><strong>RAS</strong> (genes HRAS, KRAS y NRAS): proteínas G pequeñas asociadas a membrana que alternan entre estado activo unido a GTP y estado inactivo unido a GDP. Las mutaciones puntuales de RAS constituyen el tipo más común de anomalía de protooncogenes en los tumores humanos: el 15 a 20% de todos los tumores; aproximadamente el 90% de los adenocarcinomas pancreáticos, alrededor del 50% de los cánceres de colon, endometrio y tiroides, y el 30% de los adenocarcinomas de pulmón y de las leucemias mieloides. Las proteínas activadoras de la GTPasa (<strong>GAP</strong>) aceleran la actividad GTPasa de RAS más de 1.000 veces, terminando la señal. Las mutaciones reducen la actividad GTPasa y RAS queda atrapado unido a GTP, enviando señales de crecimiento continuas. La pérdida de la GAP codificada por el gen <strong>NF1</strong> produce el mismo efecto (neurofibromatosis tipo 1); NF1 actúa como supresor tumoral por regulación negativa de RAS.</li>
+<li>Cascadas distales a RAS: <strong>MAPK</strong> y <strong>PI3K/AKT</strong>.
+<ul>
+<li><strong>BRAF</strong> (serina/treonina cinasa): mutaciones activadoras en cerca del 100% de las leucemias de células peludas, el 60% de los melanomas y un porcentaje menor de otras neoplasias como los carcinomas de colon. Las mutaciones de miembros distales son menos comunes, lo que sugiere que las alteraciones en la parte superior de la cascada favorecen el crecimiento de forma más eficaz.</li>
+<li><strong>PI3K/AKT</strong>: mutaciones de ganancia de función en aproximadamente el 30% de los carcinomas de mama; en otros casos la cascada queda sin freno por pérdida del regulador <strong>PTEN</strong>, supresor tumoral frecuentemente mutado en el carcinoma endometrial. AKT activa una cascada de serina/treonina cinasas y fosforila más de 150 proteínas, entre ellas reguladores clave de la síntesis de proteínas (mTOR) y de la apoptosis (BAD, factores de transcripción FOXO, MDM2 y IAP).</li>
+<li><strong>Adicción a los oncogenes</strong>: las células tumorales pueden depender en gran medida de la actividad de una oncoproteina. Ejemplo: los inhibidores de BRAF producen respuestas en melanomas avanzados solo en tumores con mutación de BRAF; los melanomas con BRAF de tipo silvestre no responden. Esto subraya la necesidad de análisis molecular previo al tratamiento.</li>
+</ul></li>
+<li>En los tumores con mutaciones de RAS casi nunca hay mutaciones activadoras de los receptores tirosina cinasa (mutuamente excluyentes), lo que tiene consecuencias para los tratamientos dirigidos.</li>
+<li><strong>Tirosina cinasas no receptoras</strong>: con frecuencia activadas por translocaciones que crean genes de fusión con actividad cinasa constitutiva. Ejemplo: en la <strong>leucemia mieloide crónica (LMC)</strong> y en un subconjunto de leucemias linfoblásticas agudas, el gen <strong>ABL</strong> se traslada desde el cromosoma 9 al 22 y se fusiona con <strong>BCR</strong>; la proteína BCR-ABL quimérica tiene actividad tirosina cinasa constitutiva, desencadenada por la autoasociación promovida por BCR. El tratamiento con inhibidores de BCR-ABL es un ejemplo clave de adicción a oncogenes, pero no cura: las infrecuentes células madre de la LMC portan el gen de fusión pero no dependen de sus señales para sobrevivir, por lo que el tratamiento debe continuarse indefinidamente, y de suspenderse reaparece la leucemia. Este hecho señala la posible resistencia de las células similares a células madre a los tratamientos dirigidos.
+<ul>
+<li>Mutaciones puntuales activadoras de <strong>JAK2</strong> (tirosina cinasa de la vía JAK/STAT) destruyen los dominios autorreguladores negativos; liberan a las células tumorales de su dependencia de factores de crecimiento hematopoyético como la eritropoyetina en varias neoplasias mieloides y han llevado al desarrollo de inhibidores de JAK2.</li>
+</ul></li>
+<li><strong>Factores de transcripción</strong>: MYC, MYB, JUN, FOS y REL; MYC es el más frecuentemente afectado.
+<ul>
+<li><strong>MYC</strong>: gen de respuesta temprana inmediata inducido por la señalización RAS/MAPK. Sus funciones incluyen: activación de genes del crecimiento celular (ciclinas D) y del ARN ribosómico con mejora del ensamblaje de ribosomas; regulación al alza de la reprogramación metabólica y del <strong>efecto Warburg</strong> (enzimas glucolíticas y metabolismo de la glutamina); en algunos contextos, potenciación de la expresión de <strong>telomerasa</strong>; y contribución a la pluripotencialidad (MYC es uno de los factores capaces de reprogramar células somáticas en células madre pluripotenciales).</li>
+<li>Desregulación de MYC: translocación al locus del gen del receptor de antígeno en el <strong>linfoma de Burkitt</strong> y otros tumores de linfocitos B y T (los potenciadores de la inmunoglobulina impiden el control normal y causan sobreexpresión); amplificación del gen en cánceres de mama, colon y pulmón; amplificación de <strong>NMYC</strong> en neuroblastomas y de <strong>LMYC</strong> en tumores de células pequeñas del pulmón; aumento indirecto por señalización constitutiva de RAS/MAPK, Notch, Wnt (carcinoma de colon) o Hedgehog (meduloblastoma); polimorfismos de un solo nucleótido (SNP) en elementos potenciadores próximos, asociados a riesgo heredado de carcinoma de próstata y ovario y ciertas leucemias. Los tumores de crecimiento más rápido, como el linfoma de Burkitt, tienen las concentraciones más elevadas de MYC.</li>
+</ul></li>
+<li><strong>Ciclinas y cinasas dependientes de ciclinas (CDK)</strong>: la progresión del ciclo celular está coordinada por complejos <strong>CDK-ciclina</strong> que fosforilan dianas cruciales; las ciclinas activan y los <strong>inhibidores de CDK</strong> los silencian (tabla 7.6). Hay dos <strong>puntos de control</strong> principales del ciclo celular, en la transición G1/S y en la transición G2/M, regulados por un equilibrio de genes promotores y supresores y por sensores de daño del ADN. Los defectos del control G1/S son los más importantes porque además comprometen la reparación del ADN (fenotipo mutador).
+<ul>
+<li>Ganancia de función: genes de <strong>ciclina D</strong> (D1, D2 y D3, funcionalmente intercambiables) desregulados por translocaciones (tumores linfoides) y amplificación (tumores sólidos); amplificación del gen <strong>CDK4</strong> en melanomas, sarcomas y glioblastomas. Los inhibidores de CDK4 son eficaces en cánceres de mama avanzados con actividad excesiva de CDK4. Las mutaciones de otras CDK y de la ciclina E son poco frecuentes.</li>
+<li>Pérdida de función: de los inhibidores de CDK. <strong>p16 (CDKN2A)</strong>: mutaciones de la línea germinal en el 25% de las familias propensas al melanoma; deleción o inactivación somática en el 75% de los carcinomas pancreáticos, el 40-70% de glioblastomas, el 50% de cánceres esofágicos, el 20-70% de leucemias linfoblásticas agudas y el 20% de carcinomas pulmonares de células no pequeñas, sarcomas de tejidos blandos y cánceres de vejiga.</li>
+</ul></li>
+</ul>
+
+</section><section id="sec-07-insensibilidad-a-la-inhibicion-del-crecimiento-genes-supresores-" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>Insensibilidad a la inhibición del crecimiento: genes supresores de tumores</h2>
+<ul>
+<li>Los productos de estos genes frenan la proliferación celular; su fallo es otra de las bases de la carcinogenia. Participan en la red que responde al estrés genotóxico y también en la regulación de la diferenciación, y pueden actuar como factores de transcripción, inhibidores del ciclo, transductores de señal, receptores de superficie y reguladores de la respuesta al daño del ADN (tabla 7.7). Los conceptos surgieron del estudio del <strong>retinoblastoma</strong>: cerca del 40% de los retinoblastomas son <strong>familiares</strong> (transmisión como rasgo autosómico dominante; riesgo 10.000 veces mayor, a menudo bilateral, con mayor riesgo de osteosarcoma y otros sarcomas); el 60% restante es <strong>esporádico</strong> (casi siempre unilateral).</li>
+<li><strong>Hipótesis del segundo golpe de Knudson</strong>: se necesitan dos mutaciones en ambos alelos de RB. En la forma familiar se hereda una copia defectuosa (primer golpe) y el alelo normal sufre una mutación somática (segundo golpe), prácticamente inevitable en algún retinoblasto; por eso la enfermedad se hereda como rasgo dominante. En los casos esporádicos ambos golpes deben ocurrir en la misma célula y por eso son poco frecuentes.</li>
+</ul>
+<h3 id="rb-gobernador-del-ciclo-celular">RB, gobernador del ciclo celular</h3>
+<ul>
+<li>RB es el regulador negativo clave de la transición G1/S y esta inactivado directa o indirectamente en la mayoría de los tumores malignos. En células en reposo se encuentra <strong>hipofosforilado (activo)</strong> y se une a los factores de transcripción <strong>E2F</strong> que regulan los genes de fase S; al fosforilarse por los complejos ciclina D-CDK4/CDK6 y ciclina E-CDK2 se <strong>hiperfosforila (inactivo)</strong> y libera E2F, permitiendo la progresión del ciclo. Los inhibidores del crecimiento (TGF-β, p53) actúan regular al alza los inhibidores de CDK y mantienen RB activo; RB es el punto de integración de las señales opuestas.</li>
+<li>El efecto antiproliferativo de RB se anula en los tumores por: mutaciones de RB con pérdida de función (retinoblastoma, osteosarcoma, y subconjuntos de glioblastoma y carcinomas de pulmón, mama y vejiga); amplificación de CDK4 y de ciclina D; inactivación de los inhibidores de CDK como p16/INK4a; y oncoproteinas virales que se unen a RB (antígenos T de poliomavirus; proteinas E7 de VPH de alto riesgo, como VPH-16). Al menos uno de los cuatro genes del eje (p16/INK4a, ciclina D, CDK4, RB) esta desregulado en la gran mayoría de los tumores humanos.</li>
+</ul>
+<h3 id="tp53-guardián-del-genoma">TP53, guardián del genoma</h3>
+<ul>
+<li><strong>TP53</strong> (cromosoma 17p13.1), el gen mutado con más frecuencia en los tumores malignos humanos: mutaciones con pérdida de función de ambos alelos en más del 50% de los tumores, en prácticamente todos los tipos (pulmón, colon y mama son las tres causas principales de muerte por tumores). Con menos frecuencia se hereda una copia mutada: el <strong>síndrome de Li-Fraumeni</strong>, con una probabilidad 25 veces mayor de tumor maligno a los 50 años; sarcomas, cánceres de mama, leucemias, tumores cerebrales y carcinomas de la corteza suprarrenal, a menudo tempranos y múltiples.</li>
+<li>La función de p53 también se pierde de manera indirecta: sobreexpresión de <strong>MDM2</strong>, que lo ubiquitina y lo degrada (el gen MDM2 esta amplificado en el 33% de los sarcomas humanos), o oncoproteinas de virus ADN como la <strong>E6 del VPH</strong> de alto riesgo que promueven su degradación.</li>
+<li><strong>p53</strong> es el punto focal de una red que detecta estrés celular: daño del ADN, hipoxia, acortamiento de los telómeros y estrés por señalización excesiva a favor del crecimiento (RAS o MYC mutados). En células normales esta contenida por su unión a MDM2. El daño del ADN y la hipoxia activan las cinasas <strong>ATM</strong> y <strong>ATR</strong>, que fosforilan p53 y MDM2 e interrumpen su degradación; el estrés oncógeno eleva p14/ARF (codificado por CDKN2A), que se une a MDM2 y desplaza a p53.</li>
+<li>Una vez acumulado, p53 (factor de transcripción) produce tres efectos, cada uno más grave:
+<ol type="1">
+<li><strong>Detención transitoria del ciclo celular</strong> en G1: por inducción del inhibidor de CDK <strong>p21</strong> (CDKN1A), que bloquea la progresión de G1 a S, y de proteínas como <strong>GADD45</strong> que mejoran la reparación del ADN. Si el daño se repara, p53 desciende y el ciclo se libera.</li>
+<li><strong>Senescencia</strong>: detención permanente del ciclo celular con cambios específicos; se atribuye a cambios epigenéticos que forman heterocromatina en los loci clave de la progresión del ciclo.</li>
+<li><strong>Apoptosis</strong>: transcripción de genes proapoptósicos como <strong>BAX</strong> y <strong>PUMA</strong>, que inclinan la balanza hacia la vía intrínseca (mitocondrial).</li>
+</ol></li>
+<li>La vía final depende de la duración y el grado de la activación: la afinidad de p53 por los genes de reparación es mayor que la de los genes proapoptósicos, por lo que la reparación se activa primero; con p53 persistente se silencian epigenéticamente los genes del ciclo (senescencia); con suficiente acumulación se activan los genes proapoptósicos y la célula muere.</li>
+<li>Repercusión terapéutica: la radiación y la quimioterapia medían sus efectos induciendo daño del ADN y apoptosis, por lo que los tumores con TP53 de tipo silvestre (tumores testiculares germinativos, leucemias linfoblásticas agudas infantiles) responden mejor que los que portan mutaciones de TP53 (cáncer de pulmón, colorrectal). Con p53 defectuoso surge además un fenotipo mutador y subclones resistentes a cualquier tratamiento.</li>
+</ul>
+<h3 id="otros-genes-supresores-de-tumores-selección-de-la-tabla-77">Otros genes supresores de tumores (selección de la tabla 7.7)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Insensibilidad a la inhibición del crecimiento: genes supresores de tumores" tabindex="0"><table>
+<thead>
+<tr>
+<th>Gen</th>
+<th>Función</th>
+<th>Síndromes familiares o tumores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APC</td>
+<td>Regulación negativa de la vía WNT (destrucción de β-catenina)</td>
+<td>Poliposis adenomatosa familiar; carcinomas de colon esporádicos</td>
+</tr>
+<tr>
+<td>Cadherina E (CDH1)</td>
+<td>Adhesión celular, señalización/inhibición por contacto</td>
+<td>Carcinoma gástrico familiar</td>
+</tr>
+<tr>
+<td>Vía TGF-β (receptores, SMAD2, SMAD4)</td>
+<td>Inhibición de la proliferación en epitelios normales</td>
+<td>Carcinomas de colon, estómago, endometrio y páncreas</td>
+</tr>
+<tr>
+<td>NF1</td>
+<td>GAP que inhibe RAS/MAPK</td>
+<td>Neurofibromatosis tipo 1</td>
+</tr>
+<tr>
+<td>NF2</td>
+<td>Estabilidad del citoesqueleto, vía Hippo</td>
+<td>Neurofibromatosis tipo 2 (schwannoma, meningioma)</td>
+</tr>
+<tr>
+<td>PTCH</td>
+<td>Inhibidor de la señalización Hedgehog</td>
+<td>Síndrome de Gorlin (carcinoma basocelular, meduloblastoma)</td>
+</tr>
+<tr>
+<td>PTEN</td>
+<td>Fosfatasa, inhibidor de PI3K/AKT</td>
+<td>Síndrome de Cowden; carcinomas de mama, endometrio y tiroides</td>
+</tr>
+<tr>
+<td>CDKN2A</td>
+<td>p16/INK4a (inhibidor de CDK) y p14/ARF (activador de p53)</td>
+<td>Melanoma familiar; carcinomas pancreáticos, mamarios, esofágicos y leucemias</td>
+</tr>
+<tr>
+<td>RB</td>
+<td>Inhibidor de la transición G1/S</td>
+<td>Retinoblastoma familiar; osteosarcoma</td>
+</tr>
+<tr>
+<td>STK11 (LKB1)</td>
+<td>Activador de las cinasas AMPK, supresor del metabolismo de crecimiento</td>
+<td>Síndrome de Peutz-Jeghers; carcinomas digestivos y de páncreas</td>
+</tr>
+<tr>
+<td>VHL</td>
+<td>Ubiquitinación de HIF1 (factor inducido por hipoxia)</td>
+<td>Carcinoma de células renales de von Hippel-Lindau</td>
+</tr>
+<tr>
+<td>BRCA1 y BRCA2</td>
+<td>Reparación de roturas de doble hebra (recombinación homóloga)</td>
+<td>Cáncer de mama y de mama y ovario familiar</td>
+</tr>
+<tr>
+<td>MSH2, MLH1, MSH6</td>
+<td>Reparación de errores de apareamiento</td>
+<td>Cáncer colorrectal hereditario no poliposo (síndrome de Lynch)</td>
+</tr>
+<tr>
+<td>WT1</td>
+<td>Factor de transcripción</td>
+<td>Tumor de Wilms familiar</td>
+</tr>
+<tr>
+<td>MEN1 (menina)</td>
+<td>Factor de transcripción</td>
+<td>Neoplasia endocrina múltiple tipo 1</td>
+</tr>
+<tr>
+<td>SDHB, SDHD</td>
+<td>Subunidades B y D del complejo succinato deshidrogenasa</td>
+<td>Paraganglioma familiar, feocromocitoma</td>
+</tr>
+<tr>
+<td>TP53</td>
+<td>Detención del ciclo y apoptosis en respuesta al daño del ADN</td>
+<td>Síndrome de Li-Fraumeni</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>APC (5q21)</strong>: las mutaciones de la linea germinal causan la poliposis adenomatosa familiar, con miles de pólipos adenomatosos en el colon durante la adolescencia o la tercera década y, casi invariablemente, uno o más pólipos malignos; la pérdida bialélica es necesaria para que se desarrolle el adenoma y se requieren varias mutaciones adicionales para la progresión a cáncer. Aproximadamente el 70-80% de los carcinomas colorrectales no familiares y de los adenomas esporádicos también presentan defectos adquiridos de APC. La vía WNT: en células en reposo, APC forma parte de un <strong>complejo de destrucción</strong> que degrada la β-catenina; WNT bloquea ese complejo, estabiliza la β-catenina y permite su traslocación al núcleo, donde forma un complejo de activación con TCF que aumenta la expresión de MYC, ciclina D1 y otros genes. Sin APC, la célula se comporta como si estuviera siempre estimulada por WNT. En el epitelio, también forman parte del complejo cadherina E/β-catenina la que mantiene la adhesión entre células epiteliales y permite la señalización; la pérdida de esta interacción (o de contacto célula-célula) reduce la señal proliferativa.</li>
+<li><strong>Cadherina E (CDH1)</strong>: glucoproteína transmembrana que media la adhesión homotípica de las células epiteliales y transmite de señales; se une a β-catenina. En muchos carcinomas (estómago, mama, colon, ovario, próstata, esófago) la expresión está reducida. La pérdida de contactos impide la <strong>inhibición por contacto</strong>: en epitelios normales, el restablecimiento de contactos de cadherina E al cicatrizar una herida secuestra β-catenina en la membrana y reduce la señal; la cadherina E también contribuye al fenotipo maligno al permitir la disgregación de las células que luego invaden o metastatizan; las mutaciones de CDH1 en la línea germinal asociadas a carcinoma gástrico familiar, y una parte de los carcinomas gástricos esporádicos muestra pérdida de expresión.</li>
+<li><strong>CDKN2A</strong>: locus complejo que codifica dos productos: <strong>p16/INK4a</strong>, que bloquea la fosforilación de RB mediada por CDK4/ciclina D, reforzando la señal de arresto en G1/S; y <strong>p14/ARF</strong>, que activa la vía p53 por inhibición de MDM2. Ambas proteínas son esenciales para la senescencia de los tumores. En algunos tumores (cáncer de cérvix), p16 se silencia por <strong>hipermetilación</strong> en lugar de por mutación.</li>
+<li><strong>Vía TGF-β</strong>: en células epiteliales, endoteliales y hematopoyéticas normales es un potente inhibidor de la proliferación: activa genes antiproliferativos (inhibidores de CDK) y desactiva genes procrecimiento como MYC y ciclinas, disminuyendo la fosforilación de RB. En muchos tumores malignos esta acción se pierde por mutaciones de los receptores de TGF-β (cánceres de colon, estómago y endometrio), de <strong>SMAD4</strong> (cánceres de páncreas), o por mutaciones puntos engenes dianas como p21 o expresión persistente de MYC. La vía TGF-β es un arma de doble filo, ya que sus elementos conservados pueden en algunos contextos <strong>facilitar</strong> la adquisición de características tumorales como la evitación de la inmunidad o la angiogenia.</li>
+<li><strong>PTEN (10q23)</strong>: homólogo de la tensina, codifica una fosfatasa asociada a membrana que actúa como freno de la cascada PI3K/AKT. Las mutaciones de la línea germinal causan el <strong>síndrome de Cowden</strong> (tumores benignos cutáneos y de la mama y riesgo de carcinomas de mama, endometrio y tiroides). Su función se pierde en muchos tumores por deleción, mutación puntual o silenciamiento epigenético.</li>
+<li><strong>VHL (3p)</strong>: la proteína VHL es un componente de un complejo de ubiquitinación que degrada <strong>HIF1</strong> (factor inducible por hipoxia); en presencia de O2, HIF1 se hidroxila y es degradado, pero en hipoxia escapa del reconocimiento y se acumula en el núcleo activando genes de factores de crecimiento como <strong>VEGF</strong> (factor de crecimiento del endotelio vascular), PDGF, GLUT1 y enzimas glucolíticas. La pérdida de VHL impide esta degradación y se asocian a concentraciones aumentadas de factores angiogénicos (angiogenia en patología de carcinomas renales).</li>
+<li><strong>STK11 (LKB1)</strong>: serina/treonina cinasa que activa la vía AMPK en estado de déficit de nutrientes; sus mutaciones de línea germinal causan el síndrome de Peutz-Jeghers (pólipos digestivos y riesgo de carcinomas digestivos y pancreáticos). También se pierden en carcinomas esporádicos, lo que relaciona la alteración metabólica con el mantenimiento del estado transformado.</li>
+<li>La <strong>neurofibromatosis tipo 1 (NF1)</strong> es el ejemplo canónico de un gen supresor que actúa por regulación negativa de RAS; la mutación de NF1 que desactiva la función GAP da lugar a crecimiento descontrolado.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Tres salidas de p53, en orden de gravedad</span>Frente a estrés celular p53 induce primero detención en G1 (p21, GADD45), luego senescencia y finalmente apoptosis (BAX, PUMA). Se pierde por mutación bialélica en más del 50% de los tumores, o indirectamente por MDM2 sobreexpresado o E6 del VPH; su síndrome hereditario es Li-Fraumeni.</div>
+</section><section id="sec-08-alteraciones-metabolicas-efecto-warburg-autofagia-y-oncometaboli" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>Alteraciones metabólicas: efecto Warburg, autofagia y oncometabolitos</h2>
+<ul>
+<li><strong>Efecto Warburg (glucólisis aeróbica)</strong>: incluso en presencia de abundante oxígeno, las células tumorales muestran alta captación de glucosa y producción de lactato por la vía glucolítica. Clínicamente, el hambre de glucosa de los tumores permite su visualización por <strong>tomografía por emisión de positrones (PET)</strong> con 18F-fluorodesoxiglucosa, un derivado no metabolizable de la glucosa que se acumula en células tumorales.</li>
+<li>Aunque la glucólisis genera solo 2 ATP por glucosa (frente a 36 de la fosforilación oxidativa), la glucólisis aeróbica aporta a la célula en rápida división los <strong>intermediarios metabólicos</strong> necesarios para sintetizar los componentes celulares (ADN, ARN, proteínas, lípidos) que debe duplicar antes de dividirse. La fosforilación oxidativa produce ATP pero no restos de carbono biosintéticos. El metabolismo de Warburg no es exclusivo de los tumores: es una propiedad de las células en crecimiento general, que en éstas cesa cuando el tejido deja de crecer, pero que en las células tumorales persiste de forma fija por acción de oncogenes y de la pérdida de supresores.</li>
+<li>Mecanismos de activación de la reprogramación metabólica: la vía <strong>PI3K/AKT</strong> debida al receptor tirosina cinasa regulado aumenta el transporte de glucosa, las enzimas glucolíticas, la lipogenesis y la síntesis de proteínas (vía mTOR); la señalización distal del receptor tirosina cinasa inhibe la <strong>piruvato cinasa</strong>, provocando acumulación de intermediarios glucolíticos que se desvían a la síntesis de ADN, ARN y proteínas; <strong>MYC</strong> activa enzimas glucolíticas y la <strong>glutaminasa</strong>, que emplea glutamina como fuente de carbono. Los supresores del crecimiento (<strong>PTEN</strong>, <strong>NF1</strong>, p53) se oponen a estos efectos.</li>
+<li><strong>Autofagia</strong>: en condiciones de deficiencia grave de nutrientes, las células canibalizan sus propios orgánulos, proteínas y membranas como fuentes de carbono. En los tumores, varios genes de la autofagia actúan como supresores (su pérdida favorece el crecimiento), aunque algunos datos sugieren que, bajo gran privación, la autofagia permite a las células tumorales quedar en un estado de latencia metabólica y resistir los tratamientos. Por tanto puede ser amiga o enemiga del tumor según el contexto.</li>
+<li><strong>Oncometabolismo</strong>: mutaciones en enzimas del ciclo de Krebs revelan un nuevo mecanismo oncogénico. La <strong>isocitrato deshidrogenasa (IDH)</strong> mutada adquiere una nueva actividad enzimática que produce <strong>2-hidroxiglutarato (2-HG)</strong>, un <strong>oncometabolito</strong> que inhibe enzimas dependientes de α-cetoglutarato, incluidos los factores <strong>TET</strong> (p. ej., TET2) implicados en la desmetilación del ADN. La pérdida de TET2 altera los patrones de metilación y conduce a la expresión aberrante de genes tumorales (en algunos casos, regulación al alza de RAS y de la señalización del receptor tirosina cinasa). Las mutaciones de IDH se han descrito en colangiocarcinomas, gliomas, leucemias mieloides agudas y sarcomas. Existen fármacos que inhiben la IDH mutada (y no la normal), ya utilizados en las leucemias con estas mutaciones.</li>
+</ul>
+
+</section><section id="sec-09-evasion-de-la-muerte-celular" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>Evasión de la muerte celular</h2>
+<ul>
+<li>Las células tumorales con frecuencia tienen mutaciones o cambios de expresión que les confieren resistencia a la apoptosis. El <strong>nudo central</strong> es la vía <strong>intrínseca (mitocondrial)</strong>, el "árbitro de la vida y la muerte" en las células tumorales, que se desencadena por ausencia de factores de crecimiento, daño del ADN, alteraciones metabólicas, ERO producidas por el propio metabolismo y estirones del retículo endoplásmico.</li>
+<li>La vía intrínseca conduce a la <strong>permeabilización de la membrana externa mitocondrial</strong> y la liberación de moléculas como el <strong>citocromo c</strong>, que con su unión a APAF-1 activa la <strong>caspasa 9</strong> y las caspasas ejecutoras. La integridad de la membrana mitocondrial depende del equilibrio entre los miembros de la familia de proteínas <strong>BCL2</strong>: los proapoptósicos <strong>BAX</strong> y <strong>BAK</strong> forman poros e inducen la apoptosis; los antiapoptósicos <strong>BCL2</strong>, <strong>BCL-XL</strong> y <strong>MCL-1</strong> los inhiben; las proteínas solo-BH3 (BIM, BAD, BID, PUMA) neutralizan a los antiapoptósicos y fomentan la apoptosis. Las <strong>proteínas inhibidoras de apoptosis (IAP)</strong> bloquean la caspasa 9.</li>
+<li>Mecanismos de evasión tumorales:
+<ul>
+<li><strong>Pérdida de la función de p53</strong>: su frecuencia es aún mayor en los tumores que recidivan tras el tratamiento; impide la inducción de PUMA frente al daño del ADN. Otras lesiones la producen de forma indirecta, especialmente la sobreexpresión de MDM2.</li>
+<li><strong>Sobreexpresión de BCL2</strong>: ejemplo clásico, el <strong>linfoma folicular</strong>, con una translocación típica (14;18)(q32;q21) que fusiona BCL2 con el gen de la cadena pesada de las inmunoglobulinas; el BCL2 sobreabundante protege al linfocito transformado de la apoptosis. Por desarrollarse sobre todo por reducción de la muerte celular (más que por proliferación), estos tumores suelen ser indolentes. En la <strong>leucemia linfática crónica</strong> el BCL2 se regula al alza por la pérdida de microARN reguladores.</li>
+</ul></li>
+<li>Estrategias terapéuticas: inhibidores de <strong>MDM2</strong> que reactivan p53 en tumores con su sobreexpresión, y fármacos que inhiben la función de miembros antiapoptósicos de la familia BCL2 (especialmente BCL2), con potente actividad en la leucemia linfática crónica y en ciertos otros tumores.</li>
+</ul>
+
+</section><section id="sec-10-potencial-de-replicacion-ilimitado" class="card">
+<div class="section-kicker"><span class="n">10</span> Sección</div>
+<h2>Potencial de replicación ilimitado</h2>
+<ul>
+<li>Los tumores malignos contienen células con potencial replicativo ilimitado. Tres factores interrelacionados son cruciales para la inmortalidad:
+<ol type="1">
+<li><strong>Evasión de la senescencia</strong>: las células humanas normales suelen dividirse entre 60 y 70 veces antes de entrar en un estado de arresto permanente (senescencia), asociado a la regulación al alza de p53 e INK4a/p16, en parte por daño del ADN acumulado con el tiempo; ambos mantienen a RB en estado hipofosforilado y evitan la progresión del ciclo. La alteración del punto de control G1/S dependiente de RB permite a las células tumorales evadir la senescencia.</li>
+<li><strong>Evasión de las crisis mitóticas (telómeros y telomerasa)</strong>: la replicación sucesiva de las células normales acorta los <strong>telómeros</strong> (secuencias repetidas en los extremos de los cromosomas). La mayoría de las células somáticas no expresan telomerasa, la enzima que mantiene los telómeros. Cuando el ADN telomérico se erosiona por completo, los extremos cromosómicos desnudos son detectados como roturas de ADN; si p53 funciona, la célula se detiene y muere, pero si p53 es disfuncional, la vía de unión de extremos no homólogos (NHEJ) une extremos desnudos de dos cromosomas dando <strong>cromosomas dicéntricos</strong> que, al separarse en la anafase, generan nuevas roturas y un ciclo de fogonazo de cambios llamado <strong>puente-fusión-rotura</strong> con inestabilidad cromosómica masiva; si no se restablece la telomerasa, la célula acaba en <strong>catástrofe mitótica</strong> y muerte. La reactivación de la telomerasa permite evitar el ciclo de fusión-rotura y sobrevivir; esta célula queda expuesta a la adquisición de alteraciones oncógenas y con mayor riesgo de transformación maligna. La telomerasa es expresada por las células madre tisulares y por casi todos los tumores malignos; el 85-95% de los tumores la expresan, y el resto emplea un mecanismo alternativo llamado <strong>alargamiento alternativo de los telómeros</strong>, que depende de la recombinación del ADN.</li>
+<li><strong>Autorrenovación</strong> de <strong>células madre tumorales</strong> (células parecidas a células madre): por división simétrica (ambas hijas madre) o asimétrica (una hija madre y la otra se diferencie), se repone la reserva de células proliferativas ilimitadas. Las células madre tumorales pueden surgir de la transformación de células madre tisulares (p. ej., en la LMC) o de progenitores en proliferación que adquieren mutaciones que confieren autorrenovación (p. ej., progenitores de granulocitos en la leucemia promielocítica aguda). Su contribución es especialmente importante en tumores muy heterogéneos y en los que las células madre son resistentes a los tratamientos (por baja tasa de división y por la expresión de transportadores como <strong>MDR1</strong>, que expulsa los fármacos), lo que explica en parte el fracaso terapéutico actual.</li>
+</ol></li>
+</ul>
+
+</section><section id="sec-11-angiogenia" class="card">
+<div class="section-kicker"><span class="n">11</span> Sección</div>
+<h2>Angiogenia</h2>
+<ul>
+<li>Un tumor sólido no supera los <strong>1 a 2 mm</strong> de diámetro si no induce <strong>neoangiogenia</strong>; ese es el límite de difusión de oxígeno y nutrientes desde los vasos preexistentes. Los tumores estimulan la proliferación de células endoteliales liberando factores como <strong>VEGF</strong>, PDGF e IGF.</li>
+<li>La angiogenia depende del equilibrio entre <strong>promotores</strong> (VEGF, bFGF) e <strong>inhibidores</strong> (endostatina, trombospondina 1). En fases tempranas el equilibrio suele inclinarse hacia los inhibidores; el cambio que dispara la neoangiogenia se llama <strong>interruptor angiogénico</strong>. Factores que lo impulsan:
+<ul>
+<li><strong>Hipoxia</strong> (estabiliza <strong>HIF1</strong>): induce VEGF y bFGF sobre las células endoteliales.</li>
+<li><strong>Mutaciones conductoras</strong>: la ganancia de función de RAS, MYC o la vía MAPK aumenta la señalización angiogénica; la pérdida de p53 deteriora la expresión de inhibidores (trombospondina 1).</li>
+<li><strong>Proteasas</strong> elaboradas por células tumorales o por células del estroma (macrófagos): pueden liberar VEGF y bFGF de la MEC.</li>
+</ul></li>
+<li><strong>Bevacizumab</strong>, un anticuerpo monoclonal que neutraliza el VEGF, se usa en varios carcinomas avanzados; reduce el crecimiento pero no lo cura y puede prolongar la vida solo unos pocos meses a un coste muy alto. Los tumores suelen desarrollar resistencia por mecanismos aún poco definidos.</li>
+</ul>
+
+</section><section id="sec-12-invasion-y-metastasis-fases-moleculares" class="card">
+<div class="section-kicker"><span class="n">12</span> Sección</div>
+<h2>Invasión y metástasis: fases moleculares</h2>
+<ul>
+<li>La invasión y las metástasis son las principales causas de morbilidad y mortalidad de los tumores malignos. El proceso es de baja eficacia: aunque diariamente muchas células invasoras entran en el torrente sanguíneo, muy pocas producen metástasis. La cascada metastásica se separa en varias fases y cada una exige interacción de la célula tumoral con células y moléculas del huésped.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Invasión y metástasis: fases moleculares" tabindex="0"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desprendimiento del tumor primario</td>
+<td>Pérdida de adhesión (inactivación de <strong>cadherina E</strong>, TGF-β, vía Notch)</td>
+</tr>
+<tr>
+<td>Invasión de la <strong>membrana basal</strong> y del parénquima</td>
+<td>Proteasas (<strong>MMP-9</strong>, catepsina D, activador del plasminógeno uroquinasa, otras)</td>
+</tr>
+<tr>
+<td>Migración, quimiotaxis e invasión de vasos</td>
+<td>Integrinas, <strong>MET</strong> (factor de dispersión de hepatocitos, HGF), quimiotaxis</td>
+</tr>
+<tr>
+<td>Intravasación y supervivencia en la circulación</td>
+<td>Adhesión a plaquetas y leucocitos (por fibrinógeno, factor tisular, integrinas)</td>
+</tr>
+<tr>
+<td>Extravasación desde el lecho capilar</td>
+<td>Adhesión al endotelio y salida a través de la pared vascular</td>
+</tr>
+<tr>
+<td>Establecimiento y crecimiento en el nuevo sitio y neoangiogenia</td>
+<td>Inducción local de <strong>VEGF</strong>, liberación de factores de crecimiento (IGF) desde la matriz</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>La <strong>degradación de la MEC</strong> está mediada por metaloproteasas (<strong>MMP</strong>), catepsinas y activadores del plasminógeno. Las proteasas no solo degradan la membrana basal (colágeno IV, laminina) sino que liberan factores de crecimiento secuestrados y generan fragmentos de la MEC con actividad quimiotáctica y pro-angiógena (por ejemplo, <strong>MMP-9</strong> genera pro-VEGF desde la MEC). El rendimiento de la proteólisis es determinante: sin proteasas no hay invasión ni metástasis.</li>
+<li>La <strong>transición epitelio-mesénquima (TEM)</strong>, controlada por los factores de transcripción <strong>SNAIL</strong> y <strong>TWIST</strong>, implica pérdida de productos epiteliales (como la cadherina E) y adquisición de vimentina y otras proteínas de tipo mesenquimal; genera un fenotipo promigratorio asociado a mal pronóstico en carcinomas de pulmón, colon y otros.</li>
+<li>La supervivencia de las células tumorales desprendidas depende en parte de las <strong>integrinas</strong>, que anclan la célula a la matriz; su pérdida genera <strong>anoikis</strong> (muerte por falta de anclaje). Las células tumorales pueden resistirla si tienen señales de crecimiento autónomas (RAS, PI3K) que suplen la ausencia de contacto con la matriz.</li>
+<li>El "destino" de las células invasoras depende de la <strong>red capilar</strong> local y del <strong>tropismo por un órgano</strong> (los carcinomas de mama y de próstata tienen predilección por el hueso; el de pulmón por el encéfalo y las suprarrenales; el neuroblastoma por el hueso), según la <strong>hipótesis de la semilla y el terreno de Paget</strong>: la localización de la metástasis depende tanto de la célula tumoral como del órgano receptor.</li>
+<li>El <strong>tropismo</strong> se relaciona con receptores de adhesión y <strong>quimiocinas</strong> específicas de cada órgano (por ejemplo, <strong>CXCR4</strong> y su ligando CXCL12, que se expresa en pulmón, hígado, médula ósea y ganglios linfáticos).</li>
+<li>Una vez instalada en un órgano, la célula metastática debe <strong>colonizar</strong> (adaptarse al medio local), lo que puede implicar inducción de angiogenia local y evitación de la apoptosis mediante ajustes de los receptores de factores de crecimiento. La colonización es la fase de máxima dificultad y una de las barreras del tratamiento.</li>
+<li><strong>Latencia tumoral</strong>: algunas células metastáticas subsisten durante años sin proliferar, aunque el tumor primario haya sido extirpado; se desconocen sus mecanismos.</li>
+</ul>
+
+</section><section id="sec-13-evasion-de-la-vigilancia-inmunitaria" class="card">
+<div class="section-kicker"><span class="n">13</span> Sección</div>
+<h2>Evasión de la vigilancia inmunitaria</h2>
+<ul>
+<li>La <strong>vigilancia inmunitaria</strong> (concepto formalizado por Lewis Thomas y Macfarlane Burnet) sostiene que el sistema inmunitario escanea constantemente el organismo en busca de células malignas emergentes y las destruye. Es apoyada por: la detección en pacientes de anticuerpos y linfocitos T específicos frente a tumores; la correlación entre la densidad del infiltrado inmunitario y el pronóstico; la mayor incidencia de ciertos tumores en individuos y ratones inmunodeprimidos; y la respuesta de los tumores avanzados a los tratamientos que estimulan las respuestas latentes de los linfocitos T.</li>
+<li><strong>Antígenos tumorales</strong>: moléculas estructurales, expresadas o combinadas sobre células tumorales que el sistema inmunitario es capaz de reconocer; los más relevantes para la inmunidad antitumoral son los derivados proteicos presentados por el <strong>CPH de clase I</strong> y reconocidos por los linfocitos T citotóxicos (CTL) CD8+:
+<ul>
+<li><strong>Neoantígenos</strong>: productos de genes con mutaciones puntuales conductoras y pasajeras (proteínas variantes nunca vistas por el sistema inmunitario). La carga mutacional de un tumor (mutaciones pasajeras y conductoras) se correlaciona con la fuerza de la respuesta CTL y con la eficacia de los tratamientos inmunomoduladores.</li>
+<li>Proteínas normales sobreexpresadas o expresadas de forma aberrante: por ejemplo, la <strong>tirosinasa</strong> (de la síntesis de melanina) en melanocitos normales y en melanomas; y las proteínas del grupo <strong>MAGE</strong>, antígenos propios de células germinativas testiculares que se expresan de forma aberrante en varios tumores y no en tejidos normales adultos.</li>
+<li>Antígenos de <strong>virus oncógenos</strong>: proteínas virales reconocidas como extrañas (por ejemplo, E6 y E7 del VPH en el carcinoma de cérvix; proteínas EBNA en tumores VEB-positivos).</li>
+</ul></li>
+<li><strong>Mecanismos de respuesta antitumoral</strong>:
+<ul>
+<li>El más importante es la activación de CTL CD8+ frente a los antígenos tumorales. Las células dendríticas y los macrófagos del microambiente fagocitan células tumorales muertas y presentan sus antígenos a linfocitos T vírgenes en los ganglios regionales (presentación cruzada). Los CTL activados migran de vuelta al tumor y destruyen las células tumorales.</li>
+<li>Mecanismos adicionales: participación de linfocitos T CD4+ (linfocitos Th1) en los infiltrados, asociada a un mejor pronóstico en ciertos tumores (por ejemplo, carcinoma colorrectal); y linfocitos NK, que pueden lisar una amplia gama de células tumorales humanas no inmunogénicas para los linfocitos T (con pérdida de CPH clase I). Los macófagos activados por IFN-γ pueden destruir tumores por mecanismos similares a los antimicrobianos.</li>
+</ul></li>
+<li><strong>Evasión inmunitaria de los tumores</strong>:
+<ul>
+<li><strong>Selección</strong> de variantes antígeno-negativas, menos inmunógenas, en el transcurso de la progresión.</li>
+<li><strong>Pérdida o reducción de la expresión de antígenos del CPH clase I</strong>, lo que evita el reconocimiento por CTL CD8+ (puede, sin embargo, dejar a las células expuestas a NK).</li>
+<li><strong>Expresión de ligandos inhibidores de puntos de control</strong>: muchos tumores expresan <strong>PD-L1/PD-L2</strong>, que activan el receptor inhibidor <strong>PD-1</strong> de los linfocitos T efectores; las células dendríticas pueden expresar CTLA-4, que compite con CD28 por los ligandos B7.</li>
+<li><strong>Secretión de citocinas y proteínas inmunodepresoras</strong> (TGF-β, IL-10, prostaglandina E2 y factores solubles), que crean un microambiente inmunitario supresor.</li>
+<li><strong>Inducción de linfocitos T regulatorios (Treg)</strong> dentro del microambiente tumoral.</li>
+</ul></li>
+<li><strong>Inmunoterapia (bloqueo de puntos de control)</strong>: los anticuerpos anti-CTLA-4, anti-PD-1 y anti-PD-L1 eliminan los frenos de los puntos de control inmunológico y se usan en muchos tumores avanzados y ciertos linfomas; pueden lograr remisiones prolongadas e incluso curar. Solo responden el 25-40% de los tumores: es más favorable una <strong>alta carga mutacional</strong>, el infiltrado de linfocitos T citotóxicos PD-1 positivos, o la <strong>defectividad del sistema de reparación de emparejamiento</strong> (MSH, MLH) que produce mayor carga de mutaciones de novo. Los efectos secundarios son reacciones <strong>autoinmunes</strong> frente a órganos, ya que los receptores inhibidores regulan la tolerancia central a los propios antígenos.</li>
+</ul>
+
+</section><section id="sec-14-inestabilidad-genomica-y-sistemas-de-reparacion-del-adn" class="card">
+<div class="section-kicker"><span class="n">14</span> Sección</div>
+<h2>Inestabilidad genómica y sistemas de reparación del ADN</h2>
+<ul>
+<li>Las células normales tienen mecanismos que minimizan la acumulación de mutaciones (reparación del ADN, apoptosis de las células irreparables, senescencia inducida por oncogenes, vigilancia inmunitaria). Por eso las neoplasias malignas son relativamente infrecuentes a pesar de la exposición diaria a agentes mutagénicos ambientales. La inestabilidad genómica surge cuando fallan estos sistemas:
+<ul>
+<li><strong>Defectos de p53</strong>: principal fuente de inestabilidad de los cánceres humanos, por acumulación de mutaciones y aneuploidia. Los tumores con p53 alterado tienen más mutaciones puntuales y defectos en los sistemas de reparación del ADN.</li>
+<li><strong>Reparación de errores de apareamiento (mismatch repair)</strong>: el <strong>síndrome del cáncer de colon hereditario no poliposo (CCHNP) o síndrome de Lynch</strong> se debe a mutaciones de línea germinal en MSH2 y MLH1 (cada uno, aproximadamente, el 30% de los casos) y a otros genes; los tumores muestran alta <strong>inestabilidad de microsatélites</strong> (secuencias repetidas del ADN), y el carcinoma de colon esporádico con inestabilidad de microsatélites se relaciona con el silenciamiento (hipermetilación) de MLH1. El mismo patrón puede verse en otros cánceres (gástrico, endometrio).</li>
+<li><strong>Reparación por escisión de nucleótidos (NER)</strong>: elimina los <strong>dímeros de pirimidina</strong> producidos por la luz UV; cuando falla aparecen los cánceres cutáneos característicos de la <strong>xerodermia pigmentaria</strong> (carcinomas basocelulares y epidermoides, melanoma).</li>
+<li><strong>Reparación por recombinación homóloga (HR)</strong>: repara roturas de doble hebra. Su fallo por mutaciones de BRCA1 o BRCA2 causa el <strong>cáncer de mama y ovario hereditario</strong>. La <strong>ataxia-telangiectasia</strong> (mutación de ATM, cinasa proximal a p53) se asocia a leucemias y linfomas; el <strong>síndrome de Bloom</strong> y la <strong>anemia de Fanconi</strong> se relacionan con otras vías de reparación.</li>
+</ul></li>
+<li>Los cánceres con estos defectos reparadores de ADN tienen un <strong>padrón mutacional reconocible por secuenciación</strong> (firma mutacional) y son los tumores con mayor respuesta a los <strong>inhibidores de los puntos de control inmunológicos</strong>.</li>
+</ul>
+
+</section><section id="sec-15-inflamacion-promovida-por-el-tumor" class="card">
+<div class="section-kicker"><span class="n">15</span> Sección</div>
+<h2>Inflamación promovida por el tumor</h2>
+<ul>
+<li>Los tumores malignos infiltrantes provocan una <strong>reacción inflamatoria crónica</strong>, con citocinas (TNF, IL-1, IL-6) que causan síntomas sistémicos como anemia, fatiga y caquexia. Las células inflamatorias (macófagos tipo M2 y otros inmunitarios) también modifican el microambiente:
+<ul>
+<li>Liberan factores de crecimiento (EGF, bFGF) que impulsan el crecimiento.</li>
+<li>Producen <strong>proteasas</strong> (MMP) que permiten la invasión y el remodelado de la MEC.</li>
+<li>Estimulan la <strong>angiogenia</strong> (VEGF, CXCR4).</li>
+<li>Favorecen la <strong>transición epitelio-mesénquima (TEM)</strong>.</li>
+<li>Favorecen la <strong>evasión de la respuesta inmunitaria</strong> (producen TGF-β, prostaglandinas, factor inhibidor de la CTL).</li>
+</ul></li>
+<li>Los antiinflamatorios inhibidores de la <strong>ciclooxigenasa 2 (COX-2)</strong> reducen la incidencia de adenomas de colon y se han probado en la poliposis adenomatosa familiar, evidencia de la función promótora de la inflamación.</li>
+</ul>
+
+</section><section id="sec-16-cambios-cromosomicos-y-oncogenes-activados" class="card">
+<div class="section-kicker"><span class="n">16</span> Sección</div>
+<h2>Cambios cromosómicos y oncogenes activados</h2>
+<ul>
+<li>Las anomalías cromosómicas recurrentes son muy frecuentes en tumores hematológicos y, cada vez más, en tumores sólidos (mama y colorrectal). Son el instrumento más informativo para la clasificación del origen y el diagnóstico.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cambios cromosómicos y oncogenes activados" tabindex="0"><table>
+<thead>
+<tr>
+<th>Translocación</th>
+<th>Neoplasia</th>
+<th>Genes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(9;22)(q34;q11)</td>
+<td>Leucemia mieloide crónica</td>
+<td>ABL (9q34) con BCR (22q11)</td>
+</tr>
+<tr>
+<td>(8;14)(q24;q32)</td>
+<td>Linfoma de Burkitt</td>
+<td>MYC (8q24) con IgH (14q32)</td>
+</tr>
+<tr>
+<td>(14;18)(q32;q21)</td>
+<td>Linfoma folicular</td>
+<td>BCL2 (18q21) con IgH</td>
+</tr>
+<tr>
+<td>(11;14)(q13;q32)</td>
+<td>Linfoma de células del manto</td>
+<td>CCND1 (ciclina D1) con IgH</td>
+</tr>
+<tr>
+<td>(15;17)(q22;q21)</td>
+<td>Leucemia promielocítica aguda</td>
+<td>PML con RARA</td>
+</tr>
+<tr>
+<td>(11;22)(q24;q12)</td>
+<td>Sarcoma de Ewing</td>
+<td>FLI1 (11q24) con EWSR1 (22q12)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Mecanismos de acción de las translocaciones</strong>:
+<ol type="1">
+<li>La translocación moviliza uno de los genes a un locus de alta expresión (el gen de la inmunoglobulina), produciendo un aumento desregulado de su transcripción (p. ej., <strong>MYC/IgH</strong> en el linfoma de Burkitt, <strong>BCL2/IgH</strong> en el linfoma folicular, <strong>ciclina D1/IgH</strong> en el linfoma de células del manto).</li>
+<li>La translocación crea una <strong>proteína de fusión (químérica)</strong> con función oncogénica, como la tirosina cinasa constitutiva BCR-ABL.</li>
+</ol></li>
+<li>En la <strong>leucemia promielocítica aguda</strong>, el gen PML se fusiona con RARA, un factor de transcripción del receptor del retinoato; la proteína de fusión (dominante) impide la diferenciación granulocitaria, pero su actividad puede invertirse por dosis altas de <strong>ácido retinoico todo-trans (ATRA)</strong>, que induce la liberación del factor inhibitorio y permite la maduración de los granulocitos (efecto reversible de la terapéutica).</li>
+<li>En las neoplasias linfoides, muchos genes de fusión protooncogénicos resultan de translocaciones que afectan al locus del receptor del linfocito T; otros tumores presentan <strong>deleciones o inversiones</strong> que inactivan genes supresores.</li>
+<li><strong>Cromotripsis</strong>: un único evento catastrófico fragmenta un cromosoma, cuyos fragmentos se reensamblan de forma aleatoria y producen translocaciones complejas; puede contribuir a la heterogeneidad tumoral.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Translocaciones que hay que saber de memoria</span>LMC t(9;22) BCR-ABL; linfoma de Burkitt t(8;14) MYC-IgH; linfoma folicular t(14;18) BCL2-IgH; linfoma de células del manto t(11;14) ciclina D1-IgH; LPA t(15;17) PML-RARA (reversible con ATRA); sarcoma de Ewing t(11;22) EWSR1-FLI1.</div>
+</section><section id="sec-17-cambios-epigeneticos-y-arn-no-codificantes" class="card">
+<div class="section-kicker"><span class="n">17</span> Sección</div>
+<h2>Cambios epigenéticos y ARN no codificantes</h2>
+<ul>
+<li><strong>Cambios epigenéticos</strong> (factores distintos de la secuencia de ADN que regulan la expresión) incluyen metilación del ADN, modificaciones de histonas y organización de la cromatina. Cada vez más, se reconocen como factores determinantes del fenotipo maligno, y la lista de genes que codifican ADN/histona metiltransferasas y acetiltransferasas que se alteran en tumores es extensa (tabla 7.9: DNMT3A, MLL2, CREBBP, ARID1A, SIRT1, entre otros).</li>
+<li><strong>Hipermetilación anómala</strong>: la metilación del ADN es una causa común de <strong>silenciamiento de genes supresores</strong> (p. ej., p16/INK4a en el carcinoma cervicouterino, o MLH1 en el carcinoma esporádico de colon). Así, la carcinogenia depende no solo de mutaciones, sino también de cambios epigenéticos.</li>
+<li>Un mismo gen puede actuar como oncogén en un contexto y como supresor en otro: por ejemplo, <strong>NOTCH1</strong> es oncogén en la leucemia linfoblástica aguda y supresor del crecimiento en el carcinoma de células escamosas (la regulación depende del contexto epigenético).</li>
+<li><strong>Terapias epigenéticas</strong>: los inhibidores de las desacetilasas de histonas (HDAC) y de las ADN metiltransferasas (DNMT) se están probando y algunos están aprobados para ciertos tumores linfoides; la idea es revertir la metilación anómala y reactivar genes supresores silenciados.</li>
+<li><strong>ARN no codificantes</strong>: los <strong>miARN</strong> (unos 22 nucleótidos) modulan la estabilidad de los ARNm. Su expresión anómala se ha detectado en muchos tumores; los <strong>miARN-15 y miARN-16‑1</strong> están perdidos en la leucemia linfática crónica, lo que permite la expresión de BCL2; el <strong>miARN-155</strong> se sobreexpresa en varios linfomas B. El <strong>lncRNA</strong> y el ARN no codificante largo regulan la transcripción de genes tumorales.</li>
+</ul>
+
+</section><section id="sec-18-carcinogenia-quimica-y-en-multiples-etapas" class="card">
+<div class="section-kicker"><span class="n">18</span> Sección</div>
+<h2>Carcinogenia química y en múltiples etapas</h2>
+<ul>
+<li>El modelo clásico se deriva de experimentos en piel de ratón y distingue dos etapas:
+<ul>
+<li><strong>Iniciación</strong>: exposición a una dosis suficiente de carcinógeno químico; produce daño <strong>permanente</strong> del ADN (mutaciones). Los iniciadores son electrófilos muy reactivos que reaccionan con átomos nucleófilos del ADN, ARN o proteínas, formando <strong>aductos</strong>; el daño no letal sobrevive y se transmite a la descendencia como célula iniciada.</li>
+<li><strong>Promoción</strong>: los promotores no son tumorigenos por sí mismos, pero inducen la <strong>proliferación y expansión clonal</strong> de las células iniciadas; los subclones en división adquieren mutaciones adicionales y surge el clon tumoral. En humanos, muchos factores actúan como promotores: la estimulación estrogénica sin oposición del endometrio y la mama, y los procesos inflamatorios crónicos (enfermedad inflamatoria intestinal, hepatitis crónica, esófago de Barrett).</li>
+</ul></li>
+<li>Los carcinógenos químicos se dividen en:
+<ul>
+<li><strong>De acción directa</strong>: no requieren transformación metabólica. La mayoría son carcinógenos débiles, pero algunos son fármacos antitumorales (agentes alquilantes; sustancias de la tabla 7.10 como ciclofosfamida, clorambucilo, nitrosoureas). Han curado o controlado ciertos tumores y, en algunos casos, causan un segundo tumor, generalmente una <strong>leucemia mieloide aguda</strong>; el riesgo es bajo, pero exige un uso juicioso.</li>
+<li><strong>De acción indirecta</strong> (procarcinógenos): requieren activación metabólica por enzimas como el <strong>citocromo P-450</strong> para convertirse en carcinógenos finales. Ejemplos: hidrocarburos aromaticos policíclicos como el <strong>benzo[a]pireno</strong> (activo del hollín; cigarrillos; carnes asadas o ahumadas); aminas aromáticas y tintes azoicos de industriales del pasado. La actividad de estas enzimas varia entre individuos (polimorfismos), lo que condiciona el riesgo: cerca del 10% de la población blanca porta una forma altamente inducible de <strong>CYP1A1</strong>; los fumadores con el genotipo susceptible tienen un riesgo 7 veces mayor de cáncer pulmonar.</li>
+</ul></li>
+<li>Muchos carcinógenos químicos son <strong>mutagénicos</strong> y producen mutaciones en genes causalmente implicados en los tumores (onco genes, genes supresores), aunque no todos lo muestran igual (por ejemplo, la <strong>aflatoxina B</strong>, producida por el hongo Aspergillus, produce una firma específica en el gen TP53 (transición G:C a T:A en el codón 249), típica del carcinoma hepatocelular en zonas con alta contaminación de los alimentos por aflatoxinas. Los carcinógenos del humo del tabaco causan miles de mutaciones en los cánceres de pulmón, muchas con la firma mutacional de esos carcinógenos.</li>
+<li>La secuencia molecular de la <strong>carcinogenia en múltiples etapas</strong> se demuestra en la oncogénesis experimental: ya con unas pocas alteraciones la célula es completamente maligna (RAS activado, RB y p53 inactivados, expresión constitutiva de telomerasa). En seres humanos el proceso es más lento y requiere el <strong>acumulación secuencial</strong> de muchas alteraciones; el ejemplo mejor estudiado es el carcinoma de colon (secuencia de APC, RAS, TP53 y otros genes, con lesiones morfológicas correlacionadas, cuya discusión se encuentra en otro capítulo).</li>
+</ul>
+
+</section><section id="sec-19-carcinogenia-por-radiacion" class="card">
+<div class="section-kicker"><span class="n">19</span> Sección</div>
+<h2>Carcinogenia por radiación</h2>
+<ul>
+<li>La <strong>radiación ionizante</strong> (rayos X, rayos γ, partículas α y β, protones y neutrones) produce <strong>roturas del ADN</strong> (de simple o doble hebra) y puede formar radicales libres. Leucemias (sobre todo mieloides) aparecen 5 a 7 años después de la exposición; el cáncer pulmonar, el de mama y el de tiroides aparecen más tarde. Los efectos del tratamiento radioterapéutico son bien reconocidos: las mujeres irradiadas con RT en la infancia o en la adulta joven tienen mayor riesgo de cáncer de mama y de tiroides; los supervivientes de las explosiones de bombas atómicas (Hiroshima, Nagasaki) muestran un aumento de la mortalidad por leucemias y cánceres.</li>
+<li>Los <strong>rayos ultravioleta (UVB)</strong> provocan la formación de <strong>dimeros de pirimidina</strong> en el ADN; con la exposición prolongada y al sol, la reparación por escisión de nucleótidos (NER) no logra corregir todos los defectos, y la vía de recombinación puede introducir errores (reparación propensa a error) que pueden llevar al cáncer cutáneo. Las personas con <strong>xerodermia pigmentaria</strong> presentan un riesgo extraordinariamente alto de todos los cánceres cutáneos.</li>
+<li>La exposición crónica a los <strong>rayos UV</strong> produce carcinomas basocelulares y epidermoides y melanomas.</li>
+</ul>
+
+</section><section id="sec-20-carcinogenia-microbiana-virus-oncogenos" class="card">
+<div class="section-kicker"><span class="n">20</span> Sección</div>
+<h2>Carcinogenia microbiana: virus oncógenos</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: Carcinogenia microbiana: virus oncógenos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Agente</th>
+<th>Cánceres asociados</th>
+<th>Mecanismo de acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPH (tipos 16 y 18, y otros)</td>
+<td>Carcinoma escamoso cévix, anogenital y orofaringe</td>
+<td>E6 (degradación de p53 y activación de telomerasa) y E7 (inactivación de RB); receptor CD40 constitutivamente activo</td>
+</tr>
+<tr>
+<td>VEB (Epstein–Barr)</td>
+<td>Linfoma de Burkitt, carcinoma nasofaríngeo, linfomas B en inmunodeprimidos, Hodgkin</td>
+<td>LMP‑1 (receptor de la señal CD40), EBNA‑2 (imita a Notch), vIL-10</td>
+</tr>
+<tr>
+<td>Hepatitis B (VHB)</td>
+<td>Carcinoma hepatocelular</td>
+<td>Inflamación crónica y proliferación compensatoria; proteína HBx (activación de NF-κB)</td>
+</tr>
+<tr>
+<td>Hepatitis C (VHC)</td>
+<td>Carcinoma hepatocelular</td>
+<td>Inflamación crónica; proteína central del VHC</td>
+</tr>
+<tr>
+<td>HHV‑8 (virus del herpes del sarcoma de Kaposi)</td>
+<td>Sarcoma de Kaposi</td>
+<td>Proteína nuclear LANA</td>
+</tr>
+<tr>
+<td>HTLV‑1</td>
+<td>Leucemia/linfoma T del adulto</td>
+<td>Tax y HBZ (activación de NF-κB, JAK/STAT)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Muchos de estos virus inducen proliferación o evaden mecanismos de supresión del crecimiento; la <strong>integración viral</strong> del genoma del VPH en el host es el paso clave de la transformación del VPH de alto riesgo (un evento infrecuente con objetivos onco genes).</li>
+<li><strong>Virus de Epstein-Barr (VEB)</strong>: primer virus asociado formalmente a un cáncer humano (linfoma de Burkitt). Codifica <strong>LMP1</strong>, que imita al receptor CD40 y activa NF-κB, y <strong>EBNA2</strong>, que imita a Notch y activa la ciclina D1 y MYC. Cerca del 95% de los linfomas de Burkitt endémicos de África son VEB-positivos; el VEB también se asocia al carcinoma nasofaríngeo del sudeste asiático, mientras los casos esporádicos lo son con menos frecuencia.</li>
+<li>El <strong>VHB y el VHC</strong> se asocian al carcinoma hepatocelular por el daño hepático crónico, la proliferación compensatoria y el estrés genotóxico; la proteína HBx del VHB activa NF-κB.</li>
+<li><strong>Helicobacter pylori</strong>, bacteria gramnegativa, se asocia al adenocarcinoma gástrico y a los linfomas MALT del estómago. Su proteína <strong>CagA</strong> activa vías de señalización (entre ellas PLCγ y Abl); la infección crónica también altera la señalización de EGFR y de la beta-catenina.</li>
+</ul>
+
+</section><section id="sec-21-aspectos-clinicos-de-las-neoplasias" class="card">
+<div class="section-kicker"><span class="n">21</span> Sección</div>
+<h2>Aspectos clínicos de las neoplasias</h2>
+<h3 id="efectos-locales-y-hormonales">Efectos locales y hormonales</h3>
+<ul>
+<li>La <strong>localización</strong> es determinante: un adenoma hipofisario pequeño de 1 cm puede comprimir y destruir la glándula y causar hipopituitarismo grave; ciertas neoplasias del intestino pueden causar obstrucción o invaginación; un carcinoma pancreático que obstruye el colédoco provoca ictericia en un estadio potencialmente curable (los pocos supervivientes de cáncer de páncreas). El crecimiento expansivo causa ulceración (p. ej., hemorragias digestivas, <strong>melenas</strong> y hematuria), y el tumor que crece en un lugar fijo puede producir canalización de vasos.</li>
+<li>Los tumores benignos y malignos endocrinos pueden secretar hormonas (los benignos, más característicamente): un adenoma de células β de los islote pancreático menor de 1 cm puede sintetizar suficiente insulina para producir una hipoglucemia mortal. Los tumores no endocrinos pueden elaborar hormonas o sustancias similares a hormonas (corticotropina, hormona paratiroidea) y causar <strong>síndromes paraneoplásicos</strong>.</li>
+</ul>
+<h3 id="caquexia-tumoral">Caquexia tumoral</h3>
+<ul>
+<li>Definida como pérdida progresiva de masa corporal magra (con o sin pérdida de grasa) no explicada por reducción de la ingesta. Ocurre en aproximadamente el 50% de los pacientes con tumores, sobre todo con neoplasias digestivas, pancreaticas y pulmonares avanzadas; contribuye por sí sola aproximadamente al 30% de las muertes por tumores. Se caracteriza por pérdida extrema de peso, fatiga, atrofia muscular, anemia, anorexia y edema; la muerte se relaciona con la atrofia del diafragma y de los músculos respiratorios.</li>
+<li>Las bases de la <strong>caquexia</strong> incluyen las <strong>citocinas inflamatorias</strong> (<strong>TNF</strong>, <strong>IL-1</strong>, <strong>IL-6</strong>): su administración a ratones induce caquexia, y los ratones portadores de tumores están protegidos con la desactivación del receptor de TNF. En los seres humanos la caquexia se asocia a concentraciones más altas de citocinas proinflamatorias. La pérdida de músculo esquelético se explica en parte por un efecto directo de estas citocinas sobre las proteínas estructurales (miosina) y la proteólisis por la vía ubiquitina-proteosoma.</li>
+<li>El <strong>factor movilizador de lípidos</strong>, una proteína detectada en el suero y la orina de pacientes con tumores avanzados, sensibiliza a los adipocitos a los estímulos lipolíticos y contribuye a la pérdida de grasa.</li>
+</ul>
+<h3 id="síndromes-paraneoplásicos">Síndromes paraneoplásicos</h3>
+<ul>
+<li>Complejos de signos y síntomas en personas con tumores malignos que no pueden explicarse por la diseminación anatómica del tumor ni por la secreción de hormonas propias de la célula de origen. Ocurren en aproximadamente el 10% de los pacientes. Pueden ser la <strong>manifestación temprana</strong> de una neoplasia oculta, causar complicaciones graves e incluso mortales, o simular enfermedad metastásica.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Aspectos clínicos de las neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Síndrome</th>
+<th>Tumores relacionados</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Síndrome de Cushing</td>
+<td>Carcinoma pulmonar de células pequeñas (50% de casos), carcinoma pancreático, tumores neurales</td>
+<td>ACTH ectópica o péptidos tipo corticotropina</td>
+</tr>
+<tr>
+<td>Secreción inadecuada de ADH</td>
+<td>Carcinoma pulmonar de células pequeñas</td>
+<td>ADH o hormonas auriculares natriuréticas</td>
+</tr>
+<tr>
+<td>Hipercalcemia</td>
+<td>Carcinoma escamoso pulmonar, renal, mamario, de ovario, otros</td>
+<td>PTHRP, TGF-β, TNF, IL-1 (de nuevo, con señales de la célula de PTH/PTHRP)</td>
+</tr>
+<tr>
+<td>Hipoglucemia</td>
+<td>Carcinoma hepatocelular, sarcomas mesenquimales, carcinoma renal</td>
+<td>Secreción de insulina o insulina-similares (IGF)</td>
+</tr>
+<tr>
+<td>Policitemia</td>
+<td>Carcinoma renal, hemangioma cerebeloso, hepatocelular, leucemia T</td>
+<td>Secreción de eritropoyetina</td>
+</tr>
+<tr>
+<td>Osteomalacia</td>
+<td>Tumores mesenquimatosos fosfatúricos</td>
+<td>FGF-23</td>
+</tr>
+<tr>
+<td>Síndromes neurológicos paraneoplásicos</td>
+<td>Carcinoma pulmonar de células pequeñas, cáncer de mama, otros</td>
+<td>Reacción inmunitaria contra antígenos de células neuronales</td>
+</tr>
+<tr>
+<td>Miastenia grave y síndromes tímicos</td>
+<td>Timoma, carcinoma pulmonar de células pequeñas</td>
+<td>Reacción inmunitaria contra receptores (p. ej., de acetilcolina)</td>
+</tr>
+<tr>
+<td>Acantosis nigricans</td>
+<td>Carcinoma gástrico, pulmonar, uterino (50% de los casos en mayores de 40 años)</td>
+<td>Secreción de factor de crecimiento epidérmico</td>
+</tr>
+<tr>
+<td>Dermatomiositis (con signo de Leser-Trélat, queratosis seborreicas múltiples)</td>
+<td>Carcinoma gástrico y otros</td>
+<td>Inmunitario, anticuerpos</td>
+</tr>
+<tr>
+<td>Osteoartropatía hipertrófica y dedos de tambor</td>
+<td>Carcinoma pulmonar (1-10% de los casos); otros carcinomas</td>
+<td>Desconocido</td>
+</tr>
+<tr>
+<td>Tromboflebitis migratoria (síndrome de Trousseau)</td>
+<td>Carcinomas de páncreas y pulmón</td>
+<td>Productos tumorales que activan la coagulación</td>
+</tr>
+<tr>
+<td>Coagulación intravascular diseminada (CID)</td>
+<td>Leucemia promielocítica aguda, carcinoma de próstata</td>
+<td>Hipercoagulabilidad tumoral</td>
+</tr>
+<tr>
+<td>Endocarditis trombótica no bacteriana</td>
+<td>Tumores avanzados secretores de mucina</td>
+<td>Mucinas agregadas sobre las válvulas cardiacas</td>
+</tr>
+<tr>
+<td>Aplasia de la serie roja</td>
+<td>Neoplasias tímicas</td>
+<td>Inmunológico</td>
+</tr>
+<tr>
+<td>Síndrome nefrótico</td>
+<td>Varios tumores avanzados</td>
+<td>Complejos antígeno-anticuerpo</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Dos procesos explican la <strong>hipercalcemia</strong> del cáncer: la <strong>osteólisis</strong> por destrucción de la médula ósea y el <strong>tropismo de la célula cancerosa</strong> (células productoras de factores), y la <strong>hipersecreción de PTHRP</strong> (proteína relacionada con la hormona paratiroidea), que se une al mismo receptor de la <strong>hormona paratiroidea (PTH)</strong>, causa de la osteoclastogénesis y la hiperfunción renal de la vitamina D, más en cánceres escamosos pulmonares riñón.</li>
+<li>Los <strong>síndromes neuromiopáticos paraneoplásicos</strong> incluyen neuropatía periférica, miopatía, encefalopatías y síndromes específicos por anticuerpos contra antígenos neuronales. La miastenia grave en el contexto de timomas y carcinoma de células pequeñas se considera un síndrome inmunológico.</li>
+</ul>
+<h3 id="gradación-y-estadificación-de-los-tumores-malignos">Gradación y estadificación de los tumores malignos</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Aspectos clínicos de las neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Gradación</th>
+<th>Estadificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definición</td>
+<td>Grado de <strong>diferenciación</strong> de las células tumorales (y a veces número de mitosis, características arquitecturales)</td>
+<td>Extensión anatómica: <strong>T</strong> (tumor primario), <strong>N</strong> (ganglios regionales), <strong>M</strong> (metástasis a distancia)</td>
+</tr>
+<tr>
+<td>Sistema</td>
+<td>De 2 a 4 categorías, variable según el tipo de tumor</td>
+<td>Sistema TNM (American Joint Committee on Cancer)</td>
+</tr>
+<tr>
+<td>Limitaciones</td>
+<td>La correlación con el comportamiento biológico no es perfecta; se prefiere la descripción (p. ej., adenocarcinoma de estómago bien diferenciado secretor de mucina)</td>
+<td>La lesión primaria se clasifica como Tis (in situ) o T1 a T4; ganglios N0 (sin afectación) a N3; metástasis M0 o M1</td>
+</tr>
+<tr>
+<td>Utilidad</td>
+<td>Menor valor pronóstico independiente</td>
+<td>Mayor valor pronóstico y de planificación</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>El <strong>American Joint Committee on Cancer (AJCC)</strong> incorpora cada vez más la caracterización <strong>molecular</strong> (no solo la anatómica) en los esquemas de estadificación de los tumores; por ejemplo, en los cánceres de mama tempranos se incluye la declaración de subtipo molecular (HER2, receptores hormonales) como parte del estudio.</li>
+</ul>
+<h3 id="diagnóstico-de-laboratorio">Diagnóstico de laboratorio</h3>
+<ul>
+<li><strong>Muestras</strong>: biopsia o escisión, punción-aspiración con aguja fina y frotis citológicos deben ser adecuadas, representativas y correctamente conservadas. La biopsia por <strong>congelación</strong> (diagnóstico intraoperatorio) permite evaluar en minutos. La <strong>punción-aspiración con aguja fina</strong> es comúnmente utilizada en mama, tiroides, ganglios linfáticos y pancares, y evita la cirugía; es menos invasiva, aunque el diagnóstico en los tumores sólidos es menos precisa que con biopsia. Los <strong>frotis citológicos</strong> se emplean ampliamente para la detección temprana de los cánceres; el ejemplo más significativo es el de <strong>Papanicolaou (Pap)</strong> para la citología cervicovaginal en el carcinoma de cérvix; también se applican a la orina, el líquido cefalorraquídeo y los derrames pleurales.</li>
+<li><strong>Inmunohistoquímica</strong>: marca los productos de células tumorales con anticuerpos. Es útil para:
+<ul>
+<li>Clasificar tumores malignos indiferenciados: la <strong>citoqueratina</strong> identifica los carcinomas, la <strong>desmina</strong> los sarcomas, y marcadores como <strong>CD3</strong> y <strong>CD20</strong> identifican los tumores hematopoyéticos.</li>
+<li>Determinar el origen de tumores metastáticos por marcadores específicos de órgano (<strong>PSA</strong> para la próstata; <strong>tiroglobulina</strong> para la tiroides).</li>
+<li>Detectar factores de pronóstico o <strong>dianas terapéuticas</strong> (receptores hormonales ER/PR en mama; <strong>HER2</strong>; <strong>ALK</strong> en carcinoma de pulmón).</li>
+</ul></li>
+<li><strong>Citometría de flujo</strong>: evalúa múltiples antígenos en células suspendidas (médula, sangre y otros líquidos); es útil en linfomas y leucemias (p. ej., CD20 y CD3) y en la detección de células tumorales circulantes.</li>
+<li><strong>Diagnóstico molecular y molecular genética</strong>:
+<ul>
+<li><strong>Reordenamientos genéticos</strong> (conductores de frecuencia recurrentes) que permiten identificar lesiones moleculares recurrentes (por ejemplo, <strong>BCR-ABL</strong>, <strong>PML-RARA</strong>, translocación EWS-FLI en sarcoma de Ewing, mutación de <strong>EGFR</strong> en pulmón) aplicados a diagnóstico, pronóstico y orientación terapéutica.</li>
+<li><strong>Micromatrices de ADN (chips de SNP)</strong> para detectar ganancias o pérdidas de copia; y <strong>secuenciación de nueva generación (NGS)</strong> del exoma en tumores con diagnóstico o tratamiento difíciles.</li>
+<li><strong>Biopsia líquida</strong>: análisis de <strong>ADN circulante</strong> y <strong>células tumorales circulantes</strong> en sangre; permite el seguimiento de la enfermedad residual mínima y la evaluación de la respuesta sin repetir biopsias.</li>
+<li>El futuro es integrar los <strong>perfiles moleculares</strong> del tumor con la histología convencional para decidir tratamientos dirigidos.</li>
+</ul></li>
+</ul>
+<h3 id="marcadores-tumorales">Marcadores tumorales</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Aspectos clínicos de las neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Marcador</th>
+<th>Tumor/tipo asociado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CEA</strong> (antígeno carcinoembrionario)</td>
+<td>Carcinomas de colon, páncreas, pulmón, estómago y mama</td>
+</tr>
+<tr>
+<td><strong>CA-125</strong></td>
+<td>Cáncer de ovario</td>
+</tr>
+<tr>
+<td><strong>CA-19-9</strong></td>
+<td>Cáncer de páncreas</td>
+</tr>
+<tr>
+<td><strong>CA 15-3</strong></td>
+<td>Cáncer de mama</td>
+</tr>
+<tr>
+<td><strong>Alfa-fetoproteína (AFP)</strong></td>
+<td>Carcinoma hepatocelular, tumores del saco vitelino, células germinales</td>
+</tr>
+<tr>
+<td><strong>Gonadotropina coriónica (β-hCG)</strong></td>
+<td>Tumores trofoblásticos y testiculares no seminomatosos</td>
+</tr>
+<tr>
+<td><strong>Calcitonina</strong></td>
+<td>Carcinoma medular de tiroides</td>
+</tr>
+<tr>
+<td><strong>PSA</strong></td>
+<td>Cáncer de próstata</td>
+</tr>
+<tr>
+<td><strong>Inmunoglobulinas monoclonales</strong> (componente M)</td>
+<td>Mieloma múltiple y gammapatías monoclonales</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Los marcadores tumorales tienen utilidad <strong>limitada como pruebas de detección</strong> (baja sensibilidad y especificidad) y destacan en el <strong>seguimiento de la recidiva</strong>: eliminados tras la extirpación, su reaparición casi siempre indica tumor. El ejemplo más clásico es el PSA, que presenta baja sensibilidad y especificidad (elevado en la hiperplasia prostática benigna).</li>
+<li>En la sangre pueden analizarse distintas fuentes: <strong>ADN libre de células</strong>, microARN y células tumorales circulantes. Además de los marcadores clásicos, los perfiles genómicos (p. ej., los atlas de tumores como TCGA) permiten afinar el diagnóstico y el tratamiento.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inflamación y reparación · Anatomía Patológica UBB</title>
+<meta name="description" content="Inflamación y reparación. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Inflamación y reparación · Anatomía Patológica UBB">
+<meta property="og:description" content="Inflamación y reparación. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Capítulo 3. Inflamación y reparación</h1>
+    <p class="lede">Guía 03 de 10. Resumen completo del capítulo 3 con 58 filas de tabla. Sin citas por página: material del Certamen 1.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>03 de 10</strong></div><div><span>Capítulo</span><strong>3</strong></div><div><span>Páginas</span><strong>71-114</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>58</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-perspectiva-general-de-la-inflamacion">Perspectiva general de la inflamación</a></li>
+        <li><a href="#sec-03-inflamacion-aguda">Inflamación aguda</a></li>
+        <li><a href="#sec-04-reclutamiento-de-leucocitos">Reclutamiento de leucocitos</a></li>
+        <li><a href="#sec-05-fagocitosis-y-eliminacion-del-agente-causal">Fagocitosis y eliminación del agente causal</a></li>
+        <li><a href="#sec-06-mediadores-de-la-inflamacion">Mediadores de la inflamación</a></li>
+        <li><a href="#sec-07-patrones-morfologicos-de-la-inflamacion-aguda">Patrones morfológicos de la inflamación aguda</a></li>
+        <li><a href="#sec-08-evolucion-y-resumen">Evolución y resumen</a></li>
+        <li><a href="#sec-09-inflamacion-cronica">Inflamación crónica</a></li>
+        <li><a href="#sec-10-efectos-sistemicos-de-la-inflamacion">Efectos sistémicos de la inflamación</a></li>
+        <li><a href="#sec-11-reparacion-de-tejidos">Reparación de tejidos</a></li>
+        <li><a href="#sec-12-cicatrizacion-de-heridas-cutaneas">Cicatrización de heridas cutáneas</a></li>
+        <li><a href="#sec-13-anomalias-en-la-reparacion-de-tejidos">Anomalías en la reparación de tejidos</a></li>
+        <li><a href="#sec-14-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="02_Lesion_Celular.html" title="Lesión celular, muerte celular y adaptaciones">02</a>
+        <a href="04_Hemodinamia_Shock.html" title="Trastornos hemodinámicos, enfermedad tromboembólica y shock">04</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 3 del Robbins y Cotran, 10ª edición: páginas impresas 71-114 (44 páginas).</div><p class="small">Este resumen del Certamen 1 se redactó antes de adoptar la cita por página; se publica sin reescribirlo. El <a href="manual.html">Manual del Certamen 1</a> incluye el índice tema-clase-Robbins y las fuentes.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>La inflamación aguda es la respuesta vascular y leucocitaria rápida (neutrófilos) en tres pasos: vasodilatación, aumento de permeabilidad y migración de leucocitos al sitio de lesión.</li><li>Reclutamiento: selectinas median el rodamiento, integrinas la adhesión firme y CD31/PECAM-1 la diapédesis; los neutrófilos llegan a las 6-24 h y los monocitos a las 24-48 h.</li><li>La destrucción microbiana usa estallido respiratorio (NADPH oxidasa, sistema H2O2-MPO-haluro), NO y enzimas lisosómicas; su defecto causa enfermedad granulomatosa crónica.</li><li>La inflamación crónica combina infiltrado mononuclear (macrófagos M1 y M2, linfocitos Th1, Th2, Th17), lesión tisular y reparación; el granuloma contiene agentes persistentes.</li><li>Los mediadores clave son histamina, eicosanoides (PG, leucotrienos), citocinas (TNF, IL-1, IL-6), quimiocinas y complemento; la terminación activa usa lipoxinas, TGF-β e IL-10.</li><li>La reparación depende del tipo celular (lábiles, estables, permanentes): regeneración o cicatriz con tejido de granulación, TGF-β fibrogénico, angiogenia y remodelado MMP/TIMP.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La <strong>inflamación</strong> es una respuesta protectora de los tejidos vascularizados que lleva leucocitos y moléculas de defensa desde la circulación a los sitios de infección y lesión para eliminar al agresor. El sufijo <strong>-itis</strong> denota inflamación de un órgano; el quinto signo cardinal es la pérdida de función (<strong>functio laesa</strong>).</li>
+<li>La reacción típica sigue cinco pasos: reconocimiento del agente, reclutamiento de leucocitos y proteínas plasmáticas, eliminación por fagocitos, regulación (terminación) y reparación.</li>
+<li>La <strong>inflamación aguda</strong> tiene tres componentes: dilatación de vasos con mayor flujo, aumento de la permeabilidad de la microvasculatura, y migración y activación de leucocitos (sobre todo neutrófilos).</li>
+<li>La <strong>inflamación crónica</strong> (semanas o meses) coexpresa inflamación, lesión tisular y reparación; el infiltrado es mononuclear (macrófagos, linfocitos, células plasmáticas).</li>
+<li>Los mecanismos antimicrobianos (ERO, NO, enzimas lisosómicas) no distinguen entre agresor y huésped: mal dirigidos o descontrolados lesionan tejidos propios.</li>
+<li>La <strong>sepsis</strong> es la forma sistémica grave (shock séptico), por concentraciones altas de TNF e IL-1 (síndrome de respuesta inflamatoria sistémica).</li>
+<li>La <strong>reparación</strong> combina regeneración y cicatrización (depósito de tejido conjuntivo); depende de la capacidad proliferativa del tejido (lábiles, estables, permanentes) y de la integridad de la <strong>matriz extracelular (MEC)</strong>.</li>
+<li>La cicatrización requiere <strong>angiogenia</strong>, fibroblastos, colágeno (TGF-β como factor fibrogénico) y remodelado por MMP y TIMP.</li>
+</ul></div>
+
+</section><section id="sec-02-perspectiva-general-de-la-inflamacion" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Perspectiva general de la inflamación</h2>
+<p>Sin inflamación las infecciones quedarían sin control y las heridas no cicatrizarían. Daña cuando se dirige mal (autoinmunidad), se dispara ante lo inocuo (alergias) o se descontrola; subyace a artritis reumatoide, ateroesclerosis, fibrosis pulmonar, y participa en diabetes tipo 2, Alzheimer y cáncer. Historia: Celso (rubor, tumor, calor, dolor); Virchow (functio laesa); Hunter (respuesta beneficiosa); Metchnikoff (fagocitosis); Lewis (mediadores químicos como histamina).</p>
+<p>Causas:</p>
+<ul>
+<li><strong>Infecciones y toxinas microbianas</strong>: las más frecuentes e importantes.</li>
+<li><strong>Necrosis tisular</strong> por cualquier causa (isquemia, traumatismo, quemaduras, radiación).</li>
+<li><strong>Cuerpos extraños</strong> (astillas, suciedad, suturas).</li>
+<li><strong>Sustancias endógenas depositadas</strong>: urato (gota), colesterol (ateroesclerosis), lípidos (síndrome metabólico de la obesidad).</li>
+<li><strong>Reacciones inmunitarias (hipersensibilidad)</strong>: contra autoantígenos, antígenos ambientales o microbios; estímulos no eliminables, reacción persistente.</li>
+</ul>
+<p>Reconocimiento (paso inicial):</p>
+<ul>
+<li><strong>Receptores de tipo Toll (TLR)</strong>: en membrana (microbios extracelulares), endosomas (ingeridos) y citosol; en epitelio, células dendríticas, macrófagos y otros leucocitos; inducen moléculas de adhesión endotelial, citocinas y otros mediadores.</li>
+<li><strong>Sensores de lesión celular</strong>: receptores citosólicos tipo NOD (<strong>NLR</strong>), para moléculas liberadas o alteradas por daño (ácido úrico, ATP, descenso de K+ citosólico, ADN citosólico); activan el <strong>inflamasoma</strong>, que produce IL-1 (recluta leucocitos). Mutaciones de ganancia de función: <strong>síndromes autoinflamatorios</strong> (tratados con antagonistas de IL-1). El inflamasoma también interviene ante cristales de urato (gota), lípidos (síndrome metabólico, diabetes tipo 2), colesterol (ateroesclerosis) y amiloide cerebral (Alzheimer).</li>
+<li><strong>Receptores de opsoninas</strong>: Fc de anticuerpos y complemento; reconocen microbios opsonizados (<strong>opsonización</strong>).</li>
+<li><strong>Proteínas circulantes</strong>: complemento, lectina de unión a manosa (azúcares microbianos), colectinas.</li>
+</ul>
+
+</section><section id="sec-03-inflamacion-aguda" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>Inflamación aguda</h2>
+<p>Respuesta rápida (minutos a horas), dura horas o pocos días; exudado de líquido y proteínas (edema) e infiltrado neutrofílico.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Inflamación aguda" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Aguda</th>
+<th>Crónica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inicio</td>
+<td>Rápido: minutos</td>
+<td>Lento: días u horas</td>
+</tr>
+<tr>
+<td>Infiltrado celular</td>
+<td>Neutrófilos</td>
+<td>Monocitos / macrófagos y linfocitos</td>
+</tr>
+<tr>
+<td>Lesión tisular, fibrosis</td>
+<td>Leve, autorresolutiva</td>
+<td>Grave y progresiva</td>
+</tr>
+<tr>
+<td>Signos locales y sistémicos</td>
+<td>Pronunciados</td>
+<td>Menores</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Exudado</strong>: líquido extravascular rico en proteínas y restos celulares (implica aumento de permeabilidad). <strong>Trasudado</strong>: filtrado pobre en proteínas (albúmina) por desequilibrio hidrostático u osmótico, sin aumento de permeabilidad. <strong>Edema</strong>: exceso de líquido en intersticio o cavidades serosas. <strong>Pus</strong>: exudado purulento, neutrófilos con restos celulares y a veces microbios.</p>
+<p><strong>Cambios vasculares</strong>: la <strong>vasodilatación</strong> (por histamina sobre el músculo liso; primero arteriolas, luego lechos capilares) causa eritema y calor; hay <strong>aumento de permeabilidad</strong>; el flujo se ralentiza (<strong>estasis</strong>) con congestión; durante la estasis los neutrófilos se adhieren al endotelio, que se activa y expresa más moléculas de adhesión.</p>
+<p>Aumento de la permeabilidad (vénulas poscapilares), tres mecanismos: <strong>retracción de células endoteliales</strong> (el más frecuente; histamina, bradicinina, leucotrienos; <strong>respuesta transitoria inmediata</strong>, 15 a 30 min); <strong>extravasación prolongada tardía</strong> (lesiones leves como quemadura, radiación UV, algunas toxinas; inicia tras 2 a 12 h y dura horas o días; ejemplo: quemadura solar); y <strong>lesión endotelial directa</strong> (necrosis y desprendimiento por lesiones graves o microbios y toxinas; los neutrófilos adheridos la amplifican; dura hasta la trombosis o la reparación del vaso).</p>
+<p>El flujo linfático aumenta y drena el edema (pueden pasar leucocitos, residuos y microbios); puede haber <strong>linfangitis</strong> e <strong>linfoadenitis</strong> reactiva (hiperplasia folicular). Estrías rojas en la piel junto a una herida: linfangitis.</p>
+
+</section><section id="sec-04-reclutamiento-de-leucocitos" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>Reclutamiento de leucocitos</h2>
+<p>Etapas: (1) marginación, rodamiento y adhesión al endotelio; (2) migración transendotelial; (3) migración en tejidos hacia el estímulo quimiotáctico.</p>
+<ul>
+<li><strong>Selectinas</strong> (rodamiento): selectina L (leucocitos), E (endotelio activado por citocinas) y P (plaquetas y endotelio, desde los cuerpos de Weibel-Palade por histamina y trombina). Ligandos: sialil-Lewis X sobre mucinas (GlyCAM-1, CD34, MAdCAM-1, PSGL-1).</li>
+<li><strong>Integrinas</strong> (adhesión firme): TNF e IL-1 inducen VCAM-1 (ligando de VLA-4, β1) e ICAM-1 (LFA-1, MAC-1, β2). Las quimiocinas fijadas a proteoglucanos endoteliales activan al leucocito en rodamiento y pasan sus integrinas a alta afinidad: ligandos inducidos + avidez = adhesión estable.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Reclutamiento de leucocitos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Familia</th>
+<th>Molécula</th>
+<th>Distribución principal</th>
+<th>Ligando / papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Selectina</td>
+<td>Selectina L (CD62L)</td>
+<td>Neutrófilos, monocitos, linfocitos T y B vírgenes</td>
+<td>GlyCAM-1, CD34, MAdCAM-1; rodamiento</td>
+</tr>
+<tr>
+<td>Selectina</td>
+<td>Selectina E (CD62E)</td>
+<td>Endotelio activado por TNF, IL-1</td>
+<td>Sialil-Lewis X; rodamiento</td>
+</tr>
+<tr>
+<td>Selectina</td>
+<td>Selectina P (CD62P)</td>
+<td>Endotelio activado (TNF, IL-1, histamina, trombina)</td>
+<td>Sialil-Lewis X en PSGL-1; rodamiento</td>
+</tr>
+<tr>
+<td>Integrina</td>
+<td>LFA-1 (CD11a/CD18)</td>
+<td>Neutrófilos, monocitos, linfocitos T</td>
+<td>ICAM-1, ICAM-2; adhesión firme</td>
+</tr>
+<tr>
+<td>Integrina</td>
+<td>MAC-1 (CD11b/CD18)</td>
+<td>Monocitos, macrófagos</td>
+<td>ICAM-1, ICAM-2; adhesión y fagocitosis</td>
+</tr>
+<tr>
+<td>Integrina</td>
+<td>VLA-4 (CD49a/CD29)</td>
+<td>Monocitos, linfocitos T</td>
+<td>VCAM-1 (CD106)</td>
+</tr>
+<tr>
+<td>Integrina</td>
+<td>α4β7 (CD49d/CD29)</td>
+<td>Linfocitos T y B intestinales</td>
+<td>VCAM-1, MAdCAM-1</td>
+</tr>
+<tr>
+<td>Ig-superfamilia</td>
+<td>CD31 (PECAM-1)</td>
+<td>Endotelio, leucocitos</td>
+<td>Transmigración</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Diapédesis</strong> (transmigración) en vénulas poscapilares: paso por espacios interendoteliales (CD31/PECAM-1) y perforación de la membrana basal (colagenasas). Deficiencias de moléculas de adhesión: más infecciones bacterianas.</p>
+<p><strong>Quimiotaxia</strong>: movimiento por un gradiente químico. Quimiotácticos: péptidos bacterianos con N-formilmetionina terminal; quimiocinas (IL-8), C5a, LTB4. Actúan sobre receptores acoplados a proteína G de siete pasos; polimerizan actina en el frente y miosina atrás (filopodios).</p>
+<p>Cronología: <strong>neutrófilos 6 a 24 h</strong>, luego <strong>monocitos 24 a 48 h</strong>. Causas: los neutrófilos son más numerosos, responden antes a quimiocinas, se adhieren mejor a selectinas P y E, y sufren apoptosis; los monocitos sobreviven más, proliferan y dominan las reacciones prolongadas. Excepciones: Pseudomonas (neutrófilos días), virus (linfocitos primeros), hipersensibilidad (linfocitos, macrófagos, células plasmáticas), helmintiasis y alergias (eosinófilos).</p>
+
+<div class="warnbox"><span class="box-title">Selectinas, integrinas y cronología</span>Selectinas = rodamiento, integrinas = adhesión firme, CD31/PECAM-1 = transmigración; la quimiocina pasa las integrinas a alta afinidad. Neutrófilos llegan a las 6 a 24 h y monocitos a las 24 a 48 h.</div>
+</section><section id="sec-05-fagocitosis-y-eliminacion-del-agente-causal" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>Fagocitosis y eliminación del agente causal</h2>
+<p>El reconocimiento de microbios o células muertas produce la <strong>activación leucocítica</strong>: aumento del Ca2+ citosólico y activación enzimática (proteína cinasa C, fosfolipasa A2), vía TLR, receptores de citocinas y receptores fagocíticos.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Fagocitosis y eliminación del agente causal" tabindex="0"><table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Neutrófilos</th>
+<th>Macrófagos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origen</td>
+<td>Células madre hematopoyéticas de médula ósea</td>
+<td>Médula ósea (inflamatorios); residentes del saco vitelino o hígado fetal</td>
+</tr>
+<tr>
+<td>Duración en tejidos</td>
+<td>Varios días</td>
+<td>Inflamatorios: días o semanas; residentes: años</td>
+</tr>
+<tr>
+<td>Respuestas</td>
+<td>Rápidas y cortas, de degranulación y actividad enzimática</td>
+<td>Prolongadas, dependientes de activadores transcripcionales</td>
+</tr>
+<tr>
+<td>ERO</td>
+<td>Inducidas al instante por ensamblaje de la fagocito oxidasa (estallido respiratorio)</td>
+<td>Menos pronunciadas</td>
+</tr>
+<tr>
+<td>Óxido nítrico</td>
+<td>Concentraciones bajas o nulas</td>
+<td>Inducido por transcripción de iNOS</td>
+</tr>
+<tr>
+<td>Degranulación</td>
+<td>Intensa, por reordenamiento citoesquelético</td>
+<td>Menor</td>
+</tr>
+<tr>
+<td>Producción de citocinas</td>
+<td>Baja o nula</td>
+<td>Intensa, requiere transcripción</td>
+</tr>
+<tr>
+<td>TEN nucleares y enzimas lisosómicas extracelulares</td>
+<td>Pronunciada / rápida</td>
+<td>No / requiere activación transcripcional</td>
+</tr>
+</tbody>
+</table></div>
+<p>Pasos: reconocimiento y fijación; atrapamiento (fagosoma); destrucción en el fagolisosoma. Receptores fagocíticos: <strong>receptor de manosa</strong> (une manosa y fucosa terminales: microbios, no huésped, que lleva ácido siálico o N-acetilgalactosamina); <strong>receptores depuradores</strong> (LDL oxidadas o acetiladas y muchos microorganismos); integrinas (MAC-1, CD11b/CD18); receptores para <strong>opsoninas</strong> (IgG, C3b, lectina de unión a manosa, colectinas). El atrapamiento depende de polimerización de actina y el fagosoma se funde con un lisosoma. En la <strong>fagocitosis frustrada</strong> el contenido lisosómico sale al exterior.</p>
+<p>Destrucción intracelular:</p>
+<ul>
+<li><strong>Especies reactivas del oxígeno (ERO)</strong>: NADPH oxidasa (fagocito oxidasa) genera anión superóxido: <strong>estallido respiratorio</strong>; el superóxido se dismuta a H2O2, poco activo solo; la MPO de los gránulos azurófilos, con Cl-, genera <strong>hipoclorito (HOCl-)</strong> (principio activo de la lejía). El sistema H2O2-MPO-haluro es el más potente bactericida del neutrófilo; también radical hidroxilo (OH-). Defecto de la fagocito oxidasa: <strong>enfermedad granulomatosa crónica</strong>.</li>
+<li><strong>Antioxidantes del huésped</strong>: superóxido dismutasa, catalasa, glutatión peroxidasa, ceruloplasmina, transferrina libre de hierro.</li>
+<li><strong>Óxido nítrico (NO)</strong>: de arginina por la óxido nítrico sintasa. Isoformas: eNOS (tono vascular), nNOS (neurotransmisión), <strong>iNOS</strong> (inducida por IFN-γ y productos microbianos en macrófagos). Con superóxido genera <strong>peroxinitrito (ONOO-)</strong>, lesiona lípidos, proteínas y nucleótidos; también relaja el músculo liso vascular.</li>
+<li><strong>Enzimas lisosómicas</strong>: gránulos específicos (lisozima, colagenasa, gelatinasa, lactoferrina, activador del plasminógeno, histaminasa, fosfatasa alcalina) y azurófilos (MPO, defensinas, lisozima, hidrolasas ácidas, proteasas neutras: elastasa, catepsina G, proteinasa 3). Las proteasas neutras degradan colágeno, membrana basal, fibrina, elastina, cartílago (destrucción tisular). <strong>α-antitripsina</strong> inhibe la elastasa (carencia: enfisema). Otros: catelicidinas, proteína básica principal (citotóxica para helmintos).</li>
+</ul>
+<p>Las <strong>trampas extracelulares de neutrófilos (TEN)</strong> son redes de cromatina extracelular que concentran sustancias antimicrobianas y atrapan microbios. Inducidas por patógenos y mediadores (quimiocinas, interferones, complemento, ERO). Formación: arginina desaminasa (citrulinación), descondensación de la cromatina por MPO y elastasa, rotura de la envoltura nuclear y muerte del neutrófilo. Fuente de antígenos nucleares en autoinmunidad sistémica (lupus).</p>
+<p>Los leucocitos lesionan tejidos del huésped: daño colateral de la defensa, infecciones de mala resolución (tuberculosis, algunas víricas), autoinmunidad y alergias (asma). Los mecanismos son los de la defensa; la secreción extracelular de gránulos sucede por secreción controlada, <strong>fagocitosis frustrada</strong> (inmunocomplejos sobre membrana basal glomerular) o daño del fagolisosoma (cristales de urato).</p>
+<p>Los macrófagos producen citocinas, factores de crecimiento y enzimas. Las células <strong>Th17</strong> (IL-17) participan en la inflamación aguda; sin ellas hay infecciones fúngicas y bacterianas y <strong>abscesos fríos</strong> (sin calor ni enrojecimiento).</p>
+<p>Terminación: los mediadores solo se producen mientras persiste el estímulo y viven breve tiempo; los neutrófilos sufren apoptosis; terminación activa: cambio del metabolismo del AA (leucotrienos a <strong>lipoxinas</strong> antiinflamatorias), liberación de <strong>TGF-β e IL-10</strong>, y señales colinérgicas que inhiben el TNF en macrófagos.</p>
+
+<div class="warnbox"><span class="box-title">Estallido respiratorio y sus defectos</span>La NADPH oxidasa genera superóxido y el sistema H2O2-MPO-haluro produce hipoclorito, el bactericida más potente del neutrófilo. Su defecto causa enfermedad granulomatosa crónica; la TEN es fuente de antígenos nucleares en el lupus.</div>
+</section><section id="sec-06-mediadores-de-la-inflamacion" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>Mediadores de la inflamación</h2>
+<p>Propiedades: secretados por células o derivados de proteínas plasmáticas (producidas en el hígado como precursores inactivos, activados por proteólisis); solo actúan ante estímulos; vida corta; un mediador estimula otros (el complemento induce histamina; el TNF, IL-1 y quimiocinas endoteliales).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Mediadores de la inflamación" tabindex="0"><table>
+<thead>
+<tr>
+<th>Mediador</th>
+<th>Fuente</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Histamina</td>
+<td>Mastocitos, basófilos, plaquetas</td>
+<td>Vasodilatación, permeabilidad, activación endotelial</td>
+</tr>
+<tr>
+<td>Prostaglandinas</td>
+<td>Mastocitos, leucocitos</td>
+<td>Vasodilatación, dolor, fiebre</td>
+</tr>
+<tr>
+<td>Leucotrienos</td>
+<td>Mastocitos, leucocitos</td>
+<td>Permeabilidad, quimiotaxia, adhesión y activación</td>
+</tr>
+<tr>
+<td>Citocinas (TNF, IL-1, IL-6)</td>
+<td>Macrófagos, endotelio, mastocitos</td>
+<td>Local: activación endotelial; sistémica: fiebre, anomalías metabólicas, hipotensión</td>
+</tr>
+<tr>
+<td>Quimiocinas</td>
+<td>Leucocitos, macrófagos activados</td>
+<td>Quimiotaxia, activación de leucocitos</td>
+</tr>
+<tr>
+<td>PAF</td>
+<td>Leucocitos, plaquetas, mastocitos</td>
+<td>Vasodilatación, permeabilidad, adhesión, quimiotaxia</td>
+</tr>
+<tr>
+<td>Complemento</td>
+<td>Plasma (producción hepática)</td>
+<td>Quimiotaxia, activación leucocitaria, lisis microbiana (MAC), vasodilatación</td>
+</tr>
+<tr>
+<td>Cininas</td>
+<td>Plasma (producción hepática)</td>
+<td>Permeabilidad, contracción de músculo liso, dolor</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Histamina</strong>: preformada en gránulos del mastocito (también en basófilos y plaquetas). Se libera por lesión física, unión de antígeno a IgE (hipersensibilidad inmediata) y anafilotoxinas (C3a, C5a); también por sustancia P, IL-1 e IL-8. Dilata arteriolas y aumenta la permeabilidad de las vénulas; principal mediador de fase transitoria inmediata (receptores endoteliales). Los antihistamínicos bloquean sus receptores. <strong>Serotonina</strong>: preformada en plaquetas y células neuroendocrinas del tubo digestivo; vasoconstrictora (papel poco claro en la inflamación).</p>
+<h3 id="eicosanoides-metabolitos-del-ácido-araquidónico">Eicosanoides (metabolitos del ácido araquidónico)</h3>
+<p>El <strong>ácido araquidónico (AA)</strong>, de 20 carbonos, esterificado en fosfolípidos de membrana, se libera por la <strong>fosfolipasa A2</strong> ante estímulos mecánicos, químicos, físicos u otros mediadores (p. ej., C5a). Dos vías: ciclooxigenasas (prostaglandinas) y lipooxigenasas (leucotrienos, lipoxinas).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Mediadores de la inflamación" tabindex="0"><table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Eicosanoide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vasodilatación</td>
+<td>PGI2 (prostaciclina), PGE1, PGE2, PGD2</td>
+</tr>
+<tr>
+<td>Vasoconstricción</td>
+<td>Tromboxano A2, leucotrienos C4, D4, E4</td>
+</tr>
+<tr>
+<td>Aumento de permeabilidad vascular</td>
+<td>Leucotrienos C4, D4, E4</td>
+</tr>
+<tr>
+<td>Quimiotaxia y adhesión leucocitaria</td>
+<td>Leucotrieno B4, HETE</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Prostaglandinas</strong>: <strong>COX-1</strong> constitutiva (funciones homeostáticas: líquidos e iones renales, citoprotección gástrica); <strong>COX-2</strong> en células infladas. El <strong>tromboxano A2 (TXA2)</strong> de las plaquetas es agregante plaquetario y vasoconstrictor; la <strong>prostaciclina (PGI2)</strong> del endotelio es vasodilatadora e impide la agregación; su desequilibrio se ha asociado a trombos coronarios y cerebrales. <strong>PGD2</strong> (mastocito) y <strong>PGE2</strong> causan vasodilatación, permeabilidad, edema (PGD2 quimiotáctica); <strong>PGE2</strong> hiperalgésica y febrígena.</p>
+<p><strong>Leucotrienos y lipoxinas</strong>: la 5-lipooxigenasa (de neutrófilos) genera 5-HETE (quimiotáctico, precursor). <strong>LTB4</strong>: potente quimiotáctico y activador de neutrófilos. <strong>LTC4, LTD4, LTE4</strong>: vasoconstricción intensa, broncoespasmo (asma), permeabilidad (más potentes que histamina). Las <strong>lipoxinas</strong> son antiinflamatorias (inhiben quimiotaxia y adhesión); biosíntesis transcelular (neutrófilos → precursores → plaquetas → lipoxinas maduras).</p>
+<p><strong>Antiinflamatorios</strong>: los <strong>AINE</strong> (AAS, ibuprofeno) inactivan COX-1 y COX-2; el AAS acetila irreversiblemente las enzimas. Los inhibidores selectivos de COX-2 (200 a 300 veces más potentes) inhiben la PGI2 endotelial y conservan el TXA2 plaquetario derivado de COX-1: riesgo trombótico. Inhibidores de la 5-lipooxigenasa y antagonistas de receptores leuceotrieno: útiles en asma. Los corticoesteroides reducen la transcripción de COX-2, fosfolipasa A2, citocinas e iNOS. El aceite de pescado genera antiinflamatorios como las <strong>resolvinas</strong>.</p>
+<h3 id="citocinas-tnf-e-il-1">Citocinas TNF e IL-1</h3>
+<p>Producidas sobre todo por macrófagos y células dendríticas activados (el TNF también por linfocitos T y mastocitos; la IL-1 por algunas células epiteliales). Producción de TNF vía TLR; la forma activa de IL-1 depende del inflamasoma.</p>
+<ul>
+<li><strong>Activación endotelial</strong>: más selectinas E y P y ligandos de integrinas, más mediadores, mayor procoagulación.</li>
+<li><strong>Activación de leucocitos y otras células</strong>: el TNF sensibiliza los neutrófilos a endotoxinas y aumenta la actividad bactericida de los macrófagos (NO). La IL-1 activa la síntesis de colágeno de los fibroblastos, la proliferación sinovial y la respuesta Th17.</li>
+<li><strong>Respuesta de fase aguda sistémica</strong> (junto a IL-6): fiebre, proteínas de fase aguda, anomalías metabólicas, hipotensión. El TNF, movilizando lípidos y proteínas e inhibiendo el apetito, causa <strong>caquexia</strong>.</li>
+</ul>
+<p>Antagonistas del TNF: eficaces en artritis reumatoide, psoriasis y ciertas enfermedades inflamatorias intestinales; predisponen a infecciones bacterianas (menor capacidad microbicida del macrófago). Antagonistas de IL-1: menos eficaces. Bloquear TNF o IL-1 no mejora el pronóstico de la sepsis.</p>
+<h3 id="quimiocinas">Quimiocinas</h3>
+<p>Familia de proteínas pequeñas (hasta 40 y 20 receptores) reclutadoras de leucocitos específicos, clasificadas por disposición de cisteínas (C):</p>
+<ul>
+<li><strong>C-X-C (α)</strong>: un aminoácido separa las dos primeras cisteínas. IL-8 (CXCL8), de macrófagos y endotelio, activa y atrae neutrófilos (por productos microbianos, IL-1, TNF).</li>
+<li><strong>C-C (β)</strong>: cisteínas adyacentes. MCP-1 (CCL2), eotaxina (CCL11, eosinófilos), MIP-1α (CCL3); atraen monocitos, eosinófilos, basófilos y linfocitos.</li>
+<li><strong>C (γ)</strong>: faltan dos residuos conservados (linfoctina, XCL1); relativamente específicas de linfocitos.</li>
+<li><strong>CX3C (δ)</strong>: tres aminoácidos entre las primeras cisteínas. Fractalquina (CX3CL1): de membrana (adhesión de monocitos y linfocitos T) y soluble (quimiotáctica).</li>
+</ul>
+<p>Receptores acoplados a proteína G; CXCR4 y CCR5 son correceptores del VIH. Funciones: en la aguda (avidez de integrinas y quimiotaxia) y en la arquitectura tisular (quimiocinas homeostáticas). <strong>IL-6</strong> e <strong>IL-17</strong> también actúan; contra ellas útiles en artritis juvenil y psoriasis.</p>
+<h3 id="sistema-del-complemento">Sistema del complemento</h3>
+<p>Más de 20 proteínas en cascada de amplificación proteolítica. Paso esencial: proteólisis de <strong>C3</strong> por tres vías: <strong>clásica</strong> (C1 a anticuerpo IgM o IgG unido a antígeno), <strong>alternativa</strong> (superficie microbiana, endotoxina/LPS, polisacáridos complejos, veneno de cobra; sin anticuerpos) y <strong>de la lectina</strong> (lectina de unión a manosa une hidratos de carbono microbianos y activa C1). La C3 convertasa libera <strong>C3a</strong> y une <strong>C3b</strong>; más C3b forma la C5 convertasa, que libera <strong>C5a</strong> y deja C5b que recluta C6-C9 en el <strong>complejo de ataque a la membrana (MAC)</strong>.</p>
+<ul>
+<li><strong>Inflamación</strong>: C5a, C3a y (menos) C4a son <strong>anafilotoxinas</strong>; históricamente histamina del mastocito, permabilidad y vasodilatación. C5a quimiotáctico para neutrófilos, monocitos, eosinófilos y basófilos; activa la lipooxigenasa del AA.</li>
+<li><strong>Opsonización y fagocitosis</strong>: C3b (y su producto inactivo C3bi) opsoniza microbios.</li>
+<li><strong>Lisis celular</strong>: el MAC permeabiliza la célula al agua y los iones (lisis osmótica); importante contra bacterias de pared fina, como Neisseria (carencia de componentes terminales: infecciones por Neisseria).</li>
+</ul>
+<p>Reguladores: <strong>inhibidor C1</strong> (carencia hereditaria: <strong>angioedema hereditario</strong>); <strong>DAF y CD59</strong>, anclados por GPI (impiden C3 convertasas y el MAC); la pérdida adquirida del anclaje GPI causa falta de ambos, lisis de eritrocitos y <strong>hemoglobinuria paroxística nocturna</strong>; <strong>factor H</strong> (inhibe la vía alternativa degradando C3b; sus defectos causan síndrome hemolítico urémico atípico y sus polimorfismos se asocian a degeneración macular relacionada con la edad).</p>
+<p><strong>Otros mediadores</strong>: <strong>PAF</strong> (fosfolípidos de plaquetas, basófilos, mastocitos, neutrófilos, macrófagos, endotelio): agregación plaquetaria, vasoconstricción y broncoconstricción a altas dosis; vasodilatación, permeabilidad, adhesión, quimiotaxia y estallido respiratorio a bajas; antagonistas no útiles. <strong>Coagulación</strong>: la trombina actúa por <strong>receptores activados por proteasas (PAR)</strong> en leucocitos (principal función: activación de plaquetas). <strong>Cininas</strong>: la calicreina escinde el cininógeno de alto peso molecular y produce <strong>bradicinina</strong> (aumenta permeabilidad, contrae músculo liso, dilata vasos y funciona como dolor; la inactiva la cininasa); intervenir en la anafilaxia. <strong>Neuropéptidos</strong>: sustancia P y neurocinina A (dolor, permeabilidad); el reflejo vagal colinérgico inhibe TNF (ensayos de estimulación del vago en artritis reumatoide).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Mediadores de la inflamación" tabindex="0"><table>
+<thead>
+<tr>
+<th>Reacción</th>
+<th>Mediadores principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vasodilatación</td>
+<td>Histamina, prostaglandinas</td>
+</tr>
+<tr>
+<td>Aumento de permeabilidad vascular</td>
+<td>Histamina y serotonina; C3a y C5a (liberan aminas vasoactivas del mastocito); leucotrienos C4, D4, E4</td>
+</tr>
+<tr>
+<td>Quimiotaxia, reclutamiento y activación leucocitaria</td>
+<td>Quimiocinas; C3a, C5a; LTB4; IL-1, TNF</td>
+</tr>
+<tr>
+<td>Fiebre</td>
+<td>IL-1, TNF; prostaglandinas</td>
+</tr>
+<tr>
+<td>Dolor</td>
+<td>Prostaglandinas; bradicinina; sustancia P</td>
+</tr>
+<tr>
+<td>Lesión tisular</td>
+<td>Enzimas lisosómicas leucocitarias; ERO</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-07-patrones-morfologicos-de-la-inflamacion-aguda" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>Patrones morfológicos de la inflamación aguda</h2>
+<ul>
+<li><strong>Inflamación serosa</strong>: líquido pobre en células en cavidades (peritoneo, pleura, pericardio) o espacios creados por la lesión. El <strong>derrame</strong> puede derivar del plasma o de secreciones mesoteliales, y también en trastornos no inflamatorios. Ejemplo: ampollas de la quemadura.</li>
+<li><strong>Inflamación fibrinosa</strong>: salida de fibrinógeno y depósito de fibrina; meninges, pericardio, pleura. Histología: red eosinófila de fibras. Si la fibrina no se elimina, fluye a tejido cicatricial (<strong>organización</strong>). En el pericardio, engrosamiento y, si la fibrosis es extensa, obstrucción del espacio pericárdico.</li>
+<li><strong>Inflamación purulenta (supurativa) y absceso</strong>: producción de <strong>pus</strong> (neutrófilos, restos necróticos licuados y edema). Causa habitual: <strong>bacterias piógenas</strong> que licúan el tejido (estafilococos). Ejemplo común: apendicitis aguda. Los <strong>abscesos</strong> son focos localizados de pus delimitados: centro necrótico licuado, corona de neutrófilos, periferia fibroblástica; al final, encapsulación y tejido conjuntivo.</li>
+<li><strong>Úlceras</strong>: defecto o excavación superficial por esfacelación del tejido necrótico inflamado. Frecuencia: mucosas de boca, estómago, intestino, vías genitourinarias; piel y subcutáneo de extremos inferiores con insuficiencia vascular (diabetes, anemia falciforme, enfermedad vascular periférica). Aguda: infiltración polimorfonuclear y dilatación vascular; crónica: fibrosa, linfocitaria y plasmática. Ejemplo: úlcera péptica.</li>
+</ul>
+
+</section><section id="sec-08-evolucion-y-resumen" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>Evolución y resumen</h2>
+<ul>
+<li><strong>Resolución completa</strong>: lesión breve y limitada, células regenerables; macrófagos depuran residuos y microbios; reabsorción del edema; regeneración del tejido.</li>
+<li><strong>Cicatrización (fibrosis)</strong>: destrucción sustancial, tejidos no regenerativos o fibrina no eliminable; el tejido conjuntivo reemplaza la zona (<strong>organización</strong>), con pérdida de la función tisular.</li>
+<li><strong>Progresión a inflamación crónica</strong>: si no remite por persistir el agente (infecciones víricas o crónicas) o por interferencias en la curación; también en autoinmunidad.</li>
+</ul>
+<p>Las reacciones vasculares y celulares generan los signos cardinales: el flujo aumenta y produce rubor y calor; el edema, tumor; la lesión y la liberación de prostaglandinas, neuropéptidos y citocinas, dolor; la functio laesa resulta del dolor y la lesión.</p>
+
+</section><section id="sec-09-inflamacion-cronica" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>Inflamación crónica</h2>
+<p>Respuesta de duración prolongada (semanas o meses) con inflamación, lesión e intento de reparación coexistentes. Puede seguir a un proceso agudo o desarrollarse de novo, de forma gradual.</p>
+<p>Causas: <strong>infecciones persistentes</strong> (micobacterias, ciertos virus, hongos, parásitos; hipersensibilidad retardada; a veces con patrón granulomatoso; la aguda no resuelta progresa, p. ej., absceso pulmonar crónico); <strong>enfermedades por hipersensibilidad</strong> (autoinmunitarias: artritis reumatoide, esclerosis múltiple; respuestas no reguladas contra microbios: enfermedad inflamatoria intestinal; alergias: asma bronquial); <strong>exposición prolongada a agentes tóxicos</strong> (exógenos: sílice, <strong>silicosis</strong>; endógenos: colesterol y lípidos en <strong>ateroesclerosis</strong>).</p>
+<p>Morfología: infiltración mononuclear (macrófagos, linfocitos, células plasmáticas), destrucción de tejidos, angiogenia y fibrosis.</p>
+<h3 id="papel-de-los-macrófagos-y-otras-células">Papel de los macrófagos y otras células</h3>
+<p>Células predominantes. En vida posnatal derivan de la médula ósea vía monocitos (semivida sanguínea 1 día); en el desarrollo, de progenitores del saco vitelino e hígado fetal, que persisten toda la vida como microglia, células de Kupffer, macrófagos alveolares e histiocitos sinusales (sistema mononuclear fagocítico). Los monocitos llegan pronto al tejido inflamado, alrededor de 48 h.</p>
+<ul>
+<li><strong>Activación clásica (M1)</strong>: por productos microbianos (ligandos TLR), señales de linfocitos T (IFN-γ) o cristales y partículas. Producen NO, enzimas lisosómicas, IL-1, IL-12, IL-23, quimiocinas y ERO; destruyen microbios y tejidos muertos; promueven la inflamación.</li>
+<li><strong>Activación alternativa (M2)</strong>: por IL-4 e IL-13. No son microbicidas; liberan IL-10, TGF-β y factores de crecimiento; terminan la inflamación y promueven la reparación y la fibrosis.</li>
+</ul>
+<p>Pueden coexistir ambos fenotipos y formas intermedias. El arsenal del macrófago explica la lesión tisular de la inflamación crónica; los macrófagos presentan antígenos y forman con los linfocitos T un asa de retroalimentación.</p>
+<p>Los linfocitos T y B activados por microbios y antígenos ambientales amplifican y propagan la inflamación crónica (células de memoria de vida larga). Tres subgrupos CD4+:</p>
+<ul>
+<li><strong>Th1</strong>: producen IFN-γ (activación clásica de macrófagos).</li>
+<li><strong>Th2</strong>: secretan IL-4, IL-5 e IL-13; reclutan y activan eosinófilos; dirigen la activación alternativa de macrófagos; relevantes frente a helmintos y alergias.</li>
+<li><strong>Th17</strong>: secretan IL-17 y otras citocinas que inducen quimiocinas reclutadoras de neutrófilos y monocitos.</li>
+</ul>
+<p>Las células Th1 y Th17 participan en defensa frente a bacterias y virus y en autoinmunidad. Los macrófagos presentan antígenos y secretan IL-12; los linfocitos T secretan TNF, IL-17 y quimiocinas que reclutan más macrófagos: el ciclo bidireccional T-macrófago sostiene la inflamación y da lugar a granulomas. algunas reacciones forman <strong>órganos linfoides terciarios</strong> (folículos organizados), como en membrana sinovial de artritis reumatoide de larga evolución y en tiroides de Hashimoto.</p>
+<p>Otras células: <strong>eosinófilos</strong>, abundantes en reacciones IgE e infecciones parasitarias (reclutados por eotaxina); su principal gránulo, la <strong>proteína básica principal</strong>, es tóxica para helmintos pero lesiona epitelios (lesión en alergias). <strong>Mastocitos</strong>, con Fc para IgE, se degradan en hipersensibilidad inmediata y liberan histamina y prostaglandinas (alimentos, veneno, fármacos; riesgo de shock anafiláctico). <strong>Neutrófilos</strong> persistentes en la crónica (osteomielitis, lesiones pulmonares por tabaco): <strong>inflamación aguda sobre crónica</strong>.</p>
+<h3 id="inflamación-granulomatosa">Inflamación granulomatosa</h3>
+<p>Cúmulos de macrófagos activados, a menudo con linfocitos T y a veces necrosis; intento de contener agentes difíciles de erradicar. Células epitelioides (citoplasma abundante y rosado) y células gigantes multinucleadas (<strong>de Langhans</strong>, 40 a 50 μm).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Inflamación crónica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Causa</th>
+<th>Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Granuloma de cuerpo extraño</td>
+<td>Materiales inertes (talco, suturas, otras fibras)</td>
+<td>Sin respuesta T; células gigantes y epitelioides junto al cuerpo extraño, en el centro (refringente en luz polarizada)</td>
+</tr>
+<tr>
+<td>Granuloma inmunitario</td>
+<td>Agentes que inducen respuesta T persistente (microbios)</td>
+<td>El IFN-γ de Th1 activa los macrófagos; en algunas parasitosis (esquistosomiasis) predominan Th2 y eosinófilos</td>
+</tr>
+</tbody>
+</table></div>
+<p>En tuberculosis, el granuloma es el <strong>tubérculo</strong>, con <strong>necrosis caseosa</strong> (aspecto granular de queso; residuos eosinófilos amorfos con pérdida completa de los detalles celulares) por hipoxia y radicales libres. Granulomas no necrosantes: Crohn, sarcoidosis, cuerpo extraño.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Inflamación crónica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Causa y reacción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuberculosis</td>
+<td>Mycobacterium tuberculosis; tubérculo caseoso con bacilos acidorresistentes</td>
+</tr>
+<tr>
+<td>Lepra</td>
+<td>Mycobacterium leprae; macrófagos con bacilos; granulomas no necrosantes</td>
+</tr>
+<tr>
+<td>Sífilis</td>
+<td>Treponema pallidum; goma con pared de histiocitos e infiltrado de células plasmáticas</td>
+</tr>
+<tr>
+<td>Arañazo de gato</td>
+<td>Bacilos gramnegativos; granuloma estrellado con restos granulares y neutrófilos</td>
+</tr>
+<tr>
+<td>Sarcoidosis</td>
+<td>Etiología desconocida; granulomas no necrosantes con macrófagos activados abundantes</td>
+</tr>
+<tr>
+<td>Crohn</td>
+<td>Posible reacción a bacterias intestinales; granulomas no necrosantes en la pared intestinal</td>
+</tr>
+</tbody>
+</table></div>
+<p>Siempre descartar tuberculosis; ante presentaciones atípicas identificar el agente (tinciones acidorresistentes, cultivo, PCR, serología).</p>
+
+<div class="warnbox"><span class="box-title">Tubérculo caseoso vs granuloma no necrosante</span>El granuloma contiene agentes difíciles de erradicar: células epitelioides y gigantes de Langhans. Necrosis caseosa sugiere tuberculosis (siempre descartarla); granulomas no necrosantes: Crohn, sarcoidosis y cuerpo extraño.</div>
+</section><section id="sec-10-efectos-sistemicos-de-la-inflamacion" class="card">
+<div class="section-kicker"><span class="n">10</span> Sección</div>
+<h2>Efectos sistémicos de la inflamación</h2>
+<p>La <strong>respuesta de fase aguda</strong> es citocina-mediada: TNF, IL-1 e IL-6 (y los interferones):</p>
+<ul>
+<li><strong>Fiebre</strong> (1 a 4 °C): pirógenos exógenos (LPS) → IL-1 y TNF (patchógenos endógenos) → ciclooxigenasas → PGE2 en el hipotálamo (células vasculares y perivasculares). Ajuste térmico al alza (menor pérdida de calor por vasoconstricción, más generación en grasa parda y músculo). Los AINE la reducen inhibiendo prostaglandinas.</li>
+<li><strong>Proteínas de fase aguda</strong> (hepatocitos, síntesis disparada por IL-6, IL-1, TNF): pueden multiplicarse por cientos. <strong>Proteína C reactiva (CRP)</strong>, <strong>fibrinógeno</strong>, <strong>proteína amiloide A sérica (SAA)</strong>. CRP y SAA se unen a células microbianas (opsonizan, activan complemento) y a la cromatina. El fibrinógeno agrega eritrocitos: <strong>velocidad de sedimentación eritrocítica (VSE)</strong>. SAA prolongada: amiloidosis secundaria. CRP elevada: riesgo de infarto en enfermedad coronaria.</li>
+<li><strong>Otras proteínas hepáticas</strong>: <strong>hepcidina</strong> (reduce hierro disponible; anemia de la inflamación crónica), <strong>trombopoyetina</strong> (trombocitosis).</li>
+<li><strong>Leucocitosis</strong>: sobre todo en infección bacteriana; 15.000 o 20.000 células/mL, y en casos extremos 40.000 a 100.000 (<strong>reacción leucemoide</strong>, distinta de leucemia). Salida acelerada de granulocitos de la médula (IL-1, TNF) con <strong>desviación a la izquierda</strong> (neutrófilos maduros e inmaduros), luego proliferación medular por factores estimulantes de colonias (CSF). Patrones: <strong>neutrofilia</strong> (bacteriana), <strong>linfocitosis</strong> (mononucleosis, parotiditis, rubéola), <strong>eosinofilia</strong> (alergias, helmintos), <strong>leucopenia</strong> (fiebre tifoidea, ciertas víricas, rickettsias, protozoos).</li>
+<li><strong>Otras manifestaciones</strong>: pulso y presión aumentados, menos sudoración, escalofríos, temblores, anorexia, malestar general.</li>
+<li><strong>Sepsis</strong>: en infecciones bacterianas graves, el TNF e IL-1 en gran cantidad generan coagulación intravascular diseminada, shock hipotensivo y trastornos metabólicos (resistencia a la insulina, hiperglucemia): <strong>shock séptico</strong>. Insuficiencia de la inflamación (carencia de leucocitos por sustitución medular, depresión o rechazo de injerto): predisposición a infecciones.</li>
+</ul>
+
+</section><section id="sec-11-reparacion-de-tejidos" class="card">
+<div class="section-kicker"><span class="n">11</span> Sección</div>
+<h2>Reparación de tejidos</h2>
+<p>La <strong>reparación</strong> (o cicatrización) es el restablecimiento de la arquitectura y la función tisulares tras la lesión, mediante dos procesos:</p>
+<ul>
+<li><strong>Regeneración</strong>: proliferación de células diferenciadas que sobreviven (p. ej., hepatocitos) o de células madre y progenitores (epitelios de piel e intestino); recupera el estado normal, si el soporte estructural se mantiene (p. ej., hepatectomía parcial); si la trama de sostén está destruida (p. ej., absceso hepático con pérdida de la trama de reticulina), se produce cicatrización.</li>
+<li><strong>Formación de cicatriz</strong>: depósito de tejido conjuntivo cuando el tejido no regenera o el soporte está dañado. <strong>Fibrosis</strong>: exceso de colágeno en órganos tras inflamación crónica o infarto; <strong>organización</strong>: fibrosis en un espacio con exudado.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Reparación de tejidos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo de tejido</th>
+<th>Características</th>
+<th>Ejemplos</th>
+<th>Reparación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lábiles (continua división)</td>
+<td>Se destruyen y reponen desde células madre y células maduras</td>
+<td>Hematopoyéticos; epitelios escamosos (piel, cavidad oral, vagina, cérvix); cúbicos de conductos exocrinos; cilíndrico (tubo digestivo, útero, trompas); de transición urinario</td>
+<td>Regeneración fácil si persiste la reserva de células madre</td>
+</tr>
+<tr>
+<td>Estables</td>
+<td>En fase G0; se dividen ante lesión o pérdida de masa</td>
+<td>Parénquima de hígado, riñón, páncreas; endotelio, fibroblastos, músculo liso</td>
+<td>Regeneración limitada (excepto hígado); clave en cicatrización</td>
+</tr>
+<tr>
+<td>Permanentes</td>
+<td>Diferenciación terminal</td>
+<td>Neuronas, miocitos cardiacos (músculo esquelético suele ser permanente)</td>
+<td>Cicatriz y pérdida de función</td>
+</tr>
+</tbody>
+</table></div>
+<p>La proliferación depende de <strong>factores de crecimiento</strong> (de macrófagos activados, células epiteliales y del estroma; a veces fijados a la MEC) y de señales de las <strong>integrinas</strong> con las proteínas de la MEC.</p>
+<p><strong>Regeneración hepática</strong>: tras hepatectomía parcial (hasta el 90% resecable) dos mecanismos: (1) <strong>proliferación de hepatocitos remanentes</strong>: fase de <strong>sensibilización previa</strong> con IL-6 (células de Kupffer) hace receptivos a los factores de crecimiento; fase de factores de crecimiento (<strong>HGF y TGF-α</strong>): entrada en el ciclo celular (G0 a S) y replicación masiva; fase de <strong>terminación</strong> con retorno al reposo (señales antiproliferativas de la familia TGF-β); después se replican las células de Kupffer, endoteliales y estrelladas; y (2) <strong>repoblación por células progenitoras</strong> (células ovales) de los <strong>conductos de Hering</strong>, cuando la proliferación de hepatocitos está dañada (inflamación hepática crónica).</p>
+<h3 id="pasos-en-la-formación-de-cicatriz">Pasos en la formación de cicatriz</h3>
+<p>Tras el tapón hemostático de plaquetas y fibrina: (1) <strong>inflamación</strong> (6 a 48 h): quimiotácticos (complemento, quimiocinas de plaquetas activadas) reclutan neutrófilos y luego monocitos, que depuran microbios y residuos; (2) <strong>proliferación celular</strong> (unos 10 días): células epiteliales cubren la herida; endotelio y pericitos proliferan (<strong>angiogenia</strong>); fibroblastos depositan colágeno; (3) <strong>granulación y depósito de tejido conjuntivo</strong>.</p>
+<p><strong>Tejido de granulación</strong>: proliferación de fibroblastos, angiogenia y MEC laxa, con infiltrado inflamatorio (sobre todo macrófagos). Macrófagos generalmente del tipo <strong>M2</strong>: depuran y secretan citocinas y factores de crecimiento que estimulan los fibroblastos. Su cantidad depende del tamaño del defecto. Se remplaza gradualmente por colágeno: cicatriz fibrosa estable, con regresión vascular y miofibroblastos.</p>
+<p><strong>Angiogenia</strong>: desarrollo de vasos nuevos a partir de preexistentes; esencial en cicatrización, circulación colateral, y crecimiento tumoral. Por brote capilar: vasodilatación (NO) y permeabilidad (VEGF) → separación de pericitos y degradación de membrana basal → migración endotelial (borde anterior o punta) → proliferación tras la punta → tubos capilares → reclutamiento de pericitos o músculo liso → supresión de la proliferación y migración y membrana basal.</p>
+<p>Mecanismos: <strong>VEGF (sobre todo VEGF-A)</strong> estimula la migración y proliferación endoteliales y la vasodilatación por NO; regula, vía Notch, la ramificación. <strong>FGF-2</strong>: proliferación endotelial, migración de macrófagos, fibroblastos y células epiteliales. <strong>Angiopoyetinas 1 y 2</strong>: maduración estructural (PDGF recluta músculo liso; TGF-β inhibe la migración/proliferación endoteliales y potencia la MEC: estabilización). <strong>Notch</strong>: regula brotes y ramificación.</p>
+<h3 id="depósito-y-remodelación-del-tejido-conjuntivo">Depósito y remodelación del tejido conjuntivo</h3>
+<p>El depósito tiene dos fases: migración y proliferación de fibroblastos, y síntesis de proteínas de MEC; las controlan <strong>PDGF, FGF-2 y TGF-β</strong>, sobre todo de macrófagos M2, mastocitos y linfocitos del tejido de granulación. El <strong>TGF-β es la citocina clave</strong> fibrogénica: estimula la migración y proliferación de fibroblastos, aumenta la síntesis de colágeno y fibronectina y reduce la degradación de MEC (inhibiendo metaloproteinasas). Regulación: activación postranscripcional del TGF-β latente, velocidad de secreción, integrinas y microfibrillas. Participa en fibrosis de pulmón, hígado, riñón; y es antiinflamatorio (inhibe linfocitos y la actividad de otros leucocitos). Algunos fibroblastos se transforman en <strong>miofibroblastos</strong> (con actina), que contraen la cicatriz.</p>
+<p>La <strong>remodelación</strong> depende del equilibrio entre síntesis y degradación de la MEC. <strong>Metaloproteinasas de matriz (MMP)</strong> (dependen de cinc): Colagenasas intersticiales (MMP-1, MMP-2, MMP-3, que degradan colágeno fibrilar); gelatinasas (colágeno amorfo, fibronectina), estromelisinas (proteoglucanos, laminina, fibronectina). Producidas por fibroblastos, macrófagos, neutrófilos, células sinoviales y algunas epiteliales. Generadas como <strong>cimógenos</strong> inactivos, activados por proteasas (plasmina) en lesión; inhibidas por <strong>TIMP</strong> (inhibidores tisulares de metaloproteinasas) de las células mesenquimatosas.</p>
+<p>Factores que influyen en la reparación: <strong>infección</strong> (causa nº 1 clínica: prolonga inflamación, aumenta lesión); <strong>diabetes</strong> (causa principal sistémica); <strong>nutrición</strong> (proteína y vitamina C para colágeno); <strong>glucocorticoides</strong> (debilitan la cicatriz inhibiendo TGF-β; utilizados en córnea para evitar opacidades); <strong>factores mecánicos</strong> (presión, torsión, dehiscencia; mala perfusión: enfermedad vascular periférica, ateroesclerosis, diabetes, insuficiencia venosa; cuerpos extraños); <strong>tipo y localización de la lesión</strong> (solo tejidos con células lábiles y estables se recuperan; los permanentes quedan en cicatriz; en cavidades, solución o organización del exudado).</p>
+
+</section><section id="sec-12-cicatrizacion-de-heridas-cutaneas" class="card">
+<div class="section-kicker"><span class="n">12</span> Sección</div>
+<h2>Cicatrización de heridas cutáneas</h2>
+<p>Según la naturaleza y el tamaño de la herida, es por <strong>primera o segunda intención</strong>.</p>
+<p><strong>Primera intención</strong>: incisiones limpias, no infectadas y aproximadas con suturas, mínima pérdida de tejido. Fases (coágulo de fibrina para hemostasia y soporte celular): 24 h, neutrófilos en el borde y mayor mitosis basal; 24 a 48 h, capa epitelial continua y delgada; día 3, macrófagos reemplazan a neutrófilos (depuran residuos y fibrina; angiogenia, MEC); día 5, neovascularización máxima y tejido de granulación; segunda semana, más colágeno; final del primer mes, cicatriz sin células inflamatorias y epidermis casi normal.</p>
+<p><strong>Segunda intención</strong>: heridas con pérdida extensa de tejido. Diferencias:</p>
+<ul>
+<li>Mayor coágulo de fibrina, más exudado y residuos; inflamación más intensa, con mayor potencial de lesión secundaria.</li>
+<li>Formación de mucho más <strong>tejido de granulación</strong> y mayor masa cicatricial final.</li>
+<li>Deposita una <strong>matriz provisional</strong> de fibrina, plasma, fibronectina y colágeno tipo III, reemplazada por colágeno de tipo I hacia las 2 semanas. Cicatriz definitiva avascular, clara, acelular; los anejos cutáneos se pierden permanentemente.</li>
+<li><strong>Contracción de la herida</strong> por <strong>miofibroblastos</strong>; en 6 semanas los grandes defectos se reducen al 5 o 10% de su tamaño original.</li>
+</ul>
+<p><strong>Resistencia de la herida</strong>: unos 70% de la piel normal (principalmente por suturas). Aumenta durante los 2 primeros meses (síntesis mayor que degradación de colágeno, entrecruzamiento y más tamaño de las fibras); al 3º mes alcanza el 70-80% y ahí termina.</p>
+<p><strong>Fibrosis de órganos parenquimatosos</strong>: mecanismos idénticos pero con disfunción e insuficiencia: cirrosis hepática, esclerosis sistémica (esclerodermia), fibrosis pulmonar idiopática, neumoconiosis, fibrosis por fármacos y radiación, nefropatías terminales, pericarditis constrictiva. Se investigan fármacos antifibróticos.</p>
+
+</section><section id="sec-13-anomalias-en-la-reparacion-de-tejidos" class="card">
+<div class="section-kicker"><span class="n">13</span> Sección</div>
+<h2>Anomalías en la reparación de tejidos</h2>
+<ul>
+<li><strong>Úlceras venosas</strong>: hipertensión venosa crónica (varices graves, insuficiencia cardiaca congestiva); hemosiderina; no cicatrizan por falta de aporte de oxígeno.</li>
+<li><strong>Úlceras arteriales</strong>: ateroesclerosis periférica (diabéticos); isquemia; dolorosas.</li>
+<li><strong>Úlceras diabéticas</strong>: extremos inferiores (pies); isquemia, neuropatía, anomalías metabólicas, infecciones; al histología, tejido de granulación extenso.</li>
+<li><strong>Úlceras por presión</strong>: compresión prolongada contra el hueso; presión e isquemia.</li>
+<li><strong>Dehiscencia</strong>: reabertura de la incisión (obesidad, desnutrición, infección, insuficiencia vascular; precipitada por vómitos y tos).</li>
+<li><strong>Cicatrices hipertróficas</strong>: colágeno excesivo, elevadas, abundantes miofibroblastos; remiten en meses; tras quemaduras en dermis profunda.</li>
+<li><strong>Queloides</strong>: cicatriz que excede la herida original y no se contrae; predisposición, más en afroamericanos.</li>
+<li><strong>Granulación exuberante</strong>: tejido de granulación en exceso, que protruye y impide la reepitelización; requiere cauterización o escisión.</li>
+<li><strong>Desmoides o fibromatosis agresivas</strong>: proliferación exuberante de fibroblastos tras cicatrices o traumatismo, recidiva; tumores de grado bajo.</li>
+<li><strong>Contracturas</strong>: contracción excesiva; predominan en palmas, plantas, tórax anterior; asociadas a quemaduras graves; limitan el movimiento articular.</li>
+</ul>
+
+</section><section id="sec-14-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">14</span> Sección</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Reconocimiento del agresor: TLR (extracelular, endosomal, citosólico), sensores NLR con <strong>inflamasoma</strong> (IL-1; síndromes autoinflamatorios) y receptores para opsoninas y complemento.</li>
+<li>Cinética del aumento de permeabilidad: retracción endotelial (15 a 30 min, histamina), extravasación tardía (2 a 12 h de latencia; quemadura solar) y lesión endotelial directa (inmediata y prolongada).</li>
+<li>Migración leucocitaria: <strong>selectinas = rodamiento; integrinas = adhesión firme; CD31/PECAM-1 = transmigración</strong>; la quimiocina pasa las integrinas a alta afinidad.</li>
+<li>Cronología del infiltrado: <strong>neutrófilos 6 a 24 h, monocitos 24 a 48 h</strong>; Th17 son clave y, sin ellas, surgen <strong>abscesos fríos</strong>.</li>
+<li>Destrucción intracelular: estallido respiratorio por NADPH oxidasa y sistema H2O2-MPO-haluro (HOCl-); enfermedad granulomatosa crónica por defecto de fagocito oxidasa; iNOS genera NO y peroxinitrito.</li>
+<li>Terminación activa: leucotrienos a <strong>lipoxinas</strong> (biosíntesis transcelular neutrofilo-plaqueta) y TGF-β/IL-10.</li>
+<li>Sistema del complemento: tres rutas de activación (clásica, alternativa, lectina) y tres funciones (anafilotoxinas; opsonización; MAC); reguladores (inhibidor de C1, DAF, CD59, factor H) y patologías (angioedema hereditario, HPN, SHR atípico, degeneración macular).</li>
+<li>Eicosanoides: prostaciclina del endotelio y tromboxano de plaquetas son antagónicos; explica el riesgo trombótico de los inhibidores selectivos de COX-2.</li>
+<li>Respuesta de fase aguda: fiebre (IL-1, TNF, PGE2 en hipotálamo), proteínas de fase aguda hepáticas (CRP, fibrinógeno, SAA, por IL-6), leucocitosis con desviación a la izquierda, shock séptico por TNF e IL-1.</li>
+<li>Fenotipos de macrófago: <strong>M1</strong> (microbicida, proinflamatorio, inducido por IFN-γ y productos microbianos) frente a <strong>M2</strong> (reparador, antiinflamatorio, inducido por IL-4 e IL-13); el paso de M1 a M2 marca el tránsito hacia la reparación.</li>
+<li>Granuloma: células epitelioides, células gigantes de Langhans y necrosis caseosa (tuberculosis) o no necrosante (Crohn, sarcoidosis); siempre descartar tuberculosis.</li>
+<li>Tejidos para reparación: lábiles, estables, permanentes; determina si la lesión se resuelve por regeneración o por cicatriz.</li>
+<li>Formación de cicatriz: tejido de granulación (fibroblastos, capilares, macrófagos M2), TGF-β como factor fibrogénico principal, remodelado por MMP/TIMP.</li>
+<li>Cicatrización cutánea: unión primaria frente a unión secundaria (más granulación y contracción por miofibroblastos; colágeno III provisional que pasa a tipo I); la resistencia llega al 70-80% al tercer mes.</li>
+<li>Anomalías: cicatrices hipertróficas (dentro del área original) frente a queloides (exceden los límites), granulación exuberante, contracturas (quemaduras graves).</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

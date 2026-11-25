@@ -1,0 +1,2429 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual del Certamen 1 · Anatomía Patológica UBB</title>
+<meta name="description" content="Manual del Certamen 1. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Manual del Certamen 1 · Anatomía Patológica UBB">
+<meta property="og:description" content="Manual del Certamen 1. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Manual del Certamen 1</h1>
+    <p class="lede">Manual integrado del Certamen 1: 11 clases, 12 temas y las cifras de mayor rendimiento, ordenados por peso en el certamen.</p>
+    <div class="meta-grid"><div><span>Temas</span><strong>12</strong></div><div><span>Clases</span><strong>11</strong></div><div><span>Filas de tabla</span><strong>195</strong></div><div><span>Fuente</span><strong>Apuntes + Robbins 10ª ed.</strong></div><div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-como-usar-este-manual-en-5-dias">Cómo usar este manual en 5 días</a></li>
+        <li><a href="#sec-02-las-cifras-que-hay-que-tener-a-mano">Las cifras que hay que tener a mano</a></li>
+        <li><a href="#sec-03-1-enfermedades-ambientales-y-nutricionales">1. Enfermedades ambientales y nutricionales</a></li>
+        <li><a href="#sec-04-2-trastornos-hemodinamicos-trombosis-y-shock">2. Trastornos hemodinámicos, trombosis y shock</a></li>
+        <li><a href="#sec-05-3-lesion-celular-muerte-celular-y-adaptaciones">3. Lesión celular, muerte celular y adaptaciones</a></li>
+        <li><a href="#sec-06-4-trastornos-geneticos">4. Trastornos genéticos</a></li>
+        <li><a href="#sec-07-5-inmunopatologia-i-hipersensibilidad">5. Inmunopatología I: hipersensibilidad</a></li>
+        <li><a href="#sec-08-6-inmunopatologia-ii-autoinmunidad-y-trasplantes">6. Inmunopatología II: autoinmunidad y trasplantes</a></li>
+        <li><a href="#sec-09-7-inmunopatologia-iii-inmunodeficiencias-sida-y-amiloidosis">7. Inmunopatología III: inmunodeficiencias, sida y amiloidosis</a></li>
+        <li><a href="#sec-10-8-enfermedades-de-la-lactancia-y-la-infancia">8. Enfermedades de la lactancia y la infancia</a></li>
+        <li><a href="#sec-11-9-inflamacion-y-reparacion">9. Inflamación y reparación</a></li>
+        <li><a href="#sec-12-10-neoplasias">10. Neoplasias</a></li>
+        <li><a href="#sec-13-11-enfermedades-infecciosas">11. Enfermedades infecciosas</a></li>
+        <li><a href="#sec-14-12-inmunidad-normal-base">12. Inmunidad normal (base)</a></li>
+        <li><a href="#sec-15-a-correcciones-a-los-apuntes">A. Correcciones a los apuntes</a></li>
+        <li><a href="#sec-16-b-indice-tema-clase-robbins">B. Índice tema → clase → Robbins</a></li>
+        <li><a href="#sec-17-c-fuentes">C. Fuentes</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="01_La_Celula.html" title="La célula como unidad de salud y enfermedad">01</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<p><em>Basado en los apuntes de clase (192 páginas, 11 clases) contrastados con Robbins y Cotran, Patología Estructural y Funcional, 10ª edición.</em></p>
+<hr /><section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance</div><h2>Qué cubre este manual</h2><div class="keybox"><span class="box-title">Alcance</span>Manual integrado del Certamen 1, construido desde los apuntes de las 11 clases (192 páginas) y contrastado con Robbins y Cotran, 10ª edición. Está ordenado por peso en el certamen, no por número de clase. Incluye las 40 cifras de mayor rendimiento, 12 temas integrados, un índice tema-clase-Robbins y las correcciones a los apuntes.</div><p class="small">Los resúmenes de clase no usan citas por página o diapositiva; el manual declara sus fuentes en el apéndice C.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>El manual está ordenado por peso en el certamen, no por clase: si el tiempo se acorta, lo que queda sin leer rinde menos.</li><li>Plan de 5 días: cifras con ambientales y hemodinamia (3 h) el día 1; inmunopatología (3 h) el día 3; el resto, 2,5 h.</li><li>Lee cada tema completo y cierra con "Lo que tenés que poder decir en 3 líneas". No subrayes: el manual ya está subrayado.</li><li>Lo que no entra: capítulo 1, angiogenia y cascada metastásica en detalle, hongos y parásitos, cáncer hereditario, mitocondriales, vitaminas B, neumoconiosis, dieta y cáncer.</li><li>Cifras de mayor rendimiento: malformaciones 1/33, SDR 93% a ≤28 semanas, FQ 95% de azoospermia, tabaco 90% del cáncer pulmonar, amiloide con rojo Congo.</li></ul></div></section><section id="sec-01-como-usar-este-manual-en-5-dias" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Cómo usar este manual en 5 días</h2>
+<p>Este manual está ordenado <strong>por peso en el certamen</strong>, no por número de clase. Si el tiempo se acorta, lo que queda sin leer es lo de menor rendimiento. Cada sección lleva la clase de origen para que puedas volver a tus apuntes.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Cómo usar este manual en 5 días" tabindex="0"><table>
+<thead>
+<tr>
+<th>Día</th>
+<th>Qué estudiar</th>
+<th>Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Las 40 cifras + Ambientales y nutricionales + Hemodinamia</td>
+<td>3 h</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Lesión celular + Genética</td>
+<td>2,5 h</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Inmunopatología (hipersensibilidad, autoinmunidad, inmunodeficiencias, sida, amiloide)</td>
+<td>3 h</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Lactancia e infancia + Inflamación</td>
+<td>2,5 h</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Neoplasias + Infecciosas + Inmunidad normal + repaso de cifras</td>
+<td>2,5 h</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Cómo leer cada tema:</strong> primero el texto completo; al final, "Lo que tenés que poder decir en 3 líneas". Si no podés decirlo, volvé al tema. No subrayes: el manual ya está subrayado.</p>
+<p><strong>Qué NO entra</strong> (no está en ninguna clase): capítulo 1 (la célula como unidad), angiogenia y cascada metastásica en detalle, hongos y parásitos, cáncer hereditario, enfermedades mitocondriales, vitaminas del grupo B, neumoconiosis, dieta y cáncer.</p>
+<hr />
+
+</section><section id="sec-02-las-cifras-que-hay-que-tener-a-mano" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Las cifras que hay que tener a mano</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: Las cifras que hay que tener a mano" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Cifra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Malformaciones congénitas</td>
+<td>1 de cada <strong>33</strong> nacidos vivos</td>
+</tr>
+<tr>
+<td>Causas de malformación</td>
+<td>genéticas 10-15%, infecciones maternas 2-3%, enfermedades maternas 6-8%, fármacos ~1%, multifactoriales 20-25%, <strong>desconocidas 40-60%</strong></td>
+</tr>
+<tr>
+<td>Periodo de máxima sensibilidad teratógena</td>
+<td>semanas <strong>3-9</strong> (máximo 4-5)</td>
+</tr>
+<tr>
+<td>Prematuridad</td>
+<td>&lt;<strong>37</strong> semanas; 1 de cada 10 nacidos en EE. UU.</td>
+</tr>
+<tr>
+<td>SDR neonatal</td>
+<td>1% a las 37 semanas, 10,5% a las 34, <strong>93% a ≤28</strong></td>
+</tr>
+<tr>
+<td>Enterocolitis necrosante</td>
+<td>1 de cada 10 nacidos <strong>&lt;1.500 g</strong>; 20-60% requieren cirugía</td>
+</tr>
+<tr>
+<td>Fenilcetonuria</td>
+<td>1/10.000; fenilalanina <strong>≥5 veces</strong> lo normal</td>
+</tr>
+<tr>
+<td>Galactosemia</td>
+<td>1/60.000</td>
+</tr>
+<tr>
+<td>Fibrosis quística</td>
+<td>1/2.500 caucásicos; portadores 1/20; <strong>F508 en 70%</strong></td>
+</tr>
+<tr>
+<td>FQ: insuficiencia pancreática</td>
+<td><strong>85-90%</strong></td>
+</tr>
+<tr>
+<td>FQ: azoospermia</td>
+<td><strong>95%</strong> de los varones</td>
+</tr>
+<tr>
+<td>FQ: colonización por <em>P. aeruginosa</em></td>
+<td><strong>80%</strong> a los 20 años</td>
+</tr>
+<tr>
+<td>FQ: sudor diagnóstico</td>
+<td>cloro <strong>&gt;60 mM</strong></td>
+</tr>
+<tr>
+<td>SMSL</td>
+<td>90% en los primeros <strong>6 meses</strong>; pico <strong>2-4 meses</strong></td>
+</tr>
+<tr>
+<td>Neuroblastoma</td>
+<td>1/7.000; mediana <strong>18 meses</strong>; 40% suprarrenal</td>
+</tr>
+<tr>
+<td>Neuroblastoma: MYCN amplificado</td>
+<td><strong>20-30%</strong>; alto riesgo</td>
+</tr>
+<tr>
+<td>Tumor de Wilms</td>
+<td>1/10.000; máximo <strong>2-5 años</strong>; 95% antes de los 10</td>
+</tr>
+<tr>
+<td>Wilms: WAGR / Denys-Drash</td>
+<td>riesgo <strong>33%</strong> / <strong>90%</strong></td>
+</tr>
+<tr>
+<td>Cáncer: mortalidad anual</td>
+<td><strong>9,5 millones</strong></td>
+</tr>
+<tr>
+<td>Cáncer más frecuente en el varón</td>
+<td><strong>próstata (21%)</strong>; mortalidad, <strong>pulmón (23%)</strong></td>
+</tr>
+<tr>
+<td>Cáncer más frecuente en la mujer</td>
+<td><strong>mama</strong>; mortalidad, <strong>pulmón (22%)</strong></td>
+</tr>
+<tr>
+<td>Cáncer infantil</td>
+<td>2% de los cánceres; <strong>16%</strong> de las muertes entre 5 y 14 años</td>
+</tr>
+<tr>
+<td>Plomo: umbral CDC</td>
+<td><strong>&lt;5 µg/dl</strong></td>
+</tr>
+<tr>
+<td>Plomo: encefalopatía / muerte</td>
+<td><strong>70-100 / 150 µg/dl</strong></td>
+</tr>
+<tr>
+<td>CO: afinidad de la Hb</td>
+<td><strong>~200 veces</strong> mayor que por el O₂</td>
+</tr>
+<tr>
+<td>Carboxihemoglobina sintomática</td>
+<td><strong>20-30%</strong></td>
+</tr>
+<tr>
+<td>Radón</td>
+<td><strong>2ª</strong> causa de cáncer de pulmón; <strong>1ª</strong> en no fumadores</td>
+</tr>
+<tr>
+<td>Tabaco</td>
+<td><strong>7.000</strong> sustancias, <strong>&gt;60</strong> carcinógenos; <strong>90%</strong> de los cánceres de pulmón</td>
+</tr>
+<tr>
+<td>Alcohol: muertes anuales</td>
+<td><strong>3,3 millones</strong> (5,9% del total)</td>
+</tr>
+<tr>
+<td>Alcohol: límite legal para conducir</td>
+<td><strong>80 mg/dl</strong></td>
+</tr>
+<tr>
+<td>Paracetamol: antídoto y ventana</td>
+<td><strong>N-acetilcisteína</strong>, primeras <strong>12 h</strong></td>
+</tr>
+<tr>
+<td>Aspirina: dosis letal</td>
+<td><strong>10-30 g</strong> adultos; <strong>2-4 g</strong> niños</td>
+</tr>
+<tr>
+<td>Radiación: unidades</td>
+<td><strong>1 Gy = 100 rad</strong></td>
+</tr>
+<tr>
+<td>Radiación: síndromes</td>
+<td>0-1 Sv nada; <strong>2-10</strong> hematopoyético; <strong>10-20</strong> intestinal; <strong>&gt;20</strong> SNC</td>
+</tr>
+<tr>
+<td>Síndrome de Down según edad materna</td>
+<td>1/1.550 en &lt;20 años → <strong>1/25</strong> en &gt;45</td>
+</tr>
+<tr>
+<td>Turner / Klinefelter</td>
+<td>1/2.000-3.000 nacidas / 1/500-1.000 varones</td>
+</tr>
+<tr>
+<td>X frágil</td>
+<td>premutación <strong>55-200</strong> CGG; completa <strong>&gt;200</strong></td>
+</tr>
+<tr>
+<td>LES: criterios</td>
+<td><strong>≥4</strong> (uno clínico y uno inmunológico)</td>
+</tr>
+<tr>
+<td>LES: nefritis más grave</td>
+<td>clase <strong>IV</strong> (difusa); clase <strong>VI</strong> = esclerosis &gt;90%</td>
+</tr>
+<tr>
+<td>Sjögren: riesgo de linfoma B</td>
+<td><strong>40 veces</strong></td>
+</tr>
+<tr>
+<td>Amiloide: tinción</td>
+<td><strong>rojo Congo</strong> → verde manzana con luz polarizada</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h1 id="parte-i--alto-rendimiento">Parte I , Alto rendimiento</h1>
+
+<div class="warnbox"><span class="box-title">Cifras que se repiten sección a sección</span>1 de cada 33 nacidos vivos tiene una malformación congénita, y en 40-60% la causa es desconocida. El SDR afecta al 93% de los ≤28 semanas y el tabaco causa el 90% de los cánceres de pulmón.</div>
+</section><section id="sec-03-1-enfermedades-ambientales-y-nutricionales" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>1. Enfermedades ambientales y nutricionales</h2>
+<p><em>(Clase 10 · Robbins cap. 9, pp. 405-452 · la clase más extensa: 32 páginas y 60% del capítulo)</em></p>
+<h3 id="cambio-climático">Cambio climático</h3>
+<p>La causa principal es el aumento de <strong>gases de efecto invernadero</strong>: CO₂ por combustión de fósiles, ozono y metano. En 2019 el CO₂ atmosférico llegó a <strong>410 ppm</strong>, la mayor concentración en 650.000 años; se proyecta un aumento de temperatura de <strong>2-5 °C para 2100</strong>.</p>
+<p>Efectos sobre la salud:</p>
+<ul>
+<li><strong>Cardiovasculares, cerebrovasculares y respiratorias</strong> agravadas por olas de calor y contaminación.</li>
+<li><strong>Infecciosas</strong>: transmitidas por agua y alimentos (cólera, gastroenteritis) y por <strong>vectores</strong> (paludismo, dengue), por cambios en la distribución de mosquitos.</li>
+<li><strong>Desnutrición</strong>: caída de la productividad agrícola del <strong>10-25%</strong> hacia 2080 en países de ingresos bajos.</li>
+<li><strong>Elevación del nivel del mar</strong> (60-180 cm en 2100): 10% de la población mundial en riesgo de inundación, con desplazamiento, conflicto y pobreza.</li>
+</ul>
+<p>El <strong>Acuerdo de París</strong> (2015) busca limitar el aumento a menos de <strong>2 °C</strong> (ideal 1,5 °C).</p>
+<h3 id="xenobióticos-y-metabolismo-en-dos-fases">Xenobióticos y metabolismo en dos fases</h3>
+<p>Los <strong>xenobióticos</strong> son sustancias exógenas presentes en aire, agua, alimentos y suelo. Se absorben por pulmón, tubo digestivo y piel; pueden actuar en el punto de entrada o distribuirse, almacenarse (grasa, hueso, cerebro) y excretarse.</p>
+<ul>
+<li><strong>Fase I</strong>: hidrólisis, oxidación y reducción. La enzima clave es el <strong>citocromo P-450</strong> (CYP), abundante en el retículo endoplásmico de los hepatocitos.</li>
+<li><strong>Fase II</strong>: conjugación (glucuronidación, sulfatación, metilación, glutatión).</li>
+</ul>
+<p>El metabolismo puede <strong>detoxificar o activar</strong>. Ejemplos de activación: el <strong>tetracloruro de carbono</strong> (radical triclorometilo en el hígado) y el <strong>benzo[a]pireno</strong> del humo del tabaco (aductos de ADN en el pulmón). La actividad del P-450 varía por <strong>polimorfismos</strong> y por inducción/inhibición: el alcohol y el tabaco inducen; el ayuno disminuye.</p>
+<h3 id="contaminación-del-aire">Contaminación del aire</h3>
+<ul>
+<li><strong>Ozono troposférico</strong>: se forma por reacción de óxidos de nitrógeno y compuestos orgánicos volátiles con la luz solar. Es distinto del ozono estratosférico protector, dañado por los clorofluorocarbonos. Lesiona el epitelio respiratorio por radicales libres.</li>
+<li><strong>Dióxido de azufre</strong>: centrales de carbón; se convierte en ácidos. Produce broncoconstricción e irritación.</li>
+<li><strong>Materia en partículas</strong>: las <strong>&lt;10 µm</strong> son las más dañinas porque alcanzan el alvéolo; las mayores quedan retenidas en la nariz.</li>
+<li><strong>Monóxido de carbono (CO)</strong>: gas incoloro e inodoro de la combustión incompleta. La hemoglobina tiene <strong>~200 veces más afinidad</strong> por el CO que por el O₂, y la <strong>carboxihemoglobina</strong> no transporta oxígeno. Con <strong>20-30%</strong> de Hb ocupada aparece hipoxia. La intoxicación <strong>crónica</strong> produce lesiones isquémicas de los <strong>ganglios basales</strong>; la <strong>aguda</strong>, color <strong>rojo cereza</strong> en piel y mucosas. El CO <strong>no se metaboliza</strong>: se elimina por ventilación.</li>
+<li><strong>Contaminación interna</strong>: humo de tabaco, CO, dióxido de nitrógeno, amianto, humo de biomasa (un tercio de la población mundial), bioaerosoles, <strong>radón</strong> y formaldehído. El <strong>radón</strong> es un gas radiactivo del uranio: <strong>segunda causa de cáncer de pulmón</strong> y <strong>primera en no fumadores</strong>, con sinergia con el tabaco.</li>
+</ul>
+<h3 id="metales-pesados">Metales pesados</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 1. Enfermedades ambientales y nutricionales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Metal</th>
+<th>Fuente</th>
+<th>Mecanismo</th>
+<th>Cuadro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plomo</strong></td>
+<td>Pintura antigua, agua (crisis de Flint), minería, industria</td>
+<td>Se une a grupos <strong>sulfhidrilo</strong>, interfiere con el calcio e inhibe la síntesis del hemo</td>
+<td>Niños absorben <strong>&gt;50%</strong>. <strong>&lt;5 µg/dl</strong> umbral CDC; 10-15 ↓CI y audición; 15-20 neuropatía; <strong>70-100 encefalopatía</strong>; 150 muerte. Anemia microcítica con <strong>punteado basófilo</strong>, <strong>líneas de plomo</strong> en encías, gota saturnina, nefropatía tubulointersticial, inhibición de la reparación ósea</td>
+</tr>
+<tr>
+<td><strong>Mercurio</strong></td>
+<td>Pescado contaminado (metilmercurio), amalgamas, minería de oro</td>
+<td>Liposoluble; se acumula en el SNC; daña túbulos renales</td>
+<td><strong>Enfermedad de Minamata</strong>: parálisis cerebral, sordera, ceguera en expuestos intraútero; neuropatía y síndrome nefrótico en adultos</td>
+</tr>
+<tr>
+<td><strong>Arsénico</strong></td>
+<td>Agua subterránea (Bangladés, Chile, China), conservantes de madera, herbicidas</td>
+<td>Reemplaza al fosfato en la fosforilación oxidativa; inhibe enzimas</td>
+<td>Neuropatía sensitivomotora, hipertensión y arritmias, <strong>hiperpigmentación e hiperqueratosis palmo-plantar</strong>, <strong>cáncer de pulmón, vejiga y piel</strong></td>
+</tr>
+<tr>
+<td><strong>Cadmio</strong></td>
+<td>Pilas de níquel-cadmio, fundiciones, fertilizantes</td>
+<td>Genera ERO, daña el ADN; lesión tubular</td>
+<td><strong>EPOC</strong>, insuficiencia renal tubular, <strong>osteomalacia</strong> con dolor (<strong>itai-itai</strong>), cáncer de pulmón</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="riesgos-ocupacionales">Riesgos ocupacionales</h3>
+<ul>
+<li><strong>Disolventes orgánicos</strong> (cloroformo, tetracloruro de carbono): mareo, depresión del SNC, toxicidad hepática y renal. El <strong>benceno</strong> causa <strong>leucemia mieloide aguda</strong>.</li>
+<li><strong>Hidrocarburos policíclicos</strong> (hollín, alquitrán): carcinógenos potentes de pulmón y vejiga.</li>
+<li><strong>Organoclorados</strong> (DDT, PCB, dioxina/TCDD): lipófilos, persistentes, efecto endocrino y <strong>cloracné</strong>.</li>
+<li><strong>Bisfenol A (BPA)</strong>: disruptor endocrino de plásticos y resinas.</li>
+<li><strong>Cloruro de vinilo</strong>: <strong>angiosarcoma hepático</strong>.</li>
+<li><strong>Neumoconiosis</strong>: carbón, sílice, asbesto (mesotelioma) y berilio.</li>
+</ul>
+<h3 id="tabaco">Tabaco</h3>
+<p>Es la <strong>causa de muerte evitable más frecuente</strong>. El humo contiene <strong>7.000 sustancias y más de 60 carcinógenos</strong> (hidrocarburos policíclicos, nitrosaminas, aminas aromáticas). La <strong>nicotina</strong> es muy adictiva y también perjudica al feto.</p>
+<ul>
+<li>Causa el <strong>90% de los cánceres de pulmón</strong>; también esófago, páncreas, vejiga, riñón, cérvix, médula ósea, hígado y colon.</li>
+<li>Interactúa de forma <strong>multiplicativa</strong> con el alcohol (cáncer oral, laríngeo y esofágico) y con el asbesto y el uranio (pulmón).</li>
+<li>A los 70 años sobrevive el <strong>75% de los no fumadores</strong> frente al <strong>50% de los fumadores</strong>.</li>
+<li>Fumar durante el embarazo produce bajo peso, parto pretérmino y aumento del riesgo de SMSL; el peso se normaliza si la madre deja el hábito antes de la semana 16.</li>
+<li>La exposición pasiva causa 30.000-60.000 muertes cardíacas al año y aumenta las infecciones respiratorias y el asma en niños.</li>
+</ul>
+<h3 id="alcohol">Alcohol</h3>
+<p>Produce <strong>3,3 millones de muertes al año</strong> (5,9% del total mundial). El límite legal para conducir es <strong>80 mg/dl</strong>; con 300 mg/dl hay estupor y con más de 400, coma.</p>
+<p>Metabolismo hepático por <strong>tres vías</strong>:</p>
+<ol type="1">
+<li><strong>Alcohol deshidrogenasa (ADH)</strong>: vía principal, genera NADH (responsable del hígado graso).</li>
+<li><strong>CYP2E1</strong> (sistema oxidativo microsómico): inducible, genera ERO; explica la tolerancia y las interacciones farmacológicas.</li>
+<li><strong>Catalasa</strong>: ~5% del metabolismo.</li>
+</ol>
+<p>El <strong>acetaldehído</strong> es tóxico y carcinógeno. El <strong>ALDH2*2</strong> (presente en ~50% de los asiáticos) reduce su oxidación y produce rubor, taquicardia y mayor riesgo de cáncer esofágico.</p>
+<p>Efectos: <strong>hígado graso → hepatitis alcohólica → cirrosis</strong>; <strong>Wernicke-Korsakoff</strong> por déficit de tiamina; cardiomiopatía; pancreatitis crónica; cáncer de cavidad oral, laringe, esófago e hígado; y <strong>síndrome alcohólico fetal</strong>.</p>
+<h3 id="fármacos">Fármacos</h3>
+<ul>
+<li><strong>Paracetamol</strong>: a dosis terapéutica, <strong>95%</strong> se detoxifica por fase II; el resto pasa por <strong>CYP2E1</strong> a <strong>NAPQI</strong>, que se conjuga con glutatión. En sobredosis se agota el glutatión y la NAPQI produce <strong>necrosis centrolobulillar</strong>. Antídoto: <strong>N-acetilcisteína</strong> en las primeras <strong>12 h</strong>.</li>
+<li><strong>Aspirina</strong>: inhibe la ciclooxigenasa y de forma irreversible el <strong>tromboxano A₂</strong> (antiagregante). Sobredosis: tinnitus, acidosis, gastritis y sangrado. Dosis letal <strong>10-30 g</strong> en adultos, <strong>2-4 g</strong> en niños.</li>
+<li><strong>Warfarina</strong> (antagonista de vitamina K) y <strong>anticonceptivos/hormonoterapia</strong>: la terapia hormonal aumenta <strong>2-4 veces</strong> el riesgo de trombosis venosa y eleva el riesgo de cáncer de mama y endometrio.</li>
+<li><strong>Reacciones adversas</strong>: 0,32% de los ingresos, con mayor riesgo en <strong>&gt;65 años</strong>.</li>
+</ul>
+<h3 id="drogas-de-abuso">Drogas de abuso</h3>
+<ul>
+<li><strong>Cocaína</strong>: bloquea la recaptación de dopamina; <strong>isquemia miocárdica</strong>, hipertensión, arritmias, convulsiones, hipertermia. Muy adictiva.</li>
+<li><strong>Opioides</strong>: depresión respiratoria (muerte por sobredosis), <strong>endocarditis tricuspídea</strong>, hepatitis y VIH por vía parenteral.</li>
+<li><strong>Marihuana</strong>: deterioro de la coordinación y la memoria; riesgo cardiovascular y respiratorio.</li>
+<li><strong>Anfetaminas y MDMA</strong>: hipertermia, síndrome serotoninérgico, daño neuronal.</li>
+<li><strong>PCP/ketamina</strong> y <strong>LSD</strong>: psicosis, alucinaciones.</li>
+</ul>
+<h3 id="agentes-físicos">Agentes físicos</h3>
+<ul>
+<li><strong>Traumatismos</strong>: dependen de la forma del objeto, la energía y el tejido. La patología forense analiza el patrón.</li>
+<li><strong>Quemaduras</strong>: la lesión térmica más frecuente (80% por fuego o humo doméstico). La supervivencia se duplica si se quema <strong>&gt;40%</strong> de la superficie y hay centro especializado. Amenazas: <strong>shock, sepsis (<em>Pseudomonas</em>) e insuficiencia respiratoria</strong> por lesión inhalatoria.</li>
+<li><strong>Golpe de calor</strong>: fallo de la termorregulación con rabdomiólisis y daño multiorgánico; la <strong>hipertermia maligna</strong> se desencadena por anestésicos y se asocia a mutaciones del receptor de rianodina (<strong>RYR1</strong>).</li>
+<li><strong>Hipotermia</strong>: vasoconstricción, arritmias y <strong>pie de trinchera</strong>.</li>
+<li><strong>Lesión eléctrica</strong>: depende del voltaje (120-220 V domiciliario vs. alto voltaje), del tipo de corriente (la alterna es más peligrosa) y de la humedad de la piel.</li>
+</ul>
+<h3 id="radiación-ionizante">Radiación ionizante</h3>
+<ul>
+<li><strong>Unidades</strong>: <strong>Gy</strong> mide la energía absorbida por unidad de masa (1 Gy = 100 rad); <strong>Sv</strong> mide el efecto biológico.</li>
+<li><strong>Mecanismo</strong>: <strong>radiólisis del agua</strong> → radicales libres → <strong>roturas de doble cadena del ADN</strong>. Las células en división son más sensibles; los tejidos hipóxicos (centro del tumor) son más resistentes.</li>
+<li><strong>Síndromes agudos</strong>:
+<ul>
+<li><strong>0-1 Sv</strong>: sin síntomas o mínimos.</li>
+<li><strong>2-10 Sv (hematopoyético)</strong>: linfopenia en horas, granulocitopenia en 1 semana, letalidad 0-80%.</li>
+<li><strong>10-20 Sv (intestinal)</strong>: diarrea, deshidratación, sepsis, muerte en días.</li>
+<li><strong>&gt;20 Sv (SNC)</strong>: edema cerebral, muerte en horas.</li>
+</ul></li>
+<li><strong>Crónico</strong>: fibrosis vascular y atrofia isquémica meses o años después; <strong>carcinogenia</strong> (leucemia, tiroides, mama, pulmón) con latencia de años.</li>
+</ul>
+<h3 id="nutrición">Nutrición</h3>
+<p><strong>Malnutrición aguda grave (MAG)</strong>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 1. Enfermedades ambientales y nutricionales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Marasmo</th>
+<th>Kwashiorkor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Déficit</td>
+<td>Calórico global</td>
+<td>Proteico</td>
+</tr>
+<tr>
+<td>Peso</td>
+<td>Muy bajo (&lt;60-80% del esperado)</td>
+<td>Bajo pero con <strong>edema</strong></td>
+</tr>
+<tr>
+<td>Albúmina</td>
+<td>Normal</td>
+<td><strong>Baja</strong></td>
+</tr>
+<tr>
+<td>Hígado</td>
+<td>Sin esteatosis</td>
+<td><strong>Hígado graso</strong></td>
+</tr>
+<tr>
+<td>Pronóstico</td>
+<td>Mejor</td>
+<td>Peor</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ambas cursan con alteración del microbioma e inmunidad, y son causa de muerte por infección.</p>
+<p><strong>Anorexia nerviosa</strong>: restricción alimentaria y distorsión de la imagen corporal. <strong>Amenorrea</strong>, hipopotasemia con arritmias, <strong>transformación gelatinosa de la médula ósea</strong>, osteoporosis. <strong>Bulimia</strong>: atracones con purgas, caries, esofagitis y alteraciones electrolíticas.</p>
+<p><strong>Vitaminas</strong>:</p>
+<ul>
+<li><strong>A (retinol)</strong>: visión (11-cis-retinal, rodopsina), diferenciación epitelial e inmunidad. Déficit: <strong>ceguera nocturna, xeroftalmía, manchas de Bitot y queratomalacia</strong>. Exceso: hepatotoxicidad, hipertensión intracraneal y teratogenia.</li>
+<li><strong>D</strong>: síntesis cutánea por UVB → <strong>25-OH-D</strong> en hígado → <strong>1,25-(OH)₂-D</strong> en riñón (1-α-hidroxilasa). Absorbe calcio y fósforo. Déficit: <strong>raquitismo</strong> en niños y <strong>osteomalacia</strong> en adultos. Exceso: hipercalcemia y nefrocalcinosis.</li>
+<li><strong>C (ácido ascórbico)</strong>: hidroxilación de prolina y lisina del colágeno; antioxidante. Déficit: <strong>escorbuto</strong> (gingivitis, petequias, mala cicatrización, hemorragias).</li>
+</ul>
+<p><strong>Obesidad</strong>: IMC ≥30. El equilibrio energético se regula en el hipotálamo:</p>
+<ul>
+<li><strong>Leptina</strong> (adipocito): saciedad. <strong>Grelina</strong> (estómago): hambre. <strong>Insulina</strong> y <strong>PYY</strong> (intestino): saciedad.</li>
+<li>Circuitos: <strong>POMC/CART</strong> anoréxigeno y <strong>NPY/AgRP</strong> orexigénico.</li>
+<li>Consecuencias: <strong>resistencia a la insulina</strong>, diabetes tipo 2, hipertensión, dislipidemia, esteatosis hepática, apnea del sueño y <strong>cáncer</strong> (IGF-1, estrógenos por aromatasa periférica, adipocinas inflamatorias).</li>
+</ul>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> los xenobióticos se activan por CYP450 y se conjugan; el plomo da anemia con punteado basófilo y neuropatía, el mercurio Minamata, el arsénico cáncer de piel y vejiga, el cadmio itai-itai; el CO desplaza al O₂ con 200 veces más afinidad; la radiación daña el ADN y produce síndromes hematopoyético, intestinal y del SNC según los Sv.</p>
+</blockquote>
+
+</section><section id="sec-04-2-trastornos-hemodinamicos-trombosis-y-shock" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>2. Trastornos hemodinámicos, trombosis y shock</h2>
+<p><em>(Clase 3 · Robbins cap. 4, pp. 115-140 · 50% del capítulo seleccionado)</em></p>
+<h3 id="edema-y-derrames">Edema y derrames</h3>
+<p><strong>Edema</strong> es la acumulación de líquido en los tejidos; <strong>derrame</strong>, en una cavidad (hidrotórax, hidropericardio, ascitis). Se produce por cuatro mecanismos:</p>
+<ol type="1">
+<li><strong>Aumento de la presión hidrostática</strong>: insuficiencia cardiaca, obstrucción venosa, dilatación arteriolar.</li>
+<li><strong>Reducción de la presión oncótica</strong>: pérdida de proteínas por el riñón (síndrome nefrótico) o falta de síntesis (cirrosis).</li>
+<li><strong>Retención de sodio y agua</strong>: insuficiencia renal, hiperaldosteronismo.</li>
+<li><strong>Obstrucción linfática</strong>: filariasis, tumores, posquirúrgica.</li>
+</ol>
+<p>El <strong>trasudado</strong> es pobre en proteínas (&lt;2,5 g/dl) y células; el <strong>exudado</strong> es rico en proteínas y células, típico de inflamación. Morfología: edema subcutáneo con <strong>fóvea</strong>, periorbitario en la disfunción renal, <strong>pulmonar</strong> (congestión y dificultad respiratoria) y <strong>cerebral</strong> (borra las circunvoluciones, riesgo de herniación).</p>
+<h3 id="hiperemia-y-congestión">Hiperemia y congestión</h3>
+<ul>
+<li><strong>Hiperemia</strong>: proceso <strong>activo</strong> por dilatación arteriolar (ejercicio, inflamación).</li>
+<li><strong>Congestión</strong>: proceso <strong>pasivo</strong> por reducción del retorno venoso. La congestión pasiva crónica del hígado produce el <strong>hígado en nuez moscada</strong> (centros lobulillares rojos y periferia pálida) y puede evolucionar a fibrosis; en el pulmón, edema y macrófagos cargados de hemosiderina (<strong>células del fallo cardiaco</strong>).</li>
+</ul>
+<h3 id="hemostasia-normal">Hemostasia normal</h3>
+<ol type="1">
+<li><strong>Vasoconstricción arteriolar</strong> para reducir la pérdida.</li>
+<li><strong>Hemostasia primaria</strong>: adhesión, activación y agregación plaquetaria → tapón blando.</li>
+<li><strong>Hemostasia secundaria</strong>: coagulación con fibrina → tapón definitivo.</li>
+<li><strong>Estabilización y reabsorción</strong>: fibrinólisis y reparación.</li>
+</ol>
+<p><strong>Plaquetas</strong> (mecanismo de examen):</p>
+<ul>
+<li><strong>Adhesión</strong>: <strong>GpIb</strong> se une al <strong>factor de von Willebrand</strong> del subendotelio; GpIa/IIa al colágeno. Déficit de vWF → <strong>enfermedad de von Willebrand</strong>; déficit de GpIb → <strong>síndrome de Bernard-Soulier</strong>.</li>
+<li><strong>Cambio de forma</strong>: de disco a "erizo de mar"; cambio conformacional de <strong>GpIIb/IIIa</strong> que aumenta su afinidad por el fibrinógeno; exposición de <strong>fosfatidilserina</strong> (superficie para el ensamblaje de factores).</li>
+<li><strong>Secreción</strong>: inducida por <strong>trombina</strong> (receptor <strong>PAR-1</strong>) y <strong>ADP</strong> (receptores P2Y1/P2Y12). El ADP recluta más plaquetas y se genera <strong>tromboxano A₂</strong>, potente agregante.</li>
+<li><strong>Agregación</strong>: el fibrinógeno forma puentes entre GpIIb/IIIa de plaquetas vecinas. Déficit congénito → <strong>trombastenia de Glanzmann</strong>. La trombina estabiliza el tapón y convierte fibrinógeno en <strong>fibrina insoluble</strong>.</li>
+</ul>
+<p><strong>Coagulación</strong>: cascada enzimática secuencial. El <strong>factor tisular</strong> expuesto en la lesión es el <strong>iniciador principal in vivo</strong>; la vía de contacto amplifica. La <strong>trombina</strong> convierte fibrinógeno en fibrina y activa plaquetas y factores. Se limita por inhibidores circulantes (antitrombina, proteína C/S), trombomodulina endotelial y fibrinólisis. Los factores <strong>II, VII, IX y X</strong> dependen de la vitamina K.</p>
+<h3 id="trombosis">Trombosis</h3>
+<p><strong>Tríada de Virchow</strong>: lesión endotelial (la más importante), alteración del flujo (estasis o turbulencia) e hipercoagulabilidad.</p>
+<p><strong>Trombofilias hereditarias</strong>:</p>
+<ul>
+<li><strong>Factor V de Leiden</strong>: resistencia a la proteína C activada; la más frecuente.</li>
+<li><strong>Mutación del gen de la protrombina</strong> (G20210A): ↑ niveles de protrombina.</li>
+<li>Déficit de <strong>antitrombina, proteína C o S</strong>.</li>
+<li><strong>Homocistinemia</strong>: hereditaria o adquirida (déficit de B12/folato); daño endotelial y trombosis.</li>
+</ul>
+<p><strong>Trombofilias adquiridas</strong>:</p>
+<ul>
+<li><strong>Trombocitopenia inducida por heparina (HIT)</strong>: anticuerpos contra el complejo <strong>heparina-PF4</strong> en la superficie plaquetaria → activación y trombosis, con plaquetas bajas.</li>
+<li><strong>Síndrome antifosfolípido</strong>: anticuerpos antifosfolípidos (anticoagulante lúpico, anti-cardiolipina, anti-β2-glucoproteína) → <strong>trombosis arterial y venosa</strong> y pérdidas gestacionales; primario o secundario a LES.</li>
+</ul>
+<p><strong>Morfología del trombo</strong>: <strong>líneas de Zahn</strong> (laminaciones de plaquetas y fibrina), trombos <strong>murales</strong> en cavidades cardiacas, arteriales a menudo oclusivos, venosos casi siempre oclusivos, <strong>vegetaciones</strong> en válvulas. No confundir con coágulos post mortem (estos son gelatinosos, sin adherencia y sin líneas).</p>
+<p><strong>Evolución del trombo</strong>: <strong>propagación</strong>, <strong>embolia</strong>, <strong>disolución</strong> (fibrinólisis) y <strong>organización y recanalización</strong> (crecimiento de endotelio, músculo liso y fibroblastos).</p>
+<h3 id="embolia">Embolia</h3>
+<ul>
+<li><strong>Pulmonar</strong>: la forma más frecuente de enfermedad tromboembólica; se origina en trombosis venosas profundas de las piernas. La mayoría son pequeños y asintomáticos; si ocluyen <strong>&gt;60%</strong> de la circulación pueden causar muerte súbita. Los émbolos medianos causan hemorragia o infarto; los múltiples y repetidos, <strong>hipertensión pulmonar y cor pulmonale</strong>.</li>
+<li><strong>Sistémica</strong>: émbolos arteriales por fibrilación auricular, infarto de miocardio, endocarditis o aneurisma; van a encéfalo, bazo, riñón o extremidades.</li>
+<li><strong>Grasa</strong>: tras fracturas de huesos largos o cirugía ortopédica; se manifiesta <strong>1-3 días</strong> después con disnea, confusión y <strong>trombocitopenia</strong> por adhesión de plaquetas a los glóbulos de grasa.</li>
+<li><strong>Gaseosa</strong>: síndrome de descompresión (buzos), iatrogénica o de nitrógeno.</li>
+<li><strong>Líquido amniótico</strong>: complicación obstétrica con disnea, shock y <strong>CID</strong>.</li>
+</ul>
+<h3 id="infarto">Infarto</h3>
+<p>Necrosis isquémica por oclusión arterial (o rara vez venosa). Causas infrecuentes: vasoespasmo, hemorragia en una placa, compresión extrínseca, torsión, rotura traumática y edema que comprime vasos.</p>
+<ul>
+<li><strong>Infarto blanco (pálido)</strong>: órganos sólidos con circulación arterial terminal (<strong>corazón, riñón, bazo</strong>).</li>
+<li><strong>Infarto rojo (hemorrágico)</strong>: oclusiones venosas, tejidos laxos y esponjosos (pulmón), circulación doble (intestino), tejidos previamente congestionados y <strong>reperfusión</strong> de un infarto previo.</li>
+</ul>
+<p>Histología: <strong>necrosis coagulativa</strong> visible a las <strong>4-12 h</strong>; la inflamación aguda en los bordes queda bien definida a los <strong>1-2 días</strong>; después, tejido de granulación y cicatriz. En el <strong>encéfalo</strong> la necrosis es <strong>licuefactiva</strong>. Los <strong>infartos sépticos</strong> provienen de vegetaciones infectadas y forman abscesos.</p>
+<h3 id="shock">Shock</h3>
+<p>Fallo circulatorio con hipoperfusión tisular. Tres tipos principales:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 2. Trastornos hemodinámicos, trombosis y shock" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mecanismo</th>
+<th>Causas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cardiogénico</strong></td>
+<td>Fallo de bomba</td>
+<td>Infarto, rotura ventricular, arritmias, taponamiento, embolia pulmonar</td>
+</tr>
+<tr>
+<td><strong>Hipovolémico</strong></td>
+<td>Volumen reducido</td>
+<td>Hemorragia, vómitos, diarrea, quemaduras, traumatismo</td>
+</tr>
+<tr>
+<td><strong>Séptico</strong></td>
+<td>Vasodilatación y lesión endotelial</td>
+<td>Infecciones bacterianas o fúngicas con respuesta desregulada</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Fases</strong>: compensada (taquicardia, vasoconstricción, oliguria) → progresiva (acidosis láctica, deterioro del estado mental) → irreversible (fallo multiorgánico).</p>
+<p><strong>Morfología</strong>: lesión hipóxica por hipoperfusión, primero reversible y luego irreversible, más <strong>trombosis microvascular</strong> con trombos de fibrina. Órganos:</p>
+<ul>
+<li><strong>Encéfalo</strong>: isquemia que agrava el cuadro.</li>
+<li><strong>Corazón</strong>: los miocardiocitos perdidos <strong>no se recuperan</strong>.</li>
+<li><strong>Riñón</strong>: trombos glomerulares, oliguria, acidosis, insuficiencia renal aguda.</li>
+<li><strong>Suprarrenales</strong>: pérdida de lípidos por aumento de la demanda de esteroides.</li>
+<li><strong>Intestino</strong>: pérdida de la barrera → translocación bacteriana y shock séptico sobreañadido.</li>
+</ul>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> Virchow es lesión endotelial + estasis + hipercoagulabilidad; la tríada plaquetaria es GpIb-vWF, GpIIb/IIIa-fibrinógeno y tromboxano A₂; el trombo evoluciona a propagación, embolia, disolución u organización; el infarto blanco es de órganos sólidos y el rojo de pulmón o intestino; el shock es hipoperfusión con trombosis microvascular y daño multiorgánico.</p>
+</blockquote>
+
+</section><section id="sec-05-3-lesion-celular-muerte-celular-y-adaptaciones" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>3. Lesión celular, muerte celular y adaptaciones</h2>
+<p><em>(Clase 1 · Robbins cap. 2, pp. 33-70 · 42% del capítulo seleccionado)</em></p>
+<h3 id="causas-y-respuesta">Causas y respuesta</h3>
+<p>Dependen del <strong>tipo celular</strong>, la <strong>intensidad</strong> y el <strong>tiempo</strong> de exposición. Agentes: privación de oxígeno, físicos, químicos y fármacos, infecciosos, inmunitarios, genéticos y desequilibrios nutricionales (exceso o déficit).</p>
+<p>La célula responde en tres niveles: <strong>adaptación</strong> (hipertrofia, hiperplasia, atrofia, metaplasia), <strong>lesión reversible</strong> (tumefacción, cambio graso) o <strong>lesión irreversible</strong> (necrosis o apoptosis).</p>
+<h3 id="lesión-reversible-e-irreversible">Lesión reversible e irreversible</h3>
+<ul>
+<li><strong>Reversible</strong>: tumefacción celular por fallo de la bomba Na⁺/K⁺-ATPasa (entra agua y sodio), y <strong>cambio graso</strong> por acumulación de lípidos.</li>
+<li><strong>Irreversible</strong>: desnaturalización de proteínas, <strong>escape del contenido celular</strong> por membranas dañadas, inflamación local y digestión enzimática por leucocitos.</li>
+</ul>
+<p><strong>Morfología de la célula necrótica</strong>:</p>
+<ul>
+<li><strong>Eosinofilia</strong> citoplasmática por pérdida de ARN y desnaturalización proteica.</li>
+<li><strong>Figuras de mielina</strong> (agregados de fosfolípidos; no son mielina).</li>
+<li><strong>Cambios nucleares</strong>: <strong>picnosis</strong> (condensación), <strong>cariorrexis</strong> (fragmentación) y <strong>cariolisis</strong> (disolución).</li>
+</ul>
+<h3 id="patrones-de-necrosis">Patrones de necrosis</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 3. Lesión celular, muerte celular y adaptaciones" tabindex="0"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Dónde</th>
+<th>Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coagulativa</strong></td>
+<td>Isquemia en órganos sólidos (corazón, riñón, bazo)</td>
+<td>Arquitectura conservada; el tejido aparece como "sombra"</td>
+</tr>
+<tr>
+<td><strong>Licuefactiva</strong></td>
+<td>Encéfalo; infecciones bacterianas y fúngicas</td>
+<td>Digestión enzimática, pus, quiste</td>
+</tr>
+<tr>
+<td><strong>Gangrenosa</strong></td>
+<td>Extremidades, intestino, pulmón</td>
+<td>Coagulativa + licuefactiva sobre tejido infectado</td>
+</tr>
+<tr>
+<td><strong>Caseosa</strong></td>
+<td><strong>Tuberculosis</strong></td>
+<td>Centro blanco-amarillento, granuloma, células gigantes</td>
+</tr>
+<tr>
+<td><strong>Grasa (esteatonecrosis)</strong></td>
+<td>Pancreatitis aguda</td>
+<td>Saponificación del tejido adiposo ("jabón")</td>
+</tr>
+<tr>
+<td><strong>Fibrinoide</strong></td>
+<td>Paredes vasculares</td>
+<td>Vasculitis, hipertensión maligna, úlcera péptica; depósito de fibrina con necrosis</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="apoptosis">Apoptosis</h3>
+<p>Muerte programada, <strong>sin inflamación</strong>.</p>
+<ul>
+<li><strong>Fisiológica</strong>: retirada de células supernumerarias durante el desarrollo, involución hormonal, recambio celular, eliminación de linfocitos autorreactivos y de células que cumplieron su función.</li>
+<li><strong>Patológica</strong>: daño del <strong>ADN</strong> (p53), acumulación de <strong>proteínas mal plegadas</strong>, infecciones virales y atrofia por obstrucción de conductos.</li>
+</ul>
+<p><strong>Morfología</strong>: reducción del tamaño, <strong>condensación de la cromatina</strong>, formación de <strong>cuerpos apoptóticos</strong> y fagocitosis por macrófagos, sin respuesta inflamatoria.</p>
+<p><strong>Vías</strong>:</p>
+<ul>
+<li><strong>Intrínseca (mitocondrial)</strong>: estímulos internos → Bax/Bak → permeabilización mitocondrial → <strong>citocromo c</strong> → caspasa 9 → caspasa 3. La <strong>BCL2</strong> es antiapoptótica; su exceso favorece tumores (linfoma folicular).</li>
+<li><strong>Extrínseca</strong>: receptores de muerte (Fas, <strong>TNF-R</strong>) → caspasa 8 → caspasa 3.</li>
+</ul>
+<h3 id="otras-formas-de-muerte">Otras formas de muerte</h3>
+<ul>
+<li><strong>Necroptosis</strong>: independiente de caspasas; <strong>RIPK1-RIPK3-MLKL</strong>; morfología necrótica con inflamación.</li>
+<li><strong>Piroptosis</strong>: inflamasoma, <strong>caspasa 1</strong>, liberación de <strong>IL-1β</strong> y fiebre.</li>
+<li><strong>Ferroptosis</strong>: peroxidación lipídica dependiente de <strong>hierro</strong>.</li>
+<li><strong>Autofagia</strong>: mecanismo adaptativo de reciclaje; puede llevar a muerte si es extrema.</li>
+</ul>
+<h3 id="mecanismos-de-lesión">Mecanismos de lesión</h3>
+<ol type="1">
+<li><strong>Agotamiento de ATP</strong>: fallo de bombas iónicas, edema, acidosis, necrosis.</li>
+<li><strong>Daño mitocondrial</strong>: apertura del poro de transición y liberación de citocromo c.</li>
+<li><strong>Daño de membranas</strong>: lipoperoxidación, activación de fosfolipasas y proteasas.</li>
+<li><strong>Estrés oxidativo</strong>: especies reactivas del oxígeno (superóxido, peróxido de hidrógeno, radical hidroxilo) que dañan lípidos, proteínas y ADN.</li>
+<li><strong>Aumento del calcio citosólico</strong>: activa proteasas, endonucleasas y ATPasas.</li>
+<li><strong>Daño del ADN</strong>: activa p53 → reparación o apoptosis.</li>
+<li><strong>Estrés del retículo endoplásmico</strong>: respuesta a proteínas no plegadas.</li>
+</ol>
+<p>La <strong>isquemia</strong> es la causa más frecuente de lesión en la clínica; la <strong>reperfusión</strong> puede agravar el daño por radicales libres, calcio y activación del complemento.</p>
+<h3 id="adaptaciones">Adaptaciones</h3>
+<ul>
+<li><strong>Hipertrofia</strong>: aumento del tamaño celular (miocardio por hipertensión, músculo esquelético). Sin división celular; las células permanentes sólo pueden hipertrofiarse.</li>
+<li><strong>Hiperplasia</strong>: aumento del número de células. Fisiológica (mama en lactancia, endometrio, hígado tras hepatectomía) o patológica (<strong>hiperplasia prostática benigna</strong>, endometrio con estrógenos). Requiere células capaces de dividirse.</li>
+<li><strong>Atrofia</strong>: reducción del tamaño y del número de células. Por <strong>desuso</strong>, <strong>denervación</strong>, <strong>isquemia crónica</strong>, <strong>pérdida hormonal</strong> y <strong>presión</strong>.</li>
+<li><strong>Metaplasia</strong>: cambio de un tipo celular diferenciado por otro, reversible. <strong>Esófago de Barrett</strong> (escamoso → columnar) y endocérvix (columnar → escamoso). Predispone a cáncer.</li>
+</ul>
+<h3 id="acumulaciones-y-calcificaciones">Acumulaciones y calcificaciones</h3>
+<ul>
+<li><strong>Lípidos</strong>: <strong>esteatosis</strong> hepática (alcohol, obesidad, fármacos), ateroma y xantomas.</li>
+<li><strong>Proteínas</strong>: <strong>cambio hialino</strong> (rosado y homogéneo), gotas de proteína en el túbulo renal, cuerpos de Russell en el mieloma.</li>
+<li><strong>Glucógeno</strong>: diabetes, glucogenosis.</li>
+<li><strong>Pigmentos</strong>: <strong>lipofuscina</strong> (envejecimiento, "pigmento del desgaste"), <strong>melanina</strong>, <strong>hemosiderina</strong> (hemorragias, sobrecarga de hierro), bilirrubina y pigmentos exógenos (tatuajes, carbón).</li>
+<li><strong>Calcificación distrófica</strong>: en tejido necrótico o dañado con calcio sérico <strong>normal</strong> (ateroma, válvulas, tuberculosis).</li>
+<li><strong>Calcificación metastásica</strong>: en tejido <strong>normal</strong> por <strong>hipercalcemia</strong> (hiperparatiroidismo, mieloma, metástasis óseas, intoxicación por vitamina D).</li>
+</ul>
+<h3 id="envejecimiento-celular">Envejecimiento celular</h3>
+<p>Resultado del daño acumulado: <strong>daño del ADN</strong>, <strong>senescencia replicativa</strong> (acortamiento de telómeros), homeostasis defectuosa de proteínas y desregulación de la detección de nutrientes (<strong>sirtuinas</strong>, <strong>IGF-1</strong>). Las células senescentes secretan citocinas que mantienen inflamación crónica.</p>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> la lesión reversible es tumefacción y cambio graso; la irreversible, necrosis con eosinofilia, figuras de mielina y picnosis-cariorrexis-cariolisis; la apoptosis no inflama y usa caspasa 9 (intrínseca) o 8 (extrínseca); las adaptaciones son hipertrofia, hiperplasia, atrofia y metaplasia; la calcificación distrófica es en tejido dañado y la metastásica por hipercalcemia.</p>
+</blockquote>
+
+</section><section id="sec-06-4-trastornos-geneticos" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>4. Trastornos genéticos</h2>
+<p><em>(Clase 4 · Robbins cap. 5, pp. 141-188 · 31% del capítulo seleccionado; la clase se concentró en depósito lisosomal y cromosomopatías)</em></p>
+<h3 id="tipos-de-mutación">Tipos de mutación</h3>
+<ul>
+<li><strong>Puntual</strong>: sustitución de una base. <strong>Sentido erróneo</strong> (cambia un aminoácido), <strong>sin sentido</strong> (codón de parada prematuro) o <strong>de procesamiento</strong> (afecta el empalme).</li>
+<li><strong>Deleción o inserción</strong>: si no es múltiplo de 3, cambia el marco de lectura.</li>
+<li><strong>Expansión de repeticiones</strong>: Huntington (CAG), X frágil (CGG), ataxia espinocerebelosa.</li>
+<li><strong>Mutaciones en regiones reguladoras</strong>: reducen la cantidad de proteína.</li>
+</ul>
+<h3 id="herencia-mendeliana">Herencia mendeliana</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 4. Trastornos genéticos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Rasgos</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autosómico dominante</strong></td>
+<td>Afecta a heterocigotos; transmisión vertical; penetrancia y expresividad variables</td>
+<td>Huntington, neurofibromatosis, <strong>Marfan</strong>, poliquistosis renal del adulto, poliposis familiar del colon, von Willebrand</td>
+</tr>
+<tr>
+<td><strong>Autosómico recesivo</strong></td>
+<td>Sólo homocigotos; padres portadores; consanguinidad</td>
+<td><strong>Fibrosis quística</strong>, depósito lisosomal, drepanocitosis, agammaglobulinemia</td>
+</tr>
+<tr>
+<td><strong>Ligado al X</strong></td>
+<td>Varones afectados; mujeres portadoras</td>
+<td>Hemofilia, distrofia muscular de Duchenne, síndrome de Lesch-Nyhan</td>
+</tr>
+</tbody>
+</table></div>
+<p>Conceptos: <strong>penetrancia</strong> (proporción de portadores que expresan el rasgo), <strong>expresividad</strong> (gravedad), <strong>anticipación</strong> (aparición más precoz en generaciones sucesivas, típica de expansiones), <strong>mosaicismo</strong> y <strong>herencia mitocondrial materna</strong>.</p>
+<h3 id="marfan-y-ehlers-danlos">Marfan y Ehlers-Danlos</h3>
+<ul>
+<li><strong>Marfan</strong>: mutación de <strong>fibrilina-1 (FBN1)</strong>, 15q21, autosómica dominante. Talla alta, extremidades largas, aracnodactilia, <strong>luxación del cristalino</strong>, <strong>dilatación de la raíz aórtica con disección</strong> (causa de muerte) y prolapso mitral.</li>
+<li><strong>Ehlers-Danlos</strong>: defectos del colágeno. Hiperlaxitud articular, piel hiperextensible, cicatrices "en papel de cigarro". La variante <strong>vascular (COL3A1)</strong> cursa con rotura de grandes vasos, intestino y útero.</li>
+</ul>
+<h3 id="hipercolesterolemia-familiar">Hipercolesterolemia familiar</h3>
+<p>Mutaciones del <strong>receptor de LDL (LDLR)</strong>, autosómica dominante. Se clasifican en <strong>seis clases</strong> según el defecto: I) falta de síntesis, II) transporte al Golgi defectuoso, III) unión al ligando, IV) internalización, V) reciclado, VI) ensamblaje.</p>
+<ul>
+<li><strong>Heterocigotos</strong>: colesterol 2-3 veces lo normal, <strong>xantomas tendinosos</strong> y cardiopatía coronaria precoz.</li>
+<li><strong>Homocigotos</strong>: colesterol 5-6 veces, <strong>infarto antes de los 20 años</strong>.</li>
+</ul>
+<h3 id="enfermedades-de-depósito-lisosomal">Enfermedades de depósito lisosomal</h3>
+<p>Los lisosomas contienen hidrolasas ácidas. El déficit de una enzima produce acumulación de sustrato y disfunción celular; la mayoría son <strong>autosómicas recesivas</strong>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 4. Trastornos genéticos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Enzima / gen</th>
+<th>Sustrato</th>
+<th>Clínica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tay-Sachs</strong></td>
+<td><strong>β-hexosaminidasa A (HEXA, 15q23)</strong></td>
+<td>GM2</td>
+<td>Regresión desde los 6 meses, estado vegetativo a los 2-3 años, <strong>mancha rojo cereza</strong>, <strong>sin hepatosplenomegalia</strong>; frecuente en judíos asquenazíes</td>
+</tr>
+<tr>
+<td><strong>Niemann-Pick A</strong></td>
+<td><strong>Esfingomielinasa (SMPD1)</strong></td>
+<td>Esfingomielina</td>
+<td>Lactante, neurodegeneración grave, hepatosplenomegalia, mancha rojo cereza, muerte precoz</td>
+</tr>
+<tr>
+<td><strong>Niemann-Pick B</strong></td>
+<td>Esfingomielinasa</td>
+<td>Esfingomielina</td>
+<td>Visceral: hepatosplenomegalia, infiltración pulmonar, supervivencia mayor</td>
+</tr>
+<tr>
+<td><strong>Niemann-Pick C</strong></td>
+<td><strong>NPC1/NPC2</strong> (transporte de colesterol)</td>
+<td>Colesterol</td>
+<td>Afectación neurológica (parálisis supranuclear de la mirada), hepatosplenomegalia; no es una hidrolasa</td>
+</tr>
+<tr>
+<td><strong>Gaucher</strong></td>
+<td><strong>Glucocerebrosidasa (GBA)</strong></td>
+<td>Glucocerebrósido</td>
+<td>La más frecuente: hepatosplenomegalia masiva, <strong>crisis óseas</strong>, anemia y trombocitopenia; macrófagos con citoplasma <strong>"en papel arrugado"</strong></td>
+</tr>
+<tr>
+<td><strong>Pompe</strong></td>
+<td><strong>α-glucosidasa ácida (GAA)</strong></td>
+<td>Glucógeno</td>
+<td>Glucogenosis tipo II: <strong>cardiomegalia</strong>, hipotonía, muerte ~2 años en la forma infantil</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="cromosomopatías">Cromosomopatías</h3>
+<ul>
+<li><strong>Síndrome de Down (trisomía 21)</strong>: <strong>95%</strong> por no disyunción, 4% por translocación y 1% por mosaicismo. Riesgo según edad materna: <strong>1/1.550 en &lt;20 años → 1/25 en &gt;45</strong>. Cardiopatía (CIA/CIV), hipotonía, facies característica, riesgo aumentado de leucemia.</li>
+<li><strong>Turner (45,X)</strong>: 1/2.000-3.000 nacidas. Cuello alado, linfedema, <strong>coartación de aorta</strong>, riñón en herradura, gónadas en cintilla, amenorrea primaria e infertilidad.</li>
+<li><strong>Klinefelter (47,XXY)</strong>: 1/500-1.000 varones; <strong>90%</strong> por no disyunción. Talla alta, <strong>ginecomastia</strong>, testículos pequeños, azoospermia y mayor riesgo de cáncer de mama. Cuantos más cromosomas X, más grave el fenotipo.</li>
+<li><strong>X frágil</strong>: expansión de <strong>CGG</strong> en <strong>FMR1 (Xq27.3)</strong>. Normal 29-55; <strong>premutación 55-200</strong> (temblor/ataxia en abuelos); <strong>&gt;200</strong> mutación completa: cara alargada, mandíbula grande, orejas prominentes, discapacidad intelectual y macroorquidismo.</li>
+</ul>
+<h3 id="impronta-genómica">Impronta genómica</h3>
+<p>En la región <strong>15q11-q13</strong> sólo se expresa un alelo según el origen parental:</p>
+<ul>
+<li><strong>Prader-Willi</strong>: deleción del alelo <strong>paterno</strong> (o disomía materna). Hipotonía neonatal, hiperfagia, <strong>obesidad</strong>, hipogonadismo, discapacidad.</li>
+<li><strong>Angelman</strong>: deleción del alelo <strong>materno</strong> (o mutación de <strong>UBE3A</strong> paterno). Ataxia, convulsiones, risa inmotivada, ausencia de lenguaje.</li>
+</ul>
+<p>El fenómeno explica por qué un padre fenotípicamente normal puede transmitir la enfermedad: la impronta "borra" la información de un progenitor.</p>
+<h3 id="herencia-mitocondrial">Herencia mitocondrial</h3>
+<p>Transmisión <strong>exclusivamente materna</strong> (el cigoto recibe las mitocondrias del óvulo). Afecta tejidos con alta demanda energética: músculo, nervio, retina y SNC. Prototipo: <strong>neuropatía óptica de Leber</strong>.</p>
+<h3 id="diagnóstico-molecular">Diagnóstico molecular</h3>
+<ul>
+<li><strong>PCR</strong> y secuenciación para mutaciones puntuales.</li>
+<li><strong>FISH</strong> para deleciones y amplificaciones.</li>
+<li><strong>Cariotipo</strong> para alteraciones numéricas y estructurales.</li>
+<li><strong>Microarrays</strong> para deleciones submicroscópicas.</li>
+<li><strong>Cribado neonatal</strong> para fenilcetonuria, galactosemia, hipotiroidismo y fibrosis quística.</li>
+</ul>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> Marfan es FBN1 con aneurisma aórtico; la hipercolesterolemia familiar es el receptor de LDL con seis clases de defecto; Tay-Sachs es HEXA con mancha rojo cereza y sin hepatosplenomegalia; Gaucher es glucocerebrosidasa con células en papel arrugado; Down 95% no disyunción y riesgo 1/25 en &gt;45 años; Prader-Willi es deleción paterna y Angelman materna.</p>
+</blockquote>
+
+</section><section id="sec-07-5-inmunopatologia-i-hipersensibilidad" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>5. Inmunopatología I: hipersensibilidad</h2>
+<p><em>(Clase 6 · Robbins cap. 6, pp. 204-221)</em></p>
+<p>La lesión por hipersensibilidad es una respuesta inmunitaria <strong>excesiva o mal dirigida</strong>. Se clasifica en cuatro tipos (Gell y Coombs):</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 5. Inmunopatología I: hipersensibilidad" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mediador</th>
+<th>Mecanismo</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I</strong></td>
+<td><strong>IgE</strong></td>
+<td>Degranulación de mastocitos</td>
+<td>Anafilaxia, asma alérgica, rinitis, urticaria</td>
+</tr>
+<tr>
+<td><strong>II</strong></td>
+<td><strong>IgG/IgM</strong> contra antígenos de superficie</td>
+<td>Opsonización, complemento o disfunción</td>
+<td>Anemia hemolítica autoinmune, púrpura trombocitopénica, Goodpasture, miastenia, Graves</td>
+</tr>
+<tr>
+<td><strong>III</strong></td>
+<td><strong>Inmunocomplejos</strong></td>
+<td>Depósito en vasos y filtros</td>
+<td>LES, glomerulonefritis postestreptocócica, enfermedad del suero, Arthus</td>
+</tr>
+<tr>
+<td><strong>IV</strong></td>
+<td><strong>Linfocitos T</strong></td>
+<td>Citocinas (Th1) o citotoxicidad (CD8)</td>
+<td>Tuberculina, dermatitis por contacto, rechazo, diabetes tipo 1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tipo-i-inmediata">Tipo I (inmediata)</h3>
+<ol type="1">
+<li><strong>Sensibilización</strong>: el alérgeno es capturado por células dendríticas y presentado a CD4+, que se diferencian a <strong>Th2</strong>.</li>
+<li><strong>Th2</strong> secreta <strong>IL-4</strong> (cambio de isotipo a IgE), <strong>IL-5</strong> (eosinófilos) e <strong>IL-13</strong> (secreción de moco).</li>
+<li>La <strong>IgE</strong> se une a <strong>FcεRI</strong> en mastocitos.</li>
+<li>La reexposición produce <strong>degranulación en minutos</strong>: histamina, triptasa, <strong>leucotrienos C4/D4</strong> (los más potentes), prostaglandinas y PAF.</li>
+</ol>
+<p>Efectos: <strong>espasmo del músculo liso</strong> (broncoconstricción), aumento de la secreción glandular, vasodilatación y aumento de la permeabilidad (edema, hipotensión).</p>
+<p><strong>Fase tardía</strong> (2-24 h): eosinófilos atraídos por <strong>eotaxina</strong> e IL-5, con proteínas granulares tóxicas que perpetúan la lesión.</p>
+<p><strong>Anafilaxia</strong>: reacción sistémica con hipotensión, edema laríngeo y broncoespasmo; puede matar en minutos. Tratamiento: <strong>adrenalina</strong>.</p>
+<h3 id="tipo-ii-mediada-por-anticuerpos">Tipo II (mediada por anticuerpos)</h3>
+<p>Los anticuerpos se unen a antígenos de la <strong>superficie celular</strong> o de la matriz extracelular. Tres mecanismos:</p>
+<ol type="1">
+<li><strong>Opsonización y fagocitosis</strong>: anemia hemolítica autoinmune, púrpura trombocitopénica inmune.</li>
+<li><strong>Activación del complemento</strong>: lisis celular; <strong>síndrome de Goodpasture</strong> (anticuerpos anti-membrana basal glomerular).</li>
+<li><strong>Disfunción sin lesión</strong>: <strong>miastenia gravis</strong> (anticuerpos contra el receptor de acetilcolina), <strong>enfermedad de Graves</strong> (anticuerpos contra el receptor de TSH), anemia perniciosa (anticuerpos contra el factor intrínseco).</li>
+</ol>
+<h3 id="tipo-iii-inmunocomplejos">Tipo III (inmunocomplejos)</h3>
+<p>Complejos <strong>antígeno-anticuerpo circulantes</strong> que se depositan en paredes vasculares y membranas de filtración. La lesión depende del tamaño del complejo, la carga y el sitio de depósito (glomérulo, articulación, piel, pulmón).</p>
+<ul>
+<li><strong>Local</strong>: reacción de <strong>Arthus</strong> (inmunización local con exceso de anticuerpos).</li>
+<li><strong>Sistémica</strong>: <strong>enfermedad del suero</strong> (fiebre, urticaria, artralgias, proteinuria), <strong>LES</strong>, glomerulonefritis postestreptocócica, endocarditis bacteriana.</li>
+</ul>
+<h3 id="tipo-iv-mediada-por-células-t">Tipo IV (mediada por células T)</h3>
+<p>Sin anticuerpos; se manifiesta en <strong>48-72 h</strong>.</p>
+<ul>
+<li><strong>Th1 CD4+</strong>: activan macrófagos por IFN-γ → inflamación y lesión. Prototipo: <strong>reacción a la tuberculina</strong>.</li>
+<li><strong>CD8+ citotóxicos</strong>: perforina y granzimas → muerte de la célula diana. Prototipo: <strong>dermatitis por contacto</strong> (níquel, hiedra), destrucción de hepatocitos por virus, rechazo agudo celular.</li>
+</ul>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> tipo I es IgE con mastocitos y fase tardía de eosinófilos; tipo II son anticuerpos contra la superficie con tres mecanismos (opsonización, complemento y disfunción); tipo III son inmunocomplejos y el LES es el prototipo; tipo IV es T, con tuberculina (Th1) y contacto (CD8).</p>
+</blockquote>
+
+</section><section id="sec-08-6-inmunopatologia-ii-autoinmunidad-y-trasplantes" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>6. Inmunopatología II: autoinmunidad y trasplantes</h2>
+<p><em>(Clase 7 · Robbins cap. 6, pp. 215-240)</em></p>
+<h3 id="tolerancia-y-autoinmunidad">Tolerancia y autoinmunidad</h3>
+<p>La <strong>tolerancia</strong> es la falta de respuesta contra lo propio:</p>
+<ul>
+<li><strong>Central</strong>: deleción de linfocitos autorreactivos en timo y médula ósea.</li>
+<li><strong>Periférica</strong>: anergia (falta de coestimulación), <strong>Treg</strong> (FOXP3, IL-2, IL-10, TGF-β), apoptosis por <strong>Fas-FasL</strong> y edición del receptor.</li>
+</ul>
+<p>La autoinmunidad aparece por <strong>predisposición genética</strong> (HLA sobre todo) más <strong>factores ambientales</strong> (infecciones, lesión tisular, microbiota). Ejemplos de asociación: <strong>HLA-B27</strong> con espondilitis anquilosante (riesgo muy elevado), <strong>HLA-DR4</strong> con artritis reumatoide, <strong>PTPN22</strong> con AR y diabetes tipo 1.</p>
+<p>Características generales: afectan al <strong>5-10%</strong> de la población, son crónicas, con <strong>recaídas y remisiones</strong>, y el daño se amplifica por expansión del epítopo (respuesta contra antígenos que no eran el blanco inicial).</p>
+<h3 id="lupus-eritematoso-sistémico-les">Lupus eritematoso sistémico (LES)</h3>
+<p>Enfermedad multisistémica por <strong>autoanticuerpos</strong> y <strong>fallo de la tolerancia</strong>; predominio en mujeres en edad fértil.</p>
+<p><strong>Patogenia</strong>:</p>
+<ul>
+<li>Defectos de la tolerancia en B y T.</li>
+<li>Defectos del <strong>complemento</strong> (C1q, C2, C4) → menor aclaramiento de inmunocomplejos.</li>
+<li>Ácidos nucleicos como autoantígenos; las células dendríticas y los B reconocen ADN y ARN por TLR.</li>
+<li>La lesión visceral es por <strong>inmunocomplejos (tipo III)</strong>; también hay <strong>anticuerpos contra células (tipo II)</strong>.</li>
+</ul>
+<p><strong>Autoanticuerpos</strong>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 6. Inmunopatología II: autoinmunidad y trasplantes" tabindex="0"><table>
+<thead>
+<tr>
+<th>Anticuerpo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ANA</strong></td>
+<td>Positivo en casi <strong>100%</strong>, pero <strong>no específico</strong> (también en Sjögren, esclerosis, AR)</td>
+</tr>
+<tr>
+<td><strong>Anti-ADN bicatenario</strong></td>
+<td>Específico; se correlaciona con nefritis</td>
+</tr>
+<tr>
+<td><strong>Anti-Sm</strong></td>
+<td>Específico; poco frecuente</td>
+</tr>
+<tr>
+<td>Anti-Ro/SS-A y anti-La/SS-B</td>
+<td>Asociados a lupus cutáneo y neonatal</td>
+</tr>
+<tr>
+<td>Anti-histona</td>
+<td>Lupus inducido por fármacos (hidralazina, procainamida)</td>
+</tr>
+<tr>
+<td><strong>Antifosfolípidos</strong></td>
+<td>Trombosis y pérdidas gestacionales; <strong>falso positivo para sífilis</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Clínica y criterios</strong>: se requieren <strong>≥4 criterios</strong>, con al menos uno clínico y uno inmunológico. Eritema malar, fotosensibilidad, artritis <strong>no erosiva</strong>, serositis (pleuritis, pericarditis), nefropatía (proteinuria &gt;0,5 g/24 h), citopenias y afectación neuropsiquiátrica.</p>
+<p><strong>Nefritis lúpica</strong> (clases OMS): I mesangial mínima; II proliferativa mesangial; III focal; <strong>IV difusa</strong> (la más frecuente y grave, con hematuria, proteinuria y síndrome nefrótico); V membranosa; <strong>VI esclerótica avanzada</strong> (&gt;90% glomérulos esclerosados).</p>
+<p><strong>Piel</strong>: banda lúpica en la unión dermoepidérmica con depósitos granulares de Ig y complemento; lesión <strong>no erosiva</strong>.</p>
+<h3 id="síndrome-de-sjögren">Síndrome de Sjögren</h3>
+<p>Enfermedad autoinmunitaria de las glándulas exocrinas: <strong>queratoconjuntivitis seca</strong> y <strong>xerostomía</strong> por destrucción linfocítica. El <strong>60%</strong> es secundario a otra enfermedad (artritis reumatoide). Anticuerpos <strong>anti-Ro/SS-A</strong> y <strong>anti-La/SS-B</strong> en 50-80%.</p>
+<p>Dato clave: <strong>riesgo 40 veces mayor de linfoma B</strong> (zona marginal), por proliferación crónica de linfocitos B.</p>
+<h3 id="esclerosis-sistémica-esclerodermia">Esclerosis sistémica (esclerodermia)</h3>
+<p>Fibrosis difusa por activación de fibroblastos y lesión vascular, con autoinmunidad de fondo (CD4+ contra un antígeno no identificado; TGF-β e IL-13).</p>
+<ul>
+<li><strong>Difusa</strong>: fibrosis rápida de piel y órganos, <strong>anti-Scl70</strong> (anti-topoisomerasa I), <strong>crisis renal</strong> (insuficiencia renal aguda por arteriolopatía), fibrosis pulmonar.</li>
+<li><strong>Limitada (CREST)</strong>: calcinosis, Raynaud, esófago, esclerodactilia, telangiectasias; <strong>anticentrómero</strong>; hipertensión pulmonar tardía.</li>
+</ul>
+<p>El <strong>fenómeno de Raynaud</strong> está en casi todos los pacientes y precede al resto en el 70%.</p>
+<h3 id="rechazo-del-injerto">Rechazo del injerto</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 6. Inmunopatología II: autoinmunidad y trasplantes" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mecanismo</th>
+<th>Tiempo</th>
+<th>Morfología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hiperagudo</strong></td>
+<td>Anticuerpos preformados</td>
+<td>Minutos-horas</td>
+<td>Trombosis, isquemia, necrosis fibrinoide; riñón cianótico y anúrico</td>
+</tr>
+<tr>
+<td><strong>Agudo celular</strong></td>
+<td>T del receptor contra CPH del donante</td>
+<td>Días-semanas</td>
+<td>Infiltrado intersticial de linfocitos y tubulitis</td>
+</tr>
+<tr>
+<td><strong>Agudo humoral</strong></td>
+<td>Anticuerpos anti-donante</td>
+<td>Días-semanas</td>
+<td><strong>C4d</strong> en capilares, glomerulitis, necrosis</td>
+</tr>
+<tr>
+<td><strong>Crónico</strong></td>
+<td>Respuesta humoral y vascular</td>
+<td>Meses-años</td>
+<td>Arterioesclerosis del injerto, fibrosis intersticial, atrofia tubular</td>
+</tr>
+</tbody>
+</table></div>
+<p>El rechazo <strong>crónico</strong> es la principal causa de fracaso tardío del injerto.</p>
+<p><strong>Enfermedad de injerto contra huésped (EICH)</strong>: los linfocitos T <strong>del donante</strong> atacan al receptor. Aguda: piel (exantema), intestino (diarrea) e hígado (ictericia). Crónica: esclerodermiforme, queratoconjuntivitis seca, bronquiolitis obliterante.</p>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> la tolerancia falla por genes más ambiente; el LES tiene ANA, anti-ADN bicatenario y anti-Sm, y su nefritis clase IV es la grave; Sjögren da sequedad y 40 veces más linfoma B; la esclerosis difusa tiene anti-Scl70 y crisis renal; el rechazo crónico es la causa tardía de fracaso del injerto.</p>
+</blockquote>
+
+</section><section id="sec-09-7-inmunopatologia-iii-inmunodeficiencias-sida-y-amiloidosis" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>7. Inmunopatología III: inmunodeficiencias, sida y amiloidosis</h2>
+<p><em>(Clase 8 · Robbins cap. 6, pp. 240-266)</em></p>
+<h3 id="inmunodeficiencias-primarias">Inmunodeficiencias primarias</h3>
+<p>Se manifiestan por infecciones <strong>recurrentes</strong>, graves o por gérmenes inusuales, y por mayor riesgo de cáncer. Según el brazo afectado:</p>
+<p><strong>Inmunidad innata</strong>:</p>
+<ul>
+<li><strong>Defectos de adhesión leucocitaria</strong>: tipo 1 (cadena β2 de integrinas <strong>LFA-1/Mac-1</strong>), tipo 2 (falta de <strong>sialil-Lewis X</strong>). Infecciones bacterianas, mala cicatrización, leucocitosis sin pus.</li>
+<li><strong>Chédiak-Higashi</strong>: gen <strong>LYST</strong>; gránulos gigantes, albinismo parcial, infecciones.</li>
+<li><strong>Enfermedad granulomatosa crónica (CGD)</strong>: defecto de la <strong>NADPH oxidasa</strong>; infecciones por <em>Staphylococcus</em>, <em>Serratia</em>, <em>Aspergillus</em>, <em>Nocardia</em>.</li>
+<li><strong>Complemento</strong>: C2/C3 → infecciones piógenas; C5-C9 → <em><strong>Neisseria</strong></em>; <strong>C1 inhibidor</strong> → angioedema hereditario (edema de laringe potencialmente letal).</li>
+</ul>
+<p><strong>Inmunidad adaptativa</strong>:</p>
+<ul>
+<li><strong>SCID</strong>: mutación de la <strong>cadena γ común</strong> (IL-7, IL-15) en el 50-60% (ligada al X); defecto profundo de T y NK. Otras: <strong>ADA</strong>, <strong>RAG1/2</strong>.</li>
+<li><strong>Agammaglobulinemia ligada al X (Bruton)</strong>: <strong>Btk</strong>; ausencia de B; infecciones piógenas y virales desde los 6 meses.</li>
+<li><strong>Síndrome de DiGeorge</strong>: deleción <strong>22q11</strong>; fallo del timo y paratiroides (hipocalcemia), cardiopatía, facies.</li>
+<li><strong>Hiper-IgM</strong>: <strong>CD40L</strong> en el 70%; IgM alta con IgG/IgA/IgE bajas; <em>Pneumocystis</em> y <em>Cryptosporidium</em>.</li>
+<li><strong>Inmunodeficiencia variable común</strong>: IgA e IgG2 bajas, infecciones respiratorias, autoinmunidad y linfoma.</li>
+<li><strong>Wiskott-Aldrich</strong>: <strong>WAS</strong> (Xp11.23); eccema, trombocitopenia, infecciones.</li>
+<li><strong>Ataxia-telangiectasia</strong>: <strong>ATM</strong> (11q); ataxia cerebelosa, telangiectasias, linfoma, roturas de ADN.</li>
+</ul>
+<p><strong>Secundarias</strong>: malnutrición proteico-calórica, diabetes, cáncer, inmunosupresión, VIH y <strong>esplenectomía</strong> (riesgo de neumococo).</p>
+<h3 id="sida">Sida</h3>
+<p><strong>VIH-1/2</strong>, retrovirus. La <strong>gp120</strong> se une a <strong>CD4</strong> y a un correceptor (<strong>CCR5</strong> en macrófagos, <strong>CXCR4</strong> en linfocitos T); la <strong>gp41</strong> ancla la membrana. La transcriptasa inversa convierte el ARN en ADN provírico, que se integra al genoma y puede quedar <strong>latente</strong>.</p>
+<p><strong>Historia natural</strong>:</p>
+<ol type="1">
+<li><strong>Infección primaria</strong>: mucosas → linfocitos T de memoria → diseminación a ganglios; síndrome gripal y adenopatías en hasta el 90%.</li>
+<li><strong>Latencia clínica</strong> de <strong>7-10 años</strong>, con "punto de ajuste" vírico y destrucción progresiva de CD4.</li>
+<li><strong>Sida</strong>: <strong>&lt;50 CD4/µl</strong> (o infección oportunista definitoria).</li>
+</ol>
+<p><strong>Infecciones oportunistas</strong>: <em>Pneumocystis jirovecii</em> (la más frecuente con &lt;200 CD4), <em>Toxoplasma</em> (abscesos en SNC), CMV (retinitis), <em>Mycobacterium avium</em>, <em>Cryptococcus</em>, candidiasis esofágica, tuberculosis.</p>
+<p><strong>Tumores</strong>: <strong>sarcoma de Kaposi</strong> (<strong>HHV-8</strong>), linfoma B (VEB), <strong>cáncer de cérvix</strong> (VPH) y carcinoma anal.</p>
+<p>Los niños presentan transmisión vertical, infecciones bacterianas recurrentes, <em>Pneumocystis</em> y encefalopatía progresiva.</p>
+<h3 id="amiloidosis">Amiloidosis</h3>
+<p>Depósito extracelular de <strong>fibrillas insolubles en hoja β plegada</strong>. Con H&amp;E son rosadas y homogéneas; el <strong>rojo Congo</strong> da <strong>verde manzana</strong> con luz polarizada (patognomónico). Comprimen y destruyen las células vecinas.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 7. Inmunopatología III: inmunodeficiencias, sida y amiloidosis" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Proteína</th>
+<th>Origen</th>
+<th>Órganos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AL (primaria)</strong></td>
+<td>Cadenas ligeras</td>
+<td>Proliferación clonal de células plasmáticas (5-15% de mielomas)</td>
+<td>Corazón, riñón, nervio, vasos, lengua</td>
+</tr>
+<tr>
+<td><strong>AA (secundaria)</strong></td>
+<td>Proteína <strong>SAA</strong> (fase aguda)</td>
+<td>Inflamación crónica: tuberculosis, AR, osteomielitis, fiebre mediterránea familiar</td>
+<td>Riñón, hígado, bazo</td>
+</tr>
+<tr>
+<td><strong>ATTR</strong></td>
+<td>Transtiretina</td>
+<td>Mutada (heredofamiliar) o nativa (senil)</td>
+<td>Corazón, nervio</td>
+</tr>
+<tr>
+<td><strong>Aβ2m</strong></td>
+<td>β2-microglobulina</td>
+<td>Hemodiálisis crónica</td>
+<td>Túnel carpiano, articulaciones</td>
+</tr>
+<tr>
+<td><strong>Aβ</strong></td>
+<td>Proteína precursora amiloide</td>
+<td>Alzheimer</td>
+<td>Placas cerebrales</td>
+</tr>
+<tr>
+<td><strong>AIAPP</strong></td>
+<td>Amilina</td>
+<td>Diabetes tipo 2</td>
+<td>Islotes de Langerhans</td>
+</tr>
+<tr>
+<td><strong>Calcitonina</strong></td>
+<td>Calcitonina</td>
+<td>Carcinoma medular de tiroides</td>
+<td>Tiroides</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Órganos</strong>: <strong>riñón</strong> (el más afectado; depósito glomerular con síndrome nefrótico), <strong>corazón</strong> (arritmias, insuficiencia), <strong>hígado</strong> (hepatomegalia, aspecto de cera), <strong>bazo</strong> ("en porcelana"), <strong>lengua</strong> (macroglosia), nervios y piel.</p>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> tipo I es IgE con mastocitos y fase tardía de eosinófilos; tipo II son anticuerpos contra superficie con tres mecanismos; tipo III son complejos y el LES es el prototipo; tipo IV es T con tuberculina y contacto; el LES tiene ANA, anti-ADN y anti-Sm, y su nefritis clase IV es la grave; la amiloidosis se tiñe con rojo Congo y la AL es de cadenas ligeras.</p>
+</blockquote>
+
+</section><section id="sec-10-8-enfermedades-de-la-lactancia-y-la-infancia" class="card">
+<div class="section-kicker"><span class="n">10</span> Sección</div>
+<h2>8. Enfermedades de la lactancia y la infancia</h2>
+<p><em>(Clase 11 · Robbins cap. 10, pp. 453-483 · la clase comprimió 31 páginas en 12)</em></p>
+<h3 id="malformaciones-congénitas">Malformaciones congénitas</h3>
+<p>Defectos anatómicos presentes al nacer: <strong>1 de cada 33</strong> nacidos vivos. "Congénito" significa "nacido con" y no implica ni excluye una causa genética.</p>
+<p><strong>Causas</strong>: genéticas <strong>10-15%</strong>, infecciones maternas <strong>2-3%</strong>, enfermedades maternas <strong>6-8%</strong>, fármacos <strong>~1%</strong>, multifactoriales <strong>20-25%</strong>, <strong>desconocidas 40-60%</strong>.</p>
+<p><strong>Definiciones</strong> (las cuatro se confunden en el examen):</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 8. Enfermedades de la lactancia y la infancia" tabindex="0"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Mecanismo</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Malformación</strong></td>
+<td>Error <strong>intrínseco</strong> de la morfogenia</td>
+<td>Cardiopatía, anencefalia, polidactilia</td>
+</tr>
+<tr>
+<td><strong>Disrupción</strong></td>
+<td><strong>Destrucción extrínseca</strong> de un órgano ya formado; no hereditaria</td>
+<td><strong>Bridas amnióticas</strong></td>
+</tr>
+<tr>
+<td><strong>Deformación</strong></td>
+<td>Alteración de la forma por <strong>compresión mecánica</strong>; 2% de los nacidos</td>
+<td>Pie zambo por oligohidramnios</td>
+</tr>
+<tr>
+<td><strong>Secuencia</strong></td>
+<td>Cascada de anomalías desde un defecto único</td>
+<td><strong>Secuencia de Potter</strong> (oligohidramnios)</td>
+</tr>
+<tr>
+<td><strong>Síndrome</strong></td>
+<td>Constelación con causa única, no explicable por un defecto inicial</td>
+<td>Trisomía 13, rubéola</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Periodos críticos</strong>: semanas <strong>1-2</strong> (todo o nada: muerte o recuperación), <strong>3-8</strong> (máxima sensibilidad; 3-5: tubo neural, cardiopatías, extremidades; 4-8: oído, ojos, dientes, paladar, genitales) y <strong>periodo fetal</strong> (≤38 semanas: retraso del crecimiento y defectos funcionales).</p>
+<p><strong>Teratógenos con mecanismo conocido</strong>: <strong>ciclopamina</strong> (inhibe Hedgehog → holoprosencefalia y ciclopía), <strong>ácido valproico</strong> (altera genes <strong>HOX</strong>), <strong>ácido retinoico</strong> en exceso (vía <strong>TGF-β</strong> → labio y paladar hendido), <strong>alcohol</strong> (síndrome alcohólico fetal), <strong>talidomida</strong> (extremidades, 50-80%), <strong>diabetes materna</strong> (6-10% de malformaciones mayores).</p>
+<h3 id="prematuridad-y-retraso-del-crecimiento-fetal">Prematuridad y retraso del crecimiento fetal</h3>
+<p><strong>Prematuridad</strong>: &lt;<strong>37</strong> semanas; segunda causa de mortalidad neonatal. Factores: <strong>rotura prematura de membranas</strong> (3% de los embarazos, un tercio de los partos pretérmino), <strong>infección intrauterina</strong> (25% de los partos pretérmino; corioamnionitis y funisitis), malformaciones uterinas o cervicales, placenta previa y gestación múltiple.</p>
+<p>Complicaciones del prematuro: <strong>SDR</strong>, <strong>ECN</strong>, <strong>sepsis</strong> y <strong>hemorragia intraventricular</strong>.</p>
+<p><strong>FGR</strong>: al menos un tercio de los &lt;2.500 g nacen a término y son <strong>pequeños para la edad gestacional</strong>.</p>
+<ul>
+<li>Causa <strong>fetal</strong> (cromosomopatía, TORCH) → restricción <strong>simétrica</strong>.</li>
+<li>Causa <strong>placentaria</strong> (insuficiencia uteroplacentaria) → restricción <strong>asimétrica</strong> con conservación del encéfalo.</li>
+</ul>
+<h3 id="síndrome-de-dificultad-respiratoria-membrana-hialina">Síndrome de dificultad respiratoria (membrana hialina)</h3>
+<p>Déficit de <strong>surfactante</strong> por inmadurez de los neumocitos tipo II. Incidencia inversa a la edad gestacional: <strong>1% a las 37 semanas, 10,5% a las 34 y 93% a ≤28</strong>.</p>
+<p><strong>Patogenia</strong>: ↑ tensión superficial → microatelectasias → hipoventilación → hipoxemia y retención de CO₂ → acidosis → vasoconstricción pulmonar → lesión endotelial y epitelial → fuga de plasma con fibrina → <strong>membranas hialinas</strong>. La hipoxemia agrava el déficit de surfactante (círculo vicioso).</p>
+<p><strong>Morfología</strong>: pulmones de tamaño normal, <strong>sólidos, sin aire, púrpura oscuro</strong>, que <strong>se hunden en el agua</strong>; alvéolos colapsados y membranas hialinas eosinófilas. <strong>Nunca</strong> se ven en mortinatos.</p>
+<p><strong>Clínica</strong>: prematuro con peso apropiado, dificultad respiratoria antes de 30 minutos, cianosis, estertores y <strong>vidrio esmerilado</strong> en la radiografía. Prevención con <strong>esteroides antenatales</strong> y tratamiento con <strong>surfactante exógeno</strong>.</p>
+<p><strong>Complicaciones</strong>: <strong>retinopatía del prematuro</strong> (VEGF bifásico: caída en la fase hiperóxica y neovascularización en la hipóxica) y <strong>displasia broncopulmonar</strong> (menor tabicación alveolar, factores inflamatorios).</p>
+<h3 id="enterocolitis-necrosante">Enterocolitis necrosante</h3>
+<p>1 de cada 10 nacidos <strong>&lt;1.500 g</strong>. Patogenia multifactorial: prematuridad, alimentación enteral, alteración del microbioma e isquemia; el <strong>PAF</strong> aumenta la permeabilidad y la apoptosis de enterocitos.</p>
+<p>Afecta <strong>íleon terminal, ciego y colon derecho</strong>. Clínica: heces sanguinolentas, distensión y colapso; la radiografía muestra <strong>neumatosis intestinal</strong> (gas en la pared, patognomónico). 20-60% requieren resección; los supervivientes pueden desarrollar <strong>estenosis</strong> post-ECN.</p>
+<h3 id="infecciones-perinatales">Infecciones perinatales</h3>
+<ul>
+<li><strong>Transcervicales (ascendentes)</strong>: bacterianas y VHS-2; el feto aspira líquido infectado → <strong>neumonía, sepsis y meningitis</strong>. Con corioamnionitis y funisitis.</li>
+<li><strong>Transplacentarias (hematológicas)</strong>: TORCH (Toxoplasma, paludismo, CMV, VHB, VIH, <strong>parvovirus B19</strong>).
+<ul>
+<li><strong>CMV</strong>: la infección fetal vírica <strong>más frecuente</strong>; inclusiones intranucleares.</li>
+<li><strong>Parvovirus B19</strong>: tropismo por precursores eritroides → aplasia, anemia grave e <strong>hidropesía fetal no inmunitaria</strong>; inclusiones intranucleares.</li>
+</ul></li>
+<li><strong>Sepsis</strong>: precoz (&lt;7 días; <strong>estreptococo del grupo B</strong>) y tardía (7 días-3 meses; <em>Listeria</em>, <em>Candida</em>).</li>
+</ul>
+<h3 id="hidropesía-fetal">Hidropesía fetal</h3>
+<p>Acumulación de edema y líquido en el feto. <strong>Inmunitaria</strong>: incompatibilidad <strong>RhD</strong>; la madre sensibilizada produce <strong>IgG</strong> que atraviesa la placenta y destruye eritrocitos fetales → anemia → insuficiencia cardiaca → anasarca; la hiperbilirrubinemia produce <strong>kernícter</strong>. Prevención con <strong>inmunoglobulina anti-D</strong>.</p>
+<p><strong>No inmunitaria</strong>: cardiopatías, cromosomopatías (Turner, trisomías 21 y 18), anemia fetal (alfa-talasemia, parvovirus) y transfusión fetofetal; <strong>20% idiopática</strong>.</p>
+<p><strong>Kernícter</strong>: bilirrubina no conjugada liposoluble en ganglios basales y tronco; umbral &gt;<strong>20 mg/dl</strong> en el término. Tratamiento: fototerapia y exanguinotransfusión.</p>
+<h3 id="errores-congénitos-del-metabolismo">Errores congénitos del metabolismo</h3>
+<ul>
+<li><strong>Fenilcetonuria</strong>: autosómica recesiva, déficit de <strong>fenilalanina hidroxilasa</strong>; sin dieta, retraso mental, convulsiones, hipopigmentación y olor a moho. Fenilalanina <strong>≥5 veces</strong> lo normal. El <strong>2%</strong> se debe a defectos de <strong>BH4</strong> y no responde a la dieta.</li>
+<li><strong>Galactosemia</strong>: déficit de <strong>GALT</strong>; cataratas, hepatomegalia, esteatosis, cirrosis y afectación del SNC; sepsis por <em>E. coli</em>. Tratamiento: dieta sin galactosa.</li>
+</ul>
+<h3 id="fibrosis-quística">Fibrosis quística</h3>
+<p><em>CFTR</em> (7q31.2), autosómica recesiva; <strong>1/2.500</strong> caucásicos. El canal de cloro y bicarbonato falla: en el pulmón y el intestino hay menor secreción de cloro y mayor reabsorción de sodio y agua → <strong>moco deshidratado</strong>; en el sudor, menor reabsorción → <strong>sudor salado</strong>.</p>
+<ul>
+<li><strong>Pulmón</strong>: tapones, bronquiectasias, <em>S. aureus</em>, <em>H. influenzae</em> y <em><strong>P. aeruginosa</strong></em> (80% a los 20 años); <em>Burkholderia cepacia</em> es de mal pronóstico.</li>
+<li><strong>Páncreas</strong>: insuficiencia exocrina en <strong>85-90%</strong>; diabetes en hasta 50% de los adultos.</li>
+<li><strong>Hígado</strong>: <strong>cirrosis biliar focal</strong> (~30%), grave en &lt;10%.</li>
+<li><strong>Intestino</strong>: <strong>íleo meconial</strong> (5-10%).</li>
+<li><strong>Varón</strong>: <strong>azoospermia en 95%</strong> por agenesia de conductos deferentes.</li>
+<li><strong>Glándulas sudoríparas</strong>: sin alteración morfológica.</li>
+<li><strong>Diagnóstico</strong>: cloro en sudor <strong>&gt;60 mM</strong>, tripsinógeno inmunorreactivo en el cribado y secuenciación de <em>CFTR</em>.</li>
+</ul>
+<h3 id="síndrome-de-muerte-súbita-del-lactante-smsl">Síndrome de muerte súbita del lactante (SMSL)</h3>
+<p>Muerte súbita &lt;1 año, <strong>diagnóstico de exclusión</strong> con autopsia completa, estudio del lugar e historia clínica. Pico <strong>2-4 meses</strong>; <strong>90%</strong> en los primeros 6 meses. Modelo de <strong>triple riesgo</strong>: lactante vulnerable + periodo crítico del desarrollo + estresante exógeno.</p>
+<p>Factores: prematuridad, sexo masculino, hermano con SMSL, tabaco materno, edad materna joven, <strong>decúbito prono o lateral</strong>, superficie blanda, hipertermia y compartir cama los primeros 3 meses.</p>
+<p><strong>Morfología</strong>: <strong>petequias</strong> en timo, pleura y epicardio (80%), pulmones congestivos, astrogliosis del tronco y persistencia de grasa parda y hematopoyesis extramedular.</p>
+<p><strong>Prevención</strong>: <strong>decúbito supino</strong>.</p>
+<h3 id="tumores-infantiles">Tumores infantiles</h3>
+<p>2% de los cánceres, pero <strong>16%</strong> de las muertes entre 5 y 14 años. Predominan los tumores de <strong>tejidos blandos mesenquimatosos</strong>.</p>
+<ul>
+<li><strong>Hemangiomas</strong>: los más frecuentes; regresión espontánea hacia los 2 años.</li>
+<li><strong>Tumores fibrosos</strong>: fibromatosis y fibrosarcoma congénito (<strong>ETV6-NTRK3</strong>), con pronóstico excelente pese a la histología.</li>
+<li><strong>Teratomas</strong>: <strong>sacrococcígeo</strong> el más frecuente; 75% maduros, 12% malignos; la malignidad depende del tejido <strong>neuroepitelial inmaduro</strong>.</li>
+<li><strong>Neuroblastoma</strong>: cresta neural; 40% suprarrenal, 25% paravertebral, 15% mediastino posterior. <strong>Seudorrosetas de Homer-Wright</strong> y neurópilo. Produce <strong>catecolaminas</strong> (AVM y AHV urinarios) en el 90%. <strong>MYCN amplificado</strong> (20-30%) = alto riesgo; deleción <strong>1p36</strong> y pérdida de <strong>11q</strong> adversas; estadio <strong>4S</strong> con regresión espontánea; <strong>&lt;18 meses</strong> mejor pronóstico.</li>
+<li><strong>Tumor de Wilms</strong>: 1/10.000; máximo <strong>2-5 años</strong>. Síndromes: <strong>WAGR</strong> (11p13, <em>WT1</em>/<em>PAX6</em>, riesgo 33%), <strong>Denys-Drash</strong> (<em>WT1</em> dominante negativa, riesgo 90%) y <strong>Beckwith-Wiedemann</strong> (11p15.5, <em>IGF2</em>/impronta). Histología <strong>trifásica</strong> (blastema, epitelio, estroma); <strong>anaplasia</strong> en 5% (<em>TP53</em>) = mal pronóstico; <strong>restos nefrógenos</strong> como precursores. Curación ~90%.</li>
+</ul>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> malformación es intrínseca, disrupción extrínseca y deformación mecánica; el SDR es déficit de surfactante con membranas hialinas; la hidropesía inmunitaria es RhD y la no inmunitaria es cardiopatía o anemia; la FQ da 85-90% de insuficiencia pancreática y 95% de azoospermia; el SMSL es exclusión con triple riesgo; MYCN manda en neuroblastoma y la trifásica en Wilms.</p>
+</blockquote>
+<hr />
+<h1 id="parte-ii--cierre">Parte II , Cierre</h1>
+
+</section><section id="sec-11-9-inflamacion-y-reparacion" class="card">
+<div class="section-kicker"><span class="n">11</span> Sección</div>
+<h2>9. Inflamación y reparación</h2>
+<p><em>(Clase 2 · Robbins cap. 3, pp. 71-114)</em></p>
+<h3 id="inflamación-aguda">Inflamación aguda</h3>
+<p>Respuesta protectora que lleva leucocitos y proteínas al sitio de lesión. <strong>Requiere circulación</strong>. Causas: infecciones, necrosis tisular, cuerpos extraños y reacciones inmunitarias.</p>
+<p><strong>Signos cardinales</strong>: rubor, calor, tumor, dolor y <strong>pérdida de función</strong>.</p>
+<p><strong>Secuencia</strong>:</p>
+<ol type="1">
+<li><strong>Vasodilatación</strong> arteriolar → hiperemia.</li>
+<li><strong>Aumento de la permeabilidad</strong> → exudado de proteínas y edema.</li>
+<li><strong>Reclutamiento leucocitario</strong>: marginación, adhesión (selectinas, integrinas), migración y quimiotaxis.</li>
+<li><strong>Fagocitosis</strong>: reconocimiento y fijación → vacuola → destrucción por <strong>ERO, NO y enzimas lisosomales</strong>.</li>
+</ol>
+<p><strong>Mediadores</strong>: histamina (vasodilatación y permeabilidad), prostaglandinas (dolor y fiebre), leucotrienos (quimiotaxis y broncoconstricción), citocinas (TNF, IL-1, IL-6), quimiocinas, PAF, complemento (C3a, C5a) y cininas (bradicinina).</p>
+<p><strong>Patrones morfológicos</strong>:</p>
+<ul>
+<li><strong>Serosa</strong>: trasudado pobre en células (ampollas, pleura).</li>
+<li><strong>Fibrinosa</strong>: exudado rico en fibrina; "pan con mantequilla" en el empiema.</li>
+<li><strong>Supurativa/purulenta</strong>: pus, abscesos.</li>
+<li><strong>Ulcerativa</strong>: necrosis epitelial con inflamación subyacente.</li>
+</ul>
+<p><strong>Evolución</strong>: resolución completa, curación con tejido conjuntivo o <strong>cronificación</strong>.</p>
+<h3 id="inflamación-crónica">Inflamación crónica</h3>
+<p>Dura semanas o meses; predomina la destrucción tisular con intento de reparación. Causas: infecciones persistentes (tuberculosis), hipersensibilidad y tóxicos exógenos (tabaco) o endógenos.</p>
+<p><strong>Células</strong>: <strong>macrófagos</strong> (fagocitosis y citocinas), <strong>linfocitos</strong> T y B, células plasmáticas, eosinófilos y mastocitos.</p>
+<p><strong>Granulomas</strong>: agregados de macrófagos epitelioides, con células gigantes multinucleadas y corona de linfocitos.</p>
+<ul>
+<li><strong>De cuerpo extraño</strong>: talco, sutura; células gigantes con material en el centro.</li>
+<li><strong>Inmunitarios</strong>: tuberculosis (caseoso, el más importante), lepra, sífilis, arañazo de gato, sarcoidosis (no caseoso) y enfermedad de Crohn.</li>
+</ul>
+<h3 id="efectos-sistémicos">Efectos sistémicos</h3>
+<p>Fiebre (TNF, IL-1, IL-6), <strong>proteínas de fase aguda</strong> (PCR, ferritina, fibrinógeno), <strong>leucocitosis</strong> (4.000-11.000/µl), y en infecciones graves <strong>shock séptico</strong>, hipotensión, CID y trastornos metabólicos.</p>
+<h3 id="reparación">Reparación</h3>
+<ul>
+<li><strong>Regeneración</strong>: restituye la arquitectura con células diferenciadas o células madre.
+<ul>
+<li>Tejidos <strong>lábiles</strong>: médula ósea y epitelios (división continua).</li>
+<li><strong>Estables</strong>: hígado, riñón (regeneran si la matriz está conservada).</li>
+<li><strong>Permanentes</strong>: neuronas y miocardio (no se recuperan).</li>
+</ul></li>
+<li><strong>Cicatriz</strong>: cuando no hay regeneración posible o el armazón está destruido.</li>
+</ul>
+<p><strong>Fibrosis</strong> es el depósito extenso de colágeno en un órgano; <strong>organización</strong> es la fibrosis dentro de un espacio ocupado por exudado (neumonía en organización).</p>
+<p><strong>Cicatrización cutánea</strong>:</p>
+<ul>
+<li><strong>Primera intención</strong>: bordes enfrentados, mínima contracción.</li>
+<li><strong>Segunda intención</strong>: herida abierta, tejido de granulación, más contracción y cicatriz.</li>
+</ul>
+<p><strong>Anomalías</strong>:</p>
+<ul>
+<li><strong>Defectos</strong>: úlcera <strong>venosa</strong> (la más frecuente, indolora), <strong>arterial</strong> (pequeña y dolorosa), diabética y por presión.</li>
+<li><strong>Exceso</strong>: <strong>cicatriz hipertrófica</strong> (respeta el límite de la herida), <strong>queloide</strong> (lo supera), granulación exuberante y contracturas.</li>
+</ul>
+<p><strong>Cambios vasculares y reclutamiento</strong> (secuencia temporal):</p>
+<ol type="1">
+<li><strong>Vasoconstricción</strong> transitoria (segundos).</li>
+<li><strong>Vasodilatación</strong> arteriolar y apertura de capilares (minutos): rubor y calor.</li>
+<li><strong>Aumento de la permeabilidad</strong> de vénulas postcapilares: exudado de proteínas, edema y dolor por compresión.</li>
+<li><strong>Estasis</strong> y marginación de leucocitos.</li>
+<li><strong>Adhesión y transmigración</strong>: las <strong>selectinas</strong> (L, E, P) producen rodamiento; las <strong>integrinas</strong> (LFA-1, Mac-1) con ICAM-1 producen adhesión firme; la <strong>PECAM-1</strong> permite atravesar el endotelio.</li>
+<li><strong>Quimiotaxis</strong> hacia el estímulo (C5a, leucotrieno B4, IL-8).</li>
+</ol>
+<p><strong>Mediadores</strong> (origen y efecto):</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 9. Inflamación y reparación" tabindex="0"><table>
+<thead>
+<tr>
+<th>Mediador</th>
+<th>Origen</th>
+<th>Efecto principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Histamina</strong></td>
+<td>Mastocitos, basófilos, plaquetas</td>
+<td>Vasodilatación y ↑ permeabilidad</td>
+</tr>
+<tr>
+<td><strong>Prostaglandinas</strong> (PGE₂, PGI₂)</td>
+<td>Ácido araquidónico (COX)</td>
+<td>Vasodilatación, dolor, fiebre</td>
+</tr>
+<tr>
+<td><strong>Leucotrienos</strong> (B4, C4, D4, E4)</td>
+<td>Ácido araquidónico (lipoxigenasa)</td>
+<td>Quimiotaxis (B4), broncoconstricción y ↑ permeabilidad (C4-D4)</td>
+</tr>
+<tr>
+<td><strong>TNF, IL-1, IL-6</strong></td>
+<td>Macrófagos</td>
+<td>Fiebre, fase aguda, adhesión endotelial</td>
+</tr>
+<tr>
+<td><strong>Quimiocinas</strong> (IL-8)</td>
+<td>Macrófagos, endotelio</td>
+<td>Quimiotaxis de neutrófilos</td>
+</tr>
+<tr>
+<td><strong>C3a, C5a</strong></td>
+<td>Complemento</td>
+<td>↑ permeabilidad, quimiotaxis, activación de mastocitos</td>
+</tr>
+<tr>
+<td><strong>Bradicinina</strong></td>
+<td>Cininógeno (calicreína)</td>
+<td>Dolor, vasodilatación, ↑ permeabilidad</td>
+</tr>
+<tr>
+<td><strong>PAF</strong></td>
+<td>Plaquetas, leucocitos, endotelio</td>
+<td>Agregación, broncoconstricción, ↑ permeabilidad</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reparación por tejido conjuntivo</strong> (pasos):</p>
+<ol type="1">
+<li><strong>Angiogenia</strong> (VEGF, angiopoyetinas).</li>
+<li>Migración y proliferación de <strong>fibroblastos</strong>.</li>
+<li>Depósito de <strong>colágeno</strong> (TGF-β).</li>
+<li><strong>Remodelación</strong> y contracción (miofibroblastos).</li>
+</ol>
+<p><strong>Factores que modifican la reparación</strong>: infección, diabetes, nutrición, glucocorticoides, perfusión, cuerpo extraño y localización. La <strong>diabetes</strong> es la causa sistémica más importante de mala cicatrización.</p>
+<p><strong>Cronología de la herida cutánea</strong>: 24 h neutrófilos; 2-3 días macrófagos y tejido de granulación; 5 días colágeno y neovascularización; 2 semanas acumulación de colágeno; 1 mes remodelación y cicatriz madura.</p>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> la inflamación aguda es vasodilatación, exudado y neutrófilos; la crónica es macrófagos, linfocitos y fibrosis; el granuloma caseoso es tuberculosis y el no caseoso sarcoidosis; la reparación es regeneración en tejidos lábiles o estables y cicatriz en permanentes; la úlcera venosa es indolora y la arterial dolorosa.</p>
+</blockquote>
+
+</section><section id="sec-12-10-neoplasias" class="card">
+<div class="section-kicker"><span class="n">12</span> Sección</div>
+<h2>10. Neoplasias</h2>
+<p><em>(Clase 8b · Robbins cap. 7, pp. 267-338 · sólo 17% del capítulo)</em></p>
+<h3 id="concepto-y-nomenclatura">Concepto y nomenclatura</h3>
+<p><strong>Neoplasia</strong>: masa de células con crecimiento autónomo, derivada de <strong>una sola célula</strong> (clonal), compuesta por <strong>parénquima</strong> tumoral y <strong>estroma</strong> reactivo.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 10. Neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Origen</th>
+<th>Benigno</th>
+<th>Maligno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Epitelio</td>
+<td>Papiloma, adenoma</td>
+<td><strong>Carcinoma</strong></td>
+</tr>
+<tr>
+<td>Mesénquima</td>
+<td>Lipoma, leiomioma, fibroma</td>
+<td><strong>Sarcoma</strong></td>
+</tr>
+<tr>
+<td>Hematopoyético</td>
+<td>No aplica</td>
+<td>Linfoma, leucemia</td>
+</tr>
+<tr>
+<td>Melanocitos</td>
+<td>Nevus</td>
+<td>Melanoma</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Teratoma</strong>: deriva de más de una capa germinal (el quístico del ovario es el ejemplo clásico).</li>
+<li><strong>Tumor mixto</strong>: dos componentes (fibroadenoma).</li>
+<li>Excepciones: <strong>linfoma</strong> y <strong>melanoma</strong> son malignos pese al sufijo -oma; el <strong>hamartoma</strong> y la <strong>heterotopia</strong> no son neoplasias.</li>
+</ul>
+<h3 id="benigno-vs-maligno">Benigno vs maligno</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 10. Neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Benigno</th>
+<th>Maligno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diferenciación</td>
+<td>Bien diferenciado</td>
+<td>Variable, hasta <strong>anaplasia</strong></td>
+</tr>
+<tr>
+<td>Crecimiento</td>
+<td>Lento, expansivo, con cápsula</td>
+<td>Rápido, infiltrativo, sin cápsula</td>
+</tr>
+<tr>
+<td>Metástasis</td>
+<td><strong>Nunca</strong></td>
+<td><strong>Sí</strong> (única prueba definitiva)</td>
+</tr>
+<tr>
+<td>Recurrencia</td>
+<td>Rara</td>
+<td>Frecuente</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Anaplasia</strong>: pleomorfismo, núcleos hipercromáticos, relación núcleo/citoplasma aumentada, nucléolos prominentes y mitosis atípicas. Es marca de malignidad.</p>
+<p><strong>Displasia</strong>: pérdida de uniformidad y de orientación arquitectural; es <strong>preneoplásica</strong>. Cuando afecta todo el espesor y <strong>no atraviesa la membrana basal</strong> es <strong>carcinoma in situ</strong>.</p>
+<h3 id="invasión-y-metástasis">Invasión y metástasis</h3>
+<ul>
+<li><strong>Siembra</strong> en cavidades (peritoneo, pleura, pericardio).</li>
+<li><strong>Linfática</strong>: típica de carcinomas; primero ganglios regionales.</li>
+<li><strong>Hematógena</strong>: típica de sarcomas y de algunos carcinomas; hígado y pulmón son los destinos más frecuentes.</li>
+</ul>
+<p>La metástasis requiere: desprendimiento, invasión de la matriz, intravasación, supervivencia en la circulación, extravasación y colonización.</p>
+<h3 id="epidemiología">Epidemiología</h3>
+<ul>
+<li><strong>9,5 millones</strong> de muertes anuales en el mundo.</li>
+<li>En el varón, el cáncer más frecuente es <strong>próstata (21%)</strong>; en la mujer, <strong>mama</strong>. La mayor <strong>mortalidad</strong> en ambos es <strong>pulmón (23% y 22%)</strong>.</li>
+<li>Factores de riesgo: tabaco, alcohol, dieta, obesidad, sedentarismo, infecciones (VPH, VEB, VHB/VHC, <em>H. pylori</em>), radiación UV e ionizante y carcinógenos ocupacionales (asbesto, benceno, cadmio, sílice).</li>
+</ul>
+<h3 id="bases-moleculares">Bases moleculares</h3>
+<p>El cáncer es un <strong>daño genético no letal</strong> acumulado en una célula fundadora; la progresión es <strong>multipaso</strong>.</p>
+<ul>
+<li><strong>Oncogenes</strong>: ganancia de función (RAS, MYC, HER2, ABL, BCL2).</li>
+<li><strong>Genes supresores</strong>: pérdida de función (<strong>TP53</strong>, <strong>RB</strong>, APC, BRCA1/2, NF1).</li>
+<li><strong>Reparación del ADN</strong>: síndrome de Lynch (MSI), xeroderma pigmentoso.</li>
+<li><strong>Evasión de la apoptosis</strong>, <strong>potencial replicativo ilimitado</strong> (telomerasa), <strong>angiogenia</strong> (VEGF), <strong>invasión</strong> y <strong>evasión inmunitaria</strong> (PD-L1).</li>
+<li><strong>Efecto Warburg</strong>: glucólisis aerobia incluso con oxígeno, para obtener metabolitos para la síntesis.</li>
+</ul>
+<h3 id="carcinogenia">Carcinogenia</h3>
+<ul>
+<li><strong>Química</strong>: iniciador + promotor. Ejemplos: benzo[a]pireno (tabaco), aflatoxina (hígado), aminas aromáticas (vejiga), asbesto.</li>
+<li><strong>Radiación</strong>: UV (dímeros de timina → carcinoma espinocelular y melanoma) e ionizante (leucemia, tiroides, mama, pulmón).</li>
+<li><strong>Viral</strong>: <strong>VPH 16/18</strong> (E6 → p53, E7 → Rb; cérvix, ano, orofaringe), <strong>VEB</strong> (linfoma de Burkitt, carcinoma nasofaríngeo), <strong>VHB/VHC</strong> (hepatocarcinoma), <strong>HTLV-1</strong> (leucemia de células T), <strong>HHV-8</strong> (Kaposi), <em>H. pylori</em> (gástrico, linfoma MALT).</li>
+</ul>
+<h3 id="clínica">Clínica</h3>
+<ul>
+<li><strong>Efecto de masa</strong>, sangrado, obstrucción, dolor y fractura patológica.</li>
+<li><strong>Caquexia</strong>: pérdida de grasa y masa magra que <strong>no se corrige con la ingesta</strong>, por TNF, IL-6 y factores movilizadores de lípidos.</li>
+<li><strong>Síndromes paraneoplásicos</strong>: SIADH (carcinoma de pulmón de células pequeñas), Cushing (ACTH ectópico), <strong>hipercalcemia</strong> (PTHrP en carcinoma escamoso de pulmón y mieloma), policitemia (EPO), tromboflebitis migratoria (Trousseau).</li>
+</ul>
+<h3 id="gradación-y-estadificación">Gradación y estadificación</h3>
+<ul>
+<li><strong>Grado</strong>: diferenciación histológica (bien, moderadamente o poco diferenciado). Se aplica sobre todo a carcinomas y sarcomas.</li>
+<li><strong>Estadio</strong>: extensión anatómica, por <strong>TNM</strong> (tumor, ganglios, metástasis). <strong>El estadio pesa más en el pronóstico que el grado.</strong></li>
+</ul>
+<h3 id="marcadores-tumorales">Marcadores tumorales</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 10. Neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Marcador</th>
+<th>Tumor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AFP</strong></td>
+<td>Hepatocarcinoma, tumores germinales</td>
+</tr>
+<tr>
+<td><strong>CEA</strong></td>
+<td>Cáncer colorrectal (seguimiento)</td>
+</tr>
+<tr>
+<td><strong>CA-125</strong></td>
+<td>Carcinoma de ovario</td>
+</tr>
+<tr>
+<td><strong>PSA</strong></td>
+<td>Cáncer de próstata</td>
+</tr>
+<tr>
+<td><strong>hCG</strong></td>
+<td>Tumores trofoblásticos</td>
+</tr>
+<tr>
+<td><strong>Calcitonina</strong></td>
+<td>Carcinoma medular de tiroides</td>
+</tr>
+</tbody>
+</table></div>
+<p>No sirven para el diagnóstico aislado: sirven para <strong>seguimiento</strong> y detección de recaída.</p>
+<h3 id="diagnóstico-y-terapia-dirigida">Diagnóstico y terapia dirigida</h3>
+<ul>
+<li><strong>Histología</strong> (biopsia) y <strong>citología</strong>.</li>
+<li><strong>Inmunohistoquímica</strong>: citoqueratinas (epitelio), CD45 (linfoides), S100 (melanoma), desmina (músculo), sinaptofisina (neuroendocrino).</li>
+<li><strong>Biología molecular</strong>: mutaciones accionables y <strong>biopsia líquida</strong> (ADN tumoral en sangre).</li>
+<li><strong>Terapias dirigidas</strong>: <strong>HER2</strong> (mama), <strong>EGFR</strong> (pulmón), <strong>BRAF V600E</strong> (melanoma, colon), <strong>KIT</strong> (GIST), <strong>ALK</strong> (pulmón), e inmunoterapia con inhibidores de puntos de control.</li>
+</ul>
+<p><strong>Las diez capacidades del cáncer</strong> (resumen útil para responder "mecanismos"):</p>
+<ol type="1">
+<li>Autosuficiencia en señales de crecimiento (oncogenes).</li>
+<li>Insensibilidad a la inhibición del crecimiento (supresores).</li>
+<li>Evasión de la apoptosis.</li>
+<li>Potencial replicativo ilimitado (telomerasa).</li>
+<li>Angiogenia.</li>
+<li>Invasión y metástasis.</li>
+<li>Reprogramación del metabolismo (Warburg).</li>
+<li>Evasión de la respuesta inmunitaria.</li>
+<li>Inestabilidad genómica.</li>
+<li>Inflamación que favorece el tumor.</li>
+</ol>
+<p><strong>Oncogenes y supresores frecuentes</strong>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 10. Neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Gen</th>
+<th>Tipo</th>
+<th>Tumor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RAS</strong></td>
+<td>Oncogén</td>
+<td>Colon, pulmón, páncreas</td>
+</tr>
+<tr>
+<td><strong>MYC</strong></td>
+<td>Oncogén</td>
+<td>Burkitt, neuroblastoma (MYCN)</td>
+</tr>
+<tr>
+<td><strong>HER2</strong></td>
+<td>Oncogén</td>
+<td>Mama</td>
+</tr>
+<tr>
+<td><strong>ABL</strong></td>
+<td>Oncogén</td>
+<td>Leucemia mieloide crónica (BCR-ABL)</td>
+</tr>
+<tr>
+<td><strong>BCL2</strong></td>
+<td>Oncogén (antiapoptótico)</td>
+<td>Linfoma folicular</td>
+</tr>
+<tr>
+<td><strong>TP53</strong></td>
+<td>Supresor</td>
+<td>Casi todos los tumores; Li-Fraumeni</td>
+</tr>
+<tr>
+<td><strong>RB</strong></td>
+<td>Supresor</td>
+<td>Retinoblastoma, osteosarcoma</td>
+</tr>
+<tr>
+<td><strong>APC</strong></td>
+<td>Supresor</td>
+<td>Poliposis familiar, colon</td>
+</tr>
+<tr>
+<td><strong>BRCA1/2</strong></td>
+<td>Supresor (reparación)</td>
+<td>Mama y ovario</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Carcinógenos químicos</strong>: benzo[a]pireno (tabaco), aminas aromáticas (vejiga), aflatoxina B1 (hepatocarcinoma, mutación del codón 249 de TP53), cloruro de vinilo (angiosarcoma), asbesto (mesotelioma), benceno (leucemia).</p>
+<p><strong>Paraneoplásicos por tumor</strong>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: 10. Neoplasias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Síndrome</th>
+<th>Mecanismo</th>
+<th>Tumor típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hipercalcemia</strong></td>
+<td>PTHrP</td>
+<td>Escamoso de pulmón, mieloma</td>
+</tr>
+<tr>
+<td><strong>SIADH</strong></td>
+<td>ADH ectópica</td>
+<td>Pulmón de células pequeñas</td>
+</tr>
+<tr>
+<td><strong>Cushing</strong></td>
+<td>ACTH ectópica</td>
+<td>Pulmón de células pequeñas, carcinoide</td>
+</tr>
+<tr>
+<td><strong>Policitemia</strong></td>
+<td>EPO ectópica</td>
+<td>Carcinoma renal, hepatocarcinoma</td>
+</tr>
+<tr>
+<td><strong>Tromboflebitis migratoria</strong></td>
+<td>Estado hipercoagulable</td>
+<td>Páncreas, pulmón</td>
+</tr>
+<tr>
+<td><strong>Miastenia</strong></td>
+<td>Anticuerpos contra receptor de acetilcolina</td>
+<td>Timoma</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> carcinoma es epitelial y sarcoma mesenquimatoso; la anaplasia y la metástasis definen malignidad; el carcinoma in situ no atraviesa la membrana basal; el pulmón es la primera causa de muerte por cáncer en ambos sexos; el estadio pesa más que el grado; los marcadores sirven para seguimiento, no para diagnóstico.</p>
+</blockquote>
+
+<div class="warnbox"><span class="box-title">Pulmón manda en mortalidad</span>En el varón el cáncer más frecuente es próstata (21%) y en la mujer es mama, pero la mayor mortalidad en ambos es pulmón (23% y 22%). El estadio pesa más que el grado en el pronóstico.</div>
+</section><section id="sec-13-11-enfermedades-infecciosas" class="card">
+<div class="section-kicker"><span class="n">13</span> Sección</div>
+<h2>11. Enfermedades infecciosas</h2>
+<p><em>(Clase 9 · Robbins cap. 8, pp. 339-404 · 23% del capítulo, casi todo vírico)</em></p>
+<h3 id="principios">Principios</h3>
+<p><strong>Barreras</strong>: piel queratinizada, moco y cilios, ácido gástrico, microbiota y defensinas.</p>
+<p><strong>Vías</strong>: respiratoria, digestiva, urogenital, piel y parenteral. <strong>Transmisión</strong>: contacto, gotitas, fecal-oral, vectorial y vertical.</p>
+<p><strong>Virulencia</strong>: adhesinas (pili, ácido lipoteicoico), invasinas, cápsula antifagocítica, <strong>toxinas</strong> y evasión inmune (IgA proteasas, variación antigénica, inhibición del complemento).</p>
+<ul>
+<li><strong>Endotoxina (LPS)</strong>: vía TLR4 → TNF e IL-1 → fiebre, shock y CID.</li>
+<li><strong>Exotoxinas</strong>: difteria (inhibe la síntesis proteica), tétanos y botulismo (bloquean neurotransmisores), <em>C. perfringens</em> (fosfolipasa, mionecrosis).</li>
+</ul>
+<h3 id="mecanismos-de-lesión-1">Mecanismos de lesión</h3>
+<ul>
+<li><strong>Virus</strong>: efecto citopático directo, interferencia con la síntesis de ADN/ARN/proteínas, integración, apoptosis y, sobre todo, <strong>respuesta inmunitaria</strong> (hepatitis B/C).</li>
+<li><strong>Bacterias</strong>: adherencia, invasión, toxinas y lesión inmunitaria.</li>
+</ul>
+<h3 id="patrones-de-inflamación">Patrones de inflamación</h3>
+<ul>
+<li><strong>Supurativa</strong>: neutrófilos, pus (estafilococos, estreptococos).</li>
+<li><strong>Mononuclear y granulomatosa</strong>: micobacterias, hongos, <em>Listeria</em>.</li>
+<li><strong>Citopática-citoproliferativa</strong>: vírica (inclusiones, células gigantes).</li>
+<li><strong>Necrosis tisular</strong>: <em>C. perfringens</em>, hepatitis viral grave.</li>
+</ul>
+<h3 id="infecciones-víricas">Infecciones víricas</h3>
+<ul>
+<li><strong>Sarampión</strong>: entrada respiratoria, viremia, exantema cefalocaudal y <strong>manchas de Koplik</strong>; complicaciones: neumonía y encefalitis.</li>
+<li><strong>Parotiditis</strong>: parótida, orquitis y pancreatitis.</li>
+<li><strong>VHS-1</strong> (orolabial) y <strong>VHS-2</strong> (genital); latencia en ganglios sensitivos; <strong>cuerpos de inclusión de Cowdry A</strong>; queratitis y encefalitis.</li>
+<li><strong>VVZ</strong>: varicela y <strong>herpes zóster</strong> por reactivación en un dermatoma.</li>
+<li><strong>CMV</strong>: infección fetal vírica más frecuente; inclusiones intranucleares con halo ("ojo de búho"), células gigantes; retinitis en sida.</li>
+<li><strong>VEB</strong>: mononucleosis (fiebre, faringitis, adenopatías, <strong>&gt;60% de linfocitos atípicos</strong>, que son <strong>T reactivas</strong>), linfoma de Burkitt, carcinoma nasofaríngeo y linfomas en inmunodeficiencia. Las células de Reed-Sternberg son <strong>B</strong>.</li>
+<li><strong>VPH</strong>: condilomas y carcinoma de cérvix; E6/E7 inactivan p53 y Rb.</li>
+</ul>
+<h3 id="infecciones-bacterianas">Infecciones bacterianas</h3>
+<ul>
+<li><strong>Estafilococos</strong>: infecciones locales, abscesos, toxinas (síndrome de shock tóxico, intoxicación alimentaria).</li>
+<li><strong>Estreptococos</strong>: faringitis, escarlatina, <strong>fiebre reumática</strong>, glomerulonefritis postestreptocócica y fascitis necrosante.</li>
+</ul>
+<h3 id="patogenia-viral-paso-a-paso">Patogenia viral paso a paso</h3>
+<ol type="1">
+<li><strong>Entrada</strong> por mucosas o piel, con adherencia a receptores específicos.</li>
+<li><strong>Replicación</strong> en el epitelio de entrada (o en linfocitos).</li>
+<li><strong>Viremia</strong> y diseminación a tejidos diana.</li>
+<li><strong>Lesión</strong> por efecto citopático, respuesta inmune o transformación.</li>
+<li><strong>Latencia</strong> en ganglios, linfocitos o neuronas (herpesvirus, VIH).</li>
+<li><strong>Transmisión</strong> por secreciones, sangre, contacto o vía vertical.</li>
+</ol>
+<h3 id="toxinas-bacterianas">Toxinas bacterianas</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 11. Enfermedades infecciosas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Toxina</th>
+<th>Bacteria</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endotoxina (LPS)</strong></td>
+<td>Gramnegativas</td>
+<td>TLR4 → TNF/IL-1 → fiebre, shock, CID</td>
+</tr>
+<tr>
+<td><strong>Exotoxina diftérica</strong></td>
+<td><em>C. diphtheriae</em></td>
+<td>Inhibe la síntesis proteica (ADP-ribosilación del EF-2)</td>
+</tr>
+<tr>
+<td><strong>Toxina tetánica</strong></td>
+<td><em>C. tetani</em></td>
+<td>Bloquea la liberación de GABA/glicina → espasmo</td>
+</tr>
+<tr>
+<td><strong>Toxina botulínica</strong></td>
+<td><em>C. botulinum</em></td>
+<td>Bloquea la acetilcolina → parálisis flácida</td>
+</tr>
+<tr>
+<td><strong>Alfa-toxina</strong></td>
+<td><em>C. perfringens</em></td>
+<td>Fosfolipasa → mionecrosis y hemólisis</td>
+</tr>
+<tr>
+<td><strong>Superantígenos</strong></td>
+<td><em>S. aureus</em></td>
+<td>Activación policlonal de T → shock tóxico</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="infecciones-específicas">Infecciones específicas</h3>
+<ul>
+<li><strong>Sarampión</strong>: incubación 10-14 días; pródromo con fiebre, tos y <strong>manchas de Koplik</strong>; exantema maculopapular que comienza en la cara y desciende; complicaciones: neumonía (la más frecuente), encefalitis y panencefalitis esclerosante subaguda.</li>
+<li><strong>Parotiditis</strong>: inflamación de la parótida, orquitis (esterilidad rara), pancreatitis y meningitis aséptica.</li>
+<li><strong>VHS</strong>: primoinfección con gingivoestomatitis; latencia en el ganglio de Gasser; reactivación como herpes labial. <strong>VHS-2</strong>: herpes genital, riesgo de transmisión neonatal.</li>
+<li><strong>VVZ</strong>: varicela (exantema en distintos estadios) y zóster (vesículas en un dermatoma, dolor neuropático).</li>
+<li><strong>CMV</strong>: inclusiones intranucleares e intracitoplasmáticas, células gigantes; en el huésped inmunodeprimido, retinitis, colitis y neumonitis; en el feto, microcefalia y sordera.</li>
+<li><strong>VEB</strong>: mononucleosis con fiebre, faringitis, adenopatías y <strong>linfocitos atípicos</strong>; se asocia a Burkitt (MYC), carcinoma nasofaríngeo y linfomas en inmunodeficiencia.</li>
+<li><strong>VPH</strong>: verrugas y condilomas; los serotipos <strong>16 y 18</strong> son de alto riesgo para cérvix, ano y orofaringe.</li>
+</ul>
+<p><strong>Fuera de la clase</strong> (posible pregunta "de libro"): tuberculosis (granuloma caseoso, baciloscopia), hongos (<em>Candida</em>, <em>Aspergillus</em>, mucormicosis, <em>Cryptococcus</em>, <em>Pneumocystis</em>) y parásitos (paludismo, leishmaniasis, Chagas, toxoplasmosis). Si el examen incluye esas secciones, están en <code>Capitulos/resumenes/Cap08.md</code>.</p>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> las barreras y la microbiota son la primera defensa; el LPS produce shock y CID y las exotoxinas dañan por mecanismos específicos; los virus lesionan por efecto citopático y por la respuesta inmune; el VEB da mononucleosis con linfocitos T atípicos y se asocia a Burkitt y nasofaríngeo; el VPH 16/18 inactiva p53 y Rb.</p>
+</blockquote>
+
+</section><section id="sec-14-12-inmunidad-normal-base" class="card">
+<div class="section-kicker"><span class="n">14</span> Sección</div>
+<h2>12. Inmunidad normal (base)</h2>
+<p><em>(Clase 5 · Robbins cap. 6, pp. 189-203 · sólo lo necesario para entender el resto)</em></p>
+<ul>
+<li><strong>Innata</strong>: siempre disponible, actúa en <strong>0-12 h</strong>. Componentes: epitelios, fagocitos, células dendríticas, <strong>NK</strong>, células linfoides innatas, complemento y citocinas.</li>
+<li><strong>Receptores</strong>: <strong>TLR</strong> (membrana y endosoma), <strong>NOD</strong> (citosol) y <strong>RIG</strong> (ARN viral) → <strong>NF-κB</strong> → citocinas.</li>
+<li><strong>Inflamasoma</strong>: NLRP3 + <strong>caspasa 1</strong> → IL-1β madura y piroptosis.</li>
+<li><strong>Complemento</strong>: vía clásica (Ag-Ac), alternativa y de lectinas; C3b opsoniza, C5b-9 lisa y C3a/C5a inflaman.</li>
+<li><strong>Adaptativa</strong>: especificidad y <strong>memoria</strong>; T (TCR) y B (inmunoglobulinas). <strong>CD4+</strong> reconocen <strong>CPH II</strong> y ayudan; <strong>CD8+</strong> reconocen <strong>CPH I</strong> y matan; <strong>Treg</strong> (FOXP3) regulan.</li>
+<li><strong>CPH</strong>: clase I en todas las células nucleadas; clase II en células presentadoras.</li>
+<li><strong>Citocinas clave</strong>: TNF, IL-1 e IL-6 (fiebre y fase aguda); IL-12 (Th1); IL-4/IL-5 (Th2, IgE y eosinófilos); IL-17 (neutrófilos); IFN-γ (macrófagos); TGF-β e IL-10 (regulación).</li>
+</ul>
+<h3 id="maduración-y-activación">Maduración y activación</h3>
+<ul>
+<li><strong>Linfocitos T</strong>: se originan en la médula ósea, maduran en el <strong>timo</strong>. La selección positiva permite reconocer el CPH propio; la negativa elimina los autorreactivos. Salen como <strong>CD4+</strong> (helper) o <strong>CD8+</strong> (citotóxicos).</li>
+<li><strong>Linfocitos B</strong>: maduran en la <strong>médula ósea</strong>; expresan IgM e IgD. En el folículo, el antígeno desencadena el <strong>centro germinal</strong>: proliferación, <strong>cambio de isotipo</strong> (IgG, IgA, IgE) y <strong>maduración de afinidad</strong>; generan células plasmáticas y de memoria.</li>
+<li><strong>Activación del T</strong>: señal 1 (TCR-CPH) + señal 2 (<strong>coestimulación B7-CD28</strong>); sin la segunda, hay anergia. Después, expansión clonal y diferenciación según citocinas.</li>
+<li><strong>Activación del B</strong>: señal 1 (BCR) + señal 2 (Th2/CD40L); las citocinas definen el isotipo.</li>
+</ul>
+<h3 id="citocinas-por-función">Citocinas por función</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: 12. Inmunidad normal (base)" tabindex="0"><table>
+<thead>
+<tr>
+<th>Citocina</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IL-1, TNF, IL-6</strong></td>
+<td>Fiebre, fase aguda, activación endotelial</td>
+</tr>
+<tr>
+<td><strong>IL-2</strong></td>
+<td>Proliferación de T; mantiene Treg</td>
+</tr>
+<tr>
+<td><strong>IL-12</strong></td>
+<td>Diferenciación a <strong>Th1</strong></td>
+</tr>
+<tr>
+<td><strong>IFN-γ</strong></td>
+<td>Activación clásica de macrófagos; ↑ CPH I y II</td>
+</tr>
+<tr>
+<td><strong>IL-4, IL-5, IL-13</strong></td>
+<td><strong>Th2</strong>: IgE, eosinófilos, moco</td>
+</tr>
+<tr>
+<td><strong>IL-17</strong></td>
+<td>Reclutamiento de <strong>neutrófilos</strong></td>
+</tr>
+<tr>
+<td><strong>IL-10, TGF-β</strong></td>
+<td>Regulación e inmunosupresión</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Lo que tenés que poder decir en 3 líneas:</strong> la inmunidad innata es inmediata y usa TLR/NOD/RIG, complemento y NK; la adaptativa es específica y con memoria; CD4 ve CPH II y CD8 ve CPH I; las citocinas deciden el tipo de respuesta (Th1, Th2, Th17, Treg).</p>
+</blockquote>
+<hr />
+<h1 id="anexos">Anexos</h1>
+
+</section><section id="sec-15-a-correcciones-a-los-apuntes" class="card">
+<div class="section-kicker"><span class="n">15</span> Sección</div>
+<h2>A. Correcciones a los apuntes</h2>
+<p>Estos son los errores que conviene tener presentes; el detalle completo está en <code>99 - Correcciones.md</code>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: A. Correcciones a los apuntes" tabindex="0"><table>
+<thead>
+<tr>
+<th>Página</th>
+<th>Dice</th>
+<th>Correcto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>"necrosis caseosa por <em>Clostridium</em>"</td>
+<td>Caseosa = <strong>tuberculosis</strong>; <em>Clostridium</em> = gangrenosa</td>
+</tr>
+<tr>
+<td>20</td>
+<td>"inflamación serosa: traspaso de lípidos"</td>
+<td><strong>Trasudado</strong>, líquido pobre en proteínas</td>
+</tr>
+<tr>
+<td>80</td>
+<td>LES como ejemplo de tipo III</td>
+<td>Tiene tipo <strong>III</strong> y también <strong>tipo II</strong></td>
+</tr>
+<tr>
+<td>103</td>
+<td>Hiper-IgM por CD40L</td>
+<td>CD40L en 70%; faltan CD40/AID y <em>Pneumocystis</em></td>
+</tr>
+<tr>
+<td>108</td>
+<td>Sarcoma de Kaposi sin agente</td>
+<td><strong>HHV-8</strong></td>
+</tr>
+<tr>
+<td>110-111</td>
+<td>Amiloide AA junto al mieloma</td>
+<td><strong>AL</strong> = cadenas ligeras; <strong>AA</strong> = fase aguda</td>
+</tr>
+<tr>
+<td>127</td>
+<td>"HER2 mutado"</td>
+<td><strong>Amplificado/sobreexpresado</strong></td>
+</tr>
+<tr>
+<td>152</td>
+<td>"el CO se transforma en CO₂"</td>
+<td>El CO <strong>no se metaboliza</strong>; se elimina por ventilación</td>
+</tr>
+<tr>
+<td>157</td>
+<td>Itai-itai = osteoporosis y osteomalacia</td>
+<td><strong>Osteomalacia</strong> con dolor e insuficiencia renal</td>
+</tr>
+<tr>
+<td>160</td>
+<td>"20-30 g/día de alcohol protegen"</td>
+<td><strong>No hay nivel seguro</strong></td>
+</tr>
+<tr>
+<td>189</td>
+<td>Factores pronóstico del neuroblastoma sin jerarquía</td>
+<td><strong>MYCN amplificado anula</strong> edad y estadio</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="warnbox"><span class="box-title">Tres confusiones que cuestan puntos</span>Caseosa es tuberculosis, no Clostridium (gangrenosa). El CO no se metaboliza: se elimina por ventilación. El amiloide AL es de cadenas ligeras y el AA de fase aguda, no al revés.</div>
+</section><section id="sec-16-b-indice-tema-clase-robbins" class="card">
+<div class="section-kicker"><span class="n">16</span> Sección</div>
+<h2>B. Índice tema → clase → Robbins</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: B. Índice tema → clase → Robbins" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Clase</th>
+<th>Robbins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lesión y muerte celular, adaptaciones</td>
+<td>1</td>
+<td>33-70</td>
+</tr>
+<tr>
+<td>Inflamación y reparación</td>
+<td>2</td>
+<td>71-114</td>
+</tr>
+<tr>
+<td>Edema, trombosis, embolia, infarto, shock</td>
+<td>3</td>
+<td>115-140</td>
+</tr>
+<tr>
+<td>Genética y depósito lisosomal</td>
+<td>4</td>
+<td>141-188</td>
+</tr>
+<tr>
+<td>Inmunidad normal</td>
+<td>5</td>
+<td>189-203</td>
+</tr>
+<tr>
+<td>Hipersensibilidad</td>
+<td>6</td>
+<td>204-214</td>
+</tr>
+<tr>
+<td>Autoinmunidad y trasplantes</td>
+<td>7</td>
+<td>215-240</td>
+</tr>
+<tr>
+<td>Inmunodeficiencias, sida, amiloide</td>
+<td>8</td>
+<td>240-266</td>
+</tr>
+<tr>
+<td>Neoplasias</td>
+<td>8b</td>
+<td>267-338</td>
+</tr>
+<tr>
+<td>Infecciosas</td>
+<td>9</td>
+<td>339-404</td>
+</tr>
+<tr>
+<td>Ambientales y nutricionales</td>
+<td>10</td>
+<td>405-452</td>
+</tr>
+<tr>
+<td>Lactancia e infancia</td>
+<td>11</td>
+<td>453-483</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-17-c-fuentes" class="card">
+<div class="section-kicker"><span class="n">17</span> Sección</div>
+<h2>C. Fuentes</h2>
+<ul>
+<li><code>Certamen1/00 - Cobertura.md</code>: qué páginas del libro seleccionó cada clase (evidencia del temario).</li>
+<li><code>Certamen1/01 - Prioridades.md</code>: ranking por peso y criterios.</li>
+<li><code>Certamen1/99 - Correcciones.md</code>: lista completa de errores.</li>
+<li><code>Capitulos/resumenes/Cap02.md</code> a <code>Cap10.md</code>: resúmenes completos por capítulo, para profundizar.</li>
+<li><code>Capitulos/ocr/Cap10.md</code>: OCR del capítulo 10.</li>
+<li><code>Certamen1/ocr/Certamen1.md</code>: texto OCR de los apuntes, útil para buscar una frase exacta de clase.</li>
+</ul>
+<p><em>Fin del manual.</em></p>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

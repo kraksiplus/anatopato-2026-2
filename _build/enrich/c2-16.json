@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Muguet se raspa con lecho eritematoso; leucoplasia vellosa (VEB, borde lateral de lengua, VIH) no se desprende [p. 733-734].",
+    "Leucoplasia: 3% de la población, 5-25% premaligna; eritroplasia ~90% ya es displasia grave o carcinoma in situ: la roja es peor que la blanca [p. 734-735].",
+    "CE VPH+ de orofaringe: no queratinizante, basaloide, p16+, ganglio grande con primario pequeño, mejor pronóstico; el de cavidad oral es tabaco y alcohol [p. 735-737].",
+    "Quiste branquial: lateral, segundo arco, tejido linfoide; tirogloso: línea media desde el orificio ciego; la mayoría de los CE quísticos del cuello son metástasis [p. 745].",
+    "Malignidad salival inversa al tamaño glandular: sublingual 70-90% maligno; mucoepidermoide con t(11;19) CRTC1-MAML2 es el maligno más frecuente [p. 748].",
+    "Granuloma piógeno es el tumor del embarazo; el granuloma periférico de células gigantes se diferencia de los tumores marrones del hiperparatiroidismo [p. 732-733]."
+  ],
+  "topics": [
+    "Caries, gingivitis y periodontitis: flora y foco séptico",
+    "Lesiones blancas y rojas: leucoplasia, eritroplasia y carcinoma epidermoide VPH+ y VPH-",
+    "Vías respiratorias superiores: pólipos, linfoma NK/T nasal, carcinoma nasofaríngeo y laríngeo",
+    "Cuello: quistes branquial y tirogloso, paraganglioma carotídeo con zellballen y SDH",
+    "Glándulas salivales: adenoma pleomorfo, Warthin, mucoepidermoide y adenoideo quístico",
+    "Quistes y tumores odontógenos: dentígero, queratoquístico (Gorlin, PTCH) y ameloblastoma"
+  ],
+  "callouts": [
+    {
+      "section": "Cavidad oral",
+      "title": "CE VPH+ vs CE VPH-",
+      "text": "El CE VPH+ es no queratinizante, basaloide, p16+, con primario pequeño y ganglio voluminoso, mejor pronóstico y bajo riesgo de segundo tumor. El VPH- es queratinizante, tabaquil, con metástasis a distancia frecuentes y mal pronóstico [p. 736-737]."
+    },
+    {
+      "section": "Glándulas salivales",
+      "title": "Malignidad inversa al tamaño",
+      "text": "Parótida: mayoría benigna (adenoma pleomorfo 60%, Warthin 2ª); sublingual: 70-90% maligno. Mucoepidermoide con t(11;19) CRTC1-MAML2 y adenoideo quístico con infiltración perineural son los malignos clave [p. 748-751]."
+    },
+    {
+      "section": "Cuello",
+      "title": "Quiste branquial vs tirogloso",
+      "text": "Branquial: segundo arco, lateral, adultos jóvenes, tejido linfoide con centros germinales, nunca maligniza. Tirogloso: línea media por el trayecto del descenso tiroideo desde el orificio ciego. Cautela: la mayoría de los CE quísticos del cuello son metástasis [p. 745]."
+    }
+  ]
+}

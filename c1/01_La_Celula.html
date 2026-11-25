@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La célula como unidad de salud y enfermedad · Anatomía Patológica UBB</title>
+<meta name="description" content="La célula como unidad de salud y enfermedad. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="La célula como unidad de salud y enfermedad · Anatomía Patológica UBB">
+<meta property="og:description" content="La célula como unidad de salud y enfermedad. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Capítulo 1. La célula como unidad de salud y enfermedad</h1>
+    <p class="lede">Guía 01 de 10. Resumen completo del capítulo 1 con 70 filas de tabla. Sin citas por página: material del Certamen 1.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>01 de 10</strong></div><div><span>Capítulo</span><strong>1</strong></div><div><span>Páginas</span><strong>1-32</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>70</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-genoma-y-adn-no-codificante">Genoma y ADN no codificante</a></li>
+        <li><a href="#sec-03-organizacion-de-las-histonas-y-epigenoma">Organización de las histonas y epigenoma</a></li>
+        <li><a href="#sec-04-micro-arn-y-arn-largo-no-codificante">Micro-ARN y ARN largo no codificante</a></li>
+        <li><a href="#sec-05-edicion-genica">Edición génica</a></li>
+        <li><a href="#sec-06-mantenimiento-celular-membrana-plasmatica-y-transporte">Mantenimiento celular: membrana plasmática y transporte</a></li>
+        <li><a href="#sec-07-citoesqueleto-y-uniones-celula-celula">Citoesqueleto y uniones célula-célula</a></li>
+        <li><a href="#sec-08-maquinaria-biosintetica-reticulo-endoplasmico-y-aparato-de-golgi">Maquinaria biosintética retículo endoplásmico y aparato de Golgi</a></li>
+        <li><a href="#sec-09-eliminacion-de-desechos-lisosomas-y-proteosoma">Eliminación de desechos lisosomas y proteosoma</a></li>
+        <li><a href="#sec-10-metabolismo-celular-y-funcion-mitocondrial">Metabolismo celular y función mitocondrial</a></li>
+        <li><a href="#sec-11-activacion-celular-y-senalizacion">Activación celular y señalización</a></li>
+        <li><a href="#sec-12-matriz-extracelular">Matriz extracelular</a></li>
+        <li><a href="#sec-13-mantenimiento-de-las-poblaciones-celulares-proliferacion-y-ciclo">Mantenimiento de las poblaciones celulares: proliferación y ciclo celular</a></li>
+        <li><a href="#sec-14-celulas-madre">Células madre</a></li>
+        <li><a href="#sec-15-medicina-regenerativa">Medicina regenerativa</a></li>
+        <li><a href="#sec-16-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="02_Lesion_Celular.html" title="Lesión celular, muerte celular y adaptaciones">02</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 1 del Robbins y Cotran, 10ª edición: páginas impresas 1-32 (32 páginas).</div><p class="small">Este resumen del Certamen 1 se redactó antes de adoptar la cita por página; se publica sin reescribirlo. El <a href="manual.html">Manual del Certamen 1</a> incluye el índice tema-clase-Robbins y las fuentes.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Solo 1,5% del genoma codifica proteínas; el ADN no codificante aporta la planificación arquitectural (promotores, ARN reguladores, transposones, telómeros).</li><li>Epigenoma: acetilación de histonas abre la cromatina; metilación de histonas y ADN silencia genes; marcas reversibles, ya diana terapéutica (inhibidores de HDAC).</li><li>miARN silencian genes post-transcripción vía Dicer y RISC: emparejamiento perfecto escinde el ARNm, imperfecto reprime la traducción; CRISPR-Cas9 edita el genoma con ARNg de 20 bases.</li><li>Mitocondria decide la muerte celular: poro de transición de permeabilidad lleva a necrosis; Bax/Bak y citocromo C activan caspasas y apoptosis.</li><li>Degradación: heterofagia y autofagia (LC3) en lisosomas; proteosoma degrada proteínas marcadas con ubicuitina (ligasas E1, E2, E3).</li><li>MEC: membrana basal (colágeno IV + laminina) y matriz intersticial (colágenos fibrilares, elastina, proteoglucanos); fibronectina une integrinas vía motivo RGD.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La patología estudia la enfermedad, que se origina a nivel celular, según la intuición de <strong>Virchow</strong>; en realidad, las alteraciones celulares derivan de perturbaciones moleculares (genes, proteínas y metabolitos).</li>
+<li>Solo alrededor del <strong>1,5% del genoma</strong> humano codifica proteínas; la gran mayoría es <strong>ADN no codificante</strong>, que aporta la "planificación arquitectural" del organismo.</li>
+<li>La expresión génica se regula por <strong>modificaciones de histonas</strong> y <strong>metilación del ADN</strong> (epigenoma). Estas marcas son reversibles y ya se exploran como diana terapéutica.</li>
+<li>Los <strong>miARN</strong> silencian genes después de la transcripción degradando ARNm o reprimiendo su traducción; los <strong>ARNlnc</strong> modulan la expresión génica por varios mecanismos.</li>
+<li>La técnica <strong>CRISPR-Cas9</strong> permite editar el genoma con gran especificidad usando ARN guía artificiales de 20 bases.</li>
+<li>La célula renueva constantemente sus componentes: la degradación ocurre en <strong>lisosomas</strong> (heterofagia y autofagia) y en el <strong>proteosoma</strong> (proteínas marcadas con ubicuitina).</li>
+<li>Las mitocondrias generan ATP, aportan metabolitos intermediarios y deciden la vida o la muerte celular: lesión isquémica o tóxica lleva a <strong>necrosis</strong>; la liberación de citocromo C lleva a <strong>apoptosis</strong>.</li>
+<li>La <strong>matriz extracelular</strong> no es un simple relleno: sostiene, regula la proliferación, almacena factores de crecimiento y sirve de armazón para la regeneración tisular.</li>
+<li>Las poblaciones celulares se mantienen por equilibrio entre proliferación, movimiento y muerte, regulado por <strong>ciclinas, CDK e inhibidores de CDK</strong>, y por las <strong>células madre</strong>.</li>
+</ul></div>
+
+</section><section id="sec-02-genoma-y-adn-no-codificante" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Genoma y ADN no codificante</h2>
+<p>La diferencia entre especies (gusanos y humanos) estriba más en los "planos" genómicos que en los materiales de construcción: las regiones no codificantes aportan la planificación arquitectural. El genoma humano contiene cinco clases principales de secuencias funcionales no codificantes:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Genoma y ADN no codificante" tabindex="0"><table>
+<thead>
+<tr>
+<th>Clase de secuencia no codificante</th>
+<th>Función o dato clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regiones promotoras y potenciadoras</td>
+<td>Sitios de unión para factores de transcripción</td>
+</tr>
+<tr>
+<td>Sitios de unión para organizadores de cromatina</td>
+<td>Mantienen estructuras de cromatina de orden superior</td>
+</tr>
+<tr>
+<td>ARN reguladores no codificantes</td>
+<td>Más del 60% del genoma se transcribe a ARN que no se traduce; destacan miARN y ARNlnc</td>
+</tr>
+<tr>
+<td>Elementos genéticos móviles (transposones)</td>
+<td>Más de un tercio del genoma; "genes saltarines" con función poco definida</td>
+</tr>
+<tr>
+<td>Regiones estructurales (telómeros y centrómeros)</td>
+<td>Telómeros: extremos cromosómicos; centrómeros: "anclajes" de los cromosomas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Un componente importante de los centrómeros es el <strong>ADN satélite</strong>: fragmentos grandes de secuencias repetidas del orden de megabases, cada repetición de 5 pb a 5 kb.</p>
+<p>El capítulo también discute la variación genética normal entre individuos:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Genoma y ADN no codificante" tabindex="0"><table>
+<thead>
+<tr>
+<th>Variante</th>
+<th>Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SNP</strong> (polimorfismos de un solo nucleótido)</td>
+<td>Aparecen en todo el genoma; solo el 1% está en regiones codificantes (regiones codificantes ≈ 1,5% del genoma). Los SNP no codificantes en elementos reguladores alteran la expresión génica y la predisposición a enfermedad. Algunos son neutrales y sirven como marcadores en <strong>desequilibrio de ligamiento</strong>. Su efecto individual es débil</td>
+</tr>
+<tr>
+<td><strong>CNV</strong> (variantes del número de copias)</td>
+<td>Fragmentos grandes de ADN contiguos, de 1.000 a millones de pares de bases, duplicados o deleciones. Explican entre 5 y 24 millones de pb de diferencia entre dos individuos; el 50% afecta secuencias codificantes</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-03-organizacion-de-las-histonas-y-epigenoma" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>Organización de las histonas y epigenoma</h2>
+<ul>
+<li>Los <strong>nucleosomas</strong> son octámeros de histonas, con dos subunidades cada uno de <strong>H2A, H2B, H3 y H4</strong>, rodeados por <strong>1,8 vueltas de 147 pb de ADN</strong>.</li>
+<li>Entre nucleosomas hay ADN de enlace de 20-80 nucleótidos, asociado a la histona <strong>H1</strong>.</li>
+<li>Las histonas tienen carga positiva, lo que permite compactar el ADN, cargado negativamente.</li>
+<li>El grado de apertura o cierre de la cromatina se regula mediante marcas dinámicas sobre las histonas: <strong>acetilación</strong> (abre la cromatina), <strong>metilación</strong> de ciertos residuos (condensa el ADN y silencia genes) y fosforilación. El propio ADN también puede <strong>metilarse</strong>, inactivando la transcripción.</li>
+<li>La desregulación del <strong>epigenoma</strong> participa en neoplasias malignas y en muchas otras enfermedades. A diferencia de los cambios genéticos, muchas alteraciones epigenéticas son <strong>reversibles</strong>: los inhibidores de HDAC y de la metilación del ADN ya se prueban en distintos cánceres.</li>
+</ul>
+
+</section><section id="sec-04-micro-arn-y-arn-largo-no-codificante" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>Micro-ARN y ARN largo no codificante</h2>
+<h3 id="micro-arn-miarn">Micro-ARN (miARN)</h3>
+<p>Vía de procesamiento (fig. 1.3):</p>
+<ol type="1">
+<li>Transcripción del gen de miARN: <strong>PRI-miARN</strong> (primario), procesado en el núcleo.</li>
+<li>Se convierte en <strong>pre-miARN</strong>: ARN con estructuras en horquilla que forman secuencias bicatenarias.</li>
+<li>Exportación al citoplasma por proteínas transportadoras específicas (exportinas).</li>
+<li>Corte por la enzima <strong>Dicer</strong>: genera miARN maduros bicatenarios de <strong>21-30 nucleótidos</strong>.</li>
+<li>Desenrollamiento e incorporación de una cadena al complejo <strong>RISC</strong> (complejo silenciador inducido por ARN).</li>
+<li>Emparejamiento con el ARNm diana:
+<ul>
+<li>Emparejamiento perfecto: <strong>escisión del ARNm</strong>.</li>
+<li>Emparejamiento imperfecto: <strong>represión de la traducción</strong>.</li>
+</ul></li>
+</ol>
+<p>El resultado en ambos casos es el silenciamiento del gen tras la transcripción. Los ARN de interferencia (ARNpi) sintéticos interactúan con el RISC, reproducen la función endógena de los miARN y se estudian como herramientas de laboratorio (inactivación génica) y agentes terapéuticos frente a genes patógenos, como los oncogenes impulsores de transformación neoplásica.</p>
+<h3 id="arn-largo-no-codificante-arnlnc">ARN largo no codificante (ARNlnc)</h3>
+<ul>
+<li>Podrían ser entre <strong>10 y 20 veces más numerosos</strong> que los ARNm codificantes.</li>
+<li>Silencian la transcripción (algunos potenciadores son en realidad sitios de síntesis de ARNlnc) o expanden la transcripción a partir de promotores génicos por varios mecanismos.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Vía del miARN, de alta probabilidad en examen</span>PRI-miARN, pre-miARN en horquilla, exportación al citoplasma, corte por Dicer en fragmentos de 21-30 nucleótidos y carga al RISC. Emparejamiento perfecto escinde el ARNm; imperfecto reprime la traducción.</div>
+</section><section id="sec-05-edicion-genica" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>Edición génica</h2>
+<ul>
+<li>Su origen inesperado: las repeticiones palindrómicas cortas agrupadas y regularmente espaciadas (<strong>CRISPR</strong>) y sus genes asociados (<strong>Cas</strong>, como la nucleasa <strong>Cas9</strong>).</li>
+<li>En procariotas constituyen una forma de inmunidad adquirida frente a fagos y plásmidos: la bacteria integra porciones del ADN del agente infeccioso como CRISPR, las transcribe como <strong>ARN guía</strong> y dirige así la Cas9 para escindir el ADN del invasor.</li>
+<li>Aplicación reprogramada: ARN guía (<strong>ARNg</strong>) artificiales de <strong>20 bases</strong> complementarios del ADN objetivo se unen a la Cas9; la Cas9 induce roturas de doble cadena en el sitio de unión.</li>
+<li>La reparación de las roturas puede producir:
+<ul>
+<li>Mutaciones disruptivas aleatorias por <strong>unión de extremos no homólogos</strong>.</li>
+<li>Introducción precisa de material genético por <strong>recombinación homóloga</strong>.</li>
+</ul></li>
+<li>Los componentes (ARNg y Cas, como ADNc o como proteína) pueden introducirse fácilmente en células; su especificidad abre enormes expectativas para la ingeniería genética y el tratamiento de enfermedades.</li>
+</ul>
+
+</section><section id="sec-06-mantenimiento-celular-membrana-plasmatica-y-transporte" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>Mantenimiento celular: membrana plasmática y transporte</h2>
+<h3 id="volumen-y-número-de-orgánulos-hepatocito-típico">Volumen y número de orgánulos (hepatocito típico)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Mantenimiento celular: membrana plasmática y transporte" tabindex="0"><table>
+<thead>
+<tr>
+<th>Compartimento</th>
+<th>% de volumen</th>
+<th>Número/célula</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Citosol</td>
+<td>54%</td>
+<td>1</td>
+<td>Metabolismo, transporte, traducción de proteínas</td>
+</tr>
+<tr>
+<td>Mitocondrias</td>
+<td>22%</td>
+<td>1.700</td>
+<td>Generación de energía, apoptosis</td>
+</tr>
+<tr>
+<td>RE rugoso</td>
+<td>9%</td>
+<td>1</td>
+<td>Síntesis de membrana y proteínas exportadas</td>
+</tr>
+<tr>
+<td>RE liso, Golgi</td>
+<td>6%</td>
+<td>1</td>
+<td>Modificación, clasificación y catabolismo de proteínas; síntesis de hormonas esteroideas y lipoproteínas</td>
+</tr>
+<tr>
+<td>Núcleo</td>
+<td>6%</td>
+<td>1</td>
+<td>Regulación celular, proliferación, transcripción de ADN</td>
+</tr>
+<tr>
+<td>Endosomas</td>
+<td>1%</td>
+<td>200</td>
+<td>Transporte intracelular y exportación</td>
+</tr>
+<tr>
+<td>Lisosomas</td>
+<td>1%</td>
+<td>300</td>
+<td>Catabolismo celular</td>
+</tr>
+<tr>
+<td>Peroxisomas</td>
+<td>1%</td>
+<td>400</td>
+<td>Metabolismo de ácidos grasos de cadena muy larga</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="membrana-plasmática">Membrana plasmática</h3>
+<ul>
+<li>Bicapa lipídica con fluidez lateral considerable. Los glucolípidos y la esfingomielina se concentran en la cara extracelular; los gangliósidos tienen azúcares con ácidos siálicos terminales que confieren cargas negativas (reclutamiento de células inflamatorias, fusión espermatozoide-óvulo).</li>
+<li>Existen <strong>dominios especializados</strong>, como las <strong>balsas lipídicas</strong>, ricas en glucoesfingolípidos y <strong>colesterol</strong>, que influyen en la distribución de proteínas de membrana.</li>
+<li>Funciones de las proteínas de membrana: transporte de iones y metabolitos; captación de macromoléculas (en fase líquida y mediada por receptores); interacciones célula-ligando, célula-matriz y célula-célula.</li>
+<li>Las proteínas se asocian a la bicapa por cuatro mecanismos; las <strong>proteínas integrales o transmembrana</strong>, con segmentos hidrófobos helicoidales, suelen ser poros o transportadores, mientras que las fijadas mediante uniones lábiles suelen mediar señalización.</li>
+<li>La organización intracelular depende del <strong>citoesqueleto</strong>: filamentos de actina (microfilamentos), queratinas (filamentos intermedios) y microtúbulos. Sostiene la forma y la <strong>polaridad celular</strong>, clave en epitelios (diferencias entre dominio apical y dominios basolaterales); su pérdida altera, por ejemplo, el transporte transcelular vectorial en el intestino o el túbulo renal.</li>
+</ul>
+<h3 id="transporte-a-través-de-membranas">Transporte a través de membranas</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Mantenimiento celular: membrana plasmática y transporte" tabindex="0"><table>
+<thead>
+<tr>
+<th>Mecanismo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Canales</td>
+<td>Poro hidrófilo; el soluto se mueve a favor de gradiente; limitado por tamaño y carga</td>
+</tr>
+<tr>
+<td>Transportadores/portadores</td>
+<td>Necesarios contra gradiente; suelen consumir energía para un cambio conformacional</td>
+</tr>
+<tr>
+<td>Endocitosis mediada por cavéolas</td>
+<td>Cavéolas ("pequeñas cuevas"): invaginaciones no revestidas con <strong>caveolina</strong> como proteína estructural; captan líquido extracelular y moléculas unidas a receptor (p. ej., folato); ricas en glucoesfingolípidos como las balsas lipídicas</td>
+</tr>
+<tr>
+<td>Endocitosis mediada por receptores (fosa recubierta)</td>
+<td>Invaginaciones revestidas por <strong>clatrina</strong>, que se ensambla en una rejilla en forma de cesta; en ambos casos se precisa la <strong>dinamina</strong>, la "pinchasa" que libera las vesículas</td>
+</tr>
+<tr>
+<td>Captación en fase líquida</td>
+<td>Endocitosis de líquido extracelular</td>
+</tr>
+<tr>
+<td><strong>Fagocitosis</strong></td>
+<td>La realizan los fagocitos profesionales (macrófagos, neutrófilos) frente a microbios o restos celulares</td>
+</tr>
+<tr>
+<td><strong>Exocitosis</strong></td>
+<td>Proteínas compactadas en RER y Golgi salen en vesículas secretoras; ejemplos: insulina, citocinas</td>
+</tr>
+<tr>
+<td><strong>Transcitosis</strong></td>
+<td>Movimiento de vesículas entre los compartimentos apical y basolaterial; ejemplos: anticuerpos de la leche materna</td>
+</tr>
+</tbody>
+</table></div>
+<p>Las vesículas endocitadas van a <strong>endosomas iniciales</strong> (pH bajo) y luego <strong>tardíos</strong>, progresivamente acidificados, donde se activan las enzimas proteolíticas.</p>
+
+</section><section id="sec-07-citoesqueleto-y-uniones-celula-celula" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>Citoesqueleto y uniones célula-célula</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: Citoesqueleto y uniones célula-célula" tabindex="0"><table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Propiedades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microfilamentos de <strong>actina</strong></td>
+<td>Monómeros G-actina polimerizan en F-actina, hélices bicatenarias de polaridad definida; se añaden al extremo positivo y se retiran del negativo ("cinta sin fin de la actina"); la miosina se desliza sobre actina mediante hidrólisis de ATP: contracción muscular; las miosinas participan también en transporte vesicular, barrera epitelial y migración celular</td>
+</tr>
+<tr>
+<td><strong>Filamentos intermedios</strong></td>
+<td>Fibrillas de 10 nm; incluyen queratinas y láminas nucleares; polímeros similares a cuerdas que no se reorganizan activamente: aportan fuerza tensional; tejido-específicos, útiles para diagnóstico; se anclan a desmosomas y hemidesmosomas</td>
+</tr>
+<tr>
+<td><strong>Microtúbulos</strong></td>
+<td>Con proteínas motoras (p. ej., kinesinas y dineínas) para el transporte orgánular</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap" role="region" aria-label="Tabla: Citoesqueleto y uniones célula-célula" tabindex="0"><table>
+<thead>
+<tr>
+<th>Unión</th>
+<th>Composición y función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Desmosomas</strong></td>
+<td>Cadherinas transmembrana unidas a filamentos intermedios; adhesión célula-célula</td>
+</tr>
+<tr>
+<td><strong>Hemidesmosomas</strong></td>
+<td>Conectores transmembrana del tipo de las <strong>integrinas</strong>, que unen el citoesqueleto a la MEC; albergan los complejos de adhesión focal, con más de 100 proteínas, que generan señales ante estrés de cizallamiento (endotelio, miocardiocitos)</td>
+</tr>
+<tr>
+<td><strong>Uniones comunicantes</strong> (en hendidura)</td>
+<td>Poros de 1,5-2 nm llamados <strong>conexones</strong>, formados por hexámeros de <strong>conexinas</strong> (uno por célula); permiten paso de iones, nucleótidos, azúcares, aminoácidos y vitaminas; su permeabilidad cae al bajar el pH o subir el calcio intracelular; en los miocardiocitos permiten flujos de calcio que hacen del miocardio un sincitio funcional</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-08-maquinaria-biosintetica-reticulo-endoplasmico-y-aparato-de-golgi" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>Maquinaria biosintética retículo endoplásmico y aparato de Golgi</h2>
+<ul>
+<li>El <strong>RE</strong> es el sitio de síntesis de todas las proteínas transmembrana y de los lípidos de la membrana plasmática y de los orgánulos. Proteínas exportadas y transmembrana se sintetizan en el RE rugoso (con ribosomas adheridos); las proteínas citosólicas, en ribosomas libres. El RE liso sintetiza hormonas esteroideas y lipoproteínas, y transforma compuestos hidrófobos en hidrosolubles para su exportación.</li>
+<li>El exceso de proteínas mal plegadas produce "estrés del RE" (respuesta a proteínas no plegadas), que puede terminar en apoptosis.</li>
+<li>El aparato de Golgi modifica, clasifica y distribuye las proteínas; marca las enzimas lisosómicas con la señal de manosa-6-fosfato (<strong>M6P</strong>) para dirigirlas a los lisosomas.</li>
+</ul>
+
+</section><section id="sec-09-eliminacion-de-desechos-lisosomas-y-proteosoma" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>Eliminación de desechos lisosomas y proteosoma</h2>
+<p>Tres vías de degradación:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Eliminación de desechos lisosomas y proteosoma" tabindex="0"><table>
+<thead>
+<tr>
+<th>Vía</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Heterofagia</strong></td>
+<td>Lisosomas se fusionan con endosomas y fagosomas para degradar material internalizado; los productos finales nutren al citosol o se expulsan por exocitosis</td>
+</tr>
+<tr>
+<td><strong>Autofagia</strong></td>
+<td>Orgánulos senescentes o proteínas desnaturalizadas quedan envueltos en una vacuola de doble membrana derivada del RE, marcada por la proteína <strong>LC3</strong> (autofagosoma); luego se fusionan con lisosomas; implicada en escasez de nutrientes, defensa ante infecciones intracelulares, reparación y apoptosis; requiere productos de los genes Atg</td>
+</tr>
+<tr>
+<td><strong>Degradación proteosómica</strong></td>
+<td>Proteínas citosólicas destinadas al recambio se marcan con múltiples moléculas de <strong>ubicuitina</strong> mediante las enzimas ligasas E1, E2 y E3; el <strong>proteosoma</strong> escinde la proteína en fragmentos peptídicos; actúa sobre proteínas dañadas por radiación UV, calor, estrés oxidativo, pH anormal, mutaciones o infecciones víricas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Datos lisosómicos: pH ácido, enzimas como proteasas, nucleasas, lipasas, fosfatasas y sulfatasas; la señal M6P se añade en el Golgi y la proteína llega mediante receptores de M6P en la red trans del Golgi.</p>
+
+</section><section id="sec-10-metabolismo-celular-y-funcion-mitocondrial" class="card">
+<div class="section-kicker"><span class="n">10</span> Sección</div>
+<h2>Metabolismo celular y función mitocondrial</h2>
+<ul>
+<li>La mayor parte del <strong>ATP</strong> celular se genera por <strong>fosforilación oxidativa mitocondrial</strong>; las mitocondrias también aportan metabolitos intermediarios para el anabolismo y sintetizan macromoléculas como el <strong>hemo</strong>.</li>
+<li>Estructura: membrana externa; espacio intermembrana con la cadena respiratoria en la membrana interna; matriz con enzimas del ciclo del ácido cítrico (ciclo del ácido tricarboxílico).</li>
+<li>Papel en la muerte celular (fig. 1.11):
+<ol type="1">
+<li>Lesión isquémica o tóxica induce un <strong>poro de transición de permeabilidad</strong> en la membrana interna que disipa el gradiente protónico intermembranoso: la célula no puede generar ATP y muere por <strong>necrosis</strong>.</li>
+<li>Las señales apoptóticas oligomerizan las proteínas <strong>Bax/Bak</strong> y provocan <strong>permeabilización de la membrana externa mitocondrial (MOMP)</strong>; se libera el <strong>citocromo C</strong>, que estabiliza el <strong>apoptosoma</strong> y activa la cascada de <strong>caspasas</strong>, con muerte por <strong>apoptosis</strong>.</li>
+</ol></li>
+</ul>
+
+<div class="warnbox"><span class="box-title">La mitocondria decide necrosis o apoptosis</span>Lesión isquémica o tóxica abre el poro de transición de permeabilidad, disipa el gradiente protónico y la célula muere por necrosis. Las señales apoptóticas oligomerizan Bax/Bak (MOMP), liberan citocromo C, forman el apoptosoma y activan caspasas: apoptosis.</div>
+</section><section id="sec-11-activacion-celular-y-senalizacion" class="card">
+<div class="section-kicker"><span class="n">11</span> Sección</div>
+<h2>Activación celular y señalización</h2>
+<p>Grupos de señales a las que responden las células:</p>
+<ul>
+<li><strong>Peligro y patógenos</strong>: detección innata de células dañadas (señales de peligro) y de invasores extraños.</li>
+<li><strong>Contactos célula-célula</strong>, mediados por moléculas de adhesión y uniones comunicantes (paso de calcio, AMPc y otros segundos mensajeros).</li>
+<li><strong>Contactos célula-MEC</strong>, mediados sobre todo por integrinas.</li>
+<li><strong>Factores solubles</strong> (factores de crecimiento, citocinas).</li>
+</ul>
+<p>La pérdida de comunicación intercelular ("controles sociales") produce crecimiento descontrolado (cáncer) o respuestas dañinas al estrés (shock). Muchas células mueren por apoptosis si carecen de señales exógenas de supervivencia.</p>
+<h3 id="tipos-de-receptores">Tipos de receptores</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Activación celular y señalización" tabindex="0"><table>
+<thead>
+<tr>
+<th>Receptor</th>
+<th>Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tirosina cinasa receptora</td>
+<td>Ligandos de enlaces cruzados (p. ej., factores de crecimiento derivados de plaquetas); activan dominios tirosina cinasa intrínsecos en las colas citoplásmicas</td>
+</tr>
+<tr>
+<td>Tirosina cinasa no receptora</td>
+<td>Receptores sin actividad catalítica (inmunorreceptores, algunos receptores de citocinas, integrinas); usan cinasas citosólicas; prototipo: <strong>Src</strong>, con dominios de homología Src (<strong>SH2</strong> que se unen a residuos fosforilados y <strong>SH3</strong> que median interacciones proteína-proteína ricas en prolina)</td>
+</tr>
+<tr>
+<td><strong>GPCR</strong> (acoplados a proteína G)</td>
+<td>Siete dominios transmembrana (receptores en serpentina); más de <strong>1.500</strong> identificados; el ligando permite el intercambio de GDP por GTP en la proteína G; generan <strong>AMPc</strong> y <strong>inositol-1,4,5-trifosfato (IP3)</strong>, este último libera calcio del RE</td>
+</tr>
+<tr>
+<td>Receptores nucleares</td>
+<td>Ligandos liposolubles que difunden a la célula y se unen al receptor, que influye directamente en la transcripción</td>
+</tr>
+<tr>
+<td>Notch</td>
+<td>El ligando en la célula vecina induce escisión de Notch; el fragmento <strong>Notch IC</strong> entra al núcleo y modula la transcripción</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="vías-de-transducción-relevantes-mencionadas">Vías de transducción relevantes mencionadas</h3>
+<ul>
+<li><strong>RAS</strong>: se activa por intercambio de GDP por GTP y queda inactivado al hidrolizar GTP; recluta cascadas como <strong>RAF/MAPK</strong> (activación de la transcripción y proteína <strong>MYC</strong>) y <strong>PI3K/Akt/mTOR</strong>.</li>
+<li><strong>Wnt</strong>: frizzled y co-receptor Lrp5/Lrp6 estabilizan <strong>beta-catenina</strong>, que migra al núcleo y activa la transcripción de genes diana.</li>
+<li>Los factores de transcripción se unen a promotores y potenciadores, reclutan coactivadores, enzimas modificadoras de histonas, complejos remodeladores de cromatina y la <strong>ARN polimerasa</strong> (complejo enzimático de múltiples proteínas).</li>
+</ul>
+<h3 id="factores-de-crecimiento-y-receptores-principales">Factores de crecimiento y receptores principales</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Activación celular y señalización" tabindex="0"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Datos esenciales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HGF</strong> (factor de crecimiento hepatocitario)</td>
+<td>Actúa como morfógeno en el desarrollo, favorece la migración (factor de dispersión) y la supervivencia de hepatocitos; producido por fibroblastos y células mesenquimatosas, endoteliales y hepáticas no hepatocitarias; se secreta como <strong>pro-HGF</strong> y se activa por serina proteasas de la zona de lesión; su receptor es <strong>MET</strong> (tirosina cinasa), sobreexpresado o mutado en carcinomas renales y papilares tiroideos; se evalúan inhibidores de MET como anticancerígenos</td>
+</tr>
+<tr>
+<td><strong>PDGF</strong> (factor de crecimiento derivado de plaquetas)</td>
+<td>Familia de proteínas de dos cadenas; isoformas activas <strong>AA, AB y BB</strong>; las isoformas CC y DD requieren escisión proteolítica; almacenado en gránulos de plaquetas; también producido por macrófagos activados, células endoteliales, musculares lisas y tumorales; receptores <strong>PDGFR-alpha y beta</strong> (tirosina cinasas); proliferación y quimiotaxis de fibroblastos, células endoteliales y musculares lisas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Funciones de los factores de crecimiento: favorecer la entrada al ciclo celular, eliminar bloqueos de la progresión, impedir la apoptosis y potenciar la síntesis de componentes para la división celular (ácidos nucleicos, proteínas, lípidos, hidratos de carbono). No son solo mitógenos: también participan en la morfogenia embrionaria.</p>
+
+</section><section id="sec-12-matriz-extracelular" class="card">
+<div class="section-kicker"><span class="n">12</span> Sección</div>
+<h2>Matriz extracelular</h2>
+<p>Funciones de la MEC:</p>
+<ul>
+<li>Soporte mecánico para fijación, migración y polaridad celulares.</li>
+<li>Regulación de la proliferación: fija y expone factores de crecimiento (algunos latentes se activan en focos de lesión o inflamación), y señala a través de <strong>integrinas</strong>.</li>
+<li>Armazón estructural para la renovación tisular: la integridad de la membrana basal o del estroma es imprescindible para una regeneración organizada.</li>
+<li>Fundamento de microambientes tisulares; p. ej., en el riñón forma parte del aparato de filtración.</li>
+</ul>
+<p>Dos formas básicas:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Matriz extracelular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Forma</th>
+<th>Localización y origen</th>
+<th>Componentes principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Matriz intersticial</strong></td>
+<td>Espacios entre células estromales del tejido conjuntivo y entre epitelio y estructuras vasculares y de músculo liso; síntesis por células mesenquimatosas (fibroblastos)</td>
+<td>Colágenos fibrilares, elastina, proteoglucanos, hialuronano</td>
+</tr>
+<tr>
+<td><strong>Membrana basal</strong></td>
+<td>Superficie entre epitelio y tejido conjuntivo; síntesis por el propio epitelio y las células mesenquimatosas subyacentes; malla plana y porosa</td>
+<td>Colágeno de tipo IV (no fibrilar, amorfo) y laminina</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tres familias de componentes:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Matriz extracelular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Familia</th>
+<th>Ejemplos y función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proteínas estructurales fibrosas</td>
+<td>Colágenos (fuerza de tensión) y elastina (retracción y elasticidad gracias a sus segmentos hidrófobos que se abren al estiramiento y se pliegan al relajarse)</td>
+</tr>
+<tr>
+<td>Geles hidratados</td>
+<td>Proteoglucanos y hialuronano; los azúcares sulfatados con carga negativa atraen sodio y agua: matriz viscosa y compresible; aportan resistencia a la compresión y lubricación</td>
+</tr>
+<tr>
+<td>Glucoproteínas adhesivas</td>
+<td>Fibronectina, laminina; conectan la MEC con las células mediante integrinas</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="proteoglucanos-y-regulación">Proteoglucanos y regulación</h3>
+<ul>
+<li>El proteoglucano de la MEC lleva sulfato de heparano, que secuestra factores de crecimiento como el <strong>factor de crecimiento básico de fibroblastos (bFGF, FGF-2)</strong>. El <strong>sindecano</strong> es un proteoglucano de la superficie celular, con proteína central transmembrana y cadenas laterales de glucosaminoglucano, que presenta bFGF al receptor de FGF y lo activa. Así, la MEC y los proteoglucanos regulan la actividad de los factores de crecimiento.</li>
+<li>Por ejemplo, azúcares sulfatados como el sulfato de condroitina y el sulfato de queratano participan en las "cerdas" de los proteoglucanos.</li>
+</ul>
+<h3 id="colágeno-síntesis-y-tipos">Colágeno: síntesis y tipos</h3>
+<ul>
+<li>Se han identificado varios tipos de colágeno; el OCR no es claro sobre el número exacto, por lo que no se fija cifra. Cada molécula es una <strong>triple hélice</strong> de tres cadenas polipeptídicas entrelazadas a modo de cordón.</li>
+<li>Vía de biosíntesis (fig. 1.16): las cadenas de procolágeno se sintetizan en el RE; allí se hidroxilan prolina y lisina, y se glucosila esta última; tres cadenas se alinean para formar la triple hélice de procolágeno; tras la secreción se escinden los propéptidos (por procolágeno endopeptidasa/peptidasas N y C), y se produce el entrecruzamiento lateral mediante la <strong>lisilo oxidasa</strong> sobre residuos previamente hidroxilados.</li>
+<li>Espectro de tipos con datos del texto:
+<ul>
+<li>Tipos I, V y XI: heterotrimeros.</li>
+<li>Tipos II y III: homotrimeros.</li>
+<li>Tipo I: colágeno de la matriz intersticial abundante en la mayoría de los tejidos.</li>
+<li>Tipo II: cartílago.</li>
+<li>Tipo III: colágeno fino ("reticulina"), p. ej., en vasos y heridas en reparación.</li>
+<li>Tipo IV: membrana basal (no fibrilar, amorfo).</li>
+</ul></li>
+<li>En los colágenos tipo I y II el procesamiento del N-propéptido es completo; en los tipos V y XI permanece parcialmente unido, lo que regula el tamaño de las fibrillas.</li>
+<li>Defectos primarios o de procesamiento del colágeno producen enfermedades genéticas (p. ej., osteogénesis imperfecta por defectos del tipo I, y el grupo de los Ehlers-Danlos), en las que las manifestaciones dependen del colágeno predominante en cada tejido.</li>
+</ul>
+<h3 id="glucoproteínas-adhesivas-y-integrinas">Glucoproteínas adhesivas y integrinas</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Matriz extracelular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Molécula</th>
+<th>Domicilio</th>
+<th>Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fibronectina</strong></td>
+<td>Matriz intersticial</td>
+<td>Dimero con enlaces disulfuro; dominios de unión a heparano, fibrina, colágeno (incluido tipo IV), receptores de superficie y células; el motivo <strong>RGD</strong> (arginina-glicina-ácido aspártico) media la unión a integrinas</td>
+</tr>
+<tr>
+<td><strong>Laminina</strong></td>
+<td>Membrana basal</td>
+<td>Molécula con forma de cruz, multidominio; une colágeno tipo IV, otros componentes de la MEC y receptores celulares; presenta un dominio de unión a integrinas</td>
+</tr>
+<tr>
+<td><strong>Integrinas</strong></td>
+<td>Membrana celular</td>
+<td>Heterodímeros transmembrana (cadenas alfa y beta); une la MEC con el citoesqueleto; en los complejos de adhesión focal reclutan vinculina, talina, paxilina, tensina y alfa-actinina, y activan cinasas y cascadas de señalización; participan en la adhesión firme y la migración de leucocitos a través del endotelio en la inflamación, y en la agregación plaquetaria</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-13-mantenimiento-de-las-poblaciones-celulares-proliferacion-y-ciclo" class="card">
+<div class="section-kicker"><span class="n">13</span> Sección</div>
+<h2>Mantenimiento de las poblaciones celulares: proliferación y ciclo celular</h2>
+<ul>
+<li>El mantenimiento de un órgano exige equilibrio entre proliferación, movimientos de las células y muerte celular.</li>
+<li>Fases del ciclo: <strong>G0 (reposo)</strong>, G1, <strong>S</strong> (duplicación del ADN), G2 y <strong>M</strong> (mitosis), con duplicación previa del centrosoma.</li>
+<li>Puntos de control ("referencias") y vigilancia:
+<ul>
+<li>Punto de restricción entre G1 y S: vigila el daño del ADN antes de comprometer la replicación.</li>
+<li>Punto G2/M: comprueba daño del ADN y ADN no duplicado antes de la mitosis.</li>
+</ul></li>
+<li>Motor molecular del ciclo: complejos de <strong>ciclina</strong> y <strong>quinasas dependientes de ciclinas (CDK)</strong>, frenados por inhibidores:</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Mantenimiento de las poblaciones celulares: proliferación y ciclo celular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Complejo ciclina-CDK</th>
+<th>Fase que regula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ciclina D-CDK4 y ciclina D-CDK6</td>
+<td>Fase G1 (fosforilación de Rb)</td>
+</tr>
+<tr>
+<td>Ciclina E-CDK2</td>
+<td>Transición G1/S</td>
+</tr>
+<tr>
+<td>Ciclina A-CDK2 y ciclina A-CDK1</td>
+<td>Fase S</td>
+</tr>
+<tr>
+<td>Ciclina B-CDK1</td>
+<td>Transición G2 a M</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap" role="region" aria-label="Tabla: Mantenimiento de las poblaciones celulares: proliferación y ciclo celular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Familia inhibidora</th>
+<th>Miembros</th>
+<th>Alcance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inhibidores INK4</td>
+<td>p15, p16, p18, p19</td>
+<td>Específicos de ciclina D-CDK4 y ciclina D-CDK6</td>
+</tr>
+<tr>
+<td>Inhibidores generales</td>
+<td>p21, p27, p57</td>
+<td>Inhiben todas las CDK</td>
+</tr>
+</tbody>
+</table></div>
+<p>La progresión clave hacia S depende de la fosforilación de la proteína <strong>Rb</strong> por los complejos de ciclina D con CDK4 y CDK6, y por ciclina E-CDK2.</p>
+
+<div class="warnbox"><span class="box-title">Motor del ciclo: ciclinas, CDK e inhibidores</span>G1 con ciclina D-CDK4/6 y transición G1/S con ciclina E-CDK2, ambas fosforilando Rb; fase S con ciclina A-CDK2/CDK1 y G2/M con ciclina B-CDK1. Inhibidores INK4 (p15, p16, p18, p19) son específicos de CDK4/6; p21, p27 y p57 inhiben todas las CDK.</div>
+</section><section id="sec-14-celulas-madre" class="card">
+<div class="section-kicker"><span class="n">14</span> Sección</div>
+<h2>Células madre</h2>
+<ul>
+<li>Definición: células con capacidad de <strong>autorrenovación</strong> y de generar células diferenciadas.</li>
+<li><strong>Totipotenciales</strong>: solo en desarrollo temprano (cigoto); pueden generar el espectro completo de tejidos.</li>
+<li><strong>Pluripotenciales</strong>: células de la masa celular interna del blastocisto, llamadas <strong>células embrionarias (ES)</strong>; las células ES se cultivan in vitro y pueden inducirse a diferenciarse en derivados del endodermo, mesodermo y ectodermo.</li>
+<li><strong>Multipotenciales</strong> o de estirpe específica: células madre adultas; reemplazan células dañadas y mantienen los tejidos en los que residen, con capacidad de diferenciación limitada a ciertas estirpes.</li>
+</ul>
+<p>Tipos de división de las células madre:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Células madre" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo de división</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asimétrica</strong></td>
+<td>Una hija entra en diferenciación; la otra conserva la autorrenovación</td>
+</tr>
+<tr>
+<td><strong>Simétrica</strong></td>
+<td>Ambas hijas conservan autorrenovación; tiene lugar al principio de la embriogenia, en la expansión de las poblaciones madre</td>
+</tr>
+</tbody>
+</table></div>
+<p>El ejemplo fisiológico más claro es el epitelio de la piel: las células madre de la capa basal se dividen, y las hijas se diferencian de forma progresiva a medida que migran hacia las capas superiores, hasta morir y descamarse. En la homeostasis existe un equilibrio entre replicación/autorrenovación/diferenciación de las células madre y muerte de las células terminales diferenciadas.</p>
+
+</section><section id="sec-15-medicina-regenerativa" class="card">
+<div class="section-kicker"><span class="n">15</span> Sección</div>
+<h2>Medicina regenerativa</h2>
+<ul>
+<li>Apuesta terapéutica: identificar, aislar, expandir y trasplantar células madre para repoblar tejidos con poca regeneración intrínseca (miocardio, neuronas) o generar órganos; p. ej., células beta secretoras de insulina en un diabético.</li>
+<li>Problemas: rechazo inmunológico del injerto, e integración y funcionalidad insuficiente de las células trasplantadas (limitación reconocida en el texto).</li>
+<li>Solución a los obstáculos de compatibilidad: <strong>células madre pluripotenciales inducidas (iPS)</strong>; se introducen en células diferenciadas del paciente (p. ej., fibroblastos) genes de troncalidad que las reprograman al estado de células ES; después pueden diferenciarse in vitro en estirpes de endodermo, mesodermo o ectodermo, y utilizar células propias del paciente que evitan el rechazo. A fecha del texto, su aplicación clínica práctica permanece limitada, aunque su potencial terapéutico es notable.</li>
+</ul>
+
+</section><section id="sec-16-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">16</span> Sección</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Solo el <strong>1,5% del genoma</strong> codifica proteínas; más del <strong>60%</strong> se transcribe a ARN no traducido; más de un tercio son elementos móviles (transposones).</li>
+<li>Nucleosoma: octámero con dos copias de <strong>H2A, H2B, H3, H4</strong>, <strong>1,8 vueltas</strong> de ADN de <strong>147 pb</strong>; ADN de enlace de 20-80 nucleótidos con histona <strong>H1</strong>.</li>
+<li>Acetilación de histonas abre la cromatina; metilación de ciertos residuos y del ADN silencia genes; las alteraciones epigenéticas son reversibles y ya hay terapias: inhibidores de <strong>HDAC</strong> y de metilación del ADN en cáncer.</li>
+<li>miARN: PRI-miARN → pre-miARN (horquilla) → exportación al citoplasma → corte por <strong>Dicer</strong> → miARN maduro de <strong>21-30 nucleótidos</strong> → complejo <strong>RISC</strong> → escisión del ARNm (emparejamiento perfecto) o represión de la traducción (imperfecto).</li>
+<li>ARNlnc: 10-20 veces más numerosos que los ARNm.</li>
+<li>CRISPR: el ARN guía artificial de <strong>20 bases</strong> dirige la nucleasa <strong>Cas9</strong>, que rompe el ADN de doble cadena; la reparación puede ser por unión de extremos no homólogos (mutagénesis) o recombinación homóloga (edición precisa).</li>
+<li>Hepatocito: el citosol ocupa el <strong>54%</strong> del volumen; las mitocondrias, el <strong>22%</strong>, con unas <strong>1.700</strong> por célula; los demás orgánulos son minoritarios.</li>
+<li>Mitocondrias: poro de transición de permeabilidad con lesión tóxica o isquémica → pérdida del gradiente protónico → <strong>necrosis</strong>; oligomerización de <strong>Bax/Bak</strong> (MOMP) → salida de <strong>citocromo C</strong> → apoptosoma → caspasas → <strong>apoptosis</strong>.</li>
+<li>Catabolismo: heterofagia, autofagia (doble membrana del RE marcada por <strong>LC3</strong>, genes <strong>Atg</strong>) y proteosoma (rotulaje con <strong>ubicuitina</strong> mediante ligasas <strong>E1, E2, E3</strong>).</li>
+<li>Señalización: enzima lisosómica marcada con <strong>manosa-6-fosfato (M6P)</strong> en el Golgi; GPCR con <strong>7 dominios transmembrana</strong> y más de <strong>1.500</strong> receptores; tirosina cinasa no receptora prototipo <strong>Src</strong> con dominios <strong>SH2</strong> y <strong>SH3</strong>.</li>
+<li>Factores de crecimiento: HGF (receptor <strong>MET</strong>, mutado en carcinomas renal y tiroideo papilar); PDGF (isoformas <strong>AA, AB, BB</strong> activas; CC y DD necesitan proteólisis).</li>
+<li>MEC: membrana basal = colágeno tipo IV + laminina; matriz intersticial = colágenos fibrilares (tipos I, V y XI son heterotrimeros; tipos II y III homotrimeros), elastina, proteoglucanos, hialuronano; fibronectina liga integrinas mediante el motivo <strong>RGD</strong>; el entrecruzamiento del colágeno depende de la <strong>lisilo oxidasa</strong>.</li>
+<li>Ciclo celular: transición G1/S con ciclina D-CDK4/6 y ciclina E-CDK2 (fosforilación de <strong>Rb</strong>); S con ciclina A-CDK2/CDK1; G2/M con ciclina B-CDK1; inhibidores <strong>INK4 (p15, p16, p18, p19)</strong> específicos de ciclina D-CDK4/6 y <strong>p21, p27, p57</strong> inhibidores universales.</li>
+<li>Células madre: totipotenciales (cigoto), pluripotenciales (masa celular interna del blastocisto, células <strong>ES</strong>), adultas multipotenciales; división asimétrica (una hija se diferencia, otra renueva) y simétrica (ambas renuevan, durante la embriogenia).</li>
+<li><strong>iPS</strong>: reprogramación de células somáticas (p. ej., fibroblastos) del paciente mediante genes de troncalidad, que evita el rechazo inmunológico; ejemplo potencial: células beta secretoras de insulina para la diabetes.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

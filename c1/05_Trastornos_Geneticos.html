@@ -1,0 +1,1473 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trastornos genéticos · Anatomía Patológica UBB</title>
+<meta name="description" content="Trastornos genéticos. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Trastornos genéticos · Anatomía Patológica UBB">
+<meta property="og:description" content="Trastornos genéticos. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Capítulo 5. Trastornos genéticos</h1>
+    <p class="lede">Guía 05 de 10. Resumen completo del capítulo 5 con 89 filas de tabla. Sin citas por página: material del Certamen 1.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>05 de 10</strong></div><div><span>Capítulo</span><strong>5</strong></div><div><span>Páginas</span><strong>141-188</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>89</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-genes-y-enfermedad-humana-mutaciones">Genes y enfermedad humana; mutaciones</a></li>
+        <li><a href="#sec-03-trastornos-mendelianos-patrones-de-transmision">Trastornos mendelianos: patrones de transmisión</a></li>
+        <li><a href="#sec-04-bases-moleculares-y-bioquimicas-de-los-trastornos-monogenicos">Bases moleculares y bioquímicas de los trastornos monogénicos</a></li>
+        <li><a href="#sec-05-trastornos-asociados-a-defectos-en-las-proteinas-estructurales">Trastornos asociados a defectos en las proteínas estructurales</a></li>
+        <li><a href="#sec-06-trastornos-asociados-a-defectos-en-las-proteinas-receptoras">Trastornos asociados a defectos en las proteínas receptoras</a></li>
+        <li><a href="#sec-07-trastornos-asociados-a-defectos-enzimaticos">Trastornos asociados a defectos enzimáticos</a></li>
+        <li><a href="#sec-08-enfermedades-por-deposito-de-glucogeno-glucogenosis">Enfermedades por depósito de glucógeno (glucogenosis)</a></li>
+        <li><a href="#sec-09-trastornos-asociados-a-defectos-en-las-proteinas-que-regulan-el-">Trastornos asociados a defectos en las proteínas que regulan el crecimiento celular</a></li>
+        <li><a href="#sec-10-trastornos-multigenicos-complejos">Trastornos multigénicos complejos</a></li>
+        <li><a href="#sec-11-trastornos-cromosomicos">Trastornos cromosómicos</a></li>
+        <li><a href="#sec-12-trastornos-monogenicos-de-herencia-no-clasica">Trastornos monogénicos de herencia no clásica</a></li>
+        <li><a href="#sec-13-diagnostico-genetico-molecular">Diagnóstico genético molecular</a></li>
+        <li><a href="#sec-14-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="04_Hemodinamia_Shock.html" title="Trastornos hemodinámicos, enfermedad tromboembólica y shock">04</a>
+        <a href="06_Sistema_Inmunitario.html" title="Enfermedades del sistema inmunitario">06</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 5 del Robbins y Cotran, 10ª edición: páginas impresas 141-188 (48 páginas).</div><p class="small">Este resumen del Certamen 1 se redactó antes de adoptar la cita por página; se publica sin reescribirlo. El <a href="manual.html">Manual del Certamen 1</a> incluye el índice tema-clase-Robbins y las fuentes.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Los trastornos genéticos se clasifican en mendelianos (un gen, alta penetrancia), cromosómicos (numéricos o estructurales) y multigénicos complejos (polimorfismos más ambiente).</li><li>Hereditario es lo transmitido por la línea germinal; congénito solo significa presente al nacer y puede no ser genético (sífilis congénita; Huntington se manifiesta en la adultez).</li><li>En autosómico dominante dominan receptores y proteínas estructurales (riesgo 50%); en autosómico recesivo, enzimas (riesgo 25%); no existe herencia ligada al Y.</li><li>Las enfermedades por depósito lisosómico y las glucogenosis son prototipos de herencia recesiva; la manosa-6-fosfato dirige las hidrolasas ácidas al lisosoma.</li><li>Trisomía 21 (95% por no separación meiótica materna), deleción 22q11.2 (DiGeorge y velocardiofacial, gen TBX1) y Klinefelter y Turner son los citogenéticos clave.</li><li>Herencia no clásica: expansión de tripletes (SXF, Huntington), ADN mitocondrial (herencia materna, heteroplasmia), impronta (Prader-Willi y Angelman) y mosaicismo gonadal.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La frecuencia a lo largo de la vida de enfermedades genéticas se estima en 670 por 1.000; el 50% de los abortos espontáneos de los primeros meses se asocian a alteración cromosómica; un 1% de los recién nacidos tiene una anomalía cromosómica evidente.</li>
+<li>Los trastornos genéticos se clasifican en tres categorías: <strong>trastornos mendelianos</strong> (un gen, alta penetrancia), <strong>trastornos cromosómicos</strong> (numéricos o estructurales) y <strong>trastornos multigénicos complejos</strong> (polimorfismos más ambiente).</li>
+<li>Existe además un grupo de <strong>trastornos monogénicos de herencia no clásica</strong>: expansión de repeticiones de tripletes, ADN mitocondrial, impronta genómica y mosaicismo gonadal.</li>
+<li>Las bases bioquímicas de los trastornos mendelianos se agrupan en: defectos enzimáticos, defectos de receptores y transporte, proteínas no enzimáticas y reacciones adversas a fármacos (farmacogenética).</li>
+<li>Los trastornos autosómicos recesivos incluyen casi todos los errores congénitos del metabolismo; prototipos: <strong>enfermedades por depósito lisosómico</strong> y <strong>glucogenosis</strong>.</li>
+<li>Los desequilibrios de los cromosomas sexuales se toleran mejor que los autosómicos, por la inactivación del X (hipótesis de Lyon) y el escaso material genético del Y.</li>
+<li>La <strong>secuenciación masiva (NGS)</strong>, junto a PCR, FISH y matrices citogenómicas, ocupa un lugar central en el diagnóstico genético molecular.</li>
+</ul></div>
+
+</section><section id="sec-02-genes-y-enfermedad-humana-mutaciones" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Genes y enfermedad humana; mutaciones</h2>
+<ul>
+<li><strong>Hereditario</strong>: trastorno originado en los padres y transmitido por la línea germinal a través de las generaciones (es familiar). <strong>Congénito</strong>: solo indica "que se nace con" el trastorno; algunas enfermedades congénitas no son genéticas (por ejemplo, la sífilis congénita) y no todas las enfermedades genéticas son congénitas (la enfermedad de Huntington se manifiesta a partir de la tercera o cuarta década).</li>
+<li>Una <strong>mutación</strong> es un cambio permanente del ADN. Las mutaciones que afectan a células germinativas se transmiten a la descendencia; las somáticas no causan enfermedades hereditarias, pero tienen importancia en los cánceres y en algunas malformaciones congénitas.</li>
+</ul>
+<h3 id="tipos-de-mutación-y-sus-efectos">Tipos de mutación y sus efectos</h3>
+<ul>
+<li><strong>Mutación puntual en secuencias codificantes</strong>:
+<ul>
+<li>De <strong>sentido erróneo</strong>: sustituye un aminoácido por otro. Es <strong>conservadora</strong> si el aminoácido sustituido es bioquímicamente similar (poco cambio funcional) y <strong>no conservadora</strong> si es muy distinto. Ejemplo clásico: en la β-globina, el codón CTC (GAG en el ARNm) que codifica ácido glutámico se sustituye por CAC (GUG en el ARNm), que codifica valina, y causa la anemia drepanocítica.</li>
+<li><strong>Sin sentido</strong>: convierte un codón de aminoácido en un codón de terminación. Ejemplo: en la β-globina, el cambio C a U en el codón 39 (glutamina a codón de terminación) interrumpe prematuramente la traducción; el péptido corto se degrada rápidamente y produce β-talasemia (forma grave).</li>
+</ul></li>
+<li><strong>Mutaciones en secuencias no codificantes</strong>: mutaciones o deleciones de secuencias promotoras y potenciadoras interfieren la unión de los factores de transcripción, reduciendo mucho o aboliendo la transcripción (algunas talasemias). Las mutaciones puntuales dentro de intrones originan separación (splicing) defectuosa, fracaso en la formación de ARNm maduro y ausencia de producto génico.</li>
+<li><strong>Deleciones e inserciones</strong>:
+<ul>
+<li>Si el número de bases afectadas es tres o un múltiplo de tres, la pauta de lectura se conserva y se sintetiza una proteína que pierde o gana uno o más aminoácidos. Ejemplo: la deleción de tres bases en el gen de la fibrosis quística (pérdida de fenilalanina, mutación F508).</li>
+<li>Si el número no es múltiplo de tres, se produce una <strong>mutación con desplazamiento de la pauta de lectura</strong>: incorporación de aminoácidos incorrectos y truncamiento en un codón de terminación prematuro. Ejemplos: deleción de una base en el locus ABO (responsable del alelo O) e inserción de cuatro bases en el gen de la hexosaminidasa A (principal causa de enfermedad de Tay-Sachs en judíos askenazíes).</li>
+</ul></li>
+<li><strong>Variantes estructurales</strong>: cambios del número de copias (amplificaciones o deleciones) y translocaciones con pérdida o ganación de función aberrante. Pueden ser germinales (suelen afectar a porciones contiguas de cromosoma, como en el síndrome de microdeleción del cromosoma 22q) o somáticas (cáncer; ejemplo clásico: cromosoma Filadelfia, translocación t(9;22) entre BCR y ABL en la leucemia mieloide crónica). La NGS permite detectar estas alteraciones con alta resolución; por ejemplo, se han descrito en trastornos frecuentes como el autismo.</li>
+<li><strong>Mutaciones de repeticiones de trinucleótidos</strong>: amplificación de una secuencia de tres nucleótidos que casi siempre contiene guanina y citosina. Ejemplo: el síndrome del cromosoma X frágil presenta entre 250 y 4.000 repeticiones CGG en la región reguladora del gen FMR1; en la población normal el promedio es de 29. Son mutaciones <strong>dinámicas</strong>: el grado de amplificación aumenta durante la gametogenia, lo que condiciona el patrón de herencia y el fenotipo.</li>
+<li>Otros genes no codifican proteínas, sino que producen <strong>ARN no codificantes</strong> (entre las familias más importantes, los micro-ARN y los ARN largos no codificantes), con funciones reguladoras.</li>
+</ul>
+<h3 id="niveles-de-interferencia-con-la-expresión-génica">Niveles de interferencia con la expresión génica</h3>
+<ul>
+<li>La transcripción se puede suprimir por deleciones génicas y por mutaciones puntuales que afectan a las secuencias promotoras.</li>
+<li>El procesamiento anormal del ARNm se debe a mutaciones que afectan a los intrones o a las uniones de separación, o a ambos.</li>
+<li>La traducción se ve afectada cuando una mutación sin sentido crea un codón de terminación (mutación de terminación de la cadena) dentro de un exón.</li>
+<li>Algunas mutaciones puntuales patógenas expresan cantidades normales de una proteína disfuncional.</li>
+</ul>
+
+</section><section id="sec-03-trastornos-mendelianos-patrones-de-transmision" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>Trastornos mendelianos: patrones de transmisión</h2>
+<ul>
+<li>Todos los individuos portan varios genes deletereos, en su mayoría recesivos. Un 80-85% de las mutaciones mendelianas son familiares; el resto son <strong>mutaciones de novo</strong>.</li>
+<li><strong>Pleotropismo</strong>: un gen produce múltiples efectos (drepanocitosis: hemólisis, obstrucción vascular, fibrosis esplénica, infartos, cambios óseos). <strong>Heterogeneidad genética</strong>: loci distintos producen el mismo rasgo (sordera infantil grave). <strong>Codominancia</strong>: ambos alelos contribuyen al fenotipo (histocompatibilidad, grupos sanguíneos).</li>
+</ul>
+<h3 id="tabla-patrones-de-herencia-de-los-trastornos-monogénicos">Tabla: patrones de herencia de los trastornos monogénicos</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos mendelianos: patrones de transmisión" tabindex="0"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Características</th>
+<th>Proteínas implicadas</th>
+<th>Ejemplos citados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Autosómico dominante</td>
+<td>Expresión en heterocigoto; riesgo del 50% por hijo; mutaciones de novo frecuentes si reduce la reproducción; penetrancia incompleta y expresividad variable</td>
+<td>Receptores y proteínas estructurales, no enzimas</td>
+<td>Huntington, neurofibromatosis, distrofia miotónica, esclerosis tuberosa, poliquistosis renal, poliposis familiar del colon, esferocitosis hereditaria, von Willebrand, Marfan, algunas variantes de Ehlers-Danlos, osteogenia imperfecta, acondroplasia, hipercolesterolemia familiar, porfiria intermitente aguda</td>
+</tr>
+<tr>
+<td>Autosómico recesivo</td>
+<td>No afecta a los padres; riesgo del 25% por embarazo; consanguinidad frecuente; expresión uniforme, penetrancia completa, inicio temprano</td>
+<td>Enzimas (el 50% de enzima suficiente o "margen de seguridad")</td>
+<td>Fibrosis quística, fenilcetonuria, galactosemia, homocistinuria, depósito lisosómico, déficit de alfa-1-antitripsina, enfermedad de Wilson, hemocromatosis, glucogenosis, drepanocitosis, talasemias, hiperplasia suprarrenal congénita, alcaptonuria, ataxia de Friedreich, atrofia muscular espinal</td>
+</tr>
+<tr>
+<td>Ligado al X recesivo</td>
+<td>El hombre es hemicigótico; el padre no lo transmite a sus hijos y todas sus hijas son portadoras; hijos de mujeres heterocigóticas: 50% de riesgo</td>
+<td>Variadas</td>
+<td>Distrofia de Duchenne, hemofilias A y B, enfermedad granulomatosa crónica, déficit de G6PD, agammaglobulinemia, Wiskott-Aldrich, diabetes insípida, Lesch-Nyhan, cromosoma X frágil</td>
+</tr>
+<tr>
+<td>Ligado al X dominante</td>
+<td>Muy pocos trastornos; por mujer afectada a la mitad de hijos e hijas; por padre afectado a todas sus hijas</td>
+<td>Variadas</td>
+<td>Raquitismo resistente a la vitamina D, síndrome de Alport</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>No existe herencia ligada al Y: sus genes (región específica masculina) se relacionan con la espermatogenia y los varones afectados suelen ser infértiles.</li>
+<li><strong>Penetrancia</strong> (portadores sin fenotipo) y <strong>expresividad variable</strong> se explican por otros genes y el ambiente: el fenotipo drepanocítico depende del locus de la alfa-globina; en la hipercolesterolemia familiar del aporte dietético de lípidos.</li>
+<li>Mecanismos de la enfermedad autosómica dominante: regulación de vías con retroalimentación (receptores de LDL en la HF); proteínas estructurales con efecto <strong>dominante negativo</strong> (colágeno: basta una cadena anormal para desestabilizar el trimero; osteogenia imperfecta); <strong>ganancia de función</strong> casi siempre dominante (huntingtina tóxica); <strong>haploinsuficiencia</strong>.</li>
+</ul>
+
+</section><section id="sec-04-bases-moleculares-y-bioquimicas-de-los-trastornos-monogenicos" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>Bases moleculares y bioquímicas de los trastornos monogénicos</h2>
+<p>Cuatro grupos: defectos enzimáticos, defectos de receptores y transporte, proteínas no enzimáticas y reacciones adversas a fármacos.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Bases moleculares y bioquímicas de los trastornos monogénicos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Proteína o función</th>
+<th>Lesión molecular</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fenilalanina hidroxilasa (enzima)</td>
+<td>Mutación del sitio de separación: cantidad reducida</td>
+<td>Fenilcetonuria</td>
+</tr>
+<tr>
+<td>Hexosaminidasa A (enzima)</td>
+<td>Mutación de separación o de pauta de lectura: cantidad reducida</td>
+<td>Enfermedad de Tay-Sachs</td>
+</tr>
+<tr>
+<td>Adenosina desaminasa (enzima)</td>
+<td>Mutación puntual: actividad reducida</td>
+<td>Inmunodeficiencia combinada grave</td>
+</tr>
+<tr>
+<td>Alfa-1-antitripsina (inhibidor de enzimas)</td>
+<td>Mutación de sentido erróneo: alteración de la secreción</td>
+<td>Enfisema y hepatopatía</td>
+</tr>
+<tr>
+<td>Receptor de LDL</td>
+<td>Deleciones o mutaciones: síntesis, transporte o unión alteradas</td>
+<td>Hipercolesterolemia familiar</td>
+</tr>
+<tr>
+<td>Receptor de vitamina D</td>
+<td>Mutación puntual: fallo de señalización</td>
+<td>Raquitismo resistente a la vitamina D</td>
+</tr>
+<tr>
+<td>Hemoglobina (transporte de oxígeno)</td>
+<td>Deleción: cantidad reducida</td>
+<td>Alfa-talasemia</td>
+</tr>
+<tr>
+<td>Regulador de la conductancia transmembrana de la fibrosis quística</td>
+<td>Deleciones y otras mutaciones: proteínas no funcionales o mal plegadas</td>
+<td>Fibrosis quística</td>
+</tr>
+<tr>
+<td>Colágeno (extracelular)</td>
+<td>Reducción de colágeno normal o colágeno defectuoso</td>
+<td>Osteogenia imperfecta, Ehlers-Danlos</td>
+</tr>
+<tr>
+<td>Fibrilina</td>
+<td>Sentido erróneo</td>
+<td>Síndrome de Marfan</td>
+</tr>
+<tr>
+<td>Distrofina (membrana)</td>
+<td>Deleción con reducción de la síntesis</td>
+<td>Distrofia de Duchenne/Becker</td>
+</tr>
+<tr>
+<td>Anquirina, espectrina o proteína 4.1</td>
+<td>Heterogéneo</td>
+<td>Esferocitosis hereditaria</td>
+</tr>
+<tr>
+<td>Factor VIII (hemostasia)</td>
+<td>Deleciones, inserciones o sin sentido</td>
+<td>Hemofilia A</td>
+</tr>
+<tr>
+<td>Proteína Rb y neurofibromina (regulación del crecimiento)</td>
+<td>Deleciones / heterogéneo</td>
+<td>Retinoblastoma hereditario / neurofibromatosis tipo 1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="defectos-enzimáticos-consecuencias-del-bloqueo-metabólico">Defectos enzimáticos: consecuencias del bloqueo metabólico</h3>
+<ul>
+<li><strong>Acumulación del sustrato</strong> y de intermedios (por estimulación de la vía menor M1-M2), con daño tisular si son tóxicos: galactosemia (déficit de galactosa-1-fosfato uridiltransferasa) y enfermedades por depósito lisosómico.</li>
+<li><strong>Reducción del producto final</strong>: albinismo por ausencia de tirosinasa (síntesis de melanina a partir de tirosina).</li>
+<li>Si el producto final es inhibidor por retroalimentación, su déficit genera sobreproducción de intermedios dañinos: síndrome de Lesch-Nyhan.</li>
+<li><strong>Incapacidad de inactivar un sustrato lesivo</strong>: déficit de alfa-1-antitripsina; la elastasa de los neutrófilos destruye la elastina alveolar y produce enfisema.</li>
+</ul>
+<h3 id="farmacogenética">Farmacogenética</h3>
+<ul>
+<li>Deficiencias enzimáticas que solo se manifiestan con fármacos: con primaquina, la deficiencia de G6PD produce anemia hemolítica grave. Los polimorfismos de genes de enzimas, transportadores y receptores del metabolismo de fármacos sustentan la medicina personalizada.</li>
+</ul>
+
+</section><section id="sec-05-trastornos-asociados-a-defectos-en-las-proteinas-estructurales" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>Trastornos asociados a defectos en las proteínas estructurales</h2>
+<h3 id="síndrome-de-marfan">Síndrome de Marfan</h3>
+<ul>
+<li>Trastorno del tejido conjuntivo del esqueleto, ojos y aparato cardiovascular. Prevalencia: 1 de cada 5.000 personas; 70-85% de los casos familiares, autosómicos dominantes.</li>
+<li><strong>Patogenia</strong>: defecto de la <strong>fibrilina 1</strong> (gen FBN1, 15q21.1); cerca de 1.000 mutaciones, la mayoría de sentido erróneo. Dos mecanismos: 1) pérdida de soporte estructural: reducción de fibrilina que inhibe su polimerización (efecto negativo dominante) o que debilita el tejido por debajo del umbral (haploinsuficiencia); 2) <strong>biodisponibilidad de TGF-beta</strong>: las microfibrillas normales secuestran el TGF-beta, y su defecto causa una activación excesiva con inflamación, daño del músculo liso vascular y aumento de las metaloproteasas. Apoyos: la ganancia de función del receptor de TGF-beta tipo II causa el síndrome de Marfan tipo II (MFS2); las mutaciones de TGF-beta3 predisponen a aneurismas aórticos; los antagonistas del receptor de angiotensina reducen el diámetro de la raíz aórtica en modelos murinos. Las mutaciones de FBN2 originan aracnodactilia contractural congénita.</li>
+<li><strong>Clínica</strong>: talla alta, extremidades y dedos largos, ligamentos laxos, dolicocéfalía, cifosis o escoliosis, pectus excavatum o tórax en paloma; <strong>ectopia lentis</strong> (subluxación bilateral del cristalino por debilitamiento de las zónulas ciliares); prolapso de la válvula mitral (40-50%) con válvulas "fofas"; dilatación de la aorta ascendente por <strong>necrosis quística de la media</strong> con insuficiencia aórtica y <strong>disección aórtica</strong> (principal causa de muerte). La ecocardiografía aumenta la capacidad de detección. La expresión clínica es muy variable; el diagnóstico usa los <strong>criterios revisados de Gante</strong> (antecedentes, signos cardinales y mutación de la fibrilina; afectación de dos de los cuatro sistemas: esquelético, cardiovascular, ocular y cutáneo).</li>
+</ul>
+<h3 id="síndromes-de-ehlers-danlos-sed">Síndromes de Ehlers-Danlos (SED)</h3>
+<ul>
+<li>Grupo heterogéneo por mutaciones en genes del colágeno, enzimas modificadoras del colágeno y, menos frecuentemente, otras proteínas de la matriz extracelular. Seis variantes clásicas, con subgrupos hasta 11 tipos moleculares; frecuencia colectiva de 1 de cada 5.000 nacimientos; herencia con los tres patrones mendelianos.</li>
+<li>Rasgos generales: piel hiperextensible y frágil, articulaciones hipermóviles con tendencia a luxaciones, equimosis, difícil reparación quirúrgica, rotura del colon y de grandes arterias (SED vascular), fragilidad ocular con rotura de córnea y desprendimiento de retina (SED con cifoescoliosis), hernia diafragmática (SED clásico); cicatrización deficiente.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos asociados a defectos en las proteínas estructurales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo de SED</th>
+<th>Hallazgos clínicos</th>
+<th>Defecto genético</th>
+<th>Herencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clásico (I/II)</td>
+<td>Hipermovilidad articular y cutánea, cicatrices atróficas, hematomas</td>
+<td>COL5A1, COL5A2</td>
+<td>Autosómica dominante</td>
+</tr>
+<tr>
+<td>Hipermovilidad (III)</td>
+<td>Hipermovilidad articular, dolor, luxaciones</td>
+<td>Desconocido</td>
+<td>Autosómica dominante</td>
+</tr>
+<tr>
+<td>Vascular (IV)</td>
+<td>Piel delgada, rotura arterial o uterina, hematomas</td>
+<td>COL3A1</td>
+<td>Autosómica dominante</td>
+</tr>
+<tr>
+<td>Cifoescoliosis (VI)</td>
+<td>Hipotonía, laxitud articular, escoliosis, fragilidad ocular</td>
+<td>Lisil hidroxilasa</td>
+<td>Autosómica recesiva</td>
+</tr>
+<tr>
+<td>Artrocalasia (VIIa, VIIb)</td>
+<td>Hipermovilidad articular importante, cambios cutáneos leves, escoliosis, hematomas</td>
+<td>COL1A1, COL1A2</td>
+<td>Autosómica dominante</td>
+</tr>
+<tr>
+<td>Dermatosparaxis (VIIc)</td>
+<td>Fragilidad extrema de la piel, piel laxa, hematomas</td>
+<td>N-peptidasa del procolágeno</td>
+<td>Autosómica recesiva</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>La cifoescoliosis es la variante recesiva más frecuente: mutaciones de PLOD1 (lisil hidroxilasa), necesaria para los enlaces cruzados de las fibras de colágeno.</li>
+<li>En la <strong>artrocalasia</strong>, en la conversión del procolágeno a colágeno, los heterocigotos enferman porque las cadenas anormales interfieren con la formación de hélices normales. La <strong>dermatosparaxis</strong> (ADAMTS2, colágeno-N-peptidasa) es recesiva por tratarse de una carencia enzimática. Un trastorno similar al SED clásico se debe a mutación del gen TNXB (tenascina X). Otros trastornos por defectos del colágeno: osteogenia imperfecta, síndrome de Alport y epidermólisis ampollar.</li>
+</ul>
+
+</section><section id="sec-06-trastornos-asociados-a-defectos-en-las-proteinas-receptoras" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>Trastornos asociados a defectos en las proteínas receptoras</h2>
+<h3 id="hipercolesterolemia-familiar-hf">Hipercolesterolemia familiar (HF)</h3>
+<ul>
+<li>Autosómica dominante, muy frecuente; altera la eliminación hepática de LDL y produce hipercolesterolemia con ateroesclerosis prematura. Causas: mutaciones del gen del <strong>receptor de LDL (LDLR)</strong> en el 80-85%; de la <strong>apolipoproteína B-100</strong> (ligando del receptor) en el 5-10%; y mutaciones <strong>activadoras de PCSK9</strong> en el 1-2%.</li>
+<li>Clínica: <strong>heterocigotos</strong> (1 de cada 200) con colesterol al doble o triple desde el nacimiento, xantomas tendinosos y ateroesclerosis prematura; <strong>homocigotos</strong> con colesterol 5-6 veces mayor, xantomas e infartos antes de los 20 años. Un 3-6% de los supervivientes de un infarto tienen HF.</li>
+<li>Metabolismo: el hígado secreta VLDL (ApoB, ApoC, ApoE); la lipólisis configura la IDL; la mitad es captada por el receptor de LDL hepático (ApoB/E) y el resto deviene LDL rica en colesterol. El 70% del LDL plasmático se elimina en el hígado por endocitosis en fositas revestidas; el colesterol sale del lisosoma mediante NPC1 y NPC2.</li>
+<li>Regulación por el colesterol liberado: inhibe la HMG-CoA reductasa, activa la acil-coenzima A: colesterol aciltransferasa, suprime la síntesis de receptores y eleva PCSK9, que degrada receptores reciclados.</li>
+<li><strong>Clases de mutaciones del receptor de LDL</strong> (más de 2.000 descritas): I, no se sintetiza (alelo nulo); II, receptor mal plegado que se acumula en el retículo endoplásmico; III, receptor en superficie que no se une a LDL; IV, receptor que se une pero no se localiza en las fositas revestidas; V, no se disocia del ligando en el endosoma y se degrada; VI, no se direcciona a la membrana basolateral.</li>
+<li>Tratamiento: <strong>estatinas</strong> (inhibición de la HMG-CoA reductasa) y <strong>anticuerpos anti-PCSK9</strong> aumentan los receptores de LDL. PCSK9 se descubrió en personas con colesterol extremadamente bajo por variantes de pérdida de función del gen.</li>
+</ul>
+
+</section><section id="sec-07-trastornos-asociados-a-defectos-enzimaticos" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>Trastornos asociados a defectos enzimáticos</h2>
+<h3 id="enfermedades-por-depósito-lisosómico-edl">Enfermedades por depósito lisosómico (EDL)</h3>
+<ul>
+<li>Las hidrolasas ácidas se etiquetan en el aparato de Golgi con <strong>manosa-6-fosfato</strong> y se dirigen a los lisosomas; los errores de este marcaje causan un tipo de EDL (mucolipidosis). Frecuencia combinada: 1 de cada 5.000 nacidos vivos; unas 70 enfermedades identificadas.</li>
+<li>Patogenia: <strong>depósito primario</strong> (acumulación del sustrato incompletamente degradado en los lisosomas, que crecen e interfieren la función celular) y <strong>depósito secundario</strong> (autofagia defectuosa: persisten mitocondrias disfuncionales (mitofagia alterada) que generan radicales libres y apoptosis; se acumulan sustratos autofágicos como alfa-sinucleína y huntingtina, vinculando las EDL con trastornos neurodegenerativos).</li>
+<li>La distribución del depósito depende de dónde se degrada el sustrato: el encéfalo es rico en gangliósidos (clínica neurológica de las gangliosidosis) y los órganos fagocíticos (bazo, hígado) aumentan de tamaño.</li>
+<li>Tratamiento: sustitución enzimática; reducción de sustrato; <strong>chaperonas moleculares</strong> (estabilizan el plegamiento de la enzima mutante); trasplante de células madre hematopoyéticas y terapia génica en casos seleccionados.</li>
+<li>Relación con enfermedades frecuentes: el portador de Gaucher es factor de riesgo de enfermedad de Parkinson (y prácticamente todos los pacientes de Gaucher desarrollan Parkinson); la Niemann-Pick tipo C eleva el riesgo de enfermedad de Alzheimer.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos asociados a defectos enzimáticos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Deficiencia enzimática o defecto</th>
+<th>Metabolito acumulado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Glucogenosis tipo 2 (enfermedad de Pompe)</td>
+<td>Alfa-1,4-glucosidasa (glucosidasa lisosómica)</td>
+<td>Glucógeno</td>
+</tr>
+<tr>
+<td>Gangliosidosis GM1 (tipo I de lactantes, tipo 2 juvenil)</td>
+<td>Beta-galactosidasa</td>
+<td>Gangliósido GM1</td>
+</tr>
+<tr>
+<td>Gangliosidosis GM2: enfermedad de Tay-Sachs</td>
+<td>Hexosaminidasa A (subunidad alfa)</td>
+<td>Gangliósido GM2</td>
+</tr>
+<tr>
+<td>Gangliosidosis GM2: enfermedad de Sandhoff</td>
+<td>Hexosaminidasa A y B</td>
+<td>Gangliósido GM2 y globósido</td>
+</tr>
+<tr>
+<td>Gangliosidosis GM2 variante AB</td>
+<td>Proteína activadora del gangliósido</td>
+<td>Gangliósido GM2</td>
+</tr>
+<tr>
+<td>Leucodistrofia metacromática</td>
+<td>Arilsulfatasa A</td>
+<td>Sulfátido</td>
+</tr>
+<tr>
+<td>Deficiencia de múltiples sulfatasas</td>
+<td>Arilsulfatasas A, B y C; sulfatasa de esteroides; iduronato sulfatasa; heparano N-sulfatasa</td>
+<td>Sulfátido, sulfato de esteroides y de iduronato</td>
+</tr>
+<tr>
+<td>Enfermedad de Krabbe</td>
+<td>Galactosilceramidasa</td>
+<td>Galactocerebrósido</td>
+</tr>
+<tr>
+<td>Enfermedad de Fabry</td>
+<td>Alfa-galactosidasa A</td>
+<td>Ceramida trihexósido</td>
+</tr>
+<tr>
+<td>Enfermedad de Gaucher</td>
+<td>Glucocerebrosidasa</td>
+<td>Glucocerebrósido</td>
+</tr>
+<tr>
+<td>Enfermedad de Niemann-Pick tipos A y B</td>
+<td>Esfingomielinasa</td>
+<td>Esfingomielina</td>
+</tr>
+<tr>
+<td>MPS I (Hurler)</td>
+<td>Alfa-L-iduronidasa</td>
+<td>Sulfato de dermatano y de heparano</td>
+</tr>
+<tr>
+<td>MPS II (Hunter)</td>
+<td>Iduronato 2-sulfatasa</td>
+<td>Sulfato de dermatano y de heparano</td>
+</tr>
+<tr>
+<td>Mucolipidosis II (enfermedad de células I)</td>
+<td>Enzimas que fosforilan la manosa-6-fosfato; las hidrolasas sin marcador se secretan al exterior</td>
+<td>Mucopolisacáridos y glucolípidos, polidistrofia seudo-Hurler</td>
+</tr>
+<tr>
+<td>Fucosidosis</td>
+<td>Alfa-fucosidasa</td>
+<td>Esfingolípidos con fucosa y fragmentos de glucoproteínas</td>
+</tr>
+<tr>
+<td>Manosidosis</td>
+<td>Alfa-manosidasa</td>
+<td>Oligosacáridos con manosa</td>
+</tr>
+<tr>
+<td>Aspartilglucosaminuria</td>
+<td>Aspartilglucosamina amida hidrolasa</td>
+<td>Aspartilglucosamina</td>
+</tr>
+<tr>
+<td>Enfermedad de Wolman</td>
+<td>Lipasa ácida</td>
+<td>Ésteres de colesterol y triglicéridos</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="enfermedad-de-tay-sachs-gangliosidosis-gm2">Enfermedad de Tay-Sachs (gangliosidosis GM2)</h3>
+<ul>
+<li>Deficiencia de hexosaminidasa A por mutaciones de la subunidad alfa (gen HEXA, cromosoma 15). La degradación de GM2 requiere tres polipéptidos: alfa (HEXA, 15), beta (HEXB, 5) y activador (GM2A, 5). Forma más frecuente de gangliosidosis GM2, especialmente prevalente entre los judíos askenazíes (1 portador de cada 30). Más de 100 mutaciones de HEXA; la mayor parte altera el plegamiento, con degradación proteosómica de la enzima mal plegada.</li>
+<li>Morfología: gangliósido GM2 acumulado en muchos tejidos, con clínica por afectación neuronal: neuronas balonizadas con vacuolas lisosómicas; con la microscopía electrónica, inclusiones membranosas a modo de hojas de cebolla; proliferación de la microglía. Las células ganglionares retinianas tumefactas producen la <strong>mancha rojo cereza de la mácula</strong> (típica, aunque no patognomónica).</li>
+<li>Clínica: lactantes aparentemente normales; desde los 6 meses, deterioro motor y mental, flacidez, ceguera y demencia; estado vegetativo completo en 1-2 años y muerte a los 2-3 años de edad. Diagnóstico antenatal y detección de portadores por estudios enzimáticos y análisis del ADN.</li>
+</ul>
+<h3 id="enfermedad-de-niemann-pick">Enfermedad de Niemann-Pick</h3>
+<ul>
+<li><strong>Tipos A y B</strong>: acumulación de esfingomielina por deficiencia de <strong>esfingomielinasa ácida</strong> (gen en 11p15.4); frecuente en askenazíes. Aunque es autosómica recesiva, los heterocigotos que heredan de la madre pueden enfermar (gen improntado con expresión materna preferente).
+<ul>
+<li><strong>Tipo A</strong>: forma grave del lactante con afectación neurológica extensa; células fagocíticas espumosas (vacuolas lisosómicas con esfingomielina y colesterol, a veces con <strong>cuerpos de zebra</strong>) ampliamente distribuidas; bazo hasta 10 veces su peso; balonización neuronal difusa; mancha rojo cereza en un tercio a la mitad; muerte a los 1-2 años. Diagnóstico: actividad enzimática en leucocitos y biopsia de médula ósea, con análisis del ADN.</li>
+<li><strong>Tipo B</strong>: organomegalia sin afectación del sistema nervioso central; llegan a la vida adulta.</li>
+</ul></li>
+<li><strong>Tipo C</strong>: distinta en genes y bioquímica, y más frecuente que A y B juntas. Mutaciones de <strong>NPC1 (95%) y NPC2</strong>, proteínas del transporte de colesterol libre del lisosoma al citoplasma: defecto primario del <strong>transporte de lípidos no enzimático</strong> (NPC1 unida a membrana; NPC2 soluble). Clínica variable: hidropesía fetal, muerte neonatal, hepatitis neonatal o curso crónico con ataxia, parálisis de la mirada vertical supranuclear, distonía, disartria y regresión psicomotora.</li>
+</ul>
+<h3 id="enfermedad-de-gaucher">Enfermedad de Gaucher</h3>
+<ul>
+<li>Autosómica recesiva por mutaciones del gen de la <strong>glucocerebrosidasa</strong>; la EDL más frecuente. Se acumula glucocerebrósido (del catabolismo de membranas de leucocitos y eritrocitos envejecidos), sobre todo en fagocitos. Además del depósito, participan la activación de macrófagos con secreción de citocinas (IL-1, IL-6 y factor de necrosis tumoral).</li>
+<li>Subtipos:
+<ul>
+<li><strong>Tipo I</strong> (99% de los casos; crónico no neuronopático; afecta sobre todo a judíos europeos): actividad residual detectable, sin afectación encefálica; predomina la afectación esplénica y esquelética; no acorta demasiado la longevidad.</li>
+<li><strong>Tipo II</strong> (aguda neuronopática del lactante): sin actividad detectable; hepatoesplenomegalia con afectación progresiva del sistema nervioso central y muerte temprana.</li>
+<li><strong>Tipo III</strong> (intermedio): afectación sistémica del tipo I más afectación progresiva del sistema nervioso central que comienza en la adolescencia o adultez temprana.</li>
+</ul></li>
+<li>Morfología: <strong>células de Gaucher</strong> (fagocitos de hasta 100 micras, citoplasma fibrilar de papel arrugado por lisosomas elongados con lípidos en pilas de bicapas; y fuertemente PAS positivas) en hígado, bazo, médula ósea y otros órganos; bazo hasta 10 kg; infiltración medular en el 70-100% del tipo I con erosiones óseas y fracturas patológicas por citocinas de macrófagos activados.</li>
+<li>Relación con Parkinson: riesgo 20 veces superior en los pacientes con Gaucher; entre el 5 y el 10% de los pacientes con Parkinson tienen mutaciones del gen de la glucocerebrosidasa; existe una relación recíproca entre la enzima y la agregación de alfa-sinucleína.</li>
+<li>Diagnóstico: actividad enzimática en leucocitos o fibroblastos en cultivo (no identifica heterocigotos; se detectan por mutación conocida). Tratamiento con enzima recombinante eficaz (esperanza de vida normal en tipo I, aunque muy caro); trasplante alogénico de células madre hematopoyéticas potencialmente curativo; terapia génica; reducción de sustrato con inhibidores de la glucosilceramida sintetasa.</li>
+</ul>
+<h3 id="mucopolisacaridosis-mps">Mucopolisacaridosis (MPS)</h3>
+<ul>
+<li>Deficiencia de las enzimas que degradan los glucosaminoglucanos (sulfato de dermatano, heparano, queratano y condroitina); 11 variantes clínicas; todas autosómicas recesivas menos el síndrome de Hunter (MPS II), ligado al X. La excreción urinaria de mucopolisacáridos está aumentada y sirve de herramienta diagnóstica.</li>
+<li>Clínica general: rasgos faciales toscos, opacidad corneal, rigidez articular y discapacidad intelectual; células balonizadas (lisosomas con material granular PAS positivo) en fagocitos, endotelios, músculo liso intimal y fibroblastos; hepatoesplenomegalia, deformidades esqueléticas, lesiones valvulares, depósitos subendoteliales arteriales (especialmente coronarias) y lesiones cerebrales; las lesiones subendoteliales miocárdicas pueden provocar isquemia, infarto e insuficiencia cardiaca.</li>
+<li><strong>Síndrome de Hurler (MPS I-H)</strong>: deficiencia de alfa-L-iduronidasa; de los más graves; hepatoesplenomegalia a los 6-24 meses, crecimiento retrasado, rasgos toscos y deformidades esqueléticas; muerte entre los 6-10 años por complicaciones cardiovasculares.</li>
+<li><strong>Síndrome de Hunter (MPS II)</strong>: herencia ligada al X, sin opacificación corneal y evolución más leve.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Gaucher, Tay-Sachs y Niemann-Pick</span>Gaucher (glucocerebrosidasa) es la EDL más frecuente: células de papel arrugado, tres subtipos y sustitución enzimática eficaz; el portador es factor de riesgo de Parkinson. Tay-Sachs (hexosaminidasa A) muestra mancha rojo cereza; Niemann-Pick tipo C es un defecto del transporte de colesterol (NPC1 y NPC2), no enzimático.</div>
+</section><section id="sec-08-enfermedades-por-deposito-de-glucogeno-glucogenosis" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>Enfermedades por depósito de glucógeno (glucogenosis)</h2>
+<ul>
+<li>Deficiencia hereditaria de enzimas de la síntesis o degradación del glucógeno; el depósito puede ser localizado, difuso o sistémico. Se clasifican clásicamente en una docena de síndromes con número romano.</li>
+<li>Metabolismo: glucosa a glucosa-6-fosfato (glucocinasa), a glucosa-1-fosfato (fosfoglucomutasa) y a uridina difosfoglucosa; elongación por glucógeno sintetasas (enlaces alfa-1,4 y enzima ramificante). La degradación por fosforilasas genera glucosa-1-fosfato hasta la dextrina límite, que requiere la enzima desramificante. El glucógeno lisosómico se degrada por la alfa-glucosidasa ácida.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades por depósito de glucógeno (glucogenosis)" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Deficiencia enzimática</th>
+<th>Clasificación</th>
+<th>Cambios morfológicos y clínicas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I: von Gierke (hepatorenal)</td>
+<td>Glucosa-6-fosfatasa</td>
+<td>Tipo hepático</td>
+<td>Hepatomegalia y nefromegalia con glucógeno intracitoplásmico y glucógeno intranuclear tubular; hipoglucemia con convulsiones, retraso del crecimiento, hiperlipidemia e hiperuricemia (gota y xantomas), tendencia a hemorragias por disfunción plaquetaria; con tratamiento, la mayoría sobrevive con adenomas hepáticos</td>
+</tr>
+<tr>
+<td>V: McArdle</td>
+<td>Fosforilasa muscular</td>
+<td>Tipo miopático</td>
+<td>Acumulación de glucógeno de predominio subsarcolémico; calambres con ejercicio agotador, mioglobinuria en el 50% de los casos, aparición en adultos (más de 20 años), sin elevación de lactato venoso con el ejercicio, creatina cinasa sérica siempre elevada; longevidad normal</td>
+</tr>
+<tr>
+<td>II: Pompe</td>
+<td>Alfa-glucosidasa ácida (maltasa ácida lisosómica)</td>
+<td>Otros (lisosómica, generalizada)</td>
+<td>Balonización de los lisosomas con glucógeno; cardiomegalia masiva, hipotonía generalizada y fracaso cardiorrespiratorio en 2 años; forma leve del adulto con miopatía crónica musculoesquelética; disponible tratamiento de reposición enzimática</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Otros tipos citados: fosforilasa hepática y enzima desramificante (tipo hepático-hipoglucémico, con acumulación en muchos órganos y clínica dominada por hepatomegalia e hipoglucemia); fosfofructocinasa muscular (tipo VII); y ausencia de las enzimas ramificante y desramificante, con depósito generalizado y muerte precoz. En las formas hepáticas domina la <strong>hipoglucemia</strong>; en las miopáticas, la debilidad muscular y los calambres por falta de energía glucolítica sin elevación de lactato.</li>
+</ul>
+
+</section><section id="sec-09-trastornos-asociados-a-defectos-en-las-proteinas-que-regulan-el-" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>Trastornos asociados a defectos en las proteínas que regulan el crecimiento celular</h2>
+<ul>
+<li>Dos clases de genes regulan el crecimiento y la diferenciación: <strong>protooncogenes</strong> y <strong>genes supresores de tumores</strong>; sus mutaciones son importantes en la patogenia de los tumores. La mayoría de las mutaciones tumorales son somáticas; en cerca del 5% de los cánceres colaboran mutaciones de la línea germinal. La mayoría de los cánceres familiares son autosómicos dominantes, con pocos recesivos (se desarrolla en el capítulo 7).</li>
+</ul>
+
+</section><section id="sec-10-trastornos-multigenicos-complejos" class="card">
+<div class="section-kicker"><span class="n">10</span> Sección</div>
+<h2>Trastornos multigénicos complejos</h2>
+<ul>
+<li>Un gen con al menos dos alelos, cada uno de frecuencia de al menos el 1% en la población, es <strong>polimorfo</strong>; cada variante es un <strong>polimorfismo</strong>. Según la hipótesis variante frecuente/enfermedad frecuente, la enfermedad surge al heredar muchos polimorfismos de efecto modesto y baja penetrancia; ninguno es necesario ni suficiente por sí mismo.</li>
+<li>Diabetes tipo 1: de 20-30 genes implicados, 6 o 7 son los más importantes y unos pocos alelos HLA aportan más del 50% del riesgo. Algunos polimorfismos son comunes a varias enfermedades del mismo tipo (autoinmunitarias) y otros son específicos.</li>
+<li>Rasgos normales multifactoriales (color de cabello, ojos o piel, talla, inteligencia) muestran variación continua en curva en campana; el ambiente condiciona la expresión (diabetes tipo 2 desencadenada por el aumento de peso; estaturas distintas en gemelos monocigóticos; privación cultural).</li>
+<li>Diagnóstico: confirmar agregación familiar y descartar herencia mendeliana o cromosómica; la variabilidad de gravedad también se explica por expresividad variable y penetrancia reducida, lo que dificulta la distinción.</li>
+</ul>
+
+</section><section id="sec-11-trastornos-cromosomicos" class="card">
+<div class="section-kicker"><span class="n">11</span> Sección</div>
+<h2>Trastornos cromosómicos</h2>
+<h3 id="cariotipo-normal-y-terminología-citogenética">Cariotipo normal y terminología citogenética</h3>
+<ul>
+<li>Las células somáticas humanas contienen 46 cromosomas (22 pares de autosomas y dos sexuales: XX mujeres, XY varones). El cariotipado se realiza en metafase (inhibidores del huso como la colchicina) con tinción de Giemsa (<strong>bandas G</strong>): 400-800 bandas por conjunto haploide (hasta 1.500 bandas en profase).</li>
+<li>Notación: número total, cromosomas sexuales y alteraciones en orden creciente (47,XY,+21). El brazo corto es <strong>p</strong> (de petit) y el largo <strong>q</strong>; regiones numeradas desde el centrómero hacia fuera, luego bandas y subbandas (Xp21.2).</li>
+</ul>
+<h3 id="aneuploidía-y-mosaicismo">Aneuploidía y mosaicismo</h3>
+<ul>
+<li><strong>Euploide</strong>: múltiplo exacto del número haploide (23). <strong>Aneuploidía</strong>: complemento no múltiplo de 23; causas habituales: <strong>falta de separación</strong> y <strong>retraso de la anafase</strong>. Los errores meióticos generan gametos n+1 o n-1 y, tras la fecundación, cigotos trisómicos (2n+1) o monosómicos (2n-1); el retraso de la anafase deja un cromosoma fuera del núcleo y produce monosomía.</li>
+<li>La monosomía de un autosoma suele impedir el desarrollo; varias trisomías autosómicas permiten sobrevivir, y salvo la 21 presentan malformaciones graves con muerte a edades tempranas. Las monosomías o trisomías de los cromosomas sexuales, e incluso aberraciones más extrañas, son compatibles con vida y fenotipo variable.</li>
+<li><strong>Mosaicismo</strong>: dos o más poblaciones celulares con complementos distintos en el mismo individuo, por errores mitóticos precoces. El de los cromosomas sexuales es relativamente frecuente (por ejemplo, 45,X/47,XXX; la gravedad del síndrome de Turner depende del porcentaje de células 45,X); los autosómicos son raros (un mosaico viable, como 46,XY/47,XY,+21, da un síndrome de Down variable).</li>
+</ul>
+<h3 id="alteraciones-estructurales-de-los-cromosomas">Alteraciones estructurales de los cromosomas</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos cromosómicos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alteración</th>
+<th>Descripción</th>
+<th>Ejemplo de notación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deleción</td>
+<td>Pérdida de parte del cromosoma; mayoritariamente intersticial (dos roturas en un brazo con pérdida del segmento); raras veces terminales</td>
+<td>46,XY,del(16)(p11.2p13.1)</td>
+</tr>
+<tr>
+<td>Cromosoma en anillo</td>
+<td>Forma especial de deleción: roturas en ambos extremos con fusión; comportamiento anormal en mitosis y meiosis</td>
+<td>46,XY,r(14)</td>
+</tr>
+<tr>
+<td>Inversión</td>
+<td>Dos roturas en un cromosoma con reincorporación del segmento invertido; paracéntrica (afecta solo a un brazo) o pericéntrica (a ambos lados del centrómero); suelen ser compatibles con desarrollo normal</td>
+<td>No aplicable</td>
+</tr>
+<tr>
+<td>Isocromosoma</td>
+<td>Se pierde un brazo y se duplica el otro (dos brazos cortos o dos largos con información idéntica); el más frecuente en nacidos vivos afecta al brazo largo del X, i(X)(q10), que causa monosomía de los genes de Xp y trisomía de los de Xq</td>
+<td>i(X)(q10)</td>
+</tr>
+<tr>
+<td>Translocación equilibrada recíproca</td>
+<td>Intercambio de material entre dos cromosomas; fenotipo habitualmente normal pero riesgo de gametos desequilibrados con aborto o hijo malformado</td>
+<td>46,XX,t(2;5)(q31;p14)</td>
+</tr>
+<tr>
+<td>Translocación robertsoniana (fusión céntrica)</td>
+<td>Entre dos cromosomas acrocéntricos, con roturas cerca de los centrómeros; el producto pequeño se pierde (genes redundantes como los del ARN ribosómico); fenotipo normal; 1 de cada 1.000 individuos normales; riesgo de descendencia anormal</td>
+<td>der(14;21)(q10;q10)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Los cambios estructurales deben afectar a unos 2-4 millones de pares de bases para verse con bandeo convencional; la FISH detecta cambios de solo kilobases. Cerca del 7,5% de las concepciones presentan alteración cromosómica (la mayoría no viable) y entre recién nacidos la frecuencia es del 0,5-1,0%.</li>
+</ul>
+<h3 id="trastornos-citogenéticos-de-autosomas">Trastornos citogenéticos de autosomas</h3>
+<h4 id="trisomía-21-síndrome-de-down">Trisomía 21 (síndrome de Down)</h4>
+<ul>
+<li>La alteración cromosómica más frecuente y una de las principales causas de discapacidad intelectual. Incidencia: 1 de cada 700 recién nacidos en Estados Unidos. El 95% son trisomías libres (47 cromosomas) por no separación meiótica; en el 95% de los casos el cromosoma extra es materno, con fuerte correlación con la edad materna (1/1.550 en mujeres menores de 20 años; 1/25 en mayores de 45).</li>
+<li><strong>Tipo translocación (4%)</strong>: translocación robertsoniana del brazo largo del 21 a otro cromosoma acrocéntrico (22 o 14), frecuentemente (aunque no siempre) familiar, heredada de un progenitor portador (por ejemplo, 45,XX,der(14;21)(q10;q10)); la edad materna no influye.</li>
+<li><strong>Mosaico (1%)</strong>: no separación mitótica precoz del cromosoma 21; síntomas más leves y variables según el porcentaje de células anormales; la edad materna no influye.</li>
+<li>Clínica: perfil aplanado de la cara, fisuras palpebrales oblicuas, pliegues epicánticos, pliegue simiesco, discapacidad intelectual (algunos mosaicos con inteligencia normal o casi normal). Malformaciones cardiacas en el 40% (comunicaciones auriculoventriculares 43%, interventriculares 32%, interauriculares 19%, tetralogía de Fallot 6%), principal causa de muerte en la lactancia y primera infancia; atresias esofágicas e intestinales. Riesgo leucémico: 20 veces para la leucemia linfoblástica B aguda y 500 veces para la leucemia mieloide aguda (habitualmente megacarioblástica). Todos los mayores de 40 años muestran cambios neuropatológicos de enfermedad de Alzheimer. Respuestas inmunitarias anormales con infecciones graves (sobre todo pulmonares) y procesos autoinmunitarios tiroideos. La media de edad de la muerte es de 47 años (no superaba los 25 años en 1983).</li>
+<li>Bases moleculares: desequilibrio de la dosis génica (la mayoría de los genes del 21 sobrepresados, incluido el de la proteína precursora del péptido beta-amiloide, APP); alrededor del 10% de los genes sobrepresados implicados en la regularización de funciones mitocondriales; el cromosoma 21 tiene la más alta densidad de ARN largos no codificantes.</li>
+<li>Diagnóstico prenatal: el 5-10% del ADN celular libre en la sangre materna es fetal; con secuenciación masiva puede determinarse con gran precisión la dosis genética de los genes del cromosoma 21 (y de otras trisomías), como prueba no invasiva; las pruebas positivas se confirman con cariotipado convencional.</li>
+</ul>
+<h4 id="tabla-trisomías-autosómicas">Tabla: trisomías autosómicas</h4>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos cromosómicos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Trisomía</th>
+<th>Síndrome</th>
+<th>Incidencia</th>
+<th>Rasgos principales</th>
+<th>Cariotipos típicos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>Down</td>
+<td>1 de cada 700 nacimientos</td>
+<td>Discapacidad intelectual, perfil aplanado, pliegues epicánticos, pliegue simiesco, malformaciones cardiacas, estenosis intestinal, hipotonía, predisposición a leucemia</td>
+<td>47,XX,+21; 46,XX,der(14;21)(q10;q10),+21 (tipo translocación); mosaico 46,XX/47,XX,+21</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Edwards</td>
+<td>1 de cada 8.000 nacimientos</td>
+<td>Microcefalia y discapacidad intelectual, paladar hendido y labio leporino, microftalmia, malformaciones cardiacas, renales y hernia umbilical, abducción limitada de la cadera, pies en mecedora, orejas de implantación baja</td>
+<td>47,XX,+18; mosaico 46,XX/47,XX,+18</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Patau</td>
+<td>1 de cada 15.000 nacimientos</td>
+<td>Microcefalia y discapacidad, paladar hendido y labio leporino, polidactilia, malformaciones cardiacas y renales, hernia umbilical, pies en mecedora</td>
+<td>47,XX,+13; con translocación 46,XX,+13,der(13;14)(q10;q10); mosaico 46,XX/47,XX,+13</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>También se han descrito trisomías de los cromosomas 8, 9, 13, 18 y 22; las trisomías 18 y 13 presentan malformaciones mucho más graves y diversas que la 21, con asociación a mayor edad materna; es muy raro que estos lactantes cumplan el año de vida (la mayoría fallece en semanas o meses).</li>
+</ul>
+<h4 id="síndrome-por-deleción-del-cromosoma-22q112">Síndrome por deleción del cromosoma 22q11.2</h4>
+<ul>
+<li>Espectro de trastornos por una pequeña deleción de la banda q11.2 del brazo largo del 22 (región de unas 1,5 Mb con 30-40 genes). Afecta a 1 de cada 4.000 nacimientos y con frecuencia no se diagnostica por la variabilidad clínica.</li>
+<li>Fenotipos previamente descritos como entidades separadas:
+<ul>
+<li><strong>Síndrome de DiGeorge</strong>: hipoplasia tímica con inmunodeficiencia de linfocitos T, hipoplasia de paratiroides con hipocalcemia, malformaciones cardiacas del tracto de salida y malformaciones faciales leves; también trastornos atópicos y autoinmunidad (por ejemplo, trombocitopenia).</li>
+<li><strong>Síndrome velocardiofacial</strong>: dismorfia facial (nariz prominente, retrognatia), paladar hendido, malformaciones cardiovasculares y discapacidad para el aprendizaje; inmunodeficiencia menos frecuente.</li>
+</ul></li>
+<li>Psiquiatría: el 25% de los pacientes adultos con este síndrome desarrollan esquizofrenia; a la inversa, el 2-3% de las esquizofrenias de inicio adulto presentan la deleción; trastorno por déficit de atención e hiperactividad en el 30-35% de los niños afectados.</li>
+<li>Diagnóstico: sospecha clínica confirmada por FISH; el 90% de los DiGeorge y el 80% de los velocardiofaciales muestran la deleción; el 30% de los pacientes con malformaciones cardiacas del troncocono la tienen sin los demás rasgos.</li>
+<li>Genes: <strong>TBX1</strong> (factor de transcripción de la caja T) es el más asociado al fenotipo; se expresa en el mesénquima faríngeo y el fondo del saco endodérmico de los que derivan las estructuras faciales, el timo y las paratiroides; su diana PAX9 controla el desarrollo del paladar, las paratiroides y el timo. Los genes de los trastornos conductuales aún se tienen que identificar.</li>
+</ul>
+<h3 id="tabla-trastornos-citogenéticos-de-los-cromosomas-sexuales">Tabla: trastornos citogenéticos de los cromosomas sexuales</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos cromosómicos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Trastorno</th>
+<th>Cariotipo</th>
+<th>Clínica esencial</th>
+<th>Otros datos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Síndrome de Klinefelter</td>
+<td>47,XXY en el 90%; mosaicos en un 15% (mayoritariamente 46,XY/47,XXY; algunos con 47,i(Xq),Y)</td>
+<td>Hipogonadismo masculino: constitución eunucoide con piernas largas, testículos pequeños atróficos, pene pequeño, ausencia de caracteres sexuales secundarios, ginecomastia y déficit verbal moderado</td>
+<td>Incidencia aproximada de 1 de cada 660 varones vivos; causa importante de reducción de la espermatogenia e infertilidad; edad materna avanzada (más de 40 años) como factor de riesgo</td>
+</tr>
+<tr>
+<td>Síndrome de Turner</td>
+<td>45,X en el 57%; del resto, un tercio alteraciones estructurales del X (i(X)(q10), r(X), del(Xq) o del(Xp)) y dos tercios mosaicos (por ejemplo, 45,X/46,XX; 45,X/46,XY; 45,X/47,XXX)</td>
+<td>Monosomía completa o parcial del X; hipogonadismo con fenotipo femenino; talla baja (no suele superar 150 cm), cuello alado, cubito valgo, amenorrea, genitales infantiles, cintillas ováricas</td>
+<td>1 de cada 2.000 nacidas vivas (la alteración de los cromosomas sexuales más frecuente en mujeres); malformaciones cardiacas en el 25-50% (coartación preductal de la aorta y válvula aórtica bicúspide); el 50% desarrolla autoanticuerpos frente al tiroides y hasta la mitad hipotiroidismo clínico; alteraciones metabólicas (intolerancia a la glucosa, obesidad, esteatosis hepática no alcohólica, resistencia a la insulina)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Fundamentos:
+<ul>
+<li><strong>Hipótesis de Lyon (1961)</strong>: solo un cromosoma X está activo; el otro se heteropicnotiza; la inactivación del X materno o paterno es aleatoria en torno al día 5,5 embrionario y persiste en todas las células derivadas; las mujeres normales son mosaicos de dos poblaciones. El X inactivo se ve como el corpúsculo de Barr. El gen XIST, un ARN largo no codificante, recubre el X inactivo e inicia el silenciamiento por modificación de la cromatina y metilación del ADN; es apagado en el X activo.</li>
+<li><strong>Genes que escapan a la inactivación</strong>: un 30% de los genes de Xp y un número menor (3%) en Xq, y los de las regiones seudoautosómicas. Si bastara una dosis de los genes del X, la monosomía del síndrome de Turner no debería resultar perjudicial, y sin embargo produce alteraciones graves; además, los dos X se reactivan en las ovogonias antes de la primera división meiótica.</li>
+<li><strong>Cromosoma Y</strong>: el gen SRY (región determinante del sexo de Y), en el brazo corto distal, condiciona el desarrollo testicular; la región específica masculina (MSY) alberga 75 genes codificantes que se consideran específicos de los testículos e implicados en la espermatogenia (todas las deleciones del Y se asocian a azoospermia). El X tiene 840 genes codificantes.</li>
+<li>Reglas generales de los trastornos de los cromosomas sexuales: producen problemas crónicos sutiles de desarrollo sexual y fertilidad; a menudo difíciles de diagnosticar al nacer y diagnosticados en la pubertad; cuantos más cromosomas X se añaden, mayor riesgo de discapacidad intelectual.</li>
+</ul></li>
+<li>Patogenia del Klinefelter (mecanismos citados):
+<ul>
+<li>Compensación de dosis incompleta: alrededor del 35% de los genes ligados al X escapan a la inactivación; la copia adicional genera sobrepresión de uno o más genes que parece responsable del hipogonadismo.</li>
+<li>El gen SHOX (región seudoautosómica Xp), sin inactivación con copia adicional, explicaría la alta estatura y las piernas largas.</li>
+<li>El gen del receptor de andrógenos (en el X) contiene repeticiones CAG muy polimorfas; los receptores con repeticiones cortas son más sensibles a los andrógenos. En los XXY se inactiva preferencialmente el X portador del alelo con repeticiones cortas; en contexto de testosterona baja, los receptores con repeticiones largas exacerban el hipogonadismo y ciertos rasgos como el pene pequeño.</li>
+</ul></li>
+<li>Patogenia del Turner: cerca del 80% de los casos llevan un X de origen materno (anomalía de la gametogenia paterna). Los ovarios fetales se desarrollan normalmente hasta las 18 semanas; después, la pérdida acelerada de ovocitos llega a ser completa a los 2 años de edad, y los ovarios quedan como hebras fibrosas atróficas sin óvulos ni folículos (cintillas ováricas): "la menopausia se produce antes de la menarquia". El SHOX en Xp22.33 (región seudoautosómica) explica por haploinsuficiencia la talla baja (deleciones de SHOX en el 2-5% de los niños con talla baja); los genes del brazo largo afectan la fertilidad y la menstruación. Entre el 5 y el 10% de las pacientes tienen secuencias del Y (45,X/46,XY o fragmentos translocados) con riesgo aumentado de gonadoblastoma. La hormona del crecimiento y el estradiol se emplean con un grado razonable de éxito.</li>
+<li>Ambigüedad sexual: el sexo genético depende del cromosoma Y; el sexo gonadal de las características histológicas de las gónadas; el sexo ductal de los derivados de los conductos de Müller o Wolff; el sexo genital del aspecto de los genitales externos. Se denomina <strong>ambigüedad sexual</strong> a la discrepancia entre estos criterios. El <strong>hermafrodita verdadero</strong> tiene tejido testicular y ovárico; el <strong>seudohermafrodita</strong> presenta desacuerdo entre el sexo fenotípico y el gonadal (el femenino tiene ovarios y genitales externos masculinos; el masculino, tejido testicular y genitales femeninos).</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Trisomías y cromosomas sexuales</span>La trisomía 21 es 95% libre (no separación materna), 4% translocación robertsoniana y 1% mosaico, con riesgo leucémico x20 LLA-B y x500 LMA. En los cromosomas sexuales, Klinefelter (47,XXY, hipogonadismo por genes que escapan a la inactivación) se opone a Turner (45,X, haploinsuficiencia de SHOX, talla baja y cintillas ováricas). La hipótesis de Lyon explica la tolerancia relativa de los desequilibrios del X.</div>
+</section><section id="sec-12-trastornos-monogenicos-de-herencia-no-clasica" class="card">
+<div class="section-kicker"><span class="n">12</span> Sección</div>
+<h2>Trastornos monogénicos de herencia no clásica</h2>
+<p>Cuatro tipos: enfermedades por mutaciones en repeticiones de trinucleótidos; trastornos por genes mitocondriales; trastornos por impronta genómica; trastornos por mosaicismo gonadal.</p>
+<h3 id="enfermedades-por-expansión-de-repeticiones-de-trinucleótidos">Enfermedades por expansión de repeticiones de trinucleótidos</h3>
+<ul>
+<li>Causa genética importante de enfermedad (sobre todo, trastornos neurodegenerativos); unas 40 enfermedades identificadas, la primera el síndrome del cromosoma X frágil en 1991.</li>
+<li>Principios: las repeticiones contienen normalmente guanina y citosina; su expansión por encima de un umbral altera la función del gen de distintas maneras. La tendencia a expandirse depende del sexo del progenitor transmisor (ovogenia en el síndrome del cromosoma X frágil; espermatogenia en la enfermedad de Huntington). También existen enfermedades asociadas a secuencias inestables de cuatro, cinco y seis nucleótidos, establecidas como mecanismos fundamentales de algunos trastornos neuromusculares.</li>
+<li>Tres mecanismos de enfermedad:
+<ul>
+<li><strong>Pérdida de función</strong> por silenciamiento transcripcional (repeticiones en regiones no codificantes), como en el síndrome del cromosoma X frágil.</li>
+<li><strong>Ganancia de función tóxica</strong> por alteración de la estructura proteica (repeticiones en regiones codificantes), como en Huntington y las ataxias espinocerebelosas.</li>
+<li><strong>Ganancia de función tóxica mediada por ARN</strong>, como síndrome de temblor y ataxia asociado al cromosoma X frágil (también con repeticiones en regiones no codificantes).</li>
+</ul></li>
+<li>Expansiones en regiones codificantes: tripletes CAG que codifican tractos de <strong>poliglutamina</strong>; degeneración neurológica progresiva que aparece en edades medias de la vida. Las proteínas mal plegadas tienden a agregarse: los agregados pueden suprimir la transcripción, provocar disfunción mitocondrial o activar la respuesta de estrés ante proteínas no plegadas con apoptosis; morfológicamente, los trastornos poliglutamínicos muestran grandes <strong>inclusiones intranucleares</strong> con las proteínas mutantes agregadas. La evidencia de la función tóxica directa de los agregados no es generalizada: algunos autores consideran que la agregación puede ser protectora por secuestro de las proteínas mal plegadas, y otros modelos implican los efectos de fragmentos proteolíticos del tracto de poliglutamina.</li>
+</ul>
+<h3 id="tabla-ejemplos-de-trastornos-por-repeticiones-de-trinucleótidos">Tabla: ejemplos de trastornos por repeticiones de trinucleótidos</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos monogénicos de herencia no clásica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Gen y locus</th>
+<th>Repetición</th>
+<th>Región afectada</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Síndrome del cromosoma X frágil</td>
+<td>FMR1 (Xq27.3)</td>
+<td>CGG</td>
+<td>No codificante (5' no traducida)</td>
+<td>Pérdida de función (silenciamiento)</td>
+</tr>
+<tr>
+<td>Ataxia de Friedreich</td>
+<td>FXN (9q21.1)</td>
+<td>GAA</td>
+<td>No codificante</td>
+<td>Pérdida de función (silenciamiento)</td>
+</tr>
+<tr>
+<td>Distrofia miotónica</td>
+<td>DMPK (19q13.3)</td>
+<td>CTG</td>
+<td>No codificante</td>
+<td>Ganancia de función tóxica por ARN</td>
+</tr>
+<tr>
+<td>Síndrome de temblor/ataxia asociado al cromosoma X frágil</td>
+<td>FMR1</td>
+<td>CGG</td>
+<td>No codificante</td>
+<td>Ganancia de función tóxica por ARN</td>
+</tr>
+<tr>
+<td>Insuficiencia ovárica primaria asociada al cromosoma X frágil</td>
+<td>FMR1</td>
+<td>CGG</td>
+<td>No codificante</td>
+<td>Ganancia de función tóxica por ARN</td>
+</tr>
+<tr>
+<td>Atrofia espinobulbar muscular (enfermedad de Kennedy)</td>
+<td>Receptor de andrógenos (Xq12)</td>
+<td>CAG</td>
+<td>Codificante</td>
+<td>Ganancia de función tóxica</td>
+</tr>
+<tr>
+<td>Enfermedad de Huntington</td>
+<td>HTT (4p16.3)</td>
+<td>CAG</td>
+<td>Codificante</td>
+<td>Ganancia de función tóxica</td>
+</tr>
+<tr>
+<td>Atrofia dentatorubral palidoluisiana (síndrome Haw River)</td>
+<td>ATNL1 (12p13.31)</td>
+<td>CAG</td>
+<td>Codificante</td>
+<td>Ganancia de función tóxica</td>
+</tr>
+<tr>
+<td>Ataxias espinocerebelosas tipos 1, 2, 3 (Machado-Joseph), 6 y 7</td>
+<td>ATXN1, ATXN2, ATXN3 y genes de la ataxina 6 y 7</td>
+<td>CAG</td>
+<td>Codificante</td>
+<td>Ganancia de función tóxica</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Valores exactos constados en la fuente: FMR1 normal 6-55 repeticiones CGG (media 29), premutación 55-200 y mutación completa 200-4.000, con metilación anormal a partir de 230; FXN normal 7-34 y completa más de 100 (GAA); DMPK normal 5-37 y completa más de 100 (CTG).</li>
+</ul>
+<h3 id="síndrome-del-cromosoma-x-frágil-sxf">Síndrome del cromosoma X frágil (SXF)</h3>
+<ul>
+<li>Causa más común de discapacidad intelectual en varones y segunda causa genética de discapacidad intelectual en general tras el síndrome de Down. Frecuencia: 1 varón afectado por 1.550 y 1 mujer por 8.000. Su nombre deriva de la anomalía citogenética de discontinuidad de la tinción en el brazo largo del X cuando se cultivan las células en medio con carencia de folato (<strong>sitio frágil</strong>); este método ha sido reemplazado por el análisis del tamaño de las repeticiones.</li>
+<li>Clínica en varones: discapacidad intelectual importante; cara larga con mandíbula grande, orejas grandes evertidas, <strong>macrorquidia</strong> (testículos grandes; rasgo distintivo en al menos el 90% de los varones pospuberales); hiperextensibilidad articular, paladar alto ojival y prolapso de la válvula mitral. Neuropsiquiatría: epilepsia (30%), comportamiento agresivo (90%), trastornos del espectro autista y trastorno de ansiedad/hiperactividad (50-75%); entre el 2 y el 5% de los autistas previamente no sindrómicos tienen una mutación de FMR1.</li>
+<li>Patrones atípicos de transmisión:
+<ul>
+<li>Hombres portadores: alrededor del 20% de los varones con premutación conocida son clínicamente normales ("hombres normales transmisores", que la transmiten por todas sus hijas).</li>
+<li>Mujeres afectadas: entre el 30 y el 50% de las portadoras tienen discapacidad intelectual.</li>
+<li>El riesgo de fenotipo depende de la posición en el árbol genealógico: hermanos de un varón transmisor, riesgo del 9% de discapacidad intelectual; nietos, riesgo del 40%.</li>
+<li><strong>Anticipación</strong>: empeora con cada generación, por conversión de las premutaciones en mutaciones completas durante la ovogenia.</li>
+</ul></li>
+<li>Patogenia: en la población normal, el gen FMR1 contiene entre 6 y 55 repeticiones CGG en el extremo 5' no traducido. Cuando superan 230 repeticiones, toda la región 5' se metila; la metilación se extiende hacia la región promotora y la transcripción de FMR1 queda suprimida (pérdida de función). El producto del gen, la FMRP (proteína de retraso mental del X frágil), es una proteína citoplásmica expresada ampliamente, sobre todo en el encéfalo y el testículo, los dos órganos más afectados. Se une al ARNm asociado a polisomas y regula su transporte intracelular hacia las dendritas (donde se ensambla en complejos con transcritos de proteínas pre- y postsinápticas, exportados al citoplasma y transportados a las dendritas cerca de las sinapsis) y es un regulador de la traducción: suprime la síntesis proteica a partir de los ARNm unidos en respuesta a la señalización de los receptores metabótropos del glutamato tipo I (mGlu-R). Su déficit genera un desequilibrio en la síntesis proteica sináptica y pérdida de plasticidad sináptica, esencial para el aprendizaje y la memoria.</li>
+<li>Diagnóstico: la PCR de las repeticiones es actualmente el método de elección.</li>
+<li>Trastornos de portadores de la premutación:
+<ul>
+<li><strong>Insuficiencia ovárica primaria asociada a X frágil</strong>: alrededor del 20% de las mujeres portadoras desarrollan insuficiencia ovárica prematura (antes de los 40 años), con irregularidades menstruales, fertilidad reducida, FSH elevada y hormona antimülleriana reducida; la menopausia llega unos 5 años antes. Los agregados de ARNm de FMR1 se han detectado en células de la granulosa y del estroma ovárico; tal vez causan la muerte prematura de los folículos.</li>
+<li><strong>Síndrome de temblor/ataxia asociado al X frágil</strong>: cerca del 50% de los hombres transmisores desarrollan, desde la sexta década, un síndrome neurodegenerativo progresivo con temblores intencionales y ataxia cerebelosa, con posible parkinsonismo.</li>
+<li>Mecanismo: el gen FMR1 con la premutación no está metilado ni silenciado; los ARNm con triplete CGG son tóxicos, secuestran proteínas de unión a ARN y forman inclusiones intranucleares en los sistemas nerviosos central y periférico (ganancia de función tóxica).</li>
+</ul></li>
+</ul>
+<h3 id="mutaciones-de-genes-mitocondriales-neuropatía-óptica-hereditaria-de-leber">Mutaciones de genes mitocondriales: neuropatía óptica hereditaria de Leber</h3>
+<ul>
+<li>El ADN mitocondrial humano contiene 37 genes: 22 que se transcriben en ARN de transferencia, 2 en ARN ribosómico y 13 que codifican subunidades de enzimas de la cadena respiratoria (fosforilación oxidativa).</li>
+<li><strong>Herencia materna</strong>: los óvulos contienen numerosas mitocondrias en su citoplasma y los espermatozoides pocas o ninguna, de modo que el ADNmt del cigoto deriva por completo del óvulo. Las madres transmiten el ADNmt a todos sus hijos (varones y mujeres); solo las hijas lo transmiten a su descendencia.</li>
+<li>Propiedades adicionales: las mutaciones afectan sobre todo a órganos muy dependientes de la fosforilación oxidativa (sistema nervioso central, músculo esquelético, músculo cardiaco, hígado y riñones); <strong>heteroplasmia</strong>: cada mitocondria dispone de miles de copias de ADNmt y las mutaciones perniciosas suelen afectar solo a algunas copias, de modo que coexisten ADNmt mutante y de tipo silvestre (se necesita una cantidad mínima de ADNmt mutante antes de que la disfunción determine la enfermedad: "efecto umbral"); por la distribución aleatoria de las mitocondrias durante la división celular, el porcentaje de ADNmt mutante y normal en las células hijas variar mucho, y por tanto la expresión de los trastornos es muy variable.</li>
+<li>Prototipo: <strong>neuropatía óptica hereditaria de Leber</strong>, enfermedad neurodegenerativa con pérdida bilateral y progresiva de la visión central, primera manifestación entre los 15 y 35 años y, al cabo, ceguera; en algunas familias, defectos de la conducción cardiaca y alteraciones neurológicas menores.</li>
+</ul>
+<h3 id="impronta-genómica">Impronta genómica</h3>
+<ul>
+<li>En algunos genes, existen diferencias funcionales importantes entre el alelo de origen materno y el paterno por procesos epigenéticos llamados <strong>impronta</strong>: se inactiva selectivamente el alelo paterno o materno (impronta paterna o materna). Ocurre en el óvulo o el espermatozoide antes de la fecundación y se transmite de forma estable a todas las células somáticas durante la mitosis. Se asocia a patrones diferenciales de metilación del ADN en dinucleótidos CG (metilación y desacetilación de la histona H4). El marcado tiene lugar durante la gametogenia. Se estima entre 200 y 600 genes improntados; suelen agruparse con "regiones de control de la impronta" en cis.</li>
+<li><strong>Síndrome de Prader-Willi</strong>: discapacidad intelectual, talla baja, hipotonía, profunda hiperfagia, obesidad, manos y pies pequeños e hipogonadismo.</li>
+<li><strong>Síndrome de Angelman</strong>: discapacidad intelectual, microcefalia, ataxia, convulsiones y risa inapropiada.</li>
+<li>Mecanismos implicados en ambos:
+<ul>
+<li><strong>Deleciones (70% de los casos)</strong>: en Prader-Willi se deleciona un gen o conjunto de genes del cromosoma 15 de origen paterno (banda q12 del brazo largo del 15, deleción de 5 Mb), cuyos homólogos maternos están improntados, de manera que se pierde el único alelo funcional. En Angelman la misma región se deleciona del cromosoma materno, cuyo homólogo paterno está improntado.</li>
+<li><strong>Disomia uniparental (20-25%)</strong>: se heredan dos copias del cromosoma 15 de un solo progenitor (ambas maternas en Prader-Willi y ambas paternas en Angelman); el efecto neto es equivalente.</li>
+<li><strong>Impronta defectuosa (1-4%)</strong>: en Prader-Willi el cromosoma paterno lleva impronta materna; en Angelman los cromosomas maternos también llevan la impronta paterna y no hay alelos funcionales.</li>
+</ul></li>
+<li>Gen del Angelman: <strong>UBE3A</strong> (ubicuitina ligasa en 15q12), improntado en el cromosoma paterno y expresado desde el alelo materno principalmente en regiones específicas del encéfalo. Su ausencia inhibe la formación de sinapsis y la plasticidad sináptica; la impronta es específica de cada tejido, de modo que UBE3A se expresa desde los dos alelos en la mayoría de los demás tejidos.</li>
+<li>Prader-Willi: no se ha podido implicar un gen concreto; se cree que participan un conjunto de genes del intervalo 15q11.2-q13 (improntados en el materno y expresados desde el paterno), entre ellos la familia de genes SNORP, que codifica pequeños ARN nucleolares implicados en modificaciones postranscripcionales de los ARN ribosómicos y de otros pequeños ARN.</li>
+<li>Diagnóstico molecular de ambos: valoración del estado de metilación de los genes marcadores y la FISH.</li>
+<li>Los efectos del progenitor de origen se han descrito también en otros procesos hereditarios como la Huntington, la distrofia miotónica y en la carcinogenia.</li>
+</ul>
+<h3 id="mosaicismo-gonadal">Mosaicismo gonadal</h3>
+<ul>
+<li>En algunos trastornos autosómicos dominantes (por ejemplo, la osteogenia imperfecta), padres de fenotipo normal tienen más de un hijo afectado, lo que aparentemente violaría las leyes de Mendel. La base es el <strong>mosaicismo gonadal</strong>: una mutación durante el desarrollo embrionario precoz, superada la fase del cigoto, que afecta solo a las células destinadas a formar las gónadas. Los gametos del progenitor portan la mutación y sus células somáticas son totalmente normales, pero puede transmitirla, con un riesgo dependiente del porcentaje de células germinativas que portan la mutación.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Cuatro mecanismos que violan Mendel</span>Expansión de tripletes con anticipación (SXF por silenciamiento de FMR1 sobre 230 CGG; Huntington por poliglutamina tóxica), herencia materna mitocondrial con heteroplasmia y efecto umbral, impronta genómica (Prader-Willi falta el alelo paterno, Angelman el materno, gen UBE3A) y mosaicismo gonadal (osteogenia imperfecta en hermanos de padre sano).</div>
+</section><section id="sec-13-diagnostico-genetico-molecular" class="card">
+<div class="section-kicker"><span class="n">13</span> Sección</div>
+<h2>Diagnóstico genético molecular</h2>
+<ul>
+<li>Evolución: cariotipado convencional para trastornos citogenéticos; inmunotransferencia de Southern para la Huntington; secuenciación de Sanger (1977) y PCR (1983); desde finales de los noventa, la secuenciación paralela masiva (NGS), que hoy permite secuenciar un genoma completo por menos de 1.000 dólares en pocos días. Ciertos tipos de anomalías (por ejemplo, deleciones de escala de kilobases y reordenamientos génicos) siguen siendo difíciles de detectar por NGS y las técnicas antiguas continúan teniendo un papel importante.</li>
+<li>Los marcadores genéticos pueden ser <strong>constitucionales</strong> (en todas las células de la persona, como las mutaciones de CFTR en la fibrosis quística) o <strong>somáticas</strong> (restringidas a tipos de tejidos, como las mutaciones de RAS en varios cánceres); igual que los ácidos nucleicos de agentes infecciosos (confinados a determinadas células o localizaciones). El tipo de muestra se adapta al contexto.</li>
+</ul>
+<h3 id="indicaciones-de-las-pruebas">Indicaciones de las pruebas</h3>
+<ul>
+<li><strong>Pruebas prenatales hereditarias</strong>: se plantean en todos los fetos con riesgo de anomalía citogenética. Indicaciones: edad avanzada de la madre; progenitor portador de un reordenamiento equilibrado con riesgo de segregación anómala y aneuploidia; anomalías fetales visibles en la ecografía; pruebas sanguíneas maternas de rutina con riesgo de síndrome de Down u otra trisomía; fetos con riesgo conocido de trastornos mendelianos (por ejemplo, fibrosis quística o atrofia muscular espinal, por antecedentes familiares). Se realiza sobre células de amniocentesis, biopsia de vellosidades coriónicas o sangre del cordón umbilical; hasta el 10% del ADN fetal libre en la sangre materna abre una nueva era de diagnóstico prenatal no invasivo.</li>
+<li>Pósnatales (recién nacidos y niños): malformaciones congénitas múltiples; sospecha de síndrome metabólico; discapacidad intelectual o retraso del desarrollo no explicados; sospecha de aneuploidia u otra anomalía cromosómica; sospecha de enfermedad monogénica previa en la familia o nueva.</li>
+<li>Adultos: síndromes de cáncer hereditario (por antecedentes familiares o presentación inhabitual, como múltiples tipos de cáncer o una edad inusualmente joven en el diagnóstico); enfermedades monogénicas anormalmente leves (fibrosis quística atenuada); trastornos neurodegenerativos (Alzheimer familiar, Huntington).</li>
+<li>Patología adquirida:
+<ul>
+<li>Cáncer: detección de mutaciones específicas y de alteraciones citogenéticas específicas de algunos tumores (fusión BCR-ABL en la leucemia mieloide crónica); determinación de clonalidad como indicador de origen neoplásico; identificación de alteraciones genéticas que orientan las decisiones terapéuticas (amplificación de HER2 en el cáncer de mama; mutación de EGFR en el carcinoma pulmonar); valoración de la eficacia (enfermedad residual mínima por PCR cuantitativa de BCR-ABL); detección de mutaciones secundarias resistentes a fármacos.</li>
+<li>Infecciosas: detección de material genético del microorganismo para el diagnóstico definitivo (VIH, micobacterias, virus del papiloma humano, virus del herpes en el sistema nervioso central); identificación de alteraciones genéticas del genoma microbiano asociadas a resistencias farmacológicas; medida de la eficacia (carga vírica en VIH, virus de Epstein-Barr y hepatitis C).</li>
+</ul></li>
+<li>Consideraciones analíticas: sensibilidad, especificidad, exactitud, reproducibilidad, coste, mano de obra, fiabilidad y tiempo de resultados. El diseño depende del espectro de anomalías genéticas de la enfermedad en la población de pacientes en estudio: las pruebas estándar de fibrosis quística tienen una sensibilidad del 94% de las mutaciones patógenas de CFTR en askenazíes, pero identifican a menos del 50% en poblaciones asiáticas; incluso con secuenciación extensa de CFTR, en el 10% de los pacientes con fibrosis quística clásica no se identifican mutaciones patógenas, porque la NGS pasa por alto lesiones genéticas (deleciones de escala de kilobases y reordenamientos génicos) que otros métodos detectan mejor.</li>
+</ul>
+<h3 id="tabla-métodos-del-diagnóstico-genético-molecular">Tabla: métodos del diagnóstico genético molecular</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Diagnóstico genético molecular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Aplicación principal</th>
+<th>Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCR seguida de secuenciación de Sanger</td>
+<td>Secuenciación de un producto de PCR comparado con la secuencia normal</td>
+<td>Método base durante décadas; requiere plantilla homogénea y produce un resultado "promedio"</td>
+</tr>
+<tr>
+<td>NGS tras PCR múltiple</td>
+<td>Secuenciación masiva de muchas regiones simultáneamente</td>
+<td>Más sensible que Sanger: detecta variantes presentes en un pequeño porcentaje de moléculas (situación frecuente en el cáncer)</td>
+</tr>
+<tr>
+<td>Extensión del cebador de una base</td>
+<td>Mutaciones en una posición nucleotídica específica (por ejemplo, codón 600 del gen BRAF)</td>
+<td>Nucleótidos terminadores de diferentes colores para las bases normal y variante; muy sensible, con la desventaja de producir solo 1 par de bases de datos</td>
+</tr>
+<tr>
+<td>Análisis de fragmentos de restricción</td>
+<td>Cuando la mutación altera un sitio de restricción</td>
+<td>Digestión con endonucleasas; aplicación menos amplia que la secuenciación directa</td>
+</tr>
+<tr>
+<td>Análisis de longitud del amplicón</td>
+<td>Mutaciones que cambian la longitud del ADN (deleciones, expansiones)</td>
+<td>Por ejemplo, SXF; si la expansión es demasiado grande para la PCR convencional, se requiere la inmunotransferencia de Southern</td>
+</tr>
+<tr>
+<td>PCR en tiempo real</td>
+<td>Cuantificación de secuencias durante la fase exponencial de la amplificación</td>
+<td>Nivel de secuencias BCR-ABL en la leucemia mieloide crónica; carga vírica de VIH o virus de Epstein-Barr</td>
+</tr>
+<tr>
+<td>FISH</td>
+<td>Alteraciones numéricas (aneuploidia), microdeleciones sutiles y translocaciones complejas no detectadas en el cariotipado; amplificación génica (HER2, NMYC)</td>
+<td>Sondas sobre metafase, interfase, citologías por impronta y tejidos de archivo; útil cuando el diagnóstico rápido es esencial (confirmación de la translocación de la leucemia promielocítica aguda antes de usar ácido retinoico)</td>
+</tr>
+<tr>
+<td>Matrices CGH</td>
+<td>Variación del número de copias en todo el genoma, incluso pérdidas o ganancias focales</td>
+<td>ADN de prueba y de referencia con dos fluoróforos; la mezcla igual produce fluorescencia amarilla; las pérdidas o ganancias tiñen las manchas del color correspondiente</td>
+</tr>
+<tr>
+<td>Matrices de SNP</td>
+<td>Variación del número de copias más cigosidad; detección de pérdida de heterocigosidad (disomia uniparental) y mosaicismo</td>
+<td>Empleadas en pediatría con cariotipo normal: malformaciones congénitas, rasgos dismórficos, retraso del desarrollo y autismo; identifican la disomia uniparental (Prader-Willi y Angelman)</td>
+</tr>
+<tr>
+<td>Análisis de metilación</td>
+<td>Metilación de promotores (islotes CpG)</td>
+<td>Indispensable en el SXF (hipermetilación de FMR1) y en Prader-Willi y Angelman; el bisulfito sódico convierte la citosina no metilada en uracilo, mientras las citosinas metiladas quedan protegidas</td>
+</tr>
+<tr>
+<td>Análisis de ARN</td>
+<td>Detección y cuantificación de virus ARN (VIH, hepatitis C); transcritos de fusión (BCR-ABL en la leucemia mieloide crónica)</td>
+<td>El ARN se convierte en ADNc por transcriptasa inversa; la PCR en tiempo real sobre ADNc es el método de elección para la enfermedad residual mínima en la leucemia mieloide crónica</td>
+</tr>
+<tr>
+<td>NGS</td>
+<td>Secuenciación paralela masiva de casi cualquier muestra de ADN</td>
+<td>Tres principios comunes: separación espacial de las moléculas, amplificación local in situ y secuenciación en paralelo; lecturas cortas (menos de 500 pb)</td>
+</tr>
+<tr>
+<td>Bioinformática</td>
+<td>Alineación, detección de variantes, anotación e interpretación y detección de firmas mutacionales</td>
+<td>400.000 millones de pares de bases al día en los instrumentos de alto rendimiento; las firmas mutacionales revelan exposiciones (por ejemplo, a la luz ultravioleta) o defectos de la reparación del ADN: los cáncers con inestabilidad de microsatélites (IMS) responden a los inhibidores de los puntos de control inmunitario</td>
+</tr>
+<tr>
+<td>NGS: paneles, exoma y genoma completo</td>
+<td>Secuenciación dirigida de paneles génicos; exoma completo (WES, alrededor del 1,5% del genoma); genoma completo (WGS)</td>
+<td>Los paneles son la mayoría de las pruebas clínicas de NGS; en el cáncer, orientados a detectar el mayor número posible de mutaciones tratables o pronósticas; la WES responde a casos raros de trastornos de la línea germinal (y se emplea en oncología en investigación); la WGS es la única modalidad de NGS que detecta reordenamientos estructurales nuevos (inserciones, deleciones, translocaciones), aunque sus costes altos, tiempos lentos y retos informáticos impiden su uso sistemático</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="marcadores-de-polimorfismos-y-diagnóstico-molecular">Marcadores de polimorfismos y diagnóstico molecular</h3>
+<ul>
+<li>Cuando la mutación exacta no se conoce o la prueba del defecto primario es problemática, las pruebas aprovechan el fenómeno del <strong>ligamiento</strong>: en humanos, dos loci separados por 100.000 pb en el mismo cromosoma están casi seguramente cosegregados durante la meiosis (por la mínima posibilidad de entrecruzamiento); cuanto más cerca están los loci, mayor es la probabilidad de que hereden juntos.</li>
+<li>Marcadores: SNP (en promedio, cada 1.000 nucleótidos) y polimorfismos de longitud repetida, subdivididos en repeticiones de tipo <strong>microsatélite</strong> (de menos de 1 kb, con motivo repetido de 2-6 pb) y <strong>minisatélite</strong> (1-3 kb, con motivo de 15-70 pb). El número de repeticiones es muy variable y se distinguen por tamaño tras PCR con cebadores que flanqueen la repetición.</li>
+<li>Ejemplo: ligamiento con repeticiones minisatélite del gen PKD1 (históricamente muy difícil de secuenciar) en la poliquistosis renal autosómica dominante; el alelo microsatélite más largo se vincula en la familia al alelo de la enfermedad.</li>
+<li>Otros usos de las pruebas de polimorfismos: determinación de la familiaridad y la identidad en el trasplante, genética del cáncer, pruebas de paternidad y estudios forenses (la PCR es posible incluso con muestras altamente degradadas); en los trasplantes de células madre hematopoyéticas, la comparación de marcadores de microsatélites del donante y del receptor en la sangre del paciente delimita el quimerismo.</li>
+</ul>
+<h3 id="epigenética">Epigenética</h3>
+<ul>
+<li>Definición: estudio de las modificaciones hereditarias del ADN o de la cromatina que no alteran la secuencia del ADN (metilación del ADN, metilación y acetilación de las histonas).</li>
+<li>Importancia: regulación de la expresión génica específica de tejidos, inactivación del cromosoma X, impronta, envejecimiento y cáncer.</li>
+<li>La expresión génica suele correlacionar de forma negativa con el nivel de metilación del ADN (sobre todo de citosinas en las regiones promotoras ricas en dinucleótidos CG, llamadas <strong>islotes CpG</strong>); el aumento de la metilación se acompaña de alteraciones concomitantes de la metilación y acetilación de las histonas.</li>
+<li>El diagnóstico de un número creciente de enfermedades requiere análisis de metilación de promotores: en el SXF (hipermetilación que silencia FMR1) y en los síndromes de Prader-Willi y Angelman. Para detectar la metilación se emplea el tratamiento con bisulfito sódico, que convierte la citosina no metilada en uracilo (actúa como la tímina en las reacciones en dirección 3') mientras las citosinas metiladas quedan protegidas, y tras el tratamiento ambas se distinguen por secuenciación.</li>
+</ul>
+
+</section><section id="sec-14-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">14</span> Sección</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Definición de mutación puntual, de sentido erróneo (conservadora y no conservadora), sin sentido, de desplazamiento de la pauta; en la fibrosis quística la deleción de tres bases no desplaza la pauta de lectura.</li>
+<li>Distinción entre hereditario (transmisión lineal por la línea germinal) y congénito (presente al nacer, puede no ser genético: sífilis congénita); Huntington, enfermedad genética no congénita.</li>
+<li>Penetrancia incompleta frente a expresividad variable; pleotropismo (un gen, muchos efectos, drepanocitosis) frente a heterogeneidad genética (muchos genes, un rasgo: sordera infantil grave).</li>
+<li>Patrones de herencia (riesgo del 50% en AD, 25% en AR, y papel del hombre hemicigótico en el ligado al X recesivo; no existe herencia ligada al Y).</li>
+<li>En la AD dominan receptores y proteínas estructurales (con efecto dominante negativo); en la AR, enzimas.</li>
+<li>Marfan: FBN1 (fibrilina 1); ectopia lentis, necrosis quística de la media, disección aórtica, prolapso mitral; papel del TGF-beta (activación excesiva por pérdida del secuestro por las microfibrillas).</li>
+<li>Hipercolesterolemia familiar: LDLR (80-85%), ApoB (5-10%) y PCSK9 activadora (1-2%); heterocigoto 1 de cada 200; estatinas y anticuerpos anti-PCSK9 aumentan el número de receptores de LDL.</li>
+<li>Depósito lisosómico: manosa-6-fosfato como etiqueta; depósito primario (estrés y acumulación lisosómica) y secundario por autofagia defectuosa; alfa-sinucleína y huntingtina acumuladas; vínculo con Parkinson (Gaucher) y con Alzheimer (Niemann-Pick tipo C).</li>
+<li>Hexosaminidasa A (Tay-Sachs) y prevalencia askenazí (1 de cada 30); mancha rojo cereza macular; Niemann-Pick tipo A con afectación neurológica y tipo B sin ella; tipo C por defecto del transporte de colesterol (NPC1 y NPC2).</li>
+<li>Gaucher: tres subtipos; células de Gaucher de citoplasma fibrilar tipo papel arrugado; sustitución enzimática.</li>
+<li>MPS: Hurler (MPS I, alfa-L-iduronidasa, recesiva, opacidad corneal, muerte a los 6-10 años) frente a Hunter (MPS II, iduronato-2-sulfatasa, ligada al X, sin opacidad corneal y más leve).</li>
+<li>Glucogenosis: von Gierke (glucosa-6-fosfatasa, hepatorrenal, hipoglucemia), McArdle (fosporilasa muscular, calambres pos ejercicio sin lactato), Pompe (alfa-glucosidasa ácida lisosómica, cardiomegalia masiva).</li>
+<li>Trisomía 21: 95% libre (no separación meiótica materna), 4% translocación robertsoniana, 1% mosaico; riesgo leucémico (x20 LLA-B, x500 LMA).</li>
+<li>Deleción 22q11.2: unifica DiGeorge y velocardiofacial; TBX1 como gen asociado; riesgo de esquizofrenia (25% de los adultos afectados).</li>
+<li>Hipótesis de Lyon (inactivación aleatoria del X, un solo X activo); genes que escapan a la inactivación; Klinefelter (47,XXY: copia extra de genes sin inactivación, SHOX en región seudoautosómica e hiperestatura) frente a Turner (45,X: haploinsuficiencia de SHOX, talla baja, cintillas ováricas).</li>
+<li>Expansión de triplete: tres mecanismos (pérdida de función, ganancia de función proteica, ganancia de función tóxica por ARN); expansión dependiente del sexo del progenitor transmisor (ovogenia en el SXF; espermatogenia en Huntington); anticipación; premutación 55-200 CGG (síndrome de temblor/ataxia e insuficiencia ovárica primaria) frente a mutación completa mayor de 230 (silenciada).</li>
+<li>Impronta: en Prader-Willi falta el alelo paterno (deleción 15q11-q13 paterna, disomia uniparental materna o impronta defectuosa); en Angelman falta el alelo materno (gen UBE3A, ubicuitina ligasa).</li>
+<li>Gaucher: glucocerebrosidasa; células de Gaucher de citoplasma fibrilar con aspecto de papel arrugado; tipo I no neuronopático, tipo II agudo y tipo III intermedio; sustitución enzimática eficaz.</li>
+<li>Herencia mitocondrial: transmisión materna, heteroplasmia y efecto umbral; ejemplo: neuropatía óptica hereditaria de Leber.</li>
+<li>Métodos diagnósticos: de la PCR y secuenciación de Sanger a las matrices citogenómicas (CGH y SNP, con estudio de la variación del número de copias y pérdida de heterocigosidad), el análisis de metilación (SXF, Prader-Willi, Angelman) y la NGS (secuenciación dirigida, exoma, genoma completo; limitaciones frente a reordenamientos).</li>
+<li>ADN fetal libre en sangre materna: el 5-10% del ADN celular libre total; base del cribado prenatal no invasivo de las trisomías.</li>
+<li>Epigenética: el aumento de la metilación de los islotes CpG disminuye la expresión génica; el bisulfito sódico distingue citosinas metiladas y no metiladas.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enfermedades del sistema inmunitario · Anatomía Patológica UBB</title>
+<meta name="description" content="Enfermedades del sistema inmunitario. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Enfermedades del sistema inmunitario · Anatomía Patológica UBB">
+<meta property="og:description" content="Enfermedades del sistema inmunitario. Material de estudio del Certamen 1 de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
+    <h1>Capítulo 6. Enfermedades del sistema inmunitario</h1>
+    <p class="lede">Guía 06 de 10. Resumen completo del capítulo 6 con 73 filas de tabla. Sin citas por página: material del Certamen 1.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>06 de 10</strong></div><div><span>Capítulo</span><strong>6</strong></div><div><span>Páginas</span><strong>189-266</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>73</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-respuesta-inmunitaria-normal">Respuesta inmunitaria normal</a></li>
+        <li><a href="#sec-03-hipersensibilidad-lesion-tisular-mediada-por-el-sistema-inmunita">Hipersensibilidad: lesión tisular mediada por el sistema inmunitario</a></li>
+        <li><a href="#sec-04-enfermedades-autoinmunitarias">Enfermedades autoinmunitarias</a></li>
+        <li><a href="#sec-05-rechazo-de-trasplantes-de-tejidos">Rechazo de trasplantes de tejidos</a></li>
+        <li><a href="#sec-06-enfermedades-por-inmunodeficiencia">Enfermedades por inmunodeficiencia</a></li>
+        <li><a href="#sec-07-sindrome-de-inmunodeficiencia-adquirida-sida">Síndrome de inmunodeficiencia adquirida (sida)</a></li>
+        <li><a href="#sec-08-amiloidosis">Amiloidosis</a></li>
+        <li><a href="#sec-09-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C1">Índice C1</a>
+        <a href="05_Trastornos_Geneticos.html" title="Trastornos genéticos">05</a>
+        <a href="07_Neoplasias.html" title="Neoplasias">07</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 6 del Robbins y Cotran, 10ª edición: páginas impresas 189-266 (78 páginas).</div><p class="small">Este resumen del Certamen 1 se redactó antes de adoptar la cita por página; se publica sin reescribirlo. El <a href="manual.html">Manual del Certamen 1</a> incluye el índice tema-clase-Robbins y las fuentes.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Inmunidad innata: inmediata, sin memoria (TLR, NLR/inflamasoma, NK, complemento); adaptativa: tarda días, humoral (B) y celular (T), con memoria.</li><li>Diversidad de receptores por recombinación somática (RAG-1/RAG-2); reordenamientos distinguen proliferaciones policlonales de monoclonales.</li><li>Hipersensibilidad: I (IgE/mastocitos), II (anticuerpos contra células o matriz), III (inmunocomplejos, necrosis fibrinoide), IV (linfocitos T).</li><li>Autoinmunidad: fallo de tolerancia central (AIRE, deleción, edición) y periférica (CTLA-4/PD-1, T reguladores FOXP3, Fas); genes HLA más desencadenantes ambientales.</li><li>LES: anti-ADNbc y anti-Sm diagnósticos; nefritis lúpica clase IV difusa la más grave; rechazo de injerto hiperagudo, agudo, humoral (C4d) y crónico.</li><li>VIH infecta CD4+ (sida &lt; 200/µl); amiloidosis: depósito de proteínas en hoja beta, rojo Congo con birrefringencia verde manzana.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> Sección</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>El sistema inmunitario protege frente a patógenos, cáncer y aloinjertos, pero también puede dañar tejidos: la reactividad excesiva produce alergia y autoinmunidad, y los defectos producen inmunodeficiencias.</li>
+<li>La <strong>inmunidad innata</strong> responde de inmediato mediante barreras epiteliales, fagocitos, células dendríticas, linfocitos NK, células linfoides innatas y proteínas plasmáticas como el complemento. No tiene memoria.</li>
+<li>La <strong>inmunidad adaptativa</strong> tarda días pero es más potente: la humoral (linfocitos B y anticuerpos) combate microbios extracelulares; la celular (linfocitos T) combate microbios intracelulares y tumores.</li>
+<li>Los receptores linfocitarios se generan por <strong>recombinación somática</strong> (enzimas RAG-1 y RAG-2), lo que da una diversidad casi ilimitada y permite distinguir proliferaciones policlonales de monoclonales.</li>
+<li>Las reacciones lesivas se clasifican en cuatro tipos de <strong>hipersensibilidad</strong>: I (IgE y mastocitos), II (anticuerpos contra células o matriz), III (inmunocomplejos) y IV (linfocitos T).</li>
+<li>Las enfermedades <strong>autoinmunitarias</strong> resultan del fallo de la tolerancia central y periférica, con genes de predisposición (sobre todo HLA) y desencadenantes ambientales.</li>
+<li>El <strong>rechazo de trasplantes</strong> se debe a diferencias en el HLA y adopta formas hiperaguda, aguda (celular o humoral) y crónica.</li>
+<li>Las <strong>inmunodeficiencias</strong> son primarias (heredadas) o secundarias (adquiridas); el <strong>VIH/sida</strong> es la causa más importante de inmunodeficiencia secundaria.</li>
+<li>La <strong>amiloidosis</strong> es el depósito extracelular de proteínas mal plegadas en hoja beta, con tinción de rojo Congo y birrefringencia verde manzana con luz polarizada.</li>
+</ul></div>
+<hr />
+
+</section><section id="sec-02-respuesta-inmunitaria-normal" class="card">
+<div class="section-kicker"><span class="n">02</span> Sección</div>
+<h2>Respuesta inmunitaria normal</h2>
+<p>La inmunidad es la protección frente a microorganismos patógenos. En sentido amplio incluye también las reacciones contra cánceres (inmunidad tumoral), trasplantes y autoantígenos (autoinmunidad). Los mecanismos se dividen en dos categorías.</p>
+<ul>
+<li><strong>Inmunidad innata</strong> (natural o nativa): lista para reaccionar de inmediato, primera línea de defensa. Reconoce productos microbianos y células muertas.</li>
+<li><strong>Inmunidad adaptativa</strong> (adquirida o específica): estimulada por la exposición a microbios; tarda más pero es más potente.</li>
+</ul>
+<h3 id="inmunidad-innata">Inmunidad innata</h3>
+<p>Componentes principales:</p>
+<ul>
+<li><strong>Barreras epiteliales</strong> (piel y vías digestiva y respiratoria): barrera mecánica; las células epiteliales producen moléculas antimicrobianas como las <strong>defensinas</strong>.</li>
+<li><strong>Fagocitos</strong>: neutrófilos y monocitos circulantes, que al entrar en los tejidos maduran a <strong>macrófagos</strong>. Macrófagos residentes: células de Kupffer (hígado), microglía (encéfalo), macrófagos alveolares (pulmón).</li>
+<li><strong>Células dendríticas (DC)</strong>: centinelas de epitelios y tejidos. Capturan antígenos y secretan citocinas, pero no destruyen microbios.</li>
+<li><strong>Células linfoides innatas (ILC)</strong>: residentes en tejidos, sin receptores de antígeno; activadas por citocinas. Los grupos 1, 2 y 3 producen citocinas semejantes a las de Th1, Th2 y Th17.</li>
+<li><strong>Linfocitos citolíticos naturales (NK)</strong>: tipo de ILC; 5% al 10% de los linfocitos sanguíneos.</li>
+<li><strong>Mastocitos</strong>, células epiteliales y endoteliales.</li>
+<li><strong>Proteínas plasmáticas</strong>: complemento (vías alternativa y de la lectina en la innata; vía clásica en la adaptativa), lectina ligadora de manosa y proteína C reactiva (cubren microbios y favorecen la fagocitosis), y surfactante pulmonar.</li>
+</ul>
+<h4 id="receptores-para-microbios-y-células-dañadas">Receptores para microbios y células dañadas</h4>
+<p>Reconocen estructuras microbianas compartidas (los <strong>patrones moleculares asociados a microorganismos patógenos</strong>) y moléculas de células dañadas o necrosadas (<strong>patrones moleculares asociados al daño</strong>). El conjunto son los <strong>receptores de reconocimiento del patrón</strong>, situados en la membrana plasmática (microbios extracelulares), los endosomas (microbios ingeridos) y el citosol.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Respuesta inmunitaria normal" tabindex="0"><table>
+<thead>
+<tr>
+<th>Receptor</th>
+<th>Localización y ligando</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TLR</strong> (tipo Toll)</td>
+<td>Membrana plasmática y endosomas; 10 en mamíferos</td>
+<td>Vía común hacia <strong>NF-kB</strong> (citocinas y moléculas de adhesión) y los factores reguladores del interferón (<strong>IRF</strong>, interferones de tipo I)</td>
+</tr>
+<tr>
+<td><strong>NLR</strong> (tipo NOD)</td>
+<td>Citosol; productos de células dañadas, ATP, ácido úrico, pérdida de K+, productos microbianos</td>
+<td>Varios forman el <strong>inflamasoma</strong>, que activa la caspasa 1 y genera <strong>IL-1</strong> activa</td>
+</tr>
+<tr>
+<td><strong>CLR</strong> (lectina de tipo C)</td>
+<td>Macrófagos y DC</td>
+<td>Detectan glucanos fúngicos</td>
+</tr>
+<tr>
+<td><strong>RLR</strong> (tipo RIG)</td>
+<td>Citosol</td>
+<td>Detectan ácidos nucleicos de virus que se replican en el citoplasma</td>
+</tr>
+<tr>
+<td><strong>STING</strong></td>
+<td>Citosol</td>
+<td>Responde al ADN microbiano; su activación excesiva causa interferonopatías</td>
+</tr>
+<tr>
+<td><strong>GPCR</strong></td>
+<td>Neutrófilos y leucocitos</td>
+<td>Reconocen péptidos con N-formilmetionilo y guían la quimiotaxia</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>El <strong>inflamasoma</strong> (NLRP-3, un adaptador y caspasa 1) explica síndromes de fiebre periódica (<strong>síndromes autoinflamatorios</strong>), que responden a antagonistas de la IL-1. El reconocimiento de cristales de urato por NLR subyace a la <strong>gota</strong>; también detecta lípidos y cristales de colesterol, con implicación en la diabetes de tipo 2 asociada a la obesidad y en la ateroesclerosis.</li>
+<li>Receptores para la <strong>manosa</strong> reconocen azúcares microbianos e inducen fagocitosis.</li>
+</ul>
+<h4 id="linfocitos-nk">Linfocitos NK</h4>
+<p>Reconocen y destruyen células estresadas o anómalas (infectadas por virus y tumorales). Expresan <strong>CD16</strong>, receptor de las colas Fc de la IgG, con el que lisan células cubiertas de IgG (<strong>citotoxicidad celular dependiente de anticuerpos, CCDA</strong>). Se regulan por receptores activadores e inhibidores: los <strong>inhibidores</strong> reconocen las moléculas propias de clase I del CPH de células sanas y evitan el ataque. En células infectadas o tumorales baja la clase I y suben los ligandos activadores, y el equilibrio se inclina hacia la muerte. Secretan <strong>IFN-gamma</strong>; la IL-2 e IL-15 estimulan su proliferación y la IL-12 su actividad.</p>
+<h4 id="reacciones-de-la-inmunidad-innata">Reacciones de la inmunidad innata</h4>
+<p>Dos reacciones principales: <strong>inflamación</strong> (por citocinas y productos del complemento; los leucocitos reclutados destruyen microbios y reparan tejido) y <strong>defensa antivírica</strong> (los interferones de tipo I inducen un estado antivírico). Además, la innata produce señales de peligro que estimulan la respuesta adaptativa. La innata no tiene memoria ni especificidad fina: usa unos 100 receptores para reconocer alrededor de 1.000 patrones, frente a los millones de variaciones de anticuerpos y TCR de la adaptativa.</p>
+<h3 id="inmunidad-adaptativa">Inmunidad adaptativa</h3>
+<ul>
+<li><strong>Inmunidad humoral</strong>: protege contra microbios extracelulares y sus toxinas; la ejercen los <strong>linfocitos B</strong> (de la médula ósea) y sus productos, los <strong>anticuerpos</strong> (inmunoglobulinas, Ig).</li>
+<li><strong>Inmunidad celular</strong>: defiende contra microbios intracelulares y tumores; la ejercen los <strong>linfocitos T</strong> (del timo).</li>
+</ul>
+<h5 id="diversidad-y-selección-clonal">Diversidad y selección clonal</h5>
+<p>Existen linfocitos específicos para un gran número de antígenos <strong>antes</strong> de exponerse a ellos; el antígeno activa selectivamente a las células específicas (<strong>selección clonal</strong>). Un <strong>clon</strong> agrupa linfocitos con receptores idénticos. En un adulto sano hay unos 10¹¹ linfocitos y de 10⁷ a 10⁹ clones; por cada antígeno hay muy pocas células específicas (menos de 1 por cada 100.000).</p>
+<p>La diversidad de receptores se genera por <strong>recombinación somática</strong> de los genes del receptor durante la maduración (timo para los T, médula ósea para los B), mediada por las enzimas <strong>RAG-1 y RAG-2</strong>. Sus defectos hereditarios impiden generar linfocitos maduros. Solo los linfocitos T y B contienen genes recombinados (reordenados) del receptor: su detección es un marcador de estirpe y permite distinguir proliferaciones <strong>policlonales</strong> (no neoplásicas) de <strong>monoclonales</strong> (neoplásicas), útil en el diagnóstico de neoplasias linfoides.</p>
+<h5 id="linfocitos-t">Linfocitos T</h5>
+<ul>
+<li>Maduran en el timo a partir de células madre hematopoyéticas (HSC). Constituyen el <strong>60% al 70%</strong> de los linfocitos sanguíneos.</li>
+<li>Tres poblaciones: <strong>colaboradores</strong> (estimulan linfocitos B y macrófagos), <strong>citotóxicos</strong> (CTL, matan células infectadas) y <strong>reguladores</strong> (limitan las respuestas e impiden reacciones contra antígenos propios).</li>
+<li>El <strong>TCR</strong>, en cerca del 95% de los linfocitos T, es un heterodímero <strong>alfa-beta</strong> con región variable y constante. Reconoce antígenos peptídicos presentados por moléculas del CPH en las células presentadoras de antígenos (APC). Esta limitación se llama <strong>restricción por el CPH</strong>. Una pequeña población expresa TCR <strong>gamma-delta</strong>, que reconoce péptidos, lípidos y pequeñas moléculas sin presentación por CPH, sobre todo en epitelios.</li>
+<li>El TCR se asocia a las proteínas invariables del <strong>CD3</strong> y a las cadenas zeta, que transducen las señales.</li>
+<li>Correceptores: el <strong>CD4</strong> se une a la clase II del CPH (CD4+, cerca del 60% de los linfocitos T maduros); el <strong>CD8</strong> se une a la clase I (CD8+, cerca del 30%). El <strong>CD28</strong> reconoce los coestimuladores <strong>B7</strong> (CD80 y CD86). Las integrinas promueven la unión a las APC.</li>
+<li>Poblaciones menores: linfocitos T gamma-delta y <strong>NK-T</strong>, que expresan una diversidad muy limitada de TCR y reconocen <strong>glucolípidos</strong> presentados por moléculas <strong>CD1</strong>.</li>
+</ul>
+<h5 id="linfocitos-b">Linfocitos B</h5>
+<ul>
+<li>Únicas células productoras de anticuerpos; maduran en la médula ósea; <strong>10% al 20%</strong> de los linfocitos sanguíneos.</li>
+<li>El complejo receptor del linfocito B (<strong>BCR</strong>) incluye IgM e IgD de membrana más las proteínas invariables <strong>Igalfa (CD79a)</strong> e <strong>Igbeta (CD79b)</strong>, esenciales para transducir la señal.</li>
+<li>Expresan <strong>CR2 o CD21</strong> (receptor de componentes del complemento, que el <strong>virus de Epstein-Barr</strong> usa para infectar linfocitos B) y <strong>CD40</strong> (recibe señales de los linfocitos T colaboradores).</li>
+<li>Tras la activación se diferencian en <strong>células plasmáticas</strong> (una sola puede secretar cientos o miles de moléculas por segundo) y en <strong>células de memoria</strong>.</li>
+</ul>
+<h5 id="células-dendríticas-y-macrófagos">Células dendríticas y macrófagos</h5>
+<ul>
+<li>Las DC (interdigitantes; las de la epidermis son células de <strong>Langerhans</strong>) son las APC más importantes para iniciar respuestas de linfocitos T. Están en los lugares de entrada, captan antígeno, migran a las zonas de linfocitos T y expresan mucha clase II del CPH y coestimuladores.</li>
+<li>La <strong>célula dendrítica folicular (FDC)</strong> está en los centros germinales; tiene receptores para el Fc de IgG y para C3b, atrapa antígeno y participa en la selección de linfocitos B de alta afinidad.</li>
+<li>Los <strong>macrófagos</strong> presentan antígeno a los linfocitos T, son efectores de la activación clásica y fagocitan microbios opsonizados por IgG o C3b.</li>
+</ul>
+<h5 id="tejidos-del-sistema-inmunitario">Tejidos del sistema inmunitario</h5>
+<ul>
+<li><strong>Órganos linfoides primarios</strong>: timo (linfocitos T) y médula ósea (linfocitos B y todas las células sanguíneas).</li>
+<li><strong>Órganos linfoides secundarios</strong>: ganglios linfáticos (filtran la linfa), bazo (antígenos vehiculados por la sangre) y tejidos linfoides cutáneos y mucosos (amígdalas faríngeas, placas de Peyer). En los ganglios, los linfocitos B se concentran en <strong>folículos</strong> (corteza; con <strong>centro germinal</strong> tras respuesta reciente) y los T en la <strong>paracorteza</strong>. En el bazo coexisten en la <strong>pulpa blanca</strong> (vainas linfáticas periarteriolares y folículos).</li>
+<li><strong>Recirculación</strong>: los linfocitos vírgenes recorren los órganos linfoides secundarios; los efectores migran a los focos de infección. Es más importante para los linfocitos T; las células plasmáticas permanecen en órganos linfoides y médula ósea y secretan anticuerpos que viajan por la sangre.</li>
+</ul>
+<h3 id="moléculas-del-cph-el-sistema-hla">Moléculas del CPH: el sistema HLA</h3>
+<p>La función de las moléculas del <strong>complejo principal de histocompatibilidad (CPH)</strong> es mostrar fragmentos peptídicos de antígenos proteínicos para su reconocimiento por los linfocitos T. En humanos se llaman <strong>antígeno leucocítico humano (HLA)</strong>. Sus genes se agrupan en el <strong>cromosoma 6</strong> y el sistema es altamente polimórfico (miles de alelos), lo que supone una barrera formidable para el trasplante.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Respuesta inmunitaria normal" tabindex="0"><table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Estructura</th>
+<th>Presenta</th>
+<th>Reconocida por</th>
+<th>Expresión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Clase I</strong></td>
+<td>Cadena pesada polimórfica (44 kDa; HLA-A, HLA-B, HLA-C) unida a la microglobulina beta2 (12 kDa, no polimórfica)</td>
+<td>Péptidos de proteínas citoplásmicas (normales, víricas, tumorales), degradadas en proteosomas</td>
+<td><strong>CD8+</strong> (CTL)</td>
+<td>Todas las células nucleadas y las plaquetas</td>
+</tr>
+<tr>
+<td><strong>Clase II</strong></td>
+<td>Heterodímero de cadenas alfa y beta, ambas polimórficas (HLA-DP, HLA-DQ, HLA-DR)</td>
+<td>Péptidos de proteínas extracelulares y microbios interiorizados en endosomas o lisosomas</td>
+<td><strong>CD4+</strong> (colaboradores)</td>
+<td>Macrófagos, linfocitos B y DC</td>
+</tr>
+</tbody>
+</table></div>
+<p>Un sujeto solo puede responder a un antígeno proteínico si hereda una variante del CPH capaz de unir sus péptidos, lo que explica la tendencia a la alergia a ciertos antígenos o la resistencia a infecciones. El polimorfismo del CPH también se asocia a enfermedades autoinmunitarias.</p>
+<h3 id="citocinas">Citocinas</h3>
+<p>Proteínas secretadas que actúan sobre todo de forma autocrina y paracrina; las de estructura definida se llaman <strong>interleucinas</strong>.</p>
+<ul>
+<li><strong>Innata</strong>: TNF, IL-1, IL-12, interferones de tipo I, IFN-gamma y quimiocinas, producidas por macrófagos, DC, ILC, linfocitos NK y células epiteliales y endoteliales. Inducen inflamación e inhiben la replicación viral.</li>
+<li><strong>Adaptativa</strong>: IL-2, IL-4, IL-5, IL-17 y IFN-gamma, sobre todo de linfocitos T CD4+ activados.</li>
+<li><strong>Limitadoras</strong>: TGF-beta e IL-10.</li>
+<li><strong>Factores estimulantes de colonias (CSF)</strong>, como GM-CSF e IL-3, estimulan la hematopoyesis.</li>
+<li>Aplicaciones: los antagonistas del TNF mejoran a menudo la artritis reumatoide; las citocinas también se administran para activar la hematopoyesis y la defensa antivírica, y para movilizar células madre hematopoyéticas hacia la sangre periférica antes del trasplante.</li>
+</ul>
+<h3 id="activación-linfocítica-inmunidad-celular-y-humoral">Activación linfocítica: inmunidad celular y humoral</h3>
+<p>Fases: reconocimiento del antígeno, activación del linfocito (proliferación, diferenciación y memoria), eliminación del antígeno y disminución de la respuesta. Los linfocitos T necesitan <strong>dos señales</strong>: el complejo antígeno-CPH (señal 1, vía TCR) y los coestimuladores de las APC (señal 2, CD28 reconoce B7). Los <strong>adyuvantes</strong> imitan microbios y fuerzan la señal 2. Así, solo los microbios (y no las sustancias inocuas) inducen respuestas adaptativas.</p>
+<p><strong>Inmunidad celular</strong></p>
+<ul>
+<li>Los linfocitos T vírgenes activados secretan <strong>IL-2</strong> y expresan receptores de alta afinidad, lo que produce expansión clonal.</li>
+<li>Los linfocitos CD4+ colaboradores actúan mediante <strong>CD40L</strong> y citocinas.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Respuesta inmunitaria normal" tabindex="0"><table>
+<thead>
+<tr>
+<th>Subgrupo</th>
+<th>Citocinas propias</th>
+<th>Inductoras</th>
+<th>Función principal</th>
+<th>Papel en enfermedad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Th1</strong></td>
+<td>IFN-gamma</td>
+<td>IFN-gamma, IL-12</td>
+<td>Activación clásica del macrófago; inflamación</td>
+<td>Microbios intracelulares; enfermedades inflamatorias (a menudo autoinmunitarias)</td>
+</tr>
+<tr>
+<td><strong>Th2</strong></td>
+<td>IL-4, IL-5, IL-13</td>
+<td>IL-4</td>
+<td>Producción de IgE, activación de mastocitos y eosinófilos; activación alternativa del macrófago (reparación y fibrosis)</td>
+<td>Parásitos helmínticos; alergias</td>
+</tr>
+<tr>
+<td><strong>Th17</strong></td>
+<td>IL-17, IL-22</td>
+<td>TGF-beta, IL-6, IL-1, IL-23</td>
+<td>Reclutamiento de neutrófilos y monocitos</td>
+<td>Bacterias extracelulares y hongos; enfermedades inflamatorias (a menudo autoinmunitarias)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Los <strong>linfocitos T CD8+</strong> activados se diferencian en CTL y matan células que albergan microbios en el citoplasma, así como células tumorales.</li>
+</ul>
+<p><strong>Inmunidad humoral</strong></p>
+<ul>
+<li>Tras la activación, los linfocitos B proliferan y se diferencian en células plasmáticas secretoras de anticuerpos.</li>
+<li><strong>Respuestas dependientes de T</strong> (antígenos proteínicos): el linfocito B interioriza el antígeno, lo degrada y muestra péptidos por clase II a los linfocitos T colaboradores, que expresan CD40L y secretan citocinas. Los <strong>polisacáridos y lípidos</strong> no se presentan por el CPH y activan los linfocitos B por sí mismos: <strong>respuestas independientes de T</strong>, simples y sobre todo de <strong>IgM</strong>.</li>
+<li>Las respuestas dependientes de T incluyen el <strong>cambio de isotipo</strong> (IgM a IgG, IgA o IgE) y la <strong>maduración de la afinidad</strong>, en los <strong>centros germinales</strong>, estimulados por los linfocitos <strong>T colaboradores foliculares (TFH)</strong>.</li>
+<li>Funciones de los anticuerpos: neutralización de microbios y toxinas; opsonización (fagocitos con receptores del Fc); activación del complemento (IgG e IgM); IgA en mucosas; transporte de IgG por la placenta (inmunidad pasiva del recién nacido); IgE y eosinófilos contra helmintos.</li>
+<li>Las IgG circulantes tienen semividas de unas 3 semanas; algunas células plasmáticas migran a la médula ósea y producen anticuerpos durante meses o años.</li>
+</ul>
+<p><strong>Disminución de la respuesta y memoria</strong>: los efectores se eliminan al desaparecer el microbio; las células de memoria sobreviven años y responden más rápido y enérgicamente a una reexposición. Es la base de la vacunación.</p>
+<hr />
+
+</section><section id="sec-03-hipersensibilidad-lesion-tisular-mediada-por-el-sistema-inmunita" class="card">
+<div class="section-kicker"><span class="n">03</span> Sección</div>
+<h2>Hipersensibilidad: lesión tisular mediada por el sistema inmunitario</h2>
+<p>Reacción excesiva o perjudicial a un antígeno (exógeno o propio) en un sujeto ya sensibilizado, por desequilibrio entre mecanismos efectores y controles. Los antígenos pueden ser ambientales (alergia) o propios (autoinmunidad).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mecanismo</th>
+<th>Lesión histológica</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I</strong> (inmediata)</td>
+<td>IgE de linfocitos Th2; entrecruzamiento de IgE en mastocitos y liberación de mediadores</td>
+<td>Vasodilatación, edema, espasmo del músculo liso, inflamación</td>
+<td>Anafilaxia, alergias, asma atópica</td>
+</tr>
+<tr>
+<td><strong>II</strong> (anticuerpos)</td>
+<td>IgG o IgM contra células o matriz; fagocitosis, lisis por complemento, disfunción</td>
+<td>Pérdida de la célula diana; inflamación; a veces disfunción sin lesión</td>
+<td>Anemia hemolítica autoinmunitaria, Goodpasture, miastenia grave</td>
+</tr>
+<tr>
+<td><strong>III</strong> (inmunocomplejos)</td>
+<td>Depósito de complejos antígeno-anticuerpo; activación del complemento; leucocitos</td>
+<td>Vasculitis necrosante con necrosis fibrinoide</td>
+<td>Lupus, enfermedad del suero, reacción de Arthus</td>
+</tr>
+<tr>
+<td><strong>IV</strong> (linfocitos T)</td>
+<td>Th1 y Th17 (citocinas) y CTL CD8+</td>
+<td>Infiltrado mononuclear perivascular, granulomas, destrucción celular</td>
+<td>Dermatitis de contacto, esclerosis múltiple, diabetes de tipo I, tuberculosis</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="hipersensibilidad-inmediata-tipo-i">Hipersensibilidad inmediata (tipo I)</h3>
+<p>Ocurre en sujetos previamente sensibilizados por la unión de un alérgeno a IgE fijada en mastocitos. Puede ser sistémica (anafilaxia) o local (habones, rinitis, conjuntivitis, fiebre del heno, asma, gastroenteritis alérgica).</p>
+<p>Dos fases:</p>
+<ul>
+<li><strong>Reacción inmediata</strong>: vasodilatación, aumento de la permeabilidad vascular, espasmo del músculo liso y secreción glandular; minutos tras la exposición, dura unas horas.</li>
+<li><strong>Reacción de fase tardía</strong>: sin nueva exposición, a las 2-24 h, puede durar días; infiltrado de eosinófilos, neutrófilos, basófilos, monocitos y linfocitos T CD4+, con destrucción tisular.</li>
+</ul>
+<p>Secuencia inmunológica:</p>
+<ol type="1">
+<li>La presentación del alérgeno por DC a linfocitos T CD4+ vírgenes, con IL-4, induce linfocitos <strong>Th2</strong>.</li>
+<li>Citocinas de Th2: <strong>IL-4</strong> (cambio de clase a IgE y más Th2), <strong>IL-5</strong> (activación de eosinófilos) e <strong>IL-13</strong> (más IgE y secreción de moco).</li>
+<li>La IgE se une al receptor de alta afinidad <strong>FceRI</strong> de mastocitos y basófilos. Los <strong>mastocitos</strong> residen sobre todo cerca de vasos pequeños y tejidos subepiteliales; los <strong>basófilos</strong> circulan en sangre.</li>
+<li>Al reexponerse el alérgeno se entrecruzan IgE y FceRI y se desencadena la degranulación y la síntesis de mediadores nuevos. Los mastocitos también pueden activarse sin IgE por <strong>anafilotoxinas</strong> C5a y C3a, quimiocinas como IL-8, fármacos (codeína, morfina) y estímulos físicos.</li>
+</ol>
+<div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Clase de mediador</th>
+<th>Ejemplos</th>
+<th>Funciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contenido del gránulo (preformado)</td>
+<td>Histamina; quimasa y triptasa; heparina y sulfato de condroitina</td>
+<td>Histamina: contracción del músculo liso, permeabilidad vascular y secreción de moco; proteasas: daño tisular y generación de cininas y C3a; proteoglucanos: empaquetar las aminas</td>
+</tr>
+<tr>
+<td>Mediadores lipídicos</td>
+<td>Leucotrienos C4 y D4; leucotrieno B4; prostaglandina D2; PAF</td>
+<td>LTC4 y LTD4: vasoactivos y espasmógenos (más potentes que la histamina); LTB4: quimiotáctico para neutrófilos, eosinófilos y monocitos; PGD2: broncoespasmo y moco; PAF: agregación plaquetaria, broncoespasmo y permeabilidad vascular</td>
+</tr>
+<tr>
+<td>Citocinas y quimiocinas</td>
+<td>TNF, IL-1, IL-4, quimiocinas</td>
+<td>Reclutan leucocitos (fase tardía) y amplifican la respuesta Th2</td>
+</tr>
+</tbody>
+</table></div>
+<p>En la fase tardía, los <strong>eosinófilos</strong> son reclutados por eotaxina y activados por IL-5; liberan proteínas tóxicas que dañan tejidos. Contienen <strong>cristales de Charcot-Leyden</strong>, presentes en el esputo de asmáticos. Por eso el tratamiento exige tratar la fase tardía con corticoesteroides de amplio espectro, y no solo antihistamínicos (eficaces solo en la reacción inmediata).</p>
+<p>Desarrollo de las alergias:</p>
+<ul>
+<li><strong>Atopia</strong>: predisposición a reacciones de hipersensibilidad inmediata, con IgE sérica alta y más linfocitos Th2 productores de IL-4. Se asocia a polimorfismos de genes de citocinas (IL-3, IL-4, IL-5, IL-9, IL-13, GM-CSF) y del HLA.</li>
+<li>La reducción de la exposición a microbios en la infancia puede favorecer las alergias (<strong>hipótesis de la higiene</strong>).</li>
+</ul>
+<p>Manifestaciones clínicas:</p>
+<ul>
+<li><strong>Anafilaxia sistémica</strong>: shock vascular, edema generalizado y dificultad respiratoria; tras antígenos inyectados (picadura de abeja), alimentos (cacahuete, marisco) o fármacos. Puede matar en menos de 1 hora por obstrucción de la vía aérea, broncoespasmo y shock.</li>
+<li><strong>Reacciones locales</strong>: urticaria, rinitis alérgica, asma, dermatitis atópica y alergias alimentarias.</li>
+</ul>
+<h3 id="hipersensibilidad-mediada-por-anticuerpos-tipo-ii">Hipersensibilidad mediada por anticuerpos (tipo II)</h3>
+<p>Los anticuerpos que reaccionan con antígenos de superficie celular o de la matriz causan enfermedad al destruir células, desencadenar inflamación o interferir en funciones. Los anticuerpos pueden ser <strong>autoanticuerpos</strong> o dirigirse a antígenos exógenos (sustancias químicas o proteínas microbianas).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Antígeno diana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anemia hemolítica autoinmunitaria</td>
+<td>Proteínas de membrana del eritrocito (grupo Rh, antígeno I)</td>
+</tr>
+<tr>
+<td>Púrpura trombocitopénica autoinmunitaria</td>
+<td>Integrina GpIIb/IIIa de la plaqueta</td>
+</tr>
+<tr>
+<td>Pénfigo vulgar</td>
+<td>Desmogleínas de las uniones intercelulares epidérmicas</td>
+</tr>
+<tr>
+<td>Vasculitis por ANCA</td>
+<td>Proteínas del gránulo del neutrófilo</td>
+</tr>
+<tr>
+<td>Síndrome de Goodpasture</td>
+<td>Proteína no colagenosa de las membranas basales glomerular y pulmonar</td>
+</tr>
+<tr>
+<td>Fiebre reumática aguda</td>
+<td>Antígeno de pared del estreptococo (reacción cruzada con el miocardio)</td>
+</tr>
+<tr>
+<td>Miastenia grave</td>
+<td>Receptor de acetilcolina</td>
+</tr>
+<tr>
+<td>Enfermedad de Graves</td>
+<td>Receptor de TSH (hipertiroidismo)</td>
+</tr>
+<tr>
+<td>Anemia perniciosa</td>
+<td>Factor intrínseco de las células parietales gástricas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Mecanismos:</p>
+<ul>
+<li>Opsonización y fagocitosis: los anticuerpos que cubren las células son reconocidos por receptores del Fc de los fagocitos; los anticuerpos IgM o IgG activan el complemento (C3b), y el complejo de ataque de la membrana puede lisar la célula (anemia hemolítica, trombocitopenia, neutropenia).</li>
+<li><strong>CCDA</strong>: células cubiertas de IgG son lisadas por linfocitos NK y macrófagos vía CD16; su contribución a las enfermedades por hipersensibilidad no está del todo definida.</li>
+<li>Anticuerpos contra receptores: alteran la función sin lesionar la célula (miastenia: bloquean el receptor de acetilcolina; Graves: lo estimulan).</li>
+<li>Inflamación: los anticuerpos unidos a la matriz o a la membrana basal activan el complemento y reclutan leucocitos (C3b, C5a), con liberación de enzimas lisosómicas y radicales libres, produciendo <strong>necrosis fibrinoide</strong> de los vasos pequeños (Goodpasture, rechazo del injerto).</li>
+</ul>
+<h3 id="hipersensibilidad-mediada-por-inmunocomplejos-tipo-iii">Hipersensibilidad mediada por inmunocomplejos (tipo III)</h3>
+<p>Los complejos antígeno-anticuerpo circulan y se depositan en paredes de pequeños vasos, activan el complemento y reclutan neutrófilos y monocitos. La lesión se concentra donde el suero se filtra a alta presión: <strong>riñón (glomérulos), articulaciones y vasos</strong>.</p>
+<p>Fases: 1) formación de complejos (en torno a una semana tras la exposición); 2) depósito tisular (los de tamaño intermedio y con exceso de antígeno son los más patógenos); 3) inflamación y lesión tisular (unos 10 días después: fiebre, urticaria, dolor articular, proteinuria).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Antígeno implicado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lupus eritematoso sistémico</td>
+<td>Antígenos nucleares</td>
+</tr>
+<tr>
+<td>Glomerulonefritis postestreptocócica</td>
+<td>Antígenos de pared del estreptococo</td>
+</tr>
+<tr>
+<td>Panarteritis nudosa</td>
+<td>Antígenos del virus de la hepatitis B (algunos casos)</td>
+</tr>
+<tr>
+<td>Artritis reactiva</td>
+<td>Antígenos bacterianos (p. ej., Yersinia)</td>
+</tr>
+<tr>
+<td>Enfermedad del suero</td>
+<td>Proteínas de sueros extraños (p. ej., globulina antitimocítica equina)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Morfología: <strong>vasculitis aguda con necrosis fibrinoide</strong>; en el riñón, depósitos granulares de Ig y complemento (inmunofluorescencia) y depósitos electrodensos (microscopía electrónica). El consumo de complemento baja el C3 sérico. La <strong>reacción de Arthus</strong> es el modelo experimental (inyección subcutánea en un animal sensibilizado, con edema, hemorragia y trombosis).</p>
+<h3 id="hipersensibilidad-mediada-por-linfocitos-t-tipo-iv">Hipersensibilidad mediada por linfocitos T (tipo IV)</h3>
+<p>Dos modos:</p>
+<ol type="1">
+<li><strong>Inflamación por citocinas</strong> de linfocitos Th1 y Th17 (la más importante). Reacción retardada de 24-48 h que dura días: los CD4+ secretan IFN-gamma (activación clásica del macrófago) o IL-17 (reclutamiento de neutrófilos).</li>
+<li><strong>Citólisis por CTL</strong> (CD8+), que matan directamente células diana (infectadas por virus, tumorales o de injertos).</li>
+</ol>
+<p>Morfología: infiltrado mononuclear perivascular y <strong>granulomas</strong> (respuesta a antígenos no eliminables, como microbios intracelulares o partículas no degradables). Ejemplos Th1: reacción a la tuberculina, dermatitis de contacto, rechazo del injerto. Ejemplos Th17: psoriasis, asma, enfermedad inflamatoria intestinal.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Antígeno diana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diabetes de tipo I</td>
+<td>Antígenos de las células beta del islote</td>
+</tr>
+<tr>
+<td>Esclerosis múltiple</td>
+<td>Proteínas de la mielina</td>
+</tr>
+<tr>
+<td>Artritis reumatoide</td>
+<td>Antígenos propios (colágeno, proteínas citrulinadas)</td>
+</tr>
+<tr>
+<td>Enfermedad inflamatoria intestinal</td>
+<td>Bacterias comensales y antígenos propios</td>
+</tr>
+<tr>
+<td>Psoriasis</td>
+<td>Desconocido</td>
+</tr>
+<tr>
+<td>Dermatitis de contacto (hiedra/roble venenoso)</td>
+<td>Urushiol (un hapteno conjugado con proteínas propias)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ejemplos de lesión por CTL CD8+: diabetes de tipo I (matan células beta), hepatitis viral (lesión de hepatocitos infectados) y rechazo del injerto.</p>
+
+<div class="warnbox"><span class="box-title">Clave de los 4 tipos</span>I: IgE y mastocitos (anafilaxia, asma). II: anticuerpos contra células o matriz (anemia hemolítica, Goodpasture, miastenia). III: inmunocomplejos con vasculitis y necrosis fibrinoide (lupus, Arthus). IV: linfocitos T (granulomas, diabetes de tipo I, dermatitis de contacto).</div>
+</section><section id="sec-04-enfermedades-autoinmunitarias" class="card">
+<div class="section-kicker"><span class="n">04</span> Sección</div>
+<h2>Enfermedades autoinmunitarias</h2>
+<p>Las reacciones inmunitarias contra antígenos propios (autoinmunidad) causan enfermedades que afectan al <strong>5% al 10%</strong> de la población. Sin embargo, la mera presencia de autoanticuerpos no indica enfermedad: aparecen en sujetos normales (sobre todo de edad mayor) y tras lesiones tisulares. Para clasificar un trastorno como autoinmunitario se exigen tres requisitos: 1) una reacción inmunitaria <strong>específica</strong> contra un antígeno o tejido propio; 2) que esa reacción tenga significado <strong>patogénico primario</strong> (no secundaria al daño); y 3) la falta de otra causa bien definida.</p>
+<p>Pueden ser <strong>específicas de órgano</strong> (diabetes de tipo I, esclerosis múltiple) o <strong>sistémicas</strong> (lupus), y mediadas por anticuerpos o por linfocitos T. Las sistémicas afectan sobre todo vasos y tejido conjuntivo (enfermedades del colágeno o del tejido conjuntivo).</p>
+<h3 id="tolerancia-inmunitaria">Tolerancia inmunitaria</h3>
+<p>La <strong>tolerancia</strong> es la falta de respuesta a un antígeno inducida por la exposición a él; la <strong>autotolerancia</strong> es la falta de respuesta a los antígenos propios. Se divide en central y periférica.</p>
+<p><strong>Tolerancia central</strong> (en órganos linfoides primarios):</p>
+<ul>
+<li>Los linfocitos T inmaduros que reconocen autoantígenos en el timo mueren por apoptosis (<strong>selección negativa</strong> o deleción clonal). La proteína <strong>AIRE</strong> estimula la expresión de antígenos propios restringidos a tejidos periféricos en el timo; sus mutaciones causan el <strong>síndrome poliendocrino autoinmunitario</strong>.</li>
+<li>Algunas células CD4+ autorreactivas no mueren, sino que se convierten en <strong>linfocitos T reguladores</strong>.</li>
+<li>Los linfocitos B autorreactivos de la médula ósea pueden <strong>editar su receptor</strong> (reordenar una cadena ligera nueva); de una cuarta parte a la mitad de los linfocitos B pueden haber sufrido edición. Si la edición falla, mueren por apoptosis.</li>
+<li>Es imperfecta: no todos los antígenos propios están en el timo o la médula ósea, y algunos linfocitos autorreactivos escapan a la periferia.</li>
+</ul>
+<p><strong>Tolerancia periférica</strong> (mecanismos mejor definidos para los linfocitos T):</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades autoinmunitarias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Mecanismo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anergia</strong></td>
+<td>El antígeno se presenta sin coestimulación suficiente (CD28-B7); los receptores inhibidores <strong>CTLA-4</strong> (une B7) y <strong>PD-1</strong> (une PD-L1/PD-L2) dan señales inhibitorias. Los tumores y virus usan estas vías para eludir la inmunidad, y bloquear CTLA-4 o PD-1/PD-L1 es la base de la inmunoterapia tumoral. Los linfocitos B también se vuelven anérgicos o son excluidos de los folículos</td>
+</tr>
+<tr>
+<td><strong>Supresión por T reguladores</strong></td>
+<td>Linfocitos CD4+ con <strong>CD25</strong> y <strong>FOXP3</strong>; secretan IL-10 y TGF-beta. Las mutaciones de FOXP3 causan el síndrome <strong>IPEX</strong> (poliendocrinopatía y enteropatía ligada al X). Previenen reacciones contra autoantígenos, contra el feto y contra microbios comensales</td>
+</tr>
+<tr>
+<td><strong>Eliminación por apoptosis</strong></td>
+<td>Los linfocitos T autorreactivos expresan Bim (proapoptósico) sin Bcl-2/Bcl-x, o Fas y FasL, que inducen apoptosis. Las mutaciones de FAS/FASL causan el <strong>síndrome linfoproliferativo autoinmunitario (SLPA)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Algunos antígenos están <strong>secuestrados</strong> (testículos, ojos, encéfalo: lugares con privilegio inmunitario). Su liberación por traumatismo o infección puede desencadenar orquitis o uveítis.</p>
+<h3 id="mecanismos-de-autoinmunidad">Mecanismos de autoinmunidad</h3>
+<p>La autoinmunidad surge de la combinación de <strong>genes de predisposición</strong> (que rompen la tolerancia) y <strong>desencadenantes ambientales</strong> (infecciones, lesión tisular e inflamación, que activan a los linfocitos autorreactivos). Contribuyen: tolerancia o regulación defectuosas; <strong>muestra anómala de antígenos propios</strong> (neoantígenos por modificación, estrés o lesión); e inflamación innata inicial.</p>
+<h3 id="genes-de-predisposición">Genes de predisposición</h3>
+<ul>
+<li><strong>HLA</strong>: la mayor contribución genética. La asociación más llamativa es <strong>HLA-B27</strong> con la espondilitis anquilosante (riesgo 100-200 veces mayor). También se asocian alelos de clase II: <strong>HLA-DR3/DR4</strong> con diabetes de tipo I, <strong>DR4</strong> con artritis reumatoide, <strong>DRB1*1501</strong> con esclerosis múltiple, <strong>DQ2/DQ8</strong> con enfermedad celíaca. La presencia del alelo no implica la enfermedad (la mayoría de portadores de HLA-B27 no la sufren).</li>
+<li><strong>Genes distintos del HLA</strong>: <strong>PTPN22</strong> (tirosina fosfatasa; el más frecuente, con artritis reumatoide y diabetes de tipo I), <strong>NOD2</strong> (detector citoplásmico; enfermedad de Crohn), <strong>IL2RA/CD25</strong> (diabetes de tipo I y esclerosis múltiple), <strong>CTLA4</strong>, <strong>ATG16L1</strong> (autofagia), <strong>IL23R</strong>, <strong>IRF5/IFIH1</strong> (interferón de tipo I en lupus).</li>
+<li>Genes de un solo gen cuya mutación causa autoinmunidad: <strong>AIRE, CTLA4, PD1, FAS, FASL, IL2</strong> y su receptor CD25.</li>
+</ul>
+<h3 id="infecciones-y-otros-factores-ambientales">Infecciones y otros factores ambientales</h3>
+<ul>
+<li><strong>Inducción de coestimuladores</strong> en las APC, que pueden estar presentando antígenos propios, lo que rompe la anergia.</li>
+<li><strong>Imitación (mimetismo) molecular</strong>: microbios con secuencias semejantes a antígenos propios activan linfocitos autorreactivos. Ejemplo claro: <strong>cardiopatía reumática</strong> (anticuerpos contra proteínas estreptocócicas que reaccionan de forma cruzada con el miocardio).</li>
+<li>Activación policlonal de linfocitos B por virus (VEB, VIH), liberación de neoantígenos por lesión tisular y reclutamiento de linfocitos autorreactivos por citocinas.</li>
+<li>Paradoja: las infecciones pueden <strong>proteger</strong> de algunas enfermedades autoinmunitarias, y su mejor control coincide con un aumento de la incidencia. El <strong>microbioma</strong> intestinal y cutáneo modula el equilibrio entre linfocitos T efectores y reguladores.</li>
+<li>La radiación <strong>UV</strong> (lupus), el <strong>tabaco</strong> (artritis reumatoide) y el sesgo de <strong>sexo</strong> (más frecuentes en mujeres, por hormonas y genes del cromosoma X).</li>
+<li><strong>Expansión del epítopo</strong>: una respuesta contra un antígeno propio daña tejidos, libera nuevos antígenos y amplifica la respuesta.</li>
+</ul>
+<p>Las enfermedades autoinmunitarias tienden a ser <strong>crónicas</strong>, con recaídas y remisiones, y el daño suele ser progresivo. Sus manifestaciones dependen de la respuesta dominante: anticuerpos, Th1/Th17, o ambas.</p>
+<h3 id="lupus-eritematoso-sistémico-les">Lupus eritematoso sistémico (LES)</h3>
+<p>Enfermedad autoinmunitaria <strong>multisistémica</strong> causada por numerosos autoanticuerpos (sobre todo <strong>ANA</strong>) y por el depósito de inmunocomplejos. Es crónica, con remisiones y recaídas, y afecta sobre todo a <strong>mujeres</strong> (relación 9:1 en edad reproductiva) y a personas de raza negra e hispanas.</p>
+<p>Autoanticuerpos:</p>
+<ul>
+<li><strong>ANA</strong> (antinucleares): positivos en cerca del 100% de los pacientes, pero inespecíficos. Se detectan por inmunofluorescencia indirecta y su patrón orienta: homogéneo/difuso (cromatina, histonas), anular/periférico (ADN bicatenario), moteado (Sm, RNP, SS-A/SS-B), nucleolar (ARN) y centromérico (esclerosis sistémica).</li>
+<li><strong>Anti-ADN bicatenario</strong> y <strong>anti-Sm</strong> son <strong>virtualmente diagnósticos</strong> de LES.</li>
+<li><strong>Antifosfolipídicos</strong>: contra proteínas que se unen a fosfolípidos (protrombina, anexina V, beta2-glucoproteína I). Producen un estado <strong>hipercoagulable</strong> (trombosis, abortos de repetición), dan falsos positivos en la prueba de sífilis y alargan las pruebas de coagulación (<strong>anticoagulante lúpico</strong>).</li>
+</ul>
+<p>Patogenia (genes + ambiente):</p>
+<ul>
+<li><strong>Genes</strong>: HLA-DQ ligado a autoanticuerpos específicos; deficiencias de complemento (<strong>C2, C4, C1q</strong>) que dificultan la eliminación de inmunocomplejos; muchos loci de señalización linfocitaria e interferón (que explican como mucho el 20% de la predisposición).</li>
+<li><strong>Inmunitarios</strong>: fallo de la tolerancia de los linfocitos B, ayuda de los CD4+ frente a antígenos del nucleosoma, activación de los linfocitos B por <strong>TLR</strong> que reconocen ADN y ARN de los inmunocomplejos, y <strong>interferones de tipo I</strong> (firma molecular que se correlaciona con la gravedad).</li>
+<li><strong>Ambientales</strong>: radiación <strong>UV</strong> (induce apoptosis y libera antígenos nucleares), hormonas sexuales y fármacos (hidralacina, procainamida, D-penicilamina, anti-TNF).</li>
+<li><strong>Lesión tisular</strong>: el depósito de inmunocomplejos (tipo III) causa la mayoría de las lesiones sistémicas, con hipocomplementemia y depósitos granulares de Ig y complemento en los glomérulos. Los autoanticuerpos contra células sanguíneas producen <strong>citopenias</strong> (tipo II); la púrpura trombocitopénica inmunitaria afecta hasta al 10%. Los cuerpos LE son núcleos desnaturalizados engullidos por fagocitos.</li>
+</ul>
+<p>Morfología:</p>
+<ul>
+<li>Vasos: vasculitis necrosante con <strong>necrosis fibrinoide</strong>; en fase crónica, engrosamiento fibroso.</li>
+<li>Riñón: hasta el 50% de los pacientes tienen <strong>nefritis lúpica</strong>; se reconocen seis clases. La clase I es mínima mesangial; la II proliferativa mesangial; la III focal (menos del 50% de los glomérulos); la <strong>IV difusa</strong> (mitad o más de los glomérulos) es la más frecuente y grave, con <strong>asas de alambre</strong> por depósitos subendoteliales; la V membranosa (síndrome nefrótico); y la VI esclerosante avanzada (más del 90% de los glomérulos).</li>
+<li>Piel: exantema en <strong>mariposa</strong> (malar), fotosensibilidad, degeneración vacuolar de la capa basal y depósito de Ig/complemento en la unión dermoepidérmica (inmunofluorescencia).</li>
+<li>Articulaciones: sinovitis no erosiva (contrasta con la artritis reumatoide).</li>
+<li>SNC: sin alteraciones morfológicas claras; oclusión no inflamatoria de vasos pequeños.</li>
+<li>Serosas: pericarditis y pleuritis (derrames).</li>
+<li>Corazón: pericarditis hasta en el 50%; <strong>endocarditis de Libman-Sacks</strong> (vegetaciones verrugosas no bacterianas sobre las válvulas); ateroesclerosis coronaria acelerada.</li>
+<li>Bazo: esplenomegalia e hiperplasia folicular con arterias en <strong>hojas de cebolla</strong>.</li>
+<li>Pulmones: pleuritis, fibrosis intersticial e hipertensión pulmonar.</li>
+</ul>
+<p>Formas cutáneas y por fármacos: <strong>lupus discoide crónico</strong> (lesiones cutáneas crónicas, rara afectación sistémica), <strong>lupus cutáneo subagudo</strong> (exantema generalizado, anti-SS-A, HLA-DR3) y <strong>lupus inducido por fármacos</strong> (anti-histona, rara afectación renal o del SNC).</p>
+<h3 id="artritis-reumatoide">Artritis reumatoide</h3>
+<p>Enfermedad inflamatoria <strong>crónica</strong> que afecta sobre todo a las articulaciones, pero también a piel, vasos, pulmones y corazón. Tiene naturaleza autoinmunitaria; se detalla en el capítulo 26 (aparato locomotor).</p>
+<h3 id="síndrome-de-sjögren">Síndrome de Sjögren</h3>
+<p>Enfermedad crónica con <strong>sequedad ocular</strong> (queratoconjuntivitis seca) y <strong>oral</strong> (xerostomía) por destrucción inmunitaria de las glándulas lagrimales y salivales. Es primaria (síndrome seco) o secundaria a otras enfermedades autoinmunitarias (la más frecuente, artritis reumatoide).</p>
+<ul>
+<li>El infiltrado contiene linfocitos <strong>T CD4+</strong> activados y linfocitos B, con fibrosis glandular.</li>
+<li>Anticuerpos: <strong>factor reumatoide</strong> (75%), ANA (50-80%) y, los más importantes, <strong>anti-SS-A (Ro)</strong> y <strong>anti-SS-B (La)</strong>, marcadores serológicos.</li>
+<li>Síntomas: visión borrosa y sequedad corneal, dificultad para tragar, aumento de la parótida, sequedad nasal, bronquitis; en un tercio hay manifestaciones extraglandulares (sinovitis, fibrosis pulmonar, neuropatía). La nefritis tubulointersticial con acidosis tubular renal es característica; la glomerulonefritis es rara.</li>
+<li>Afecta a mujeres de 50 a 60 años. El <strong>riesgo de linfoma</strong> (marginal) es unas <strong>40 veces</strong> mayor. La combinación de agrandamiento lagrimal y salival se llamó enfermedad de Mikulicz (hoy síndrome de Mikulicz, de cualquier causa).</li>
+</ul>
+<h3 id="esclerosis-sistémica-esclerodermia">Esclerosis sistémica (esclerodermia)</h3>
+<p>Se caracteriza por 1) inflamación crónica autoinmunitaria, 2) daño generalizado de vasos pequeños y 3) <strong>fibrosis</strong> intersticial y perivascular progresiva de piel y múltiples órganos (tubo digestivo, riñones, corazón, músculos, pulmones). Dos formas:</p>
+<ul>
+<li><strong>Difusa</strong>: afectación cutánea extensa desde el inicio, progresión rápida y afectación visceral temprana; <strong>anti-topoisomerasa I (anti-Scl-70)</strong>.</li>
+<li><strong>Limitada</strong>: afectación cutánea en dedos, antebrazos y cara, con afectación visceral tardía y curso más benigno; <strong>anticentroméricos</strong>. La combinación calcinosis, <strong>fenómeno de Raynaud</strong>, alteración de la motilidad esofágica, esclerodactilia y telangiectasias es el <strong>síndrome CREST</strong>.</li>
+</ul>
+<p>Patogenia (tres procesos interrelacionados): autoinmunidad (linfocitos T CD4+ y Th2 que liberan <strong>TGF-beta, IL-13 y PDGF</strong>, que activan fibroblastos), daño vascular (proliferación de la íntima, activación endotelial y plaquetaria) y fibrosis (fibroblastos que producen colágeno en exceso).</p>
+<p>Morfología: piel con fibrosis dérmica, adelgazamiento epidérmico, pérdida de anejos y calcificaciones; tubo digestivo (90% de los pacientes) con atrofia y fibrosis de la muscular, sobre todo el esófago inferior (reflujo, esófago de Barrett); articulaciones con sinovitis y fibrosis; riñones con lesiones vasculares (arterias interlobulillares) y <strong>crisis renal esclerodérmica</strong>.</p>
+<h3 id="otras-enfermedades-autoinmunitarias-sistémicas">Otras enfermedades autoinmunitarias sistémicas</h3>
+<ul>
+<li><strong>Miopatías inflamatorias</strong> (polimiositis/dermatomiositis): inflamación y debilidad muscular; se asocian a autoanticuerpos como anti-Jo1, anti-Mi-2 y anti-MDA5, y a un mayor riesgo de cáncer (dermatomiositis).</li>
+<li><strong>Enfermedad mixta del tejido conjuntivo</strong>: combina rasgos de LES, esclerosis sistémica y polimiositis, con <strong>anti-U1 RNP</strong>; buena respuesta a corticoesteroides.</li>
+<li><strong>Panarteritis nudosa y otras vasculitis</strong>: inflamación necrosante de las paredes vasculares por inmunocomplejos, ANCA o linfocitos T; la panarteritis nudosa se asocia al <strong>virus de la hepatitis B</strong>.</li>
+<li><strong>Enfermedad relacionada con la IgG4</strong>: infiltrados de células plasmáticas productoras de IgG4, fibrosis, flebitis obliterante y aumento de IgG4 sérica; afecta páncreas (pancreatitis autoinmunitaria), vías biliares, riñón, glándulas salivales, órbita, aorta y meninges.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Marcadores serológicos que caen en examen</span>LES: anti-ADNbc y anti-Sm son virtualmente diagnósticos; anti-histona en lupus por fármacos. Sjögren: anti-SS-A/SS-B, riesgo de linfoma 40 veces mayor. Esclerosis sistémica: anti-Scl-70 (difusa) y anticentroméricos (limitada, CREST). HLA-B27: espondilitis anquilosante (riesgo 100-200 veces).</div>
+</section><section id="sec-05-rechazo-de-trasplantes-de-tejidos" class="card">
+<div class="section-kicker"><span class="n">05</span> Sección</div>
+<h2>Rechazo de trasplantes de tejidos</h2>
+<p>El rechazo se debe a que el receptor reconoce como extraños los <strong>aloantígenos</strong> del injerto por diferencias en el HLA. Los linfocitos T pueden reconocerlos por vía <strong>directa</strong> (las DC del injerto muestran los aloantígenos; propia del rechazo agudo) o <strong>indirecta</strong> (las DC del receptor procesan y presentan los aloantígenos; propia del rechazo crónico).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Rechazo de trasplantes de tejidos" tabindex="0"><table>
+<thead>
+<tr>
+<th>Forma</th>
+<th>Momento</th>
+<th>Mecanismo y morfología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hiperagudo</strong></td>
+<td>Pocas horas</td>
+<td>Anticuerpos <strong>preformados</strong> (grupos sanguíneos o HLA por embarazos, transfusiones o trasplantes previos) que se unen al endotelio y activan el complemento: necrosis fibrinoide, trombosis y isquemia global del órgano. Se previene con compatibilidad de grupo y prueba cruzada</td>
+</tr>
+<tr>
+<td><strong>Agudo celular</strong></td>
+<td>Días a semanas</td>
+<td>Linfocitos T CD8+ que matan células del injerto y CD4+ que secretan citocinas; infiltrado intersticial con <strong>tubulitis</strong>, edema y endotelitis</td>
+</tr>
+<tr>
+<td><strong>Agudo humoral</strong></td>
+<td>Días a semanas</td>
+<td>Anticuerpos del receptor contra el endotelio con necrosis fibrinoide y depósitos de complemento (<strong>C4d</strong>)</td>
+</tr>
+<tr>
+<td><strong>Crónico</strong></td>
+<td>Semanas a años</td>
+<td>Arterioesclerosis del injerto (proliferación de la íntima) y fibrosis intersticial difusa con atrofia tubular; provoca el fallo progresivo del injerto</td>
+</tr>
+</tbody>
+</table></div>
+<p>Para aumentar la supervivencia: compatibilidad de <strong>grupos sanguíneos</strong> y prueba cruzada (evita el rechazo hiperagudo) e <strong>inmunodepresores</strong> (corticoesteroides, micofenolato mofetilo, y sobre todo <strong>inhibidores de la calcineurina</strong>: tacrolimús y ciclosporina, y anticuerpos anti-linfocito T). Complicaciones: infecciones oportunistas, leucopenia y anemia (micofenolato) y nefrotoxicidad (ciclosporina).</p>
+<p><strong>Trasplante de células madre hematopoyéticas (HSC)</strong>: se usa para tratar neoplasias hematológicas e inmunodeficiencias; requiere compatibilidad del HLA (idealmente hermanos, 25% de probabilidad de coincidencia) y puede complicarse con <strong>enfermedad injerto contra huésped</strong>.</p>
+
+</section><section id="sec-06-enfermedades-por-inmunodeficiencia" class="card">
+<div class="section-kicker"><span class="n">06</span> Sección</div>
+<h2>Enfermedades por inmunodeficiencia</h2>
+<p>Se dividen en <strong>primarias</strong> (congénitas, de causa genética) y <strong>secundarias</strong> (adquiridas, por cáncer, infecciones, malnutrición, inmunodepresión, radiación o quimioterapia). Se manifiestan por un aumento de infecciones nuevas o por reactivación de infecciones latentes. Las primarias suelen detectarse entre los 6 meses y los 2 años.</p>
+<h3 id="inmunodeficiencias-primarias">Inmunodeficiencias primarias</h3>
+<p><strong>Defectos de la inmunidad innata</strong> (función del leucocito y del complemento):</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades por inmunodeficiencia" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Defecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deficiencia de adhesión del leucocito 1</td>
+<td>Mutación de la cadena beta de las integrinas CD11/CD18</td>
+</tr>
+<tr>
+<td>Deficiencia de adhesión del leucocito 2</td>
+<td>Mutación de la fucosiltransferasa (falta sialil-Lewis X, ligando de selectinas)</td>
+</tr>
+<tr>
+<td>Síndrome de <strong>Chédiak-Higashi</strong></td>
+<td>Autosómica recesiva; mutación de <strong>LYST</strong>; fusión defectuosa de fagosoma y lisosoma, con gránulos gigantes en los leucocitos, neutropenia, albinismo y trastornos hemorrágicos</td>
+</tr>
+<tr>
+<td>Enfermedad <strong>granulomatosa crónica</strong></td>
+<td>Defecto de la <strong>oxidasa del fagocito</strong> (no genera superóxido): ligada al X (<strong>gp91phox</strong>) o autosómica recesiva (<strong>p47phox, p67phox</strong>); granulomas por infecciones recurrentes</td>
+</tr>
+<tr>
+<td>Deficiencia de mieloperoxidasa</td>
+<td>Defecto del sistema MPO-H₂O₂</td>
+</tr>
+<tr>
+<td>Defectos de TLR</td>
+<td>P. ej., TLR3 → encefalitis por herpes simple; MyD88 → neumonías bacterianas</td>
+</tr>
+</tbody>
+</table></div>
+<p>Deficiencias del complemento: <strong>C2</strong> es la más frecuente (muchos pacientes asintomáticos; otros tienen enfermedad similar al LES por deficiencia de C2/C4/C1q); <strong>C3</strong> (infecciones piógenas y glomerulonefritis por inmunocomplejos); <strong>componentes terminales C5-C9</strong> (infecciones de repetición por <em><strong>Neisseria</strong></em>); <strong>MBL</strong>; y el <strong>inhibidor de C1</strong> (su deficiencia causa el <strong>angioedema hereditario</strong>, autosómico dominante, con edemas de piel y mucosas por bradicinina).</p>
+<p><strong>Defectos de la inmunidad adaptativa</strong>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades por inmunodeficiencia" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Defecto y características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inmunodeficiencia combinada grave (IDCG)</strong></td>
+<td>Falla humoral y celular. La forma <strong>ligada al X</strong> (50-60%) se debe a mutación de la <strong>cadena gamma común</strong> de receptores de citocinas (IL-2, IL-4, IL-7, IL-9, IL-11, IL-15, IL-21), con fallo de la señal de IL-7: hay pocos linfocitos T y NK. Formas autosómicas recesivas: <strong>deficiencia de ADA</strong> (la más frecuente), mutaciones de <strong>RAG</strong>, de <strong>JAK3</strong> o de canales de calcio. Sin trasplante de HSC, la muerte ocurre en el primer año; la IDCG ligada al X fue la primera enfermedad tratada con terapia génica (con riesgo de leucemia por el vector)</td>
+</tr>
+<tr>
+<td><strong>Agammaglobulinemia ligada al X</strong> (de Bruton)</td>
+<td>Mutación de la tirosina cinasa <strong>BTK</strong> (Xq21.22): bloqueo de la maduración de linfocitos B con ausencia de células plasmáticas; infecciones bacterianas recurrentes (respiratorias), por enterovirus y <em>Giardia</em>; se tratan con inmunoglobulinas</td>
+</tr>
+<tr>
+<td><strong>Síndrome de DiGeorge</strong></td>
+<td>Fallo del desarrollo del timo (tercera y cuarta bolsas faríngeas): déficit de linfocitos T, tetania por falta de paratiroides y malformaciones cardiacas; en el 90% por deleción de <strong>22q11</strong> (gen <strong>TBX1</strong>)</td>
+</tr>
+<tr>
+<td><strong>Síndrome de hiper-IgM</strong></td>
+<td>No hay cambio de isotipo (IgG, IgA, IgE bajas con IgM normal/alta). 70% ligado al X por mutación de <strong>CD40L</strong>; el resto por defectos de CD40 o de la enzima <strong>AID</strong>; riesgo de neumonía por <em>Pneumocystis</em></td>
+</tr>
+<tr>
+<td><strong>Inmunodeficiencia variable común</strong></td>
+<td>Heterogénea; hipogammaglobulinemia con linfocitos B normales que no se diferencian a células plasmáticas; inicio en infancia/adolescencia; asociada a autoinmunidad y neoplasias linfoides</td>
+</tr>
+<tr>
+<td><strong>Deficiencia aislada de IgA</strong></td>
+<td>La más frecuente (1/600 en origen europeo); a menudo asintomática; infecciones mucosas, alergias y autoinmunidad; riesgo de anafilaxia con transfusiones</td>
+</tr>
+<tr>
+<td><strong>Síndrome de linfocito desnudo</strong></td>
+<td>Defecto de factores de transcripción para la clase II del CPH: impide el desarrollo de CD4+ (combinada)</td>
+</tr>
+<tr>
+<td><strong>Enfermedad linfoproliferativa ligada al X</strong></td>
+<td>Mutación de <strong>SAP</strong>: incapacidad de eliminar el VEB, con mononucleosis fulminante y linfomas B</td>
+</tr>
+<tr>
+<td><strong>Síndrome de Wiskott-Aldrich</strong></td>
+<td>Ligada al X (<strong>WASP</strong>): trombocitopenia, eccema e infecciones; IgM baja, IgA e IgE a menudo altas; riesgo de linfoma B</td>
+</tr>
+<tr>
+<td><strong>Ataxia-telangiectasia</strong></td>
+<td>Autosómica recesiva (<strong>ATM</strong>): ataxia, telangiectasias, inmunodeficiencia variable y mayor riesgo de tumores; ATM activa p53 ante roturas del ADN</td>
+</tr>
+</tbody>
+</table></div>
+<p>Otros defectos: respuestas Th1 defectuosas (predisposición mendeliana a micobacterias) y Th17 defectuosas (candidiasis mucocutánea crónica, síndrome de Job).</p>
+<h3 id="inmunodeficiencias-secundarias">Inmunodeficiencias secundarias</h3>
+<p>Son más frecuentes que las primarias. Causas: infección por el <strong>VIH</strong> (pérdida de CD4+), radiación y quimioterapia, afectación de médula ósea por cánceres, <strong>malnutrición</strong> proteico-calórica, esplenectomía y fármacos inmunodepresores.</p>
+
+</section><section id="sec-07-sindrome-de-inmunodeficiencia-adquirida-sida" class="card">
+<div class="section-kicker"><span class="n">07</span> Sección</div>
+<h2>Síndrome de inmunodeficiencia adquirida (sida)</h2>
+<p>Causado por el <strong>virus de la inmunodeficiencia humana (VIH)</strong>, un retrovirus, con inmunodepresión profunda que lleva a infecciones oportunistas, neoplasias y manifestaciones neurológicas.</p>
+<ul>
+<li><strong>Entrada del virus</strong>: requiere <strong>CD4</strong> y un correceptor (receptor de quimiocinas); implica la unión de la <strong>gp120</strong> vírica y la fusión mediada por <strong>gp41</strong>. Las dianas principales son los linfocitos T CD4+ colaboradores, los macrófagos y las DC.</li>
+<li><strong>Replicación</strong>: el genoma provirus se <strong>integra</strong> en el ADN del huésped; su expresión la desencadenan estímulos que activan a las células infectadas.</li>
+<li><strong>Progresión</strong>: infección aguda de linfocitos T y DC de las mucosas, viremia con diseminación, infección latente en el tejido linfoide y pérdida progresiva de linfocitos T CD4+.</li>
+<li><strong>Mecanismos de la inmunodeficiencia</strong>: muerte del linfocito T CD4+ durante la replicación y gemación, apoptosis por estímulo crónico, reducción de la producción tímica y defectos funcionales; además, disfunción de macrófagos y DC y destrucción tardía de la arquitectura linfoide. La pérdida de CD4+ lleva al <strong>sida</strong> (por debajo de 200 células/µl).</li>
+<li><strong>Epidemiología</strong>: transmisión sexual (heterosexual, la más frecuente en el mundo), parenteral (drogas inyectadas) y vertical. En 2016 había unos 37 millones de personas con VIH y el sida causó cerca de 30 millones de muertes acumuladas.</li>
+<li><strong>Morfología</strong>: hiperplasia folicular de linfocitos B en fases precoces, seguida de involución linfoide con ganglios pequeños y atróficos; infecciones oportunistas y respuestas inflamatorias atípicas (p. ej., sin granulomas por falta de CD4+).</li>
+<li><strong>Clínica y tratamiento</strong>: infecciones oportunistas, linfomas B y sarcoma de Kaposi (<strong>SK</strong>), y anomalías del SNC. El <strong>TARGA</strong> (tratamiento antirretroviral) ha reducido la mortalidad, pero la cura sigue siendo esquiva y no hay vacuna eficaz por la gran variabilidad del virus.</li>
+</ul>
+
+</section><section id="sec-08-amiloidosis" class="card">
+<div class="section-kicker"><span class="n">08</span> Sección</div>
+<h2>Amiloidosis</h2>
+<p>Trastorno por <strong>depósito extracelular</strong> de proteínas fibrilares mal plegadas (solubles en su configuración normal) que daña los tejidos. Las fibrillas se unen a proteoglucanos (sulfato de heparano y de dermatano) y a proteínas plasmáticas (sobre todo el <strong>amiloide P sérico</strong>).</p>
+<ul>
+<li><strong>Microscopía</strong>: material extracelular amorfo, eosinófilo e hialino; con <strong>rojo Congo</strong> se ve rojo con luz ordinaria y muestra <strong>birrefringencia verde manzana</strong> con luz polarizada; al microscopio electrónico, fibrillas no ramificadas de <strong>7,5 a 10 nm</strong> con conformación en <strong>hoja beta</strong>.</li>
+<li><strong>Formas bioquímicas principales</strong>: <strong>AL</strong> (cadenas ligeras de Ig, de una proliferación monoclonal de células plasmáticas: <strong>amiloidosis primaria</strong>), <strong>AA</strong> (de la proteína SAA, reactante de fase aguda producido por el hígado tras IL-1 e IL-6: <strong>amiloidosis secundaria/reactiva</strong>, asociada a inflamación crónica como artritis reumatoide), <strong>A-beta</strong> (núcleo de las placas de Alzheimer) y otras menos frecuentes como la <strong>transtiretina (ATTR)</strong> (polineuropatías amiloides familiares y amiloidosis sistémica senil) y la <strong>beta2-microglobulina</strong> (pacientes en hemodiálisis, con síndrome del túnel carpiano).</li>
+<li><strong>Patogenia</strong>: plegamiento anómalo por producción excesiva de proteínas propensas, por mutaciones, o por degradación proteolítica defectuosa. Puede ser <strong>sistémica</strong> o <strong>localizada</strong>.</li>
+<li><strong>Categorías clínicas</strong>: primaria (AL, asociada a mieloma o gammapatía monoclonal; la más frecuente, ~2.000-3.000 casos nuevos/año en EE. UU.), reactiva (AA), heredofamiliar (p. ej., <strong>fiebre mediterránea familiar</strong>, autosómica recesiva por pirina/inflamasoma, con amiloide AA), asociada a hemodiálisis, localizada (nódulos en pulmón, laringe, piel, vejiga, lengua, región periocular), <strong>endocrina</strong> (carcinoma medular de tiroides, islotes en diabetes de tipo 2) y del <strong>envejecimiento</strong> (amiloidosis sistémica senil por TTR).</li>
+<li><strong>Morfología por órgano</strong>: <strong>riñón</strong> (el más frecuente y grave; depósitos glomerulares que llevan a proteinuria, síndrome nefrótico e insuficiencia renal); <strong>bazo</strong> (bazo sagú con depósitos foliculares, o bazo lardáceo con afectación de la pulpa roja); <strong>hígado</strong> (hepatomegalia, amiloide en el espacio de Disse); <strong>corazón</strong> (miocardiopatía restrictiva y arritmias); y otros (macroglosia, vías respiratorias, nervios).</li>
+<li><strong>Clínica y pronóstico</strong>: síntomas iniciales inespecíficos (debilidad, pérdida de peso, síncope) y luego afectación renal, cardiaca y digestiva. Diagnóstico por biopsia (riñón, recto, encía o grasa abdominal con rojo Congo), electroforesis e inmunoelectroforesis, y gammagrafía con amiloide P. La amiloidosis AL tiene una mediana de supervivencia de unos 2 años.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Reconocimiento y formas</span>Fibrillas de 7,5 a 10 nm en hoja beta: rojo Congo con birrefringencia verde manzana a luz polarizada. AL (cadenas ligeras, primaria, mediana de supervivencia 2 años) y AA (reactiva a inflamación crónica); riñón es el órgano más afectado y grave.</div>
+</section><section id="sec-09-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">09</span> Sección</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Dos tipos de inmunidad: innata (inmediata, sin memoria; TLR, NLR/inflamasoma, CLR, RLR, NK) y adaptativa (humoral y celular, con memoria).</li>
+<li><strong>TLR</strong>: 10 en mamíferos; vía NF-kB e IRF. <strong>Inflamasoma</strong>: NLRP-3, caspasa 1 e IL-1; sus alteraciones causan síndromes autoinflamatorios y contribuyen a gota, ateroesclerosis y diabetes de tipo 2.</li>
+<li><strong>NK</strong>: CD16, CCDA; regulación por receptores activadores e inhibidores que reconocen la clase I del CPH.</li>
+<li>Diversidad de receptores por <strong>recombinación somática</strong> con <strong>RAG-1/RAG-2</strong>; los reordenamientos permiten distinguir proliferaciones policlonales de monoclonales.</li>
+<li><strong>TCR</strong> alfa-beta (95%), con CD3 y cadenas zeta; <strong>restricción por CPH</strong>; <strong>CD4</strong> une clase II, <strong>CD8</strong> une clase I; <strong>CD28</strong> une B7.</li>
+<li><strong>CPH/HLA</strong> en el cromosoma 6: clase I en todas las células nucleadas (con beta2-microglobulina); clase II en macrófagos, linfocitos B y DC.</li>
+<li>Subgrupos CD4+: <strong>Th1</strong> (IFN-gamma, macrófagos), <strong>Th2</strong> (IL-4/5/13, IgE y helmintos) y <strong>Th17</strong> (IL-17, neutrófilos).</li>
+<li>Hipersensibilidad: <strong>I</strong> (IgE, mastocitos), <strong>II</strong> (anticuerpos), <strong>III</strong> (inmunocomplejos) y <strong>IV</strong> (linfocitos T).</li>
+<li>Autotolerancia: central (deleción, <strong>AIRE</strong>, edición del receptor) y periférica (<strong>anergia</strong> con CTLA-4/PD-1, <strong>T reguladores</strong> FOXP3/CD25, apoptosis por Fas/FasL).</li>
+<li>HLA asociados: <strong>B27</strong> (espondilitis anquilosante), <strong>DR3/DR4</strong> (diabetes de tipo I), <strong>DQ2/DQ8</strong> (celiaquía), <strong>DRB1*1501</strong> (esclerosis múltiple). No-HLA: <strong>PTPN22</strong>, <strong>NOD2</strong> (Crohn), <strong>IL2RA</strong>.</li>
+<li><strong>LES</strong>: anti-ADN bicatenario y anti-Sm (diagnósticos); nefritis lúpica clases I-VI (la IV, difusa, la más grave, con asas de alambre); endocarditis de Libman-Sacks; exantema en mariposa.</li>
+<li><strong>Sjögren</strong>: sequedad ocular y oral, anti-SS-A/SS-B, factor reumatoide; riesgo de linfoma 40 veces mayor.</li>
+<li><strong>Esclerosis sistémica</strong>: difusa (anti-Scl-70) y limitada (anticentroméricos, síndrome CREST); fibrosis y crisis renal esclerodérmica.</li>
+<li>Rechazo de injerto: hiperagudo (anticuerpos preformados), agudo celular (tubulitis), agudo humoral (<strong>C4d</strong>) y crónico (arterioesclerosis del injerto).</li>
+<li><strong>VIH/sida</strong>: infecta CD4+ (correceptores CCR5/CXCR4); sida con CD4+ &lt; 200 células/µl, infecciones oportunistas y neoplasias.</li>
+<li><strong>Amiloidosis</strong>: proteínas mal plegadas en lámina beta, rojo Congo con birrefringencia verde manzana; formas <strong>AL</strong> y <strong>AA</strong> entre las principales.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

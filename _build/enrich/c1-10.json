@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Malformación (intrínseca) ≠ disrupción (destrucción extrínseca) ≠ deformación (compresión mecánica); secuencia = cascada desde un defecto único (Potter); síndrome = constelación con causa única.",
+    "Ventana teratógena máxima: semanas 3-9 (organogenia); en periodo fetal predominan retraso del crecimiento y lesión de órganos ya formados.",
+    "Prematuridad (<37 semanas) es la segunda causa de mortalidad neonatal; complicaciones: SDR (déficit de surfactante), ECN (neumatosis intestinal), sepsis y hemorragia intraventricular.",
+    "Hidropesía fetal: inmunitaria (Rh/ABO, kernícter, prevención con anti-D) hoy menos frecuente que la no inmunitaria (cardiopatías, cromosomopatías, anemia fetal).",
+    "Errores metabólicos con cribado neonatal: FCN (PAH), galactosemia (GALT) y fibrosis quística (CFTR, sudor salado, F508).",
+    "SMSL: diagnóstico de exclusión, triple riesgo, pico 2-4 meses; prevención con decúbito supino. Neuroblastoma (MYCN) y tumor de Wilms (WT1/IGF2) son los modelos tumorales."
+  ],
+  "topics": [
+    "Malformaciones congénitas: definiciones, causas y ventana teratógena",
+    "Prematuridad, FGR y sus complicaciones: SDR, ECN, sepsis, hemorragia intraventricular",
+    "Hidropesía fetal inmunitaria y no inmunitaria; kernícter",
+    "Errores congénitos del metabolismo: FCN, galactosemia, fibrosis quística",
+    "SMSL: triple riesgo y prevención con decúbito supino",
+    "Tumores infantiles: neuroblastoma y tumor de Wilms"
+  ],
+  "callouts": [
+    {
+      "section": "Síndrome de dificultad respiratoria neonatal",
+      "title": "SDR en 3 claves",
+      "text": "Déficit de surfactante (lecitina, SP-B/SP-C) con membranas hialinas y radiografía en vidrio esmerilado; la insulina materna suprime el surfactante (riesgo en hijos de diabéticas) y los glucocorticoides lo aumentan. Complicaciones: retinopatía del prematuro (VEGF bifásico) y displasia broncopulmonar."
+    },
+    {
+      "section": "Hidropesía fetal",
+      "title": "Kernícter y prevención Rh",
+      "text": "La bilirrubina no conjugada >20 mg/dl (menos en prematuros) lesiona ganglios basales y talamo: fototerapia y exanguinotransfusión. La enfermedad Rh rara vez aparece en el primer embarazo (IgM no cruza la placenta) y la inmunoglobulina anti-D a las 28 semanas y 72 h posparto previene la isoinmunización."
+    },
+    {
+      "section": "Tumores y lesiones seudotumorales",
+      "title": "Neuroblastoma: pronóstico",
+      "text": "Tumor de células azules redondas con seudorrosetas de Homer-Wright, neurópilo, catecolaminas elevadas (AVM/AHV) y estadio 4S con regresión espontánea en lactantes. La amplificación de MYCN (20-30%) define alto riesgo; edad <18 meses y estroma schwanniano son favorables."
+    }
+  ]
+}

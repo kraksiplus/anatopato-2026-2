@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Neoplasia: trastorno genético clonal con parénquima y estroma; benigno vs maligno se define por diferenciación, invasión local y metástasis, no por velocidad de crecimiento.",
+    "Carcinogenia multietápica: mutación iniciadora, luego mutaciones conductoras (dominantes en oncogenes) y pasajeras; supresores se pierden de forma recesiva (dos golpes de Knudson).",
+    "Ocho características distintivas (Hanahan y Weinberg): señales de crecimiento, evasión de inhibidores, efecto Warburg, evasión de apoptosis, replicación ilimitada, angiogenia, invasión/metástasis y evasión inmunitaria; habilitadoras: inestabilidad genómica e inflamación.",
+    "Diseminación: carcinomas vía linfática, sarcomas vía hematógena (hígado y pulmón); siembra en cavidades con seudomixoma peritoneal; ~30% de tumores sólidos ya metastásicos al diagnóstico.",
+    "Eje RB (G1/S) y TP53 (guardián del genoma: arresto, senescencia o apoptosis) inactivados en la mayoría de los cánceres; VPH bloquea ambos con E7 y E6.",
+    "Clínica: caquexia mediada por TNF, IL-1 e IL-6; síndromes paraneoplásicos en ~10%; estadificación TNM con creciente componente molecular."
+  ],
+  "topics": [
+    "Nomenclatura: adenoma, papiloma, sarcoma, carcinoma, teratoma, hamartoma y coristoma",
+    "Diferenciación, anaplasia, metaplasia, displasia y carcinoma in situ",
+    "Oncogenes y oncoproteinas: RAS, receptores tirosina cinasa, MYC, ciclinas y CDK",
+    "Genes supresores: RB, TP53, APC, PTEN, VHL y genes de reparación del ADN",
+    "Invasión, metástasis, angiogenia y evasión de la vigilancia inmunitaria",
+    "Carcinogenia química, por radiación y microbiana; síndromes paraneoplásicos y marcadores tumorales"
+  ],
+  "callouts": [
+    {
+      "section": "Características de las neoplasias benignas y malignas",
+      "title": "Lo que discrimina malignidad",
+      "text": "Invasividad y metástasis son el factor que mejor discrimina benigno de maligno; la velocidad de crecimiento y las mitosis no bastan, pues hay mitosis normales en tejidos de recambio rápido. Gliomas y carcinomas basocelulares invaden precozmente pero casi nunca metastatizan: invasión y metástasis son propiedades separables."
+    },
+    {
+      "section": "Insensibilidad a la inhibición del crecimiento",
+      "title": "Tres salidas de p53, en orden de gravedad",
+      "text": "Frente a estrés celular p53 induce primero detención en G1 (p21, GADD45), luego senescencia y finalmente apoptosis (BAX, PUMA). Se pierde por mutación bialélica en más del 50% de los tumores, o indirectamente por MDM2 sobreexpresado o E6 del VPH; su síndrome hereditario es Li-Fraumeni."
+    },
+    {
+      "section": "Cambios cromosómicos y oncogenes activados",
+      "title": "Translocaciones que hay que saber de memoria",
+      "text": "LMC t(9;22) BCR-ABL; linfoma de Burkitt t(8;14) MYC-IgH; linfoma folicular t(14;18) BCL2-IgH; linfoma de células del manto t(11;14) ciclina D1-IgH; LPA t(15;17) PML-RARA (reversible con ATRA); sarcoma de Ewing t(11;22) EWSR1-FLI1."
+    }
+  ]
+}

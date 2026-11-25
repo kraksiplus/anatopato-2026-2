@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Zona 3 (pericentral): isquemia, paracetamol/NAPQI por CYP450 y congestión; zona 1 (periportal): hierro e inclusiones PAS+ de α1-AT [p. 824, 842].",
+    "Insuficiencia hepática exige perder 80-90% de la función; descenso de transaminasas con empeoramiento clínico = pocos hepatocitos vivos, no mejoría [p. 826-827].",
+    "VHC cronifica 80-90% y los antivirales de acción directa (NS3/4A, NS5A, NS5B) curan >99% de quienes logran respuesta viral sostenida [p. 834-835].",
+    "Hemocromatosis (HFE C282Y), Wilson (ATP7B) y α1-AT (PiZZ) son hepatopatías hereditarias; hierro y cobre dañan sin inflamación característica [p. 848-851].",
+    "CHC surge en cirrosis en la mayoría; mutaciones CTNNB1 40%, promotor TERT 50-60%, TP53 hasta 60% [p. 868-869].",
+    "Cálculos de colesterol (90% en EE. UU.) vs pigmentarios (negros por hemólisis, marrones por infección); carcinoma vesicular: cálculos en 95% de los casos [p. 873-877]."
+  ],
+  "topics": [
+    "Zonación acinar y respuestas a la lesión: balonización, necrosis, apoptosis, fibrosis por células estrelladas",
+    "Insuficiencia hepática aguda y crónica, cirrosis e hipertensión portal con sus cuatro consecuencias",
+    "Hepatitis víricas A-E: serología, cronificación y morfología, más hepatitis autoinmunitaria y por fármacos",
+    "Hígado graso alcohólico y no alcohólico; hepatopatías hereditarias (hemocromatosis, Wilson, α1-AT)",
+    "Enfermedad colestásica, colangiopatías autoinmunitarias (CBP vs CEP) y trastornos circulatorios",
+    "Tumores hepáticos (CHC, colangiocarcinoma) y vesícula biliar: colelitiasis, colecistitis, carcinoma"
+  ],
+  "callouts": [
+    {
+      "section": "Puntos de examen",
+      "title": "Trampas de diferencial clásicas",
+      "text": "Cuerpos acidófilos en cualquier hepatitis vs cuerpos de Councilman solo en fiebre amarilla. Síndrome de obstrucción sinusoidal (endotelio, post-trasplante de células madre) vs Budd-Chiari (trombosis de venas hepáticas mayores). Síndrome hepatopulmonar (vasodilatación, hipoxemia peor de pie) vs hipertensión portopulmonar (vasoconstricción) [p. 825, 830, 862-863]."
+    },
+    {
+      "section": "Enfermedad colestásica",
+      "title": "CBP vs CEP en una línea",
+      "text": "CBP: mujeres 9:1, media 50 años, AMA contra PDC-E2 en 95%, lesión florida de conductos pequeños. CEP: hombres 2:1, media 30 años, AMA−, ANCA-p atípicos, arrosariado en CPRE, 70% con EII y 20% de riesgo vital de colangiocarcinoma [p. 857-859]."
+    },
+    {
+      "section": "Hepatopatía hereditaria",
+      "title": "Las tres metabólicas",
+      "text": "Hemocromatosis: hepcidina baja, depósito sin inflamación, CHC 200× mayor y la flebotomía no lo elimina. Wilson: ATP7B, cobre libre por Fenton, Kayser-Fleischer y ↓ceruloplasmina. α1-AT: PiZZ con inclusiones PAS+ diastasa-resistentes y enfisema que el trasplante hepático no corrige [p. 848-852]."
+    }
+  ]
+}

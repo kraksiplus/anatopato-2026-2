@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Ante estrés la célula se adapta: hipertrofia (más tamaño), hiperplasia (más número), atrofia (menos tamaño) o metaplasia (cambio de fenotipo).",
+    "Si el estrés supera la adaptación hay lesión reversible (tumefacción, cambio graso); si persiste, la célula muere por necrosis o apoptosis.",
+    "Necrosis: rotura de membranas, escape del contenido, inflamación y digestión enzimática; apoptosis: caspasas, cuerpos apoptósicos, sin inflamación.",
+    "Mecanismos de lesión: agotamiento de ATP, daño mitocondrial y de membranas, daño de ADN (p53), ERO, calcio citosólico y estrés del RE.",
+    "La isquemia es la causa clínica más frecuente de lesión; daña más rápido que la hipoxia pura; la reperfusión puede agravarla.",
+    "Acumulaciones intracelulares y calcificaciones: distrófica en tejido necrótico con calcio sérico normal; metastásica en tejido normal por hipercalcemia."
+  ],
+  "topics": [
+    "Adaptaciones celulares al estrés: hipertrofia, hiperplasia, atrofia y metaplasia",
+    "Lesión reversible (tumefacción, cambio graso) y progresión a lesión irreversible",
+    "Necrosis: patrones tisular y diferencias con la apoptosis",
+    "Apoptosis: vías mitocondrial (BCL2, citocromo c) y extrínseca (Fas, TNFR1)",
+    "Otros mecanismos de lesión: ERO, calcio, estrés del RE y muerte regulada",
+    "Acumulaciones intracelulares, calcificaciones y envejecimiento celular"
+  ],
+  "callouts": [
+    {
+      "section": "Progresión de la lesión y muerte",
+      "title": "Patrones de necrosis: truco de alto rendimiento",
+      "text": "Coagulativa: isquemia en todos los órganos menos encéfalo; licuefactiva: encéfalo e infecciones bacterianas con pus; caseosa: tuberculosis (granuloma). Grasa: pancreatitis con saponificación; fibrinoide: vasculitis inmunitaria. Ojo: la gangrena es un término clínico, no un patrón específico de muerte celular."
+    },
+    {
+      "section": "Progresión de la lesión y muerte",
+      "title": "Las dos vías de las caspasas",
+      "text": "Vía mitocondrial (intrínseca): fuga de citocromo c regulada por la familia BCL2; BAX/BAK proapoptósicos, BCL2/BCL-XL/MCL1 antiapoptósicos, proteínas solo BH3 como iniciadoras; forma apoptosoma con APAF-1 y activa caspasa 9. Vía extrínseca: receptores de muerte (Fas/CD95, TNFR1) reclutan FADD y activan caspasa 8; FLIP la bloquea."
+    },
+    {
+      "section": "Acumulaciones intracelulares",
+      "title": "Distrófica vs metastásica",
+      "text": "Distrófica: calcio en tejido necrótico o dañado con calcio sérico normal (ateromas, válvulas, cualquier necrosis). Metastásica: tejido normal por hipercalcemia (hiperparatiroidismo, resorción ósea, vitamina D, insuficiencia renal); predomina en mucosa gástrica, riñón, pulmón y arterias."
+    }
+  ]
+}

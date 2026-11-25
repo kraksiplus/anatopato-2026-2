@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabeza y cuello · Anatomía Patológica UBB</title>
+<meta name="description" content="Cabeza y cuello. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Cabeza y cuello · Anatomía Patológica UBB">
+<meta property="og:description" content="Cabeza y cuello. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 16. Cabeza y cuello</h1>
+    <p class="lede">Guía 06 de 08. Resumen completo del capítulo 16 con 115 citas por página y 15 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>06 de 08</strong></div><div><span>Capítulo</span><strong>16</strong></div><div><span>Páginas</span><strong>731-752</strong></div><div><span>Citas</span><strong>115</strong></div><div><span>Tablas</span><strong>15</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-cavidad-oral">Cavidad oral</a></li>
+        <li><a href="#sec-03-vias-respiratorias-superiores">Vías respiratorias superiores</a></li>
+        <li><a href="#sec-04-oidos">Oídos</a></li>
+        <li><a href="#sec-05-cuello">Cuello</a></li>
+        <li><a href="#sec-06-glandulas-salivales">Glándulas salivales</a></li>
+        <li><a href="#sec-07-quistes-y-tumores-odontogenos">Quistes y tumores odontógenos</a></li>
+        <li><a href="#sec-08-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="05_Pulmon.html" title="Pulmón">05</a>
+        <a href="07_Tubo_Digestivo.html" title="Tubo digestivo">07</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 16 del Robbins y Cotran, 10ª edición: páginas impresas 731-752 (22 páginas), resumidas desde el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Muguet se raspa con lecho eritematoso; leucoplasia vellosa (VEB, borde lateral de lengua, VIH) no se desprende <span class="cite">p. 733-734</span>.</li><li>Leucoplasia: 3% de la población, 5-25% premaligna; eritroplasia ~90% ya es displasia grave o carcinoma in situ: la roja es peor que la blanca <span class="cite">p. 734-735</span>.</li><li>CE VPH+ de orofaringe: no queratinizante, basaloide, p16+, ganglio grande con primario pequeño, mejor pronóstico; el de cavidad oral es tabaco y alcohol <span class="cite">p. 735-737</span>.</li><li>Quiste branquial: lateral, segundo arco, tejido linfoide; tirogloso: línea media desde el orificio ciego; la mayoría de los CE quísticos del cuello son metástasis <span class="cite">p. 745</span>.</li><li>Malignidad salival inversa al tamaño glandular: sublingual 70-90% maligno; mucoepidermoide con t(11;19) CRTC1-MAML2 es el maligno más frecuente <span class="cite">p. 748</span>.</li><li>Granuloma piógeno es el tumor del embarazo; el granuloma periférico de células gigantes se diferencia de los tumores marrones del hiperparatiroidismo <span class="cite">p. 732-733</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 731-748</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La <strong>caries</strong> es desmineralización focal de esmalte y dentina por ácidos de la fermentación bacteriana de azúcares; es la principal causa de pérdida dentaria antes de los 35 años. La <strong>fluorapatita</strong> resiste la degradación ácida mejor que la hidroxiapatita <span class="cite">p. 731</span>.</li>
+<li>La <strong>gingivitis</strong> (inflamación por placa y cálculo) es reversible; la <strong>periodontitis</strong> destruye ligamento periodontal, hueso alveolar y cemento, con flora <strong>gramnegativa anaeróbica</strong> (<em>Aggregatibacter actinomycetemcomitans</em>, <em>Porphyromonas gingivalis</em>, <em>Prevotella intermedia</em>) y puede ser foco de endocarditis y abscesos pulmonares y cerebrales <span class="cite">p. 732</span>.</li>
+<li>Las <strong>lesiones reactivas</strong> de la mucosa oral (úlceras aftosas, fibroma irritativo, granuloma piógeno, fibroma osificante periférico, granuloma periférico de células gigantes) son procesos inflamatorios, no neoplásicos; el fibroma osificante periférico recidiva en 15-20% <span class="cite">p. 732</span>.</li>
+<li>La <strong>leucoplasia vellosa</strong> es una lesión del borde lateral de la lengua causada por el <strong>VEB</strong> en inmunodeprimidos; en VIH puede presagiar sida. Hiperparaqueratosis con células balonizadas; <strong>no se desprende</strong> (a diferencia de la candidiasis) <span class="cite">p. 733-734</span>.</li>
+<li>La <strong>leucoplasia</strong> oral (3% de la población) es premaligna en 5-25% de los casos; la <strong>eritroplasia</strong>, menos frecuente, es más ominosa: ~90% muestra displasia grave, carcinoma in situ o carcinoma mínimamente invasivo <span class="cite">p. 734-735</span>.</li>
+<li>El <strong>carcinoma epidermoide (CE)</strong> es el 95% de los tumores malignos de cabeza y cuello. En orofaringe, hasta el 80% albergan VPH oncogénico (sobre todo <strong>VPH-16</strong>); en cavidad oral predomina el CE "clásico" por tabaco y alcohol <span class="cite">p. 735</span>.</li>
+<li>El CE VPH-positivo: paciente más joven, <strong>no queratinizante</strong>, basaloide, p16+, primario pequeño con ganglionar voluminosa, mejor pronóstico y bajo riesgo de segundo tumor; el CE VPH-negativo es lo contrario <span class="cite">p. 736-737</span>.</li>
+<li>Las vías respiratorias superiores: rinitis infecciosa y alérgica, pólipos nasales, sinusitis; el <strong>linfoma NK/T nasal</strong> (VEB+) y la <strong>mucormicosis</strong> son las lesiones necrosantes de gravedad <span class="cite">p. 739-740</span>.</li>
+<li>En glándulas salivales, el potencial de malignidad es <strong>inversamente proporcional al tamaño de la glándula</strong>: parótida mayoría benigna (adenoma pleomorfo, tumor de Warthin); sublingual 70-90% maligno (carcinoma mucoepidermoide) <span class="cite">p. 748</span>.</li>
+<li>Quistes de cuello: <strong>branquial</strong> (segundo arco, lateral, adultos jóvenes) vs <strong>del conducto tirogloso</strong> (línea media, trayecto del descenso tiroideo desde el orificio ciego) <span class="cite">p. 745</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-cavidad-oral" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 731-737</div>
+<h2>Cavidad oral</h2>
+<h3 id="enfermedades-de-los-dientes-y-estructuras-de-soporte">Enfermedades de los dientes y estructuras de soporte</h3>
+<ul>
+<li><strong>Caries</strong>: desmineralización focal por ácidos de fermentación bacteriana de azúcares. Principal causa de pérdida dentaria antes de los 35 años. La fluoración del agua y la mejor higiene redujeron la incidencia en países industrializados; aumenta en países en desarrollo por consumo de alimentos procesados <span class="cite">p. 731</span>.</li>
+<li><strong>Gingivitis</strong>: inflamación de la mucosa que rodea los dientes por acumulación de placa (biopelícula de bacterias, proteínas salivales y células descamadas; si mineraliza → sarro). Eritema, edema, sangrado; <strong>reversible</strong> con higiene <span class="cite">p. 731-732</span>.</li>
+<li><strong>Periodontitis</strong>: inflamación de ligamento periodontal, hueso alveolar y cemento → aflojamiento y pérdida dentaria. En sitios sanos predominan grampositivos facultativos; en periodontitis activa, gramnegativos anaeróbicos y microaerófilos. Asociada a sida, leucemia, Crohn, diabetes, síndrome de Down, sarcoidosis y defectos de neutrófilos (Chédiak-Higashi, agranulocitosis, neutropenia cíclica) <span class="cite">p. 732</span>.</li>
+</ul>
+<h3 id="lesiones-inflamatoriasreactivas">Lesiones inflamatorias/reactivas</h3>
+<ul>
+<li><strong>Úlceras aftosas</strong>: hasta 40% de la población, más en las dos primeras décadas; asociadas a enfermedad celiaca, EII y enfermedad de Behçet. Úlceras superficiales hiperémicas con exudado fino y halo eritematoso; resuelven espontáneamente en 7-10 días (persisten en inmunodeprimidos) <span class="cite">p. 732</span>.</li>
+<li><strong>Fibroma por irritación</strong> (fibroma traumático, hiperplasia fibrosa focal): masa nodular submucosa en mucosa bucal a lo largo de la línea de mordida; reactivo a traumatismo repetitivo <span class="cite">p. 732</span>.</li>
+<li><strong>Granuloma piógeno</strong>: encías de niños, adultos jóvenes y embarazadas (<strong>tumor del embarazo</strong>); rojo-violeta, ulcerado; proliferación vascularizada de tejido de granulación. Puede madurar a masa fibrosa o fibroma osificante periférico <span class="cite">p. 732</span>.</li>
+<li><strong>Fibroma osificante periférico</strong>: crecimiento gingival reactivo; mujeres jóvenes; recidiva 15-20%, requiere extirpación hasta el periostio <span class="cite">p. 732</span>.</li>
+<li><strong>Granuloma periférico de células gigantes</strong>: células gigantes multinucleadas en estroma fibroangiomatoso. Diferenciar del tumor central de células gigantes de los maxilares y de los <strong>tumores marrones</strong> del hiperparatiroidismo (múltiples) <span class="cite">p. 733</span>.</li>
+</ul>
+<h3 id="infecciones">Infecciones</h3>
+<ul>
+<li><strong>VHS-1</strong> (a veces VHS-2): gingivoestomatitis en niños (2-4 años, sintomática hasta en 20%), faringitis en adultos, infección crónica en inmunodeprimidos. Vesículas con acantólisis, inclusiones intranucleares eosinófilas y células gigantes (policariones; prueba de <strong>Tzanck</strong>). Latencia en ganglios (trigémino); la reactivación causa estomatitis recidivante (herpes labial, 1-3 mm, resuelve en 7-10 días) <span class="cite">p. 733</span>.</li>
+<li>Otros virus orales: herpes zóster, VEB (mononucleosis, carcinoma nasofaríngeo, linfoma), CMV, enterovirus (herpangina, mano-boca-pie) y sarampión <span class="cite">p. 733</span>.</li>
+<li><strong>Candidiasis oral (muguet)</strong>: <em>Candida albicans</em> coloniza al ~50% de la población; infección fúngica oral más frecuente. Forma <strong>seudomembranosa</strong>: membrana gris-blanca que se raspa fácilmente dejando base eritematosa , <strong>no confundir con la leucoplasia vellosa, que no se desprende</strong>. Factores: inmunodepresión (trasplante, neutropenia, quimioterapia, sida, diabetes) y antibióticos de amplio espectro <span class="cite">p. 733</span>.</li>
+<li><strong>Infecciones fúngicas profundas</strong> con predilección por cavidad oral: histoplasmosis, blastomicosis, coccidioidomicosis, criptococosis, cigomicosis y aspergilosis; incidencia creciente en inmunodeprimidos <span class="cite">p. 733</span>.</li>
+</ul>
+<h3 id="manifestaciones-orales-de-enfermedades-sistémicas">Manifestaciones orales de enfermedades sistémicas</h3>
+<ul>
+<li>Escarlatina: lengua de frambuesa/fresa; sarampión: <strong>manchas de Koplik</strong> (ulceraciones alrededor del conducto de Stensen); difteria: membrana blanco sucio en amígdalas; VIH: herpes, <em>Candida</em>, sarcoma de Kaposi, leucoplasia vellosa <span class="cite">p. 734</span>.</li>
+<li>Liquen plano: lesiones reticuladas en encaje (&gt;50% de los pacientes con liquen plano cutáneo); eritema multiforme generalizado = síndrome de Stevens-Johnson; leucemia monocítica: hipertrofia e infiltración gingival; difenilhidantoína: fibrosis gingival; embarazo: tumor del embarazo; síndrome de Rendu-Osler-Weber: telangiectasias <span class="cite">p. 734</span>.</li>
+<li><strong>Leucoplasia vellosa</strong>: VEB; manchas blancas confluentes hiperqueratósicas "vellosas" en el borde lateral de la lengua; microscopía: hiperparaqueratosis, acantosis y células balonizadas en la capa espinosa superior; se detectan ARN y proteínas del VEB. En VIH puede presagiar sida <span class="cite">p. 733-734</span>.</li>
+</ul>
+<h3 id="lesiones-precancerosas-y-cancerosas">Lesiones precancerosas y cancerosas</h3>
+<ul>
+<li><strong>Leucoplasia</strong>: término clínico OMS para mancha blanca sin motivo aparente (excluye liquen plano, candidiasis, irritación evidente). 3% de la población; 5-25% premalignas; <strong>toda leucoplasia se considera precancerosa hasta descartarlo por histología</strong> <span class="cite">p. 734</span>.</li>
+<li><strong>Eritroplasia</strong>: área roja aterciopelada, deprimida; mucho más ominosa: ~90% con displasia grave/carcinoma in situ/carcinoma mínimamente invasivo. Formas mixtas: <strong>leucoeritroplasia moteada</strong>. Adultos 40-70 años, varones 2:1; tabaco como antecedente común <span class="cite">p. 734-735</span>.</li>
+<li>~15% de las lesiones premalignas progresa a CE en un promedio de 5 años; los criterios de displasia son subjetivos incluso entre patólogos <span class="cite">p. 736</span>.</li>
+</ul>
+<h3 id="carcinoma-epidermoide">Carcinoma epidermoide</h3>
+<ul>
+<li><strong>Epidemiología</strong>: 95% de los tumores malignos de cabeza y cuello; sexta neoplasia más común en el mundo; ~50.000 casos/año en EE. UU. y &gt;650.000 en el mundo <span class="cite">p. 735</span>.</li>
+<li><strong>Etiología</strong>: VPH de alto riesgo es hoy la principal causa de CE de orofaringe (hasta 80%, sobre todo VPH-16, en amígdalas, base de lengua y faringe); el CE de cavidad oral se asocia a tabaco y alcohol crónicos; masticar paan (nuez de areca, lima, tabaco) en India y Asia; radiación actínica y pipa en el labio inferior. Aumenta el CE oral en menores de 40 años sin factores de riesgo ni VPH <span class="cite">p. 735</span>.</li>
+<li>El CE orofaríngeo VPH+ se ha multiplicado más del doble en dos décadas; se espera que la vacuna VPH lo revierta. Los sitios de origen (criptas amigdalinas, base de lengua) no son accesibles a citología de detección, a diferencia del cérvix <span class="cite">p. 735</span>.</li>
+<li><strong>Pronóstico</strong>: supervivencia a 5 años del CE clásico en etapa temprana ~80%, cae a 20% en etapa tardía; mejor supervivencia a largo plazo en CE VPH+. Segundos tumores primarios: 3-7% por año (el más alto de todas las neoplasias malignas); <strong>cancerización de campo</strong>; ~35% de probabilidad de un nuevo tumor primario a 5 años de seguimiento <span class="cite">p. 735-736</span>.</li>
+<li><strong>Biología molecular (TCGA)</strong>: mutaciones conductoras en <em>TP53</em>, <em>CDKN2A</em>, <em>PIK3CA</em>; novedosas y potencialmente dianas: <em>NOTCH1</em> y <em>FAT1</em>. <em>TP53</em> es el más mutado; el resto oscila entre 1 y 23%. Tumores VPH-negativos tienen más mutaciones somáticas; en los VPH-positivos, las oncoproteínas <strong>E6 y E7</strong> desactivan las vías p53 y RB <span class="cite">p. 736</span>.</li>
+<li><strong>Morfología</strong>: CE queratinizante clásico (VPH−) en superficie ventral de lengua, suelo de boca, labio inferior, paladar blando y encía; se presenta como masa ulcerada e indurada. CE VPH+ no queratinizante, basaloide, en criptas amigdalinas, sin lesión premaligna visible, con linfoadenopatías cervicales; marcador: <strong>p16</strong> por IHC, confirmable con PCR o hibridación in situ <span class="cite">p. 736-737</span>.</li>
+<li>A diferencia del cérvix, en el CE queratinizante la displasia de espesor total (carcinoma in situ) no siempre precede a la invasión. El grado de diferenciación <strong>no</strong> se correlaciona con el comportamiento <span class="cite">p. 737</span>.</li>
+<li><strong>Extensión</strong>: ganglios cervicales como sitio local más propicio; metástasis a distancia a mediastino, pulmones, hígado y huesos, a menudo ya presentes al diagnóstico <span class="cite">p. 737</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cavidad oral" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>CE asociado a VPH</th>
+<th>CE no asociado a VPH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edad</td>
+<td>Más joven</td>
+<td>Edad avanzada</td>
+</tr>
+<tr>
+<td>Factores de riesgo</td>
+<td>Número de parejas con sexo oral</td>
+<td>Tabaco, alcohol</td>
+</tr>
+<tr>
+<td>Localización</td>
+<td>Orofaringe</td>
+<td>Cavidad oral</td>
+</tr>
+<tr>
+<td>Presentación</td>
+<td>Primario pequeño con ganglionar voluminosa</td>
+<td>Primario amplio con ganglionar variable</td>
+</tr>
+<tr>
+<td>Histología</td>
+<td>No queratinizante</td>
+<td>Queratinizante</td>
+</tr>
+<tr>
+<td>Metástasis a distancia</td>
+<td>Infrecuentes</td>
+<td>Frecuentes</td>
+</tr>
+<tr>
+<td>Pronóstico</td>
+<td>Bueno</td>
+<td>Malo</td>
+</tr>
+<tr>
+<td>Segundo tumor primario</td>
+<td>Bajo</td>
+<td>Elevado</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 737</span></p>
+
+<div class="warnbox"><span class="box-title">CE VPH+ vs CE VPH-</span>El CE VPH+ es no queratinizante, basaloide, p16+, con primario pequeño y ganglio voluminoso, mejor pronóstico y bajo riesgo de segundo tumor. El VPH- es queratinizante, tabaquil, con metástasis a distancia frecuentes y mal pronóstico <span class="cite">p. 736-737</span>.</div>
+</section><section id="sec-03-vias-respiratorias-superiores" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 739-744</div>
+<h2>Vías respiratorias superiores</h2>
+<h3 id="nariz">Nariz</h3>
+<ul>
+<li><strong>Rinitis infecciosa</strong> (resfriado común): adenovirus, echovirus y rinovirus; mucosa engrosada, edematosa; infección bacteriana secundaria da exudado mucopurulento <span class="cite">p. 739</span>.</li>
+<li><strong>Rinitis alérgica</strong>: hipersensibilidad IgE a pólenes, hongos, alérgenos animales y ácaros; 20% de la población estadounidense; respuesta de fase temprana y tardía, infiltrado rico en eosinófilos <span class="cite">p. 739</span>.</li>
+<li><strong>Pólipos nasales</strong>: hasta 3-4 cm; mucosa edematosa, glándulas hiperplásicas, infiltrado con eosinófilos. Pese a la apariencia alérgica, la mayoría de los pacientes <strong>no</strong> son atópicos y solo 0,5% de los atópicos los desarrollan <span class="cite">p. 739</span>.</li>
+<li><strong>Rinitis crónica y sinusitis</strong>: sinusitis aguda precedida de rinitis; a veces por extensión de infección periapical maxilar. Obstrucción del drenaje → empiema y <strong>mucocele</strong>. Sinusitis crónica polimicrobiana; hongos (mucormicosis) en diabéticos; componente del <strong>síndrome de Kartagener</strong> (bronquiectasias + situs inversus). Complicaciones: extensión a órbita, osteomielitis, tromboflebitis séptica dural <span class="cite">p. 739-740</span>.</li>
+<li><strong>Lesiones necrosantes de la nariz</strong>: mucormicosis aguda (diabéticos e inmunodeprimidos), granulomatosis con poliangitis (Wegener) y <strong>linfoma NK/T nasal</strong> (VEB+, hombres asiáticos o latinoamericanos en 5ª-6ª décadas); sin tratamiento es rápidamente mortal; localizado responde a radioterapia con recaídas frecuentes <span class="cite">p. 740</span>.</li>
+</ul>
+<h3 id="nasofaringe">Nasofaringe</h3>
+<ul>
+<li><strong>Faringitis y amigdalitis</strong>: mayormente víricas (rinovirus, echovirus, adenovirus; luego gripe y virus sincitial respiratorio); bacterianas sobre todo por <strong>estreptococos β-hemolíticos</strong>. Importancia: secuelas tardías , fiebre reumática y glomerulonefritis <span class="cite">p. 740</span>.</li>
+<li><strong>Angiofibroma nasofaríngeo</strong>: casi exclusivo de varones adolescentes (piel clara, pelirrojos); pared posterolateral del techo nasal; resección con embolización preoperatoria. Recidiva ~20%, mortal 9%. Mutaciones de <em>CTNNB1</em> (β-catenina); forma esporádica o asociada a poliposis adenomatosa familiar <span class="cite">p. 740-741</span>.</li>
+<li><strong>Papiloma nasosinusal (de Schneider)</strong>: exofítico, endofítico (invertido) u oncocítico; hombres 30-60 años; comportamiento localmente invasivo, recidivas si extirpación inadecuada; <strong>transformación maligna ~10%</strong>. Formas endofíticas con mutaciones de <em>EGFR</em>; el resto con VPH 6 y 11 <span class="cite">p. 741</span>.</li>
+<li><strong>Neuroblastoma olfativo (estesioneuroblastoma)</strong>: células neuroectodérmicas olfatorias, parte superior de la cavidad nasal; picos a los 15 y 50 años; obstrucción nasal y epistaxis. Tumor de células redondas pequeñas azules (diferenciar de linfoma, carcinoma de células pequeñas, sarcoma de Ewing, rabdomiosarcoma, melanoma); ENE+, sinaptofisina+, CD56+, cromogranina+. Supervivencia a 5 años 40-90% según estadio y grado <span class="cite">p. 741</span>.</li>
+<li><strong>Carcinoma de línea media NUT</strong>: infrecuente, cualquier edad, extremadamente infiltrante y resistente; &lt;1 año de supervivencia. Translocaciones que fusionan <strong>NUT</strong> con <strong>BRD4</strong>; los inhibidores de BRD4-NUT inducen diferenciación terminal (en estudio) <span class="cite">p. 741</span>.</li>
+<li><strong>Carcinoma nasofaríngeo</strong>: asociado a <strong>VEB</strong>; tres patrones (CE queratinizante, no queratinizante, basaloide); "linfoepitelioma" es nombre obsoleto. Común en niños africanos y adultos del sur de China; dietas ricas en nitrosaminas, tabaco y vapores químicos como cofactores; anticuerpos anti-VEB y PCR de ADN del VEB en suero <span class="cite">p. 741-742</span>.</li>
+<li><strong>Morfología y clínica</strong>: variante indiferenciada con células en sincitio, núcleos vesiculares, infiltrada por linfocitos T; <strong>EBER-1</strong> por hibridación in situ. Oculto hasta estadios avanzados: obstrucción nasal, epistaxis, metástasis cervicales hasta en 70%. Radioterapia: supervivencia global a 5 años ~60%; no queratinizante 70-98% (radiosensible) vs queratinizante solo 20% <span class="cite">p. 742</span>.</li>
+</ul>
+<h3 id="laringe">Laringe</h3>
+<ul>
+<li><strong>Laringitis</strong>: alérgica, vírica, bacteriana, química o por reflujo gastroesofágico; en niños, la <strong>laringoepiglotitis</strong> (VSR, <em>Haemophilus influenzae</em>, estreptococos β-hemolíticos) es urgencia médica por obstrucción; el <strong>crup</strong> es una laringotraqueobronquitis con estridor inspiratorio <span class="cite">p. 743</span>.</li>
+<li><strong>Nódulos reactivos (nódulos y pólipos de cuerdas vocales)</strong>: grandes fumadores o sobreesfuerzo vocal (<strong>nódulos del cantante</strong>); ronquera progresiva; <strong>riesgo de cáncer casi inexistente</strong>. Por convención, nódulos = bilaterales; pólipos = unilaterales. Epitelio escamoso sobre núcleo mixoide laxo <span class="cite">p. 743</span>.</li>
+<li><strong>Papiloma escamoso y papilomatosis</strong>: cuerdas vocales verdaderas, &lt;1 cm, ejes fibrovasculares; solitarios en adultos, múltiples en niños (<strong>papilomatosis laríngea juvenil</strong>) por <strong>VPH 6 y 11</strong> adquiridos en el canal del parto; recidivan con frecuencia, rara vez transforman en CE <span class="cite">p. 743</span>.</li>
+<li><strong>Carcinoma de laringe</strong>: CE en hombres fumadores crónicos; alcohol sinérgico con tabaco; también asbesto, radiación y VPH. Secuencia hiperplasia→displasia→carcinoma: riesgo de transformación 1-2% a 5-10 años con displasia leve vs 5-10% con displasia grave; los cambios pueden regresar al dejar de fumar <span class="cite">p. 743</span>.</li>
+<li>95% son CE habituales; mayoría en cuerdas vocales; hombres en la sexta década; debut con ronquera persistente, disfagia y disfonía. Pronóstico según estadio; técnica conservadora de órgano en etapas tempranas <span class="cite">p. 744</span>.</li>
+</ul>
+
+</section><section id="sec-04-oidos" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 744-745</div>
+<h2>Oídos</h2>
+<ul>
+<li>Frecuencia descendente: otitis aguda y crónica (con colesteatoma) &gt; otoesclerosis &gt; pólipos auditivos &gt; laberintitis &gt; carcinomas &gt; paragangliomas <span class="cite">p. 744</span>.</li>
+<li><strong>Otitis media aguda y crónica</strong>: lactantes y niños; vírica inicial, sobreinfección por <em>Streptococcus pneumoniae</em>, <em>H. influenzae</em> o <em>Moraxella catarrhalis</em>; la crónica por <em>Pseudomonas aeruginosa</em>, <em>S. aureus</em> u hongos. Puede perforar el tímpano, invadir huesecillos y laberinto y causar encefalitis o abscesos. En diabéticos, la otitis por <em>P. aeruginosa</em> es necrosante destructiva <span class="cite">p. 744</span>.</li>
+<li><strong>Colesteatoma</strong>: quiste no neoplásico de 1-4 cm asociado a otitis media crónica; epitelio escamoso queratinizante con restos de queratina y cristales de colesterol; erosiona huesecillos, laberinto y hueso adyacente <span class="cite">p. 744-745</span>.</li>
+<li><strong>Otoesclerosis</strong>: depósito anómalo de hueso alrededor de la ventana oval; anquilosis del estribo → hipoacusia proporcional a la inmovilización; bilateral; autosómica dominante con penetrancia variable; desacoplamiento entre reabsorción y formación ósea <span class="cite">p. 745</span>.</li>
+<li><strong>Tumores del oído</strong>: carcinomas basocelulares y CE del pabellón (varones ancianos, sol) rara vez metastatizan; el CE del <strong>conducto auditivo externo</strong> (mujeres de mediana edad, no solar) puede invadir la cavidad craneal y da solo ~50% de supervivencia a 5 años <span class="cite">p. 745</span>.</li>
+</ul>
+
+</section><section id="sec-05-cuello" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 745-746</div>
+<h2>Cuello</h2>
+<h3 id="quiste-branquial-quiste-linfoepitelial-cervical">Quiste branquial (quiste linfoepitelial cervical)</h3>
+<ul>
+<li>Restos del <strong>segundo arco branquial</strong>; adultos jóvenes de 20-40 años; cara lateral superior del cuello a lo largo del esternocleidomastoideo. Quistes de 2-5 cm, revestidos por epitelio escamoso estratificado o cilíndrico seudoestratificado, con <strong>tejido linfoide con centros germinales</strong> en la pared. No transformación maligna. No confundir: la mayoría de los <strong>CE quísticos del cuello son metástasis</strong> de tumores de vías aerodigestivas superiores o del aparato digestivo <span class="cite">p. 745</span>.</li>
+</ul>
+<h3 id="quiste-del-conducto-tirogloso">Quiste del conducto tirogloso</h3>
+<ul>
+<li>Restos del descenso del primordio tiroideo desde el <strong>orificio ciego</strong> en la base de la lengua hacia la línea media cervical anterior. Quistes de 1-4 cm; epitelio escamoso cerca de la base de la lengua, cilíndrico seudoestratificado en ubicaciones inferiores; pared con agregados linfoides o restos tiroideos. Transformación maligna extremadamente infrecuente; resección quirúrgica <span class="cite">p. 745</span>.</li>
+</ul>
+<h3 id="paraganglioma-tumor-del-cuerpo-carotideo">Paraganglioma (tumor del cuerpo carotideo)</h3>
+<ul>
+<li>~70% de los paragangliomas extrasuprarrenales ocurren en cabeza y cuello. Mutaciones con pérdida de función en subunidades de la <strong>succinato deshidrogenasa (SDH)</strong> o sus cofactores, hereditarias y esporádicas. Mayor incidencia a gran altura <span class="cite">p. 746</span>.</li>
+<li>Dos localizaciones: paraganglios <strong>paravertebrales</strong> (simpáticos, cromafines, catecolaminas) y de la <strong>cadena aortopulmonar</strong> de cabeza y cuello (cuerpos carotideos, aórticos, yugulotimpánicos, ganglio nudoso del vago), parasimpáticos, que rara vez sintetizan catecolaminas <span class="cite">p. 746</span>.</li>
+<li><strong>Morfología</strong>: masa rojo-rosada o parda &lt;6 cm en la bifurcación carotídea; nidos <strong>zellballen</strong> de células principales neuroendocrinas (cromogranina+, sinaptofisina+, ENE+, CD56+, CD57+) rodeados de células sustentaculares <strong>S-100+</strong> <span class="cite">p. 746</span>.</li>
+<li>5ª-6ª décadas; esporádicos o familiares. Los asociados a MEN-2 son feocromocitomas suprarrenales; los de los síndromes <strong>PGL 1-4</strong> (genes SDH) se localizan en cabeza y cuello; ~un tercio de los paragangliomas de cabeza y cuello tienen mutación de línea germinal <span class="cite">p. 746</span>.</li>
+<li>Recidivan con frecuencia tras la extirpación; ~50% acaba siendo mortal por crecimiento infiltrante. <strong>La histología no predice el pronóstico</strong> (mitosis, pleomorfismo e invasión vascular no son fiables); las mutaciones de <strong>SDHB</strong> se asocian a 30-50% de metástasis <span class="cite">p. 746</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Quiste branquial vs tirogloso</span>Branquial: segundo arco, lateral, adultos jóvenes, tejido linfoide con centros germinales, nunca maligniza. Tirogloso: línea media por el trayecto del descenso tiroideo desde el orificio ciego. Cautela: la mayoría de los CE quísticos del cuello son metástasis <span class="cite">p. 745</span>.</div>
+</section><section id="sec-06-glandulas-salivales" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 747-749</div>
+<h2>Glándulas salivales</h2>
+<h3 id="xerostomía">Xerostomía</h3>
+<ul>
+<li>Boca seca por disminución de saliva; hasta 20% en mayores de 70 años en algunas poblaciones. Causas: síndrome de <strong>Sjögren</strong> (con queratoconjuntivitis seca), radioterapia de tumores de cabeza y cuello y, con mayor frecuencia, <strong>fármacos</strong> (anticolinérgicos, antidepresivos/antipsicóticos, diuréticos, antihistamínicos). Complicaciones: caries, candidiasis, disfagia <span class="cite">p. 747</span>.</li>
+</ul>
+<h3 id="inflamación-sialoadenitis">Inflamación (sialoadenitis)</h3>
+<ul>
+<li><strong>Mucocele</strong>: forma más prevalente; labio inferior, fluctuante azul translúcido, por obstrucción o rotura de un conducto con fuga de saliva al estroma. Seudoquiste de tejido de granulación lleno de mucina y macrófagos; recidiva si la resección es incompleta. <strong>Ránula</strong>: quiste epitelizado del conducto sublingual; la ránula "hundida" disecciona a través del músculo milohioideo <span class="cite">p. 747</span>.</li>
+<li><strong>Sialolitiasis y sialoadenitis bacteriana inespecífica</strong>: glándulas submandibulares; cálculos obstructivos + infección por <em>S. aureus</em> y <em>Streptococcus viridans</em>. Predisponen: fenotiacinas (hiposecreción), deshidratación, cirugía mayor reciente en ancianos. Casi siempre unilateral <span class="cite">p. 747-748</span>.</li>
+<li><strong>Parotiditis</strong>: causa vírica más común de sialoadenitis (parótidas, páncreas, testículos) <span class="cite">p. 747</span>.</li>
+</ul>
+<h3 id="neoplasias">Neoplasias</h3>
+<ul>
+<li>Más de 30 tipos histológicos; unas pocas constituyen &gt;90% de los tumores. &lt;2% de todos los tumores humanos. 65-80% parótida, 10% submandibular, resto en glándulas menores y sublingual. <strong>Potencial maligno inversamente proporcional al tamaño de la glándula</strong>: parótida mayoría benigna; 40% submandibular, 50% glándulas menores, 70-90% sublinguales malignos. Solo ~5% antes de los 16 años <span class="cite">p. 748</span>.</li>
+<li>No hay criterios clínicos fiables para diferenciar benigno de maligno; ambos miden 4-6 cm al diagnóstico <span class="cite">p. 748</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Glándulas salivales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tumor</th>
+<th>Clasificación</th>
+<th>Datos clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Adenoma pleomorfo</strong></td>
+<td>Benigno</td>
+<td>60% de los tumores parotídeos; células ductales, mioepiteliales y mesenquimatosas ("tumor mixto"); <em>PLAG1</em> e <em>HMGA2</em>; recidiva 4% tras parotidectomía vs 25% tras enucleación; transformación maligna 2% (&lt;5 años) a 10% (&gt;15 años)</td>
+</tr>
+<tr>
+<td><strong>Tumor de Warthin</strong></td>
+<td>Benigno</td>
+<td>2ª neoplasia más frecuente; casi exclusivo de parótida; hombres, 5ª-7ª décadas; riesgo ×8 en fumadores; 10% multifocal, 10% bilateral; doble capa oncocítica sobre estroma linfoide; recidiva 2%</td>
+</tr>
+<tr>
+<td><strong>Carcinoma mucoepidermoide</strong></td>
+<td>Maligno</td>
+<td>Maligno primario más frecuente (~15% de todos los tumores salivales); 60-70% parótida; translocación <strong>t(11;19)(q21;p13)</strong> → <em>CRTC1-MAML2</em>; células escamosas, mucosas e intermedias; grado bajo: recidiva 15%, supervivencia a 5 años &gt;90%; grado alto: 30% recidiva y 30% metástasis, supervivencia 50%</td>
+</tr>
+<tr>
+<td><strong>Carcinoma adenoideo quístico</strong></td>
+<td>Maligno</td>
+<td>50% en glándulas menores (palatinas); patrón cribiforme "queso suizo" con material hialino (membrana basal); <strong>infiltración perineural</strong>; <em>MYB-NFIB</em>; 50% o más metastatizan a hueso, hígado y encéfalo décadas después; supervivencia 60-70% a 5 años, 30% a 10, 15% a 15</td>
+</tr>
+<tr>
+<td><strong>Carcinoma de células acinares</strong></td>
+<td>Maligno</td>
+<td>2-3% de los tumores salivales; parótida; células semejantes a acinos serosos con gránulos de cimógeno púrpura; 10-15% metastatiza a ganglios; supervivencia ~90% a 5 años, 60% a 20</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 748-751</span></p>
+<ul>
+<li>El carcinoma ex adenoma pleomorfo exige adenoma pleomorfo benigno residual para su diagnóstico; mortalidad a 5 años 30-50% <span class="cite">p. 749</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Malignidad inversa al tamaño</span>Parótida: mayoría benigna (adenoma pleomorfo 60%, Warthin 2ª); sublingual: 70-90% maligno. Mucoepidermoide con t(11;19) CRTC1-MAML2 y adenoideo quístico con infiltración perineural son los malignos clave <span class="cite">p. 748-751</span>.</div>
+</section><section id="sec-07-quistes-y-tumores-odontogenos" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 737-739</div>
+<h2>Quistes y tumores odontógenos</h2>
+<ul>
+<li>Los quistes odontógenos derivan de restos de epitelio odontógeno de los maxilares; se clasifican en <strong>inflamatorios</strong> (radicular, residual, paradental) y <strong>del desarrollo</strong> (dentígero, queratoquiste odontógeno, gingival, de erupción, periodontal lateral, glandular, epitelial calcificante, del conducto nasopalatino) <span class="cite">p. 737-738</span>.</li>
+<li><strong>Quiste dentígero</strong>: alrededor de la corona de un diente no erupcionado (acumulación de líquido entre diente y folículo); unilocular, típicamente en un tercer molar impactado; epitelio escamoso estratificado fino; extirpación curativa <span class="cite">p. 737</span>.</li>
+<li><strong>Tumor odontógeno queratoquístico</strong> (antes queratoquiste odontógeno): 10-40 años, hombres, mandíbula posterior; radiolúcido uni- o multilocular; epitelio queratinizado con células basales prominentes y superficie ondulada; comportamiento localmente invasivo, recidiva hasta 60% si extirpación inadecuada. Múltiples quistes → <strong>síndrome de Gorlin</strong> (carcinoma basocelular nevoideo), mutación de <em><strong>PTCH</strong></em> en 9q22 <span class="cite">p. 737</span>.</li>
+<li><strong>Quiste radicular</strong>: lesión inflamatoria frecuente en el vértice del diente, secundaria a pulpitis por caries o traumatismo; necrosis pulpar → granulación → epitelización. El término antiguo "granuloma periapical" persiste, aunque no hay inflamación granulomatosa verdadera; el tratamiento requiere eliminar el irritante y restaurar o extraer el diente <span class="cite">p. 738</span>.</li>
+<li><strong>Tumores odontógenos</strong>: de epitelio, mesénquima o ambos; algunos neoplasias verdaderas, otros hamartomas. Los dos más relevantes: odontoma y ameloblastoma <span class="cite">p. 738-739</span>.</li>
+<li><strong>Odontoma</strong>: tumor odontógeno más común; epitelio con extenso depósito de esmalte y dentina; hamartoma más que neoplasia; cura con extirpación local <span class="cite">p. 739</span>.</li>
+<li><strong>Ameloblastoma</strong>: epitelio odontógeno sin diferenciación ectomesenquimatosa; quístico, crecimiento lento, <strong>localmente invasivo</strong>, evolución indolente; requiere amplia resección para prevenir recidiva <span class="cite">p. 739</span>.</li>
+</ul>
+
+</section><section id="sec-08-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 731-751</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Caries: principal causa de pérdida dentaria <strong>antes de los 35 años</strong>; la <strong>fluorapatita</strong> del esmalte resiste mejor los ácidos que la hidroxiapatita <span class="cite">p. 731</span>.</li>
+<li>No confundir <strong>gingivitis</strong> (reversible, solo mucosa) con <strong>periodontitis</strong> (destruye ligamento, hueso alveolar y cemento → pérdida dentaria) <span class="cite">p. 731-732</span>.</li>
+<li>Periodontitis activa: flora <strong>gramnegativa anaeróbica</strong> (<em>A. actinomycetemcomitans</em>, <em>P. gingivalis</em>, <em>P. intermedia</em>); sitios sanos: grampositivos facultativos <span class="cite">p. 732</span>.</li>
+<li>Periodontitis como foco séptico: <strong>endocarditis infecciosa</strong>, abscesos pulmonares y cerebrales <span class="cite">p. 732</span>.</li>
+<li>Asociar periodontitis sistémica con: sida, leucemia, Crohn, diabetes, síndrome de Down, sarcoidosis, defectos de neutrófilos <span class="cite">p. 732</span>.</li>
+<li>Úlceras aftosas: hasta <strong>40% de la población</strong>, las dos primeras décadas, asocian celiaca, EII y Behçet; resuelven en 7-10 días <span class="cite">p. 732</span>.</li>
+<li><strong>Granuloma piógeno</strong> = "tumor del embarazo" en encías; no confundir el granuloma periférico de células gigantes con los <strong>tumores marrones</strong> del hiperparatiroidismo (múltiples) <span class="cite">p. 732-733</span>.</li>
+<li><strong>Muguet se raspa; leucoplasia vellosa no se desprende</strong> , la distinción práctica clave en lesiones blancas orales <span class="cite">p. 733-734</span>.</li>
+<li>Leucoplasia vellosa = <strong>VEB</strong>, borde lateral de la lengua, inmunodeprimidos; células balonizadas en capa espinosa; en VIH puede presagiar sida <span class="cite">p. 733-734</span>.</li>
+<li>Manchas de <strong>Koplik</strong> (sarampión) rodean el conducto de <strong>Stensen</strong> <span class="cite">p. 734</span>.</li>
+<li>Leucoplasia: 3% de la población, <strong>5-25% premaligna</strong>; eritroplasia: menos frecuente pero ~<strong>90%</strong> ya es displasia grave/carcinoma in situ/invasión mínima , <strong>la roja es peor que la blanca</strong> <span class="cite">p. 734-735</span>.</li>
+<li>Leucoplasia/eritroplasia: 40-70 años, varones 2:1, tabaco <span class="cite">p. 735</span>.</li>
+<li>El <strong>CE es el 95%</strong> de los tumores malignos de cabeza y cuello; sexta neoplasia mundial; ~50.000 casos/año en EE. UU. <span class="cite">p. 735</span>.</li>
+<li><strong>VPH-16</strong>: causa principal del CE de <strong>orofaringe</strong> (hasta 80% en amígdalas y base de lengua); el CE de <strong>cavidad oral</strong> sigue siendo tabaco+alcohol. No confundir los dos subtipos <span class="cite">p. 735</span>.</li>
+<li>CE VPH+ (p16+, basaloide, no queratinizante, primario pequeño con ganglio grande, mejor pronóstico, bajo riesgo de 2º tumor) vs CE VPH− (queratinizante, tabaquil, peor pronóstico) <span class="cite">p. 737</span>.</li>
+<li>En CE, <em>TP53</em> es el gen más mutado; con <em>CDKN2A</em> y <em>PIK3CA</em> como conductores; dianas novedosas: <em><strong>NOTCH1</strong></em> y <em><strong>FAT1</strong></em>; E6/E7 del VPH desactivan p53 y RB <span class="cite">p. 736</span>.</li>
+<li>Segundos tumores primarios en CE: <strong>3-7% por año</strong>, la tasa más alta de todas las neoplasias malignas; concepto de <strong>cancerización de campo</strong>; ~35% de riesgo acumulado a 5 años <span class="cite">p. 735-736</span>.</li>
+<li>Pólipos nasales: solo <strong>0,5%</strong> de los atópicos los desarrollan pese a su apariencia alérgica <span class="cite">p. 739</span>.</li>
+<li>Sinusitis maxilar puede nacer de una infección <strong>periapical</strong> dental; el síndrome de <strong>Kartagener</strong> (bronquiectasias + situs inversus + sinusitis) es por discinesia ciliar <span class="cite">p. 739-740</span>.</li>
+<li>Lesión nasal necrosante en hombre asiático o latinoamericano de 5ª-6ª década = <strong>linfoma NK/T nasal, VEB+</strong> <span class="cite">p. 740</span>.</li>
+<li>Angiofibroma nasofaríngeo: varón <strong>adolescente</strong> epistáctico, <em>CTNNB1</em>; papiloma invertido (de Schneider): <em>EGFR</em> o VPH 6/11, transformación maligna ~10% <span class="cite">p. 740-741</span>.</li>
+<li>Carcinoma nasofaríngeo: <strong>VEB</strong> (EBER-1 por hibridación in situ); metastatiza a ganglios cervicales en hasta 70%; radiosensibilidad opuesta entre patrones: no queratinizante 70-98% de supervivencia a 5 años vs queratinizante <strong>20%</strong> <span class="cite">p. 741-742</span>.</li>
+<li>Nódulos vocales <strong>bilaterales</strong> vs pólipos <strong>unilaterales</strong>; ninguno transforma en cáncer; papilomatosis laríngea juvenil = <strong>VPH 6/11</strong> por canal del parto <span class="cite">p. 743</span>.</li>
+<li>Carcinoma laríngeo: displasia leve 1-2% de riesgo de transformación vs displasia grave 5-10%; 95% CE en cuerdas vocales de hombres fumadores; debut con ronquera persistente <span class="cite">p. 743-744</span>.</li>
+<li>Colesteatoma: quiste de otitis media crónica, <strong>no neoplásico</strong>, con queratina y cristales de colesterol; otitis por <em>P. aeruginosa</em> en <strong>diabéticos</strong> = otitis necrosante destructiva <span class="cite">p. 744-745</span>.</li>
+<li>Quiste branquial (2º arco, <strong>lateral</strong>, tejido linfoide, adultos jóvenes, nunca maligniza) vs quiste tirogloso (trayecto del orificio ciego, <strong>línea media</strong>, restos tiroideos); la mayoría de los CE quísticos del cuello son <strong>metástasis</strong> <span class="cite">p. 745</span>.</li>
+<li>Tumor del cuerpo carotideo: <strong>zellballen</strong> (células principales neuroendocrinas + células sustentaculares S-100+); histología no predice pronóstico; <em><strong>SDHB</strong></em> → 30-50% de metástasis <span class="cite">p. 746</span>.</li>
+<li>Malignidad de glándulas salivales inversa al tamaño: sublingual 70-90% maligno; el <strong>mucoepidermoide</strong> es el maligno más frecuente (~15%) con t(11;19) <em>CRTC1-MAML2</em>; el <strong>adenoma pleomorfo</strong> es el tumor más frecuente (60% parótida) <span class="cite">p. 748-750</span>.</li>
+<li>Tumor de Warthin: riesgo ×8 en <strong>fumadores</strong>, casi solo parótida, 10% multifocal y 10% bilateral, doble capa oncocítica + estroma linfoide <span class="cite">p. 749</span>.</li>
+<li>Carcinoma adenoideo quístico: patrón cribiforme, <strong>infiltración perineural</strong>, <em>MYB-NFIB</em>, metástasis tardías a hueso, hígado y encéfalo; supervivencia cae de 60-70% (5 años) a 15% (15 años) <span class="cite">p. 751</span>.</li>
+<li>Tumor odontógeno queratoquístico: recidiva hasta <strong>60%</strong>; quistes múltiples = <strong>síndrome de Gorlin</strong> (<em>PTCH</em>, 9q22) <span class="cite">p. 737</span>.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "BNP sérico es el biomarcador de la insuficiencia cardiaca: si es bajo, alto valor predictivo negativo [p. 534].",
+    "Hipertrofia por presión: sarcómeros en paralelo (concéntrica); por volumen: en serie (dilatación). En corazón dilatado, el peso mide mejor la hipertrofia [p. 530].",
+    "IAM: necrosis a los 20-30 min; extensión máxima a las 3-6 h; troponinas suben a las 2-4 h y culminan a las 24-48 h [p. 544-545, 550].",
+    "Rotura del miocardio en días 3-7; aneurisma ventricular se asocia a trombo mural y arritmias pero nunca se rompe [p. 551-552].",
+    "Las 4 endocarditis verrugosas: reumática (líneas de cierre), infecciosa (destructiva), ETNB (válvulas normales, hipercoagulabilidad), Libman-Sacks (LES) [p. 562-565].",
+    "Miocardiopatías: dilatada (90%, TTN), hipertrófica (MYBPC3/MYH7, MSC en deportistas jóvenes) y restrictiva (amiloidosis) [p. 567-572]."
+  ],
+  "topics": [
+    "Insuficiencia cardiaca: izquierda, derecha e hipertrofia ventricular",
+    "Cardiopatías congénitas: cortocircuitos, cianóticas y obstructivas",
+    "Cardiopatía isquémica: angina, infarto y sus complicaciones",
+    "Valvulopatías, endocarditis infecciosa y fiebre reumática",
+    "Miocardiopatías, miocarditis y enfermedad pericárdica",
+    "Tumores cardiacos, trasplante y muerte súbita cardiaca"
+  ],
+  "callouts": [
+    {
+      "section": "Cardiopatía isquémica",
+      "title": "El tiempo es miocardio",
+      "text": "Pérdida de contractilidad a los 1-2 min, antes de que muera la célula; necrosis a los 20-30 min, comenzando subendocárdica. El frente de necrosis es completo a las 6-12 h y la extensión máxima se alcanza a las 3-6 h [p. 545-546]."
+    },
+    {
+      "section": "Cardiopatías congénitas",
+      "title": "Cortocircuitos y Eisenmenger",
+      "text": "Los cortocircuitos izquierda-derecha (CIA, CIV, CAP) no son cianóticos, pero pueden invertirse si se instala enfermedad vascular pulmonar irreversible (síndrome de Eisenmenger); desde ese punto el defecto es inoperable. Los 5 cortocircuitos derecha-izquierda cianóticos llevan \"T\" en el nombre [p. 536]."
+    },
+    {
+      "section": "Puntos de examen",
+      "title": "Trampas clásicas",
+      "text": "No confundir CIA con agujero oval persistente (defecto de formación vs falta de cierre, presente en 20% de adultos) ni hipertrofia concéntrica con dilatación. En la estenosis aórtica calcificada no hay fusión de comisuras, a diferencia de la valvulopatía reumática \"en boca de pez\" [p. 530, 537, 558-562]."
+    }
+  ]
+}

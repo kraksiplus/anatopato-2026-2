@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "El edema resulta de un desequilibrio entre salida capilar de líquido y drenaje linfático: presión hidrostática alta, coloidosmótica baja, retención de sodio u obstrucción linfática.",
+    "Hiperemia es activa (arteriolar, roja) y congestión pasiva (venosa, cianótica); la crónica deja células de insuficiencia cardiaca e hígado en nuez moscada.",
+    "Hemostasia en 4 pasos: vasoconstricción, tapón plaquetario (vWF, GpIb, GpIIb/IIIa), depósito de fibrina por trombina y limitación del coágulo (t-PA, trombomodulina).",
+    "Triada de Virchow: lesión endotelial, estasis o turbulencia e hipercoagulabilidad (Leiden, G20210A, TIH, SAA); los trombos se propagan, embolizan, se disuelven o se organizan.",
+    "La EP procede de TVP en más del 95% de los casos; más del 60% de obstrucción pulmonar causa muerte súbita o cor pulmonale agudo.",
+    "El infarto es necrosis isquémica, rojo o blanco según la vascularización; el shock es hipoperfusión sistémica con fases no progresiva, progresiva e irreversible."
+  ],
+  "topics": [
+    "Edema: mecanismos, trasudado vs exudado, morfología",
+    "Hemostasia: plaquetas, cascada de la coagulación y fibrinólisis",
+    "Trombosis: triada de Virchow, TIH, SAA y CID",
+    "Embolias: pulmonar, sistémica, grasa, gaseosa y amniótica",
+    "Infarto: rojo vs blanco y factores determinantes",
+    "Shock: tipos, patogenia del séptico y fases"
+  ],
+  "callouts": [
+    {
+      "section": "Hemostasia, trastornos hemorrágicos y trombosis",
+      "title": "Trampas de receptores y pruebas",
+      "text": "GpIb con vWF (su déficit: Bernard-Soulier), GpIIb/IIIa con fibrinógeno (su déficit: Glanzmann). El TP evalúa la vía extrínseca y el TTP la intrínseca; el déficit de factor XII no causa hemorragia, sino trombosis."
+    },
+    {
+      "section": "Embolia",
+      "title": "Cifras de embolia que caen en examen",
+      "text": "Más del 95% de las EP proviene de TVP de piernas; si se obstruye el 60% o más de la circulación pulmonar hay muerte súbita. En la tromboembolia sistémica, el 80% nace de trombos intracardiacos. La embolia grasa da cuadro a 1 a 3 días de la fractura, con exantema petequial en 20-50%."
+    },
+    {
+      "section": "Shock",
+      "title": "Séptico vs hipovolémico en la piel",
+      "text": "El shock hipovolémico y cardiógeno dan piel fría, pálida y húmeda; el séptico puede estar inicialmente caliente y enrojecido por vasodilatación. El séptico mantiene mortalidad cercana al 50% y puede desencadenar CID en la mitad de los pacientes."
+    }
+  ]
+}

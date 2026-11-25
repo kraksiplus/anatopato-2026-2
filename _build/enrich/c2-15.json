@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "El bronquio principal derecho, más vertical, recibe la mayoría de los materiales aspirados; los poros de Kohn permiten paso de bacterias y exudado entre alvéolos [p. 673-674].",
+    "SDRA: LPA grave con daño alveolar difuso, membranas hialinas e hipoxemia refractaria; sepsis, neumonía, aspirado gástrico y traumatismo explican el 50% de los casos [p. 676-678].",
+    "VEMS/CVF < 0,7 define obstrucción; en las restrictivas el cociente se mantiene normal porque VEMS y CVF caen proporcionalmente [p. 678].",
+    "Enfisema centroacinar (>95%) en grandes fumadores, lóbulos superiores; panacinar por déficit de α1-antitripsina, en bases [p. 679-680].",
+    "Silicosis predispone a tuberculosis y duplica el riesgo de cáncer pulmonar; el amianto más tabaco eleva el riesgo de carcinoma ×55 [p. 694].",
+    "Adenocarcinoma (~50%) es el más frecuente; el microcítico (15%) tiene inactivación de TP53 y RB, metástasis precoces y pronóstico pésimo [p. 717-719]."
+  ],
+  "topics": [
+    "Cáncer de pulmón: primera causa de muerte por cáncer en el mundo",
+    "EPOC, asma y bronquiectasias: enfermedades obstructivas",
+    "SDRA y edema pulmonar: hemodinámico vs lesional",
+    "Neumoconiosis: silicosis, asbestosis y polvo de carbón",
+    "Neumonías bacterianas, víricas y granulomatosas",
+    "Hipertensión pulmonar, embolia y mesotelioma"
+  ],
+  "callouts": [
+    {
+      "section": "Enfisema",
+      "title": "Desequilibrio proteasa-antiproteasa",
+      "text": "El humo genera inflamación con proteasas sin antiproteasas suficientes; la vía NRF2 suma estrés oxidativo. La deficiencia de α1-antitripsina (homocigotos ZZ, ~1% de los enfisemas) produce enfisema panacinar basal, más precoz y grave si fuma [p. 680]."
+    },
+    {
+      "section": "Asma",
+      "title": "Eje Th2: IL-4, IL-5 e IL-13",
+      "text": "IL-4 induce IgE, IL-5 activa eosinófilos e IL-13 estimula moco e IgE; los mediadores con eficacia demostrada son leucotrienos C4-D4-E4, acetilcolina, anti-IL-5 y galectina 10. La remodelación bronquial añade obstrucción irreversible [p. 684, 686-687]."
+    },
+    {
+      "section": "Tumores",
+      "title": "Paraneoplásicos orientan el subtipo",
+      "text": "ADH y ACTH apuntan a células pequeñas; hipercalcemia por PTHrP, a epidermoide. Eaton-Lambert, Trousseau y osteartropatía hipertrófica completan el cuadro [p. 722]."
+    }
+  ]
+}

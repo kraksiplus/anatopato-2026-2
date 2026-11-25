@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vasos sanguíneos · Anatomía Patológica UBB</title>
+<meta name="description" content="Vasos sanguíneos. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Vasos sanguíneos · Anatomía Patológica UBB">
+<meta property="og:description" content="Vasos sanguíneos. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 11. Vasos sanguíneos</h1>
+    <p class="lede">Guía 01 de 08. Resumen completo del capítulo 11 con 245 citas por página y 26 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>01 de 08</strong></div><div><span>Capítulo</span><strong>11</strong></div><div><span>Páginas</span><strong>485-526</strong></div><div><span>Citas</span><strong>245</strong></div><div><span>Tablas</span><strong>26</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-estructura-y-funcion-vasculares">Estructura y función vasculares</a></li>
+        <li><a href="#sec-03-anomalias-vasculares">Anomalías vasculares</a></li>
+        <li><a href="#sec-04-enfermedad-vascular-hipertensiva">Enfermedad vascular hipertensiva</a></li>
+        <li><a href="#sec-05-arterioesclerosis">Arterioesclerosis</a></li>
+        <li><a href="#sec-06-ateroesclerosis">Ateroesclerosis</a></li>
+        <li><a href="#sec-07-aneurismas-y-diseccion">Aneurismas y disección</a></li>
+        <li><a href="#sec-08-vasculitis">Vasculitis</a></li>
+        <li><a href="#sec-09-trastornos-por-hiperreactividad-de-los-vasos-sanguineos">Trastornos por hiperreactividad de los vasos sanguíneos</a></li>
+        <li><a href="#sec-10-venas-y-vasos-linfaticos">Venas y vasos linfáticos</a></li>
+        <li><a href="#sec-11-tumores-vasculares">Tumores vasculares</a></li>
+        <li><a href="#sec-12-patologia-de-la-intervencion-vascular">Patología de la intervención vascular</a></li>
+        <li><a href="#sec-13-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="02_Corazon.html" title="Corazón">02</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 11 del Robbins y Cotran, 10ª edición: páginas impresas 485-526 (42 páginas), resumidas desde el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Dos mecanismos básicos de enfermedad vascular: estenosis u obstrucción luminal (ateroesclerosis, trombosis) y debilitamiento parietal con dilatación o rotura <span class="cite">p. 485</span>.</li><li>La disfunción endotelial proinflamatoria y protrombógena es el punto de partida común de trombosis, ateroesclerosis e lesión por hipertensión <span class="cite">p. 488</span>.</li><li>Hipertensión: diastólica &gt;80 o sistólica &gt;120 mmHg; 90-95% es esencial; la forma maligna da arterioloesclerosis hiperplásica en piel de cebolla con arteriolitis necrosante <span class="cite">p. 489-493</span>.</li><li>Ateroesclerosis: disfunción endotelial, LDL oxidadas captadas por receptores depuradores, células espumosas, CML y colágeno; las placas vulnerables rompen y trombosan <span class="cite">p. 497-504</span>.</li><li>Disección aórtica: &gt;90% con hipertensión; tipo A compromete la ascendente y exige cirugía urgente; tipo B es conservador; muerte por rotura y taponamiento <span class="cite">p. 507-508</span>.</li><li>Vasculitis: distinguir inmunomediada (ANCA, inmunocomplejos) de infecciosa es clave porque la inmunodepresión empeora la infecciosa <span class="cite">p. 508-510</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 485-508</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La patología vascular causa más morbimortalidad que cualquier otra categoría de enfermedades; dos mecanismos básicos: <strong>estenosis u obstrucción</strong> luminal (ateroesclerosis, trombosis, émbolo) y <strong>debilitamiento parietal</strong> con dilatación o rotura <span class="cite">p. 485</span>.</li>
+<li>Cada trastorno vascular tiene una distribución anatómica característica: la <strong>ateroesclerosis</strong> afecta arterias elásticas y musculares, la <strong>hipertensión</strong> a pequeñas arterias y arteriolas, y las <strong>vasculitis</strong> a vasos de calibre definido <span class="cite">p. 485</span>.</li>
+<li>La resistencia arteriolar es inversamente proporcional a la <strong>cuarta potencia del diámetro</strong>: una reducción a la mitad del calibre aumenta la resistencia 16 veces, por eso pequeñas cambios arteriolares repercuten mucho en la presión arterial <span class="cite">p. 486</span>.</li>
+<li>La <strong>disfunción endotelial</strong> (proinflamatoria y protrombógena) es el punto de partida común de trombosis, ateroesclerosis e lesión por hipertensión; la <strong>activación endotelial</strong> es inducida por citocinas, productos bacterianos, tensiones hemodinámicas, productos lipídicos, hipoxia, virus y humo de cigarrillo <span class="cite">p. 488</span>.</li>
+<li>El <strong>engrosamiento de la íntima</strong> es la respuesta prototípica de la pared a cualquier agresión: migración y proliferación de células musculares lisas (CML) con síntesis de matriz extracelular (MEC); las CML de la neointima son proliferativas, sintéticas y poco contráctiles <span class="cite">p. 489</span>.</li>
+<li>La <strong>hipertensión</strong> se define hoy con diastólica &gt;80 mmHg o sistólica &gt;120 mmHg; con estos criterios un <strong>46% de la población</strong> sería hipertensa; el <strong>90-95%</strong> de los casos es <strong>hipertensión esencial</strong> (idiopática) <span class="cite">p. 489-490</span>.</li>
+<li>La <strong>hipertensión maligna</strong> (~5% de los hipertensos) cursa con sistólica &gt;200 y diastólica &gt;120 mmHg, insuficiencia renal y retinopatía; sin tratamiento mata en 1-2 años; su lesión típica es la <strong>arterioloesclerosis hiperplásica "en piel de cebolla"</strong> con <strong>arteriolitis necrosante</strong> <span class="cite">p. 490, 492-493</span>.</li>
+<li>La <strong>ateroesclerosis</strong> es un proceso inflamatorio crónico de la íntima (hipótesis de la "respuesta a la lesión"): disfunción endotelial → acumulación de LDL oxidadas → macrófagos espumosos → CML y colágeno → placa con cubierta fibrosa y núcleo necrótico <span class="cite">p. 497</span>.</li>
+<li>Las <strong>placas vulnerables</strong> (cubierta fibrosa fina, núcleo lipídico grande, inflamación densa, MMP de macrófagos) se rompen y trombosan; la mayoría de las placas que causan infarto previamente eran <strong>estenosis no críticas</strong> (leves-moderadas) <span class="cite">p. 503-504</span>.</li>
+<li>En la <strong>estenosis crítica coronaria</strong> la luz está reducida en <strong>70-75%</strong> del área transversal; aparece angina estable de esfuerzo. La estimulación adrenérgica explica el pico de infartos entre las <strong>6 de la mañana y el mediodía</strong> <span class="cite">p. 502-504</span>.</li>
+<li>Las <strong>vasculitis</strong> son inflamación de la pared vascular, inmunomediadas (inmunocomplejos, <strong>ANCA</strong>, anti-CE, linfocitos T) o infecciosas; las formas por ANCA son <strong>pauciinmunitarias</strong>; distinguir inmunomediada de infecciosa es clave porque la inmunodepresión puede agravar la infecciosa <span class="cite">p. 508-510</span>.</li>
+<li>Los <strong>aneurismas</strong> requieren debilidad estructural de la pared: señalización alterada de <strong>TGF-β</strong> (Marfan, Loeys-Dietz), degradación de MEC por MMP, isquemia de la media; el AAA de &gt;6 cm rompe a razón de <strong>25% al año</strong> <span class="cite">p. 505-506</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-estructura-y-funcion-vasculares" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 485-488</div>
+<h2>Estructura y función vasculares</h2>
+<p>Las paredes arteriales son más gruesas que las venas del mismo nivel para acomodar el flujo pulsátil; el cociente grosor/luz aumenta en los vasos pequeños, que controlan flujo y presión <span class="cite">p. 485</span>. Constituyentes básicos: células endoteliales (CE) y musculares lisas (CML) más MEC (elastina, colágeno, glucosaminoglucanos), organizadas en <strong>íntima, media y adventicia</strong> <span class="cite">p. 485-486</span>.</p>
+<ul>
+<li><strong>Arterias elásticas</strong> (aorta, tronco braquiocefálico, subclavia, carótida e ilíaca; pulmonares): media en unidades laminares de elastina y CML; se expanden en sístole y se contraen en diástole. Con la edad pierden distensibilidad, se vuelven tortuosas y ectásicas <span class="cite">p. 486</span>.</li>
+<li><strong>Arterias musculares</strong> (coronarias, renales y ramas menores): CML circunferenciales; la vasoconstricción/dilatación responde al sistema nervioso autónomo y a factores metabólicos locales <span class="cite">p. 486-487</span>.</li>
+<li><strong>Arteriolas</strong> (20-100 µm): principales puntos de resistencia fisiológica al flujo <span class="cite">p. 486</span>.</li>
+<li><strong>Capilares</strong> (~5 µm): solo endotelio y pericitos; pared delgada y flujo lento, ideales para el intercambio; la difusión de O₂ se limita a ~100 µm, de ahí la densidad capilar de miocardio y encéfalo <span class="cite">p. 487</span>.</li>
+<li><strong>Vénulas poscapilares</strong>: sitio preferente de extravasación vascular y exudación leucocitaria en la inflamación <span class="cite">p. 487</span>.</li>
+<li><strong>Venas</strong>: mayor diámetro y luz, pared más fina; el lado venoso recoge ~<strong>dos tercios de la volemia</strong> (capacitancia); válvulas evitan el flujo inverso en extremidades <span class="cite">p. 487</span>.</li>
+<li><strong>Vasa vasorum</strong>: arteriolas de la adventicia que perfunden la mitad a dos tercios externos de la media en vasos grandes <span class="cite">p. 486</span>.</li>
+<li><strong>Vasos linfáticos</strong>: drenan linfa al conducto torácico; transportan células inflamatorias para la presentación antigénica, pero también diseminan microbios y células tumorales <span class="cite">p. 487</span>.</li>
+</ul>
+<h3 id="propiedades-y-disfunción-endotelial">Propiedades y disfunción endotelial</h3>
+<p>Las CE mantienen una superficie <strong>no trombógena</strong>, modulan el tono de las CML, metabolizan hormonas (angiotensina), regulan inflamación y crecimiento de CML <span class="cite">p. 488</span>. Productos clave: antitrombóticos (<strong>prostaciclina</strong>, <strong>trombomodulina</strong>, moléculas tipo heparina, activador del plasminógeno); protrombóticos (<strong>factor de von Willebrand</strong>, factor tisular, PAI); vasoconstrictores (<strong>endotelina</strong>, ECA); vasodilatadores (<strong>NO</strong>, prostaciclina); moléculas de adhesión (VCAM-1, ICAM, selectinas E y P); citocinas (IL-1, IL-6, quimiocinas) <span class="cite">p. 488</span>.</p>
+<p>La <strong>disfunción endotelial</strong> es un fenotipo proinflamatorio y protrombógeno, responsable parcial de trombosis, ateroesclerosis e lesión hipertensiva. Puede ser rápida y reversible (contracción por histamina, minutos) o dependiente de nueva síntesis proteica (moléculas de adhesión, horas-días) <span class="cite">p. 488</span>.</p>
+<p>Las <strong>CML</strong> vasculares proliferan, sintetizan colágeno, elastina y proteoglucanos, elaboran factores de crecimiento y median la vasoconstricción/dilatación <span class="cite">p. 488</span>.</p>
+
+</section><section id="sec-03-anomalias-vasculares" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 487</div>
+<h2>Anomalías vasculares</h2>
+<ul>
+<li><strong>Aneurismas en baya congénitos</strong> de vasos cerebrales: su rotura causa hemorragia intracerebral mortal <span class="cite">p. 487</span>.</li>
+<li><strong>Fístulas arteriovenosas</strong>: conexiones directas arteria-vena que saltan el capilar; por defecto del desarrollo, rotura de aneurisma, lesión penetrante o necrosis inflamatoria; las quirúrgicas dan acceso para hemodiálisis. Grandes o múltiples derivan sangre y pueden causar <strong>insuficiencia cardíaca de alto gasto</strong> <span class="cite">p. 487</span>.</li>
+<li><strong>Displasia fibromuscular</strong>: engrosamiento focal irregular de la media de arterias musculares (renales, carótidas, esplácnicas, vertebrales) por hiperplasia y fibrosis de media e íntima, con estenosis; en las renales puede causar <strong>hipertensión renovascular</strong>; en la angiografía, aspecto de <strong>"collar de cuentas"</strong> por segmentos alternos atenuados que pueden formar aneurismas <span class="cite">p. 487</span>.</li>
+<li><strong>Origen anómalo de las arterias coronarias</strong>: ambas coronarias salen de la misma cúspide; si un vaso pasa entre aorta y arteria pulmonar puede comprimirse en el ejercicio y causar <strong>muerte súbita</strong> <span class="cite">p. 487</span>.</li>
+<li>Las variantes anatómicas del aporte vascular deben identificarse antes de cirugía o endoprótesis coronaria <span class="cite">p. 487</span>.</li>
+</ul>
+
+</section><section id="sec-04-enfermedad-vascular-hipertensiva" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 489-493</div>
+<h2>Enfermedad vascular hipertensiva</h2>
+<p>La presión arterial es una variable de distribución continua sin umbral definido de riesgo; cuenta la sistólica y la diastólica <span class="cite">p. 489</span>.</p>
+<h3 id="regulación-de-la-presión-arterial">Regulación de la presión arterial</h3>
+<p>Presión arterial = <strong>gasto cardíaco × resistencia periférica</strong>. El volumen sistólico depende de la presión de llenado (homeostasia del sodio y volemia); frecuencia y contractilidad están reguladas por los sistemas α- y β-adrenérgicos <span class="cite">p. 490</span>. El tono vascular refleja el balance entre vasoconstrictores (<strong>angiotensina II, catecolaminas, endotelina, tromboxano, leucotrienos</strong>) y vasodilatadores (<strong>NO, cininas, prostaglandinas</strong>); existe autorregulación por pH e hipoxia <span class="cite">p. 490-491</span>.</p>
+<ul>
+<li>Los riñones filtran 170 L de plasma con 23 moles de sal al día; con una dieta de 100 mEq de sodio debe reabsorberse el <strong>99,5%</strong>; ~98% por transportadores constitutivos y el resto por el canal <strong>ENaC</strong>, regulado por el sistema <strong>renina-angiotensina-aldosterona (SRAA)</strong> <span class="cite">p. 491</span>.</li>
+<li>La <strong>renina</strong> (células yuxtaglomerulares) se libera por presión baja en la arteriola aferente, catecolaminas altas o sodio distal bajo; escinde el angiotensinógeno → <strong>angiotensina I</strong> → <strong>angiotensina II</strong> por la <strong>ECA</strong> endotelial. La angiotensina II: 1) contrae el vaso, 2) estimula aldosterona, 3) aumenta la reabsorción tubular de sodio <span class="cite">p. 491</span>.</li>
+<li>Los <strong>péptidos natriuréticos</strong> (auricular dominante, ventricular menor) se liberan con la expansión de volemia: inhiben la reabsorción de sodio distal, causan natriuresis, diuresis y vasodilatación <span class="cite">p. 491-492</span>.</li>
+</ul>
+<h3 id="patogenia-de-la-hipertensión">Patogenia de la hipertensión</h3>
+<p>La hipertensión esencial (90-95%) es multifactorial: polimorfismos (más de <strong>60 loci</strong> en estudios pangenómicos de efecto pequeño sumado) más ambiente (estrés, obesidad, tabaco, inactividad, sal) <span class="cite">p. 490, 492</span>. La excreción renal insuficiente de sodio puede ser la vía final común: mayor volemia y gasto, vasoconstricción y <strong>"reajuste de la natriuresis por presión"</strong> a expensas de presión elevada <span class="cite">p. 492</span>.</p>
+<p>Hipertensión secundaria (~10%):</p>
+<ul>
+<li><strong>Renovascular</strong>: la estenosis de la arteria renal baja el flujo y la presión glomerular → renina → volemia y tono vascular aumentados <span class="cite">p. 492</span>.</li>
+<li><strong>Hiperaldosteronismo primario</strong>: una de las causas más frecuentes de HTA secundaria; idiopático o adenoma secretor <span class="cite">p. 492</span>.</li>
+<li><strong>Monogénicas</strong>, graves e infrecuentes: defectos de enzimas esteroidogénicas (aldosterona sintasa, 11β-hidroxilasa, 17-hidroxilasa) y <strong>síndrome de Liddle</strong> (mutaciones que activan el canal de Na⁺ epitelial, reabsorción aumentada sensible a sal) <span class="cite">p. 492</span>.</li>
+<li>Otras causas (tabla 11.2): glomerulonefritis aguda, nefropatía crónica, poliquistosis renal, vasculitis renal, tumores productores de renina; endocrinas (síndrome de Cushing, feocromocitoma, acromegalia, hipertiroidismo, ingesta de regaliz, glucocorticoides, estrógenos, simpaticomiméticos, tiramina con IMAO); preeclampsia; <strong>coartación de la aorta</strong>; panarteritis nudosa; presión intracraneal aumentada y <strong>apnea del sueño</strong> <span class="cite">p. 490</span>.</li>
+</ul>
+<p>Si no se trata, ~la mitad de los hipertensos muere por cardiopatía isquémica o insuficiencia cardíaca congestiva y una tercera parte por accidente cerebrovascular <span class="cite">p. 490</span>.</p>
+<h3 id="patología-vascular-en-la-hipertensión">Patología vascular en la hipertensión</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedad vascular hipertensiva" tabindex="0"><table>
+<thead>
+<tr>
+<th>Lesión</th>
+<th>Morfología</th>
+<th>Contexto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arterioloesclerosis hialina</strong></td>
+<td>Engrosamiento homogéneo rosado de la arteriola por extravasación de proteínas plasmáticas y mayor síntesis de matriz de las CML; estenosis luminal</td>
+<td>Edad avanzada, <strong>hipertensión y diabetes</strong>; causa nefroesclerosis hipertensiva <span class="cite">p. 492-493</span></td>
+</tr>
+<tr>
+<td><strong>Arterioloesclerosis hiperplásica</strong></td>
+<td>Engrosamiento concéntrico laminado <strong>"en piel de cebolla"</strong> (CML con membrana basal duplicada); en la HTA maligna se suma necrosis fibrinoide (<strong>arteriolitis necrosante</strong>), sobre todo renal</td>
+<td>Hipertensión grave/maligna <span class="cite">p. 493</span></td>
+</tr>
+<tr>
+<td><strong>Hipertensión pulmonar</strong></td>
+<td>Desde engrosamiento fibrótico intimal hasta hiperplasia de la media</td>
+<td>Insuficiencia cardíaca izquierda, cardiopatía congénita, valvulopatías, EPOC/enfermedad intersticial, tromboembolias repetidas <span class="cite">p. 493</span></td>
+</tr>
+</tbody>
+</table></div>
+<p>La hipertensión también acelera la aterogenia y produce cambios degenerativos de arterias grandes y medias que predisponen a <strong>disección aórtica</strong> y <strong>hemorragia cerebrovascular</strong> <span class="cite">p. 492</span>.</p>
+
+</section><section id="sec-05-arterioesclerosis" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 493</div>
+<h2>Arterioesclerosis</h2>
+<p>Término genérico para el endurecimiento arterial; cuatro patrones <span class="cite">p. 493</span>:</p>
+<ul>
+<li><strong>Arterioloesclerosis</strong> (hialina e hiperplásica): pequeñas arterias y arteriolas; lesión isquémica distal <span class="cite">p. 493</span>.</li>
+<li><strong>Esclerosis de la media de Mönckeberg</strong>: calcificación de la media de arterias musculares que comienza en la lámina elástica interna; mayores de 50 años; <strong>no ocluye la luz</strong> y no suele tener significado clínico <span class="cite">p. 493</span>.</li>
+<li><strong>Hiperplasia fibromuscular de la íntima</strong>: en arterias musculares mayores que arteriolas; respuesta reparativa a inflamación (arteritis reparada, arteriopatía del trasplante) o lesión mecánica (endoprótesis, angioplastia); causa <strong>reestenosis</strong> de endoprótesis y limita los trasplantes <span class="cite">p. 493</span>.</li>
+<li><strong>Ateroesclerosis</strong>: el patrón más frecuente y clínico <span class="cite">p. 493</span>.</li>
+</ul>
+
+</section><section id="sec-06-ateroesclerosis" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 493-504</div>
+<h2>Ateroesclerosis</h2>
+<p>Base de la enfermedad coronaria, cerebral y vascular periférica; en el mundo occidental causa ~la mitad de todas las muertes; el infarto de miocardio explica casi una cuarta parte de los fallecimientos en EE. UU. <span class="cite">p. 493-494</span>. La placa (<strong>ateroma</strong>) es una lesión intimal elevada con <strong>núcleo lipídico</strong> blando y <strong>cubierta fibrosa</strong>; además de obstruir, puede romperse y trombosar, y aumenta la distancia de difusión hacia la media, debilitando la pared (aneurismas) <span class="cite">p. 494</span>.</p>
+<p>En Europa oriental la mortalidad coronaria es 3-5 veces la estadounidense y 7-12 veces la de Japón; en África, India y sudeste asiático ya supera la de EE. UU. <span class="cite">p. 494</span>.</p>
+<h3 id="factores-de-riesgo">Factores de riesgo</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Ateroesclerosis" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Factores</th>
+<th>Datos clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No modificables</strong></td>
+<td>Genética, edad, sexo</td>
+<td>Los antecedentes familiares son el factor independiente más importante; entre los 40 y 60 años la incidencia de infarto se <strong>multiplica por 5</strong>; las mujeres premenopáusicas están parcialmente protegidas, pero superan a los hombres a edades avanzadas <span class="cite">p. 494-495</span></td>
+</tr>
+<tr>
+<td><strong>Modificables</strong></td>
+<td>Hiperlipidemia, hipertensión, tabaco, diabetes</td>
+<td>Ver detalle abajo <span class="cite">p. 495-496</span></td>
+</tr>
+<tr>
+<td><strong>Adicionales</strong></td>
+<td>Inflamación, homocisteína, síndrome metabólico, Lp(a), hemostasia, sedentarismo, personalidad tipo A, obesidad</td>
+<td>Hasta el 20% de los episodios ocurre sin factores mayores <span class="cite">p. 496</span></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Genética y CHIP</strong>: la <strong>hematopoyesis clonal de potencial indeterminado (CHIP)</strong>, frecuente con la edad (mutaciones como <em>TET2</em>), se asocia incluso más con la mortalidad cardiovascular que con las neoplasias hematológicas; las mutaciones de <em>TET2</em> amplifican la respuesta inflamatoria de las células mononucleares y la aterogenia <span class="cite">p. 494</span>.</li>
+<li><strong>Estrógenos</strong>: el tratamiento sustitutivo posmenopáusico <strong>no</strong> es beneficioso y en mujeres mayores aumentó el riesgo cardiovascular en algunos estudios <span class="cite">p. 495</span>.</li>
+<li><strong>Hiperlipidemia</strong>: el riesgo depende de las <strong>LDL ("colesterol malo")</strong>, que entregan colesterol a los tejidos; las <strong>HDL ("colesterol bueno")</strong> lo movilizan al hígado. Estrategias que solo elevan HDL no son eficaces. Las <strong>estatinas</strong> inhiben la <strong>HMG-CoA reductasa</strong> hepática y reducen infartos; parte del beneficio es "fuera del objetivo" por reducción de la inflamación <span class="cite">p. 495-496</span>.</li>
+<li><strong>Hipertensión</strong>: aumenta el riesgo de cardiopatía isquémica en ~<strong>60%</strong>; es la causa más frecuente de hipertrofia ventricular izquierda, marcador indirecto de riesgo <span class="cite">p. 496</span>.</li>
+<li><strong>Tabaco</strong> (consumo prolongado): <strong>duplica</strong> la muerte por cardiopatía isquémica; abandonar reduce sustancialmente el riesgo <span class="cite">p. 496</span>.</li>
+<li><strong>Diabetes</strong>: incidencia de infarto <strong>2 veces</strong> mayor; más accidente cerebrovascular; riesgo de <strong>gangrena</strong> de extremidades inferiores <strong>100 veces</strong> superior <span class="cite">p. 496</span>.</li>
+<li><strong>Proteína C reactiva (CRP)</strong>: reactante de fase aguda hepática, <strong>no causal</strong> pero marcador independiente de infarto, ACV, enfermedad arterial periférica y muerte súbita; se integra en los algoritmos de riesgo (baja &lt;1,0 mg/L, alta &gt;3,0 mg/L); desciende con abandono del tabaco, pérdida de peso, ejercicio y estatinas <span class="cite">p. 496</span>.</li>
+<li><strong>Hiperhomocisteinemia</strong>: se correlaciona con ateroesclerosis coronaria, enfermedad vascular periférica, ACV y trombosis venosa; la <strong>homocistinuria</strong> (&gt;100 µmol/L) causa enfermedad vascular prematura <span class="cite">p. 496</span>.</li>
+<li><strong>Síndrome metabólico</strong>: obesidad central, resistencia a la insulina, hipertensión, dislipidemia (LDL altas, HDL bajas), hipercoagulabilidad y estado proinflamatorio <span class="cite">p. 496</span>.</li>
+<li><strong>Lp(a)</strong>: LDL alterada con apolipoproteína B-100 unida a apo(A); riesgo coronario y cerebrovascular independiente del colesterol total o LDL <span class="cite">p. 496</span>.</li>
+<li>Más del <strong>75%</strong> de los episodios cardiovasculares en mujeres sanas ocurren con LDL &lt;160 mg/dL ("bajo riesgo") <span class="cite">p. 496</span>.</li>
+</ul>
+<h3 id="patogenia-hipótesis-de-la-respuesta-a-la-lesión">Patogenia: hipótesis de la "respuesta a la lesión"</h3>
+<p>La ateroesclerosis es una respuesta <strong>inflamatoria y de cicatrización crónica</strong> a la lesión endotelial. Secuencia <span class="cite">p. 497</span>:</p>
+<ol type="1">
+<li><strong>Lesión y disfunción endoteliales</strong>: mayor permeabilidad, adhesión de leucocitos, trombosis.</li>
+<li><strong>Acumulación de lipoproteínas</strong> (LDL y formas oxidadas) en la pared.</li>
+<li><strong>Adhesión de monocitos</strong>, migración a la íntima, transformación en macrófagos y <strong>células espumosas</strong>.</li>
+<li><strong>Adhesión plaquetaria</strong>.</li>
+<li>Liberación de factores por plaquetas, macrófagos y células parietales → reclutamiento de CML.</li>
+<li><strong>Proliferación de CML</strong>, síntesis de MEC, reclutamiento de linfocitos T.</li>
+<li>Acumulación de lípidos intra y extracelulares y <strong>calcificación</strong> tardía.</li>
+</ol>
+<ul>
+<li><strong>Causas de disfunción endotelial</strong>: las tres más importantes son <strong>alteraciones hemodinámicas, hipercolesterolemia e inflamación</strong>; también toxinas del humo, homocisteína y citocinas <span class="cite">p. 497-498</span>.</li>
+<li><strong>Hemodinámica</strong>: las placas se localizan en orígenes vasculares, bifurcaciones y aorta abdominal posterior, donde el flujo deja de ser laminar. El flujo laminar induce <strong>KLF2</strong>, que activa genes ateroprotectores; la turbulencia hace al vaso susceptible; las estatinas protegen en parte por aumentar KLF2 <span class="cite">p. 498</span>.</li>
+<li><strong>LDL modificadas</strong>: se oxidan por radicales libres de las células inflamatorias; los macrófagos las captan por <strong>receptores depuradores</strong> (no el receptor de LDL) y se vuelven células espumosas; las lipoproteínas modificadas son tóxicas y estimulan factores de crecimiento, citocinas y quimiocinas (círculo vicioso) <span class="cite">p. 498</span>.</li>
+<li><strong>Inflamación</strong>: los <strong>cristales de colesterol</strong> activan el <strong>inflamasoma NLRP3</strong> (vía TLR → NF-κB → pro-IL-1β/IL-18 → IL-1β e IL-18 activas), reclutando más monocitos; los macrófagos producen ERO que oxidan más LDL; los linfocitos T producen <strong>interferón γ</strong> <span class="cite">p. 498-499</span>.</li>
+<li><strong>Infección</strong>: virus del herpes, CMV y <em>Chlamydophila pneumoniae</em> tienen solo evidencia circunstancial; <strong>no hay relación causal contrastada</strong> <span class="cite">p. 498</span>.</li>
+<li><strong>Proliferación de CML</strong>: PDGF, FGF y TGF-β impulsan CML y colágeno que <strong>estabilizan</strong> la placa; las células inflamatorias aumentan la degradación de MEC y producen placas inestables <span class="cite">p. 498</span>.</li>
+</ul>
+<h3 id="morfología">Morfología</h3>
+<ul>
+<li><strong>Estrías grasas</strong>: macrófagos espumosos intimalares; máculas amarillas planas que confluyen en estrías ≥1 cm; presentes en prácticamente todos los adolescentes incluso sin factores de riesgo; las coronarias se inician en la adolescencia en los mismos sitios de las futuras placas <span class="cite">p. 499</span>.</li>
+<li><strong>Placa ateroesclerótica</strong>: amarillo-pardusca, elevada, <strong>excéntrica</strong> (no circunferencial). Cuatro componentes: 1) células (CML, macrófagos, linfocitos T); 2) MEC (colágeno, elastina, proteoglucanos); 3) lípidos intra y extracelulares; 4) calcificación tardía. Cubierta fibrosa superficial; en el "hombro" área más celular; debajo, <strong>núcleo necrótico</strong> con colesterol cristalino (deja "hendiduras"), residuos, células espumosas, fibrina y trombos organizados; <strong>neovascularización</strong> en la periferia <span class="cite">p. 501</span>.</li>
+<li><strong>Distribución</strong> (en orden descendente): aorta abdominal inferior e ilíacas &gt; coronarias &gt; poplíteas &gt; carótidas internas y polígono de Willis; las extremidades superiores y las mesentérica y renal (salvo orígenes) se preservan <span class="cite">p. 501</span>.</li>
+<li>Las <strong>placas fibrosas</strong> son casi solo CML y tejido fibroso muy calcificado <span class="cite">p. 502</span>.</li>
+</ul>
+<h3 id="cambios-agudos-de-la-placa-y-complicaciones">Cambios agudos de la placa y complicaciones</h3>
+<ul>
+<li><strong>Rotura/fisura</strong>: expone constituyentes trombógenos → trombosis frecuentemente oclusiva total <span class="cite">p. 502</span>.</li>
+<li><strong>Erosión/ulceración</strong>: expone la membrana basal subendotelial; trombosis menos a menudo totalmente oclusiva <span class="cite">p. 502</span>.</li>
+<li><strong>Hemorragia intraplaca</strong>: por rotura de la cubierta o de los vasos de la neovascularización; un hematoma contenido expande o rompe la placa <span class="cite">p. 502</span>.</li>
+<li><strong>Ateroembolia</strong>: descarga de residuos → microémbolos <span class="cite">p. 502</span>.</li>
+<li><strong>Aneurismas</strong>: atrofia isquémica de la media y pérdida elástica <span class="cite">p. 502</span>.</li>
+</ul>
+<h3 id="estenosis-y-vulnerabilidad">Estenosis y vulnerabilidad</h3>
+<p>La <strong>estenosis crítica</strong> coronaria reduce el área luminal en <strong>70-75%</strong>: angina estable de esfuerzo. Con estenosis lenta se desarrolla circulación colateral. Consecuencias del flujo limitado: isquemia mesentérica, muerte súbita cardíaca, cardiopatía isquémica crónica, encefalopatía isquémica y claudicación intermitente <span class="cite">p. 502</span>.</p>
+<ul>
+<li><strong>Placa vulnerable</strong>: cubierta fibrosa <strong>fina</strong>, núcleo lipídico <strong>grande</strong>, inflamación densa; el colágeno de la cubierta lo producen las CML, cuya pérdida la debilita; las <strong>MMP</strong> de macrófagos y CML degradan colágeno y los <strong>TIMP</strong> lo contrarrestan. <strong>Placa estable</strong>: cubierta gruesa de colágeno denso, mínima inflamación <span class="cite">p. 503</span>.</li>
+<li>La mayoría de las placas que rompen y causan infarto mostraban antes una estenosis <strong>leve o moderada no crítica</strong>; la angiografía convencional no las visualiza antes del suceso <span class="cite">p. 503</span>.</li>
+<li>La rotura subclínica silente y la organización de sus trombos es un mecanismo habitual de crecimiento de las lesiones <span class="cite">p. 504</span>.</li>
+<li>La estimulación adrenérgica (despertarse y levantarse) causa picos de presión y reactividad plaquetaria que explican el <strong>pico de infartos entre las 6 y 12 h de la mañana</strong>; el estrés extremo (terremotos, 11-S de 2001) aumenta la muerte súbita <span class="cite">p. 504</span>.</li>
+<li>La <strong>vasoconstricción</strong> en focos de ateroma responde a agonistas adrenérgicos, contenido plaquetario, disfunción de CE con pérdida de NO y mediadores de células inflamatorias perivasculares <span class="cite">p. 504</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Placa vulnerable y pico circadiano</span>Placa vulnerable: cubierta fibrosa fina, núcleo lipídico grande e inflamación con MMP de macrófagos; la mayoría de los infartos parte de placas previamente no críticas. La estimulación adrenérgica al despertar explica el pico de infartos entre las 6 y 12 de la mañana.</div>
+</section><section id="sec-07-aneurismas-y-diseccion" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 504-508</div>
+<h2>Aneurismas y disección</h2>
+<p>Un <strong>aneurisma</strong> es una dilatación localizada anómala de un vaso o el corazón. <strong>Aneurisma verdadero</strong>: afecta todas las capas de una pared intacta pero atenuada. <strong>Falso aneurisma (seudoaneurisma)</strong>: defecto parietal con hematoma extravascular que comunica con la luz ("hematoma pulsátil"), p. ej., rotura ventricular contenida por adherencias pericárdicas o fuga en la anastomosis de un injerto. <strong>Disección</strong>: la sangre se abre túnel por la media o media-adventicia <span class="cite">p. 504-505</span>.</p>
+<ul>
+<li><strong>Sacular</strong>: evaginación esférica de una porción de la pared; intracraneales 2-20 mm; aórticos 5-10 cm, a menudo con trombos <span class="cite">p. 505</span>.</li>
+<li><strong>Fusiforme</strong>: dilatación circunferencial difusa de un segmento largo; en aorta 5-10 cm <span class="cite">p. 505</span>.</li>
+</ul>
+<h3 id="patogenia">Patogenia</h3>
+<p>La debilidad parietal proviene de <span class="cite">p. 505</span>:</p>
+<ul>
+<li><strong>Mala calidad intrínseca del tejido conjuntivo</strong>: colágeno III defectuoso en el <strong>síndrome de Ehlers-Danlos vascular</strong>.</li>
+<li><strong>Señalización anómala de TGF-β</strong>: en el <strong>síndrome de Marfan</strong>, la fibrilina defectuosa no secuestra TGF-β; en el <strong>síndrome de Loeys-Dietz</strong>, mutaciones de los receptores de TGF-β, <em>SMAD3</em> o <strong>TGF-β3</strong>; los aneurismas pueden romper siendo pequeños (evolución "agresiva").</li>
+<li><strong>Desbalance MMP/TIMP</strong>: los macrófagos producen MMP elastolíticas; los AAA desvían el ambiente de citocinas hacia <strong>Th2 (IL-4, IL-10)</strong>, que estimula macrófagos a producir más MMP.</li>
+<li><strong>Isquemia de la media</strong>: engrosamiento intimal ateroesclerótico (isquemia interna) o estrechamiento de los vasa vasorum por hipertensión (isquemia externa); la <strong>sífilis terciaria</strong> produce endoarteritis obliterante de los vasa vasorum de la aorta torácica.</li>
+</ul>
+<p>El resultado histológico común es la <strong>degeneración de la media</strong> (fragmentación elástica, acumulación mucoide de MEC con apariencia quística, pérdida de CML); es inespecífica y compartida por todas las aortopatías <span class="cite">p. 505-506</span>. Las dos causas más importantes de aneurisma aórtico son la <strong>ateroesclerosis</strong> (AAA) y la <strong>hipertensión</strong> (aorta ascendente) <span class="cite">p. 506</span>. Los <strong>aneurismas micóticos</strong> se originan por émbolo séptico (endocarditis infecciosa), extensión de un foco supurativo adyacente o infección directa de la pared <span class="cite">p. 506</span>.</p>
+<h3 id="aneurisma-de-la-aorta-abdominal">Aneurisma de la aorta abdominal</h3>
+<ul>
+<li>Más frecuente en <strong>hombres y fumadores</strong>; infrecuente antes de los 50 años; su incidencia en hombres &gt;60 años es &lt;5% pese a la ateroesclerosis casi universal (es decir, la ateroesclerosis sola no basta) <span class="cite">p. 506</span>.</li>
+<li>Localizado entre las arterias renales y la bifurcación aórtica; sacular o fusiforme; <strong>&gt;3 cm</strong> de diámetro, a menudo &gt;5,5 cm y hasta 25 cm de largo; contiene trombo mural mal organizado; puede ocluir orificios de renales y mesentéricas; suele acompañarse de aneurismas ilíacos menores <span class="cite">p. 506</span>.</li>
+<li><strong>AAA inflamatorio</strong> (5-10% de los AAA): jóvenes, dolor dorsal y VHS elevada; inflamación linfoplasmocítica con macrófagos y células gigantes más cicatrización periaórtica densa; respuesta inmunitaria localizada <span class="cite">p. 506</span>.</li>
+<li>Un subgrupo corresponde a la <strong>enfermedad relacionada con IgG4 (ER-IgG4)</strong>: IgG4 circulante elevada, fibrosis estoriforme y células plasmáticas IgG4+; puede asociarse a fibrosis retroperitoneal con <strong>hidronefrosis bilateral</strong>; responde a corticoesteroides y terapia antilinfocitos B <span class="cite">p. 506</span>.</li>
+<li><strong>AAA micótico</strong>: la supuración destruye la media, con dilatación rápida y rotura <span class="cite">p. 506</span>.</li>
+</ul>
+<p>Características clínicas: la mayoría asintomáticos (masa abdominal pulsátil accidental). Complicaciones: rotura con hemorragia masiva, obstrucción de ramas (ilíaca, renal, mesentérica, vertebral), embolia por ateroma o trombo mural, compresión de uréter o erosión vertebral <span class="cite">p. 506</span>.</p>
+<p>Riesgo de rotura según diámetro <span class="cite">p. 506</span>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Aneurismas y disección" tabindex="0"><table>
+<thead>
+<tr>
+<th>Diámetro</th>
+<th>Riesgo de rotura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤4 cm</td>
+<td>~0</td>
+</tr>
+<tr>
+<td>4-5 cm</td>
+<td>1% al año</td>
+</tr>
+<tr>
+<td>5-6 cm</td>
+<td>11% al año</td>
+</tr>
+<tr>
+<td>&gt;6 cm</td>
+<td>25% al año</td>
+</tr>
+</tbody>
+</table></div>
+<p>Expansión habitual 0,2-0,3 cm/año (20% crece más rápido). Se trata agresivamente si <strong>≥5 cm</strong>, con injerto protésico o <strong>endoprótesis</strong> endovascular por arteria femoral. Mortalidad operatoria electiva ~<strong>5%</strong>; urgencia por rotura &gt;<strong>50%</strong> <span class="cite">p. 507</span>.</p>
+<h3 id="aneurisma-de-la-aorta-torácica">Aneurisma de la aorta torácica</h3>
+<p>Se asocia sobre todo a <strong>hipertensión</strong>; cada vez más a síndrome de Marfan, Loeys-Dietz y aortitis inflamatorias. Síntomas antes de la disección/rotura: dolor torácico por erosión ósea, isquemia miocárdica por compresión coronaria, disfagia, <strong>disfonía</strong> por compromiso del nervio laríngeo recurrente, compresión bronquial; la mayoría es silente hasta el evento catastrófico <span class="cite">p. 507</span>.</p>
+<h3 id="disección-aórtica">Disección aórtica</h3>
+<p>La sangre separa los planos laminares de la media formando un conducto sangrante en la pared. Dos grupos: 1) hombres de 40-60 años con hipertensión (<strong>&gt;90%</strong> de los casos); 2) jóvenes con aortopatías sindrómicas (Marfan). Yatrógena por canulación; embarazo: 10-20 casos por millón de nacimientos, en el tercer trimestre o el posparto. Es <strong>rara</strong> en ateroesclerosis avanzada o sífilis: la fibrosis de la media impide la propagación del hematoma <span class="cite">p. 507</span>.</p>
+<p>La hipertensión es el factor de riesgo principal; no todo patrón de degeneración de la media predice disección (y hay degeneración marcada en autopsias sin disección): su relación con la patogenia es incierta. El desencadenante habitual es desconocido; una vez disecada la media, la progresión del hematoma se autosostiene; el tratamiento hipotensor agresivo la limita. A veces la rotura de vasa vasorum causa hematoma intramural sin desgarro intimal <span class="cite">p. 507</span>.</p>
+<p>Morfología: el desgarro intimal inicial se sitúa en la aorta <strong>ascendente, a menos de 10 cm de la válvula aórtica</strong>; es transversal, de bordes agudos irregulares, 1-5 cm; el hematoma diseca entre unidades laminares del tercio externo de la media o entre media y adventicia; puede romper la adventicia (hemorragia masiva o <strong>taponamiento cardíaco</strong>) o reentrar a la luz por un segundo desgarro ("aorta de doble cañón"), pudiendo endotelizarse como disección crónica. La ausencia de inflamación es característica <span class="cite">p. 507-508</span>.</p>
+<p>Clasificación (fig. 11.23) <span class="cite">p. 508</span>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Aneurismas y disección" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Extensión</th>
+<th>Pronóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tipo A (proximal)</strong>: DeBakey I (ascendente + descendente) y II (solo ascendente)</td>
+<td>Afecta la aorta ascendente</td>
+<td>Más frecuente y peligrosa; tratamiento quirúrgico urgente; supervivencia con tratamiento 65-85%, mortalidad ~70% si hay hemorragia o isquemia distal; supervivencia a 10 años 40-88% según candidatos a cirugía</td>
+</tr>
+<tr>
+<td><strong>Tipo B (distal)</strong>: DeBakey III, distal a la subclavia</td>
+<td>No compromete la ascendente</td>
+<td>Tratamiento conservador; supervivencia a corto plazo ~75% con o sin cirugía</td>
+</tr>
+</tbody>
+</table></div>
+<p>Clínica: inicio <strong>súbito de dolor lancinante</strong> precordial que irradia a la espalda entre las escápulas y desciende con la progresión; puede confundirse con infarto. Causa más común de muerte: <strong>rotura con hemorragia</strong> a cavidades pericárdica, pleural o peritoneal. También taponamiento, insuficiencia aórtica por rotura del anillo, y obstrucciones de coronarias, renales, mesentéricas o ilíacas (infarto, mielitis transversa por compromiso vertebral) <span class="cite">p. 508</span>.</p>
+
+<div class="warnbox"><span class="box-title">AAA y disección en cifras</span>Riesgo de rotura del AAA: 1%/año (4-5 cm), 11% (5-6 cm) y 25% (&gt;6 cm); se opera si es ≥5 cm, con mortalidad electiva ~5% vs &gt;50% en rotura. La disección tipo A compromete la ascendente (&lt;10 cm de la válvula) y es quirúrgica urgente; la tipo B, distal a la subclavia, es conservadora.</div>
+</section><section id="sec-08-vasculitis" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 508-516</div>
+<h2>Vasculitis</h2>
+<p>Inflamación de la pared del vaso con manifestaciones según el lecho afectado; síntomas sistémicos inespecíficos: fiebre, mialgias, artralgias y malestar general. Se reconocen ~20 formas principales; la mayoría afecta vasos pequeños, pero cada entidad tiene su calibre y localización preferentes <span class="cite">p. 508-509</span>. Dos mecanismos patógenos: <strong>inflamación inmunomediada</strong> e <strong>invasión directa por patógenos</strong>; las infecciones también inducen vasculitis no infecciosas (inmunocomplejos, reactividad cruzada). Distinguirlas es esencial: la inmunodepresión beneficia a la inmunomediada y empeora la infecciosa <span class="cite">p. 509</span>.</p>
+<h3 id="clasificación-de-las-formas-primarias-tabla-114-reconstruida-parcialmente">Clasificación de las formas primarias (tabla 11.4, reconstruida parcialmente)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Vasculitis" tabindex="0"><table>
+<thead>
+<tr>
+<th>Entidad</th>
+<th>Sitio predominante</th>
+<th>Células</th>
+<th>Rasgos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arteritis de células gigantes</strong></td>
+<td>Aorta y ramas; arterias de la cabeza</td>
+<td>Linfocitos T, macrófagos, células gigantes, granulomas</td>
+<td>Mayores de 50 años; asociada a polimialgia reumática <span class="cite">p. 509, 511</span></td>
+</tr>
+<tr>
+<td><strong>Arteritis de Takayasu</strong></td>
+<td>Aorta y grandes ramas</td>
+<td>Igual a células gigantes</td>
+<td>Menores de 50 años; "enfermedad sin pulso" <span class="cite">p. 509, 512</span></td>
+</tr>
+<tr>
+<td><strong>Panarteritis nudosa (PAN)</strong></td>
+<td>Arterias musculares pequeñas y medianas (renales, viscerales; respeta pulmón)</td>
+<td>Neutrófilos, eosinófilos, mononucleares; necrosis fibrinoide</td>
+<td>Sin ANCA; un tercio con <strong>hepatitis B</strong> crónica <span class="cite">p. 509, 513</span></td>
+</tr>
+<tr>
+<td><strong>Enfermedad de Kawasaki</strong></td>
+<td>Vasos grandes-medios (coronarias)</td>
+<td>Transmural densa, anti-CE y anti-CML</td>
+<td>Lactantes y niños; 80% menores de 4 años <span class="cite">p. 509, 513</span></td>
+</tr>
+<tr>
+<td><strong>Polivasculitis microscópica</strong></td>
+<td>Capilares, arteriolas, vénulas</td>
+<td>Neutrófilos fragmentados (leucocitoclástica)</td>
+<td><strong>ANCA-MPO</strong>; pauciinmunitaria <span class="cite">p. 509, 513</span></td>
+</tr>
+<tr>
+<td><strong>Granulomatosis con polivasculitis (GPV, antes Wegener)</strong></td>
+<td>Vías respiratorias, pulmón, riñón; vasos pequeños</td>
+<td>Granulomas necrosantes + vasculitis</td>
+<td><strong>ANCA-PR3 hasta en 95%</strong> <span class="cite">p. 509, 514</span></td>
+</tr>
+<tr>
+<td><strong>Síndrome de Churg-Strauss</strong></td>
+<td>Vasos pequeños</td>
+<td>Eosinófilos abundantes, granulomas extravasculares</td>
+<td>Asma, rinitis alérgica, eosinofilia; ANCA-MPO en minoría <span class="cite">p. 515</span></td>
+</tr>
+<tr>
+<td><strong>Enfermedad de Buerger (tromboangitis obliterante)</strong></td>
+<td>Arterias tibiales y radiales</td>
+<td>Trombo con microabscesos + granulomatosa</td>
+<td>Fumadores jóvenes (&lt;35 años) <span class="cite">p. 509, 515</span></td>
+</tr>
+<tr>
+<td><strong>Enfermedad de Behçet</strong></td>
+<td>Vasos de cualquier calibre</td>
+<td>No aplica</td>
+<td>Úlceras orogenitales <span class="cite">p. 509</span></td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 509</span>. Las localizaciones habituales por calibre (fig. 11.24): vasos grandes (células gigantes, Takayasu); intermedios (PAN, Kawasaki); pequeños mediados por inmunocomplejos (LES, púrpura de Schönlein-Henoch/IgA, crioglobulinemia, Goodpasture) o pauciinmunitarios ANCA (polivasculitis microscópica, GPV, Churg-Strauss) <span class="cite">p. 510</span>.</p>
+<h3 id="mecanismos-de-la-vasculitis-no-infecciosa">Mecanismos de la vasculitis no infecciosa</h3>
+<ul>
+<li><strong>Inmunocomplejos</strong>: en trastornos inmunitarios sistémicos como el <strong>LES</strong>; lesiones tipo fenómeno de Arthus o enfermedad del suero; a menudo los depósitos son escasos en la biopsia ("pauciinmunitarias") porque ya se degradaron <span class="cite">p. 509-510</span>.
+<ul>
+<li><strong>Vasculitis por hipersensibilidad a fármacos</strong>: penicilina (hapteno) o estreptocinasa (proteína extraña); lesiones cutáneas predominantes; la suspensión del fármaco resuelve el cuadro <span class="cite">p. 510</span>.</li>
+<li><strong>Vasculitis por infecciones</strong>: en hasta el <strong>30%</strong> de las PAN, los inmunocomplejos son <strong>HBsAg-anti-HBsAg</strong> (hepatitis B) <span class="cite">p. 510</span>.</li>
+</ul></li>
+<li><strong>ANCA</strong>: autoanticuerpos contra enzimas de gránulos de neutrófilos, lisosomas de monocitos y CE; los títulos reflejan actividad y predicen recaídas <span class="cite">p. 510</span>.
+<ul>
+<li><strong>ANCA-PR3</strong> (antes c-ANCA): anti-proteinasa 3, gránulos azurófilos; asociado a <strong>GPV</strong> <span class="cite">p. 510</span>.</li>
+<li><strong>ANCA-MPO</strong> (antes p-ANCA): anti-mieloperoxidasa; inducido por fármacos, especialmente <strong>propiltiouracilo</strong>; asociado a <strong>polivasculitis microscópica y Churg-Strauss</strong> <span class="cite">p. 510</span>.</li>
+<li>Patogenia: citocinas (TNF) regulan al alza PR3 y MPO en superficie de neutrófilos; los ANCA los activan y liberan ERO y enzimas proteolíticas que lesionan la pared; como no hay inmunocomplejos circulantes, las lesiones son <strong>pauciinmunitarias</strong> <span class="cite">p. 510-511</span>.</li>
+</ul></li>
+<li><strong>Anticuerpos anti-CE</strong>: posiblemente implicados en la enfermedad de Kawasaki <span class="cite">p. 511</span>.</li>
+<li><strong>Linfocitos T autorreactivos</strong>: base de la arteritis de células gigantes y la GPV <span class="cite">p. 509, 511, 514</span>.</li>
+</ul>
+<h3 id="arteritis-de-células-gigantes-temporal">Arteritis de células gigantes (temporal)</h3>
+<p>Inflamación crónica granulomatosa de arterias grandes a pequeñas, principalmente de la cabeza; la <strong>vasculitis más frecuente en ancianos</strong> de EE. UU. y Europa; las temporales se biopsian por accesibilidad, no por vulnerabilidad; también vertebrales, oftálmicas y aorta (aortitis de células gigantes) <span class="cite">p. 511</span>.</p>
+<ul>
+<li>Patogenia: respuesta de linfocitos T a un antígeno parietal no identificado, con TNF y anti-CE; asociación con haplotipos de clase II del CPH; excelente respuesta a corticoesteroides <span class="cite">p. 511</span>.</li>
+<li>Morfología: engrosamiento intimal con ocasional trombosis; inflamación granulomatosa centrada en la <strong>membrana elástica interna con fragmentación elástica</strong>; linfocitos T (CD4+ &gt; CD8+) y macrófagos; células gigantes en ~<strong>75%</strong> de las biopsias adecuadas, pero pueden faltar; las lesiones son focales, con segmentos normales intercalados; en la fase de curación, fibrosis y fragmentación de <strong>más del 30% del perímetro</strong> de la lámina elástica interna <span class="cite">p. 511-512</span>.</li>
+<li>Clínica: rara antes de los 50 años; cefalea temporal, vaso doloroso a la palpación; síntomas oculares bruscos en ~<strong>50%</strong> (diplopía hasta <strong>ceguera permanente</strong> por compromiso de la oftálmica): diagnóstico y tratamiento <strong>inmediato</strong>; biopsia ≥<strong>1 cm</strong>; una biopsia negativa <strong>no descarta</strong> el diagnóstico; corticoesteroides o anti-TNF eficaces <span class="cite">p. 512</span>.</li>
+</ul>
+<h3 id="arteritis-de-takayasu">Arteritis de Takayasu</h3>
+<p>Vasculitis granulomatosa transmural fibrosante de la aorta (sobre todo el <strong>cayado</strong>) y sus grandes ramas, con estenosis luminal severa: <strong>"enfermedad sin pulso"</strong>. Comparte rasgos con la arteritis de células gigantes; la diferenciación es solo por edad: <strong>&gt;50 años = células gigantes; &lt;50 años = Takayasu</strong>. Distribución global, probable etiología autoinmunitaria <span class="cite">p. 512</span>.</p>
+<ul>
+<li>Morfología: engrosamiento irregular parietal con hiperplasia intimal; en un tercio compromete el resto de la aorta; arteria pulmonar en la <strong>mitad</strong> de los casos; también coronarias y renales; histología <strong>indistinguible</strong> de la de células gigantes; cicatrización colágena de las tres capas en la fase avanzada; dilatación de la raíz aórtica con <strong>insuficiencia de la válvula aórtica</strong> <span class="cite">p. 512</span>. Clínica: fatiga, pérdida de peso y fiebre; después pulsos débiles de extremidades superiores, alteraciones visuales (hasta ceguera), claudicación de piernas, hipertensión pulmonar, infarto por compromiso coronario; <strong>hipertensión sistémica en ~50%</strong> por estenosis renales; tras 1-2 años puede entrar en fase quiescente <span class="cite">p. 512</span>.</li>
+</ul>
+<h3 id="panarteritis-nudosa-pan">Panarteritis nudosa (PAN)</h3>
+<p>Vasculitis sistémica necrosante de arterias musculares pequeñas y medianas, con predilección por <strong>renales y viscerales</strong>; <strong>respeta la circulación pulmonar</strong>. <strong>Sin ANCA</strong>; un tercio de los pacientes con <strong>hepatitis B</strong> crónica (complejos HBsAg-HBsAb) <span class="cite">p. 513</span>.</p>
+<ul>
+<li>Morfología: inflamación necrosante <strong>transmural segmentaria</strong> con necrosis fibrinoide, aneurismas y trombosis, preferentemente en puntos de ramificación; órganos en orden decreciente: riñón, corazón, hígado, tubo digestivo; <strong>coexisten lesiones de todas las fases</strong> (inicial a tardía) en distintos o el mismo vaso, lo que indica lesión continuada <span class="cite">p. 513</span>. Clínica: adultos jóvenes, evolución episódica y remitente; combinación típica de <strong>hipertensión acelerada</strong> (arteria renal), dolor abdominal con heces sanguinolentas, mialgias difusas y <strong>neuritis periféricas motoras</strong>. Sin tratamiento es mortal; la inmunodepresión induce remisión o curación en el <strong>90%</strong> <span class="cite">p. 513</span>.</li>
+</ul>
+<h3 id="enfermedad-de-kawasaki">Enfermedad de Kawasaki</h3>
+<p>Enfermedad aguda, febril y autolimitada de lactantes y niños con arteritis de vasos grandes-medios; <strong>80% menores de 4 años</strong>; su trascendencia radica en la <strong>arteritis coronaria</strong> con aneurismas que rompen o trombosan, causando infarto. Antígenos infecciosos (mayormente víricos) desencadenan hipersensibilidad retardada con autoanticuerpos anti-CE y anti-CML <span class="cite">p. 513</span>.</p>
+<ul>
+<li>Morfología: semejante a la PAN, con necrosis fibrinoide menos marcada; la vasculitis aguda remite espontánea o tratada, pero puede formar aneurisma y engrosamiento intimal obstructivo cicatricial <span class="cite">p. 513</span>. Clínica: eritema con ampollas en conjuntiva y boca, edema de manos y pies, eritema palmoplantar, exantema descamativo e hipertrofia ganglionar cervical (de ahí <strong>"síndrome de ganglios linfáticos mucocutáneos"</strong>). Sin tratamiento, <strong>20%</strong> desarrolla secuelas coronarias (aneurismas gigantes de 7-8 mm); con <strong>inmunoglobulina intravenosa y ácido acetilsalicílico</strong>, la enfermedad coronaria sintomática baja a <strong>&lt;4%</strong> <span class="cite">p. 513</span>.</li>
+</ul>
+<h3 id="polivasculitis-microscópica">Polivasculitis microscópica</h3>
+<p>Vasculitis necrosante de <strong>capilares, arteriolas y vénulas pequeñas</strong>; también llamada vasculitis por hipersensibilidad o leucocitoclástica. A diferencia de la PAN, <strong>todas las lesiones tienen la misma antigüedad</strong> (único episodio de depósito). La mayoría de los casos se asocia a <strong>ANCA-MPO</strong> <span class="cite">p. 513-514</span>.</p>
+<ul>
+<li>Morfología: necrosis fibrinoide segmentaria de la media con lesiones transmurales focales, <strong>sin granulomas</strong> y sin arterias de calibre mediano-grande (por eso infartos macroscópicos raros); neutrófilos fragmentados ("leucocitoclásticos") en vénulas poscapilares; lesiones pauciinmunitarias <span class="cite">p. 514</span>. Clínica: <strong>glomerulonefritis necrosante en el 90%</strong> y capilaritis pulmonar frecuentes; hemoptisis, hematuria y proteinuria, dolor o hemorragia digestiva, púrpura cutánea palpable; la inmunodepresión induce remisión salvo daño renal o cerebral generalizado <span class="cite">p. 513-514</span>.</li>
+</ul>
+<h3 id="granulomatosis-con-polivasculitis-gpv-antes-wegener">Granulomatosis con polivasculitis (GPV; antes Wegener)</h3>
+<p>Vasculitis necrosante con <strong>triada</strong>: 1) granulomas necrosantes de vías respiratorias superiores (oído, nariz, senos, garganta) o bajas (pulmón); 2) vasculitis necrosante o granulomatosa de vasos pequeños y medianos; 3) <strong>glomerulonefritis focal necrosante</strong>, a menudo con semilunas. La forma generalizada compromete ojos, piel y corazón <span class="cite">p. 514</span>.</p>
+<ul>
+<li>Patogenia: probable hipersensibilidad mediada por linfocitos T a antígenos inhalados; <strong>ANCA-PR3 hasta en 95%</strong>; los títulos caen con el tratamiento y aumentan antes de la recaída <span class="cite">p. 514</span>. Morfología: sinusitis granulomatosa hasta úlceras nasales, palatinas o faríngeas con necrosis <strong>geográfica</strong>; nódulos pulmonares confluentes que <strong>cavitan</strong>; hemorragia alveolar tardía; riñón desde glomerulonefritis necrosante focal y segmentaria hasta <strong>con semilunas</strong> <span class="cite">p. 514-515</span>.</li>
+<li>Clínica: hombres &gt; mujeres, <strong>40 años</strong> de media; neumonitis bilateral con nódulos cavitados (<strong>95%</strong>), sinusitis crónica (<strong>90%</strong>), úlceras nasofaríngeas (<strong>75%</strong>), enfermedad renal (<strong>80%</strong>). Sin tratamiento: mortalidad del <strong>80% en 1 año</strong>; con corticoesteroides, ciclofosfamida, anti-TNF y antilinfocitos B pasa a enfermedad crónica con remisiones y recaídas <span class="cite">p. 515</span>.</li>
+</ul>
+<h3 id="síndrome-de-churg-strauss-granulomatosis-y-vasculitis-alérgica">Síndrome de Churg-Strauss (granulomatosis y vasculitis alérgica)</h3>
+<p>Vasculitis necrosante de vasos pequeños con <strong>asma, rinitis alérgica, infiltrados pulmonares, eosinofilia periférica</strong> y granulomas necrosantes extravasculares con infiltrado eosinófilo llamativo. Púrpura palpable, hemorragia digestiva y glomeruloesclerosis focal y segmentaria; los infiltrados eosinófilos miocárdicos causan miocardiopatía: <strong>afectación cardíaca en el 60%</strong>, principal causa de morbilidad y muerte. ANCA-MPO solo en una minoría (patogenia heterogénea). Se distingue de PAN y polivasculitis microscópica por <strong>granulomas y eosinófilos</strong> <span class="cite">p. 515</span>.</p>
+<h3 id="tromboangitis-obliterante-enfermedad-de-buerger">Tromboangitis obliterante (enfermedad de Buerger)</h3>
+<p>Inflamación <strong>segmentaria trombosante</strong> aguda y crónica de arterias pequeñas y medianas, principalmente <strong>tibiales y radiales</strong>, con insuficiencia vascular de extremidades. Casi exclusivamente en <strong>grandes fumadores antes de los 35 años</strong> <span class="cite">p. 515</span>.</p>
+<ul>
+<li>Patogenia: toxicidad endotelial directa de componentes del tabaco o respuesta inmunitaria a proteínas modificadas; hipersensibilidad intradérmica a extractos de tabaco; mayor prevalencia en israelíes, subcontinente indio y japoneses, con haplotipos de CPH <span class="cite">p. 515</span>. Morfología: trombo luminal con <strong>microabscesos</strong> de neutrófilos rodeados de inflamación granulomatosa; el trombo puede recanalizarse; la inflamación se extiende a <strong>venas y nervios contiguos</strong> (excepcional en otras vasculitis), que quedan envueltos en tejido fibroso <span class="cite">p. 515</span>.</li>
+<li>Clínica: <strong>Raynaud</strong>, claudicación del empeine, flebitis nodular superficial, dolor intenso incluso en reposo, úlceras y gangrena. Dejar de fumar en fases tempranas mejora los episodios; <strong>una vez establecidas, las lesiones no responden</strong> al abandono del tabaco <span class="cite">p. 515</span>.</li>
+</ul>
+<h3 id="vasculitis-asociada-a-otros-trastornos-no-infecciosos-e-infecciosas">Vasculitis asociada a otros trastornos no infecciosos e infecciosas</h3>
+<p>Asociada a artritis reumatoide (vasculitis reumatoide de la AR grave de larga data: arterias pequeñas y medianas con infarto visceral o aortitis), LES, neoplasias, crioglobulinemia mixta, síndrome antifosfolípido y púrpura de Schönlein-Henoch. No confundir morfologías parecidas con tratamientos distintos: la <strong>vasculitis lúpica por inmunocomplejos</strong> requiere <strong>antiinflamatorio</strong>; el <strong>síndrome antifosfolípido</strong>, <strong>anticoagulación intensiva</strong> <span class="cite">p. 515-516</span>.</p>
+<p>Las <strong>vasculitis infecciosas</strong> por invasión directa de bacterias u hongos, en especial <em><strong>Aspergillus</strong></em> y <em><strong>Mucor</strong></em>, forman parte de infecciones tisulares locales o de diseminación hematógena; debilitan la pared (aneurismas micóticos) y causan trombosis con infarto (p. ej., infarto cerebral en la meningitis bacteriana) <span class="cite">p. 516</span>.</p>
+
+</section><section id="sec-09-trastornos-por-hiperreactividad-de-los-vasos-sanguineos" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 516-517</div>
+<h2>Trastornos por hiperreactividad de los vasos sanguíneos</h2>
+<h3 id="fenómeno-de-raynaud">Fenómeno de Raynaud</h3>
+<p>Vasoconstricción excesiva de arterias y arteriolas con el <strong>frío o la emoción</strong>, en dedos de manos y pies, a veces nariz, orejas o labios; cambios de color <strong>"de rojo a blanco y azul"</strong> de proximal a distal <span class="cite">p. 516</span>.</p>
+<ul>
+<li><strong>Primario</strong>: 3-5% de la población, <strong>mujeres jóvenes</strong>, bilateral y simétrico, sin progresión; hiperreactividad intrínseca de las CML de la media; sin cambios estructurales salvo engrosamiento intimal en casos prolongados; evolución benigna; úlceras y gangrena infrecuentes <span class="cite">p. 516</span>. <strong>Secundario</strong>: asociado a LES, esclerodermia, enfermedad de Buerger o ateroesclerosis; <strong>asimétrico</strong> y <strong>progresivo</strong>; puede ser la primera manifestación de una vasculitis inmunomediada: el 10% de los pacientes con síntomas de nueva aparición desarrolla un trastorno subyacente <span class="cite">p. 516-517</span>.</li>
+</ul>
+<h3 id="vasoespasmo-miocárdico">Vasoespasmo miocárdico</h3>
+<p>La constricción excesiva causa isquemia; el vasoespasmo persistente causa <strong>infarto de miocardio</strong>. Precipitantes: mediadores endógenos (adrenalina de <strong>feocromocitomas</strong>), exógenos (<strong>cocaína, fenilefrina</strong>), hormona tiroidea alta (sensibilidad a catecolaminas), autoanticuerpos y linfocitos T en esclerodermia, estrés psicológico extremo. El vasoespasmo coronario sostenido (el llamado <strong>"Raynaud cardíaco"</strong>) de <strong>20-30 min</strong> produce infarto o muerte súbita <span class="cite">p. 517</span>.</p>
+
+</section><section id="sec-10-venas-y-vasos-linfaticos" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 517-518</div>
+<h2>Venas y vasos linfáticos</h2>
+<p>Las varices y la flebotrombosis/tromboflebitis explican al menos el <strong>90%</strong> de las enfermedades venosas clínicas <span class="cite">p. 517</span>.</p>
+<h3 id="varices">Varices</h3>
+<p>Venas dilatadas y tortuosas por aumento prolongado de la presión intraluminal con insuficiencia valvular. Afectan sobre todo a las <strong>venas superficiales de las piernas</strong> (presiones hasta 10 veces normales en postura declive prolongada). Hasta el <strong>20% de los hombres y un tercio de las mujeres</strong> las desarrollan; la obesidad aumenta el riesgo y la mayor incidencia femenina se atribuye a la compresión venosa pélvica por embarazo; la predisposición familiar refleja un desarrollo defectuoso de las paredes venosas <span class="cite">p. 517</span>.</p>
+<ul>
+<li>Clínica: estasis, congestión, edema, dolor y trombosis; dermatitis por estasis ("<strong>induración parda</strong>" por hemólisis de eritrocitos extravasados) y úlceras; mala cicatrización e infecciones. La <strong>embolia desde venas superficiales es muy infrecuente</strong>, en contraste con las venas profundas trombosadas <span class="cite">p. 517</span>. <strong>Varices esofágicas</strong>: por hipertensión portal (cirrosis); las derivaciones portosistémicas dilatan las venas gastroesofágicas (varices), rectales (<strong>hemorroides</strong>) y periumbilicales (<strong>cabeza de medusa</strong>); la rotura de las esofágicas causa hemorragia digestiva masiva y mortal <span class="cite">p. 517</span>.</li>
+<li><strong>Hemorroides</strong>: dilatación varicosa primaria del plexo anorrectal por congestión pélvica (embarazo, esfuerzo defecatorio); sangran, se trombosan y se ulcieran <span class="cite">p. 517</span>.</li>
+</ul>
+<h3 id="tromboflebitis-y-flebotrombosis">Tromboflebitis y flebotrombosis</h3>
+<p>Términos equivalentes para trombosis e inflamación venosas. Las <strong>venas profundas de las piernas</strong> explican más del <strong>90%</strong> de los casos; también plexos periprostático y pélvico, senos durales. La inmovilización prolongada (reposo en cama, vuelos o viajes largos) es la causa más frecuente de <strong>trombosis venosa profunda (TVP)</strong>; otros factores: gestación, insuficiencia cardíaca congestiva, anticonceptivos orales, neoplasias malignas y obesidad <span class="cite">p. 517</span>.</p>
+<ul>
+<li><strong>Síndrome de Trousseau</strong> (tromboflebitis migratoria): trombosis que aparecen y desaparecen en distintas localizaciones, paraneoplásica sobre todo en <strong>adenocarcinomas</strong> por factores procoagulantes tumorales <span class="cite">p. 517</span>. Clínica: los trombos de pierna causan pocos o ningún síntoma fiable; el <strong>signo de Homan</strong> (dolor con dorsiflexión del pie o presión de pantorrillas) tiene valor limitado y su ausencia <strong>no descarta</strong> la TVP. La <strong>embolia pulmonar</strong> es la complicación mayor: en muchos casos es la primera manifestación de la tromboflebitis; el pronóstico va de asintomático a la muerte <span class="cite">p. 517</span>.</li>
+</ul>
+<h3 id="síndromes-de-las-venas-cavas-superior-e-inferior">Síndromes de las venas cavas superior e inferior</h3>
+<ul>
+<li><strong>Síndrome de la vena cava superior</strong>: por neoplasias que comprimen o invaden (carcinoma broncógeno, <strong>linfoma mediastínico</strong>); dilatación de venas de cabeza, cuello y brazos con cianosis y dificultad respiratoria por compresión pulmonar <span class="cite">p. 518</span>. <strong>Síndrome de la vena cava inferior</strong>: neoplasias o trombosis ascendente de venas hepáticas, renales o de pierna; el <strong>carcinoma hepatocelular</strong> y el <strong>de células renales</strong> crecen dentro de las venas y ocluyen la VCI; produce edema de extremidad inferior, circulación colateral abdominal y <strong>proteinuria masiva</strong> por compromiso de la vena renal <span class="cite">p. 518</span>.</li>
+</ul>
+<h3 id="linfangitis-y-linfoedema">Linfangitis y linfoedema</h3>
+<ul>
+<li><strong>Linfangitis</strong>: inflamación aguda de linfáticos por diseminación de infecciones bacterianas, sobre todo <strong>estreptococos β-hemolíticos del grupo A</strong>; linfáticos dilatados con exudado de neutrófilos y monocitos; estrías rojas subcutáneas dolorosas y linfoadenitis; puede extenderse a celulitis, abscesos o <strong>bacteriemia/sepsis</strong> <span class="cite">p. 518</span>. <strong>Linfoedema primario</strong>: malformación congénita aislada o <strong>enfermedad de Milroy</strong> (hereditaria, con agenesia o hipoplasia linfática) <span class="cite">p. 518</span>.</li>
+<li><strong>Linfoedema secundario u obstructivo</strong>: tumores que obstruyen conductos y ganglios, cirugía (resección axilar en mastectomía radical), <strong>fibrosis posradiación</strong>, filariasis, trombosis inflamatoria y cicatrización. El edema crónico deposita MEC y produce fibrosis con <strong>induración sólida y "piel de naranja"</strong>; en último término úlceras cutáneas <span class="cite">p. 518</span>.</li>
+<li>La rotura de linfáticos dilatados causa acumulaciones lechosas de linfa: <strong>ascitis quilosa, quilotórax y quilopericardio</strong> <span class="cite">p. 518</span>.</li>
+</ul>
+
+</section><section id="sec-11-tumores-vasculares" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 518-522</div>
+<h2>Tumores vasculares</h2>
+<p>Espectro desde hemangiomas benignos (extraordinariamente frecuentes) hasta neoplasias agresivas (tabla 11.5). Se originan en el <strong>endotelio</strong> (hemangioma, linfangioma, angiosarcoma) o en células de soporte (<strong>tumor glómico</strong>). Los tumores primarios de grandes vasos (aorta, pulmonar, cava) son en su mayoría <strong>sarcomas</strong>. Tumores benignos: canales vasculares patentes revestidos por una monocapa de CE normal. Malignos: más celulares y proliferativos, con atipia y sin vasos bien organizados. El origen endotelial se confirma con <strong>CD31 o factor de von Willebrand</strong> <span class="cite">p. 518</span>.</p>
+<h3 id="ectasias-vasculares-no-neoplasias">Ectasias vasculares (no neoplasias)</h3>
+<ul>
+<li><strong>Nevó flamígero</strong> ("mancha de nacimiento"): la ectasia más frecuente; lesión plana rosada a morada de cabeza y cuello; la mayoría remite espontáneamente. La <strong>mancha en vino de Oporto</strong> crece en la infancia, engrosa la piel y persiste; en distribución del <strong>nervio trigémino</strong> puede asociarse al <strong>síndrome de Sturge-Weber</strong> (hemangiomas faciales planos, angiomas venosos leptomeningeos homolaterales, discapacidad intelectual, convulsiones, hemiplejía y radiopacidades craneales). La mayoría de las manchas en vino de Oporto se debe a una <strong>mutación somática de <em>GNAQ</em></strong> <span class="cite">p. 519</span>.</li>
+<li><strong>Telangiectasias arácneas</strong>: lesiones radiales pulsatiles con arteriola central ("cuerpo de araña") que se blanquea al presionar; cara, cuello y tórax superior; asociadas a <strong>exceso de estrógenos</strong> (embarazo, cirrosis) <span class="cite">p. 519</span>.</li>
+<li><strong>Telangiectasia hemorrágica hereditaria (síndrome de Osler-Weber-Rendu)</strong>: <strong>autosómica dominante</strong> por mutaciones en la vía del <strong>TGF-β</strong> de las CE; telangiectasias de piel y mucosas desde el nacimiento; se rompen y causan <strong>epistaxis</strong> importante, hemorragia digestiva o hematuria <span class="cite">p. 519</span>.</li>
+</ul>
+<h3 id="tumores-benignos-y-seudotumorales">Tumores benignos y seudotumorales</h3>
+<ul>
+<li><strong>Hemangiomas</strong>: los tumores más frecuentes de la lactancia e infancia (<strong>7% de los tumores benignos</strong> de esa edad); presentes desde el nacimiento, aumentan de tamaño y muchos <strong>remiten espontáneamente</strong>; un tercio de las lesiones internas se encuentra en el hígado; la transformación maligna es infrecuente <span class="cite">p. 519</span>.
+<ul>
+<li><strong>Hemangiomas capilares</strong>: los más frecuentes; capilares de pared delgada con escaso estroma; los <strong>hemangiomas juveniles ("en fresa")</strong> aparecen en 1 de cada 200 nacimientos, crecen unos meses, involucionan entre 1 y 3 años y desaparecen hacia los 7 en la mayoría <span class="cite">p. 520</span>.</li>
+<li><strong>Hemangiomas cavernosos</strong>: grandes conductos dilatados, más infiltrantes, de estructuras profundas, <strong>no involucionan</strong>; trombosis intravascular con calcificación distrófica; difíciles de distinguir de los malignos en imágenes; los cerebrales comprimen o sangran; forman parte de la <strong>enfermedad de von Hippel-Lindau</strong> <span class="cite">p. 520</span>.</li>
+<li><strong>Granuloma piógeno</strong>: hemangioma pediculado rojo de crecimiento rápido en piel y mucosa gingival u oral; sangra fácil y está ulcerado; un cuarto sigue a traumatismo; el <strong>granuloma gravídico</strong> (1% de embarazadas) se localiza en la encía <span class="cite">p. 520</span>.</li>
+</ul></li>
+<li><strong>Linfangiomas</strong>: equivalentes linfáticos benignos; los simples (capilares) en cabeza, cuello y axilas; los <strong>cavernosos (higromas quísticos)</strong> en cuello y axila de niños, hasta 15 cm, mal delimitados y no encapsulados (resección difícil); los cervicales son comunes en el <strong>síndrome de Turner</strong>; se distinguen de los capilares por marcadores linfáticos (<strong>VEGFR-3, LYVE-1</strong>) o la ausencia de eritrocitos <span class="cite">p. 520</span>.</li>
+<li><strong>Tumor glómico (glomangioma)</strong>: benigno pero <strong>extremadamente doloroso</strong>; se origina en <strong>CML modificadas</strong> de los cuerpos glómicos (termorregulación), no en CE; más común en la porción distal de los dedos, bajo las uñas; la resección es curativa <span class="cite">p. 520</span>.</li>
+<li><strong>Angiomatosis bacilar</strong>: proliferación vascular reactiva de inmunodeprimidos (sida) por <em><strong>Bartonella</strong></em>: <em>B. henselae</em> (reservorio el gato, arañazo de gato) y <em>B. quintana</em> (piojo del cuerpo, fiebre de las trincheras). Las bacterias inducen <strong>HIF-1</strong> → <strong>VEGF</strong> → proliferación vascular; cura con antibióticos <span class="cite">p. 520</span>.</li>
+</ul>
+<h3 id="tumores-de-grado-intermedio">Tumores de grado intermedio</h3>
+<ul>
+<li><strong>Sarcoma de Kaposi (SK)</strong>: neoplasia vascular causada por el <strong>VHH-8</strong> (herpesvirus del sarcoma de Kaposi); máxima incidencia en sida, donde es criterio diagnóstico. Cuatro variantes <span class="cite">p. 520-521</span>:
+<ul>
+<li><strong>Clásico</strong>: hombres mayores del Mediterráneo, Oriente Medio o Europa oriental (judíos asquenazíes); placas y nódulos rojizo-morados en extremidades inferiores distales; sin VIH; persistente pero localizado en piel y subcutáneo <span class="cite">p. 520</span>.</li>
+<li><strong>Africano endémico</strong>: VIH-negativos menores de 40 años; frecuente compromiso ganglionar; en niños prepuberales una forma grave con mortalidad del <strong>~100% a 3 años</strong>; hoy uno de los tumores más comunes de África central <span class="cite">p. 520-521</span>.</li>
+<li><strong>Asociado a trasplante</strong>: riesgo hasta <strong>100 veces</strong> mayor con inmunodepresión de linfocitos T; evolución agresiva con ganglios, mucosas y vísceras; puede regresar al reducir la inmunodepresión (con riesgo de rechazo) <span class="cite">p. 521</span>.</li>
+<li><strong>Asociado a sida (epidémico)</strong>: la neoplasia relacionada con VIH más común en el mundo; con la terapia antirretroviral su incidencia bajó <strong>&gt;80%</strong>, pero sigue siendo 300 veces la de trasplantados y <strong>1.000 veces</strong> la de la población general; diseminación visceral temprana; la mayoría muere por infecciones oportunistas, no por SK <span class="cite">p. 521</span>.</li>
+</ul></li>
+<li>Patogenia: prácticamente todas las lesiones alojan VHH-8 (γ-herpesvirus, como el EBV), transmitido sexualmente y por secreciones orales o exposición cutánea; se requieren VHH-8 más inmunidad de linfocitos T alterada; la proteína G vírica induce VEGF, y las proteínas de la infección latente (homólogo vírico de <strong>ciclina D</strong>, inhibición de <strong>p53</strong>) dan ventaja proliferativa y evitan apoptosis <span class="cite">p. 521</span>.</li>
+<li>Morfología en tres fases: <strong>mácula</strong> (espacios vasculares irregulares con linfocitos, células plasmáticas y macrófagos con hemosiderina; confundible con tejido de granulación), <strong>placa</strong> (acúmulos dérmicos de conductos irregulares rodeados de células fusiformes) y <strong>nódulo</strong> (láminas de células fusiformes con hendiduras llenas de eritrocitos, mitosis y <strong>glóbulos rosados citoplásmicos</strong> de eritrocitos degenerados en fagolisosomas) <span class="cite">p. 521</span>.</li>
+<li>Tratamiento: resección (clásico), radiación, quimioterapia, antirretrovirales (asociado a sida), interferón e inhibidores de la angiogenia; prometedores los antagonistas de cinasas distales al receptor de VEGF <span class="cite">p. 522</span>.</li>
+<li><strong>Hemangioendotelioma epitelioide</strong>: tumor de adultos alrededor de venas medianas y grandes; células cuboideas tipo epiteliales; hasta <strong>40% recidiva, 20-30% metastatiza y 15% de los pacientes muere</strong> por el tumor <span class="cite">p. 522</span>.</li>
+</ul>
+<h3 id="tumores-malignos">Tumores malignos</h3>
+<ul>
+<li><strong>Angiosarcoma</strong>: neoplasia endotelial maligna, de diferenciación variable; ancianos de ambos sexos; piel, tejidos blandos, <strong>hígado y mama</strong>. Se desarrollan sobre <strong>linfoedema</strong> (linfangiosarcoma de la extremidad superior años tras la mastectomía radical), sobre material extraño protésico, y los hepáticos por <strong>arsénico</strong> (pesticidas), <strong>dióxido de torio (Thorotrast)</strong> y <strong>cloruro de polivinilo</strong>, con latencia prolongada. Localmente invasivos y de fácil metastatización: <strong>supervivencia a 5 años ~30%</strong>. Histología: CE atípicas formando conductos hasta tumores indiferenciados; CD31 o factor de von Willebrand confirman el origen <span class="cite">p. 522</span>.</li>
+</ul>
+
+</section><section id="sec-12-patologia-de-la-intervencion-vascular" class="card">
+<div class="section-kicker"><span class="n">12</span> pp. 523-524</div>
+<h2>Patología de la intervención vascular</h2>
+<p>Toda intervención (endoprótesis, derivación) induce las respuestas de cicatrización prototípicas: lesiones hiperplásicas fibromusculares de la íntima de CML y MEC <span class="cite">p. 523</span>.</p>
+<h3 id="colocación-de-una-endoprótesis-endovascular">Colocación de una endoprótesis endovascular</h3>
+<ul>
+<li>La <strong>angioplastia con balón</strong> rompe la placa obstructora, pero el vaso puede recerrarse por disección inducida, espasmo o trombosis; por eso más del <strong>95%</strong> de las intervenciones coronarias actuales combinan angioplastia con <strong>endoprótesis</strong> <span class="cite">p. 523</span>.</li>
+<li>La endoprótesis (tubo de malla metálica) agranda y regulariza la luz, "fija" los colgajos intinales y limita el espasmo; la lesión endotelial obliga a <strong>antitrombóticos potentes</strong> (antagonistas plaquetarios) <span class="cite">p. 523</span>.</li>
+<li><strong>Reestenosis</strong>: engrosamiento intimal por crecimiento de CML y MEC dentro de la endoprótesis; ocluye la luz hasta en <strong>un tercio de los pacientes en 6-12 meses</strong>. Las endoprótesis <strong>liberadoras de fármacos</strong> (paclitaxel, sirolimús) reducen la reestenosis al año entre un <strong>50 y 80%</strong>, pero retrasan la reendotelización y exigen anticoagulación prolongada para evitar trombosis tardía del stent <span class="cite">p. 523</span>.</li>
+</ul>
+<h3 id="sustitución-vascular">Sustitución vascular</h3>
+<ul>
+<li>Injertos sintéticos de calibre grueso (<strong>12-18 mm</strong>) funcionan en flujo alto (aorta); los de diámetro ≤<strong>8 mm</strong> fracasan por trombosis temprana o <strong>hiperplasia intimal en la anastomosis</strong> <span class="cite">p. 523</span>.</li>
+<li>Para vasos pequeños (más de 400.000 cirugías de derivación coronaria al año) se usan <strong>vena safena</strong> o <strong>arteria mamaria interna</strong>. El injerto de safena falla por trombosis temprana, engrosamiento intimal (meses-años) o <strong>ateroesclerosis del injerto</strong> con rotura, trombosis o aneurisma: permeabilidad a 10 años solo <strong>50%</strong>. Más del <strong>90%</strong> de los injertos de mamaria interna siguen abiertos a 10 años, pero solo sirven para la descendente anterior <span class="cite">p. 524</span>.</li>
+</ul>
+
+</section><section id="sec-13-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">13</span> pp. 486-524</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Cifras de HTA: <strong>diastólica &gt;80, sistólica &gt;120 mmHg</strong> = hipertensión clínica; con estos criterios <strong>46%</strong> de la población es hipertensa; <strong>90-95%</strong> esencial, ~10% (texto: "del orden del 10%") secundaria <span class="cite">p. 489-490, 492</span>.</li>
+<li><strong>No confundir</strong> hipertensión esencial (multifactorial, ~90-95%) con hipertensión secundaria (renal, endocrina, coartación aórtica, preeclampsia, apnea del sueño) <span class="cite">p. 489-490</span>. <strong>Hipertensión maligna</strong>: ~5% de los hipertensos; sistólica &gt;200 y diastólica &gt;120 mmHg; retinopatía con exudados y hemorragias ± edema de papila; sin tratamiento, muerte en <strong>1-2 años</strong> <span class="cite">p. 490</span>.</li>
+<li><strong>No confundir</strong> arterioloesclerosis <strong>hialina</strong> (HTA crónica leve-moderada y diabetes; depósito proteico homogéneo) con <strong>hiperplásica</strong> ("piel de cebolla", HTA grave/maligna, con arteriolitis necrosante) <span class="cite">p. 492-493</span>. <strong>Esclerosis de Mönckeberg</strong>: calcificación medial de arterias musculares en &gt;50 años que <strong>no</strong> ocluye la luz y no suele tener significado clínico; no confundir con ateroesclerosis <span class="cite">p. 493</span>.</li>
+<li>Resistencia arteriolar ∝ 1/diámetro⁴: mitad de diámetro = <strong>16 veces</strong> más resistencia <span class="cite">p. 486</span>. El sistema SRAA: renina (células yuxtaglomerulares, arteriola aferente) → angiotensina I → angiotensina II (ECA endotelial); angiotensina II vasoconstricción + aldosterona + reabsorción de Na⁺; el canal <strong>ENaC</strong> regula el saldo final de sodio; los <strong>péptidos natriuréticos</strong> se oponen <span class="cite">p. 491-492</span>.</li>
+<li><strong>Síndrome de Liddle</strong>: mutación activante del canal de Na⁺ epitelial, HTA sensible a la sal; ejemplo de HTA monogénica <span class="cite">p. 492</span>. Las <strong>estatinas</strong> inhiben la HMG-CoA reductasa y benefician también "fuera del objetivo" reduciendo inflamación y por inducción de <strong>KLF2</strong> <span class="cite">p. 496, 498</span>.</li>
+<li>La <strong>CRP</strong> es marcador, <strong>no causa</strong>, de riesgo cardiovascular: &lt;1,0 mg/L bajo, 1,0-3,0 intermedio, &gt;3,0 alto <span class="cite">p. 496</span>. Diabetes: infarto <strong>2×</strong>, gangrena de extremidades inferiores <strong>100×</strong>; tabaco prolongado <strong>2×</strong> mortalidad por cardiopatía isquémica; hipertensión <strong>+60%</strong> de riesgo <span class="cite">p. 496</span>.</li>
+<li><strong>CHIP</strong> (hematopoyesis clonal de potencial indeterminado), con mutaciones como <em>TET2</em>, asocia mortalidad cardiovascular por encima incluso del riesgo neoplásico hematológico <span class="cite">p. 494</span>. Tres causas principales de disfunción endotelial aterogénica: <strong>alteraciones hemodinámicas (turbulencia), hipercolesterolemia e inflamación</strong> <span class="cite">p. 497-498</span>.</li>
+<li>Los cristales de colesterol activan el <strong>inflamasoma NLRP3</strong> → IL-1β e IL-18; la captación de LDL oxidada es por <strong>receptores depuradores</strong>, no por el receptor de LDL <span class="cite">p. 498-499</span>. <strong>No confundir</strong> estría grasa (macrófagos espumosos, no elevada, ya en adolescentes) con placa ateromatosa madura (cubierta fibrosa + núcleo necrótico con colesterol cristalino en "hendiduras") <span class="cite">p. 499, 501</span>.</li>
+<li>Orden de afectación ateroesclerótica: <strong>aorta abdominal e ilíacas &gt; coronarias &gt; poplíteas &gt; carótidas internas y polígono de Willis</strong>; se ahorran extremidades superiores y mesentérica/renal (salvo orígenes) <span class="cite">p. 501</span>. <strong>Estenosis crítica</strong> coronaria = <strong>70-75%</strong> de reducción del área luminal → angina estable; la mayoría de los infartos parte de placas previamente <strong>no críticas</strong> <span class="cite">p. 502-503</span>.</li>
+<li><strong>Placa vulnerable</strong> = cubierta fina + núcleo lipídico grande + inflamación (MMP de macrófagos); <strong>placa estable</strong> = cubierta gruesa de colágeno denso, núcleo pequeño; el colágeno de la cubierta lo sintetizan las <strong>CML</strong> <span class="cite">p. 503</span>. Pico circadiano de infarto: <strong>6-12 de la mañana</strong>, por estimulación adrenérgica al despertar <span class="cite">p. 504</span>.</li>
+<li><strong>No confundir</strong> aneurisma <strong>verdadero</strong> (todas las capas, pared intacta atenuada) con <strong>falso</strong> (seudoaneurisma: hematoma que comunica con la luz) ni con <strong>disección</strong> (sangre dentro de la media) <span class="cite">p. 504-505</span>. AAA: diámetro &gt;3 cm (a menudo &gt;5,5 cm), entre renales y bifurcación; riesgo de rotura 1%/año (4-5 cm), <strong>11%</strong> (5-6 cm), <strong>25%</strong> (&gt;6 cm); operar ≥5 cm; mortalidad electiva ~5% vs &gt;50% en rotura <span class="cite">p. 506-507</span>.</li>
+<li><strong>No confundir</strong> aneurisma de aorta <strong>abdominal</strong> (ateroesclerosis, hombres fumadores) con el de aorta <strong>torácica/ascendente</strong> (hipertensión; también Marfan, Loeys-Dietz, aortitis) <span class="cite">p. 506-507</span>. Disección aórtica: &gt;90% con hipertensión; desgarro en ascendente <strong>&lt;10 cm de la válvula</strong>; <strong>tipo A</strong> = compromete ascendente (DeBakey I-II, más letal, cirugía); <strong>tipo B</strong> = distal a subclavia (DeBakey III, tratamiento conservador); dolor que migra hacia abajo; muerte por rotura a pericardio (<strong>taponamiento</strong>) o cavidades <span class="cite">p. 507-508</span>.</li>
+<li><strong>No confundir</strong> arteritis de <strong>células gigantes</strong> (&gt;50 años, arterias de la cabeza, riesgo de <strong>ceguera</strong> por arteria oftálmica, biopsia ≥1 cm con saltos de lesión, biopsia negativa no descarta) con <strong>Takayasu</strong> (&lt;50 años, cayado aórtico, "enfermedad sin pulso", hipertensión renal en ~50%): histología indistinguible, se separan por edad <span class="cite">p. 511-512</span>. <strong>PAN</strong>: arterias pequeñas-medianas, necrosis fibrinoide con lesiones de <strong>distintas edades</strong>, respeta el pulmón, <strong>sin ANCA</strong>, ~un tercio con hepatitis B; ~90% responde a inmunodepresión <span class="cite">p. 513</span>.</li>
+<li><strong>Polivasculitis microscópica</strong>: vasos pequeños, lesiones de la <strong>misma antigüedad</strong>, ANCA-<strong>MPO</strong>, glomerulonefritis necrosante en 90%; <strong>GPV (Wegener)</strong>: triada respiratorio + vasculitis + glomerulonefritis con semilunas, ANCA-<strong>PR3</strong> en hasta 95%, nódulos pulmonares <strong>cavitados</strong>, 80% de mortalidad a 1 año sin tratamiento <span class="cite">p. 513-515</span>. <strong>No confundir</strong> Churg-Strauss (asma + eosinofilia + granulomas extravasculares; corazón afectado en 60%) con GPV (granulomas dentro del contexto respiratorio, sin asma) ni con PAN (sin granulomas ni eosinófilos) <span class="cite">p. 515</span>.</li>
+<li><strong>Buerger</strong>: fumador &lt;35 años, arterias <strong>tibiales y radiales</strong>, trombo con microabscesos, compromete venas y nervios contiguos; dejar de fumar temprano ayuda, tardío no <span class="cite">p. 515</span>. <strong>No confundir</strong> Raynaud <strong>primario</strong> (mujer joven, simétrico, 3-5%, benigno) con <strong>secundario</strong> (LES, esclerodermia, Buerger; asimétrico y progresivo; 10% de los debutantes revela un trastorno subyacente) <span class="cite">p. 516-517</span>.</li>
+<li>"Raynaud cardíaco": vasoespasmo coronario sostenido <strong>20-30 min</strong> → infarto o muerte súbita; desencadenantes: feocromocitoma, <strong>cocaína</strong>, fenilefrina, tirotóxicos <span class="cite">p. 517</span>. <strong>No confundir</strong> trombosis de <strong>venas superficiales</strong> varicosas (embolia muy infrecuente) con <strong>TVP</strong> (fuentes del 90% de la enfermedad venosa clínica y del tromboembolismo pulmonar) <span class="cite">p. 517</span>.</li>
+<li>Síndrome de <strong>Trousseau</strong> = tromboflebitis migratoria paraneoplásica, típica de adenocarcinomas <span class="cite">p. 517</span>. Síndrome de vena cava superior: carcinoma broncógeno o linfoma mediastínico; síndrome de VCI: carcinoma <strong>hepatocelular</strong> y <strong>renal</strong> con invasión venosa intraluminal <span class="cite">p. 518</span>.</li>
+<li><strong>No confundir</strong> ectasias/telangiectasias (<strong>no</strong> neoplasias: nevo flamígero, <em>GNAQ</em> en la mancha en vino de Oporto, Osler-Weber-Rendu autosómica dominante vía TGF-β) con hemangiomas (tumores) y con angiosarcoma (maligno, CD31+, supervivencia a 5 años ~30%) <span class="cite">p. 519-522</span>. Hemangioma capilar juvenil ("en fresa") <strong>involuciona</strong>; el cavernoso <strong>no</strong> y se asocia a von Hippel-Lindau; el tumor glómico es doloroso y deriva de <strong>CML</strong>, no de CE <span class="cite">p. 520</span>.</li>
+<li><strong>Sarcoma de Kaposi</strong>: <strong>VHH-8</strong> + inmunodepresión de linfocitos T; variantes clásico, africano endémico, de trasplante (100×) y sida (1.000× la población general); tres fases morfológicas mácula-placa-nódulo <span class="cite">p. 520-521</span>. Reestenosis de stent: hasta <strong>1/3</strong> de oclusiones a 6-12 meses; stents con paclitaxel o sirolimús reducen la reestenosis 50-80% al año pero exigen anticoagulación prolongada <span class="cite">p. 523</span>.</li>
+<li>Injertos: vena safena <strong>50%</strong> de permeabilidad a 10 años vs <strong>&gt;90%</strong> de la arteria mamaria interna (solo para descendente anterior) <span class="cite">p. 524</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Comparaciones que caen en prueba</span>Arterioloesclerosis hialina (HTA crónica y diabetes) vs hiperplásica en piel de cebolla (HTA maligna). Células gigantes (&gt;50 años, riesgo de ceguera) vs Takayasu (&lt;50 años, sin pulso): histología idéntica, solo cambia la edad. ANCA-MPO (polivasculitis microscópica, Churg-Strauss) vs ANCA-PR3 (GPV hasta 95%).</div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

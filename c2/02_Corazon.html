@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corazón · Anatomía Patológica UBB</title>
+<meta name="description" content="Corazón. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Corazón · Anatomía Patológica UBB">
+<meta property="og:description" content="Corazón. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 12. Corazón</h1>
+    <p class="lede">Guía 02 de 08. Resumen completo del capítulo 12 con 226 citas por página y 13 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>02 de 08</strong></div><div><span>Capítulo</span><strong>12</strong></div><div><span>Páginas</span><strong>527-582</strong></div><div><span>Citas</span><strong>226</strong></div><div><span>Tablas</span><strong>13</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-corazon-normal-y-envejecido">Corazón normal y envejecido</a></li>
+        <li><a href="#sec-03-desarrollo-del-corazon">Desarrollo del corazón</a></li>
+        <li><a href="#sec-04-insuficiencia-cardiaca-e-hipertrofia">Insuficiencia cardiaca e hipertrofia</a></li>
+        <li><a href="#sec-05-cardiopatias-congenitas">Cardiopatías congénitas</a></li>
+        <li><a href="#sec-06-cardiopatia-isquemica">Cardiopatía isquémica</a></li>
+        <li><a href="#sec-07-arritmias-y-muerte-subita-cardiaca">Arritmias y muerte súbita cardiaca</a></li>
+        <li><a href="#sec-08-cardiopatia-hipertensiva">Cardiopatía hipertensiva</a></li>
+        <li><a href="#sec-09-cardiopatia-valvular">Cardiopatía valvular</a></li>
+        <li><a href="#sec-10-endocarditis-y-endocarditis-verrugosas-no-infecciosas">Endocarditis y endocarditis verrugosas no infecciosas</a></li>
+        <li><a href="#sec-11-miocardiopatias">Miocardiopatías</a></li>
+        <li><a href="#sec-12-miocarditis-y-otras-miocardiopatias">Miocarditis y otras miocardiopatías</a></li>
+        <li><a href="#sec-13-enfermedad-pericardica">Enfermedad pericárdica</a></li>
+        <li><a href="#sec-14-tumores-del-corazon">Tumores del corazón</a></li>
+        <li><a href="#sec-15-trasplante-cardiaco-y-dispositivos">Trasplante cardiaco y dispositivos</a></li>
+        <li><a href="#sec-16-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="01_Vasos_Sanguineos.html" title="Vasos sanguíneos">01</a>
+        <a href="03_Leucocitos_Ganglios_Bazo_Timo.html" title="Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo">03</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 12 del Robbins y Cotran, 10ª edición: páginas impresas 527-582 (56 páginas), resumidas desde el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>BNP sérico es el biomarcador de la insuficiencia cardiaca: si es bajo, alto valor predictivo negativo <span class="cite">p. 534</span>.</li><li>Hipertrofia por presión: sarcómeros en paralelo (concéntrica); por volumen: en serie (dilatación). En corazón dilatado, el peso mide mejor la hipertrofia <span class="cite">p. 530</span>.</li><li>IAM: necrosis a los 20-30 min; extensión máxima a las 3-6 h; troponinas suben a las 2-4 h y culminan a las 24-48 h <span class="cite">p. 544-545, 550</span>.</li><li>Rotura del miocardio en días 3-7; aneurisma ventricular se asocia a trombo mural y arritmias pero nunca se rompe <span class="cite">p. 551-552</span>.</li><li>Las 4 endocarditis verrugosas: reumática (líneas de cierre), infecciosa (destructiva), ETNB (válvulas normales, hipercoagulabilidad), Libman-Sacks (LES) <span class="cite">p. 562-565</span>.</li><li>Miocardiopatías: dilatada (90%, TTN), hipertrófica (MYBPC3/MYH7, MSC en deportistas jóvenes) y restrictiva (amiloidosis) <span class="cite">p. 567-572</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 528-567</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>El corazón pesa <strong>250-320 g en la mujer</strong> y <strong>300-360 g en el hombre</strong> (~0,4-0,5% del peso corporal); aumento de peso/engrosamiento = <strong>hipertrofia</strong>, aumento de cavidad = <strong>dilatación</strong>, ambos = <strong>cardiomegalia</strong> <span class="cite">p. 528</span>.</li>
+<li>Los miocardiocitos auriculares almacenan <strong>péptido natriurético auricular</strong> y los ventriculares <strong>péptido natriurético tipo B (BNP)</strong>; ambos se liberan por distensión y producen vasodilatación, natriuresis y diuresis <span class="cite">p. 528</span>. El <strong>BNP sérico</strong> es el biomarcador cuantitativo de la insuficiencia cardiaca (IC): una cifra baja tiene alto valor predictivo negativo <span class="cite">p. 534</span>.</li>
+<li>La IC es el <strong>estadio final común</strong> de casi toda cardiopatía crónica; en EE. UU. afecta a &gt;5 millones de personas (2% de la población), provoca &gt;1 millón de ingresos/año y contribuye a ~300.000 muertes; la mitad fallece en 5 años y 1 de cada 9 muertes la incluye como causa contribuyente <span class="cite">p. 530</span>.</li>
+<li>La <strong>hipertrofia por sobrecarga de presión</strong> dispone los sarcómeros <strong>en paralelo</strong> (hipertrofia concéntrica); la <strong>por sobrecarga de volumen</strong> los dispone <strong>en serie</strong> (dilatación). En corazones dilatados, el <strong>peso</strong> (no el espesor de pared) es la mejor medida de hipertrofia <span class="cite">p. 530</span>.</li>
+<li>Las <strong>cardiopatías congénitas (CPC)</strong> surgen por errores de embriogenia en las <strong>semanas 3-8</strong> de gestación; la causa más frecuente es la <strong>trisomía 21</strong> (40% de los Down tienen malformación cardiaca) y la lesión génica clásica es la <strong>deleción 22q11.2 / TBX1</strong> (síndrome de DiGeorge) <span class="cite">p. 535</span>.</li>
+<li><strong>Cortocircuitos izquierda-derecha</strong> (CIA, CIV, CAP): no cianóticos, pero pueden volverse derecha-izquierda por enfermedad vascular pulmonar irreversible (<strong>síndrome de Eisenmenger</strong>); a partir de ese punto el defecto es <strong>inoperable</strong> <span class="cite">p. 536</span>.</li>
+<li><strong>No confundir CIA con persistencia del agujero oval (PAO)</strong>: la CIA es defecto de formación; el PAO es falta de cierre de una estructura normal, presente en <strong>20%</strong> de los adultos, con riesgo de <strong>embolia paradójica</strong> <span class="cite">p. 537</span>.</li>
+<li>La <strong>tetralogía de Fallot</strong> es la CPC cianótica más frecuente: CIV + estenosis subpulmonar + aorta acabalgada + hipertrofia del VD, las tres primeras por desplazamiento anterosuperior del tabique infundibular <span class="cite">p. 538</span>.</li>
+<li>En la <strong>cardiopatía isquémica (CPI)</strong>, &gt;90% de los casos se deben a ateroesclerosis coronaria; la <strong>estenosis crítica</strong> (&gt;70% del área transversal) marca el umbral de angina de esfuerzo y la <strong>rotura/erosión aguda de placa con trombosis</strong> explica los síndromes coronarios agudos <span class="cite">p. 542</span>.</li>
+<li>El <strong>IAM</strong>: necrosis solo tras <strong>20-30 min</strong> de isquemia grave; la necrosis comienza subendocárdica y alcanza su extensión máxima a las <strong>3-6 h</strong>. Las <strong>troponinas T e I</strong> se elevan a las <strong>2-4 h</strong> y culminan a las <strong>24-48 h</strong> <span class="cite">p. 544-545, 550</span>.</li>
+<li>La <strong>fiebre reumática</strong> sigue a faringitis por <strong>estreptococo del grupo A</strong> (reacción cruzada anti-proteína M), con cuerpos de Aschoff y células de Anichkov ("célula oruga"); la cardiopatía reumática crónica es <strong>prácticamente la única causa de estenosis mitral</strong> <span class="cite">p. 560-561</span>.</li>
+<li>Las miocardiopatías: <strong>dilatada</strong> (90% de los casos, disfunción sistólica, mutaciones truncantes de <em>TTN</em>/titina hasta en 20%), <strong>hipertrófica</strong> (1/500, 100% genética, proteínas sarcoméricas <em>MYBPC3</em> y <em>MYH7</em>) y <strong>restrictiva</strong> (la menos frecuente, amiloidosis como causa principal) <span class="cite">p. 567-568, 572</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-corazon-normal-y-envejecido" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 528-529</div>
+<h2>Corazón normal y envejecido</h2>
+<h3 id="estructura-cardiaca">Estructura cardiaca</h3>
+<ul>
+<li>Peso promedio 250-320 g (mujer) y 300-360 g (hombre); cardiomegalia = hipertrofia y/o dilatación <span class="cite">p. 528</span>.</li>
+<li>Miocardiocitos del VI en disposición <strong>circunferencial espiral</strong> (contracción fuerte punta-base); los del VD están menos organizados y generan fuerzas menores <span class="cite">p. 528</span>.</li>
+<li><strong>Válvulas</strong>: tres capas , <strong>fibrosa</strong> (colágeno denso, cara de flujo de salida), <strong>esponjosa</strong> (tejido laxo central) y <strong>ventricular o auricular</strong> (elastina, cara de flujo de entrada). Se nutren por difusión; el endotelio valvular no expresa antígenos ABO ni de histocompatibilidad, lo que permite usar bioprótesis criopreservadas <span class="cite">p. 528</span>.</li>
+<li>Las válvulas semilunares dependen solo de las cúspides (la dilatación de la raíz aórtica causa insuficiencia); las auriculoventriculares dependen además de <strong>cuerdas tendinosas y músculos papilares</strong> (dilatación del VI, rotura de cuerda o disfunción papilar causan insuficiencia mitral) <span class="cite">p. 528</span>.</li>
+<li>Sistema de conducción: nódulo SA (marcapasos, 60-100 lpm, en la unión de la orejuela derecha con la VCS), nódulo AV (compuerta que retrasa la señal para que la contracción auricular preceda a la ventricular), haz de His, ramas derecha/izquierda y red de Purkinje. Cualquier célula puede actuar como marcapasos de escape (ritmo de la unión, más lento). La frecuencia responde a tono vagal, catecolaminas, hipoxia y potasio (la hiperpotasemia bloquea por completo la transmisión) <span class="cite">p. 528</span>.</li>
+<li>Las coronarias son <strong>arterias terminales funcionales</strong> con circulación colateral anatómica; la perfusión miocárdica ocurre en <strong>diástole</strong> (~2/3 del ciclo en reposo), por lo que la taquicardia puede deteriorar la perfusión <span class="cite">p. 528-529</span>.</li>
+<li>Regeneración: el recambio de miocardiocitos en adultos es <strong>&lt;1% anual</strong>; las células madre implantadas no se integran a la conducción y crean focos arrítmicos <span class="cite">p. 529</span>.</li>
+</ul>
+<h3 id="envejecimiento-tabla-121">Envejecimiento (tabla 12.1)</h3>
+<ul>
+<li>Envejecimiento: la mayoría de las cardiopatías aumenta con cada década; el VI se acorta base-punta y el <strong>tabique sigmoideo</strong> (protrusión basal al tracto de salida, agravada por hipertensión) puede simular obstrucción <span class="cite">p. 529</span>.</li>
+<li>Válvulas: calcificación aórtica y anular mitral, engrosamiento fibroso valvar, valvas mitrales "combadas" hacia la AI, <strong>excrecencias de Lambl</strong>; coronarias epicárdicas tortuosas, menos distensibles, calcificadas y con placas; aorta dilatada/alargada con fragmentación de la elástica <span class="cite">p. 529</span>.</li>
+<li>Miocardio: menor masa, atrofia parda con lipofuscina, <strong>degeneración basófila</strong> y <strong>depósitos de amiloide (transtiretina)</strong> en octogenarios, que endurecen el corazón y reducen el llenado diastólico <span class="cite">p. 529</span>.</li>
+</ul>
+
+</section><section id="sec-03-desarrollo-del-corazon" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 527-536</div>
+<h2>Desarrollo del corazón</h2>
+<ul>
+<li>El corazón humano es el primer órgano plenamente funcional del desarrollo (~<strong>8 semanas</strong> de gestación); impulsa &gt;7.500 l de sangre al día y late &gt;40 millones de veces al año. La enfermedad cardiovascular es la primera causa de muerte mundial; en EE. UU. explica ~1 de cada 4 muertes (~610.000/año), más que todos los cánceres juntos <span class="cite">p. 527</span>.</li>
+<li>Los precursores cardiacos derivan del <strong>mesodermo lateral</strong> y migran a la línea media en dos oleadas (primer y segundo campos cardiacos) en los primeros <strong>15 días</strong>: la primera puebla el <strong>ventrículo izquierdo</strong>; la segunda, el <strong>tracto de salida, el ventrículo derecho y la mayor parte de las aurículas</strong> , de ahí que los defectos de cada campo expliquen CPC de estructuras definidas <span class="cite">p. 534</span>.</li>
+<li>Cronología: tubo cardiaco latiente el <strong>día 20</strong>; cavidades básicas ~8 días después; células de la <strong>cresta neural</strong> tabican los tractos de salida aórtico y pulmonar y forman el cayado; los <strong>cojinetes endocárdicos</strong> forman los canales AV y tractos de salida. Al <strong>día 50</strong> hay corazón de cuatro cavidades <span class="cite">p. 534</span>.</li>
+<li>La morfogenia depende de las vías <strong>Wnt, Hedgehog, VEGF, BMP, TGF-β, FGF y Notch</strong>, de factores de transcripción (mayormente autosómicos dominantes con pérdida <strong>parcial</strong> de función) y de micro-ARN específicos que coordinan la expresión de esos factores <span class="cite">p. 534-535</span>.</li>
+<li>Puesto que los pacientes son heterocigotos, una reducción de ~50% (o menos) de la actividad de un factor de transcripción basta para alterar el desarrollo; estresores ambientales del primer trimestre pueden producir defectos adquiridos que imitan las mutaciones hereditarias. Las pruebas genéticas se indican en síndromes no cardiacos acompañantes o antecedentes familiares de CPC <span class="cite">p. 536</span>.</li>
+<li>Las fuerzas hemodinámicas influyen también en el desarrollo: una hipertrofia o dilatación ya se manifiesta ante alteraciones del flujo intrauterino <span class="cite">p. 534</span>.</li>
+</ul>
+
+</section><section id="sec-04-insuficiencia-cardiaca-e-hipertrofia" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 529-556</div>
+<h2>Insuficiencia cardiaca e hipertrofia</h2>
+<h3 id="fisiopatología-general">Fisiopatología general</h3>
+<p>Los seis mecanismos principales que dañan el corazón son: <strong>insuficiencia de la bomba</strong> (disfunción sistólica o diastólica), <strong>obstrucción al flujo</strong> (estenosis aórtica, hipertensión, coartación), <strong>regurgitación del flujo</strong> (sobrecarga de volumen), <strong>derivación del flujo</strong> (cortocircuitos), <strong>trastornos de la conducción</strong> y <strong>rotura del corazón o de un vaso principal</strong> (hemotórax por herida aórtica, shock, muerte) <span class="cite">p. 529</span>.</p>
+<ul>
+<li>Mecanismos compensadores: <strong>Frank-Starling</strong> (el llenado creciente aumenta los enlaces cruzados actina-miosina y el volumen sistólico), activación neurohumoral (noradrenalina adrenérgica; <strong>SRAA</strong> con retención hidrosalina y tono vascular; <strong>péptido natriurético auricular</strong> contrarrestando al SRAA) e hipertrofia/remodelación ventricular <span class="cite">p. 530</span>.</li>
+<li>La IC izquierda tiene síntomas de congestión pulmonar; la derecha, de congestión sistémica; en la descompensación crónica muchos pacientes son <strong>biventriculares</strong>. Herramientas: <strong>BNP sérico</strong> (alto valor predictivo negativo si es bajo) y <strong>ecocardiograma</strong> (FE, movimiento de pared, función valvular, trombos murales) <span class="cite">p. 534</span>.</li>
+<li>Tratamiento: corregir la causa subyacente; restricción de sal, diuréticos, inótropos positivos, <strong>IECA</strong> (que además limitan la hipertrofia y el remodelado), resincronización cardiaca (marcapasos biventricular) y <strong>DAV</strong> <span class="cite">p. 534</span>.</li>
+<li>FE normal: <strong>45-65%</strong>. <strong>Disfunción sistólica</strong> = FE baja; <strong>disfunción diastólica</strong> = ventrículo rígido que no se llena (hipertrofia, fibrosis, amiloidosis, pericarditis constrictiva) <span class="cite">p. 530</span>.</li>
+<li>La hipertrofia patológica <strong>no va acompañada de aumento proporcional de capilares</strong> → corazón vulnerable a isquemia; además hay <strong>fibrosis intersticial</strong> y expresión de genes fetales (miosina fetal, péptidos natriuréticos, colágeno) y genes inmediatos-tempranos (<em>FOS, JUN, MYC, EGR1</em>) <span class="cite">p. 531</span>.</li>
+<li>La cardiomegalia es <strong>factor de riesgo independiente de muerte súbita</strong>. El ejercicio aeróbico produce hipertrofia fisiológica <strong>con aumento de la densidad capilar</strong>; el ejercicio estático (pesas) solo hipertrofia de presión ligera <span class="cite">p. 532</span>.</li>
+</ul>
+<h3 id="insuficiencia-izquierda">Insuficiencia izquierda</h3>
+<ul>
+<li>Causas más frecuentes: CPI, hipertensión, valvulopatía aórtica y mitral, miocardiopatías primarias <span class="cite">p. 532</span>.</li>
+<li>Morfología: VI hipertrofiado y dilatado; dilatación secundaria de la AI (fibrilación auricular, trombos en la <strong>orejuela</strong>); pulmones congestivos con <strong>macrófagos cargados de hemosiderina ("células de la insuficiencia cardiaca")</strong> y derrame pleural <span class="cite">p. 532</span>.</li>
+<li>Clínica: disnea de esfuerzo → <strong>ortopnea</strong> → <strong>disnea paroxística nocturna</strong>; estertores finos basales; S3 (sobrecarga de volumen) o S4 (rigidez) <span class="cite">p. 532</span>.</li>
+<li>La hipoperfusión renal activa el SRAA (retención hidrosalina que agrava el edema) y puede causar <strong>azoemia</strong>; la hipoperfusión cerebral, encefalopatía hipóxica <span class="cite">p. 533</span>.</li>
+</ul>
+<h3 id="insuficiencia-derecha-corazón-pulmonar">Insuficiencia derecha (corazón pulmonar)</h3>
+<ul>
+<li>La causa más frecuente es la <strong>insuficiencia izquierda</strong>; la forma aislada se debe a enfermedad pulmonar o vascular pulmonar (hipertensión pulmonar primaria, tromboembolia de repetición, apnea obstructiva del sueño) <span class="cite">p. 533</span>.</li>
+<li>Congestión pulmonar <strong>mínima</strong>; predomina la congestión venosa sistémica y porta: <strong>hepatomegalia en nuez moscada</strong>, necrosis centrolobulillar y <strong>cirrosis cardiaca</strong> en casos crónicos, esplenomegalia congestiva, ascitis, edema pretibial/presacro, anasarca; azoemia más marcada que en la IC izquierda <span class="cite">p. 533</span>.</li>
+<li>Corazón pulmonar agudo: embolia pulmonar masiva con dilatación del VD <strong>sin hipertrofia</strong>; crónico: pared del VD hasta <strong>≥1,0 cm</strong> <span class="cite">p. 556</span>.</li>
+</ul>
+
+</section><section id="sec-05-cardiopatias-congenitas" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 535-541</div>
+<h2>Cardiopatías congénitas</h2>
+<ul>
+<li>Incidencia ~1% de nacidos vivos (malformaciones graves); &gt;5% de neonatos tienen CIV o CIA musculares pequeñas que suelen cerrarse solas. La <strong>válvula aórtica bicúspide</strong> tiene incidencia de 1-2% y no se cuenta entre las CPC <span class="cite">p. 535</span>.</li>
+<li>Doce trastornos suman ~85% de los casos; frecuencias (tabla 12.2): <strong>CIV 42%</strong>, CIA 10%, estenosis pulmonar 8%, <strong>CAP 7%</strong>, tetralogía de Fallot 5%, coartación de aorta 5%, defecto del tabique AV 4%, estenosis aórtica 4%, <strong>TGA 4%</strong>, tronco arterioso 1%, TAPVR 1%, atresia tricúspide &lt;1% <span class="cite">p. 535</span>.</li>
+<li>Causa genética conocida más frecuente: <strong>trisomía 21</strong>; síndromes congenes: DiGeorge (<em>TBX1</em>, 22q11.2), Alagille (<em>JAG1, NOTCH2</em>), Noonan (<em>PTPN11, KRAS</em>), Holt-Oram (<em>TBX5</em>), CHARGE (<em>CHD7</em>). <em>GATA4, NKX2.5</em> y <em>TBX5</em> se unen entre sí y corregulan genes; mutaciones de <em>NOTCH1</em> causan válvula aórtica bicúspide <span class="cite">p. 535-536</span>.</li>
+<li>La causa exacta se desconoce en <strong>~90%</strong> de los casos; los suplementos de <strong>folato</strong> precoz reducen la incidencia <span class="cite">p. 535-536</span>.</li>
+<li>Epidemiología del adulto con CPC: número creciente (~1,5 millones en EE. UU.); la reparación posnatal precoz no siempre restablece la normalidad , quedan cambios pulmonares o miocárdicos irreversibles, <strong>arritmias por cicatrices quirúrgicas</strong>, complicaciones de materiales protésicos y riesgo de descompensación en la gestación <span class="cite">p. 535</span>.</li>
+<li>Cortocircuito derecha-izquierda: cianosis, <strong>policitemia</strong>, <strong>dedos en palillo de tambor (acropaquias)</strong>, osteoartropatía hipertrófica y embolia paradójica. Los "5 T": <strong>T</strong>etralogía de Fallot, <strong>T</strong>GA, <strong>T</strong>ronco arterioso, <strong>T</strong> atresia tricúspide, <strong>T</strong>APVR (conexión total anómala de venas pulmonares) <span class="cite">p. 536</span>.</li>
+</ul>
+<h3 id="cia-y-persistencia-del-agujero-oval">CIA y persistencia del agujero oval</h3>
+<ul>
+<li>Morfología por localización: <strong>90% tipo ostium secundum</strong> (fallo del septo segundo, centro del tabique; únicos, múltiples o fenestrados, generalmente sin otras anomalías); <strong>5% tipo primum</strong> (adyacente a las válvulas AV, asociado a anomalía valvular AV y/o CIV); <strong>5% tipo seno venoso</strong> (junto a la desembocadura de la VCS, a veces con retorno venoso pulmonar anómalo a la AD) <span class="cite">p. 537</span>.</li>
+<li>Clínica: asintomáticas hasta la edad adulta; flujo pulmonar <strong>2-8 veces</strong> lo normal; soplo por flujo excesivo a través de la válvula pulmonar y/o la CIA; se toleran bien y no suelen dar síntomas antes de los 30 años; la hipertensión pulmonar irreversible es inusual. Cierre quirúrgico o intravascular para prevenir IC, embolia paradójica y enfermedad vascular pulmonar; mortalidad baja y supervivencia postoperatoria comparable a la población general <span class="cite">p. 537</span>.</li>
+<li>Embriología del tabique: el <strong>septo primero</strong> deja el orificio primum, luego orificio secundum; el <strong>septo segundo</strong> cubre ese orificio dejando el <strong>agujero oval</strong>, cuya válvula se abre solo si la presión derecha supera la izquierda; al nacer caen las presiones pulmonares y la válvula se cierra <span class="cite">p. 537</span>.</li>
+<li>El agujero oval se sella en el <strong>80% antes de los 2 años</strong>; en el 20% restante, aumentos transitorios de presión derecha (defecar, toser, estornudar) o hipertensión pulmonar mantenida permiten cortocircuito breve derecha-izquierda con riesgo de <strong>embolia paradójica</strong> <span class="cite">p. 537</span>.</li>
+</ul>
+<h3 id="civ-y-cap">CIV y CAP</h3>
+<ul>
+<li>CIV: la CPC más frecuente; <strong>90% membranosas</strong> (2-3 cm de diámetro, inmediatamente proximal a la válvula aórtica), 10% infundibulares (bajo la válvula pulmonar) o musculares (pueden ser múltiples); la mayoría de las musculares pequeñas (<strong>50%</strong>) cierran espontáneamente; solo el 20-30% de las CIV pediátricas son aisladas; la CIV detectada por primera vez en el adulto suele ser aislada <span class="cite">p. 537-538</span>.</li>
+<li>CIV grandes: cortocircuito izquierda-derecha importante desde el nacimiento, hipertrofia precoz del VD e hipertensión pulmonar; sin cierre evolucionan casi siempre a enfermedad vascular pulmonar irreversible con inversión del flujo y cianosis. El cierre de las CIV asintomáticas se retrasa hasta después del lactante esperando el cierre espontáneo; los defectos grandes se corrigen temprano <span class="cite">p. 538</span>.</li>
+<li>CAP: el conducto une la arteria pulmonar con la aorta distal a la subclavia izquierda; se cierra funcionalmente a los <strong>1-2 días</strong> de vida por oxigenación, caída de resistencias pulmonares y descenso local de <strong>prostaglandina E</strong>; obliteración completa en los primeros meses (ligamento arterioso). Soplo continuo <strong>"en maquinaria"</strong>. ~7% de las CPC, 90% aislado. Tratamiento: <strong>inhibidores de prostaglandinas</strong>; en cambio, <strong>mantenerlo abierto con prostaglandina E</strong> salva la vida en atresia de válvula aórtica o pulmonar <span class="cite">p. 538</span>.</li>
+</ul>
+<h3 id="tetralogía-de-fallot-y-tga">Tetralogía de Fallot y TGA</h3>
+<ul>
+<li>TF: corazón normalmente aumentado de tamaño, clásicamente en <strong>"forma de bota"</strong> por hipertrofia del VD; CIV grande con aorta acabalgada en el borde superior; obstrucción subpulmonar por estrechamiento del infundíbulo ± estenosis valvular; a veces atresia pulmonar completa (supervivencia obligada a CAP, arterias bronquiales dilatadas o ambos); insuficiencia aórtica o CIA posibles; cayado derecho en 25% <span class="cite">p. 538</span>.</li>
+<li>Clínica TF: según la gravedad de la estenosis subpulmonar se tolera hasta la vida adulta (sin cirugía, <strong>10% vivo a los 20 años y 3% a los 40</strong>); estenosis leve → <strong>"tetralogía rosada"</strong> (cortocircuito izquierda-derecha, sin cianosis); grave → cianosis desde el nacimiento. Cuanto más grave la estenosis, más hipoplásicas las arterias pulmonares y mayor el acabalgamiento; el orificio pulmonar no crece con el niño, por lo que la obstrucción empeora. La estenosis "protege" el lecho pulmonar y descomprime el VD (insuficiencia derecha infrecuente). La reparación completa es posible, más compleja con atresia pulmonar y arterias bronquiales dilatadas <span class="cite">p. 538-539</span>.</li>
+<li>D-TGA: discordancia ventrículoarterial con conexiones auriculoventriculares <strong>normales (concordantes)</strong>; embriológicamente por formación anómala de los tabiques troncal y aortopulmonar en espiral. Separa las circulaciones pulmonar y sistémica: incompatible con la vida salvo cortocircuito de mezcla (CIV en ~35%, cortocircuitos estables; los otros ~65% dependen de agujero oval o CAP, que se cierran pronto → <strong>septostomía auricular con balón</strong> en los primeros días). VD hipertrofiado como ventrículo sistémico, VI atrófico por sostener la circulación pulmonar de baja resistencia. Sin cirugía, la mayoría muere en meses; con <strong>intercambio arterial</strong> precoz muchos llegan a la vida adulta <span class="cite">p. 539-540</span>.</li>
+<li><strong>L-TGA</strong> ("corregida congénitamente"): discordancia auriculoventricular + ventrículoarterial doble; <strong>no cianótica</strong> y puede ser asintomática hasta diagnosticarse en el adulto; aun así hipertrofia al final del VD morfológico con potencial de IC, y se asocia a CIV, CIA y agujero oval persistente <span class="cite">p. 540</span>.</li>
+<li><strong>Atresia tricúspide</strong>: división desigual del canal AV (mitral grande, VD hipoplásico); cianosis desde el nacimiento, mortalidad precoz elevada <span class="cite">p. 540</span>.</li>
+</ul>
+<h3 id="coartación-de-la-aorta-y-lesiones-obstructivas">Coartación de la aorta y lesiones obstructivas</h3>
+<ul>
+<li><strong>Atresia tricúspide</strong>: oclusión completa del orificio tricúspide por división desigual del canal AV; válvula mitral mayor de lo normal y <strong>VD hipoplásico</strong>; la circulación se mantiene por cortocircuito derecha-izquierda (CIA o agujero oval persistente) + CIV que conecta el VI con la arteria pulmonar originada del VD hipoplásico. Cianosis prácticamente desde el nacimiento y mortalidad precoz elevada <span class="cite">p. 540</span>.</li>
+<li>Coartación: dos veces más frecuente en varones; también en mujeres con <strong>síndrome de Turner</strong>. Forma <strong>"del lactante"</strong> (preductal, hipoplasia tubular del cayado proximal a un CAP abierto, que aporta sangre no oxigenada a la aorta distal; tronco pulmonar dilatado, VD hipertrofiado, cianosis de la mitad inferior del cuerpo; muchos no sobreviven el periodo neonatal sin ocluir el CAP) y <strong>"del adulto"</strong> (posductal, cresta de músculo liso y fibras elásticas de la media frente al ligamento arterioso cerrado; cayado y ramas proximales dilatados, VI hipertrofiado) <span class="cite">p. 540-541</span>.</li>
+<li>En el <strong>50%</strong> se acompaña de válvula aórtica bicúspide; también CIA, CIV, insuficiencia mitral y <strong>aneurismas del polígono de Willis</strong>. Clínica posductal: hipertensión en brazos, pulsos débiles e hipotensión femorales, claudicación, <strong>circulación colateral intercostal y mamaria interna con "muescas" costales</strong> en la radiografía <span class="cite">p. 541</span>.</li>
+<li>Estenosis pulmonar: malformación frecuente, aislada o dentro de TF/TGA; hipertrofia del VD y <strong>dilatación postestenótica</strong> del tronco pulmonar por los chorros de alta presión (ausente si hay estenosis subpulmonar asociada , tronco normal o hipoplásico). Atresia pulmonar: sin comunicación VD-pulmón, VD hipoplásico + CIA; la sangre llega al pulmón por el CAP. Las estenosis leves permiten vida larga asintomática; con VD muy hipoplásico se deriva la sangre de las cavas a la arteria pulmonar (eludiendo el corazón derecho) <span class="cite">p. 541</span>.</li>
+<li>Estenosis aórtica congénita: valvular (cúspides hipoplásicas, displásicas o en número anómalo), subvalvular (anillo o collarete fibroso denso bajo las cúspides; soplo sistólico prominente ± frémito) o supravalvular (displasia de la aorta ascendente; mutaciones del gen de la <strong>elastina</strong> que alteran su interacción con el músculo liso). La obstrucción grave produce el <strong>síndrome del corazón izquierdo hipoplásico</strong> (VI y aorta ascendente hipoplásicos, fibroelastosis endocárdica "de porcelana"); depende del CAP abierto y su cierre en la primera semana es mortal; requiere cirugías que convierten el VD en bomba sistémica. La hipertrofia del VI conlleva riesgo de <strong>muerte súbita</strong> <span class="cite">p. 541</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Cortocircuitos y Eisenmenger</span>Los cortocircuitos izquierda-derecha (CIA, CIV, CAP) no son cianóticos, pero pueden invertirse si se instala enfermedad vascular pulmonar irreversible (síndrome de Eisenmenger); desde ese punto el defecto es inoperable. Los 5 cortocircuitos derecha-izquierda cianóticos llevan "T" en el nombre <span class="cite">p. 536</span>.</div>
+</section><section id="sec-06-cardiopatia-isquemica" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 542-553</div>
+<h2>Cardiopatía isquémica</h2>
+<ul>
+<li>Presentaciones: <strong>infarto de miocardio (IM), angina de pecho, CPI crónica con IC y muerte súbita cardiaca (MSC)</strong> <span class="cite">p. 542</span>.</li>
+<li>Isquemia ≠ hipoxemia: la isquemia también corta el aporte de nutrientes y la retirada de desechos, por lo que se tolera peor. La taquicardia agrava por doble vía: aumenta la demanda (más contracciones/min) y reduce el suministro (acorta la diástole, cuando ocurre la perfusión). Es la mayor causa individual de muerte en el mundo (&gt;13% de los fallecimientos); en EE. UU. la mortalidad ha caído &gt;50% desde mediados de los años sesenta por control de factores de riesgo (tabaco, colesterol, hipertensión, peso, ejercicio, control glucémico) y avances (estatinas, trombólisis, angioplastia, DIAC, DAV, DAI, resincronización, AAS profiláctico) <span class="cite">p. 542</span>.</li>
+<li>Factores que convierten estenosis discretas en sintomáticas: aumento de la demanda (hipertrofia, taquicardia), hipoxemia e hipotensión sistémica (shock) <span class="cite">p. 542</span>.</li>
+<li>Las medidas de <strong>reserva de flujo coronario</strong> a través de la estenosis valoran mejor las consecuencias que el grado anatómico aislado, especialmente con obstrucciones multifocales; las obstrucciones lentas permiten colaterales que mitigan incluso estenosis de alto grado <span class="cite">p. 542-543</span>.</li>
+<li>Las placas clínicamente importantes predominan en los <strong>primeros centímetros de la DAI y la CxI</strong>; la ateroesclerosis de las ramas intramiocárdicas (penetrantes) es infrecuente , por eso la mayoría de las estenosis son accesibles a cateterismo. Puede afectarse un vaso, dos o los tres <span class="cite">p. 542-543</span>.</li>
+<li>Es la mayor causa individual de muerte en el mundo (&gt;13% de los fallecimientos); en EE. UU. la mortalidad ha caído &gt;50% desde mediados de los años sesenta por control de factores de riesgo y avances terapéuticos <span class="cite">p. 542</span>.</li>
+</ul>
+<h3 id="angina-de-pecho">Angina de pecho</h3>
+<ul>
+<li>Isquemia transitoria de <strong>15 s a 15 min</strong> que no mata miocardiocitos; el dolor media isquemia por <strong>adenosina y bradicinina</strong> sobre nervios aferentes. <strong>Isquemia silente</strong>: frecuente en ancianos y <strong>neuropatía diabética</strong> <span class="cite">p. 543</span>.</li>
+<li>Dolor anginoso: por liberación isquémica de <strong>adenosina, bradicinina y otras moléculas</strong> que estimulan nervios aferentes vagales y simpáticos; sensación clásica de opresión subesternal con irradiación al brazo izquierdo o la hemimandíbula izquierda (dolor referido), que mejora con reposo o vasodilatadores (nitroglicerina, antagonistas del calcio) <span class="cite">p. 543</span>.</li>
+<li><strong>Estable</strong> (la más frecuente): estenosis fija crónica, no aparece en reposo, reproducible con esfuerzo o estrés emocional. <strong>Variante de Prinzmetal</strong>: espasmo de la coronaria, infrecuente, no ligada a esfuerzo, frecuencia cardiaca ni presión arterial, puede aparecer en reposo y responde de inmediato a vasodilatadores. <strong>Inestable (in crescendo)</strong>: cada vez más frecuente, prolongada (<strong>&gt;20 min</strong>) o grave, con esfuerzo decreciente o en reposo; por rotura de placa con trombosis/vasoespasmo y embolización distal (microinfartos); anuncia IM y posible oclusión completa <span class="cite">p. 543</span>.</li>
+<li>Isquemia silente: episodios no percibidos, especialmente en ancianos y <strong>neuropatía diabética</strong> <span class="cite">p. 543</span>.</li>
+</ul>
+<h3 id="infarto-de-miocardio-patogenia">Infarto de miocardio: patogenia</h3>
+<ul>
+<li>Secuencia: erosión/rotura de placa → adhesión y activación plaquetaria (tromboxano A2, ADP, serotonina) → trombo oclusivo en minutos. La coronariografía en las <strong>4 h</strong> muestra trombosis en ~90%; a las <strong>12-24 h</strong>, solo 60% (lisis espontánea). Muchos trombos se forman en placas <strong>sin estenosis crítica previa</strong> <span class="cite">p. 544</span>.</li>
+<li>~10% de IM sin aterotrombosis: vasoespasmo (con o sin ateroesclerosis; cocaína, efedrina), émbolos de la AI (fibrilación auricular, trombo mural, vegetaciones, material protésico) o paradójicos que cruzan un agujero oval persistente; también vasculitis de pequeños vasos intramurales, drepanocitosis, hipertrofia marcada (estenosis aórtica), shock, y mala protección miocárdica en cirugía cardiaca <span class="cite">p. 544</span>.</li>
+<li>Las causas de la obesidad-epidemia y el envejecimiento (duplicación de &gt;65 años proyectada a 2050) amenazan revertir esa tendencia; los IM ocurren solo en una fracción de los individuos con enfermedad coronaria, de modo que el control de factores de riesgo es solo parte de la historia <span class="cite">p. 542</span>.</li>
+<li>Epidemiología: ~1,5 millones de IM/año en EE. UU. con ~610.000 muertes; 10% antes de los 40 años y 45% antes de los 65; el sexo masculino aumenta el riesgo en la mediana edad, las mujeres están protegidas en la edad fértil, pero tras la menopausia la CPI es la primera causa de muerte en ancianas , y el <strong>tratamiento hormonal de reemplazo no es protector, a veces perjudicial</strong> <span class="cite">p. 543-544</span>.</li>
+<li>Cronología (tabla 12.4): pérdida de ATP en <strong>segundos</strong>; <strong>pérdida de contractilidad a &lt;2 min</strong> (antes de que muera la célula); ATP al 50% a 10 min; lesión irreversible a los <strong>20-40 min</strong> (isquemia con flujo ≤10% del normal); lesión microvascular &gt;1 h <span class="cite">p. 545</span>.</li>
+<li>La necrosis comienza <strong>subendocárdica</strong> (última zona en recibir sangre y sometida a altas presiones intramurales); se salva un anillo subendocárdico de ~0,1 mm por difusión desde la luz ventricular <span class="cite">p. 545</span>.</li>
+<li>Frente de necrosis completo a las <strong>6-12 h</strong>; extensión máxima del infarto a las <strong>3-6 h</strong> ("el tiempo es miocardio") <span class="cite">p. 545-546</span>.</li>
+</ul>
+<h3 id="patrones-y-localización-del-infarto">Patrones y localización del infarto</h3>
+<ul>
+<li>Dominancia: la coronaria que perfunde el tercio posterior del tabique; <strong>derecha en ~80%</strong> de las personas. La DAI irriga punta, pared anterior del VI y 2/3 anteriores del tabique; la ACD, pared posterobasal del VI, tercio posterior del tabique y VD; la CxI, pared lateral <span class="cite">p. 546</span>.</li>
+<li><strong>Transmural</strong> (&gt;90%: placa + trombosis) vs <strong>subendocárdico</strong> (trombo lisado, o hipotensión global con daño <strong>circunferencial</strong>) vs <strong>microinfartos multifocales</strong> (microembolias, vasculitis, catecolaminas, cocaína) <span class="cite">p. 546-547</span>.</li>
+<li>Frecuencias: <strong>DAI 40-50%</strong> (anterior), <strong>ACD 30-40%</strong> (inferior/posterior), <strong>CxI 15-20%</strong> (lateral). Infarto aislado de VD solo 1-3%; el 15-30% de los IM por ACD se extienden al VD <span class="cite">p. 547</span>.</li>
+</ul>
+<h3 id="morfología-del-infarto-tabla-125">Morfología del infarto (tabla 12.5)</h3>
+<ul>
+<li>0-½ h: sin cambios. ½-4 h: fibras onduladas, edema, hemorragia. 4-12 h: necrosis coagulativa, hipereosinofilia, <strong>moteado oscuro</strong>. <strong>12-24 h: necrosis de bandas de contracción marginal + infiltrado de neutrófilos</strong>. 1-3 días: neutrofilos abundantes, centro amarillo-parduzco. <strong>3-7 días: fagocitosis por macrófagos, borde hiperémico, máximo ablandamiento (riesgo de rotura)</strong>. 7-10 días: tejido de granulación. 10-14 días: colágeno. 2-8 semanas: cicatriz; completa &gt;2 meses <span class="cite">p. 547</span>.</li>
+<li>Tinción con <strong>cloruro de trifeniltetrazolio (TTC)</strong>: el miocardio viable (con lactato deshidrogenasa) se tiñe rojo ladrillo; el infarto queda <strong>pálido</strong>. Útil para infartos de 2-3 h a 12 h, invisibles macroscópicamente sin ella <span class="cite">p. 548</span>.</li>
+<li>La cicatrización procede <strong>de la periferia al centro</strong>; malnutrición, mala vasculatura y <strong>corticoides</strong> la retrasan. Una vez cicatrizado, el infarto no se data (8 semanas = 10 años) <span class="cite">p. 549</span>.</li>
+<li><strong>Reperfusión</strong>: rescata miocardio, pero la reperfusión tardía causa <strong>lesión por reperfusión</strong> (hasta el 50% del tamaño final del infarto) por disfunción mitocondrial (contenido mitocondrial proapoptótico), hipercontractura por sobrecarga de calcio, radicales libres (anión superóxido, peróxido de hidrógeno, ácido hipocloroso, peroxinitrito, radicales hidroxilo), agregación leucocítica ("ausencia de recuperación del flujo") y activación del complemento. Morfología: infarto <strong>hemorrágico</strong> con <strong>necrosis de bandas de contracción</strong> (sarcómeros hipercontraídos por entrada de calcio, sin ATP para relajarse) <span class="cite">p. 549-550</span>.</li>
+<li>Se realiza con trombólisis (activador del plasminógeno tisular), angioplastia o injerto de derivación coronaria (DIAC); los ensayos destinados a prevenir la lesión por reperfusión han sido infructuosos. La recuperación de la función del miocardio rescatado puede demorarse de horas a días (<strong>aturdimiento postisquémico</strong>). La prevención primaria y secundaria (control de factores de riesgo) y el pronóstico dependen de la <strong>función residual del VI</strong> y del grado de obstrucción de los vasos que perfunden el miocardio viable <span class="cite">p. 549-553</span>.</li>
+<li>Morfología del IM reperfundido: infarto grande, denso y <strong>hemorrágico</strong> (lesión vascular con extravasación), p. ej., anteroapical tras estreptocinasa; microscopía con <strong>bandas de contracción</strong> oscuras que abarcan miofibrillas <span class="cite">p. 550</span>.</li>
+<li><strong>Miocardio aturdido</strong>: disfunción contráctil prolongada tras isquemia breve, se recupera en días. <strong>Miocardio en hibernación</strong>: isquemia crónica subletal con metabolismo y función reducidos; la revascularización (DIAC, angioplastia, endoprótesis) restablece la función <span class="cite">p. 550</span>.</li>
+</ul>
+<h3 id="diagnóstico-y-tratamiento-del-im">Diagnóstico y tratamiento del IM</h3>
+<ul>
+<li>Dolor torácico &gt;30 min, diaforesis, náuseas y vómitos (afectación posteroinferior con estímulo vagal). Hasta el <strong>25% es asintomático</strong> (p. ej., neuropatía diabética) <span class="cite">p. 550</span>.</li>
+<li>ECG: <strong>IMEST</strong> (transmural, elevación del ST) vs <strong>IMSEST</strong> (subendocárdico). Biomarcador: <strong>cTnT y cTnI</strong> (reemplazaron a CK-MB); elevación a las 2-4 h, máximo a las 24-48 h; con reperfusión pico más alto y más precoz. La troponina también sube en miocarditis y traumatismos, y hay "extravasación de troponina" de bajo grado en IC, TEP, insuficiencia renal y sepsis (diferenciar con determinaciones seriadas) <span class="cite">p. 550</span>.</li>
+<li>Tratamiento: oxígeno, nitratos, antiagregantes (AAS, inhibidores del receptor de ADP, GPIIb/IIIa), anticoagulantes, β-bloqueantes, reperfusión inmediata (fibrinolíticos o catéter) <span class="cite">p. 551</span>.</li>
+</ul>
+<h3 id="complicaciones-del-iam">Complicaciones del IAM</h3>
+<ul>
+<li>Mortalidad intrahospitalaria <strong>7-8%</strong> (IMEST 10%, IMSEST 6%); un tercio de los IMEST extrahospitalarios mueren por arritmia en la <strong>primera hora</strong>. Casi <strong>75%</strong> de los pacientes sufre alguna complicación <span class="cite">p. 551</span>.</li>
+<li><strong>Shock cardiógeno</strong>: ~10% de los IM transmurales; asocia infartos que dañan <strong>≥40% del VI</strong> <span class="cite">p. 551</span>.</li>
+<li><strong>Rotura del miocardio</strong>: 1-5% de los IM, mortal; pared libre → hemopericardio y taponamiento; tabique → CIV; músculo papilar → insuficiencia mitral grave. Ocurre en los días <strong>3-7</strong> (miocardio necrótico lisado en tejido de granulación blando). Riesgo: &gt;60 años, sexo femenino, infarto anterior/lateral, <strong>primer IM</strong> (la cicatriz previa "refuerza"), ausencia de hipertrofia del VI <span class="cite">p. 551</span>.</li>
+<li><strong>Arritmias</strong>: ~90% de los pacientes; máximo riesgo de fibrilación ventricular en la primera hora; más frecuentes en IMEST <span class="cite">p. 551</span>.</li>
+<li><strong>Pericarditis fibrinohemorrágica</strong> a los 2-3 días (IM transmural); <strong>síndrome de Dressler</strong> semanas después por autoanticuerpos antimiocardio <span class="cite">p. 552</span>.</li>
+<li><strong>Expansión del infarto</strong> con adelgazamiento de pared; <strong>trombo mural</strong> (estasis + endocardio dañado) con riesgo embólico; <strong>aneurisma ventricular</strong> tardío tras infarto anteroseptal grande , asociado a trombos, arritmias e IC, pero <strong>no se rompe</strong> <span class="cite">p. 552</span>.</li>
+<li>Riesgo según localización: anteriores → rotura, expansión, trombo mural, aneurisma; posteriores → bloqueos de conducción e infarto de VD. Mal pronóstico: sexo femenino, &gt;70 años, IM previo, diabetes. Mortalidad total al primer año <strong>30%</strong>, luego 3-4% anual <span class="cite">p. 552-553</span>.</li>
+</ul>
+<h3 id="cardiopatía-isquémica-crónica">Cardiopatía isquémica crónica</h3>
+<ul>
+<li><strong>Cardiopatía isquémica crónica</strong>: IC congestiva progresiva por daño isquémico acumulado ("miocardiopatía isquémica"); habitual tras IM previo, por descompensación del miocardio no infartado hipertrófico, pero también puede debutar como IC sin infarto previo. Representa casi el <strong>50% de los receptores de trasplante cardiaco</strong>. Corazón pesado, VI hipertrofiado y dilatado, ateroesclerosis estenótica invariable, cicatrices de infartos, engrosamientos fibrosos parcheados del endocardio mural (cizallamiento anómalo) y a veces trombos murales; micro: hipertrofia, vacuolización de miocardiocitos subendocárdicos (isquemia crónica) y fibrosis intersticial <span class="cite">p. 553</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">El tiempo es miocardio</span>Pérdida de contractilidad a los 1-2 min, antes de que muera la célula; necrosis a los 20-30 min, comenzando subendocárdica. El frente de necrosis es completo a las 6-12 h y la extensión máxima se alcanza a las 3-6 h <span class="cite">p. 545-546</span>.</div>
+</section><section id="sec-07-arritmias-y-muerte-subita-cardiaca" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 554-555</div>
+<h2>Arritmias y muerte súbita cardiaca</h2>
+<ul>
+<li>Síndrome del seno enfermo (bradicardia de escape), <strong>fibrilación auricular</strong> ("irregularmente irregular" por dilatación auricular), bloqueo AV de 1.º (P-R prolongado), 2.º (transmisión intermitente) y 3.º (fracaso completo) <span class="cite">p. 554</span>.</li>
+<li>Los <strong>circuitos de reentrada</strong> , favorecidos por isquemia, hipertrofia, inflamación, fibrosis o depósito de material no conductor (amiloide) , causan taquicardia ventricular que puede degenerar en fibrilación ventricular <span class="cite">p. 554</span>.</li>
+<li><strong>Canalopatías</strong> (tabla 12.6): trastornos mayormente autosómicos dominantes de genes de canales de Na⁺, K⁺ y Ca²⁺ o de sus proteínas accesorias; las mutaciones con <strong>pérdida de función</strong> producen QT largo y las con <strong>ganancia de función</strong>, QT corto. Síndrome del <strong>QT largo</strong> (<em>KCNQ1, KCNH2, SCN5A, CAV3</em>): sincopes con estrés o MSC, algunos tipos asociados a la natación; <strong>QT corto</strong> (<em>KCNQ1, KCNH2, SCN5A</em>): palpitaciones, sincope, MSC; <strong>síndrome de Brugada</strong> (<em>SCN5A, CACNB2b, SCN1b</em>): elevación del ST y bloqueo de rama derecha sin cardiopatía estructural, sincope o MSC en reposo, durante el sueño o tras comidas copiosas; <strong>TVPC</strong> (<em>RYR2, CASQ2</em>, liberación diastólica de Ca²⁺): presenta en la infancia con estrés, sin ECG característico <span class="cite">p. 554</span>.</li>
+<li><strong>MSC</strong>: muerte inesperada por causa cardiaca, sin síntomas o dentro de las <strong>1-24 h</strong> del inicio (los criterios varían según el autor); <strong>180.000-450.000 casos/año en EE. UU.</strong> Mecanismo casi siempre arritmia mortal (fibrilación ventricular o asistolia) por irritabilidad eléctrica del miocardio distante al sistema de conducción. Primera causa: <strong>EAC</strong> , puede ser la primera manifestación de la CPI; solo 10-20% de las víctimas tiene rotura aguda de placa y el <strong>80-90% de los reanimados no muestra necrosis enzimática ni en el ECG</strong>; IM antiguo cicatrizado en ~40% y vacuolización subendocárdica (isquemia crónica) como rasgo habitual <span class="cite">p. 555</span>.</li>
+<li>En jóvenes predominan causas no ateroescleróticas: canalopatías, miocardiopatías dilatada o hipertrófica, anomalías coronarias congénitas, miocarditis, <strong>prolapso mitral</strong>, hipertensión pulmonar, taponamiento, embolia pulmonar, trastornos metabólicos, catecolaminas, cocaína y metanfetamina. Con el descenso de la CPI crece la MSC en corazones hipertróficos y fibróticos (hipertensión, obesidad, consumo de sustancias) sin EAC. Tratamiento preventivo: fármacos y <strong>desfibrilador automático implantable</strong> <span class="cite">p. 555</span>.</li>
+</ul>
+
+</section><section id="sec-08-cardiopatia-hipertensiva" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 555-556</div>
+<h2>Cardiopatía hipertensiva</h2>
+<ul>
+<li>Criterios patológicos: <strong>hipertrofia concéntrica del VI</strong> sin otra cardiopatía + evidencia clínica o anatomopatológica de hipertensión en otros órganos (riñón). El estudio <strong>Framingham</strong> demostró que incluso hipertensión leve (~140/90 mmHg) prolongada induce hipertrofia del VI; ~30% de la población de EE. UU. tiene cifras de ese grado; con las directrices actuales (&gt;120/80 mmHg), casi la <strong>mitad</strong> de la población general <span class="cite">p. 555</span>.</li>
+<li>Evolución posible: longevidad normal; CPI (la hipertensión potencia la ateroesclerosis y la isquemia de demanda del músculo hipertrófico); daño renal o ACV; IC progresiva o <strong>MSC</strong>. El control eficaz previene la hipertrofia y puede hacerla <strong>involucionar</strong> <span class="cite">p. 556</span>.</li>
+<li>Clínica: la CPH sistémica compensada es asintomática (solo signos de VI grande en ECG/ecocardiograma); a menudo debuta con <strong>fibrilación auricular</strong> por dilatación de la AI o con ICC progresiva <span class="cite">p. 556</span>.</li>
+<li>Morfología: peso cardiaco <strong>&gt;500 g</strong>, pared del VI <strong>&gt;2,0 cm</strong>, luz reducida; rigidez diastólica con dilatación de la AI (fibrilación auricular como forma de presentación); fibrosis intersticial <span class="cite">p. 555-556</span>.</li>
+<li>Evolución: longevidad normal, CPI, ACV o daño renal, IC progresiva o MSC. El control de la presión puede <strong>hacer involucionar</strong> la hipertrofia <span class="cite">p. 556</span>.</li>
+<li>VD y aurícula derecha hipertrofiados y dilatados; el ventrículo derecho hipertrofiado puede comprimir la cavidad del VI o causar insuficiencia y engrosamiento fibroso tricúspide; hipertrofia leve = engrosamiento del haz muscular del tracto de salida o de la <strong>banda moderadora</strong> (une el tabique con el músculo papilar anterior del VD) <span class="cite">p. 556-557</span>.</li>
+<li>Causas del corazón pulmonar (tabla 12.7): parénquima (EPOC, fibrosis intersticial difusa, neumoconiosis, fibrosis quística, bronquiectasias), vasos (tromboembolia de repetición, hipertensión pulmonar primaria, arteritis pulmonar, fármacos/tóxicos/radiación, microembolias tumorales), pared torácica (cifoescoliosis, obesidad marcada/apnea del sueño/síndrome de Pickwick, enfermedades neuromusculares) y vasoconstricción pulmonar (acidosis metabólica, hipoxemia, mal de altura crónico, obstrucción de vías respiratorias principales, hipoventilación alveolar idiopática). Recordar: la hipertensión pulmonar es más frecuente <strong>como complicación de una cardiopatía izquierda</strong> [p. 556, tabla 12.7].</li>
+</ul>
+
+</section><section id="sec-09-cardiopatia-valvular" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 557-562</div>
+<h2>Cardiopatía valvular</h2>
+<ul>
+<li><strong>Estenosis</strong> = fallo de apertura (proceso crónico, anomalía primaria de las valvas); <strong>insuficiencia/regurgitación</strong> = fallo de cierre (valvas propias o aparato de soporte; puede ser aguda). Ambas llevan a hipertrofia de presión o de volumen y, en último término, IC; los chorros de alta velocidad por las válvulas estenóticas dañan el endocardio <span class="cite">p. 557</span>.</li>
+<li>Causas principales: <strong>estenosis aórtica</strong> → calcificación degenerativa o de válvula bicúspide; <strong>insuficiencia aórtica</strong> → dilatación de la aorta ascendente (hipertensión, envejecimiento, sífilis, espondilitis anquilosante, síndrome de Marfan, aneurisma/disección); <strong>estenosis mitral</strong> → cardiopatía reumática; <strong>insuficiencia mitral</strong> → prolapso mitral, dilatación del VI, rotura de cuerdas o de músculo papilar, calcificación anular [p. 557, tabla 12.8].</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cardiopatía valvular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Mecanismo</th>
+<th>Válvula aórtica</th>
+<th>Válvula mitral</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Estenosis</strong></td>
+<td>Estenosis aórtica calcificada senil; calcificación sobre válvula deformada congénita; cicatriz postinflamatoria (reumática)</td>
+<td>Casi exclusivamente cardiopatía reumática</td>
+</tr>
+<tr>
+<td><strong>Insuficiencia intrínseca (valvas)</strong></td>
+<td>Cicatriz postinflamatoria; endocarditis infecciosa</td>
+<td>Anomalías de valvas y comisuras; cicatriz reumática; endocarditis infecciosa; <strong>prolapso mitral</strong>; fibrosis por fenfluramina/fentermina</td>
+</tr>
+<tr>
+<td><strong>Insuficiencia por aparato de soporte</strong></td>
+<td>Dilatación degenerativa de la aorta; aortitis sifilítica; espondilitis anquilosante; síndrome de Marfan; aneurisma/disección</td>
+<td>Rotura de cuerdas; fibrosis/disfunción de músculo papilar; dilatación del VI (miocarditis, MCD); calcificación del anillo</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: [p. 557, tabla 12.8].</p>
+<h3 id="estenosis-aórtica-calcificada-y-válvula-bicúspide">Estenosis aórtica calcificada y válvula bicúspide</h3>
+<ul>
+<li>La valvulopatía más frecuente; prevalencia <strong>2%</strong> y en aumento. Sobre válvula normal aparece en la 7.ª-9.ª décadas; sobre <strong>bicúspide congénita (1% de la población)</strong>, una a dos décadas antes. La VAB calcificada causa ~<strong>50%</strong> de las estenosis aórticas del adulto <span class="cite">p. 557-559</span>.</li>
+<li>Patogenia: degeneración por estrés mecánico con depósito de <strong>hidroxiapatita</strong>; contiene <strong>células parecidas a osteoblastos</strong>; las <strong>estatinas no la previenen</strong> (a diferencia de la ateroesclerosis). Macro: masas calcificadas en las cúspides <strong>sin fusión de comisuras</strong> (clave para diferenciar de la reumática); micro: calcificación comienza en la capa fibrosa en los puntos de flexión; posible <strong>hueso metaplásico</strong> <span class="cite">p. 557-558</span>.</li>
+<li>Clínica: área valvular cae de ~4 cm² a <strong>0,5-1 cm²</strong> (estenosis grave), presiones del VI &gt;200 mmHg. La tríada <strong>angina, sincope e IC</strong> anuncia descompensación: sin tratamiento, muerte en <strong>5 años desde la angina, 3 años desde el sincope y 2 años desde la IC</strong>. Tratamiento: recambio valvular (RTVA transcatéter incluido); el tratamiento médico es ineficaz <span class="cite">p. 558-559</span>.</li>
+<li>VAB: cúspides desiguales con <strong>rafe</strong> (lugar de calcificación); complica con insuficiencia aórtica, endocarditis infecciosa y <strong>dilatación/disección aórtica</strong> (pared aórtica estructuralmente anómala). <em>NOTCH1</em> (9q34.3) mutado en algunas familias <span class="cite">p. 559</span>.</li>
+</ul>
+<h3 id="calcificación-del-anillo-mitral">Calcificación del anillo mitral</h3>
+<ul>
+<li>Nódulos pétreos (2-5 mm) en el anillo, <strong>sin afectar habitualmente la función</strong>; puede causar insuficiencia, estenosis, arritmias/MSC por invasión del sistema de conducción, <strong>ACV embólico</strong> y servir de nido para endocarditis. Más frecuente en mujeres mayores y en el prolapso mitral <span class="cite">p. 559</span>.</li>
+</ul>
+<h3 id="prolapso-de-la-válvula-mitral-pvm">Prolapso de la válvula mitral (PVM)</h3>
+<ul>
+<li><strong>Prolapso mitral (PVM)</strong>: <strong>2-3% de los adultos</strong> en EE. UU., más frecuente en mujeres; habitual hallazgo incidental. Etiología desconocida en la mayoría; rara vez asociado a síndrome de Marfan (<em>FBN1</em>, con señalización TGF-β desregulada); en ratones con <em>FBN1</em> mutado, el fenotipo se previene con <strong>inhibidores de TGF-β</strong> (el exceso de TGF-β causa la laxitud y los cambios mixomatosos) <span class="cite">p. 559</span>.</li>
+<li>Morfología: valvas <strong>abombadas ("en campana")</strong>, redundantes, gruesas y elásticas; cuerdas alargadas, adelgazadas o rotas; anillo a veces dilatado; posible afectación concomitante de tricúspide, aórtica o pulmonar. Histología: <strong>degeneración mixomatosa de la capa esponjosa</strong> (matriz hidrófila altamente sulfatada) con capa fibrosa colágena atenuada , se tinta con pentacrómico de Movat (colágeno amarillo, elastina negra, proteoglucanos azules) <span class="cite">p. 559-560</span>.</li>
+<li>Cambios secundarios por la hipermovilidad: 1) engrosamiento fibroso de las valvas donde se rozan; 2) engrosamiento fibroso lineal del endocardio del VI donde chocan las cuerdas alargadas; 3) engrosamiento del endocardio mural auricular/ventricular por fricción; 4) <strong>trombos</strong> en superficies auriculares de las valvas y paredes auriculares; 5) <strong>calcificaciones focales</strong> en la base de la valva posterior. La degeneración mixomatosa también puede ser <strong>secundaria</strong> a insuficiencia por otras causas (p. ej., disfunción isquémica) <span class="cite">p. 559-560</span>.</li>
+<li>Clínica: <strong>chasquido mesosistólico</strong> ± soplo de insuficiencia; ~<strong>3%</strong> desarrolla complicaciones graves: endocarditis infecciosa, insuficiencia mitral (rotura de cuerdas), ACV por embolia de trombos valvulares, arritmias; rara vez MSC <span class="cite">p. 559-560</span>.</li>
+</ul>
+<h3 id="fiebre-reumática-y-cardiopatía-reumática">Fiebre reumática y cardiopatía reumática</h3>
+<ul>
+<li>Inflamación multisistémica mediada por inmunidad a las <strong>2-3 semanas</strong> de una faringitis por <strong>estreptococo del grupo A</strong> (a veces tras infección cutánea); <strong>~3%</strong> de los infectados la desarrollan (susceptibilidad genética). El retraso de 2-3 semanas refleja el tiempo necesario para generar anticuerpos y linfocitos T CD4+ anti-<strong>proteína M</strong> con reacción cruzada contra antígenos cardiacos; la unión de anticuerpos activa el complemento y recluta células con receptor de Fc, y los linfocitos T activan macrófagos (cuerpos de Aschoff). <strong>Los estreptococos están ausentes de las lesiones</strong> <span class="cite">p. 560-561</span>.</li>
+<li>Morfología aguda: <strong>cuerpos de Aschoff</strong> (linfocitos T, células plasmáticas y macrófagos activados = <strong>células de Anichkov</strong> con cromatina en lazo , "célula oruga") en cualquiera de las tres capas (<strong>pancarditis</strong>); vegetaciones <strong>verrugosas de 1-2 mm</strong> sobre necrosis fibrinoide, a lo largo de las <strong>líneas de cierre</strong> valvulares; <strong>placas de MacCallum</strong> en la AI <span class="cite">p. 561</span>.</li>
+<li>Crónica: engrosamiento valvular, <strong>fusión de comisuras</strong>, acortamiento y fusión de cuerdas → estenosis mitral <strong>"en boca de pez"</strong>; neovascularización y fibrosis transmural. Mitral sola en ~2/3; mitral + aórtica en ~25%. Casi nunca se ven cuerpos de Aschoff en las piezas crónicas <span class="cite">p. 561-562</span>.</li>
+<li>Clínica aguda (criterios de Jones revisados): <strong>poliartritis migratoria de grandes articulaciones, pancarditis, nódulos subcutáneos en superficies extensoras, eritema marginado, corea de Sydenham</strong>. Anticuerpos anti-estreptolisina O y anti-ADNasa B detectables aunque el cultivo faríngeo sea negativo; ~1% de letalidad por carditis fulminante. Artritis sin secuelas; el daño <strong>valvular es acumulativo</strong> en cada recidiva (bucle de retroalimentación: la deformidad genera turbulencia que agrava la fibrosis) <span class="cite">p. 562</span>.</li>
+</ul>
+
+</section><section id="sec-10-endocarditis-y-endocarditis-verrugosas-no-infecciosas" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 562-566</div>
+<h2>Endocarditis y endocarditis verrugosas no infecciosas</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: Endocarditis y endocarditis verrugosas no infecciosas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Vegetaciones</th>
+<th>Contexto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cardiopatía reumática aguda</strong></td>
+<td>Pequeñas (1-2 mm), verrugosas, en las líneas de cierre</td>
+<td>Fiebre reumática</td>
+</tr>
+<tr>
+<td><strong>Endocarditis infecciosa (EI)</strong></td>
+<td>Grandes, irregulares, destructivas, pueden extenderse a cuerdas</td>
+<td>Bacteriemia</td>
+</tr>
+<tr>
+<td><strong>ETNB</strong></td>
+<td>Pequeñas (1-5 mm), blandas, firmemente adheridas, no destructivas, sin inflamación</td>
+<td>Hipercoagulabilidad, cáncer, sepsis</td>
+</tr>
+<tr>
+<td><strong>Libman-Sacks</strong></td>
+<td>Pequeñas o medianas (1-4 mm), en cualquier cara de la valva, cuerdas o endocardio</td>
+<td>LES, síndrome antifosfolípido</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 562, 564-565</span>.</p>
+<h3 id="endocarditis-infecciosa">Endocarditis infecciosa</h3>
+<ul>
+<li><strong>Aguda</strong>: germen virulento (<em>Staphylococcus aureus</em>) sobre válvula <strong>normal</strong>, destructiva, difícil de curar con antibióticos, requiere cirugía. <strong>Subaguda</strong>: germen de baja virulencia (<em>Streptococcus viridans</em>) sobre válvula <strong>deformada</strong>, insidiosa, curable con antibióticos. El límite entre ambas no es nítido <span class="cite">p. 563</span>.</li>
+<li>Gérmenes: <strong>S. viridans</strong> 50-60% de las EI sobre válvula nativa dañada (flora oral); <strong>S. aureus</strong> 20-30% y el principal en <strong>consumidores de drogas intravenosas</strong> (además afecta válvulas derechas); enterococos y grupo <strong>HACEK</strong> (<em>Haemophilus, Actinobacillus, Cardiobacterium, Eikenella, Kingella</em>), todos comensales de la cavidad oral; rara vez gramnegativos y hongos. Protésicas: <strong>1-2 meses postquirúrgicas → S. aureus/S. epidermidis (piel)</strong>; ≥1 año → estreptococos y S. aureus. <strong>Cultivo negativo en ~10%</strong> (antibióticos previos, dificultad de aislamiento, gérmenes enterrados en la vegetación) <span class="cite">p. 563</span>.</li>
+<li>Predisposición: bacteriemia/fungemia por infección a distancia, cirugía u odontología, agujas compartidas o microtraumas epiteliales (intestino, boca, piel). La <strong>CR con cicatrices valvulares</strong> fue el sustrato clásico; hoy lo reemplazan el prolapso mitral, la estenosis calcificada degenerativa, la válvula bicúspide, las prótesis y las malformaciones congénitas. Profilaxis antibiótica en pacientes con anomalía valvular o bacteriemia conocida <span class="cite">p. 563</span>.</li>
+<li>Morfología: vegetaciones friables con fibrina, inflamación y gérmenes; aórtica y mitral las más afectadas; pueden erosionar y formar <strong>absceso anular</strong>; embolización → <strong>infartos sépticos y aneurismas micóticos</strong>. Las subagudas tienen tejido de granulación en la base <span class="cite">p. 563-564</span>.</li>
+<li>Clínica: fiebre (signo más constante; puede ser ligera o faltar en ancianos), soplo en la mayoría de las EI izquierdas, inicio agudo con fiebre y escalofríos o síndrome seudogripal insidioso con cansancio y pérdida de peso <span class="cite">p. 564</span>.</li>
+<li>Criterios diagnósticos (<strong>Duke modificados</strong>, tabla 12.9): anatomopatológicos , microorganismos en vegetación, émbolo o absceso intracardiaco, o confirmación histológica de endocarditis activa; clínicos mayores , hemocultivos característicos o persistentemente positivos, masa oscilante ecográfica, absceso, separación parcial de prótesis o insuficiencia valvular de nuevo origen; menores , lesión cardiaca predisponente o drogas intravenosas, fiebre, lesiones vasculares (émbolos arteriales, infartos sépticos, aneurisma micótico, hemorragias, <strong>Janeway</strong>) y fenómenos inmunitarios (glomerulonefritis, <strong>Osler</strong>, <strong>Roth</strong>, factor reumatoide). Definitivo: <strong>2 mayores, 1 mayor + 3 menores o 5 menores</strong>; "posible": 1 mayor + 1 menor o 3 menores [p. 564, tabla 12.9].</li>
+<li>Definiciones de las lesiones clásicas: <strong>Janeway</strong> = máculas eritematosas o hemorrágicas indoloras en palmas y plantas (émbolos sépticos); <strong>Osler</strong> = nódulos subcutáneos dolorosos en pulpejos de dedos, de horas a días; <strong>Roth</strong> = hemorragias retinianas ovales con centro pálido [p. 564, tabla 12.9].</li>
+<li>Complicaciones: glomerulonefritis por depósito de inmunocomplejos, sepsis, arritmias (invasión del miocardio y del sistema de conducción) y embolias sistémicas , todas de mal pronóstico; sin tratamiento, mortal. Con tratamiento ≥6 semanas ± recambio valvular: curación <strong>98% con S. viridans; 60-90% con enterococos/S. aureus; ~50% de mortalidad con gramnegativos u hongos</strong>; peor en protésicas, con frecuencia requiere recambio <span class="cite">p. 564</span>.</li>
+<li>Las manifestaciones clásicas de la EI de larga evolución están hoy casi eliminadas por diagnóstico y tratamiento precoces: microtromboembolias (<strong>hemorragias en astilla</strong> subungueales), <strong>lesiones de Janeway</strong>, <strong>nódulos de Osler</strong> y <strong>manchas de Roth</strong> <span class="cite">p. 564</span>.</li>
+</ul>
+<h3 id="etnb-y-libman-sacks">ETNB y Libman-Sacks</h3>
+<ul>
+<li><strong>ETNB ("endocarditis marasmática")</strong>: trombos estériles de 1-5 mm, no destructivos, sobre <strong>válvulas normales</strong>; precursor = estado de hipercoagulabilidad (CID, hiperestrogenismo, <strong>adenocarcinomas mucinosos</strong> , con mucina/factor tisular y síndrome de Trousseau ), catéteres. Complicación principal: <strong>embolización sistémica</strong> (encéfalo, corazón) <span class="cite">p. 564-565</span>.</li>
+<li><strong>Libman-Sacks (LES)</strong>: vegetaciones 1-4 mm por depósito de <strong>inmunocomplejos</strong> con valvulitis intensa y <strong>necrosis fibrinoide</strong>; pueden aparecer en cualquier superficie; la lesión persistente produce cicatrices y fusión valvular parecidas a la cardiopatía reumática <span class="cite">p. 565</span>.</li>
+</ul>
+<h3 id="cardiopatía-carcinoide-y-válvulas-protésicas">Cardiopatía carcinoide y válvulas protésicas</h3>
+<ul>
+<li>Síndrome carcinoide (sofocos, diarrea, dermatitis, broncoconstricción por serotonina, calicreína, bradicinina, histamina, prostaglandinas y taquicininas): afecta al corazón en ~<strong>50%</strong> de los casos, solo con <strong>metástasis hepáticas masivas</strong> (el hígado cataboliza los mediadores). Lesiona el <strong>corazón derecho</strong> (el lecho pulmonar degrada los mediadores antes de llegar al izquierdo); corazón izquierdo solo con CIA o tumor carcinoide pulmonar primario. La gravedad de las lesiones se correlaciona con la <strong>serotonina plasmática y el ácido 5-hidroxiindolacético urinario</strong>. Lesiones idénticas: <strong>fenfluramina</strong> (supresor del apetito retirado) y alcaloides ergóticos, que alteran el metabolismo de la serotonina <span class="cite">p. 565-566</span>.</li>
+<li>Lesiones similares a las del carcinoide: placas fibrosas endocárdicas brillantes, blancas, con células de músculo liso y colágeno, miocardio subyacente <strong>indemne</strong> (tinción de Movat: mucopolisacáridos azul-verdosos sobre elástico negro). Clínica derecha: <strong>insuficiencia tricúspide y estenosis pulmonar</strong> <span class="cite">p. 566</span>.</li>
+<li>Prótesis: <strong>mecánicas</strong> (bolas enjauladas, discos oscilantes o bivalvas; flujo no laminar → turbulencia, estasis y trombosis = complicación principal, obliga a anticoagulación crónica con riesgo de ACV hemorrágico; el deterioro estructural es rarísimo) vs <strong>bioprótesis</strong> (válvulas porcinas o pericardio bovino en glutaraldehído, homoinjertos criopreservados; no viables y fallan por <strong>calcificación y desgarro</strong>; cada vez más por catéter, <strong>RTVA</strong>, sin resección de la válvula original). <strong>~60% de los portadores tiene una complicación mayor a los 10 años</strong>. Otras: endocarditis protésica (vegetaciones en la interfase prótesis-tejido con abscesos anulares y fuga paravalvular), cicatrización inadecuada (fuga) o exuberante (obstrucción), desproporción válvula-paciente (estenosis relativa) y <strong>hemólisis intravascular</strong> por cizallamiento [p. 565-567, tabla 12.10, fig. 12.27].</li>
+</ul>
+
+</section><section id="sec-11-miocardiopatias" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 568-574</div>
+<h2>Miocardiopatías</h2>
+<div class="table-wrap" role="region" aria-label="Tabla: Miocardiopatías" tabindex="0"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>FE</th>
+<th>Función</th>
+<th>Causas principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dilatada (MCD)</strong></td>
+<td>&lt;40%</td>
+<td><strong>Sistólica</strong></td>
+<td>Genética (20-50%: <em>TTN</em>, citoesqueleto, lamina A/C), alcohol, miocarditis, periparto, hierro, catecolaminas</td>
+</tr>
+<tr>
+<td><strong>Hipertrófica (MCH)</strong></td>
+<td>50-80%</td>
+<td><strong>Diastólica</strong></td>
+<td>100% genética, autosómica dominante, proteínas sarcoméricas</td>
+</tr>
+<tr>
+<td><strong>Restrictiva</strong></td>
+<td>45-90%</td>
+<td><strong>Diastólica</strong></td>
+<td>Amiloidosis, radiación, sarcoidosis, fibrosis endomiocárdica, idiopática</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: [p. 567, tabla 12.11].</p>
+<h3 id="miocardiopatía-dilatada">Miocardiopatía dilatada</h3>
+<ul>
+<li>La más frecuente (<strong>90%</strong> de las miocardiopatías). Diagnóstico por exclusión de causas isquémicas, valvulares, hipertensivas y congénitas; a menudo se establece solo cuando ya hay IC terminal ("corazón dilatado, poco contráctil e inespecífico") <span class="cite">p. 568</span>.</li>
+<li>Familiar hasta en <strong>50%</strong>; más de 20 genes que codifican proteínas del citoesqueleto, sarcolema y envoltura nuclear; herencia autosómica dominante con <strong>penetrancia variable</strong>, también ligada al X, autosómica recesiva y mitocondrial; los defectos mitocondriales se manifiestan en pediatría y la forma ligada al X (distrofina) después de la pubertad <span class="cite">p. 569</span>.</li>
+<li><strong>Titina</strong>: la proteína humana más grande (~30.000 aminoácidos); atraviesa el sarcómero uniendo las bandas Z y M y actúa como muelle molecular que limita el estiramiento pasivo y da elasticidad al músculo estriado <span class="cite">p. 569</span>.</li>
+<li><strong>Mutaciones truncantes de <em>TTN</em> (titina)</strong> explican ~10-20% de todos los casos de MCD; también distrofina (ligada al X, pospubertad), lamina A/C y defectos mitocondriales (pediátricos) <span class="cite">p. 568-569</span>.</li>
+<li>Otras causas: <strong>miocarditis</strong> (progresión documentada por biopsias seriadas; huellas de Coxsackie B), <strong>alcohol</strong> (toxicidad directa del acetaldehído + beriberi por déficit de tiamina, sin rasgo morfológico distintivo), cobalto, antraciclinas, <strong>miocardiopatía periparto</strong> (tardía en la gestación o en los 5 meses posparto; mediadores antiangiógenos , sFLT1 en preeclampsia, fragmentos de prolactina ), sobrecarga de hierro, catecolaminas (feocromocitoma, cocaína, dopamina), <strong>tako-tsubo o "síndrome del corazón roto"</strong> (disfunción apical tras estrés psicológico extremo, con abombamiento apical en "vasija para atrapar pulpos") <span class="cite">p. 569-570</span>.</li>
+<li>Morfología: cuatro cavidades dilatadas, peso doble o triple, flácido; <strong>trombos murales</strong> (punta del VI) con riesgo tromboembólico; insuficiencia mitral/tricúspide <strong>funcional</strong> por dilatación (no debe haber valvulopatía primaria ni estenosis coronaria que explique la disfunción); micro: hipertrofia variable con núcleos agrandados y algunas células adelgazadas y distendidas, fibrosis intersticial y endocárdica, pequeñas cicatrices subendocárdicas (reparación de necrosis isquémicas por desequilibrio perfusión-demanda de la hipertrofia). La gravedad morfológica <strong>no</strong> refleja el grado de disfunción ni el pronóstico <span class="cite">p. 571</span>.</li>
+<li>Núcleos hipercromáticos muy distorsionados, similares a <strong>"estrellas ninja"</strong>, en la MCD por mutación truncante de titina; su presencia en <strong>≥5%</strong> de los miocardiocitos apoya fuertemente esa causa (hallazgo inespecífico) <span class="cite">p. 571</span>.</li>
+<li>Clínica: FE &lt;25% en fases terminales; 20-50 años; ICC progresiva, arritmias, embolias. Mortalidad anual <strong>10-50%</strong>; responden a resincronización (marcapasos biventricular), DAV y trasplante; el soporte mecánico breve puede inducir mejoría duradera <span class="cite">p. 571-572</span>.</li>
+</ul>
+<h3 id="miocardiopatía-arritmógena">Miocardiopatía arritmógena</h3>
+<ul>
+<li>Autosómica dominante de penetrancia variable; insuficiencia derecha y arritmias con <strong>MSC</strong>; también formas con afectación izquierda. Pared del VD adelgazada por pérdida de miocardiocitos con <strong>sustitución por grasa y fibrosis</strong>; no es una miocardiopatía inflamatoria. Mutaciones de <strong>proteínas desmosómicas</strong> (placoglobina, desmina); síndrome de <strong>Naxos</strong> = miocardiopatía arritmógena + hiperqueratosis palmo-plantar <span class="cite">p. 572</span>.</li>
+</ul>
+<h3 id="miocardiopatía-hipertrófica">Miocardiopatía hipertrófica</h3>
+<ul>
+<li>Prevalencia <strong>1/500</strong>; primera causa de hipertrofia del VI no explicada; disfunción <strong>diastólica</strong> con función sistólica conservada; obstrucción intermitente del tracto de salida en ~1/3. Diagnóstico diferencial: enfermedades por depósito (amiloidosis, Fabry) y estenosis subaórtica senil <span class="cite">p. 572</span>.</li>
+<li>Genética: autosómica dominante, <strong>100% genética</strong>; &gt;400 mutaciones en genes sarcoméricos; la mayoría en <strong>proteína C de unión a miosina (<em>MYBPC3</em>)</strong> y <strong>cadena pesada de β-miosina (<em>MYH7</em>)</strong>, luego TnI, TnT y α-tropomiosina (70-80% de los casos); pronóstico según la mutación específica <span class="cite">p. 572</span>.</li>
+<li>Morfología: <strong>hipertrofia septal asimétrica</strong> (10% concéntrica), cavidad del VI "en plátano", <strong>placa endocárdica fibrosa</strong> subaórtica y engrosamiento de la valva mitral anterior por contacto sistólico (desplazamiento anterior sistólico); micro: miocardiocitos &gt;40 µm (normal ~15 µm), <strong>desorganización de las miofibrillas</strong>, estrechamiento fibrótico de arterias intramurales, fibrosis <span class="cite">p. 573</span>.</li>
+<li>Clínica: disnea de esfuerzo, soplo de eyección sistólico, isquemia focal sin EAC; fibrilación auricular, trombos murales, ACV, IC resistente, arritmias y <strong>MSC , causa principal de muerte súbita en deportistas jóvenes</strong>. Tratamiento: β-bloqueantes, DAI, resección septal quirúrgica o <strong>infarto septal con alcohol</strong> por catéter <span class="cite">p. 573-574</span>.</li>
+<li>Genotipo-fenotipo en miocardiopatías: mutaciones del mismo gen (marcadas en la fig. 12.30) pueden causar MCH o MCD según el lugar y la naturaleza de la mutación; las pruebas genéticas familiares se interpretan con cautela por el alto número de <strong>variantes de significado incierto</strong> <span class="cite">p. 573</span>.</li>
+</ul>
+<h3 id="miocardiopatía-restrictiva-y-afines">Miocardiopatía restrictiva y afines</h3>
+<ul>
+<li>Reducción primaria de la distensibilidad ventricular con función sistólica preservada; se confunde con pericarditis constrictiva y MCH; idiopática o por amiloidosis, sarcoidosis, fibrosis por radiación, tumores metastásicos o errores innatos del metabolismo. Macro: <strong>dilatación biauricular</strong> con ventrículos de tamaño normal (o levemente aumentados) y miocardio anodino; micro: fibrosis intersticial parcheada o difusa. El diagnóstico etiológico a veces exige biopsia endomiocárdica <span class="cite">p. 574</span>.</li>
+<li><strong>Fibrosis endomiocárdica</strong>: niños y adultos jóvenes de África y trópicos, la forma más frecuente en el mundo; fibrosis desde la punta hacia las válvulas AV, relacionada con déficit nutricional e hipereosinofilia parasitaria <span class="cite">p. 574</span>.</li>
+<li><strong>Endomiocarditis de Löffler</strong>: igual morfología + <strong>eosinofilia periférica</strong> y trombos murales grandes; la <strong>proteína básica principal eosinofílica</strong> necrosa el endomiocardio; asociada a síndromes mieloproliferativos con reordenamientos de <strong>PDGFR</strong> (tratables con inhibidores de tirosina quinasa) <span class="cite">p. 574</span>.</li>
+<li><strong>Fibroelastosis endocárdica</strong>: primeros 2 años de vida, endocardio del VI fibroelástico; 1/3 se asocia a obstrucción de la válvula aórtica u otras CPC; posible punto final común de infecciones víricas (parotiditis intrauterina) o mutaciones del gen de la <strong>tafacina</strong> <span class="cite">p. 574</span>.</li>
+<li><strong>Amiloidosis cardiaca</strong>: restrictiva; por amiloidosis sistémica (mieloma) o <strong>senil por transtiretina</strong> (≥70 años, mejor pronóstico). La mutación <strong>V122I de la transtiretina</strong> (4% de los afroamericanos) causa forma familiar autosómica dominante. Presentación variable: restrictiva, dilatada, arrítmica o simulando CPI/valvulopatía según el sitio del depósito (intersticio, conducción, vasos, válvulas). Micro: material eosinófilo hialino perimiocelular; <strong>rojo Congo con birrefringencia verde manzana</strong>; el amiloide vascular puede ocluir arteriolas intramurales ("enfermedad de pequeños vasos") <span class="cite">p. 574</span>.</li>
+</ul>
+
+</section><section id="sec-12-miocarditis-y-otras-miocardiopatias" class="card">
+<div class="section-kicker"><span class="n">12</span> pp. 575-577</div>
+<h2>Miocarditis y otras miocardiopatías</h2>
+<ul>
+<li>En EE. UU., la causa más frecuente es <strong>vírica</strong>: <strong>Coxsackie A y B</strong> y otros enterovirus; también CMV, VIH y gripe. Lesión por efecto citopático directo o respuesta inmunitaria destructora; las citocinas pueden causar disfunción desproporcionada al daño <span class="cite">p. 575</span>.</li>
+<li><strong>Enfermedad de Chagas</strong> (<em>Trypanosoma cruzi</em>, Sudamérica): afecta al miocardio en la mayoría de los infectados; ~10% muere en el ataque agudo; la miocarditis crónica inmunitaria lleva a IC en 10-20 años. <strong>Triquinosis</strong> = helmintosis más asociada a miocarditis. <strong>Difteria</strong>: toxina de <em>Corynebacterium diphtheriae</em>. <strong>Lyme</strong> (<em>Borrelia</em>): miocarditis en ~5%, bloqueo autolimitado que a veces precisa marcapasos temporal <span class="cite">p. 575</span>.</li>
+<li>No infecciosas: hipersensibilidad a fármacos (metildopa, sulfonamidas), LES, rechazo de trasplante, <strong>inhibidores del punto de control inmunitario</strong> (miocarditis linfocítica, con frecuencia mortal), sarcoidosis y <strong>miocarditis de células gigantes</strong> <span class="cite">p. 575</span>.</li>
+<li>Clínica: de asintomática (recuperación completa) a IC aguda, arritmias y MSC; formas intermedias con cansancio, disnea, palpitaciones, molestias precordiales y fiebre; puede <strong>imitar un IM agudo</strong>; puede evolucionar a <strong>MCD</strong> como complicación tardía. Macro: corazón normal o dilatado, flácido, moteado por focos pálidos o hemorragias minúsculas, a veces trombos murales <span class="cite">p. 576</span>.</li>
+<li>Morfología: corazón normal o dilatado; infiltrado intersticial + degeneración/apoptosis de miocardiocitos. <strong>Linfocítica</strong> (la más frecuente, difusa); <strong>por hipersensibilidad</strong>: eosinófilos perivasculares e intersticiales; <strong>de células gigantes</strong>: macrófagos multinucleados (fusionados), linfocitos, eosinófilos y macrófagos con pérdida extensa de músculo , el extremo fulminante del espectro, mal pronóstico; <strong>Chagas</strong>: tripanosomas distendiendo miofibrillas con inflamación mixta discreta. Las zonas mayores de necrosis con edema reflejan lesión vascular con isquemia secundaria. La biopsia endomiocárdica puede ser <strong>falsamente negativa</strong> (inflamación parcheada); si el paciente sobrevive, las lesiones se resuelven o se reparan con fibrosis <span class="cite">p. 576</span>.</li>
+<li>Clínica: de asintomática a IC aguda, arritmias y MSC; puede imitar un IM agudo; puede evolucionar a <strong>MCD</strong> <span class="cite">p. 576</span>.</li>
+<li><strong>Antraciclinas</strong> (doxorubicina, daunorubicina): MCD por daño directo, <strong>dependiente de dosis</strong> (riesgo al superar la dosis acumulada de 250 mg/m²); también litio, fenotiacinas y cloroquina (idiosincrásicas, a veces MSC). Hallazgos: tumefacción de miofibrillas, vacuolización citoplásmica y cambio graso; la suspensión suele revertir, pero el daño extenso evoluciona a MCD <span class="cite">p. 577</span>.</li>
+<li><strong>Radiación</strong>: fibrosis por radicales libres de cualquiera de las estructuras cardiacas → ateroesclerosis acelerada, estenosis valvular, constricción pericárdica y miocardiopatía restrictiva por fibrosis intersticial <span class="cite">p. 577</span>.</li>
+<li><strong>Miocardiopatías secundarias</strong> (tabla 12.12): infecciones (virus, Clamydia, rickettsias, bacterias, hongos, protozoos, helmintos), tóxicos (alcohol, cobalto, catecolaminas, monóxido de carbono, litio, arsénico, ciclofosfamida, antraciclinas), metabólicos (tiroides, potasio, carencias nutricionales, hemocromatosis), neuromusculares (<strong>ataxia de Friedreich</strong>, distrofias musculares), depósito (Hunter-Hurler, glucógeno, <strong>Fabry</strong>, amiloidosis), infiltrantes (leucemia, carcinomatosis, sarcoidosis, radiación), inmunitarios (miocarditis, rechazo postrasplante) [p. 568, tabla 12.12].</li>
+</ul>
+
+</section><section id="sec-13-enfermedad-pericardica" class="card">
+<div class="section-kicker"><span class="n">13</span> pp. 577-578</div>
+<h2>Enfermedad pericárdica</h2>
+<ul>
+<li>Pericardio normal: <strong>&lt;50 ml</strong> de líquido seroso "color de paja". El pericardio puede distenderse con líquido seroso (derrame), sangre (<strong>hemopericardio</strong>) o pus (pericarditis purulenta). En cardiomegalia o acumulación lenta el saco se remodela: derrames crónicos &lt;500 ml solo dan un contorno cardiaco globular en la radiografía. Con acumulación <strong>rápida</strong>, 200-300 ml (IM roto, disección aórtica) comprimen aurículas, cavas y ventrículos → llenado comprometido y <strong>taponamiento cardiaco</strong> mortal <span class="cite">p. 577</span>.</li>
+<li><strong>Pericarditis aguda</strong> (tabla 12.14): infecciosa (virus, piógenos, tuberculosis, hongos, otros parásitos), inmunomediada (fiebre reumática, LES, esclerodermia, postcardiotomía, Dressler, hipersensibilidad a fármacos) y miscelánea (IM, uremia, cirugía cardiaca, neoplasias, traumatismos, radiación). La tuberculosis y los hongos cursan preferentemente como pericarditis crónicas <span class="cite">p. 577</span>.</li>
+<li><strong>Serosa</strong>: enfermedades inflamatorias no infecciosas (fiebre reumática, LES, esclerodermia), tumores (por invasión linfática o extensión directa; puede haber células neoplásicas en el derrame) y uremia; también irritación desde infecciones contiguas (pleuritis bacteriana). Infiltrado linfocitario leve en la grasa epipericárdica; casi nunca se organiza en adherencias. La pericarditis vírica primaria (adultos jóvenes) a veces se acompaña de miocarditis (<strong>miopericarditis</strong>), tras un cuadro de vías respiratorias altas, pulmón o parótida <span class="cite">p. 577-578</span>.</li>
+<li><strong>Fibrinosa/serofibrinosa</strong> (la más frecuente): IM agudo, síndrome de Dressler, uremia, fiebre reumática, LES, traumatismos y cirugía cardiaca; también la radioterapia de mama, pulmón o mediastino. Clínica: dolor punzante pleurítico dependiente de la posición, fiebre, a veces IC, y el <strong>roce pericárdico</strong> como hallazgo más llamativo (que puede desaparecer si el derrame separa las capas) <span class="cite">p. 578</span>.</li>
+<li><strong>Purulenta</strong>: extensión directa (empiema, neumonía lobular, infecciones mediastínicas, absceso anular), siembra hematógena, vía linfática o cardiotomía; exudado turbio hasta 500 ml, focos caseosos si es tuberculosa; superficies enrojecidas y granulares; la resolución completa es infrecuente y suele organizarse en <strong>pericarditis constrictiva</strong>. Clínica: como la fibrinosa, más fiebre en picos y escalofríos. <strong>Hemorrágica</strong>: más frecuente por invasión neoplásica; la citología del líquido de la ventana pericárdica muestra a menudo células neoplásicas; también en infecciones bacterianas, diátesis hemorrágicas, tuberculosis y cirugía cardiaca (a veces taponamiento que exige reintervención) <span class="cite">p. 578</span>.</li>
+<li><strong>Crónica</strong>: organización de la inflamación → "placas de soldado" y adherencias delicadas inocuas, o <strong>pericarditis adhesiva</strong> que oblitera el saco sin efectos; <strong>mediastinopericarditis adhesiva</strong> (tras pericarditis infecciosa, cirugía o radiación): el corazón tira del pericardio parietal y de las estructuras fijadas , retracción sistólica de caja costal y diafragma, pulso paradójico, hipertrofia y dilatación por mayor carga <span class="cite">p. 578</span>.</li>
+<li><strong>Pericarditis constrictiva</strong>: corazón encerrado en una cicatriz fibrosa o fibrocalcificada de hasta <strong>1 cm</strong> de espesor que oblitera el espacio pericárdico y limita la expansión diastólica y el gasto , imita una miocardiopatía restrictiva; no siempre hay antecedente de pericarditis. En casos extremos, "concretio cordis" (molde de escayola). Sin posibilidad de hipertrofiarse ni dilatarse; gasto reducido incluso en reposo y sin reserva de demanda. Signos: ruidos cardiacos distantes o apagados, ingurgitación yugular, edemas. Tratamiento: <strong>resección quirúrgica de la coraza fibrosa</strong> <span class="cite">p. 578</span>.</li>
+</ul>
+
+</section><section id="sec-14-tumores-del-corazon" class="card">
+<div class="section-kicker"><span class="n">14</span> pp. 579-580</div>
+<h2>Tumores del corazón</h2>
+<ul>
+<li>Los tumores primarios son raros y mayoritariamente <strong>benignos</strong>; cinco tumores cubren el <strong>90%</strong>: en orden de frecuencia (poblaciones pediátrica y adulta juntas) , <strong>mixoma, fibroma, lipoma, fibroelastoma papilar y rabdomioma</strong>. Los malignos son casi siempre <strong>angiosarcomas o sarcomas indiferenciados con amplificación de <em>MDM2</em></strong>, sin rasgos clínicos ni morfológicos distintos de sus homólogos extracardiacos <span class="cite">p. 579</span>.</li>
+<li><strong>Mixoma</strong>: el tumor primario más frecuente del <strong>adulto</strong>; neoplasia benigna de células mesenquimatosas multipotenciales primitivas; ~90% en aurículas (AI:AD = 4:1), clásicamente en la <strong>fosa oval</strong>; únicos o múltiples, de &lt;1 cm a ~10 cm, sésiles o pediculados; desde masas duras globulares con moteado hemorrágico a lesiones gelatinosas vellosas. El pediculado es móvil y se desplaza en sístole al orificio AV, causando <strong>obstrucción intermitente dependiente de la posición</strong> ("válvula-esfera") <span class="cite">p. 579</span>.</li>
+<li>Mixoma, micro y clínica: células estrelladas o globulares en matriz rica en mucopolisacáridos ácidos, estructuras peculiares similares a vasos o glándulas, hemorragia e inflamación mononuclear. Clínica: obstrucción, embolización (a veces el primer aviso) y <strong>síntomas constitucionales (fiebre, malestar) por IL-6</strong>. El ecocardiograma lo identifica sin invasión; la resección es curativa y la recidiva (meses a años) sugiere resección incompleta <span class="cite">p. 579</span>.</li>
+<li>Familiares: mutaciones activadoras de <em>GNAS1</em> (síndrome de McCune-Albright) o nulas de <em>PRKAR1A</em> (subunidad reguladora de proteína cinasa dependiente de AMPc; <strong>complejo de Carney</strong>) <span class="cite">p. 579</span>.</li>
+<li><strong>Fibroelastoma papilar</strong>: tumor endocárdico benigno en "anémona de mar", con anomalías citogenéticas clonales que confirman su naturaleza neoplásica; &gt;80% en válvulas (superficie <strong>ventricular</strong> de las semilunares, <strong>auricular</strong> de las auriculoventriculares), 1-2 cm, proyecciones similares a cabellos de hasta 1 cm sobre un centro mixoide con mucopolisacáridos y fibras elásticas; generalmente incidental, pero puede embolizar; se asemejan a las <strong>excrecencias de Lambl</strong>, más pequeñas y triviales <span class="cite">p. 579</span>.</li>
+<li><strong>Rabdomioma</strong>: el tumor primario más frecuente en <strong>pediatría</strong>; se descubre en los primeros años por obstrucción al flujo; <strong>50% mutaciones esporádicas, 50% asociado a esclerosis tuberosa</strong> (<em>TSC1</em>/hamartina, <em>TSC2</em>/tuberina; inhiben <strong>mTOR</strong>, cinasa que regula el crecimiento y tamaño celular); múltiples, ventriculares, gris blanquecinos, con miocardiocitos gigantes abigarrados cargados de glucógeno cuyo procesamiento deja la apariencia de <strong>"células araña"</strong>; involucionan espontáneamente , más hamartomas que neoplasias verdaderas <span class="cite">p. 579-580</span>.</li>
+<li><strong>Metástasis</strong>: presentes en ~<strong>5%</strong> de los fallecidos por cáncer; más frecuentes: pulmón, mama, melanoma, leucemias y linfomas; llegan por vía linfática retrógrada desde el mediastino (carcinomas), siembra hematógena, extensión contigua directa (intratorácicos) o venosa (hígado, riñón). Clínica: derrame pericárdico sintomático o efecto de masa restrictiva; arritmias; carcinoma broncógeno o linfoma pueden obstruir la vena cava superior (<strong>síndrome de la vena cava superior</strong>); el carcinoma de células renales crece como columna continua por la vena cava inferior hasta la aurícula derecha <span class="cite">p. 580</span>.</li>
+</ul>
+
+</section><section id="sec-15-trasplante-cardiaco-y-dispositivos" class="card">
+<div class="section-kicker"><span class="n">15</span> pp. 580-581</div>
+<h2>Trasplante cardiaco y dispositivos</h2>
+<ul>
+<li>Indicaciones principales: MCD y CPI; &gt;3.500 trasplantes/año en el mundo. Tres factores mejoraron los resultados desde el primer trasplante (1967): inmunodepresión eficaz (inhibidores de la calcineurina, de mTOR, glucocorticoides), selección minuciosa de candidatos y <strong>biopsia endomiocárdica</strong> <span class="cite">p. 580</span>.</li>
+<li><strong>Rechazo celular</strong>: inflamación linfocítica intersticial con daño de miocardiocitos (parece miocarditis); también edema intersticial por lesión vascular y citocinas que reducen la contractilidad sin daño celular. <strong>Rechazo mediado por anticuerpos</strong>: anticuerpos anti-CPH del donante → lesión endotelial con trombosis microvascular; hallazgos sutiles (endotelio activado, neutrófilos y monocitos adheridos, edema perivascular), confirmado con <strong>C4d</strong> inmunohistoquímico. El rechazo leve resuelve espontáneamente; el grave requiere aumentar la inmunodepresión o inmunoterapia anti-linfocitos T/B ± plasmaféresis <span class="cite">p. 581</span>.</li>
+<li><strong>Rechazo celular</strong>: inflamación linfocítica intersticial con daño de miocardiocitos (parece miocarditis). <strong>Rechazo mediado por anticuerpos</strong>: edema perivascular con escasas células intravasculares; confirmado con <strong>C4d</strong> inmunohistoquímico. La biopsia rutinaria es la única forma fiable de detectar el rechazo agudo reversible <span class="cite">p. 581</span>.</li>
+<li><strong>Vasculopatía del aloinjerto</strong>: la limitación a largo plazo más importante; proliferación intimal tardía, progresiva y difusa de las coronarias por respuestas inmunitarias que inducen factores de crecimiento sobre el músculo liso; <strong>50% a los 5 años y prácticamente todos a los 10</strong>; causa IM <strong>silentes</strong> (corazón denervado, sin angina), IC o MSC. Otras complicaciones: infecciones y <strong>linfomas B asociados a EBV</strong> por inmunodepresión T crónica. Supervivencia: <strong>90% al año, &gt;70% a los 5 años</strong> <span class="cite">p. 581</span>.</li>
+<li>Dispositivos: marcapasos, DAI, endoprótesis, <strong>RTVA</strong> y <strong>DAV</strong> (puente al trasplante o "tratamiento final" en no candidatos, p. ej., con antecedente oncológico). Riesgos comunes a todo dispositivo: fallo mecánico (fractura de puntales, rotura de cables), <strong>trombosis</strong> oclusiva o embólica e <strong>infección</strong> persistente sobre cuerpo extraño <span class="cite">p. 581</span>.</li>
+</ul>
+
+</section><section id="sec-16-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">16</span> pp. 528-581</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Pesos cardiacos: mujer 250-320 g, hombre 300-360 g; hipertrofia septal &gt;2,0 cm y peso &gt;500 g sugieren cardiopatía hipertensiva <span class="cite">p. 528, 555</span>.</li>
+<li><strong>No confundir hipertrofia concéntrica (presión, sarcómeros en paralelo) con hipertrofia excéntrica/dilatación (volumen, sarcómeros en serie)</strong>; en corazones dilatados mide el peso, no el espesor de pared <span class="cite">p. 530</span>.</li>
+<li>FE normal 45-65%; MCD terminal con FE &lt;25%; hipertrófica 50-80%; restrictiva 45-90% <span class="cite">p. 530, 567, 571</span>.</li>
+<li>El miocardiocito hipertrófiado no gana capilares proporcionales → isquemia de demanda; además hay fibrosis intersticial (rigidez diastólica) y expresión del programa génico fetal (miosina fetal, péptidos natriuréticos, colágeno) junto a genes inmediatos-tempranos (<em>FOS, JUN, MYC, EGR1</em>) <span class="cite">p. 531</span>.</li>
+<li>En el IM, el miocardio viable circundante se hipertrofia para compensar la masa perdida (remodelación ventricular); los IECA atenúan esa remodelación desfavorable <span class="cite">p. 553</span>.</li>
+<li>La hipertrofia fisiológica del ejercicio aeróbico conserva (aumenta) la densidad capilar; la patológica no <span class="cite">p. 532</span>.</li>
+<li>"Células de la insuficiencia cardiaca" = macrófagos alveolares con hemosiderina (IC izquierda); "hígado en nuez moscada" = congestión centrolobulillar (IC derecha) <span class="cite">p. 532-533</span>.</li>
+<li>Corazón pulmonar agudo = embolia masiva (dilatación sin hipertrofia); crónico = pared del VD ≥1,0 cm <span class="cite">p. 556</span>.</li>
+<li>CIV es la CPC más frecuente (42%) y las CIA la malformación más frecuente diagnosticada <strong>en el adulto</strong> (las CIV pequeñas suelen cerrar solas) <span class="cite">p. 535, 537</span>.</li>
+<li>CIA: 90% secundum, 5% primum, 5% seno venoso; CIV: 90% membranosa <span class="cite">p. 537-538</span>.</li>
+<li>CAP cierra a 1-2 días por caída de prostaglandina E; se cierra con inhibidores de prostaglandinas y se <strong>mantiene abierto con prostaglandina E</strong> en cardiopatías con tracto de salida obstructivo <span class="cite">p. 538</span>.</li>
+<li>Los 5 cortocircuitos derecha-izquierda cianóticos llevan "T" en el nombre (Fallot, TGA, tronco, tricúspide atresiada, TAPVR) <span class="cite">p. 536</span>.</li>
+<li>Eisenmenger: cortocircuito izq-der que se invierte por enfermedad vascular pulmonar; una vez instaurado, el defecto es <strong>irreparable</strong> salvo trasplante corazón-pulmón <span class="cite">p. 536</span>.</li>
+<li>TF: 25% de cayado aórtico derecho; sin cirugía, 10% vivo a los 20 años; la estenosis subpulmonar "protege" el pulmón y descomprime el VD <span class="cite">p. 538-539</span>.</li>
+<li>D-TGA: VD actúa como ventrículo sistémico (hipertrofia) y VI se vuelve atrófico; 35% con CIV se estabiliza, 65% depende de septostomía con balón <span class="cite">p. 539-540</span>.</li>
+<li>Coartación: 2:1 varones, Turner, 50% con válvula bicúspide, muescas costales por colaterales intercostales; preductal = lactante con CAP (cianosis inferior), posductal = adulto con HTA en brazos <span class="cite">p. 540-541</span>.</li>
+<li>Síndrome de corazón izquierdo hipoplásico: estenosis/atresia aórtica grave + VI y aorta hipoplásicos + fibroelastosis; mortalidad si se cierra el CAP en la primera semana <span class="cite">p. 541</span>.</li>
+<li>DiGeorge = 22q11.2/<em>TBX1</em>; Down = trisomía 21 (40% con cardiopatía); Holt-Oram = <em>TBX5</em>; Noonan = <em>PTPN11/KRAS</em>; Alagille = <em>JAG1/NOTCH2</em>; VAB = <em>NOTCH1</em> <span class="cite">p. 535-536, 559</span>.</li>
+<li>Estenosis coronaria <strong>crítica = &gt;70%</strong> del área para angina de esfuerzo; <strong>&gt;90%</strong> produce isquemia en reposo <span class="cite">p. 542</span>.</li>
+<li>Cronología del IAM: contractilidad perdida a 1-2 min; necrosis a 20-30 min; necrosis subendocárdica primero; extensión máxima a 3-6 h <span class="cite">p. 545</span>.</li>
+<li>Troponinas: suben 2-4 h, pico 24-48 h; con reperfusión, pico más alto y más temprano. La CK-MB quedó desplazada. La troponina también sube en miocarditis, TEP, sepsis e insuficiencia renal (usar cinética seriada) <span class="cite">p. 550</span>.</li>
+<li><strong>No confundir las bandas de contracción (reperfusión, miocardiocito muerto) con la necrosis de bandas de contracción "marginal" de 12-24 h</strong> , en ambas el mecanismo es la hipercontractura por calcio sin ATP <span class="cite">p. 547, 550</span>.</li>
+<li>Rotura del IAM: días 3-7, pared libre &gt; tabique &gt; músculo papilar; primer IM y sin hipertrofia del VI son factores de riesgo <span class="cite">p. 551</span>.</li>
+<li>Aneurisma ventricular: asociado a trombo mural y arritmias, <strong>nunca se rompe</strong> <span class="cite">p. 552</span>.</li>
+<li>IM de la ACD (inferior): sospechar bloqueos de conducción e infarto de VD; IM anterior (DAI): rotura, trombo mural, aneurisma <span class="cite">p. 552</span>.</li>
+<li>MSC: 180.000-450.000/año en EE. UU.; el 80-90% de los reanimados no tiene necrosis; miocarditis y prolapso mitral en jóvenes <span class="cite">p. 555</span>.</li>
+<li>Brugada: <em>SCN5A</em>, MSC en reposo o sueño; QT largo: sincopes con estrés (algunos con natación); TVPC: <em>RYR2/CASQ2</em>, con estrés <span class="cite">p. 554</span>.</li>
+<li>Estenosis aórtica grave: área 0,5-1 cm² (normal ~4 cm²); supervivencia tras síntomas: 5 años (angina), 3 (sincope), 2 (IC). Sin fusión de comisuras (a diferencia de la reumática) <span class="cite">p. 558-559</span>.</li>
+<li>PVM: chasquido mesosistólico; 3% complica con EI, insuficiencia, embolia o arritmias; capa esponjosa mixomatosa <span class="cite">p. 559-560</span>.</li>
+<li>Fiebre reumática: 3% de las faringitis estreptocócicas; criterios de Jones (2 mayores o 1 mayor + 2 menores); la estenosis mitral reumática es "en boca de pez" <strong>con</strong> fusión de comisuras <span class="cite">p. 561-562</span>.</li>
+<li><strong>No confundir las cuatro endocarditis verrugosas</strong> (tabla más arriba): reumática = líneas de cierre; EI = destructiva y grande; ETNB = válvulas normales + hipercoagulabilidad; Libman-Sacks = LES, cualquier cara de la valva <span class="cite">p. 562, 564-565</span>.</li>
+<li>EI: S. viridans sobre válvula dañada; S. aureus sobre válvula normal y en drogadictos (válvulas derechas); protésicas &lt;2 meses = estafilococos coagulasa-negativos <span class="cite">p. 563</span>.</li>
+<li>Cardiopatía carcinoide: corazón <strong>derecho</strong> solo (el pulmón degrada los mediadores); corazón izquierdo si hay CIA o tumor carcinoide pulmonar primario <span class="cite">p. 565</span>.</li>
+<li>MCD = proteínas del citoesqueleto y <em>TTN</em> (20% de los casos); MCH = proteínas del sarcomero (<em>MYBPC3</em>, <em>MYH7</em>); conceptualizar: MCD = falla en generación/transmisión de fuerzas; MCH = falla en la transferencia de energía al sarcómero [p. 569-570, fig. 12.30].</li>
+<li>MCH: septo &gt;40 µm de miocardiocitos, desorganización de miofibrillas, "plátano" ventricular; primera causa de MSC en deportistas jóvenes <span class="cite">p. 573</span>.</li>
+<li>Mixoma = fosa oval + IL-6 (fiebre); rabdomioma = esclerosis tuberosa + células araña; mixoma del adulto, rabdomioma del niño <span class="cite">p. 579-580</span>.</li>
+<li>Vasculopatía del aloinjerto: IM <strong>sin dolor</strong> (corazón denervado); rechazo mediado por anticuerpos = <strong>C4d</strong> <span class="cite">p. 581</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Trampas clásicas</span>No confundir CIA con agujero oval persistente (defecto de formación vs falta de cierre, presente en 20% de adultos) ni hipertrofia concéntrica con dilatación. En la estenosis aórtica calcificada no hay fusión de comisuras, a diferencia de la valvulopatía reumática "en boca de pez" <span class="cite">p. 530, 537, 558-562</span>.</div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

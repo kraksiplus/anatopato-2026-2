@@ -1,0 +1,1530 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tubo digestivo · Anatomía Patológica UBB</title>
+<meta name="description" content="Tubo digestivo. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Tubo digestivo · Anatomía Patológica UBB">
+<meta property="og:description" content="Tubo digestivo. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 17. Tubo digestivo</h1>
+    <p class="lede">Guía 07 de 08. Resumen completo del capítulo 17 con 359 citas por página y 64 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>07 de 08</strong></div><div><span>Capítulo</span><strong>17</strong></div><div><span>Páginas</span><strong>753-822</strong></div><div><span>Citas</span><strong>359</strong></div><div><span>Tablas</span><strong>64</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-anomalias-congenitas">Anomalías congénitas</a></li>
+        <li><a href="#sec-03-esofago">Esófago</a></li>
+        <li><a href="#sec-04-estomago">Estómago</a></li>
+        <li><a href="#sec-05-intestino-delgado-y-colon">Intestino delgado y colon</a></li>
+        <li><a href="#sec-06-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="06_Cabeza_Cuello.html" title="Cabeza y cuello">06</a>
+        <a href="08_Higado_Vesicula_Biliar.html" title="Hígado y vesícula biliar">08</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 17 del Robbins y Cotran, 10ª edición: páginas impresas 753-822 (70 páginas), resumidas desde el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Hirschsprung: aganglionosis por fallo de migración de cresta neural, siempre afecta el recto, gen RET, 10% en síndrome de Down; riesgo vital por enterocolitis y perforación <span class="cite">p. 755-756</span>.</li><li>Esófago de Barrett: metaplasia intestinal con células caliciformes por ERGE crónica; de él nace la mayoría de los adenocarcinomas esofágicos (distales); TP53 y CDKN2A tempranos <span class="cite">p. 761-762</span>.</li><li>Gastritis por H. pylori: antral con ácido aumentado (úlcera); la atrófica autoinmunitaria respeta el antro, da aclorhidria, anticuerpos antifactor intrínseco y anemia perniciosa <span class="cite">p. 767-769</span>.</li><li>Adenocarcinoma gástrico: tipo intestinal (vía APC/Wnt) vs difuso (CDH1, anillo de sello, linitis plástica); metástasis de Virchow, hermana María José y Krukenberg <span class="cite">p. 774-776</span>.</li><li>Cáncer colorrectal: secuencia adenoma-carcinoma vía APC/Wnt en ~80% de los esporádicos; vía alternativa MSI por defecto de reparación (MLH1, MSH2; síndrome de Lynch) <span class="cite">p. 812-815</span>.</li><li>Mallory-Weiss (desgarro mucoso, ~10% de las HDA) no es Boerhaave (rotura transparietal que imita infarto de miocardio) <span class="cite">p. 758</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 754-812</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La <strong>atresia esofágica</strong> aparece en <strong>1-5 de cada 10.000 nacidos vivos</strong> y suele asociarse a <strong>fístula traqueoesofágica</strong>; cualquier forma provoca aspiración, asfixia, neumonía y desequilibrios hidroelectrolíticos, y obliga a buscar otras malformaciones (VACTERL) <span class="cite">p. 754</span>.</li>
+<li>El <strong>divertículo de Meckel</strong> es el divertículo verdadero y la anomalía congénita más frecuente del TD (regla de los 2); la <strong>ectopia gástrica</strong> en su interior produce úlcera péptica y hemorragia oculta <span class="cite">p. 755</span>.</li>
+<li>La <strong>estenosis hipertrófica congénita del píloro</strong> (1/300-900 nacidos vivos, 3-5× en hombres) se manifiesta entre la 3ª y 6ª semanas con vómitos no biliosos en escopetazo; la <strong>miotomía es curativa</strong> <span class="cite">p. 755</span>.</li>
+<li>La <strong>enfermedad de Hirschsprung</strong> (1/5.000 nacidos vivos) es una aganglionosis por fallo de migración de células de la cresta neural; <strong>siempre afecta al recto</strong>; mutaciones de <em><strong>RET</strong></em> explican los familiares y ~15% de los esporádicos; 10% ocurre en <strong>síndrome de Down</strong>; riesgo vital: enterocolitis, perforación y peritonitis <span class="cite">p. 755-756</span>.</li>
+<li>La <strong>acalasia</strong> (relajación incompleta del EEI + aumento de tono + aperistaltismo) primaria es por degeneración de neuronas productoras de óxido nítrico; la forma secundaria clásica es la <strong>enfermedad de Chagas</strong> por destrucción del plexo mientérico por <em>Trypanosoma cruzi</em> <span class="cite">p. 757-758</span>.</li>
+<li><strong>Mallory-Weiss</strong> (desgarro mucoso, ~10% de las hemorragias digestivas altas) ≠ <strong>Boerhaave</strong> (rotura transparietal del esófago distal, grave, imita infarto de miocardio) <span class="cite">p. 758</span>.</li>
+<li>La <strong>ERGE</strong> es la causa más frecuente de esofagitis (prevalencia 10-20% en Occidente); la <strong>esofagitis eosinófila</strong> se asocia a atopia y no aumenta el riesgo de esófago de Barrett <span class="cite">p. 759-760</span>.</li>
+<li>El <strong>esófago de Barrett</strong> (metaplasia intestinal con <strong>células caliciformes</strong>) aparece hasta en 10% de las ERGE sintomáticas y 2% de la población general; la mayoría de los <strong>adenocarcinomas esofágicos</strong> nacen en él; <em>TP53</em> y <em>CDKN2A</em> se alteran temprano <span class="cite">p. 761-762</span>.</li>
+<li>El <strong>carcinoma epidermoide esofágico</strong> se localiza en el <strong>tercio medio</strong> y se asocia a alcohol, tabaco, pobreza, acalasia, lesión cáustica y síndrome de Plummer-Vinson; supervivencia a 5 años &lt;20% (adenoCa &lt;25%) <span class="cite">p. 762-764</span>.</li>
+<li>La <strong>gastritis por <em>H. pylori</em></strong> es la causa más frecuente de gastritis crónica: <strong>antral</strong>, con ácido normal o aumentado (riesgo de úlcera); la <strong>gastritis atrófica autoinmunitaria</strong> respeta el antro, produce aclorhidria, hipergastrinemia, anticuerpos antifactor intrínseco y <strong>anemia perniciosa</strong> <span class="cite">p. 767-769</span>.</li>
+<li>El <strong>adenocarcinoma gástrico</strong> tipo <strong>intestinal</strong> (masas voluminosas, metaplasia intestinal, vía <em>APC</em>/<em>Wnt</em>) vs tipo <strong>difuso</strong> (anillo de sello, <em><strong>CDH1</strong></em>, linitis plástica); metástasis típicas: <strong>ganglio de Virchow, nódulo de la hermana María José, tumor de Krukenberg</strong> <span class="cite">p. 774-776</span>.</li>
+<li>En colon, el <strong>adenoma es el precursor</strong> del adenocarcinoma (secuencia adenoma-carcinoma, vía <em>APC</em>/<em>Wnt</em> en ~80% de los esporádicos); la vía alternativa es la <strong>inestabilidad de microsatélites (MSI)</strong> por defecto de reparación de errores de emparejamiento (<em>MSH2</em>, <em>MLH1</em>; síndrome de Lynch) <span class="cite">p. 812-815</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-anomalias-congenitas" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 754-756</div>
+<h2>Anomalías congénitas</h2>
+<p>Atresia, fístulas y duplicaciones pueden aparecer en cualquier parte del TD; cuando afectan al esófago se descubren al nacer por regurgitación y son incompatibles con la vida sin corrección quirúrgica inmediata <span class="cite">p. 754</span>.</p>
+<ul>
+<li><strong>Atresia esofágica</strong>: no se forma un segmento, queda un cordón delgado sin canalizar; se asocia a <strong>fístula traqueoesofágica</strong>; también puede existir fístula sin atresia. La forma más frecuente es el segmento superior ciego con fístula entre el segmento inferior y la tráquea <span class="cite">p. 754</span>.</li>
+<li>Asociaciones: <strong>VACTERL</strong> (vertebrales, anales, cardiacas, traqueoesofágicas, renales, de extremidades) y <strong>TACRD</strong>. El <strong>ano imperforado</strong> se debe a fallo de involución del diafragma cloacal <span class="cite">p. 754</span>.</li>
+<li><strong>Estenosis</strong>: forma incompleta de atresia; engrosamiento fibroso de la pared. Adquirida por reflujo gastroesofágico crónico, radiación, esclerosis sistémica o lesión cáustica; clínicamente más importante en esófago e intestino delgado <span class="cite">p. 754</span>.</li>
+<li><strong>Hernia diafragmática</strong>: desarrollo incompleto del diafragma (más frecuente a la izquierda) con herniación de vísceras al tórax; puede provocar <strong>hipoplasia pulmonar</strong> mortal <span class="cite">p. 754</span>.</li>
+<li><strong>Onfalocele</strong>: el intestino extraembrionario no regresa; las vísceras (incluido el hígado) se hernian ventralmente cubiertas por <strong>amnios y peritoneo separados por gelatina de Wharton</strong>; asociado a otros defectos y anomalías cromosómicas <span class="cite">p. 754</span>.</li>
+<li><strong>Gastrosquisis</strong>: afecta todas las capas de la pared abdominal, se limita al intestino y aparece como lesión aislada; incidencia en aumento, posiblemente por tabaquismo y químicos agrícolas <span class="cite">p. 754</span>.</li>
+</ul>
+<h3 id="ectopia">Ectopia</h3>
+<ul>
+<li>El sitio más frecuente de <strong>mucosa gástrica ectópica</strong> es el tercio superior del esófago (<strong>parche esofágico</strong>); el ácido puede provocar disfagia, esofagitis, esófago de Barrett o, rara vez, adenocarcinoma <span class="cite">p. 755</span>.</li>
+<li><strong>Tejido pancreático ectópico</strong> en esófago o estómago: asintomático o con daño local; en el píloro puede obstruir; puede confundirse con carcinoma infiltrante. <strong>Heterotopia gástrica</strong> en intestino delgado o colon: hemorragia oculta por úlcera péptica contigua <span class="cite">p. 755</span>.</li>
+</ul>
+<h3 id="divertículo-de-meckel">Divertículo de Meckel</h3>
+<ul>
+<li><strong>Divertículo verdadero</strong> (las tres capas de la pared) por fallo de involución del <strong>conducto vitelino</strong>; solitario, en la cara <strong>antimesentérica</strong> del íleon <span class="cite">p. 755</span>.</li>
+<li>Regla de los 2: ~2% de la población; &lt;60 cm de la válvula ileocecal; ~5 cm; 2× en hombres; sintomático a los 2 años (solo ~4% sintomático alguna vez) <span class="cite">p. 755</span>.</li>
+<li>Puede contener ectopia pancreática o gástrica; esta segrega ácido y produce úlcera péptica con hemorragia oculta o dolor que imita apendicitis u obstrucción. Los demás divertículos son adquiridos (seudodivertículos), con predominio en el colon sigmoide <span class="cite">p. 755</span>.</li>
+</ul>
+<h3 id="estenosis-pilórica">Estenosis pilórica</h3>
+<ul>
+<li><strong>Congénita (hipertrófica)</strong>: 1/300-900 nacidos vivos, 3-5× en hombres; alta concordancia en gemelos monocigóticos; mayor riesgo con síndrome de Turner y trisomía 18; asociada a <strong>eritromicina o azitromicina</strong> en las primeras 2 semanas de vida <span class="cite">p. 755</span>.</li>
+<li>Clínica: regurgitación, vómitos no biliosos en escopetazo entre la 3ª y 6ª semanas; <strong>masa abdominal dura ovoide de 1-2 cm hasta en 90%</strong>; hiperperistaltismo de izquierda a derecha; diagnóstico por ecografía; hiperplasia de la muscular propia pilórica; <strong>miotomía curativa</strong> <span class="cite">p. 755</span>.</li>
+<li><strong>Adquirida</strong>: en adultos por gastritis antral o úlceras pépticas yuxtapilóricas; carcinomas distales de estómago y páncreas pueden estrechar el piloro por fibrosis o infiltración <span class="cite">p. 755</span>.</li>
+</ul>
+<h3 id="enfermedad-de-hirschsprung">Enfermedad de Hirschsprung</h3>
+<p>Obstrucción funcional por ausencia de células ganglionares (aganglionosis) por detención de la migración de células de la cresta neural o su muerte prematura; faltan el plexo submucoso de <strong>Meissner</strong> y el mientérico de <strong>Auerbach</strong> <span class="cite">p. 755-756</span>.</p>
+<ul>
+<li>Genética: mutaciones de <em><strong>RET</strong></em> (mayoría de los familiares, ~15% de los esporádicos); <em><strong>EDNRB</strong></em> o <em><strong>EDN3</strong></em>; en el síndrome de Down se implica el gen de adhesión celular del cromosoma 21; penetrancia incompleta y genes modificadores (más frecuente en hombres; en mujeres el segmento aganglionar tiende a ser más largo) <span class="cite">p. 756</span>.</li>
+<li>1/5.000 nacidos vivos; 10% en niños con síndrome de Down; lesiones neurológicas graves en 5% de los lactantes <span class="cite">p. 755</span>.</li>
+<li><strong>Morfología</strong>: ausencia histológica de células ganglionares (también por inmunotinción para acetilcolinesterasa); <strong>el recto siempre está afectado</strong>; <strong>segmento corto</strong> (rectosigma) vs <strong>segmento largo</strong>; el colon proximal inervado se dilata (megacolon) y puede romperse cerca del ciego <span class="cite">p. 756</span>.</li>
+<li><strong>Clínica</strong>: fallo en la eliminación de meconio posnatal, luego obstrucción con distensión abdominal y vómitos biliosos; amenazas vitales: <strong>enterocolitis, trastornos hidroelectrolíticos, perforación y peritonitis</strong>. Tratamiento: resección del segmento aganglionar y anastomosis al recto <span class="cite">p. 756</span>.</li>
+<li><strong>Megacolon adquirido</strong>: enfermedad de Chagas (única que comparte la pérdida de células ganglionares), neoplasias, estenosis inflamatoria, colitis ulcerosa, miopatía visceral <span class="cite">p. 756</span>.</li>
+</ul>
+
+</section><section id="sec-03-esofago" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 757-764</div>
+<h2>Esófago</h2>
+<p>Tubo muscular desde la epiglotis hasta la unión gastroesofágica; la clínica puede ser crónica e incapacitante o una molestia ocasional <span class="cite">p. 757</span>.</p>
+<h3 id="obstrucción-esofágica">Obstrucción esofágica</h3>
+<p>Alteración de la motilidad (funcional) en tres tipos <span class="cite">p. 757</span>:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Esófago" tabindex="0"><table>
+<thead>
+<tr>
+<th>Trastorno</th>
+<th>Característica</th>
+<th>Diagnóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Esófago en cascanueces</strong></td>
+<td>Contracciones intensas, de gran amplitud y descoordinadas</td>
+<td>Manometría (el tránsito baritado puede ser normal)</td>
+</tr>
+<tr>
+<td><strong>Espasmo esofágico difuso</strong> ("en sacacorchos")</td>
+<td>Contracciones repetidas y simultáneas del músculo distal, de <strong>amplitud normal</strong></td>
+<td>Tránsito baritado</td>
+</tr>
+<tr>
+<td><strong>Disfunción del esfínter esofágico inferior</strong></td>
+<td>Presión elevada en reposo o relajación incompleta</td>
+<td>Manometría</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>La obstrucción mecánica (estenosis o cáncer) cursa con <strong>disfagia progresiva que comienza con sólidos</strong>; la obstrucción funcional o benigna conserva apetito y peso; las malignas cursan con adelgazamiento <span class="cite">p. 757</span>.</li>
+<li><strong>Divertículo de Zenker</strong>: por espasmo del músculo cricofaríngeo, sobre el esfínter esofágico superior; tras los 50 años, con regurgitación y halitosis <span class="cite">p. 757</span>.</li>
+<li><strong>Membranas esofágicas</strong>: en mujeres &gt;40 años, asociadas a reflujo, EICH o dermatosis ampollosas; en la parte superior del esófago con anemia ferropénica, glositis y queilosis forman el <strong>síndrome de Plummer-Vinson</strong> <span class="cite">p. 757</span>.</li>
+<li><strong>Anillos de Schatzki</strong>: circulares, gruesos, con mucosa, submucosa y a veces muscular; los <strong>anillos A</strong> están sobre la unión gastroesofágica (mucosa escamosa) y los <strong>anillos B</strong> en la unión escamocolumnar <span class="cite">p. 757</span>.</li>
+</ul>
+<h3 id="acalasia">Acalasia</h3>
+<p>Triada: relajación incompleta del EEI, aumento de tono y aperistaltismo; disfagia, dificultad para eructar y dolor torácico; mayor riesgo de cáncer esofágico, insuficiente para justificar vigilancia <span class="cite">p. 757</span>.</p>
+<ul>
+<li><strong>Primaria</strong>: degeneración de neuronas productoras de <strong>óxido nítrico</strong>; posiblemente mediada por destrucción inmunitaria (VHS-1, polimorfismos inmunorreguladores, Sjögren, tiroiditis autoinmunitaria) <span class="cite">p. 757</span>.</li>
+<li><strong>Secundaria</strong>: <strong>Chagas</strong> (<em>T. cruzi</em> destruye el plexo mientérico), neuropatía autónoma diabética, tumores, amiloidosis, sarcoidosis, esclerosis sistémica; <strong>síndrome de Allgrove (triple A)</strong>: acalasia, alacrimia e insuficiencia suprarrenal resistente a ACTH <span class="cite">p. 758</span>.</li>
+<li>Tratamiento: miotomía, dilatación neumática con globo, toxina botulínica <span class="cite">p. 758</span>.</li>
+</ul>
+<h3 id="desgarros-mallory-weiss-y-boerhaave">Desgarros (Mallory-Weiss y Boerhaave)</h3>
+<ul>
+<li><strong>Mallory-Weiss</strong>: desgarros longitudinales de la mucosa cerca de la unión gastroesofágica, por arcadas o vómitos intensos (intoxicación alcohólica); <strong>hasta el 10% de las hemorragias digestivas altas</strong>; no requieren cirugía <span class="cite">p. 758</span>.</li>
+<li><strong>Boerhaave</strong>: desgarro <strong>transparietal</strong> con rotura del esófago distal; dolor torácico intenso, taquipnea y shock, con diagnóstico diferencial de <strong>infarto de miocardio</strong> <span class="cite">p. 758</span>.</li>
+<li>Causas esofágicas de hematemesis (tabla 17.1): Mallory-Weiss, perforación (cáncer o Boerhaave), varices, fístula aortoesofágica (cáncer), esofagitis química/medicamentosa, infecciosa (<em>Cándida</em>, herpes), estenosis benignas, vasculitis (autoinmunitaria, CMV), esofagitis por reflujo, eosinófila, úlceras, esófago de Barrett, adenocarcinoma, carcinoma epidermoide, hernia de hiato <span class="cite">p. 758</span>.</li>
+</ul>
+<h3 id="esofagitis-química-e-infecciosa">Esofagitis química e infecciosa</h3>
+<ul>
+<li>Irritantes: alcohol, corrosivos, líquidos calientes, tabaco; clínica desde <strong>odinofagia</strong> hasta hemorragia, estenosis o perforación; en niños por ingestión accidental de productos de limpieza, en adultos por intento de suicidio <span class="cite">p. 758</span>.</li>
+<li><strong>Esofagitis medicamentosa</strong>: fármacos que se atascan, frecuentemente sobre estenosis; también lesión por quimioterapia, radioterapia o EICH; dermatosis descamativas (penfigoide ampolloso, epidermólisis ampollosa) y raramente Crohn <span class="cite">p. 758</span>.</li>
+<li>Infecciones: en personas sanas, la más frecuente es por <strong>virus del herpes simple</strong>; en inmunodeprimidos, VHS, <strong>CMV</strong> y hongos (<strong>candidiasis</strong> la más frecuente) <span class="cite">p. 758</span>.</li>
+<li>Morfología: candidiasis con <strong>seudomembranas blanco-grisáceas</strong> de hifas apelmazadas; VHS produce <strong>úlceras en sacabocados</strong> con inclusiones nucleares en células epiteliales multinucleadas; CMV, úlceras más superficiales con inclusiones nucleares y citoplásmicas en <strong>células endoteliales</strong> y estromales; bacterias y hongos patógenos explican ~10% de las esofagitis infecciosas <span class="cite">p. 758-759</span>.</li>
+<li>EICH esofágica: apoptosis de células epiteliales basales, atrofia mucosa y fibrosis submucosa sin infiltrado agudo importante <span class="cite">p. 759</span>.</li>
+</ul>
+<h3 id="esofagitis-por-reflujo-erge">Esofagitis por reflujo (ERGE)</h3>
+<p>Causa más frecuente de esofagitis y diagnóstico digestivo ambulatorio más habitual en EE. UU.; el epitelio esofágico es sensible al ácido aunque resistente a la lesión abrasiva <span class="cite">p. 759</span>.</p>
+<ul>
+<li>Patogenia: <strong>relajación transitoria del EEI</strong> mediada por vías vagales, desencadenada por distensión gástrica; también aumentos bruscos de la presión intraabdominal. Factores: alcohol, tabaco, obesidad, depresores del SNC, embarazo, hernia de hiato, vaciamiento gástrico retardado <span class="cite">p. 759</span>.</li>
+<li>Morfología: en la ERGE leve, solo hiperemia con histología normal; con reflujo mayor, erosiones, <strong>eosinófilos intraepiteliales</strong>, hiperplasia de la zona basal y alargamiento de las papilas; los neutrófilos son menos frecuentes y sugieren infección o daño químico <span class="cite">p. 759</span>.</li>
+<li>Prevalencia 10-20% en Occidente y &lt;5% en Asia; más frecuente &gt;40 años; síntomas: <strong>pirosis, disfagia y regurgitación</strong> posprandial; el dolor torácico puede confundirse con cardiopatía isquémica; tratamiento con <strong>inhibidores de la bomba de protones</strong>; la gravedad de los síntomas <strong>no</strong> correlaciona con el daño histológico <span class="cite">p. 760</span>.</li>
+<li><strong>Hernia de hiato</strong>: tipo <strong>deslizante</strong> (la mayoría; la unión gastroesofágica se hernia al tórax) vs <strong>paraesofágica</strong> (defecto de la membrana esofagodiafragmática, requiere cirugía); sintomática en &lt;10% de los adultos <span class="cite">p. 760</span>.</li>
+</ul>
+<h3 id="esofagitis-eosinófila">Esofagitis eosinófila</h3>
+<p>Inflamación aguda con predominio de eosinófilos asociada a <strong>enfermedad atópica</strong> (dermatitis atópica, rinitis alérgica, asma, eosinofilia periférica); los mastocitos también participan <span class="cite">p. 760</span>.</p>
+<ul>
+<li>Incidencia en aumento, sobre todo en zonas urbanas y hombres blancos; síntomas similares a ERGE más <strong>impactación alimentaria</strong>, disfagia y vómitos; en lactantes, intolerancia alimentaria <span class="cite">p. 760</span>.</li>
+<li>Endoscopia: <strong>esófago felino</strong> (anillos circulares apilados), estenosis y surcos lineales; histología: abundantes <strong>eosinófilos intraepiteliales</strong> superficiales en cúmulos y sábanas <span class="cite">p. 760</span>.</li>
+<li>Tratamiento: IBP en dosis altas, dieta de exclusión (leche de vaca, huevo, soja, legumbres, trigo), corticoesteroides tópicos; <strong>no se asocia a mayor riesgo de esófago de Barrett</strong> <span class="cite">p. 760</span>.</li>
+</ul>
+<h3 id="varices-esofágicas">Varices esofágicas</h3>
+<p>Venas dilatadas en el esófago distal por <strong>hipertensión portal</strong>, con canales colaterales porta-cava y congestión de los plexos venosos subepitelial y submucoso <span class="cite">p. 760</span>.</p>
+<ul>
+<li>Habitual en cirrosis (sobre todo hepatopatía alcohólica); la <strong>esquistosomiasis hepática</strong> es la segunda causa más frecuente en el mundo <span class="cite">p. 760</span>.</li>
+<li>Varices gastroesofágicas en 30% de las cirrosis compensadas y 60% de las descompensadas; cada episodio de hemorragia conlleva mortalidad de <strong>15-20%</strong>, y más de la mitad de los sobrevivientes recidivan en 1 año con mortalidad similar <span class="cite">p. 760-761</span>.</li>
+<li>Factores de riesgo de hemorragia: varices grandes o tortuosas, gradiente de presión venosa hepática elevado, hemorragia previa y hepatopatía avanzada; tratamiento: β-bloqueantes, ligadura endoscópica, escleroterapia, taponamiento con globo <span class="cite">p. 761</span>.</li>
+</ul>
+<h3 id="esófago-de-barrett">Esófago de Barrett</h3>
+<p>Complicación de la ERGE crónica: <strong>metaplasia intestinal</strong> en la mucosa escamosa esofágica con mayor riesgo de cáncer; hasta 10% de las ERGE sintomáticas y 2% de la población general; más frecuente en hombres blancos de 40-60 años <span class="cite">p. 761</span>.</p>
+<ul>
+<li>Las biopsias muestran <strong>mutaciones conductoras</strong> compartidas con el adenocarcinoma esofágico; las mutaciones oncógenas son más numerosas cuando hay displasia, asociada a síntomas prolongados, mayor longitud del segmento, mayor edad y raza blanca <span class="cite">p. 761</span>.</li>
+<li>Morfología: <strong>lengüetas de mucosa roja aterciopelada</strong> que ascienden desde la unión gastroesofágica; <strong>segmento largo (≥3 cm)</strong> y <strong>segmento corto (&lt;3 cm)</strong>, este último con menor riesgo de displasia o carcinoma <span class="cite">p. 761</span>.</li>
+<li>Diagnóstico microscópico: <strong>células caliciformes</strong> con vacuolas de moco azul pálido en forma de copa de vino; las células foveolares gástricas sin caliciformes no tienen acuerdo universal como criterio <span class="cite">p. 762</span>.</li>
+<li><strong>Displasia</strong> leve o grave: mitosis atípicas, hipercromatismo, cromatina irregular, elevado índice nucleocitoplásmico, fallo de maduración; la grave agrega glándulas adosadas o cribiformes; la infiltración de la lámina propia define <strong>carcinoma intramucoso</strong> <span class="cite">p. 762</span>.</li>
+<li>Clínica: solo detectable por endoscopia con biopsia; la vigilancia periódica no ha demostrado mejorar la supervivencia general en ensayos aleatorizados; carcinoma intramucoso o infiltrante requiere tratamiento (resección, esofagectomía, terapia fotodinámica, ablación con láser, mucosectomía); la displasia multifocal grave se trata como carcinoma intramucoso <span class="cite">p. 762</span>.</li>
+</ul>
+<h3 id="tumores-esofágicos">Tumores esofágicos</h3>
+<p>Casi todos son adenocarcinomas o carcinomas epidermoides; el epidermoide es más frecuente en el mundo, pero el adenocarcinoma aumenta en EE. UU. y países occidentales; los tumores benignos más frecuentes son los <strong>leiomiomas</strong> <span class="cite">p. 762</span>.</p>
+<h4 id="adenocarcinoma">Adenocarcinoma</h4>
+<ul>
+<li>Nace en el contexto de esófago de Barrett y ERGE de larga duración; otros factores: tabaco y radiación; riesgo reducido con frutas y verduras frescas; algunos serotipos de <em>H. pylori</em> se asocian a <strong>menor riesgo</strong> (atrofia gástrica → menos ácido → menos daño por reflujo) <span class="cite">p. 762</span>.</li>
+<li>Epidemiología: 7× más frecuente en hombres de raza blanca; incidencia máxima en EE. UU., Reino Unido, Canadá, Australia, Países Bajos y Brasil; antes de 1970 era &lt;5% de los cánceres esofágicos, hoy <strong>más de la mitad</strong> en EE. UU. <span class="cite">p. 762</span>.</li>
+<li>Patogenia: progresión prolongada con <strong>TP53</strong> y <strong>CDKN2A</strong> (pérdida alélica o silenciamiento por hipermetilación; codifica p16 y p19-ARF) tempranos y, después, amplificación de <em>EGFR</em>, <em>ERBB2</em>, <em>MET</em>, ciclina D1 y ciclina E <span class="cite">p. 762</span>.</li>
+<li>Morfología: <strong>tercio distal</strong>, a menudo invade el cardias gástrico; masas de 5 cm o más, o infiltrantes/ulceradas; produce mucina y forma glándulas de tipo intestinal; variantes: células en anillo de sello o células pequeñas poco diferenciadas <span class="cite">p. 763</span>.</li>
+<li>Clínica: dolor o dificultad para tragar, adelgazamiento, hematemesis, dolor torácico o vómitos; al presentarse suele haber diseminación a vasos linfáticos submucosos; <strong>supervivencia a 5 años &lt;25%</strong>, pero ~80% si está limitado a mucosa o submucosa <span class="cite">p. 763</span>.</li>
+</ul>
+<h4 id="carcinoma-epidermoide">Carcinoma epidermoide</h4>
+<ul>
+<li>Factores de riesgo: &gt;45 años, hombres 4× (casi 8× en afroamericanos); alcohol y tabaco (sinérgicos), pobreza, lesión cáustica, <strong>acalasia</strong>, síndrome de Plummer-Vinson, dietas pobres en frutas/verduras, bebidas muy calientes; radiación mediastínica previa (5-10 años o más después) <span class="cite">p. 763</span>.</li>
+<li>Incidencia máxima: Irán, centro de China, Hong Kong, Brasil y Sudáfrica; en el oeste de Kenia se relaciona con la leche fermentada <strong>mursik</strong>, que contiene <strong>acetaldehído</strong> <span class="cite">p. 763</span>.</li>
+<li>Patogenia: contribución posible del <strong>VPH</strong> en regiones de alto riesgo; anomalías repetidas: amplificación de <em><strong>SOX2</strong></em>, sobreexpresión de <strong>ciclina D1</strong>, mutaciones con pérdida de función en <em><strong>TP53</strong></em>, <em><strong>CDH1</strong></em> y <em><strong>NOTCH1</strong></em> <span class="cite">p. 764</span>.</li>
+<li>Morfología: la <strong>mitad en el tercio medio</strong>; comienza como <strong>displasia escamosa</strong> (carcinoma in situ); luego placas blanco-grisáceas, masas polipoideas/exofíticas, ulceradas o infiltrantes; puede invadir árbol respiratorio (neumonía), <strong>aorta</strong> (hemorragia catastrófica) o mediastino/pericardio; de moderada a bien diferenciado; nódulos satélite intraparietales a varios centímetros <span class="cite">p. 764</span>.</li>
+<li>Metástasis ganglionares según el tercio: <strong>superior → cervicales; medio → mediastínicos, paratraqueales y traqueobronquiales; inferior → gástricos y celiacos</strong> <span class="cite">p. 764</span>.</li>
+<li>Clínica: aparición lenta; el paciente se adapta cambiando de sólidos a líquidos; puede haber fístula traqueoesofágica con aspiración como primer síntoma; <strong>supervivencia a 5 años 75% en lesiones superficiales</strong>, &lt;20% global en EE. UU. <span class="cite">p. 764</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Barrett: células caliciformes o no hay diagnóstico</span>El diagnóstico microscópico del esófago de Barrett exige células caliciformes con moco en copa de vino; hasta 10% de las ERGE sintomáticas lo desarrollan. La displasia multifocal grave se trata como carcinoma intramucoso <span class="cite">p. 761-762</span>.</div>
+</section><section id="sec-04-estomago" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 764-779</div>
+<h2>Estómago</h2>
+<p>Cuatro regiones: <strong>cardias, fondo, cuerpo y antro</strong>; cardias y antro con células foveolares secretoras de mucina; el antro además tiene <strong>células G</strong> productoras de gastrina que estimulan a las células parietales del fondo y cuerpo <span class="cite">p. 764-765</span>.</p>
+<h3 id="gastropatía-y-gastritis-aguda">Gastropatía y gastritis aguda</h3>
+<p>La <strong>gastritis aguda</strong> se define por presencia de <strong>neutrófilos</strong>; la <strong>gastropatía</strong> cuando las células inflamatorias son infrecuentes o ausentes; causas más habituales de gastropatía: <strong>AINE, alcohol y bilis</strong> <span class="cite">p. 765</span>.</p>
+<ul>
+<li>Defensas de la mucosa: moco y fosfolípidos foveolares, capa de líquido "sin mezclar" con bicarbonato, barrera epitelial, renovación de las células foveolares cada <strong>3-7 días</strong>, flujo sanguíneo mucoso <span class="cite">p. 765</span>.</li>
+<li><strong>AINE</strong>: inhiben la COX y reducen las prostaglandinas E e I, que sostienen la secreción de moco, bicarbonato y fosfolípidos, el flujo sanguíneo y la reposición epitelial; la COX-1 pesa más, pero también los inhibidores selectivos de COX-2 (celecoxib) provocan gastropatía <span class="cite">p. 765</span>.</li>
+<li>Otros: los <strong>iones amonio</strong> (ureasa de <em>H. pylori</em>, uremia) inhiben los transportadores de bicarbonato; hipoxia en grandes alturas; agentes cáusticos; alcohol, radioterapia y quimioterapia dañan directamente el epitelio <span class="cite">p. 765-766</span>.</li>
+<li>Morfología: edema y congestión de la lámina propia, hiperplasia de células foveolares; la presencia de <strong>neutrófilos sobre la membrana basal</strong> indica gastritis (inflamación activa), no gastropatía; erosión + hemorragia = <strong>gastritis hemorrágica erosiva aguda</strong>. El término "agudo" en el TD se refiere a la <strong>duración</strong>, no al patrón inflamatorio <span class="cite">p. 766</span>.</li>
+</ul>
+<h3 id="enfermedad-de-la-mucosa-relacionada-con-el-estrés">Enfermedad de la mucosa relacionada con el estrés</h3>
+<p>Úlceras agudas por sobrecarga fisiológica: traumatismos graves, quemaduras extensas, enfermedad intracraneal, cirugía mayor, enfermedad crítica <span class="cite">p. 766</span>.</p>
+<ul>
+<li>Nombres: <strong>úlceras de Curling</strong> (duodeno proximal, quemaduras o traumatismos), <strong>úlceras de Cushing</strong> (gástricas, duodenales y esofágicas de enfermedad intracraneal, con <strong>alto riesgo de perforación</strong>) <span class="cite">p. 766</span>.</li>
+<li>Patogenia: <strong>isquemia local</strong> (hipotensión, vasoconstricción visceral, <strong>endotelina 1</strong>), estimulación vagal directa con hipersecreción ácida en lesiones intracraneales, acidosis generalizada <span class="cite">p. 766</span>.</li>
+<li>Morfología: úlceras redondeadas <strong>&lt;1 cm</strong>, de base pardo-negra por digestión ácida de sangre extravasada; <strong>múltiples y en cualquier parte del estómago</strong> (a diferencia de las pépticas, solitarias y antrales); sin cicatriz ni engrosamiento vascular; curan con reepitelización completa al corregir la causa <span class="cite">p. 766</span>.</li>
+<li>Clínica: hemorragia que exige transfusión en 1-4% de los pacientes críticos; profilaxis con inhibidores de la bomba de protones; el pronóstico depende de corregir la enfermedad de base <span class="cite">p. 766</span>.</li>
+<li>Otras causas de hemorragia gástrica no por estrés: <strong>lesión de Dieulafoy</strong> (arteriola submucosa anómala en la curvatura menor cerca de la unión gastroesofágica, hemorragia recidivante abundante) y <strong>ectasia vascular antral gástrica (EVAG, "estómago en sandía")</strong>: 4% de las hemorragias digestivas altas no varicosas, capilares dilatados con <strong>trombos de fibrina</strong>, asociada a cirrosis y esclerosis sistémica, con anemia ferropénica <span class="cite">p. 766</span>.</li>
+</ul>
+<h3 id="gastritis-crónica">Gastritis crónica</h3>
+<p>Causas: <em><strong>H. pylori</strong></em> (la más frecuente), gastritis autoinmunitaria, radiación, reflujo biliar crónico, lesión mecánica (sonda nasogástrica), enfermedad de Crohn, amiloidosis, EICH. Síntomas menos graves pero más persistentes que la aguda; la hematemesis es poco frecuente <span class="cite">p. 766-767</span>.</p>
+<h4 id="gastritis-por-helicobacter-pylori">Gastritis por <em>Helicobacter pylori</em></h4>
+<p>Bacilos helicoidales presentes en casi todos los pacientes con úlcera duodenal y en la mayoría con úlcera gástrica o gastritis crónica; la infección aguda suele ser asintomática <span class="cite">p. 767</span>.</p>
+<ul>
+<li>Epidemiología: asociada a pobreza, hacinamiento, bajo nivel educacional, residencia rural, nacimiento fuera de EE. UU. y edad &gt;60 años; transmisión fecal-oral, adquirida en la infancia y persistente sin tratamiento; en países ricos, rara antes de los 10 años, 10% entre 18-30 años y hasta 50% sobre 65 años <span class="cite">p. 767</span>.</li>
+<li>Patogenia: gastritis predominantemente <strong>antral</strong> con ácido normal o aumentado → mayor riesgo de úlcera péptica gástrica o duodenal; si evoluciona a <strong>pangastritis con atrofia</strong>, cae la secreción ácida y protege de las úlceras pero aumenta el riesgo de <strong>adenocarcinoma</strong> (relación inversa entre adenocarcinoma gástrico y úlcera duodenal) <span class="cite">p. 767</span>.</li>
+<li>Virulencia: <strong>flagelos</strong>, <strong>ureasa</strong> (amoniaco a partir de urea, sube el pH local), <strong>adhesinas</strong> y <strong>toxinas</strong>, en particular el gen <strong>CagA</strong>: presente en 50% de los aislados generales pero 90% en poblaciones con alta prevalencia de cáncer gástrico <span class="cite">p. 767</span>.</li>
+<li>Factores del huésped: polimorfismos que aumentan TNF e IL-1β o reducen IL-10 se asocian a pangastritis, atrofia, metaplasia intestinal y cáncer gástrico <span class="cite">p. 767</span>.</li>
+<li>Morfología: bacilos en el moco superficial (mejor con inmunotinciones o Warthin-Starry); el <strong>antro es el sitio de biopsia preferido</strong>; células plasmáticas en sábanas, linfocitos, macrófagos y <strong>neutrófilos intraepiteliales</strong> con abscesos cripticos; <strong>agregados linfoides con centros germinales (MALT)</strong> con riesgo de transformarse en linfoma <span class="cite">p. 767-768</span>.</li>
+<li>Diagnóstico incruento: serología, antígeno fecal y <strong>prueba del aliento con urea</strong>; en biopsia: prueba rápida de ureasa, cultivo o PCR. Tratamiento: antibióticos + inhibidores de la bomba de protones; recaídas por erradicación incompleta o reinfección <span class="cite">p. 768</span>.</li>
+</ul>
+<h4 id="gastritis-atrófica-autoinmunitaria">Gastritis atrófica autoinmunitaria</h4>
+<p>Menos del 10% de las gastritis crónicas; prevalencia 2% en mayores de 60 años; <strong>respeta el antro</strong> y cursa con hipergastrinemia marcada <span class="cite">p. 768</span>.</p>
+<ul>
+<li>Características: anticuerpos contra <strong>células parietales</strong> y <strong>factor intrínseco</strong>; <strong>disminución del pepsinógeno I</strong> sérico; hiperplasia de células endocrinas; deficiencia de vitamina B12; <strong>aclorhidria</strong> <span class="cite">p. 768</span>.</li>
+<li>Patogenia: linfocitos T CD4+ contra la <strong>H+/K+-ATPasa</strong> (bomba de protones) son los principales efectores; la pérdida de factor intrínseco produce malabsorción ileal de vitamina B12 y <strong>anemia perniciosa</strong>; los autoanticuerpos (hasta en 80%) no son patógenos <span class="cite">p. 768-769</span>.</li>
+<li>Morfología: daño difuso de la <strong>mucosa oxíntica de fondo y cuerpo</strong> con antro y cardias respetados; inflamación <strong>profunda, centrada en las glándulas</strong> (a diferencia de la superficial de <em>H. pylori</em>); <strong>metaplasia intestinal</strong> con células caliciformes; <strong>hiperplasia de células endocrinas</strong> que rara vez forma tumores neuroendocrinos (carcinoides) pequeños y multicéntricos <span class="cite">p. 769</span>.</li>
+<li>Clínica: los anticuerpos aparecen 2-3 décadas antes de la atrofia; mediana de edad 60 años, leve predominio femenino; asociada a tiroiditis de Hashimoto, diabetes mellitus tipo 1 y enfermedad de Addison; manifestaciones por deficiencia de B12: anemia megaloblástica, <strong>glositis atrófica</strong>, diarrea por malabsorción, degeneración combinada subaguda de la médula espinal <span class="cite">p. 769</span>.</li>
+</ul>
+<p>Comparación (tabla 17.2) , Fuente: <span class="cite">p. 768</span></p>
+<div class="table-wrap" role="region" aria-label="Tabla: Estómago" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Asociada a <em>H. pylori</em></th>
+<th>Autoinmunitaria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lugar</td>
+<td>Antro</td>
+<td>Cuerpo</td>
+</tr>
+<tr>
+<td>Infiltrado inflamatorio</td>
+<td>Neutrófilos, células plasmáticas subepiteliales</td>
+<td>Linfocitos, macrófagos</td>
+</tr>
+<tr>
+<td>Producción de ácido</td>
+<td>Aumentada o ligeramente disminuida</td>
+<td>Disminuida</td>
+</tr>
+<tr>
+<td>Secreción de gastrina</td>
+<td>Aumentada a notablemente aumentada</td>
+<td>Normal a aumentada</td>
+</tr>
+<tr>
+<td>Otras lesiones</td>
+<td>Pólipos hiperplásicos/inflamatorios</td>
+<td>Hiperplasia neuroendocrina</td>
+</tr>
+<tr>
+<td>Serología</td>
+<td>Anticuerpos contra <em>H. pylori</em></td>
+<td>Anticuerpos contra células parietales (H+/K+-ATPasa, factor intrínseco)</td>
+</tr>
+<tr>
+<td>Secuelas</td>
+<td>Úlcera péptica, atrofia, adenocarcinoma, MALToma</td>
+<td>Anemia perniciosa, adenocarcinoma, tumor carcinoide</td>
+</tr>
+<tr>
+<td>Asociaciones</td>
+<td>Bajo nivel socioeconómico, pobreza, áreas rurales</td>
+<td>Enfermedad autoinmunitaria: tiroiditis, diabetes mellitus, enfermedad de Graves</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="formas-poco-frecuentes-de-gastritis">Formas poco frecuentes de gastritis</h4>
+<ul>
+<li><strong>Eosinófila</strong>: infiltrados densos de eosinófilos en mucosa y muscular, habitualmente antral o pilórica; eosinofilia periférica e IgE elevada; alérgenos típicos en niños: leche de vaca y proteína de soja; también con esclerosis sistémica, miopatía inflamatoria, parasitosis e incluso <em>H. pylori</em> <span class="cite">p. 769</span>.</li>
+<li><strong>Linfocítica</strong>: mujeres, síntomas inespecíficos; ~40% asociada a <strong>enfermedad celiaca</strong>; gastritis varioliforme endoscópicamente (pliegues engrosados con nódulos y úlcera aftosa central); aumento de <strong>linfocitos T intraepiteliales</strong> <span class="cite">p. 769</span>.</li>
+<li><strong>Granulomatosa</strong>: término descriptivo; en poblaciones occidentales la causa específica más frecuente es la afectación gástrica por <strong>enfermedad de Crohn</strong>, seguida de sarcoidosis e infecciones (micobacterias, hongos, CMV, <em>H. pylori</em>); puede estrechar y rigidizar el antro <span class="cite">p. 769-770</span>.</li>
+</ul>
+<h3 id="enfermedad-ulcerosa-péptica-eup">Enfermedad ulcerosa péptica (EUP)</h3>
+<p>Úlcera <strong>crónica</strong> de la mucosa de duodeno o estómago, casi siempre asociada a <em><strong>H. pylori</strong></em>, <strong>AINE</strong> o tabaquismo <span class="cite">p. 770</span>.</p>
+<ul>
+<li>Más frecuente en <strong>antro gástrico o duodeno</strong> por la gastritis antral de <em>H. pylori</em> con mayor secreción de ácido y menor bicarbonato duodenal; la atrofia oxíntica (pangastritis) protege de las úlceras antrales y duodenales; la mucosa gástrica ectópica (duodeno, divertículo de Meckel, parche esofágico) también puede producir EUP <span class="cite">p. 770</span>.</li>
+<li>Factores de riesgo (tabla 17.3): <em>H. pylori</em>, tabaquismo (sinérgico con <em>H. pylori</em> en la EUP gástrica), EPOC, cocaína, AINE (potenciados por corticoesteroides), cirrosis alcohólica (sobre todo EUP duodenal), estrés psicológico, hiperplasia de células endocrinas, síndrome de Zollinger-Ellison, infección vírica (CMV, VHS). Fuente: <span class="cite">p. 770</span></li>
+<li>Morfología: duodeno proximal, a pocos centímetros de la válvula pilórica; en el estómago, curvatura menor cerca del límite cuerpo-antro; <strong>solitarias en más del 80%</strong>, redondeadas u ovales, en <strong>sacabocados</strong>, con márgenes al nivel de la mucosa (los márgenes sobreelevados son de los cánceres); base lisa y limpia con tejido de granulación y <strong>vasos engrosados y trombosados</strong> que pueden sangrar de forma mortal; cicatrices con pliegues irradiados <span class="cite">p. 770-771</span>.</li>
+<li>Clínica: ardor o dolor epigástrico de <strong>1-3 h después de las comidas</strong>, empeora por la noche (23:00-02:00) y se alivia con álcalis o alimentos; en úlceras penetrantes, dolor referido a espalda, hipocondrio izquierdo o tórax (puede malinterpretarse como cardiaco). Tratamiento: erradicación de <em>H. pylori</em> + inhibidores de la bomba de protones; <strong>recidiva &lt;20%</strong> tras erradicación satisfactoria <span class="cite">p. 771</span>.</li>
+<li>Complicaciones (tabla 17.4) , Fuente: <span class="cite">p. 770-771</span> | Complicación | Datos clave | |---|---| | <strong>Hemorragia</strong> | 15-20% de los pacientes; complicación más frecuente; 25% de las muertes por úlcera; puede ser el primer signo | | <strong>Perforación</strong> | Hasta 5%; <strong>dos tercios de las muertes</strong> por úlcera; rara vez primer signo; aire libre bajo el diafragma en radiografía vertical | | <strong>Obstrucción</strong> | ~2%; por edema o cicatrización; más frecuente en úlceras del conducto pilórico; dolor cólico y vómitos incoercibles |</li>
+</ul>
+<h3 id="otras-complicaciones-de-la-gastritis-crónica">Otras complicaciones de la gastritis crónica</h3>
+<ul>
+<li><strong>Atrofia mucosa y metaplasia intestinal</strong>: la pérdida de células parietales con metaplasia intestinal (células caliciformes) se asocia claramente a <strong>adenocarcinoma gástrico</strong>; el riesgo es mayor en la gastritis atrófica metaplásica autoinmunitaria (aclorhidria → sobrecrecimiento bacteriano productor de <strong>nitrosaminas</strong>); la metaplasia de la gastritis por <em>H. pylori</em> puede remitir tras la erradicación <span class="cite">p. 771</span>.</li>
+<li><strong>Displasia</strong>: lesión preinvasora por daño de radicales libres y estímulos proliferativos (la gastrina es mitógeno epitelial gástrico); las <strong>células reactivas maduran hacia la superficie</strong> y las displásicas permanecen inmaduras <span class="cite">p. 771</span>.</li>
+<li><strong>Gastritis quística</strong>: proliferación reactiva con quistes epiteliales atrapados en submucosa o pared profunda, por traumatismos; puede <strong>confundirse con adenocarcinoma infiltrante</strong> <span class="cite">p. 771</span>.</li>
+</ul>
+<h3 id="gastropatías-hipertróficas">Gastropatías hipertróficas</h3>
+<p>Engrosamiento "cerebriforme" enorme de los pliegues por <strong>hiperplasia epitelial sin inflamación</strong>, por exceso de factores de crecimiento <span class="cite">p. 771</span>.</p>
+<h4 id="enfermedad-de-ménétrier">Enfermedad de Ménétrier</h4>
+<p>Poco frecuente; secreción excesiva de <strong>TGF-α</strong> (ligando del <strong>EGFR</strong>); algunos casos siguen a infección vírica o por <em>H. pylori</em> <span class="cite">p. 771-772</span>.</p>
+<ul>
+<li>Morfología: hiperplasia difusa del <strong>epitelio foveolar de fondo y cuerpo</strong> (el antro se respeta) con glándulas alargadas en sacacorchos y <strong>dilatación quística</strong>; hipoplasia de células parietales y principales; inflamación moderada <span class="cite">p. 772</span>.</li>
+<li>Clínica: <strong>hipoproteinemia</strong> por pérdida de albúmina que puede acercarse a <strong>10 g/día</strong>, adelgazamiento, diarrea y edema periférico; efectos de TGF-α (hiperplasia de hígado, páncreas y TD; pérdida de tejido muscular y adiposo; psoriasis); en niños suele ser autolimitada y postinfecciosa (CMV); <strong>riesgo aumentado de adenocarcinoma gástrico en adultos</strong> <span class="cite">p. 772</span>.</li>
+<li>Tratamiento: soporte con albúmina y nutrición parenteral; tratar la infección subyacente si existe; <strong>anticuerpos anti-EGFR</strong> eficaces en muchos casos; gastrectomía en casos graves <span class="cite">p. 772</span>.</li>
+</ul>
+<h4 id="síndrome-de-zollinger-ellison">Síndrome de Zollinger-Ellison</h4>
+<p>Gastrinomas casi siempre en <strong>intestino delgado o páncreas</strong>; úlceras duodenales o diarrea crónica; grosor acusado de la mucosa oxíntica por <strong>hiperplasia de células parietales</strong> <span class="cite">p. 773</span>.</p>
+<ul>
+<li>75% esporádicos y solitarios; <strong>25% asociados a MEN-1</strong>: pacientes más jóvenes, tumores duodenales con frecuencia metastatizantes; mutaciones de <em>MEN1</em> en gastrinomas esporádicos también se asocian a comportamiento invasivo <span class="cite">p. 773</span>.</li>
+<li>Tratamiento: bloqueo de la hipersecreción con inhibidores de la bomba de protones; análogos de la somatostatina en enfermedad metastásica; gammagrafía con receptores de somatostatina o ecoendoscopia para detectarlos <span class="cite">p. 773</span>.</li>
+</ul>
+<p>Comparación de proliferaciones gástricas (tabla 17.5) , Fuente: <span class="cite">p. 772</span></p>
+<div class="table-wrap" role="region" aria-label="Tabla: Estómago" tabindex="0"><table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Enf. de Ménétrier (adulto)</th>
+<th>Síndrome de Zollinger-Ellison</th>
+<th>Pólipos de glándulas fúndicas</th>
+<th>Pólipos inflamatorios e hiperplásicos</th>
+<th>Adenomas</th>
+<th>Gastritis quística</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edad media (años)</td>
+<td>30-60</td>
+<td>50</td>
+<td>50-60</td>
+<td>50-60</td>
+<td>50-60</td>
+<td>Variable</td>
+</tr>
+<tr>
+<td>Lugar</td>
+<td>Fondo y cuerpo</td>
+<td>Antro &gt; cuerpo</td>
+<td>Fondo</td>
+<td>Cuerpo y fondo</td>
+<td>Antro &gt; cuerpo</td>
+<td>Cuerpo y fondo</td>
+</tr>
+<tr>
+<td>Célula predominante</td>
+<td>Mucoso</td>
+<td>Parietal &gt; mucoso, endocrino</td>
+<td>Parietal y principal</td>
+<td>Mucoso</td>
+<td>Displásico, intestinal</td>
+<td>Mucoso, revestimiento de quiste</td>
+</tr>
+<tr>
+<td>Síntomas</td>
+<td>Hipoproteinemia, adelgazamiento, diarrea</td>
+<td>Similares a úlcera péptica</td>
+<td>Ninguno, náuseas</td>
+<td>Similares a gastritis crónica</td>
+<td>Similares a gastritis crónica</td>
+<td>Similares a la gastritis crónica</td>
+</tr>
+<tr>
+<td>Asociación con adenocarcinoma</td>
+<td>No</td>
+<td>No</td>
+<td>Ocasional</td>
+<td>No</td>
+<td>Frecuente</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="pólipos-y-tumores-gástricos">Pólipos y tumores gástricos</h3>
+<p>Los pólipos se detectan hasta en 5% de las endoscopias altas; pueden ser por hiperplasia, inflamación, ectopia o neoplasia <span class="cite">p. 773</span>.</p>
+<h4 id="pólipos-inflamatorios-e-hiperplásicos">Pólipos inflamatorios e hiperplásicos</h4>
+<p>Hasta <strong>75% de todos los pólipos gástricos</strong>; su incidencia se correlaciona con la prevalencia regional de <em>H. pylori</em>; personas de 50-60 años con gastritis crónica; el riesgo de displasia varía de 1 a 20% y aumenta en pólipos pediculados <strong>&gt;1 cm</strong>; la mayoría &lt;1 cm, frecuentemente múltiples (sobre todo en gastritis atrófica), con glándulas foveolares irregulares, dilatadas en forma quística y elongadas, y lámina propia edematosa <span class="cite">p. 773-774</span>.</p>
+<h4 id="pólipos-de-las-glándulas-fúndicas">Pólipos de las glándulas fúndicas</h4>
+<p>En cuerpo y fondo; lesiones bien delimitadas de superficie lisa con glándulas dilatadas en forma quística revestidas por <strong>células parietales, principales y foveolares</strong>, sin inflamación <span class="cite">p. 773-774</span>.</p>
+<ul>
+<li>Esporádicos (aumentados por <strong>inhibidores de la bomba de protones</strong> → más gastrina → crecimiento de glándulas oxínticas) y en la <strong>poliposis adenomatosa familiar (APC)</strong> y poliposis asociada a <em>MUTYH</em>; en los sindrómicos puede haber displasia y cánceres infrecuentes; los esporádicos no conllevan riesgo neoplásico importante <span class="cite">p. 773-774</span>.</li>
+</ul>
+<h4 id="adenoma-gástrico">Adenoma gástrico</h4>
+<p>Hasta 10% de los pólipos gástricos; en contexto de gastritis crónica con atrofia y metaplasia intestinal (excepción: mutaciones germinales de <em>APC</em> o <em>MUTYH</em>); 50-60 años, hombres 3× <span class="cite">p. 774</span>.</p>
+<ul>
+<li>El riesgo de cáncer dentro del adenoma se correlaciona con el tamaño, especialmente <strong>&gt;2 cm</strong> (hasta 30%); exigen tratamiento más intensivo que los adenomas de colon. Solitarios, antrales; displasia leve o grave (hipercromatismo, alargamiento y seudoestratificación nuclear; la grave añade gemación glandular y estructuras adosadas o cribiformes) <span class="cite">p. 774</span>.</li>
+</ul>
+<h4 id="adenocarcinoma-gástrico">Adenocarcinoma gástrico</h4>
+<p>Neoplasia maligna más frecuente del estómago (&gt;90% de los cánceres gástricos); los primeros síntomas imitan la gastritis crónica y la EUP, por lo que suelen diagnosticarse avanzados <span class="cite">p. 774</span>.</p>
+<ul>
+<li>Epidemiología: incidencia hasta <strong>20 veces mayor</strong> en Japón, <strong>Chile</strong>, Costa Rica y Europa del Este que en América del Norte, norte de Europa, África y sudeste asiático; en Japón, el 35% de los casos detectados son precoces (mucosa/submucosa); en América del Norte y norte de Europa, &lt;20% <span class="cite">p. 774</span>.</li>
+<li>Metástasis típicas al diagnóstico: <strong>ganglio supraclavicular (de Virchow)</strong>, ganglios periumbilicales (<strong>nódulo de la hermana María José</strong>), ovarios (<strong>tumor de Krukenberg</strong>), ganglio axilar izquierdo y fondo de saco de Douglas <span class="cite">p. 774</span>.</li>
+<li>La incidencia cayó <strong>85%</strong> desde 1930 en EE. UU. (hoy 2,5% de las muertes por cáncer), atribuida sobre todo a la menor prevalencia de <em>H. pylori</em> y a menos N-nitrosos y benzo[a]pireno (menos sal y ahumados) más refrigeración; los migrantes mantienen el riesgo del país de origen, sus hijos no; en cambio, el <strong>cáncer del cardias está aumentando</strong>, vinculado a esófago de Barrett, ERGE crónica y obesidad <span class="cite">p. 775</span>.</li>
+<li>Patogenia: cáncer gástrico familiar por mutaciones germinales con pérdida de función de <em><strong>CDH1</strong></em> (cadherina E); en los difusos esporádicos, <em>CDH1</em> mutada en ~50% y silenciada por hipermetilación en el resto; la pérdida de cadherina E es el paso clave del tipo difuso (también mutada en el carcinoma lobulillar de mama) <span class="cite">p. 775</span>.</li>
+<li>El tipo <strong>intestinal</strong> se asocia a la vía <strong>Wnt</strong>: pérdida de función de <em><strong>APC</strong></em>, ganancia de función de <em><strong>β-catenina</strong></em>; además <em>TGFβRII</em>, <em>BAX</em>, <em>CDKN2A</em>; los pacientes con PAF tienen mayor riesgo de cáncer gástrico intestinal, sobre todo en áreas de alto riesgo como Japón; polimorfismos proinflamatorios (receptores de IL-1β) aumentan el riesgo en gastritis por <em>H. pylori</em> <span class="cite">p. 775</span>.</li>
+<li>Morfología: la mayoría distal, en el <strong>antro</strong>, curvatura menor &gt; mayor; tipo intestinal: masas exofíticas o ulceradas con glándulas y vacuolas apicales de mucina; tipo difuso: células en <strong>anillo de sello</strong> (vacuola de mucina con núcleo falciforme periférico) que infiltran en grupos e individualmente, sin formar glándulas, con lagos de mucina; difuso con pared engrosada y pliegues aplanados: <strong>linitis plástica</strong> ("botella de cuero") <span class="cite">p. 775-776</span>.</li>
+<li>Clínica: tipo intestinal predomina en áreas de alto riesgo, desde lesiones precursoras (displasia plana y adenomas), edad promedio 55 años, hombres:mujeres 2:1; tipo difuso de distribución uniforme, sin lesión precursora, sin predominio de sexo; la disminución de la incidencia aplica solo al tipo intestinal; pronóstico: profundidad de la invasión y metástasis; con resección curativa, supervivencia a 5 años hasta <strong>90%</strong> incluso con metástasis ganglionares; avanzado &lt;20%; global en EE. UU. &lt;30% <span class="cite">p. 776</span>.</li>
+</ul>
+<h4 id="linfoma-maltoma">Linfoma (MALToma)</h4>
+<p>Los linfomas extraganglionares son más frecuentes en el TD, especialmente el estómago; casi el 5% de las neoplasias malignas gástricas son linfomas primarios, la mayoría <strong>linfomas B de la zona marginal extraganglionares de bajo grado (MALTomas)</strong> <span class="cite">p. 776</span>.</p>
+<ul>
+<li>Patogenia: surgen en focos de <strong>inflamación crónica</strong>; no existe MALT en el estómago normal, se induce por gastritis crónica; <em><strong>H. pylori</strong></em> es el inductor más frecuente <span class="cite">p. 776</span>.</li>
+<li>Tres translocaciones activan constitutivamente <strong>NF-κB</strong>: <strong>t(11;18)(q21;q21)</strong> (fusión <strong>API2-MALT1</strong>), <strong>t(14;18)(q32;q21)</strong> y <strong>t(1;14)(p22;q32)</strong> (aumento de MALT1 y BCL-10); los tumores con estas translocaciones <strong>no responden a la erradicación de <em>H. pylori</em></strong>, mientras que los que dependen de la activación dependiente de antígeno sí; también resisten a la erradicación los tumores que infiltran la muscular propia o con afectación ganglionar <span class="cite">p. 776-777</span>.</li>
+<li>Morfología: infiltrado linfocítico denso en la lámina propia con <strong>lesiones linfoepiteliales</strong> diagnósticas (linfocitos neoplásicos que rodean e infiltran las glándulas); diferenciación plasmocítica en ~40%; expresan <strong>CD19 y CD20</strong>, no CD5 ni CD10, <strong>CD43 en ~25%</strong>; monoclonalidad por cadenas ligeras κ o λ o reordenamientos de <em>IgH</em>; pueden transformarse en linfoma B difuso de células grandes (inactivación de <em>TP53</em> y <em>CDKN2A</em>) <span class="cite">p. 777</span>.</li>
+<li>Clínica: dispepsia y dolor epigástrico; también hematemesis, melenas y adelgazamiento; diagnóstico difícil frente a la gastritis por <em>H. pylori</em> en biopsias pequeñas <span class="cite">p. 777</span>.</li>
+</ul>
+<h4 id="neoplasias-neuroendocrinas">Neoplasias neuroendocrinas</h4>
+<p>Antes llamadas "carcinoides", hoy <strong>tumores neuroendocrinos bien diferenciados</strong>; más del 40% aparecen en el intestino delgado; el árbol traqueobronquial es el siguiente sitio <span class="cite">p. 777</span>.</p>
+<ul>
+<li>Asociaciones gástricas: hiperplasia de células endocrinas, gastritis atrófica autoinmunitaria, MEN-1 y síndrome de Zollinger-Ellison; la hiperplasia por inhibidores de la bomba de protones no tiene riesgo significativo de progresión <span class="cite">p. 777</span>.</li>
+<li>Morfología: masas intraparietales o submucosas polipoideas, amarillas o pardas, <strong>duras por desmoplasia</strong> (que puede acodar y obstruir el intestino delgado); células uniformes con <strong>cromatina en "sal y pimienta"</strong>; <strong>sinaptofisina y cromogranina A</strong> positivas; los poco diferenciados (carcinomas neuroendocrinos de células pequeñas o grandes) tienen altas tasas mitóticas y Ki-67, con mutaciones de <em>TP53</em> y <em>RB</em> <span class="cite">p. 777-778</span>.</li>
+<li><strong>Síndrome carcinoide</strong>: &lt;10% de los pacientes; requiere que las sustancias vasoactivas eludan el metabolismo hepático de primer paso (carga tumoral grande o secreción fuera de la vena portal); enrojecimiento cutáneo, sudación, broncoespasmo, dolor cólico, diarrea y <strong>fibrosis valvular cardiaca derecha</strong> <span class="cite">p. 778</span>.</li>
+<li>Pronóstico por localización: <strong>estómago/duodeno</strong> rara vez metastatizan y se curan con resección (especialmente sobre gastritis atrófica); los gástricos <strong>sin factores predisponentes</strong> son más malignos; <strong>yeyuno-íleon</strong>: múltiples y malignos; <strong>apéndice y recto</strong>: incidentales, los apendiculares casi siempre benignos y los rectales rara vez metastatizan <span class="cite">p. 778</span>.</li>
+</ul>
+<h4 id="tumor-del-estroma-gastrointestinal-gist">Tumor del estroma gastrointestinal (GIST)</h4>
+<p>Tumor mesenquimatoso más frecuente del abdomen (11-20 por millón/año); <strong>más de la mitad en el estómago</strong>; se origina en las <strong>células intersticiales de Cajal</strong> (marcapasos) <span class="cite">p. 778</span>.</p>
+<ul>
+<li>Patogenia: ~75% con mutaciones activadoras de <em><strong>KIT</strong></em> y ~8% de <em><strong>PDGFRA</strong></em> (mutuamente excluyentes, activan las mismas vías); los GIST sin ellas a menudo tienen mutaciones de los genes de la <strong>succinato deshidrogenasa</strong> (<em>SDHA-B-C-D</em>), heredadas en línea germinal con riesgo de GIST y paraganglioma (<strong>síndrome de Carney-Stratakis</strong>); en niños, <strong>triada de Carney</strong> (GIST, paraganglioma y condroma pulmonar, no hereditaria, en mujeres); mayor incidencia en neurofibromatosis tipo 1 <span class="cite">p. 778-779</span>.</li>
+<li>Morfología: hasta 30 cm, masa carnosa solitaria bien delimitada con mucosa ulcerada; <strong>tipo fusocelular</strong> o <strong>epitelioide</strong> (puede simular adenocarcinoma metastásico); marcador diagnóstico más útil: <strong>KIT (CD117)</strong>, positivo en 95% de los GIST gástricos <span class="cite">p. 779</span>.</li>
+<li>Clínica: efectos compresivos; úlcera con hemorragia; anemia en ~mitad; pronóstico por tamaño, índice mitótico y localización; los gástricos son <strong>menos agresivos</strong> que los del intestino delgado; recidiva/metástasis infrecuente si &lt;5 cm, habitual si &gt;10 cm activos mitóticamente; los KIT/PDGFRA mutados responden a <strong>imatinib</strong>; la resistencia surge por mutaciones secundarias y puede responder a otros inhibidores de tirosina cinasa <span class="cite">p. 779</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Gastritis por H. pylori vs autoinmunitaria</span>H. pylori: antral, ácido normal o aumentado, riesgo de úlcera y MALToma; si se atrofia, cae el ácido y sube el riesgo de adenocarcinoma. La autoinmunitaria respeta el antro, da aclorhidria con hipergastrinemia, anticuerpos antifactor intrínseco y anemia perniciosa <span class="cite">p. 767-769</span>.</div>
+</section><section id="sec-05-intestino-delgado-y-colon" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 780-820</div>
+<h2>Intestino delgado y colon</h2>
+<p>La mayor parte del TD; sitio de malabsorción y diarrea, de la interacción inmunitaria con antígenos alimentarios y microbianos, y el origen más frecuente de neoplasias digestivas en poblaciones occidentales <span class="cite">p. 780</span>.</p>
+<h3 id="obstrucción-intestinal">Obstrucción intestinal</h3>
+<p>El intestino delgado es el más afectado por su luz estrecha; <strong>hernias, adherencias, invaginación intestinal y vólvulo</strong> suman el <strong>80%</strong> de las obstrucciones mecánicas; el resto: tumores, infarto, estenosis (p. ej., Crohn). Clínica: dolor y distensión abdominal, vómitos y estreñimiento <span class="cite">p. 780</span>.</p>
+<ul>
+<li><strong>Hernias</strong>: protrusión de una bolsa de peritoneo por debilidad de la pared abdominal (conductos inguinal y femoral, ombligo, sitios quirúrgicos); hasta en 5% de la población; <strong>causa más frecuente de obstrucción intestinal en el mundo y tercera en EE. UU.</strong>; secuencia: presión en el cuello del saco → estasis venosa y edema → encarcelamiento → estrangulamiento e <strong>infarto</strong> <span class="cite">p. 780</span>.</li>
+<li><strong>Adherencias</strong>: por cirugía, infección o inflamación peritoneal (p. ej., endometriosis); puentes fibrosos que crean <strong>asas cerradas</strong> (hernia interna); secuelas similares a las hernias externas <span class="cite">p. 780-781</span>.</li>
+<li><strong>Vólvulo</strong>: retorsión de un asa alrededor de su inserción mesentérica: obstrucción <strong>más</strong> infarto; más frecuente en <strong>grandes asas redundantes del colon sigmoide</strong>, seguido de ciego, intestino delgado, estómago o colon transverso; infrecuente, se pasa por alto con resultados graves <span class="cite">p. 781</span>.</li>
+<li><strong>Invaginación intestinal</strong>: un segmento se pliega en el inmediatamente distal y el peristaltismo lo impulsa tirando del mesenterio → obstrucción, compresión vascular e infarto; <strong>causa más frecuente de obstrucción intestinal en niños &lt;2 años</strong>; casos idiopáticos en niños sanos; otros asociados a infección vírica y vacunas contra el rotavirus (hiperplasia de placas de Peyer como frente de avance); en niños mayores y adultos, por una <strong>masa intraluminal</strong> que tracciona; ~1% de los pacientes con <strong>fibrosis quística</strong>; los enemas opacos o de aire pueden ser diagnósticos y terapéuticos en lactantes; con masa, cirugía <span class="cite">p. 781</span>.</li>
+</ul>
+<h3 id="enfermedad-isquémica-intestinal">Enfermedad isquémica intestinal</h3>
+<p>Irrigación por las arterias celiaca, mesentérica superior e inferior; la pérdida <strong>lenta y progresiva</strong> se tolera por las arcadas y colaterales, pero la <strong>insuficiencia aguda</strong> de un vaso principal puede infartar varios metros de intestino; el daño va de infarto mucoso a parietal o <strong>transparietal</strong> <span class="cite">p. 781</span>.</p>
+<ul>
+<li>Causas de obstrucción aguda: trombosis o embolia; el factor de riesgo más importante es la <strong>ateroesclerosis grave</strong> en el origen de los vasos mesentéricos; émbolos desde ateromas aórticos o trombos cardiacos; trombosis venosa mesentérica por hipercoagulabilidad, neoplasias invasivas, cirrosis, traumatismos o masas que comprimen el drenaje portal; hipoperfusión sin oclusión por insuficiencia cardiaca, shock, deshidratación o vasoconstrictores <span class="cite">p. 781</span>.</li>
+<li>Patogenia en dos fases: lesión <strong>hipóxica</strong> inicial y lesión por <strong>reperfusión</strong> (fuga de lipopolisacáridos, radicales libres, neutrófilos y mediadores) <span class="cite">p. 781</span>.</li>
+<li><strong>Zonas de penumbra (marginales)</strong>: el <strong>ángulo esplénico</strong> (fin de las mesentéricas superior e inferior) y, en menor grado, colon sigmoide y recto; el epitelio de superficie es más vulnerable que las criptas, cuyas células madre quedan protegidas → <strong>atrofia del epitelio superficial con criptas normales o hiperproliferativas</strong> es la firma morfológica <span class="cite">p. 781</span>.</li>
+<li>Morfología: el colon es el sitio más habitual; lesiones segmentarias; mucosa hemorrágica y ulcerada; en el infarto transparietal, transición neta entre intestino normal e isquémico, color rojo oscuro a púrpura, y <strong>necrosis coagulativa de la muscular propia en 1-4 días</strong> con posible perforación; en la trombosis venosa la transición es menos brusca; seudomembranas por sobreinfección bacteriana pueden imitar la colitis por <em>C. difficile</em> <span class="cite">p. 782</span>.</li>
+<li>Clínica: más frecuente &gt;70 años y en mujeres; isquemia aguda del colon con <strong>dolor cólico súbito en la fosa ilíaca izquierda</strong>, deseo de defecar y sangre o diarrea hemorrágica; cirugía en ~10% de los casos; mortalidad a 30 días ~<strong>10%</strong>, que se <strong>duplica si el colon ascendente está afectado</strong> (arteria mesentérica superior, compromiso más generalizado); mal pronóstico con EPOC y síntomas &gt;2 semanas <span class="cite">p. 782</span>.</li>
+<li>Formas subagudas y crónicas: la isquemia crónica puede confundirse con enfermedad inflamatoria intestinal; el <strong>CMV</strong> produce isquemia por tropismo endotelial; la <strong>enterocolitis por radiación</strong> combina lesión epitelial y endotelial con <strong>fibroblastos de radiación</strong> muy atípicos; la <strong>enterocolitis necrosante</strong> del recién nacido (sobre todo prematuro) tiene contribución isquémica <span class="cite">p. 782-783</span>.</li>
+</ul>
+<h3 id="angiodisplasia">Angiodisplasia</h3>
+<p>Malformación de vasos submucosos y mucosos dilatados de paredes delgadas; más frecuente en <strong>ciego y colon ascendente</strong>, tras la sexta década; prevalencia &lt;1% en adultos, pero causa el <strong>20% de los episodios graves de hemorragia intestinal baja</strong> en poblaciones mayores <span class="cite">p. 783</span>.</p>
+<ul>
+<li>Patogenia propuesta: oclusión intermitente de las venas submucosas que atraviesan la muscular propia; el <strong>ciego tiene el mayor diámetro y mayor tensión parietal</strong>, lo que explicaría su distribución preferente. Morfología: nidos ectásicos de venas, vénulas y capilares tortuosos separados de la luz solo por la pared vascular y epitelio adelgazado, vulnerables a rotura por lesiones mínimas <span class="cite">p. 783</span>.</li>
+</ul>
+<h3 id="malabsorción-y-diarrea">Malabsorción y diarrea</h3>
+<p>La malabsorción es la absorción defectuosa de grasas, vitaminas, proteínas, hidratos de carbono, electrolitos, minerales y agua; rasgo distintivo: <strong>esteatorrea</strong> (heces voluminosas, espumosas, grasientas, amarillas o de color arcilla); en EE. UU. las causas crónicas más frecuentes son la <strong>insuficiencia pancreática, la enfermedad celiaca y la enfermedad de Crohn</strong> <span class="cite">p. 783</span>.</p>
+<ul>
+<li>Cuatro fases de la absorción: <strong>digestión intraluminal</strong>, <strong>digestión terminal</strong> (disacaridasas y peptidasas del borde en cepillo), <strong>transporte transepitelial</strong> y <strong>transporte linfático de lípidos</strong>; los síndromes de malabsorción se parecen más entre sí de lo que difieren <span class="cite">p. 783</span>.</li>
+<li>Consecuencias: diarrea, meteorismo, dolor abdominal, adelgazamiento y atrofia muscular; anemia y mucositis por déficit de piridoxina, folato o vitamina B12; hemorragia por déficit de vitamina K; osteopenia y tetania por déficit de calcio, magnesio o vitamina D; neuropatía periférica por déficit de vitaminas A o B1 <span class="cite">p. 783</span>.</li>
+<li><strong>Diarrea</strong>: aumento de masa, frecuencia o fluidez de las heces, normalmente &gt;200 g/día; en casos graves hasta 14 L/día; <strong>disentería</strong> = diarrea dolorosa, hemorrágica y de pequeño volumen. Tipos: <strong>secretora</strong> (isotónica, persiste en ayuno), <strong>osmótica</strong> (líquido &gt;50 mOsm más concentrado que el plasma, cede con el ayuno; p. ej., deficiencia de lactasa), <strong>por malabsorción</strong> (con esteatorrea, se alivia con el ayuno) y <strong>exudativa</strong> (inflamatoria, heces purulentas, a menudo hemorrágicas, persiste en ayuno) <span class="cite">p. 784</span>.</li>
+<li><strong>Fibrosis quística</strong>: defecto de <em><strong>CFTR</strong></em> en el transporte de cloruro y bicarbonato → contenido luminal mal hidratado → cálculos intraductales pancreáticos, pancreatitis crónica e <strong>insuficiencia pancreática exocrina en más del 80%</strong> de los pacientes, con fallo de la digestión intraluminal tratable con enzimas orales <span class="cite">p. 784</span>.</li>
+<li><strong>Enfermedad celiaca</strong> (<strong>esprúe celiaco / enteropatía sensible al gluten</strong>): trastorno inmunitario desencadenado por gluten (<strong>trigo, centeno o cebada</strong>) en individuos genéticamente predispuestos; incidencia mundial <strong>0,6-1%</strong>, en aumento <span class="cite">p. 784</span>.
+<ul>
+<li>Patogenia: la <strong>gliadina</strong> contiene los componentes lesivos; un péptido de 33 aminoácidos es resistente a las proteasas; estimula <strong>IL-15</strong> epitelial → activación de linfocitos intraepiteliales <strong>CD8+</strong> que expresan <strong>NKG2D</strong> y atacan enterocitos que expresan <strong>MIC-A</strong>; los péptidos desaminados por la <strong>transglutaminasa tisular</strong> se presentan con <strong>HLA-DQ2 o HLA-DQ8</strong> a linfocitos T CD4+ productores de citocinas <span class="cite">p. 784-785</span>.</li>
+<li>Casi todos los pacientes portan <strong>HLA-DQ2 o HLA-DQ8</strong>, pero el locus HLA explica &lt;50% del componente genético; asociada a diabetes tipo 1, tiroiditis, síndrome de Sjögren y nefropatía IgA <span class="cite">p. 785</span>.</li>
+<li>Morfología: biopsia de <strong>segunda porción duodenal o yeyuno proximal</strong>; <strong>linfocitosis intraepitelial (CD8+) + hiperplasia de criptas + atrofia vellosa</strong>; más células plasmáticas, mastocitos y eosinófilos en la lámina propia superior; la linfocitosis intraepitelial (especialmente en vellosidades) es el marcador más sensible, pero <strong>no es específica</strong> (también enteritis vírica) → la combinación de histología y serología es más específica <span class="cite">p. 785</span>.</li>
+<li>Clínica: adultos de 30-60 años; formas <strong>asintomática</strong> (serología positiva + atrofia vellosa sin síntomas) y <strong>latente</strong> (serología positiva sin atrofia); el doble en mujeres; hasta 10% desarrolla <strong>dermatitis herpetiforme</strong>; en niños, comienza tras la introducción del gluten entre 6 y 24 meses, con irritabilidad, distensión abdominal, anorexia, diarrea crónica y retraso del crecimiento; síntomas extraintestinales: artritis/artralgias, estomatitis aftosa, anemia ferropénica, pubertad tardía y talla baja <span class="cite">p. 785</span>.</li>
+<li>Diagnóstico y tratamiento: antes de la biopsia, <strong>anticuerpos IgA antitransglutaminasa tisular</strong> (el más sensible), IgA antiendomisio; en déficit de IgA, IgG antitransglutaminasa; la ausencia de HLA-DQ2/DQ8 tiene valor predictivo negativo, su presencia no confirma; único tratamiento: <strong>dieta sin gluten</strong>, con resolución histológica en <strong>6-24 meses</strong> <span class="cite">p. 785</span>.</li>
+<li>Complicaciones: <strong>linfoma T asociado a enteropatía</strong> (el más frecuente, nacido de los linfocitos intraepiteliales), adenocarcinoma de intestino delgado; dolor, diarrea y adelgazamiento pese a dieta estricta sugieren cáncer o <strong>esprúe resistente</strong> <span class="cite">p. 785-786</span>.</li>
+</ul></li>
+<li><strong>Disfunción entérica ambiental</strong> (enteropatía ambiental, tropical o <strong>esprúe tropical</strong>): frecuente en zonas con déficit sanitario (África subsahariana, aborígenes del norte de Australia, grupos pobres de América del Sur y Asia); malabsorción, desnutrición y retraso del crecimiento; explicaría el fracaso de vacunas orales; <strong>sin criterios diagnósticos aceptados</strong>; se estima que afecta a más de <strong>150 millones de niños</strong>; no responde a antibióticos ni suplementos <span class="cite">p. 786</span>.</li>
+<li><strong>Enteropatía autoinmunitaria</strong>: trastorno <strong>ligado al cromosoma X</strong> con diarrea persistente grave y enfermedad autoinmunitaria en niños pequeños; la forma grave familiar es <strong>IPEX</strong> (regulación inmunitaria, poliendocrinopatía, enteropatía, ligado a X) por mutaciones con pérdida de función de <em><strong>FOXP3</strong></em> (linfocitos T reguladores); autoanticuerpos contra enterocitos y células caliciformes; a diferencia de la celiaca, <strong>neutrófilos infiltran la mucosa</strong>; tratamiento: inmunodepresores (ciclosporina) y trasplante de células madre hematopoyéticas <span class="cite">p. 786</span>.</li>
+<li><strong>Deficiencia de lactasa</strong>: <strong>congénita</strong> (autosómica recesiva, infrecuente; diarrea explosiva líquida y espumosa con leche; antes mortal sin fórmula de soja) y <strong>adquirida</strong> (disminución de la expresión del gen de la lactasa; frecuente en nativos americanos, afroamericanos y chinos; también posinfecciosa, con resolución); plenitud abdominal, diarrea y flatulencia por fermentación colónica; la histología suele ser normal (el defecto es bioquímico) <span class="cite">p. 786</span>.</li>
+<li><strong>Enfermedad por inclusión microvellosa</strong> (enfermedad de Davidson): autosómica recesiva por mutaciones de <em><strong>MYO5B</strong></em> (transporte vesicular y ensamblaje del borde en cepillo); diarrea intensa e <strong>intratable antes de los 3 meses</strong>; inclusiones identificables con microscopia electrónica o inmunotinción para <strong>villina</strong> y <strong>CD10</strong>; solo <strong>nutrición parenteral total y trasplante de intestino delgado</strong> <span class="cite">p. 786</span>.</li>
+<li><strong>Abetalipoproteinemia</strong>: autosómica recesiva infrecuente por mutación de la proteína microsomal de transferencia de triglicéridos (<strong>MTP</strong>): no se ensamblan lipoproteínas ricas en triglicéridos; vacuolización epitelial (aceite rojo-O tras comida grasa); en la infancia, retraso del crecimiento, diarrea y esteatorrea; plasma sin lipoproteínas que contienen <strong>apolipoproteína B</strong>; <strong>acantocitos</strong> en frotis; déficit de vitaminas liposolubles <span class="cite">p. 787</span>.</li>
+</ul>
+<h3 id="enterocolitis-infecciosa">Enterocolitis infecciosa</h3>
+<p>Causa mundial de más de <strong>1 millón de muertes al año</strong>; la mitad en niños &lt;5 años, en quienes la enfermedad diarreica es la cuarta causa de muerte <span class="cite">p. 787</span>.</p>
+<p>Comparación de enterocolitis bacterianas (tabla 17.7, síntesis) , Fuente: <span class="cite">p. 788</span></p>
+<div class="table-wrap" role="region" aria-label="Tabla: Intestino delgado y colon" tabindex="0"><table>
+<thead>
+<tr>
+<th>Infección</th>
+<th>Reservorio</th>
+<th>Síntomas característicos</th>
+<th>Complicaciones destacadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cólera</strong></td>
+<td>Mariscos; agua fecal-contaminada</td>
+<td>Diarrea líquida intensa</td>
+<td>Deshidratación y desequilibrios electrolíticos</td>
+</tr>
+<tr>
+<td><em><strong>Campylobacter</strong></em></td>
+<td>Aves de corral, leche, animales de granja</td>
+<td>Diarrea líquida o hemorrágica</td>
+<td><strong>Artritis reactiva, síndrome de Guillain-Barré</strong></td>
+</tr>
+<tr>
+<td><strong>Shigelosis</strong></td>
+<td>Seres humanos</td>
+<td>Diarrea hemorrágica</td>
+<td>Artritis reactiva, uretritis, conjuntivitis, <strong>síndrome urémico hemolítico</strong> (S. dysenteriae 1)</td>
+</tr>
+<tr>
+<td><strong>Salmonelosis</strong></td>
+<td>Aves de corral, huevos, reptiles</td>
+<td>Diarrea líquida o hemorrágica</td>
+<td>Septicemia, absceso</td>
+</tr>
+<tr>
+<td><strong>Fiebre tifoidea</strong></td>
+<td>Seres humanos</td>
+<td>Diarrea hemorrágica, fiebre</td>
+<td>Infección crónica, portador, encefalopatía, miocarditis, perforación intestinal</td>
+</tr>
+<tr>
+<td><strong>Yersinia</strong></td>
+<td>Cerdo, leche, agua</td>
+<td>Dolor abdominal, fiebre, diarrea</td>
+<td>Artritis reactiva, eritema nudoso</td>
+</tr>
+<tr>
+<td><em><strong>E. coli</strong></em> (ETEC, EAEC)</td>
+<td>Alimentos, agua</td>
+<td>Diarrea líquida intensa / no hemorrágica afebril</td>
+<td>Deshidratación (ETEC); mal definidas (EAEC)</td>
+</tr>
+<tr>
+<td><strong>Colitis seudomembranosa</strong> (<em>C. difficile</em>)</td>
+<td>Hospitales, tras antibióticos</td>
+<td>Diarrea líquida, fiebre</td>
+<td>Recaída, <strong>megacolon tóxico</strong></td>
+</tr>
+<tr>
+<td><strong>Enfermedad de Whipple</strong></td>
+<td>Desconocido</td>
+<td>Malabsorción</td>
+<td>Artritis, enfermedad del SNC</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="cólera">Cólera</h4>
+<p><em>Vibrio cholerae</em>, gramnegativo en forma de coma; endémico del valle del Ganges; siete pandemias desde 1817; reservorios en crustáceos y plancton; el <strong>terremoto de Haití de 2010</strong> causó una epidemia que afectó a &gt;5% de la población (1% de letalidad) <span class="cite">p. 787</span>.</p>
+<ul>
+<li>Patogenia: no invasor; la <strong>toxina colérica</strong> (codificada por un fago; 5 subunidades B que se unen al <strong>gangliósido GM1</strong> + 1 subunidad A) se transporta al retículo endoplásmico; la subunidad A ADP-ribosila <strong>Gsα</strong>, activa la <strong>adenilato ciclasa</strong> y eleva el <strong>AMPc</strong>, que abre el <strong>CFTR</strong> y libera cloruro, mientras inhibe la absorción de cloruro y sodio → fuerza osmótica y diarrea cuantiosa; la biopsia de la mucosa muestra <strong>solo alteraciones mínimas</strong> <span class="cite">p. 787-789</span>.</li>
+<li>Clínica: tras incubación de 1-5 días, diarrea líquida y vómitos bruscos; heces "de <strong>agua de arroz</strong>" con olor a pescado; hasta <strong>1 L/hora</strong> con deshidratación, hipotensión, calambres, anuria, shock y muerte; <strong>mortalidad ~50% sin tratamiento, pero la rehidratación oportuna salva a más del 99%</strong>; investigación de inhibidores de CFTR; vacunación recomendada por la OMS en brotes <span class="cite">p. 789</span>.</li>
+</ul>
+<h4 id="enterocolitis-por-campylobacter">Enterocolitis por <em>Campylobacter</em></h4>
+<p><em><strong>Campylobacter jejuni</strong></em>: <strong>patógeno entérico bacteriano más frecuente en países de ingresos altos</strong>; causa importante de diarrea del viajero e intoxicación alimentaria; pollo mal cocido, leche no pasteurizada o agua contaminada <span class="cite">p. 789</span>.</p>
+<ul>
+<li>Patogenia: motilidad (flagelos), adherencia, citotoxinas/enterotoxina e invasión (solo algunas cepas producen disentería); la <strong>fiebre entérica</strong> aparece cuando prolifera en lámina propia y ganglios mesentéricos; la artritis reactiva se asocia a <strong>HLA-B27</strong>; el <strong>síndrome de Guillain-Barré</strong> por mimetismo molecular (anticuerpos contra el lipopolisacárido de <em>C. jejuni</em> reaccionan con gangliósidos del SNC y nervios periféricos): riesgo &lt;0,1% tras infección, pero hasta <strong>40% de los casos de Guillain-Barré</strong> registran infección en las 2 semanas previas <span class="cite">p. 789</span>.</li>
+<li>Morfología: colitis aguda autolimitada con criptitis y abscesos cripticos, pero con <strong>arquitectura de las criptas conservada</strong>; diagnóstico por coprocultivo <span class="cite">p. 789</span>.</li>
+<li>Clínica: <strong>500 microorganismos bastan</strong>; incubación hasta 8 días; diarrea líquida; disentería en 15% de adultos y &gt;50% de niños; eliminación bacteriana hasta 1 mes; habitualmente <strong>sin antibióticos</strong> <span class="cite">p. 790</span>.</li>
+</ul>
+<h4 id="shigelosis">Shigelosis</h4>
+<p><em>Shigella</em>: gramnegativos inmóviles de la familia Enterobacteriaceae, emparentados con EIEC; <strong>seres humanos son el único reservorio</strong>; hasta 165 millones de casos/año; dosis infecciosa de solo varios cientos de microorganismos (resistencia al ácido gástrico) y hasta 10⁸/g de heces <span class="cite">p. 790</span>.</p>
+<ul>
+<li>Patogenia: captación por <strong>células M</strong>, apoptosis de macrófagos, invasión por la membrana laterobasal de los enterocitos del colon; sistema de secreción de <strong>tipo III</strong>; el serotipo 1 de <em><strong>S. dysenteriae</strong></em> libera la <strong>toxina Shiga (Stx)</strong> que inhibe la síntesis proteica <span class="cite">p. 790</span>.</li>
+<li>Morfología: colon <strong>descendente</strong> e íleon; mucosa hemorrágica y ulcerada con seudomembranas; <strong>úlceras aftosas</strong> que pueden confundirse con enfermedad de Crohn <span class="cite">p. 790</span>.</li>
+<li>Clínica: incubación hasta 1 semana; 7-10 días de diarrea, fiebre y dolor abdominal; fase disentérica en ~50%; mortalidad concentrada en niños &lt;5 años; en países con mal saneamiento, 10% de las diarreas pediátricas y hasta 75% de las muertes por diarrea; los antidiarreicos <strong>están contraindicados</strong> (prolongan síntomas y eliminación); triada posinfecciosa de <strong>artritis reactiva, uretritis y conjuntivitis</strong> en hombres HLA-B27 de 20-40 años; S. dysenteriae 1 puede desencadenar <strong>síndrome urémico hemolítico</strong> (más frecuente por EHEC); megacolon tóxico y obstrucción poco frecuentes <span class="cite">p. 790-791</span>.</li>
+</ul>
+<h4 id="salmonelosis-no-tifoidea-y-fiebre-tifoidea">Salmonelosis (no tifoidea) y fiebre tifoidea</h4>
+<p><em>Salmonella</em> distinta de la tifoidea (p. ej., <em>S. enteritidis</em>): más de 1 millón de casos/año en EE. UU.; niños pequeños y adultos mayores; verano-otoño; carnes, aves, huevos y leche crudos o poco cocidos; el procesamiento centralizado produce brotes grandes <span class="cite">p. 791</span>.</p>
+<ul>
+<li>Patogenia: sistema de secreción de tipo III que activa las GTPasas <strong>Rho</strong> → reordenamiento de actina y endocitosis; <strong>hepoxilina A3</strong> quimiotáctica para neutrófilos; <strong>flagelina</strong> (TLR5) y lipopolisacárido (TLR4) amplifican la inflamación; los linfocitos <strong>Th1 y Th17</strong> eliminan el patógeno (déficit de Th17 → salmonelosis diseminada) <span class="cite">p. 791</span>.</li>
+<li>Clínica: indistinguible de otros patógenos entéricos; fiebre 2 días, diarrea 1 semana, excreción durante semanas; <strong>no se recomienda antibiótico</strong> (prolonga el portador y provoca recaídas); complicaciones: artritis reactiva, meningitis y muerte en neoplasias, inmunodepresión, alcoholismo, disfunción cardiovascular, <strong>drepanocitosis</strong> o anemia hemolítica <span class="cite">p. 791</span>.</li>
+<li><strong>Fiebre tifoidea</strong> (<em>S. enterica</em> subtipos <em><strong>typhi</strong></em> y <em><strong>paratyphi</strong></em>; 30 millones de casos/año): <strong>seres humanos único reservorio</strong>; la colonización de la vesícula biliar asocia cálculos y <strong>portador crónico</strong>; placas de Peyer del íleon terminal con elevaciones en meseta hasta 8 cm; úlceras ovaladas a lo largo del eje del íleon que <strong>pueden perforarse</strong>; <strong>nódulos tifoideos</strong> (macrófagos) en hígado, médula ósea y ganglios; fase inicial diarreica, luego bacteriemia y fiebre seudogripal con <strong>manchas rosas</strong> en tórax y abdomen; complicaciones: encefalopatía, meningitis, convulsiones, endocarditis, miocarditis, neumonía y colecistitis; los pacientes con <strong>drepanocitosis</strong> son especialmente propensos a osteomielitis por <em>Salmonella</em>; <strong>hemocultivos positivos en &gt;90% en la fase febril</strong> <span class="cite">p. 791-792</span>.</li>
+</ul>
+<h4 id="yersinia">Yersinia</h4>
+<p><em><strong>Y. enterocolitica</strong></em> y <em><strong>Y. pseudotuberculosis</strong></em>; más frecuente en Europa; carne de cerdo, leche cruda y agua contaminada; brotes en invierno <span class="cite">p. 792</span>.</p>
+<ul>
+<li>Patogenia: invade células M y se une a integrinas β mediante <strong>adhesinas</strong>; la isla de patogenia codifica transporte de <strong>hierro</strong>, que aumenta la virulencia → septicemia y muerte en hemocromatosis y anemias con sobrecarga de hierro <span class="cite">p. 792</span>.</li>
+<li>Morfología: íleon, <strong>apéndice y colon ascendente</strong>; hiperplasia de placas de Peyer y ganglios regionales, úlceras aftosas y granulomas → <strong>confusión con enfermedad de Crohn</strong> <span class="cite">p. 792</span>.</li>
+<li>Clínica: dolor abdominal, náuseas, vómitos; síntomas extraintestinales frecuentes: <strong>faringitis, artralgia y eritema nudoso</strong>; fiebre y diarrea menos frecuentes; complicaciones posinfecciosas: artritis reactiva con uretritis y conjuntivitis, miocarditis, eritema nudoso y nefropatía <span class="cite">p. 792</span>.</li>
+</ul>
+<h4 id="escherichia-coli"><em>Escherichia coli</em></h4>
+<ul>
+<li><strong>ETEC</strong> (enterotoxigena): principal causa de <strong>diarrea del viajero</strong>; no invasiva; toxinas <strong>termolábil (TL)</strong> parecida a la toxina colérica (↑AMPc) y <strong>termoestable (TE)</strong> (activa guanilato ciclasa, ↑GMPc); histología mínima <span class="cite">p. 792</span>.</li>
+<li><strong>EPEC</strong> (enteropatógena): diarrea endémica y brotes en <strong>niños &lt;2 años</strong>; lesiones de <strong>unión y borramiento (U/B)</strong> de microvellosidades codificadas por el <strong>locus de borrado de enterocitos (LEE)</strong>; la proteína <strong>Tir</strong> es el receptor de <strong>intimina</strong> (gen <em>eae</em>, útil para diagnóstico molecular); no produce toxina Shiga <span class="cite">p. 792</span>.</li>
+<li><strong>EHEC</strong> (enterohemorrágica): serotipo <strong>O157:H7</strong> y otros; brotes por <strong>carne picada insuficientemente cocida</strong> (reservorio vacuno); toxinas similares a Shiga; más probabilidad de diarrea hemorrágica, <strong>síndrome urémico hemolítico</strong> y colitis isquémica; <strong>no se recomiendan antibióticos</strong>: eliminar las bacterias libera toxina y aumenta el riesgo de síndrome hemolítico urémico, sobre todo en niños <span class="cite">p. 792-793</span>.</li>
+<li><strong>EIEC</strong> (enteroinvasiva): parecida a <em>Shigella</em>; no produce toxinas, invade epitelio; colitis aguda autolimitada inespecífica. <strong>EAEC</strong> (enteroagregativa): morfología de "<strong>pila de ladrillos</strong>"; fimbrias de adherencia y <strong>dispersina</strong>; diarrea no hemorrágica prolongada en inmunodeficientes; histología mínima <span class="cite">p. 793</span>.</li>
+</ul>
+<h4 id="colitis-seudomembranosa">Colitis seudomembranosa</h4>
+<p>Por <em><strong>Clostridioides difficile</strong></em> (antes <em>Clostridium</em>); "colitis/diarrea asociada a antibióticos"; otros microorganismos causan diarrea posantibióticos, pero <strong>solo <em>C. difficile</em> produce colitis seudomembranosa</strong> <span class="cite">p. 793</span>.</p>
+<ul>
+<li>Patogenia: la alteración de la microbiota por casi cualquier antibiótico permite la hiperproliferación; las toxinas ribosilan <strong>GTPasas pequeñas (Rho)</strong> → alteración del citoesqueleto, pérdida de la barrera de unión hermética, citocinas y apoptosis <span class="cite">p. 793</span>.</li>
+<li>Morfología: exudado mucopurulento que surge de criptas dañadas en lesiones "<strong>en volcán</strong>" que se fusionan formando <strong>seudomembranas</strong> (patognomónico para <em>C. difficile</em>; las seudomembranas en sí son inespecíficas y también aparecen en isquemia e infecciones necrosantes) <span class="cite">p. 793</span>.</li>
+<li>Clínica: factores de riesgo: antibióticos, edad avanzada, hospitalización e inmunodepresión; hasta <strong>30% de los adultos hospitalizados están colonizados</strong> (10× la población general) pero la mayoría no enferma; fiebre, leucocitosis, dolor cólico, diarrea líquida, hipoalbuminemia; <strong>megacolon tóxico</strong> como complicación mortal; diagnóstico por detección de toxina más que cultivo; <strong>metronidazol y vancomicina</strong> eficaces, pero crecen las cepas hipervirulentas; <strong>recurrencia hasta en 40%</strong>; el <strong>trasplante microbiano fecal</strong> evita la recurrencia; también anticuerpos monoclonales contra toxinas A y B <span class="cite">p. 793-794</span>.</li>
+</ul>
+<h4 id="enfermedad-de-whipple">Enfermedad de Whipple</h4>
+<p>Enfermedad crónica multivisceral infrecuente por <em><strong>Tropheryma whipplei</strong></em> (actinomiceto identificado por PCR en 1992); más frecuente en hombres blancos con exposición laboral a suelo o animales <span class="cite">p. 794</span>.</p>
+<ul>
+<li>Patogenia: macrófagos cargados de bacterias obstruyen los <strong>linfáticos</strong> de la lámina propia y los ganglios mesentéricos → la diarrea por malabsorción se debe a alteración del <strong>drenaje linfático</strong> <span class="cite">p. 794</span>.</li>
+<li>Morfología: sábana densa de <strong>macrófagos espumosos</strong> en la lámina propia del intestino delgado con gránulos <strong>PAS positivos resistentes a la diastasa</strong> (bacterias parcialmente digeridas); bacilos visibles por microscopia electrónica; superficie mucosa frondosa con placas blancas o amarillas; se distingue de la infección por <strong>micobacterias</strong> (morfológicamente similar y también PAS+) porque <em>T. whipplei</em> es <strong>ácido-alcohol resistente negativo</strong> <span class="cite">p. 794</span>.</li>
+<li>Clínica: triada de <strong>diarrea, adelgazamiento y artralgias</strong>; síntomas extraintestinales que pueden preceder años: artritis, fiebre, linfoadenopatías, enfermedad neurológica, cardiaca (válvulas) o pulmonar <span class="cite">p. 794</span>.</li>
+</ul>
+<h4 id="gastroenteritis-vírica">Gastroenteritis vírica</h4>
+<ul>
+<li><strong>Norovirus</strong> (antes virus Norwalk): ARN monocatenario icosaédrico; ~mitad de todos los brotes de gastroenteritis en el mundo; principal causa de gastroenteritis aguda que requiere atención médica en EE. UU.; <strong>&gt;200.000 muertes infantiles al año</strong> en países pobres; con la vacuna del rotavirus se convirtió en la causa más frecuente de diarrea en el mundo; dosis infecciosa <strong>&lt;20 partículas</strong>; resistente desde congelación hasta 60 °C; incubación hasta 2 días con vómitos, dolor cólico y diarrea líquida que resuelven en 2-3 días; excreción hasta 8 semanas; crónico en inmunodeprimidos (~20% de trasplantados); los <strong>no secretores</strong> (homocigotos para mutaciones que inactivan <strong>FUT2</strong>, ~20% de europeos y africanos) son resistentes; cepas pandémicas nuevas cada 2-4 años por cambio antigénico <span class="cite">p. 794-795</span>.</li>
+<li><strong>Rotavirus</strong>: ARN bicatenario segmentado encapsulado; gran causa de muerte por diarrea infantil; <strong>niños de 6-24 meses</strong> (protección por anticuerpos de leche materna los primeros 6); OMS recomienda la primera dosis a las 6 semanas; inoculo mínimo de <strong>10 partículas</strong>; destruye selectivamente <strong>enterocitos maduros</strong>; la proteína <strong>NSP4</strong> puede provocar apoptosis; diarrea secretora más osmótica <span class="cite">p. 795</span>.</li>
+<li><strong>Adenovirus</strong>: causa común de diarrea pediátrica; atrofia vellosa inespecífica con hiperplasia de criptas; inclusiones nucleares infrecuentes; síntomas que resuelven en 10 días <span class="cite">p. 795</span>.</li>
+</ul>
+<h4 id="enterocolitis-parasitaria">Enterocolitis parasitaria</h4>
+<p>Parásitos y protozoos afectan a más de la mitad de la población mundial de forma crónica o recurrente; el intestino delgado puede albergar hasta 20 especies <span class="cite">p. 795</span>.</p>
+<ul>
+<li><em><strong>Ascaris lumbricoides</strong></em>: infecta a <strong>1.000 millones</strong> de personas; helminto transmitido por el suelo; ciclo pulmonar (larvas tosidas y tragadas a las ~3 semanas); reacción rica en <strong>eosinófilos</strong>; obstrucción intestinal o biliar, abscesos hepáticos y neumonitis; diagnóstico por huevos en heces <span class="cite">p. 795-796</span>.</li>
+<li><em><strong>Strongyloides</strong></em>: penetra la piel sana; cicla pulmón-intestino; <strong>autoinfección</strong> posible (los huevos eclosionan dentro del intestino) → infección de por vida y <strong>autoinfección fulminante en inmunodeprimidos</strong>; eosinofilia intensa <span class="cite">p. 796</span>.</li>
+<li><strong>Anquilostomas</strong> (<em>Necator duodenale</em>, <em>Ancylostoma duodenale</em>): 1.000 millones de infectados; se fijan a la mucosa duodenal y chupan sangre → erosiones, hemorragia y <strong>anemia ferropénica</strong> <span class="cite">p. 796</span>.</li>
+<li><em><strong>Trichuris trichiura</strong></em> (tricocéfalos) y <strong>oxiuros</strong> (<em>Enterobius vermicularis</em>, <em>E. gregorii</em>): no penetran la mucosa; rara vez enfermedad grave; el tricocéfalos grave produce diarrea hemorrágica y prolapso rectal; los oxiuros migran al ano de noche y depositan huevos → prurito; diagnóstico del oxiuro con <strong>cinta de celofán</strong> perianal <span class="cite">p. 796</span>.</li>
+<li><strong>Esquistosomiasis</strong>: gusanos adultos en venas mesentéricas; huevos atrapados en mucosa y submucosa con reacción <strong>granulomatosa</strong>, hemorragia e incluso obstrucción <span class="cite">p. 797</span>.</li>
+<li><strong>Cestodos</strong>: <em>Diphyllobothrium latum</em>, <em>Taenia solium</em>, <em>Hymenolepis nana</em>; residen solo en la luz, sin eosinofilia; <em>D. latum</em> compite por la vitamina B12 y produce <strong>anemia megaloblástica</strong>; diagnóstico por proglótides y huevos en heces <span class="cite">p. 797</span>.</li>
+<li><em><strong>Entamoeba histolytica</strong></em>: ~500 millones de infectados (India, México, Colombia); 40 millones de casos de disentería y absceso hepático al año; quistes de 4 núcleos con pared de quitina; trofozoítos que provocan apoptosis e invaden lateralmente → <strong>úlcera en forma de matraz</strong> (cuello estrecho, base ancha); ciego y colon ascendente; las amebas pueden confundirse con macrófagos; <strong>absceso hepático amebiano en ~40%</strong> de los disentéricos (hasta &gt;10 cm, escasa reacción en los márgenes); <strong>metronidazol</strong> como tratamiento más eficaz (inhibe la piruvato oxidorreductasa de un fermentador obligado sin mitocondrias) <span class="cite">p. 797</span>.</li>
+<li><em><strong>Giardia lamblia</strong></em> (también <em>G. duodenalis</em> o <em>G. intestinalis</em>): <strong>patógeno parasitario más frecuente en humanos</strong>; solo <strong>10 quistes</strong> bastan; quistes <strong>resistentes al cloro</strong>, endémico en aguas sin filtrar (campistas); eliminación por IgA secretora e <strong>IL-6</strong> mucosas; evasión por variación de la <strong>proteína de superficie variante (VSP)</strong>; trofozoítos en forma de <strong>pera con dos núcleos</strong> iguales en biopsias duodenales, <strong>sin invasión</strong> y con morfología a menudo normal; diarrea aguda o crónica, malabsorción y adelgazamiento; diagnóstico por inmunofluorescencia de quistes en heces; las recaídas son frecuentes <span class="cite">p. 797</span>.</li>
+<li><em><strong>Cryptosporidium</strong></em> (<em>C. hominis</em>, <em>C. parvum</em>): diarrea crónica en sida; ovoquistes resistentes al cloro; brote de <strong>Milwaukee, 1993: más de 400.000 personas</strong> por purificación insuficiente; solo <strong>10 ovoquistes</strong> producen infección sintomática; el esporozoíto se instala en una vacuola endocítica apical (parece "encima" del borde en cepillo); diarrea líquida no hemorrágica por malabsorción de sodio, secreción de cloruro y aumento de la permeabilidad; diagnóstico por ovoquistes en heces <span class="cite">p. 797-798</span>.</li>
+</ul>
+<h3 id="síndrome-del-intestino-irritable">Síndrome del intestino irritable</h3>
+<p>Dolor abdominal recurrente crónico, distensión y cambios del hábito intestinal <strong>sin alteraciones endoscópicas ni microscópicas</strong>; subtipos con predominio de diarrea, estreñimiento o mixtos según los criterios de Roma <span class="cite">p. 798</span>.</p>
+<ul>
+<li>Patogenia mal definida: estrés psicológico, alimentación, alteración del microbioma, mayor sensitividad entérica y motilidad alterada; malabsorción o síntesis excesiva de <strong>ácidos biliares</strong> en el SII-D; genes candidatos: transportadores de recaptación de serotonina, receptores de cannabinoides y mediadores relacionados con TNF; <strong>antagonistas del receptor 5-HT3</strong> eficaces en SII-D; un subgrupo se inicia tras gastroenteritis infecciosa <span class="cite">p. 798</span>.</li>
+<li>Clínica: pico de 20-40 años, <strong>predominio femenino</strong>; prevalencia 5-10% en países de altos ingresos; criterios: dolor o malestar ≥3 días/mes durante 3 meses con mejoría tras la defecación y cambio en frecuencia o forma de las heces; excluir infección entérica y EII <span class="cite">p. 798</span>.</li>
+</ul>
+<h3 id="enfermedad-inflamatoria-intestinal-eii">Enfermedad inflamatoria intestinal (EII)</h3>
+<p>Afección crónica por interacciones entre microbiota e inmunidad del huésped en individuos predispuestos con activación inmunitaria inadecuada de la mucosa; incluye <strong>colitis ulcerosa</strong> y <strong>enfermedad de Crohn</strong>; la distinción se basa en la distribución y la morfología <span class="cite">p. 798-799</span>.</p>
+<ul>
+<li>La <strong>colitis ulcerosa afecta solo colon y recto</strong>, limitada a mucosa y submucosa; la <strong>enfermedad de Crohn</strong> (enteritis regional) puede afectar <strong>cualquier área del TD</strong> y suele ser <strong>transparietal</strong> <span class="cite">p. 799</span>.</li>
+<li>Epidemiología: adolescentes y primeros 20 años; personas de raza blanca; <strong>3-5 veces más frecuente en judíos asquenazíes</strong> en EE. UU.; más frecuente en América del Norte, norte de Europa y Australia, con incidencia en aumento en África, América del Sur y Asia; <strong>hipótesis de la higiene</strong>: menor contaminación → desarrollo insuficiente de procesos reguladores de las respuestas inmunitarias de mucosas <span class="cite">p. 799</span>.</li>
+<li>Patogenia: más de 200 polimorfismos asociados (&lt;50% del riesgo en Crohn, menos aún en colitis ulcerosa); <em><strong>NOD2</strong></em>, el gen de mayor riesgo para Crohn, solo multiplica el riesgo ×10 y sus alelos se encuentran en ~35% de los blancos con Crohn (el doble que en controles); genes de <strong>inmunidad</strong> (HLA, señalización Th1/Th17; receptor de IL-23), de <strong>autofagia</strong> (<em><strong>ATG16L1</strong></em>, <em><strong>IRGM</strong></em>; la mutación de ATG16L1 de Crohn degrada la proteína y altera los <strong>gránulos de las células de Paneth</strong>) y de <strong>interacción huésped-microbio</strong> (<em>Clostridium</em> → linfocitos T reguladores; <em>Bifidobacterium</em> → Th17; <strong>butirato</strong> mejora la barrera); disbacteriosis con pérdida de diversidad; la EII de inicio muy temprano puede ser <strong>monogénica</strong> (mutaciones del receptor de IL-10 → exceso de IL-1β macrofágico) <span class="cite">p. 799-800</span>.</li>
+</ul>
+<p>Comparación Crohn vs colitis ulcerosa (tabla 17.8) , Fuente: <span class="cite">p. 799</span></p>
+<div class="table-wrap" role="region" aria-label="Tabla: Intestino delgado y colon" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Enfermedad de Crohn</th>
+<th>Colitis ulcerosa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Región</strong></td>
+<td>Íleon + colon</td>
+<td>Solo colon</td>
+</tr>
+<tr>
+<td><strong>Distribución</strong></td>
+<td>Lesiones salteadas</td>
+<td>Difusa</td>
+</tr>
+<tr>
+<td>Estenosis</td>
+<td>Sí</td>
+<td>Infrecuente</td>
+</tr>
+<tr>
+<td>Aspecto de la pared</td>
+<td>Grueso</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td><strong>Inflamación</strong></td>
+<td>Transparietal</td>
+<td>Limitada a la mucosa</td>
+</tr>
+<tr>
+<td>Seudopólipos</td>
+<td>Moderados</td>
+<td>Acusados</td>
+</tr>
+<tr>
+<td>Úlceras</td>
+<td>Superficiales, de base ancha</td>
+<td>Profundas, en puñalada</td>
+</tr>
+<tr>
+<td>Reacción linfática</td>
+<td>Acusada</td>
+<td>Moderada</td>
+</tr>
+<tr>
+<td>Fibrosis</td>
+<td>Acusada</td>
+<td>Leve a ninguna</td>
+</tr>
+<tr>
+<td>Serositis</td>
+<td>Leve a ninguna</td>
+<td>Acusada</td>
+</tr>
+<tr>
+<td><strong>Granulomas</strong></td>
+<td>Sí (35%)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fístulas/senos</td>
+<td>Sí</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fístula perianal</td>
+<td>Sí (en enfermedad del colon)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Malabsorción</td>
+<td>Sí, de grasas/vitaminas</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Potencial maligno</td>
+<td>Con afectación del colon</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Recidiva tras cirugía</td>
+<td>Frecuente</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Megacolon tóxico</strong></td>
+<td>No</td>
+<td>Sí</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="enfermedad-de-crohn">Enfermedad de Crohn</h4>
+<p>Puede afectar cualquier área del TD, pero predomina en el <strong>íleon terminal, válvula ileocecal y ciego</strong>; limitada al intestino delgado en ~40%; intestino delgado + colon en 30%; solo colon el resto <span class="cite">p. 800</span>.</p>
+<ul>
+<li>Morfología: lesiones múltiples independientes y delimitadas (<strong>lesiones salteadas</strong>); lesión más temprana: <strong>úlcera aftosa</strong> → úlceras sinuosas alargadas a lo largo del eje del intestino con mucosa intermedia conservada → <strong>aspecto empedrado</strong>; <strong>fisuras</strong> que se convierten en fístulas o perforan; pared engrosada y elástica (edema transparietal, fibrosis submucosa, hipertrofia de la muscular propia) con <strong>estenosis</strong>; <strong>proliferación fibrograsa</strong> (tejido adiposo mesentérico que envuelve la serosa) <span class="cite">p. 800-801</span>.</li>
+<li>Histología: neutrófilos con criptitis y <strong>abscesos cripticos</strong>; transición brusca entre mucosa ulcerada y normal; <strong>distorsión de criptas</strong> (ramificadas y desorientadas); <strong>metaplasia seudopilórica</strong> (glándulas de aspecto antral) y <strong>metaplasia de células de Paneth</strong> en colon descendente; <strong>granulomas no necrosantes en ~35%</strong>, en cualquier capa de la pared y también en ganglios mesentéricos <span class="cite">p. 801</span>.</li>
+<li>Clínica: crisis intermitentes de diarrea leve, fiebre y dolor abdominal; ~20% con dolor intenso en fosa ilíaca derecha que simula apendicitis o perforación; el <strong>tabaquismo es un factor de riesgo</strong> importante para la aparición (a diferencia de la colitis ulcerosa, donde fumar alivia parcialmente los síntomas); anemia ferropénica; malabsorción de proteínas, vitamina B12 y <strong>sales biliares</strong> con hipoalbuminemia; estenosis fibrosantes ileales que requieren resección; recidiva en la anastomosis: <strong>hasta 40% requiere nuevas resecciones en 10 años</strong>; fístulas a vejiga, vagina, piel abdominal o perianal; tratamiento: salicilatos, corticoesteroides, <strong>anticuerpos anti-TNF</strong> (revolucionaron el tratamiento) y biológicos contra citocinas y moléculas de adhesión <span class="cite">p. 801</span>.</li>
+<li>Extraintestinales: nódulos cutáneos granulomatosos, uveítis, poliartritis migratoria, sacroilitis, espondilitis anquilosante, eritema nudoso y <strong>acropaquias</strong>; pueden preceder a la enfermedad intestinal; <strong>pericolangitis y colangitis esclerosante primaria</strong> más frecuentes que en la población general, aunque aún más habituales en colitis ulcerosa <span class="cite">p. 802</span>.</li>
+</ul>
+<h4 id="colitis-ulcerosa">Colitis ulcerosa</h4>
+<p>Limitada a <strong>colon y recto</strong>; manifestaciones extraintestinales que se superponen con Crohn; <strong>2,5-7,5%</strong> asocia <strong>colangitis esclerosante primaria</strong> <span class="cite">p. 802</span>.</p>
+<ul>
+<li>Morfología: <strong>siempre afecta el recto</strong> y se extiende en sentido proximal de forma continua; <strong>pancolitis</strong> si todo el colon; <strong>proctitis</strong> o <strong>proctosigmoiditis ulcerosa</strong> si es distal; intestino delgado normal (salvo <strong>ileitis retrógrada</strong> leve en pancolitis graves); sin lesiones salteadas (salvo inflamación focal apendicular o cecal ocasional); mucosa granular eritematosa o con úlceras extensas alineadas en el eje longitudinal; <strong>seudopólipos</strong> (islotes de mucosa en regeneración) y <strong>puentes mucosos</strong>; <strong>no es transparietal</strong>: pared no engrosada, serosa normal, sin estenosis; raramente, inflamación de la muscular propia con <strong>megacolon tóxico</strong> y riesgo de perforación; histología: abscesos cripticos, distorsión de criptas, metaplasia seudopilórica, <strong>sin granulomas</strong>, inflamación difusa limitada a mucosa y submucosa superficial; la histología puede normalizarse tras remisión prolongada <span class="cite">p. 802-803</span>.</li>
+<li>Clínica: crisis de <strong>diarrea hemorrágica con material mucoide</strong>, dolor bajo abdominal y cólicos aliviados con la defecación; ~mitad de los pacientes tiene enfermedad leve, casi todos con al menos una recaída en 10 años; históricamente hasta 30% requirió colectomía en los primeros 3 años (hoy mucho menos con tratamiento médico); <strong>la colectomía cura la enfermedad intestinal</strong>, pero las manifestaciones extraintestinales pueden persistir; desencadenantes: enteritis infecciosa previa, estrés psicológico y <strong>abandono del tabaquismo</strong> <span class="cite">p. 803</span>.</li>
+</ul>
+<h4 id="colitis-indeterminada-y-neoplasia-asociada-a-colitis">Colitis indeterminada y neoplasia asociada a colitis</h4>
+<ul>
+<li><strong>Colitis indeterminada</strong>: hasta 10% de las EII no clasificables; enfermedad del colon en distribución continua (como colitis ulcerosa) pero con características sugerentes de Crohn (enfermedad histológica moteada, antecedente familiar de Crohn, lesiones perianales); serología de apoyo: <strong>p-ANCA en 75% de las colitis ulcerosas y solo 11% de los Crohn</strong>; los anticuerpos contra <em>Saccharomyces cerevisiae</em> (ASCA) se hallan en Crohn y suelen faltar en colitis ulcerosa <span class="cite">p. 803-804</span>.</li>
+<li><strong>Neoplasia asociada a colitis</strong>: complicación temida de la colitis ulcerosa y del Crohn colónico; factores de riesgo: <strong>duración</strong> (el riesgo aumenta rápido de 8 a 10 años desde el inicio), <strong>extensión</strong> (mayor con pancolitis; los Crohn <strong>sin</strong> afectación del colon no tienen riesgo aumentado) y <strong>respuesta inflamatoria</strong> (mayor frecuencia y gravedad de la inflamación activa con neutrófilos) <span class="cite">p. 804</span>.</li>
+<li>Vigilancia endoscópica desde aproximadamente los <strong>8 años</strong> de diagnóstico; excepción: pacientes con EII y <strong>colangitis esclerosante primaria</strong>, en vigilancia desde el diagnóstico por mayor riesgo <span class="cite">p. 804</span>.</li>
+<li>La displasia puede aparecer en <strong>mucosa plana</strong> no visible macroscópicamente; se clasifica en leve o grave, puede ser multifocal; la grave puede asociar carcinoma infiltrante y suele llevar a colectomía; la leve se vigila, pero también se opera con focos múltiples de displasia plana, enfermedad extensa o larga y edad mayor; las lesiones polipoideas solitarias sin displasia plana pueden resecarse endoscópicamente <span class="cite">p. 804</span>.</li>
+</ul>
+<h3 id="otras-causas-de-colitis-crónica-enfermedad-del-injerto-contra-el-huésped">Otras causas de colitis crónica; enfermedad del injerto contra el huésped</h3>
+<ul>
+<li><strong>Colitis por derivación</strong>: en segmentos distales excluidos por ostomías (por colitis ulcerosa, Hirschsprung, cáncer); eritema y friabilidad + numerosos <strong>folículos linfáticos con centros germinales</strong>; en casos graves imita EII; los enemas de <strong>ácidos grasos de cadena corta (butirato)</strong> pueden ayudar pero se usan poco por el olor; resuelve al restablecer el flujo fecal <span class="cite">p. 805</span>.</li>
+<li><strong>Colitis microscópica</strong>: colitis colágena + colitis linfocítica; diarrea líquida crónica <strong>no hemorrágica</strong> sin adelgazamiento, con endoscopia normal <span class="cite">p. 805</span>.
+<ul>
+<li><strong>Colitis colágena</strong>: mujeres de mediana edad y mayores; <strong>banda densa de colágeno subepitelial</strong> + linfocitos T intraepiteliales + infiltrado mixto en lámina propia.</li>
+<li><strong>Colitis linfocítica</strong>: colágeno de grosor normal y <strong>&gt;1 linfocito por cada 5 colonocitos</strong>; clara asociación con <strong>enfermedad celiaca</strong> y autoinmunidad (enfermedad de Graves, artritis reumatoide, gastritis autoinmunitaria o linfocítica); los AINE y posiblemente los inhibidores de la bomba de protones pueden provocar cambios similares <span class="cite">p. 805</span>.</li>
+</ul></li>
+<li><strong>Enfermedad del injerto contra el huésped</strong>: tras el alotrasplante de células madre hematopoyéticas; afecta sobre todo a intestino delgado y colon; linfocitos T del donante contra epitelio gastrointestinal, pero el infiltrado linfocítico suele ser escaso; el dato histológico más frecuente es la <strong>apoptosis de células de las criptas</strong>, con destrucción completa de estas en casos graves; diarrea líquida, hemorrágica en casos graves; se superpone con la enterocolitis por <strong>inhibidores de los puntos de control inmunitarios</strong> en oncología <span class="cite">p. 805-806</span>.</li>
+</ul>
+<h3 id="enfermedad-diverticular-sigmoidea">Enfermedad diverticular sigmoidea</h3>
+<p><strong>Evaginaciones seudodiverticulares adquiridas</strong> de mucosa y submucosa (sin las tres capas, a diferencia del divertículo de Meckel); infrecuente &lt;30 años, pero prevalencia cercana al <strong>50% en occidentales &gt;60 años</strong>; en Asia y África predominan en el colon ascendente <span class="cite">p. 806</span>.</p>
+<ul>
+<li>Patogenia: discontinuidades focales de la muscular circular interna donde penetran nervios y <strong>vasos rectos</strong>; en el colon la capa longitudinal no la refuerza (está agrupada en las <strong>tenias</strong>); la presión intraluminal elevada (peristaltismo exagerado, <strong>dietas bajas en fibra</strong> con menor masa fecal) hernia la mucosa por esos puntos débiles <span class="cite">p. 806</span>.</li>
+<li>Morfología: evaginaciones en matraz de <strong>0,5-1 cm</strong>, distribuidas con regularidad al lado de las tenias, más frecuentes en el <strong>sigmoide</strong>; pared delgada con muscular atenuada o ausente; hipertrofia de la capa circular del segmento afectado; la obstrucción del divertículo provoca <strong>diverticulitis</strong> con inflamación y aumento de presión → <strong>perforación</strong>; engrosamiento fibrótico, estenosis, abscesos pericólicos, fístulas y peritonitis <span class="cite">p. 806</span>.</li>
+<li>Clínica: la mayoría asintomática de por vida; <strong>~20%</strong> con cólicos, malestar bajo, estreñimiento, distensión o sensación de evacuación incompleta; estreñimiento y diarrea alternantes que imitan el SII; la diverticulitis la mayoría de las veces resuelve espontáneamente; cirugía reservada a diverticulitis grave o recidivante <span class="cite">p. 806</span>.</li>
+</ul>
+<h3 id="pólipos">Pólipos</h3>
+<p>Clasificación: <strong>neoplásicos</strong> (adenomas, que pueden progresar a cáncer) vs <strong>no neoplásicos</strong> (inflamatorios, hamartomatosos, hiperplásicos); <strong>sésil</strong> (sin tallo) vs <strong>pediculado</strong> (con tallo) <span class="cite">p. 807</span>.</p>
+<ul>
+<li><strong>Pólipos hiperplásicos</strong>: proliferaciones epiteliales benignas por <strong>disminución del recambio</strong> y retraso del desprendimiento de células superficiales; <strong>sin potencial maligno</strong>; deben distinguirse de los <strong>adenomas serrados sésiles</strong>, histológicamente similares pero malignizables; la hiperplasia epitelial reactiva adyacente a cualquier masa puede ser un indicio de lesión contigua importante. Más frecuentes en el <strong>colon descendente</strong>; &lt;5 mm; múltiples, sobre todo en sigmoide y recto; células caliciformes y absorbentes maduras con <strong>arquitectura de superficie estrellada</strong> patognomónica, limitada al tercio superior de la cripta <span class="cite">p. 807</span>.</li>
+<li><strong>Pólipos inflamatorios</strong>: ejemplo tipo, <strong>síndrome de úlcera rectal solitaria</strong>: rectorragia, secreción de moco y lesión inflamatoria de la <strong>pared rectal anterior</strong> por alteración de la relajación del esfínter anorrectal → abrasión recurrente y úlcera; el atrapamiento en el flujo fecal lleva al <strong>prolapso de la mucosa</strong>; histología: infiltrados inflamatorios mixtos, erosión, hiperplasia epitelial y <strong>hiperplasia fibromuscular de la lámina propia</strong> (marca de prolapso) <span class="cite">p. 808</span>.</li>
+<li><strong>Pólipos hamartomatosos</strong>: esporádicos o sindrómicos; muchos síndromes son por mutaciones germinales en supresores tumorales u oncogenes; un subgrupo es <strong>premaligno</strong>; reconocerlos permite detectar manifestaciones extraintestinales y afectados familiares <span class="cite">p. 808</span>.</li>
+</ul>
+<h4 id="pólipos-juveniles-y-síndrome-de-peutz-jeghers">Pólipos juveniles y síndrome de Peutz-Jeghers</h4>
+<ul>
+<li><strong>Pólipos juveniles</strong>: malformaciones focales de epitelio y lámina propia; la mayoría en <strong>niños &lt;5 años</strong>, rectales, con rectorragia; también invaginación, obstrucción o prolapso del pólipo. <strong>Esporádicos</strong> ("pólipos de retención"): solitarios, con <strong>displasia infrecuente</strong>; &lt;3 cm, pediculados, rojizos, con <strong>espacios quísticos</strong> (glándulas dilatadas llenas de mucina y restos inflamatorios) <span class="cite">p. 808</span>.</li>
+<li><strong>Poliposis juvenil</strong>: autosómica dominante, de tres a cientos de pólipos, con necesidad a veces de colectomía; malformaciones arteriovenosas pulmonares; asociada a mutaciones de <em><strong>SMAD4</strong></em> (vía TGF-β; con telangiectasia hemorrágica hereditaria) o <em><strong>BMPR1A</strong></em> (juntas, &lt;50% de los casos); hay displasia, tanto en los pólipos como en adenomas independientes; <strong>30-50% desarrolla adenocarcinoma de colon a los 45 años</strong> <span class="cite">p. 808-809</span>.</li>
+<li><strong>Síndrome de Peutz-Jeghers</strong>: autosómico dominante poco frecuente; edad promedio <strong>11 años</strong>; pólipos hamartomatosos digestivos + <strong>hiperpigmentación mucocutánea</strong> (máculas azul oscuro a marrón en labios, orificios nasales, mucosa bucal, palmas, genitales y región perianal; se distinguen de las pecas por la mucosa bucal) <span class="cite">p. 809</span>.</li>
+<li>Los pólipos de Peutz-Jeghers pueden iniciar <strong>invaginación intestinal</strong> mortal; <strong>riesgo de por vida de neoplasias ~40%</strong>: vigilancia desde el nacimiento para tumores de cordones sexuales testiculares, infancia tardía para estómago e intestino delgado, y 2ª-3ª décadas para colon, páncreas, mama, pulmón, ovario y útero <span class="cite">p. 809</span>.</li>
+<li>Patogenia: mutaciones con pérdida de función de <em><strong>STK11</strong></em> en ~mitad de los familiares; regula las <strong>AMPK</strong>; se pierde la segunda copia en los cánceres <span class="cite">p. 809</span>.</li>
+<li>Morfología: más frecuentes en intestino delgado; grandes y pediculados, lobulados; <strong>red arborescente</strong> de tejido conjuntivo, <strong>músculo liso</strong>, lámina propia y glándulas con epitelio normal; la arborización con músculo liso los distingue de los pólipos juveniles <span class="cite">p. 809-810</span>.</li>
+</ul>
+<p>Síndromes de poliposis gastrointestinal (tabla 17.9, síntesis) , Fuente: <span class="cite">p. 809</span></p>
+<div class="table-wrap" role="region" aria-label="Tabla: Intestino delgado y colon" tabindex="0"><table>
+<thead>
+<tr>
+<th>Síndrome</th>
+<th>Gen(es)</th>
+<th>Edad</th>
+<th>Lesiones GI</th>
+<th>Extraintestinales destacadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Poliposis juvenil</td>
+<td><em>SMAD4</em>, <em>BMPR1A</em></td>
+<td>&lt;5</td>
+<td>Pólipos juveniles; riesgo de adenocarcinoma gástrico, delgado, colon y pancreático</td>
+<td>Malformaciones congénitas, acropaquias</td>
+</tr>
+<tr>
+<td>Peutz-Jeghers</td>
+<td><em>STK11</em></td>
+<td>10-15</td>
+<td>Pólipos arborizantes; íleon &gt; colon &gt; estómago</td>
+<td>Máculas pigmentadas; cáncer de colon, mama, pulmón, páncreas, tiroides</td>
+</tr>
+<tr>
+<td>Cowden / Bannayan-Ruvalcaba-Riley</td>
+<td><em>PTEN</em></td>
+<td>&lt;15</td>
+<td>Pólipos hamartomatosos/inflamatorios, lipomas, ganglioneuromas</td>
+<td>Tumores cutáneos, tiroideos y mamarios</td>
+</tr>
+<tr>
+<td>Cronkhite-Canadá</td>
+<td>Causa desconocida, no hereditario</td>
+<td>&gt;50</td>
+<td>Pólipos hamartomatosos/inflamatorios</td>
+<td>Atrofia ungueal, alopecia, hiperpigmentación; mortal hasta 50%</td>
+</tr>
+<tr>
+<td>Esclerosis tuberosa</td>
+<td><em>TSC1</em>, <em>TSC2</em> (mTOR)</td>
+<td>No aplica</td>
+<td>Pólipos hamartomatosos</td>
+<td>Discapacidad intelectual, epilepsia, angiofibromas faciales, angiomiolipomas</td>
+</tr>
+<tr>
+<td>PAF clásica / atenuada</td>
+<td><em>APC</em></td>
+<td>10-15 / 40-50</td>
+<td>Múltiples adenomas</td>
+<td>Hipertrofia congénita del EPR</td>
+</tr>
+<tr>
+<td>Síndrome de Gardner</td>
+<td><em>APC</em></td>
+<td>10-15</td>
+<td>Múltiples adenomas</td>
+<td>Osteomas, tumores tiroideos y desmoides, quistes cutáneos</td>
+</tr>
+<tr>
+<td>Síndrome de Turcot</td>
+<td><em>APC</em></td>
+<td>10-15</td>
+<td>Múltiples adenomas</td>
+<td>Meduloblastoma, glioblastoma</td>
+</tr>
+<tr>
+<td>Poliposis asociada a MUTYH (MAP)</td>
+<td><em>MUTYH</em></td>
+<td>30-50</td>
+<td>Múltiples adenomas</td>
+<td>Pólipos gástricos y duodenales</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pólipos-neoplásicos-adenomas">Pólipos neoplásicos (adenomas)</h4>
+<p>Los adenomas de colon son <strong>precursores de la mayoría de los adenocarcinomas colorrectales</strong>; aparecen en ~30% de los adultos occidentales a los 60 años; vigilancia desde los 45-50 años, y <strong>10 años antes de la edad del familiar más joven diagnosticado</strong> en casos con antecedente familiar <span class="cite">p. 810</span>.</p>
+<ul>
+<li>Morfología: 0,3-10 cm; pediculados o sésiles, superficie "de frambuesa"; displasia con hipercromatismo, alargamiento y estratificación nuclear; <strong>tubulares</strong> (pequeños, pediculados, glándulas redondeadas), <strong>vellosos</strong> (grandes, sésiles, vellosidades delgadas; más cáncer, en parte por el tamaño) y <strong>tubulovellosos</strong> <span class="cite">p. 810-811</span>.</li>
+<li><strong>Adenoma serrado sésil</strong>: se superpone histológicamente con el pólipo hiperplásico pero predomina en el <strong>colon ascendente</strong>; sin displasia citológica típica; se distingue por <strong>arquitectura serrada en toda la longitud de la glándula, incluida la base, con dilatación y crecimiento lateral de la cripta</strong> <span class="cite">p. 811</span>.</li>
+<li><strong>Carcinoma intramucoso</strong>: invasión de la lámina propia; como la mucosa del colon <strong>no tiene vasos linfáticos funcionales</strong>, tiene poco o ningún potencial metastásico y la polipectomía completa suele ser curativa; la invasión <strong>más allá de la muscular de la mucosa</strong> (incluido el tallo de un pólipo pediculado) es adenocarcinoma invasivo <span class="cite">p. 811</span>.</li>
+<li>El <strong>tamaño</strong> es la característica que más correlaciona con cáncer: raro &lt;1 cm; <strong>casi 40% de las lesiones &gt;4 cm</strong> contienen cáncer infiltrante; la displasia grave aumenta el riesgo en el propio pólipo pero no en otros del mismo paciente <span class="cite">p. 811</span>.</li>
+</ul>
+<h4 id="poliposis-adenomatosa-familiar-paf-y-map">Poliposis adenomatosa familiar (PAF) y MAP</h4>
+<p>Autosómica dominante por mutaciones del gen <em><strong>APC</strong></em> (regulador negativo de la vía <strong>Wnt</strong>); ~75% heredada, el resto mutaciones de novo; se requieren <strong>al menos 100 adenomas</strong> para la PAF clásica (pueden ser miles) <span class="cite">p. 812</span>.</p>
+<ul>
+<li>Los pólipos son indistinguibles de los esporádicos, pero abundan los <strong>adenomas planos o hundidos</strong> y los <strong>adenomas microscópicos</strong> (1-2 criptas displásicas) <span class="cite">p. 812</span>.</li>
+<li>Sin tratamiento, el <strong>adenocarcinoma colorrectal aparece en el 100%</strong>, a menudo antes de los 30 años y casi siempre a los 50 → <strong>colectomía profiláctica</strong>; los pacientes mantienen riesgo extracólico: <strong>ampolla de Váter y estómago</strong> son sitios habituales de adenomas; <strong>hipertrofia congénita del epitelio pigmentario de la retina</strong> detectable al nacer <span class="cite">p. 812</span>.</li>
+<li><strong>Poliposis asociada a MUTYH (MAP)</strong>: autosómica recesiva, mutaciones bialélicas de <em><strong>MUTYH</strong></em> (reparación por escisión de bases); <strong>&lt;100 pólipos</strong>, edades y cáncer más tardíos; frecuentes <strong>adenomas serrados sésiles y pólipos hiperplásicos con mutaciones de <em>KRAS</em></strong> <span class="cite">p. 812-813</span>.</li>
+</ul>
+<p>Patrones de neoplasia colorrectal (tabla 17.10) , Fuente: <span class="cite">p. 813</span></p>
+<div class="table-wrap" role="region" aria-label="Tabla: Intestino delgado y colon" tabindex="0"><table>
+<thead>
+<tr>
+<th>Entidad</th>
+<th>Vía / genes</th>
+<th>Transmisión</th>
+<th>Sitio e histología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PAF</td>
+<td><em>APC</em> / Wnt</td>
+<td>Autosómica dominante</td>
+<td>Tubular, vellosa; adenocarcinoma típico; sin sitio predominante</td>
+</tr>
+<tr>
+<td>MAP</td>
+<td><em>MUTYH</em> (reparación de errores de emparejamiento)</td>
+<td>Autosómica recesiva</td>
+<td><strong>Adenoma serrado sésil; adenocarcinoma mucinoso</strong>, sin sitio predominante</td>
+</tr>
+<tr>
+<td>CCRHNP</td>
+<td><em>MSH2</em>, <em>MLH1</em></td>
+<td>Autosómica dominante</td>
+<td><strong>Lado derecho</strong>; adenoma serrado sésil, adenocarcinoma mucinoso</td>
+</tr>
+<tr>
+<td>Cáncer esporádico (70-80%)</td>
+<td><em>APC</em> / Wnt</td>
+<td>No aplica</td>
+<td><strong>Lado izquierdo</strong>; tubular, velloso; adenocarcinoma típico</td>
+</tr>
+<tr>
+<td>Cáncer esporádico (10-15%)</td>
+<td><em>MSH2</em>, <em>MLH1</em></td>
+<td>No aplica</td>
+<td>Lado derecho; adenoma serrado sésil, mucinoso</td>
+</tr>
+<tr>
+<td>Cáncer esporádico (5-10%)</td>
+<td>Hipermetilación <em>MLH1</em>, <em>BRAF</em></td>
+<td>No aplica</td>
+<td>Lado derecho; adenoma serrado sésil, mucinoso</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="cáncer-colorrectal-hereditario-no-poliposo-ccrhnp-síndrome-de-lynch">Cáncer colorrectal hereditario no poliposo (CCRHNP, síndrome de Lynch)</h4>
+<p>Mutaciones heredadas en genes de <strong>reparación de errores de emparejamiento</strong> del ADN; representa el <strong>2-4% de todos los cánceres colorrectales</strong>, la forma sindrómica más frecuente de cáncer de colon <span class="cite">p. 813</span>.</p>
+<ul>
+<li>Cánceres familiares agrupados en colorrecto, endometrio, estómago, ovario, uréteres, encéfalo, intestino delgado, vías hepatobiliares, páncreas y piel; a edades más tempranas que los esporádicos y con frecuencia en el <strong>colon ascendente</strong> <span class="cite">p. 813</span>.</li>
+<li>La mayoría de los pacientes tienen mutaciones en <em><strong>MSH2</strong></em> o <em><strong>MLH1</strong></em>; al perderse la segunda copia, la tasa de mutación sube hasta <strong>1.000 veces lo normal</strong>, principalmente en <strong>microsatélites</strong> (50.000-100.000 en el genoma) → inestabilidad de microsatélites (MSI) <span class="cite">p. 813</span>.</li>
+</ul>
+<h3 id="adenocarcinoma-de-colon">Adenocarcinoma de colon</h3>
+<p>Neoplasia maligna más frecuente del TD; el intestino delgado (75% de la longitud del TD) es raro sitio de tumores; entre los malignos del intestino delgado, adenocarcinomas y tumores neuroendocrinos bien diferenciados comparten incidencia, seguidos de linfomas y sarcomas <span class="cite">p. 814</span>.</p>
+<ul>
+<li>Epidemiología: ~<strong>10% de todas las muertes por cáncer en el mundo</strong>; <strong>1,2 millones de casos nuevos y 600.000 muertes al año</strong>; en EE. UU., ~15% de las muertes por cáncer, solo superado por el cáncer de pulmón; pico a los 60-70 años; &lt;20% antes de los 50, con incidencia en aumento antes de los 40; factores alimentarios: <strong>baja fibra, hidratos de carbono refinados y grasas</strong>; el <strong>ácido acetilsalicílico y otros AINE protegen</strong>, probablemente por inhibición de la <strong>COX-2</strong>, sobreexpresada en el 90% de los carcinomas y 40-90% de los adenomas <span class="cite">p. 814</span>.</li>
+<li>Patogenia, dos vías genéticas:
+<ul>
+<li><strong>Vía APC/β-catenina (secuencia adenoma-carcinoma, hasta 80% de los esporádicos)</strong>: inactivación de ambas copias de <em><strong>APC</strong></em> temprana → acumulación nuclear de β-catenina → activación de <em>MYC</em> y ciclina D1; luego <em><strong>KRAS</strong></em> (presente en &lt;10% de los adenomas &lt;1 cm pero en 50% de los &gt;1 cm y 50% de los carcinomas invasivos: evento tardío); pérdidas de <em><strong>SMAD2</strong></em> y <em><strong>SMAD4</strong></em> (vía TGF-β); <em><strong>TP53</strong></em> mutado en el <strong>70-80%</strong> de los cánceres pero raro en adenomas (también tardío); sobreexpresión de telomerasa <span class="cite">p. 814-815</span>.</li>
+<li><strong>Vía MSI</strong>: déficit de reparación de errores de emparejamiento → mutaciones acumuladas en <em>TGFBR2</em>, <em>BAX</em>, <em>BRAF</em>, <em>TCF4</em>, <em>IGF2R</em>; tumores "MSI altos" <span class="cite">p. 815</span>.</li>
+</ul></li>
+<li><strong>Fenotipo metilador de islas CpG (CIMP)</strong>: hipermetilación del promotor de <em><strong>MLH1</strong></em> con mutaciones activadoras de <em><strong>BRAF</strong></em> y ausencia de mutaciones de <em>KRAS</em> y <em>TP53</em>; la combinación MSI + <em>BRAF</em> mutado + metilación de <em>MLH1</em> es su firma <span class="cite">p. 815</span>.</li>
+<li>Correlaciones morfológicas de MSI: lesiones serradas sésiles y sus cánceres; carcinomas con <strong>diferenciación mucinosa prominente e infiltrados linfocíticos peritumorales</strong>, frecuentemente en colon ascendente; MSI detectable por ausencia de tinción inmunohistoquímica de proteínas reparadoras o análisis molecular de microsatélites <span class="cite">p. 815-816</span>.</li>
+<li>Morfología: distribución aproximadamente igual en todo el colon; <strong>colon proximal</strong>: masas exofíticas polipoideas que rara vez obstruyen; <strong>colon distal</strong>: lesiones <strong>anulares "en anillo de servilleta"</strong> estenosantes; histología: células cilíndricas altas con restos necróticos en la luz glandular, respuesta <strong>desmoplásica</strong> intensa (consistencia dura); variantes poco diferenciadas, mucinosas (mal pronóstico) y raramente en anillo de sello <span class="cite">p. 816</span>.</li>
+<li>Clínica: <strong>hemicolon derecho</strong>: cansancio y debilidad por anemia ferropénica ("la anemia ferropénica en un hombre mayor o una mujer posmenopáusica es un cáncer GI hasta demostrar lo contrario"); <strong>colon izquierdo</strong>: hemorragia oculta, cambios del hábito intestinal, cólicos en fosa ilíaca izquierda; pronóstico: <strong>profundidad de la invasión y metástasis ganglionares</strong> (núcleo del sistema TNM, de Dukes y Kirklin); el <strong>hígado</strong> es el sitio metastásico más frecuente por el drenaje portal; el recto <strong>no drena por la vena porta</strong>, por lo que los carcinomas anales metastásicos pueden eludir el hígado <span class="cite">p. 816</span>.</li>
+<li>Supervivencia a 5 años: <strong>65% global en EE. UU.</strong>, 90-40% según estadio; similar en Europa, Japón y Australia (60% en Suiza y Japón, 40% en Polonia); 30-42% en China, India, Filipinas y Tailandia; <strong>4% en Gambia</strong> <span class="cite">p. 817</span>.</li>
+</ul>
+<h3 id="tumores-del-conducto-anal-hemorroides-apéndice-y-cavidad-peritoneal">Tumores del conducto anal, hemorroides, apéndice y cavidad peritoneal</h3>
+<ul>
+<li><strong>Conducto anal</strong>: tres tercios: superior con <strong>epitelio rectal cilíndrico</strong>, medio con <strong>epitelio de transición</strong> e inferior con <strong>epitelio escamoso estratificado</strong>; carcinomas con diferenciación glandular o escamosa según el tercio; el patrón <strong>basaloide</strong> deriva de la capa basal del epitelio de transición; el término arcaico <strong>carcinoma cloacógeno</strong> se aplica cuando todo el tumor es basaloide; el <strong>carcinoma epidermoide anal</strong> se asocia a cepas de <strong>alto riesgo del VPH</strong>, mientras que las de bajo riesgo producen <strong>condiloma acuminado</strong>; el principal factor de riesgo de ambas es el <strong>coito anal</strong> <span class="cite">p. 818</span>.</li>
+<li><strong>Hemorroides</strong>: ~5% de la población; por elevación persistente de la presión venosa del plexo hemorroidal (esfuerzo al defecar, estreñimiento, estasis del embarazo); también por <strong>hipertensión portal</strong> (las varices anales son más frecuentes y mucho menos graves que las esofágicas, y unen los sistemas portal y cavo); dolor y rectorragia (<strong>sangre roja brillante en el papel higiénico</strong>); raras &lt;30 años salvo embarazadas; tratamiento: escleroterapia, ligadura con goma elástica o coagulación infrarroja <span class="cite">p. 818</span>.</li>
+<li><strong>Apendicitis aguda</strong>: riesgo de por vida <strong>7%</strong>, más frecuente en adolescentes y adultos jóvenes, ligeramente más en hombres; diagnóstico diferencial: linfoadenitis mesentérica (a menudo por <em>Yersinia</em> o enterocolitis vírica), salpingitis aguda, embarazo ectópico, dolor intermenstrual y diverticulitis de Meckel; <strong>obstrucción luminal manifiesta en 50-80%</strong>, habitualmente por un <strong>fecalito</strong>; el diagnóstico histológico requiere <strong>infiltración por neutrófilos de la muscular propia</strong>; <strong>apendicitis gangrenosa aguda</strong> con necrosis, rotura y peritonitis supurativa; dolor <strong>periumbilical que se localiza en la fosa ilíaca derecha</strong>; <strong>signo de McBurney</strong>: dolor a dos tercios de la distancia del ombligo a la espina ilíaca anterosuperior derecha; presentaciones atípicas frecuentes (apéndice retrocecal con dolor pélvico o en flanco); <strong>se prefiere extirpar apéndices normales a resecar tarde un apéndice enfermo</strong>; otras complicaciones: <strong>pileflebitis, trombosis venosa portal, absceso hepático y bacteriemia</strong> <span class="cite">p. 818-819</span>.</li>
+<li><strong>Tumores del apéndice</strong>: el más frecuente es el <strong>tumor neuroendocrino (carcinoide) bien diferenciado</strong>, casi siempre benigno; casual en apéndices resecados; tumefacción bulbosa en la <strong>punta distal</strong> de 2-3 cm; metástasis ganglionares muy infrecuentes y diseminación a distancia excepcional; adenomas, adenocarcinomas productores y no productores de mucina y el tumor <strong>adenocarcinoide</strong> pueden obstruir e imitar apendicitis aguda <span class="cite">p. 819</span>.</li>
+<li><strong>Neoplasias mucinosas apendiculares (LAMN/HAMN)</strong>: proliferación epitelial mucinosa con mucina extracelular y márgenes compresivos; el patrón infiltrante define adenocarcinoma productor de mucina; mutaciones de <em><strong>GNAS</strong></em> (Gsα) y <em><strong>KRAS</strong></em> frecuentes; <em>APC</em>, <em>TP53</em> y <em>SMAD4</em> se conservan en LAMN pero pueden mutarse en HAMN; pronóstico excelente si se limita al apéndice, más variable en HAMN <span class="cite">p. 819</span>.</li>
+<li><strong>Seudomixoma peritoneal</strong>: diseminación peritoneal de LAMN, HAMN o adenocarcinomas productores de mucina, con mucina semisólida tenaz que llena el abdomen; controlable durante años con citorreducción quirúrgica repetida, pero en la mayoría de los casos inexorablemente mortal <span class="cite">p. 819</span>.</li>
+<li><strong>Enfermedad inflamatoria peritoneal</strong>: fuga de <strong>bilis o enzimas pancreáticas</strong> (peritonitis estéril), perforación de vías biliares, <strong>pancreatitis hemorrágica aguda</strong>, daño de la pared intestinal, material extraño (talco, suturas → granulomas de cuerpo extraño), <strong>endometriosis</strong>, rotura de quistes dermoides (queratina) y perforación de vísceras; <strong>peritonitis bacteriana</strong>: <em>E. coli</em>, estreptococos, <em>S. aureus</em>, enterococos y <em>C. perfringens</em>; <strong>peritonitis bacteriana espontánea</strong>: sin fuente evidente, más frecuente en <strong>cirrosis con ascitis</strong> y, menos, en niños con síndrome nefrótico; diagnóstico por <strong>neutrófilos en líquido ascítico</strong> y cultivos (<em>E. coli</em>, estreptococos, <em>Klebsiella</em>) <span class="cite">p. 820</span>.</li>
+<li><strong>Retroperitonitis esclerosante</strong> (fibrosis retroperitoneal idiopática o <strong>enfermedad de Ormond</strong>): fibrosis densa que puede extenderse al mesenterio; muchos casos pertenecen al espectro de la <strong>enfermedad esclerosante relacionada con IgG4</strong>; frecuentemente <strong>comprime los uréteres</strong> <span class="cite">p. 820</span>.</li>
+<li><strong>Tumores del peritoneo</strong>: <strong>mesoteliomas peritoneales</strong> primarios, casi siempre asociados a alta exposición al <strong>asbesto</strong>; el más frecuente de los tumores primarios de tejidos blandos es el <strong>tumor desmoplásico de células redondas pequeñas</strong>, en niños y adultos jóvenes, parecido al sarcoma de Ewing, con translocación recíproca <strong>t(11;22)(p13;q12)</strong> que produce un gen de fusión <strong>EWS-WT1</strong>; tumores secundarios por diseminación directa o metastásica (<strong>carcinomatosis peritoneal</strong>) <span class="cite">p. 820</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Crohn vs colitis ulcerosa en una línea</span>Crohn: salteado, transparietal, granulomas (~35%), fístulas y recidiva posquirúrgica; el tabaco es factor de riesgo. Colitis ulcerosa: continua desde el recto, limitada a mucosa, sin granulomas, con megacolon tóxico; el tabaco la alivia parcialmente <span class="cite">p. 799-804</span>.</div>
+</section><section id="sec-06-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 754-820</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li><strong>Atresia esofágica</strong> 1-5/10.000 nacidos vivos; la forma más frecuente es segmento superior ciego + fístula entre segmento inferior y tráquea; asociada a <strong>VACTERL</strong> <span class="cite">p. 754</span>.</li>
+<li><strong>Onfalocele</strong> (membrana de amnios + peritoneo con gelatina de Wharton, asociado a otras anomalías y cromosomopatías) ≠ <strong>gastrosquisis</strong> (todas las capas de la pared, solo intestino, lesión aislada, incidencia en aumento) <span class="cite">p. 754</span>.</li>
+<li><strong>Parche esofágico</strong> = mucosa gástrica ectópica en el tercio superior del esófago, la ectopia más frecuente del TD; el <strong>divertículo de Meckel</strong> es el divertículo verdadero más frecuente (regla de los 2; la ectopia gástrica que contiene produce úlcera y hemorragia oculta); los divertículos de colon son <strong>seudodivertículos</strong> sin las tres capas <span class="cite">p. 755</span>.</li>
+<li><strong>Estenosis hipertrófica del píloro</strong>: vómitos <strong>no biliosos en escopetazo</strong> entre la 3ª y 6ª semanas; masa ovoide de 1-2 cm en 90%; miotomía curativa; no confundir con la estenosis pilórica <strong>adquirida</strong> del adulto (gastritis antral, úlcera, carcinoma) <span class="cite">p. 755</span>.</li>
+<li><strong>Hirschsprung</strong>: aganglionosis del segmento <strong>distal</strong> (el colon dilatado es el segmento normal proximal); <strong>siempre afecta el recto</strong>; <em>RET</em>; 10% en síndrome de Down; amenazas vitales: enterocolitis, perforación, peritonitis; el diagnóstico histológico exige <strong>ausencia de células ganglionares</strong> <span class="cite">p. 755-756</span>.</li>
+<li><strong>Mallory-Weiss</strong> (mucoso, ~10% de las HDA altas, benigno) ≠ <strong>Boerhaave</strong> (transparietal, shock, imita infarto); no confundir la <strong>esofagitis por VHS</strong> (úlceras en sacabocados, inclusiones en células epiteliales multinucleadas) con la por <strong>CMV</strong> (úlceras más superficiales, inclusiones en células <strong>endoteliales</strong>) <span class="cite">p. 758-759</span>.</li>
+<li><strong>ERGE</strong>: la histología puede ser normal; hallazgos: eosinófilos intraepiteliales, hiperplasia de zona basal, papilas alargadas; los neutrófilos sugieren infección o daño químico, no reflujo <span class="cite">p. 759</span>.</li>
+<li><strong>Esofagitis eosinófila</strong> = atopia + esófago felino + eosinófilos intraepiteliales en sábanas; <strong>no</strong> progresa a esófago de Barrett; responde a IBP en dosis altas, dietas de exclusión y corticoesteroides tópicos <span class="cite">p. 760</span>.</li>
+<li><strong>Varices</strong>: 30% de las cirrosis compensadas y 60% de las descompensadas; mortalidad <strong>15-20% por episodio</strong>; recidiva en &gt;50% en 1 año; segunda causa mundial de varices: <strong>esquistosomiasis</strong> <span class="cite">p. 760-761</span>.</li>
+<li><strong>Esófago de Barrett</strong>: diagnóstico requiere <strong>células caliciformes</strong>; segmento largo (≥3 cm) con más riesgo que el corto; la displasia multifocal grave se trata como carcinoma intramucoso <span class="cite">p. 761-762</span>.</li>
+<li><strong>Adenocarcinoma esofágico</strong>: distal, sobre esófago de Barrett, 7× en hombres blancos, hoy &gt;50% de los cánceres esofágicos de EE. UU.; <strong>carcinoma epidermoide</strong>: tercio medio, alcohol/tabaco, acalasia, Plummer-Vinson, <strong>mursik</strong> (acetaldehído), VPH en zonas de alto riesgo; <em>SOX2</em> amplificado, <em>TP53</em>, <em>CDH1</em>, <em>NOTCH1</em> <span class="cite">p. 762-764</span>.</li>
+<li>Metástasis ganglionares del cáncer esofágico por tercios: <strong>superior → cervicales; medio → mediastínicos/paratraqueales/traqueobronquiales; inferior → gástricos/celiacos</strong> <span class="cite">p. 764</span>.</li>
+<li><strong>Gastritis vs gastropatía</strong>: la gastropatía (AINE, alcohol, bilis) carece de neutrófilos; los <strong>neutrófilos sobre la membrana basal</strong> definen gastritis activa en cualquier parte del TD; "agudo" en el TD = duración, no patrón inflamatorio <span class="cite">p. 765-766</span>.</li>
+<li><strong>Úlceras de Curling</strong> (duodeno proximal, quemaduras) ≠ <strong>úlceras de Cushing</strong> (enfermedad intracraneal, riesgo alto de <strong>perforación</strong>); las úlceras de estrés son <strong>múltiples</strong>, &lt;1 cm y sin cicatriz; las pépticas son <strong>solitarias</strong> (&gt;80%) y antrales o duodenales proximales <span class="cite">p. 766, 770-771</span>.</li>
+<li><strong>Gastritis por <em>H. pylori</em></strong>: antro, ácido aumentado, úlcera; con <strong>atrofia</strong> → ácido disminuido, protege de úlcera pero predisponde a adenocarcinoma (relación inversa adenocarcinoma/úlcera duodenal); <strong>CagA</strong> en 50% de aislados generales y 90% en áreas de alto riesgo de cáncer <span class="cite">p. 767</span>.</li>
+<li><strong>Gastritis atrófica autoinmunitaria</strong>: respeta el antro; anticuerpos <strong>anticélulas parietales y antifactor intrínseco</strong> (no patógenos); pepsinógeno I bajo; aclorhidria con <strong>hipergastrinemia</strong>; anemia perniciosa; carcinoides por hiperplasia de células endocrinas; asociada a tiroiditis de Hashimoto y diabetes tipo 1 <span class="cite">p. 768-769</span>.</li>
+<li><strong>EUP</strong>: dolor 1-3 h posprandial, empeora 23:00-02:00, alivia con álcalis; complicaciones: hemorragia (15-20%, 25% de las muertes), perforación (5%, <strong>dos tercios de las muertes</strong>), obstrucción (2%); recidiva &lt;20% tras erradicación de <em>H. pylori</em> <span class="cite">p. 770-771</span>.</li>
+<li><strong>Ménétrier</strong>: TGF-α, hiperplasia foveolar de fondo y cuerpo con antro respetado, <strong>hipoproteinemia hasta 10 g/día</strong>, tratamiento con <strong>anti-EGFR</strong>; en niños, autolimitada y post-CMV <span class="cite">p. 771-772</span>.</li>
+<li><strong>Zollinger-Ellison</strong>: gastrinomas en íleon o páncreas; 75% esporádicos, 25% MEN-1 (más jóvenes, duodenales, metastatizan); entre 60 y 90% de los gastrinomas son malignos <span class="cite">p. 773</span>.</li>
+<li><strong>Adenoma gástrico</strong>: riesgo de cáncer hasta <strong>30% si &gt;2 cm</strong> → tratamiento más intensivo que el adenoma de colon; los pólipos de glándulas fúndicas <strong>esporádicos (por IBP) no</strong> tienen riesgo neoplásico, los de PAF sí pueden tener displasia <span class="cite">p. 773-774</span>.</li>
+<li><strong>Adenocarcinoma gástrico</strong>: tipo <strong>intestinal</strong> (antro, áreas de alto riesgo , Chile entre ellas, 2:1 hombres, vía <em>APC</em>/Wnt, lesiones precursoras) vs tipo <strong>difuso</strong> (<em>CDH1</em>, anillo de sello, <strong>linitis plástica</strong>, sin precursor, uniforme en el mundo); metástasis: Virchow, hermana María José, <strong>Krukenberg</strong>; 90% de supervivencia a 5 años tras resección curativa, &lt;30% global en EE. UU. <span class="cite">p. 774-776</span>.</li>
+<li><strong>MALToma gástrico</strong>: nace del MALT inducido por <em>H. pylori</em>; <strong>lesiones linfoepiteliales</strong> diagnósticas; CD19+/CD20+/CD5−/CD10−, CD43+ en 25%; translocaciones <strong>t(11;18), t(14;18), t(1;14)</strong> → NF-κB constitutivo → <strong>no responde a la erradicación de <em>H. pylori</em></strong> <span class="cite">p. 776-777</span>.</li>
+<li><strong>GIST</strong>: células de Cajal; <strong>KIT (CD117)</strong> positivo en 95%; <em>KIT</em> 75%, <em>PDGFRA</em> 8% (mutuamente excluyentes); sin ellas, <em><strong>SDH</strong></em>; más de la mitad en el estómago y <strong>menos agresivos</strong> que los de intestino delgado; <strong>imatinib</strong> si KIT/PDGFRA mutados <span class="cite">p. 778-779</span>.</li>
+<li><strong>Obstrucción intestinal</strong>: hernias + adherencias + invaginación + vólvulo = <strong>80%</strong> de las causas mecánicas; hernias = 1ª causa mundial y 3ª en EE. UU.; <strong>invaginación</strong>: 1ª causa en niños &lt;2 años (idiopática; en adultos buscar masa); <strong>vólvulo</strong>: sigmoide &gt; ciego <span class="cite">p. 780-781</span>.</li>
+<li><strong>Isquemia intestinal</strong>: zonas de penumbra (<strong>ángulo esplénico</strong> y sigmoide-recto); firma morfológica: <strong>atrofia del epitelio de superficie con criptas preservadas</strong>; necrosis de la muscular propia en <strong>1-4 días</strong>; mortalidad 10% a 30 días, <strong>duplicada si hay afectación del colon ascendente</strong> <span class="cite">p. 781-782</span>.</li>
+<li><strong>Angiodisplasia</strong>: ciego y colon ascendente (mayor tensión parietal); &lt;1% de prevalencia pero <strong>20% de las hemorragias intestinales bajas graves</strong> en mayores <span class="cite">p. 783</span>.</li>
+<li><strong>Tipos de diarrea</strong>: secretora (persiste en ayuno, isotónica), osmótica (&gt;50 mOsm sobre el plasma, cede en ayuno), por malabsorción (esteatorrea) y exudativa (inflamatoria, persiste en ayuno); disentería = diarrea hemorrágica dolorosa de pequeño volumen <span class="cite">p. 784</span>.</li>
+<li><strong>Enfermedad celiaca</strong>: HLA-<strong>DQ2/DQ8</strong>; anticuerpos <strong>IgA antitransglutaminasa tisular</strong> (el más sensible); tríada histológica: linfocitosis intraepitelial + hiperplasia de criptas + <strong>atrofia vellosa</strong> (no específica sola); riesgo: <strong>linfoma T asociado a enteropatía</strong>; dieta sin gluten restaura la histología en 6-24 meses; confusión clásica con <strong>esprúe resistente</strong> si empeora pese a dieta <span class="cite">p. 784-786</span>.</li>
+<li><strong>Enteropatía autoinmunitaria/IPEX</strong>: ligada al X, <em><strong>FOXP3</strong></em>, linfocitos T reguladores, <strong>neutrófilos</strong> en la mucosa (a diferencia de la celiaca) <span class="cite">p. 786</span>.</li>
+<li><strong>Enfermedad por inclusión microvellosa</strong>: <em>MYO5B</em>, CD10/villina, antes de los 3 meses; <strong>abetalipoproteinemia</strong>: <em>MTP</em>, acantocitos, sin apolipoproteína B <span class="cite">p. 786-787</span>.</li>
+<li><strong>Cólera</strong>: toxina → ↑AMPc → apertura de <strong>CFTR</strong>; hasta 1 L/hora; histología <strong>normal</strong>; mortalidad 50% sin tratamiento y &lt;1% con rehidratación <span class="cite">p. 787-789</span>.</li>
+<li><em><strong>Campylobacter</strong></em>: Guillain-Barré por mimetismo molecular con gangliósidos (hasta 40% de los casos de Guillain-Barré tienen infección previa); <em><strong>Shigella</strong></em>: único reservorio humano, toxina <strong>Shiga</strong> (S. dysenteriae 1) → síndrome urémico hemolítico; <strong>antidiarreicos contraindicados</strong>; <em><strong>Salmonella</strong></em>: no antibióticos (portador/recaída), osteomielitis en <strong>drepanocitosis</strong>; <strong>fiebre tifoidea</strong>: hemocultivo &gt;90% en fase febril, nódulos tifoideos, manchas rosas <span class="cite">p. 789-792</span>.</li>
+<li><em><strong>E. coli</strong></em>: <strong>ETEC</strong> diarrea del viajero (TL/TE); <strong>EPEC</strong> unión y borramiento (LEE, Tir-intimina); <strong>EHEC O157:H7</strong> toxina Shiga-like → <strong>no dar antibióticos</strong> (↑síndrome urémico hemolítico); <strong>EIEC</strong> invade; <strong>EAEC</strong> "pila de ladrillos" <span class="cite">p. 792-793</span>.</li>
+<li><em><strong>C. difficile</strong></em>: lesión "en <strong>volcán</strong>" patognomónica; hasta 30% de colonizados en hospitales; recurrencia hasta 40%; trasplante fecal como tratamiento aceptado <span class="cite">p. 793</span>.</li>
+<li><em><strong>T. whipplei</strong></em>: macrófagos espumosos <strong>PAS+ diastasa-resistentes, ácido-alcohol resistentes negativos</strong> (las micobacterias son AAR+); triada diarrea-adelgazamiento-artralgias; malabsorción por <strong>obstrucción linfática</strong> <span class="cite">p. 794</span>.</li>
+<li><strong>Norovirus</strong>: dosis infecciosa &lt;20 partículas, resistencia hasta 60 °C, no secretores <strong>FUT2</strong> resistentes; <strong>rotavirus</strong>: enterocitos maduros, NSP4, niños 6-24 meses <span class="cite">p. 794-795</span>.</li>
+<li><em><strong>E. histolytica</strong></em>: úlcera <strong>en matraz</strong>, absceso hepático en ~40% de los disentéricos; <em><strong>Giardia</strong></em>: 10 quistes, resistente al cloro, trofozoítos en pera <strong>sin invasión</strong>; <em><strong>Cryptosporidium</strong></em>: brote de Milwaukee 1993 (&gt;400.000) <span class="cite">p. 797-798</span>.</li>
+<li><strong>EII</strong>: el <strong>tabaco es factor de riesgo para Crohn y protector (parcial) para colitis ulcerosa</strong>; granulomas solo en Crohn (~35%); megacolon tóxico solo en colitis ulcerosa; <strong>p-ANCA 75% en colitis ulcerosa vs 11% en Crohn</strong>; ASCA en Crohn <span class="cite">p. 799-804</span>.</li>
+<li><strong>Neoplasia asociada a colitis</strong>: vigilancia desde los <strong>8 años</strong> de diagnóstico (desde el diagnóstico si hay <strong>colangitis esclerosante primaria</strong>); riesgo según duración, extensión (pancolitis) e intensidad de la inflamación activa <span class="cite">p. 804</span>.</li>
+<li><strong>Colitis microscópica</strong>: colágena (banda subepitelial) vs linfocítica (&gt;1 linfocito/5 colonocitos, asociada a <strong>enfermedad celiaca</strong>); endoscopia normal en ambas <span class="cite">p. 805</span>.</li>
+<li><strong>Diverticular sigmoidea</strong>: seudodivertículos por puntos débiles donde penetran <strong>vasos rectos</strong>, entre tenias; ~50% de los &gt;60 años; solo ~20% sintomáticos; complicación: diverticulitis con perforación <span class="cite">p. 806</span>.</li>
+<li><strong>Pólipo hiperplásico</strong> (superficie estrellada solo en el tercio superior de la cripta, colon descendente, sin potencial maligno) ≠ <strong>adenoma serrado sésil</strong> (serrado hasta la base con crecimiento lateral, <strong>colon ascendente</strong>, potencial maligno) <span class="cite">p. 807, 811</span>.</li>
+<li><strong>Poliposis juvenil</strong>: <em>SMAD4</em>/<em>BMPR1A</em>, 30-50% de cáncer de colon a los 45 años; <strong>Peutz-Jeghers</strong>: <em>STK11</em>, hiperpigmentación <strong>bucal</strong>, pólipo arborizante con músculo liso, riesgo de por vida ~40% <span class="cite">p. 808-810</span>.</li>
+<li><strong>Adenomas de colon</strong>: riesgo de cáncer por tamaño (&lt;1 cm raro; <strong>~40% si &gt;4 cm</strong>); carcinoma intramucoso en el colon <strong>no metastatiza</strong> (sin linfáticos funcionales en la mucosa); invasión del tallo pediculado = adenocarcinoma invasivo <span class="cite">p. 811</span>.</li>
+<li><strong>PAF</strong>: <em>APC</em>, ≥100 pólipos, <strong>100% de cáncer de colon</strong>, colectomía profiláctica; <strong>MAP</strong>: <em>MUTYH</em> recesiva, &lt;100 pólipos, serrados y mucinosos; <strong>Lynch (CCRHNP)</strong>: <em>MSH2</em>/<em>MLH1</em>, 2-4% de los cánceres colorrectales, <strong>lado derecho</strong>, mutaciones 1.000× aceleradas en microsatélites <span class="cite">p. 812-813</span>.</li>
+<li><strong>Carcinogénesis colorrectal</strong>: vía <em>APC</em>/β-catenina temprana → <em>KRAS</em> tardío (50% en &gt;1 cm) → <em>TP53</em> tardío (70-80% de los cánceres); vía CIMP: hipermetilación de <em><strong>MLH1</strong></em> + <em><strong>BRAF</strong></em>, sin <em>KRAS</em> ni <em>TP53</em>; la COX-2 está sobreexpresada en 90% de los carcinomas y los AINE son quimiopreventivos <span class="cite">p. 814-815</span>.</li>
+<li><strong>Cáncer colorrectal clínico</strong>: derecho = exofítico + anemia ferropénica; izquierdo = anular "en anillo de servilleta" + cambios del hábito; el <strong>hígado</strong> es la metástasis más frecuente (drenaje portal; el recto puede eludirlo); supervivencia 65% en EE. UU. y solo 4% en Gambia <span class="cite">p. 816-817</span>.</li>
+<li><strong>Conducto anal</strong>: carcinoma epidermoide asociado a <strong>VPH de alto riesgo</strong>; condiloma acuminado por VPH de bajo riesgo; carcinoma <strong>cloacógeno</strong> = patrón basaloide puro <span class="cite">p. 818</span>.</li>
+<li><strong>Apendicitis</strong>: obstrucción por fecalito en 50-80%; diagnóstico histológico requiere <strong>neutrófilos en la muscular propia</strong>; signo de McBurney; complicación: <strong>pileflebitis con trombosis venosa portal y absceso hepático</strong> <span class="cite">p. 819</span>.</li>
+<li><strong>Apéndice</strong>: el tumor más frecuente es el <strong>carcinoide bien diferenciado</strong> en la punta, casi siempre benigno; las neoplasias mucinosas (LAMN/HAMN, <em>GNAS</em>, <em>KRAS</em>) diseminadas producen <strong>seudomixoma peritoneal</strong>, inexorablemente mortal en la mayoría <span class="cite">p. 819</span>.</li>
+<li><strong>Peritoneo</strong>: peritonitis bacteriana espontánea en <strong>cirrosis con ascitis</strong> (<em>E. coli</em>, estreptococos, <em>Klebsiella</em>); retroperitonitis esclerosante en el espectro <strong>IgG4</strong>; tumor desmoplásico de células redondas pequeñas con <strong>t(11;22) EWS-WT1</strong> <span class="cite">p. 820</span>.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

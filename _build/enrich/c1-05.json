@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Los trastornos genéticos se clasifican en mendelianos (un gen, alta penetrancia), cromosómicos (numéricos o estructurales) y multigénicos complejos (polimorfismos más ambiente).",
+    "Hereditario es lo transmitido por la línea germinal; congénito solo significa presente al nacer y puede no ser genético (sífilis congénita; Huntington se manifiesta en la adultez).",
+    "En autosómico dominante dominan receptores y proteínas estructurales (riesgo 50%); en autosómico recesivo, enzimas (riesgo 25%); no existe herencia ligada al Y.",
+    "Las enfermedades por depósito lisosómico y las glucogenosis son prototipos de herencia recesiva; la manosa-6-fosfato dirige las hidrolasas ácidas al lisosoma.",
+    "Trisomía 21 (95% por no separación meiótica materna), deleción 22q11.2 (DiGeorge y velocardiofacial, gen TBX1) y Klinefelter y Turner son los citogenéticos clave.",
+    "Herencia no clásica: expansión de tripletes (SXF, Huntington), ADN mitocondrial (herencia materna, heteroplasmia), impronta (Prader-Willi y Angelman) y mosaicismo gonadal."
+  ],
+  "topics": [
+    "Clasificación de los trastornos genéticos y patrones de herencia mendeliana",
+    "Mutaciones: tipos, efectos moleculares y mecanismos de enfermedad",
+    "EDL, glucogenosis y defectos de proteínas estructurales y receptoras",
+    "Trastornos cromosómicos: autosómicos y de los cromosomas sexuales",
+    "Herencia no clásica: tripletes, mitocondrial, impronta, mosaicismo gonadal",
+    "Diagnóstico genético molecular: de la PCR y FISH a la NGS"
+  ],
+  "callouts": [
+    {
+      "section": "Trastornos cromosómicos",
+      "title": "Trisomías y cromosomas sexuales",
+      "text": "La trisomía 21 es 95% libre (no separación materna), 4% translocación robertsoniana y 1% mosaico, con riesgo leucémico x20 LLA-B y x500 LMA. En los cromosomas sexuales, Klinefelter (47,XXY, hipogonadismo por genes que escapan a la inactivación) se opone a Turner (45,X, haploinsuficiencia de SHOX, talla baja y cintillas ováricas). La hipótesis de Lyon explica la tolerancia relativa de los desequilibrios del X."
+    },
+    {
+      "section": "Trastornos monogénicos de herencia no clásica",
+      "title": "Cuatro mecanismos que violan Mendel",
+      "text": "Expansión de tripletes con anticipación (SXF por silenciamiento de FMR1 sobre 230 CGG; Huntington por poliglutamina tóxica), herencia materna mitocondrial con heteroplasmia y efecto umbral, impronta genómica (Prader-Willi falta el alelo paterno, Angelman el materno, gen UBE3A) y mosaicismo gonadal (osteogenia imperfecta en hermanos de padre sano)."
+    },
+    {
+      "section": "Trastornos asociados a defectos enzimáticos",
+      "title": "Gaucher, Tay-Sachs y Niemann-Pick",
+      "text": "Gaucher (glucocerebrosidasa) es la EDL más frecuente: células de papel arrugado, tres subtipos y sustitución enzimática eficaz; el portador es factor de riesgo de Parkinson. Tay-Sachs (hexosaminidasa A) muestra mancha rojo cereza; Niemann-Pick tipo C es un defecto del transporte de colesterol (NPC1 y NPC2), no enzimático."
+    }
+  ]
+}

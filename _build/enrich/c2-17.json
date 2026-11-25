@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Hirschsprung: aganglionosis por fallo de migración de cresta neural, siempre afecta el recto, gen RET, 10% en síndrome de Down; riesgo vital por enterocolitis y perforación [p. 755-756].",
+    "Esófago de Barrett: metaplasia intestinal con células caliciformes por ERGE crónica; de él nace la mayoría de los adenocarcinomas esofágicos (distales); TP53 y CDKN2A tempranos [p. 761-762].",
+    "Gastritis por H. pylori: antral con ácido aumentado (úlcera); la atrófica autoinmunitaria respeta el antro, da aclorhidria, anticuerpos antifactor intrínseco y anemia perniciosa [p. 767-769].",
+    "Adenocarcinoma gástrico: tipo intestinal (vía APC/Wnt) vs difuso (CDH1, anillo de sello, linitis plástica); metástasis de Virchow, hermana María José y Krukenberg [p. 774-776].",
+    "Cáncer colorrectal: secuencia adenoma-carcinoma vía APC/Wnt en ~80% de los esporádicos; vía alternativa MSI por defecto de reparación (MLH1, MSH2; síndrome de Lynch) [p. 812-815].",
+    "Mallory-Weiss (desgarro mucoso, ~10% de las HDA) no es Boerhaave (rotura transparietal que imita infarto de miocardio) [p. 758]."
+  ],
+  "topics": [
+    "Anomalías congénitas: atresia esofágica, Meckel, estenosis pilórica, Hirschsprung",
+    "Esófago: ERGE, Barrett y tumores (adenocarcinoma vs epidermoide)",
+    "Estómago: gastritis por H. pylori y autoinmunitaria, EUP, adenocarcinoma, MALToma, GIST",
+    "Intestino: malabsorción (celiaca), enterocolitis infecciosas, EII (Crohn vs colitis ulcerosa)",
+    "Colon: pólipos, PAF, Lynch, adenocarcinoma y vía APC/MSI",
+    "Apéndice y peritoneo: apendicitis, LAMN, seudomixoma, peritonitis"
+  ],
+  "callouts": [
+    {
+      "section": "Esófago",
+      "title": "Barrett: células caliciformes o no hay diagnóstico",
+      "text": "El diagnóstico microscópico del esófago de Barrett exige células caliciformes con moco en copa de vino; hasta 10% de las ERGE sintomáticas lo desarrollan. La displasia multifocal grave se trata como carcinoma intramucoso [p. 761-762]."
+    },
+    {
+      "section": "Estómago",
+      "title": "Gastritis por H. pylori vs autoinmunitaria",
+      "text": "H. pylori: antral, ácido normal o aumentado, riesgo de úlcera y MALToma; si se atrofia, cae el ácido y sube el riesgo de adenocarcinoma. La autoinmunitaria respeta el antro, da aclorhidria con hipergastrinemia, anticuerpos antifactor intrínseco y anemia perniciosa [p. 767-769]."
+    },
+    {
+      "section": "Intestino delgado y colon",
+      "title": "Crohn vs colitis ulcerosa en una línea",
+      "text": "Crohn: salteado, transparietal, granulomas (~35%), fístulas y recidiva posquirúrgica; el tabaco es factor de riesgo. Colitis ulcerosa: continua desde el recto, limitada a mucosa, sin granulomas, con megacolon tóxico; el tabaco la alivia parcialmente [p. 799-804]."
+    }
+  ]
+}

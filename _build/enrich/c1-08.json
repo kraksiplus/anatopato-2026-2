@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Entrada por piel, tubo digestivo, respiratorio, genitourinario o vía vertical; diseminación por linfáticos, sangre (vía más común) y nervios.",
+    "Evasión inmunitaria: variación antigénica, cápsulas antifagocíticas, bloqueo del CPH, latencia e infección de células inmunitarias (VIH destruye CD4+).",
+    "El daño tisular suele ser mixto: el patógeno y la respuesta del huésped (granulomas, hepatitis vírica, fiebre reumática).",
+    "Patrones inflamatorios orientan el agente: supurativo (piógenos), granulomatoso (TB, lepra, sífilis), citopático (virus) y necrosis (Clostridium, amebas).",
+    "Clásicos de examen: Warthin-Finkeldey y Koplik (sarampión), Cowdry A (VHS), ojo de búho (CMV), complejo de Ghon (TB).",
+    "Diagnóstico: cultivo, serología y PCR; tinciones dirigidas (Gram, acidorresistente, plata, PAS, mucicarmín, Giemsa)."
+  ],
+  "topics": [
+    "Vías de entrada y diseminación de los patógenos",
+    "Mecanismos de evasión inmunitaria y daño por respuesta del huésped",
+    "Patrones inflamatorios como clave diagnóstica",
+    "Infecciones víricas, bacterianas, fúngicas y parasitarias clave",
+    "ITS principales y transmisión vertical",
+    "Técnicas diagnósticas y tinciones especiales"
+  ],
+  "callouts": [
+    {
+      "section": "Tipos de respuesta inflamatoria ante las infecciones",
+      "title": "El patrón morfológico orienta el agente",
+      "text": "Supurativa sugiere bacterias piógenas (estafilococos, estreptococos, N. gonorrhoeae); granulomatosa, tuberculosis, lepra, sífilis u hongos. La necrosis tisular extensa apunta a toxinas (Clostridium) o amebas."
+    },
+    {
+      "section": "Infecciones bacterianas",
+      "title": "Tuberculosis: Th1 que protege y lesiona",
+      "text": "La bacteria bloquea la fusión fagosoma-lisosoma; la respuesta Th1 activa macrófagos pero forma granulomas caseosos. Primaria: complejo de Ghon; secundaria: cavitación apical y contagio; el TNF es crucial (anti-TNF reactivan la TB)."
+    },
+    {
+      "section": "Infecciones fúngicas",
+      "title": "Aspergillus vs Mucor en la tinción",
+      "text": "Aspergillus: hifas septadas con ramificación en ángulo agudo (~40°), angioinvasor. Mucor: hifas anchas sin septos con ramificación en ángulo recto, forma rinocerebral en diabéticos y neutropénicos."
+    }
+  ]
+}

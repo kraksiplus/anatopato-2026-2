@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Solo 1,5% del genoma codifica proteínas; el ADN no codificante aporta la planificación arquitectural (promotores, ARN reguladores, transposones, telómeros).",
+    "Epigenoma: acetilación de histonas abre la cromatina; metilación de histonas y ADN silencia genes; marcas reversibles, ya diana terapéutica (inhibidores de HDAC).",
+    "miARN silencian genes post-transcripción vía Dicer y RISC: emparejamiento perfecto escinde el ARNm, imperfecto reprime la traducción; CRISPR-Cas9 edita el genoma con ARNg de 20 bases.",
+    "Mitocondria decide la muerte celular: poro de transición de permeabilidad lleva a necrosis; Bax/Bak y citocromo C activan caspasas y apoptosis.",
+    "Degradación: heterofagia y autofagia (LC3) en lisosomas; proteosoma degrada proteínas marcadas con ubicuitina (ligasas E1, E2, E3).",
+    "MEC: membrana basal (colágeno IV + laminina) y matriz intersticial (colágenos fibrilares, elastina, proteoglucanos); fibronectina une integrinas vía motivo RGD."
+  ],
+  "topics": [
+    "Genoma no codificante, epigenoma y edición génica (CRISPR-Cas9)",
+    "miARN, ARNlnc y silenciamiento génico post-transcripcional",
+    "Estructura celular: membrana, citoesqueleto, transporte y uniones intercelulares",
+    "Degradación celular: lisosomas (heterofagia, autofagia) y proteosoma",
+    "Mitocondrias, señalización, factores de crecimiento y muerte celular",
+    "MEC, ciclo celular, células madre y medicina regenerativa (iPS)"
+  ],
+  "callouts": [
+    {
+      "section": "Metabolismo celular y función mitocondrial",
+      "title": "La mitocondria decide necrosis o apoptosis",
+      "text": "Lesión isquémica o tóxica abre el poro de transición de permeabilidad, disipa el gradiente protónico y la célula muere por necrosis. Las señales apoptóticas oligomerizan Bax/Bak (MOMP), liberan citocromo C, forman el apoptosoma y activan caspasas: apoptosis."
+    },
+    {
+      "section": "Micro-ARN y ARN largo no codificante",
+      "title": "Vía del miARN, de alta probabilidad en examen",
+      "text": "PRI-miARN, pre-miARN en horquilla, exportación al citoplasma, corte por Dicer en fragmentos de 21-30 nucleótidos y carga al RISC. Emparejamiento perfecto escinde el ARNm; imperfecto reprime la traducción."
+    },
+    {
+      "section": "Mantenimiento de las poblaciones celulares: proliferación y ciclo celular",
+      "title": "Motor del ciclo: ciclinas, CDK e inhibidores",
+      "text": "G1 con ciclina D-CDK4/6 y transición G1/S con ciclina E-CDK2, ambas fosforilando Rb; fase S con ciclina A-CDK2/CDK1 y G2/M con ciclina B-CDK1. Inhibidores INK4 (p15, p16, p18, p19) son específicos de CDK4/6; p21, p27 y p57 inhiben todas las CDK."
+    }
+  ]
+}

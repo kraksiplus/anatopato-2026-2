@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Dos mecanismos básicos de enfermedad vascular: estenosis u obstrucción luminal (ateroesclerosis, trombosis) y debilitamiento parietal con dilatación o rotura [p. 485].",
+    "La disfunción endotelial proinflamatoria y protrombógena es el punto de partida común de trombosis, ateroesclerosis e lesión por hipertensión [p. 488].",
+    "Hipertensión: diastólica >80 o sistólica >120 mmHg; 90-95% es esencial; la forma maligna da arterioloesclerosis hiperplásica en piel de cebolla con arteriolitis necrosante [p. 489-493].",
+    "Ateroesclerosis: disfunción endotelial, LDL oxidadas captadas por receptores depuradores, células espumosas, CML y colágeno; las placas vulnerables rompen y trombosan [p. 497-504].",
+    "Disección aórtica: >90% con hipertensión; tipo A compromete la ascendente y exige cirugía urgente; tipo B es conservador; muerte por rotura y taponamiento [p. 507-508].",
+    "Vasculitis: distinguir inmunomediada (ANCA, inmunocomplejos) de infecciosa es clave porque la inmunodepresión empeora la infecciosa [p. 508-510]."
+  ],
+  "topics": [
+    "Estructura vascular, disfunción endotelial e hipertensión",
+    "Ateroesclerosis: patogenia, placas vulnerables y complicaciones",
+    "Aneurismas, disección aórtica y AAA",
+    "Vasculitis por calibre: células gigantes, Takayasu, PAN, ANCA",
+    "Raynaud, venas (varices, TVP) y linfáticos",
+    "Tumores vasculares: hemangiomas, Kaposi, angiosarcoma"
+  ],
+  "callouts": [
+    {
+      "section": "Puntos de examen",
+      "title": "Comparaciones que caen en prueba",
+      "text": "Arterioloesclerosis hialina (HTA crónica y diabetes) vs hiperplásica en piel de cebolla (HTA maligna). Células gigantes (>50 años, riesgo de ceguera) vs Takayasu (<50 años, sin pulso): histología idéntica, solo cambia la edad. ANCA-MPO (polivasculitis microscópica, Churg-Strauss) vs ANCA-PR3 (GPV hasta 95%)."
+    },
+    {
+      "section": "Aneurismas y disección",
+      "title": "AAA y disección en cifras",
+      "text": "Riesgo de rotura del AAA: 1%/año (4-5 cm), 11% (5-6 cm) y 25% (>6 cm); se opera si es ≥5 cm, con mortalidad electiva ~5% vs >50% en rotura. La disección tipo A compromete la ascendente (<10 cm de la válvula) y es quirúrgica urgente; la tipo B, distal a la subclavia, es conservadora."
+    },
+    {
+      "section": "Ateroesclerosis",
+      "title": "Placa vulnerable y pico circadiano",
+      "text": "Placa vulnerable: cubierta fibrosa fina, núcleo lipídico grande e inflamación con MMP de macrófagos; la mayoría de los infartos parte de placas previamente no críticas. La estimulación adrenérgica al despertar explica el pico de infartos entre las 6 y 12 de la mañana."
+    }
+  ]
+}

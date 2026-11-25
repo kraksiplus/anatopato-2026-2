@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulmón · Anatomía Patológica UBB</title>
+<meta name="description" content="Pulmón. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Pulmón · Anatomía Patológica UBB">
+<meta property="og:description" content="Pulmón. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 15. Pulmón</h1>
+    <p class="lede">Guía 05 de 08. Resumen completo del capítulo 15 con 257 citas por página y 51 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>05 de 08</strong></div><div><span>Capítulo</span><strong>15</strong></div><div><span>Páginas</span><strong>673-730</strong></div><div><span>Citas</span><strong>257</strong></div><div><span>Tablas</span><strong>51</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-anomalias-congenitas">Anomalías congénitas</a></li>
+        <li><a href="#sec-03-atelectasia-colapso">Atelectasia (colapso)</a></li>
+        <li><a href="#sec-04-edema-de-pulmon">Edema de pulmón</a></li>
+        <li><a href="#sec-05-lesion-pulmonar-aguda-y-sdra-dano-alveolar-difuso">Lesión pulmonar aguda y SDRA (daño alveolar difuso)</a></li>
+        <li><a href="#sec-06-enfermedades-pulmonares-obstructivas-y-restrictivas">Enfermedades pulmonares obstructivas y restrictivas</a></li>
+        <li><a href="#sec-07-enfermedad-pulmonar-obstructiva-cronica-epoc">Enfermedad pulmonar obstructiva crónica (EPOC)</a></li>
+        <li><a href="#sec-08-enfisema">Enfisema</a></li>
+        <li><a href="#sec-09-bronquitis-cronica">Bronquitis crónica</a></li>
+        <li><a href="#sec-10-asma">Asma</a></li>
+        <li><a href="#sec-11-bronquiectasias">Bronquiectasias</a></li>
+        <li><a href="#sec-12-enfermedades-intersticiales-difusas-cronicas-restrictivas">Enfermedades intersticiales difusas crónicas (restrictivas)</a></li>
+        <li><a href="#sec-13-neumoconiosis">Neumoconiosis</a></li>
+        <li><a href="#sec-14-complicaciones-de-los-tratamientos">Complicaciones de los tratamientos</a></li>
+        <li><a href="#sec-15-enfermedades-granulomatosas">Enfermedades granulomatosas</a></li>
+        <li><a href="#sec-16-enfermedades-intersticiales-relacionadas-con-el-tabaquismo">Enfermedades intersticiales relacionadas con el tabaquismo</a></li>
+        <li><a href="#sec-17-enfermedades-de-origen-vascular">Enfermedades de origen vascular</a></li>
+        <li><a href="#sec-18-infecciones-pulmonares">Infecciones pulmonares</a></li>
+        <li><a href="#sec-19-trasplante-de-pulmon">Trasplante de pulmón</a></li>
+        <li><a href="#sec-20-tumores">Tumores</a></li>
+        <li><a href="#sec-21-pleura">Pleura</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="04_Eritrocitos_Hemorragias.html" title="Trastornos de los eritrocitos y trastornos hemorrágicos">04</a>
+        <a href="06_Cabeza_Cuello.html" title="Cabeza y cuello">06</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 15 del Robbins y Cotran, 10ª edición: páginas impresas 673-730 (58 páginas), resumidas desde el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>El bronquio principal derecho, más vertical, recibe la mayoría de los materiales aspirados; los poros de Kohn permiten paso de bacterias y exudado entre alvéolos <span class="cite">p. 673-674</span>.</li><li>SDRA: LPA grave con daño alveolar difuso, membranas hialinas e hipoxemia refractaria; sepsis, neumonía, aspirado gástrico y traumatismo explican el 50% de los casos <span class="cite">p. 676-678</span>.</li><li>VEMS/CVF &lt; 0,7 define obstrucción; en las restrictivas el cociente se mantiene normal porque VEMS y CVF caen proporcionalmente <span class="cite">p. 678</span>.</li><li>Enfisema centroacinar (&gt;95%) en grandes fumadores, lóbulos superiores; panacinar por déficit de α1-antitripsina, en bases <span class="cite">p. 679-680</span>.</li><li>Silicosis predispone a tuberculosis y duplica el riesgo de cáncer pulmonar; el amianto más tabaco eleva el riesgo de carcinoma ×55 <span class="cite">p. 694</span>.</li><li>Adenocarcinoma (~50%) es el más frecuente; el microcítico (15%) tiene inactivación de TP53 y RB, metástasis precoces y pronóstico pésimo <span class="cite">p. 717-719</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 673-715</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>El <strong>bronquio principal derecho</strong> es más vertical y sigue la línea de la tráquea: los materiales aspirados (vómito, sangre, cuerpos extraños) entran con más frecuencia en el pulmón derecho <span class="cite">p. 673</span>. El <strong>lobulillo pulmonar</strong> es el grupo de 3-5 bronquiolos terminales, cada uno con su ácino anexo (~7 mm de diámetro) <span class="cite">p. 674</span>.</li>
+<li>Los <strong>neumocitos de tipo I</strong> cubren el 95% de la superficie alveolar; los de <strong>tipo II</strong> sintetizan surfactante y reparan el daño alveolar regenerando células de tipo I <span class="cite">p. 674</span>. Los <strong>poros de Kohn</strong> permiten el paso de bacterias y exudados entre alvéolos vecinos <span class="cite">p. 674</span>.</li>
+<li>El <strong>edema pulmonar</strong> se divide en <strong>hemodinámico</strong> (aumento de presión hidrostática, típico de insuficiencia cardiaca izquierda) y <strong>lesional</strong> (daño del tabique alveolar, base del SDRA) <span class="cite">p. 675-676</span>.</li>
+<li>El <strong>SDRA</strong> es una lesión pulmonar aguda grave con daño alveolar difuso; la sepsis, la neumonía pulmonar difusa, el aspirado gástrico y el traumatismo explican el 50% de los casos; mortalidad de 35% (leve) a 46% (grave) <span class="cite">p. 676, 678</span>.</li>
+<li><strong>VEMS/CVF &lt; 0,7</strong> define obstrucción del flujo aéreo; en las enfermedades restrictivas el cociente se mantiene normal porque VEMS y CVF descienden proporcionalmente <span class="cite">p. 678</span>.</li>
+<li>El <strong>enfisema centroacinar</strong> (&gt;95% de los casos clínicamente significativos) afecta a bronquiolos respiratorios de grandes fumadores, con predominio en lóbulos superiores; el <strong>panacinar</strong> se asocia a deficiencia de α1-antitripsina y afecta las bases <span class="cite">p. 679</span>.</li>
+<li>En la patogenia del enfisema confluyen lesión tóxica por humo, <strong>desequilibrio proteasa-antiproteasa</strong>, estrés oxidativo (vía <strong>NRF2</strong>) e infección; ~1% de los enfisemas tienen deficiencia de α1-antitripsina (homocigotos ZZ, &gt;80% desarrolla enfisema panacinar) <span class="cite">p. 680</span>.</li>
+<li>La <strong>bronquitis crónica</strong> se define como tos productiva ≥3 meses en ≥2 años consecutivos; el <strong>índice de Reid</strong> (normal 0,4) está aumentado proporcionalmente a la gravedad <span class="cite">p. 681</span>.</li>
+<li>La <strong>EPOC</strong> clásica cursa con &gt;40 paquetes-año; el 80% de los casos es atribuible al tabaco; extremos del espectro clínico: "soplador rosado" (predominio enfisematoso) y "abotargado azul" (bronquítico puro) <span class="cite">p. 679, 682</span>.</li>
+<li>El asma atópica es una respuesta <strong>Th2 mediada por IgE</strong>: IL-4 induce IgE, IL-5 activa eosinófilos e IL-13 estimula moco e IgE; la remodelación bronquial añade obstrucción irreversible <span class="cite">p. 684, 686-687</span>.</li>
+<li>La <strong>fibrosis pulmonar idiopática</strong> (patrón de neumonía intersticial habitual) depende de daño epitelial alveolar repetido sobre terreno genético (mutaciones de telomerasa <em>TERT</em>, <em>TERC</em>, <em>PARN</em>, <em>RTEL1</em>; variante de <em>MUC5B</em> en ~1/3 de los casos); mediana de supervivencia de 3,8 años <span class="cite">p. 689-690</span>.</li>
+<li>El <strong>carcinoma de pulmón</strong> es la primera causa de mortalidad por cáncer en el mundo; adenocarcinoma (50%) &gt; epidermoide (20%) &gt; células pequeñas (15%); el tabaquismo multiplica el riesgo ×60 en grandes fumadores, y amianto + tabaco lo elevan ×55 <span class="cite">p. 715-716, 721</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-anomalias-congenitas" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 674</div>
+<h2>Anomalías congénitas</h2>
+<p>Muy raras. Las más frecuentes <span class="cite">p. 674</span>:</p>
+<ul>
+<li><strong>Hipoplasia pulmonar</strong>: desarrollo deficiente de ambos pulmones por compresión o imposibilidad de expansión intrauterina (hernia diafragmática congénita, oligohidramnios). La hipoplasia grave es mortal en el periodo neonatal temprano.</li>
+<li><strong>Quistes del intestino embrionario anterior</strong>: separación anormal del intestino anterior primitivo; se localizan en hilio y mediastino medio. Se clasifican según la pared en <strong>broncógenos</strong> (los más frecuentes, con epitelio cilíndrico ciliado seudoestratificado y pared con glándulas bronquiales, cartílago y músculo liso), esofágicos o entéricos. Se diagnostican por compresión, infección sobreañada o como hallazgo casual.</li>
+<li><strong>Secuestro pulmonar</strong>: tejido pulmonar delimitado que (1) carece de conexión con las vías respiratorias y (2) tiene irrigación anómala desde la aorta o sus ramas. El <strong>extralobular</strong> es externo al pulmón, se presenta en lactantes como masa y puede asociarse a otras malformaciones; el <strong>intralobular</strong> está dentro del pulmón, afecta a niños mayores y se detecta por infecciones recidivantes localizadas o bronquiectasias.</li>
+<li>Menos frecuentes: atresia o estenosis traqueales, fístula traqueoesofágica, anomalías vasculares y sobreinsuflación congénita lobular <span class="cite">p. 674</span>.</li>
+</ul>
+
+</section><section id="sec-03-atelectasia-colapso" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 674-675</div>
+<h2>Atelectasia (colapso)</h2>
+<p>Expansión incompleta de los pulmones (<strong>atelectasia neonatal</strong>) o colapso de un pulmón previamente insuflado; da parénquima mal aireado <span class="cite">p. 674</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Atelectasia (colapso)" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mecanismo</th>
+<th>Dirección del mediastino</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Por reabsorción</strong></td>
+<td>Obstrucción bronquial (tapones de moco en asma, bronquitis crónica, bronquiectasias, postoperatorio; cuerpo extraño; tumor intrabronquial) → reabsorción del aire distal</td>
+<td><strong>Hacia</strong> el pulmón atelectásico</td>
+</tr>
+<tr>
+<td><strong>Por compresión</strong></td>
+<td>Acumulación pleural de líquido (trasudado, exudado, sangre), tumor o aire (neumotórax)</td>
+<td><strong>Alejándose</strong> del pulmón afectado</td>
+</tr>
+<tr>
+<td><strong>Por contracción</strong></td>
+<td>Fibrosis pulmonar focal o generalizada, o fibrosis pleural, que impide la expansión</td>
+<td>No aplica</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 675</span> La atelectasia extensa reduce la oxigenación y predispone a infección. Es reversible, salvo la causada por fibrosis <span class="cite">p. 675</span>.</p>
+
+</section><section id="sec-04-edema-de-pulmon" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 675</div>
+<h2>Edema de pulmón</h2>
+<p>Acumulación excesiva de líquido intersticial y alveolar; da pulmones húmedos y pesados <span class="cite">p. 675</span>.</p>
+<ul>
+<li><strong>Edema hemodinámico (cardiógeno)</strong>: por aumento de la presión hidrostática, sobre todo en insuficiencia cardiaca izquierda; se acumula primero en las bases (zonas declives). Histología: capilares ingurgitados, trasudado intraalveolar rosa pálido finamente granulado, microhemorragias y <strong>macrófagos cargados de hemosiderina</strong> ("células de la insuficiencia cardiaca"). En la congestión crónica (p. ej., estenosis mitral) la fibrosis y el engrosamiento alveolar dan pulmones firmes y marrones (<strong>induración marrón</strong>), con deterioro respiratorio y predisposición a infección <span class="cite">p. 675</span>.</li>
+<li><strong>Edema por lesión microvascular (no cardiógeno)</strong>: lesión del endotelio o del epitelio alveolar con exudado inflamatorio en intersticio y alvéolos; es la base del SDRA. Causas: neumonía bacteriana, gases inhalados (O₂ a alta concentración, humo), aspiración de contenido gástrico, radiación, traumatismo; indirectas: sepsis, quemaduras, pancreatitis, LPAT, fármacos (bleomicina, metadona, anfotericina B, heroína, cocaína, paraquat); de origen desconocido: grandes altitudes y edema neurógeno <span class="cite">p. 675-676</span>.</li>
+</ul>
+
+</section><section id="sec-05-lesion-pulmonar-aguda-y-sdra-dano-alveolar-difuso" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 676-678</div>
+<h2>Lesión pulmonar aguda y SDRA (daño alveolar difuso)</h2>
+<p>La <strong>LPA</strong> es hipoxemia de inicio brusco con edema pulmonar bilateral <strong>sin insuficiencia cardiaca</strong>; el <strong>SDRA</strong> es una LPA importante. Su sustrato histológico es el <strong>daño alveolar difuso (DAD)</strong>. En raros casos aparece sin desencadenante conocido con evolución rápidamente progresiva (<strong>neumonía intersticial aguda</strong>) <span class="cite">p. 676</span>.</p>
+<h3 id="patogenia">Patogenia</h3>
+<ul>
+<li><strong>Activación endotelial</strong> precoz: los macrófagos alveolares detectan la lesión del neumocito y liberan TNF; mediadores circulantes (sepsis) también activan el endotelio, que expresa moléculas de adhesión, proteínas procoagulantes y quimiocinas <span class="cite">p. 676</span>.</li>
+<li><strong>Adhesión y extravasación de neutrófilos</strong>: degranulación con proteasas, especies reactivas del oxígeno y citocinas; las <strong>trampas extracelulares de neutrófilos (TEN)</strong> contribuyen directamente al daño <span class="cite">p. 676</span>.</li>
+<li><strong>Acumulación de líquido y membranas hialinas</strong>: capilares con fuga → edema; necrosis del neumocito de tipo II → alteración del surfactante; el líquido rico en proteínas y detritos se organiza en <strong>membranas hialinas</strong> <span class="cite">p. 676</span>.</li>
+<li><strong>Resolución obstaculizada</strong>: la necrosis epitelial impide la reabsorción del edema; si cede el estímulo inflamatorio, los macrófagos liberan TGF-β y PDGF → fibrosis de los tabiques; los neumocitos de tipo II residuales reemplazan a los de tipo I <span class="cite">p. 676</span>.</li>
+<li>La lesión no es uniforme: hay áreas rígidas mal aireadas pero perfundidas → desequilibrio ventilación-perfusión que agrava hipoxemia y cianosis <span class="cite">p. 677</span>.</li>
+<li>Más frecuente y de peor pronóstico en <strong>alcohólicos crónicos y fumadores</strong>; variantes genéticas de genes de inflamación y coagulación aumentan el riesgo <span class="cite">p. 677</span>.</li>
+</ul>
+<h3 id="morfología">Morfología</h3>
+<ul>
+<li><strong>Fase exudativa aguda</strong>: pulmones densos, firmes, rojos y empastados; congestión, edema, inflamación, fibrina y DAD; <strong>membranas hialinas céreas</strong> de fibrina y restos epiteliales necróticos tapizando los alvéolos (morfología similar a la de la enfermedad de membrana hialina del recién nacido) <span class="cite">p. 677</span>.</li>
+<li><strong>Fase proliferativa u organizada</strong>: proliferación de neumocitos de tipo II y tejido de granulación; puede resolverse con deterioro mínimo o evolucionar a fibrosis cicatricial de los tabiques (fase fibrótica tardía) <span class="cite">p. 677</span>.</li>
+</ul>
+<h3 id="clínica">Clínica</h3>
+<p>Disnea y taquipnea intensas, hipoxemia resistente a oxigenoterapia, cianosis, infiltrados bilaterales difusos y pulmones rígidos que exigen presiones ventilatorias elevadas <span class="cite">p. 678</span>. En un estudio de 2016 en UCI de 50 países: incidencia de SDRA del 10,4%, con mortalidad del 35% (leve), 40% (moderado) y 46% (grave); la mayoría de las muertes se atribuye a sepsis, fallo multiorgánico o lesión pulmonar grave <span class="cite">p. 678</span>. No hay tratamiento específico demostrado; la mayoría de los supervivientes recupera la función pulmonar, pero una minoría queda con fibrosis intersticial <span class="cite">p. 678</span>.</p>
+
+</section><section id="sec-06-enfermedades-pulmonares-obstructivas-y-restrictivas" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 678</div>
+<h2>Enfermedades pulmonares obstructivas y restrictivas</h2>
+<ul>
+<li><strong>Obstructivas</strong>: aumento de la resistencia al flujo aéreo por enfermedad difusa de la vía aérea. Espirometría: descenso de los flujos espiratorios máximos, con <strong>VEMS/CVF &lt; 0,7</strong> <span class="cite">p. 678</span>.</li>
+<li><strong>Restrictivas</strong>: reducción de la expansión del parénquima con <strong>capacidad pulmonar total disminuida</strong>; VEMS y CVF descienden proporcionalmente, cociente normal. Dos grupos: pared torácica (obesidad grave, enfermedades pleurales, cifoescoliosis, poliomielitis) y enfermedades intersticiales/infiltrantes crónicas (neumoconiosis, fibrosis intersticial) <span class="cite">p. 678</span>.</li>
+</ul>
+<h3 id="espectro-de-la-epoc-tabla-153">Espectro de la EPOC (tabla 15.3)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades pulmonares obstructivas y restrictivas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Localización</th>
+<th>Término clínico</th>
+<th>Etiología</th>
+<th>Signos/síntomas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bronquio</td>
+<td><strong>Bronquitis crónica</strong></td>
+<td>Humo de tabaco, contaminantes</td>
+<td>Tos, producción de esputo</td>
+</tr>
+<tr>
+<td>Bronquio</td>
+<td><strong>Bronquiectasias</strong></td>
+<td>Infecciones persistentes o graves</td>
+<td>Tos, esputo purulento, fiebre</td>
+</tr>
+<tr>
+<td>Bronquio</td>
+<td><strong>Asma</strong></td>
+<td>Causas inmunitarias o no definidas</td>
+<td>Sibilancias, tos y disnea episódicos</td>
+</tr>
+<tr>
+<td>Acino</td>
+<td><strong>Enfisema</strong></td>
+<td>Humo de tabaco</td>
+<td>Disnea</td>
+</tr>
+<tr>
+<td>Bronquiolo</td>
+<td><strong>Enfermedad de vías respiratorias pequeñas</strong></td>
+<td>Humo de tabaco, contaminantes, miscelánea</td>
+<td>Tos, disnea</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 678</span> Las fronteras no son nítidas: el asma puede dejar componente irreversible y la EPOC puede tener componente reversible (etiqueta clínica "EPOC/asma") <span class="cite">p. 678</span>.</p>
+
+</section><section id="sec-07-enfermedad-pulmonar-obstructiva-cronica-epoc" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 679</div>
+<h2>Enfermedad pulmonar obstructiva crónica (EPOC)</h2>
+<p>Definida por la OMS como enfermedad frecuente, evitable y tratable con síntomas respiratorios persistentes y limitación del flujo aéreo por anomalías de las vías respiratorias y/o alvéolos, generalmente por exposición a partículas o gases nocivos <span class="cite">p. 679</span>. Entre el <strong>35 y el 50% de los grandes fumadores</strong> desarrollan EPOC y ~<strong>80%</strong> de los casos es atribuible al tabaco; otros factores: desarrollo pulmonar escaso temprano, exposición laboral/ambiental, hiperrespuesta bronquial y polimorfismos genéticos <span class="cite">p. 679</span>.</p>
+
+</section><section id="sec-08-enfisema" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 679-683</div>
+<h2>Enfisema</h2>
+<p>Aumento <strong>irreversible</strong> del tamaño de los espacios aéreos distales al bronquiolo terminal con destrucción de sus paredes, más fibrosis sutil de vías pequeñas; factor contribuyente significativo a la obstrucción <span class="cite">p. 679</span>.</p>
+<h3 id="tipos">Tipos</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfisema" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Zona del ácino</th>
+<th>Contexto</th>
+<th>Localización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Centroacinar (centrolobulillar)</strong></td>
+<td>Central/proximal: bronquiolos respiratorios; alvéolos distales conservados</td>
+<td>&gt;95% de los casos clínicamente significativos; grandes fumadores con EPOC</td>
+<td>Lóbulos superiores, segmentos apicales</td>
+</tr>
+<tr>
+<td><strong>Panacinar (panlobulillar)</strong></td>
+<td>Todo el ácino, uniforme</td>
+<td>Deficiencia de <strong>α1-antitripsina</strong>, agravado por tabaco</td>
+<td>Lóbulos inferiores, bordes anteriores, bases</td>
+</tr>
+<tr>
+<td><strong>Paraseptal (acinar distal)</strong></td>
+<td>Parte distal del ácino, junto a pleura</td>
+<td>Subyace a neumotórax espontáneo en adultos jóvenes</td>
+<td>Mitad superior; adyacente a fibrosis o atelectasias</td>
+</tr>
+<tr>
+<td><strong>Irregular</strong></td>
+<td>Irregular, con cicatrización</td>
+<td>Casi siempre asociado a cicatriz; focos pequeños</td>
+<td>Sin significación clínica en general</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 679-680</span></p>
+<h3 id="patogenia-1">Patogenia</h3>
+<ul>
+<li><strong>Lesión tóxica e inflamación</strong>: el humo daña el epitelio y genera inflamación con aumento de LTB4, IL-8, TNF; acumulación posterior de linfocitos T y B <span class="cite">p. 680</span>.</li>
+<li><strong>Desequilibrio proteasa-antiproteasa</strong>: proteasas de neutrófilos y epitelio sin antiproteasas suficientes; base genética en el déficit de α1-antitripsina (gen del <strong>locus Pi</strong> en el cromosoma 14; ~0,012% de la población de EE. UU. es homocigota <strong>ZZ</strong>, con &gt;80% de enfisema panacinar sintomático, más precoz y grave si fuma). El defecto existe en ~1% de todos los enfisemas <span class="cite">p. 680</span>.</li>
+<li><strong>Estrés oxidativo</strong>: el gen <strong>NRF2</strong> activa genes antioxidantes; los ratones <em>Nrf2</em> negativos son mucho más sensibles al humo, y las variantes del eje NRF2 se asocian a enfermedad pulmonar por tabaquismo humana <span class="cite">p. 680</span>.</li>
+<li><strong>Infección</strong>: no inicia la destrucción, pero agudiza la enfermedad existente <span class="cite">p. 680</span>.</li>
+<li>Mecánica: la pérdida de tejido elástico reduce la <strong>tracción radial</strong> sobre los bronquiolos respiratorios, que colapsan en la espiración → obstrucción funcional sin obstrucción mecánica <span class="cite">p. 681</span>.</li>
+<li>Otras variantes genéticas: receptor nicotínico de acetilcolina (influye en la adicción y también en el riesgo de cáncer de pulmón) <span class="cite">p. 681</span>.</li>
+</ul>
+<h3 id="morfología-1">Morfología</h3>
+<p>Pulmones voluminosos que solapan el corazón; en la enfermedad tabáquica predominan los <strong>dos tercios superiores</strong>. Alvéolos grandes visibles en superficie de corte, tabiques finos con fibrosis centroacinar focal, pérdida de las inserciones alvéolo-vía aérea, y vasos capilares con <strong>células endoteliales flotantes o protruyentes en forma de palillo de tambor</strong>; con la enfermedad avanzada, <strong>bullas</strong> que comprimen bronquiolos y vasos <span class="cite">p. 681</span>.</p>
+<h3 id="otras-formas-de-enfisema">Otras formas de enfisema</h3>
+<ul>
+<li><strong>Hiperinsuflación compensadora</strong>: dilatación alveolar por pérdida de parénquima en otra parte (postcirugía) <span class="cite">p. 682</span>.</li>
+<li><strong>Hiperinsuflación obstructiva</strong>: aire atrapado por obstrucción subtotal ("válvula de bola"); en lactantes, hiperinsuflación lobular congénita por hipoplasia del cartílago bronquial; el aire llega por colaterales (<strong>poros de Kohn</strong> y <strong>canales de Lambert</strong>). Puede ser mortal si comprime el pulmón sano adyacente <span class="cite">p. 682</span>.</li>
+<li><strong>Enfisema bulloso</strong>: bullas subpleurales &gt;1 cm en estado distendido, a menudo apicales, en cualquier enfisema; su rotura produce neumotórax <span class="cite">p. 683</span>.</li>
+<li><strong>Enfisema intersticial</strong>: aire en estroma pulmonar, mediastino o subcutáneo por desgarros alveolares (tos) o heridas/fracturas costales <span class="cite">p. 683</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Desequilibrio proteasa-antiproteasa</span>El humo genera inflamación con proteasas sin antiproteasas suficientes; la vía NRF2 suma estrés oxidativo. La deficiencia de α1-antitripsina (homocigotos ZZ, ~1% de los enfisemas) produce enfisema panacinar basal, más precoz y grave si fuma <span class="cite">p. 680</span>.</div>
+</section><section id="sec-09-bronquitis-cronica" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 681-682</div>
+<h2>Bronquitis crónica</h2>
+<p>Definición clínica: <strong>tos persistente con expectoración durante al menos 3 meses, en al menos 2 años consecutivos</strong>, sin otra causa identificable. Puede evolucionar a hipoxemia, hipertensión pulmonar y corazón pulmonar <span class="cite">p. 681</span>.</p>
+<ul>
+<li><strong>Patogenia</strong>: exposición a irritantes inhalados (el <strong>90% son fumadores</strong>; también polvo de cereales, algodón y sílice). Hipersecreción de moco por <strong>hipertrofia de glándulas submucosas</strong> (mediadores como histamina e IL-13) e hiperplasia de células caliciformes en vías pequeñas; <strong>disfunción adquirida del CFTR</strong> por tabaquismo con moco deshidratado; inflamación neutrófila, linfocitaria y macrofágica con fibrosis de vías &lt;2-3 mm; la infección no inicia pero mantiene la enfermedad y es clave en las reagudizaciones; el humo interfiere además la acción ciliar <span class="cite">p. 681</span>.</li>
+<li><strong>Morfología</strong>: hiperemia, edema y secreciones mucopurulentas; inflamación crónica linfocitaria y macrofágica, hipertrofia de músculo liso, hiperplasia de células caliciformes y <strong>aumento del tamaño de las glándulas mucosas medido con el índice de Reid (normal 0,4)</strong>, proporcional a intensidad y duración; en casos graves, <strong>bronquiolitis obliterante</strong>; metaplasia y displasia escamosas por efecto irritante y mutágeno del humo <span class="cite">p. 681</span>.</li>
+</ul>
+<h3 id="enfisema-vs-bronquitis-crónica-tabla-154">Enfisema vs. bronquitis crónica (tabla 15.4)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Bronquitis crónica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Enfisema</th>
+<th>Bronquitis crónica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edad (años)</td>
+<td>50-75</td>
+<td>40-45</td>
+</tr>
+<tr>
+<td>Disnea</td>
+<td>Intensa; temprana</td>
+<td>Leve; tardía</td>
+</tr>
+<tr>
+<td>Tos</td>
+<td>Tardía; esputo escaso</td>
+<td>Temprana; esputo abundante</td>
+</tr>
+<tr>
+<td>Infecciones</td>
+<td>Ocasionales</td>
+<td>Frecuentes</td>
+</tr>
+<tr>
+<td>Insuficiencia respiratoria</td>
+<td>Terminal</td>
+<td>Precoz, periódica</td>
+</tr>
+<tr>
+<td>Corazón pulmonar</td>
+<td>Infrecuente; terminal</td>
+<td>Frecuente</td>
+</tr>
+<tr>
+<td>Resistencia de vías respiratorias</td>
+<td>Normal o ligeramente aumentada</td>
+<td>Aumentada</td>
+</tr>
+<tr>
+<td>Retracción elástica</td>
+<td>Baja</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>Radiografía de tórax</td>
+<td>Hiperinsuflación; corazón de tamaño normal</td>
+<td>Vasos prominentes; corazón grande</td>
+</tr>
+<tr>
+<td>Aspecto</td>
+<td>Soplador rosado</td>
+<td>Abotargado azul</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 682</span></p>
+<h3 id="clínica-de-la-epoc">Clínica de la EPOC</h3>
+<p>Antecedente habitual de <strong>&gt;40 paquetes-año</strong>; evolución gradual con disnea de esfuerzo y tos con expectoración; diagnóstico por espirometría con <strong>VEMS/CVF &lt; 0,7</strong> <span class="cite">p. 682</span>. El "soplador rosado" (predominio enfisematoso) tiene tórax en tonel, espiración prolongada, respiración con labios fruncidos, capacidad de difusión baja, gases relativamente normales en reposo y pérdida de peso; el "abotargado azul" (bronquítico puro) cursa con tos productiva, hipercapnia, hipoxemia y cianosis ligera <span class="cite">p. 682</span>. Tratamiento: abandono del tabaco, oxigenoterapia, broncodilatadores prolongados con corticoesteroides inhalados, antibióticos, fisioterapia, bullectomía, cirugía de reducción de volumen y trasplante en casos seleccionados <span class="cite">p. 682</span>. Muerte por <strong>hipertensión pulmonar y corazón pulmonar</strong>, insuficiencia respiratoria por infección sobreañada o <strong>neumotórax por rotura de bullas subpleurales</strong> <span class="cite">p. 682</span>.</p>
+
+</section><section id="sec-10-asma" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 683-686</div>
+<h2>Asma</h2>
+<p>Enfermedad heterogénea con <strong>inflamación crónica de las vías respiratorias</strong> y obstrucción variable del flujo espiratorio, con sibilancias, disnea, opresión torácica y tos; síntomas más probables de noche y a primera hora de la mañana; broncoconstricción al menos parcialmente reversible. El <strong>asma aguda grave</strong> (antes "estado asmático") es un ataque que no remite, potencialmente mortal <span class="cite">p. 683</span>.</p>
+<h3 id="subtipos">Subtipos</h3>
+<ul>
+<li><strong>Atópica</strong>: hipersensibilidad tipo I mediada por IgE; comienza en la infancia; desencadenada por polvo, polen, cucarachas, epitelios de animales y alimentos, en sinergia con infecciones respiratorias víricas; antecedentes familiares; prueba cutánea positiva, IgE sérica total elevada o RAST positivo <span class="cite">p. 683</span>.</li>
+<li><strong>No atópica</strong>: sin sensibilización alérgica; desencadenada por infecciones víricas (rinovirus, parainfluenza, virus sincitial respiratorio) y contaminantes (humo de tabaco, SO₂, ozono, NO₂); también frío y ejercicio <span class="cite">p. 683</span>.</li>
+<li><strong>Medicamentosa</strong>: asma sensible al ácido acetilsalicílico, poco frecuente, en personas con rinitis de repetición y pólipos nasales; crisis y urticaria; mecanismo: inhibición de la ciclooxigenasa con descenso de prostaglandina E2, que normalmente frena a los leucotrienos B4, C4, D4 y E4 <span class="cite">p. 683</span>.</li>
+<li><strong>Ocupacional</strong>: humos (resinas epoxi), polvos orgánicos (madera, algodón, platino), gases (tolueno) o químicos (formaldehído, penicilinas); bastan cantidades ínfimas tras exposiciones repetidas <span class="cite">p. 683-684</span>.</li>
+</ul>
+<h3 id="patogenia-2">Patogenia</h3>
+<ul>
+<li>Respuesta <strong>Th2 exagerada</strong>: IL-4 estimula la producción de IgE; <strong>IL-5</strong> activa eosinófilos reclutados; <strong>IL-13</strong> estimula la secreción de moco y la producción de IgE <span class="cite">p. 684</span>.</li>
+<li>La IgE se une a receptores Fc de los <strong>mastocitos</strong> submucosos; la reexposición produce la <strong>fase temprana</strong> (broncoconstricción por reflejos vagales, moco, vasodilatación y aumento de permeabilidad) y la <strong>fase tardía</strong> (reclutamiento de eosinófilos, neutrófilos y linfocitos T; Th17 reclutan neutrófilos) <span class="cite">p. 684</span>.</li>
+<li>Mediadores con eficacia farmacológica demostrada: <strong>leucotrienos C4, D4 y E4</strong> (broncoconstricción prolongada), <strong>acetilcolina</strong> (receptores muscarínicos), <strong>antagonistas de la IL-5</strong> (asma grave con eosinofilia) y <strong>galectina 10</strong> (cristales de Charcot-Leyden, potentes inductores de inflamación y moco) <span class="cite">p. 684</span>.</li>
+<li>Mediadores con menor papel demostrado en el asma alérgica aguda: histamina y prostaglandina D2; sin antagonistas estudiados: IL-4, IL-13, TNF, eotaxina (CCL11), óxido nítrico, bradicinina, endotelinas <span class="cite">p. 684</span>.</li>
+<li><strong>Genética</strong>: locus 5q con los genes de IL-3, IL-4, IL-5, IL-9, IL-13 y el receptor de IL-4 (los polimorfismos de <em>IL-13</em>, las asociaciones más firmes); alelos HLA II ligados a IgE frente a polen de ambrosia; variantes de <strong>IL-33</strong>, su receptor <strong>ST2</strong> y <strong>TSLP</strong> (linfopoyetina estromal tímica) <span class="cite">p. 684</span>.</li>
+<li><strong>Ambiente</strong>: hipótesis de la higiene (la exposición microbiana temprana protege); los niños sensibilizados con infecciones víricas inferiores (rinovirus tipo C, VSR) tienen un riesgo <strong>10-30 veces</strong> mayor de asma persistente o grave <span class="cite">p. 686</span>.</li>
+<li>Un pequeño subgrupo grave, resistente a glucocorticoides, tiene infiltrados con más <strong>neutrófilos</strong> que eosinófilos, dirigidos por Th17 ante colonización bacteriana crónica <span class="cite">p. 686</span>.</li>
+</ul>
+<h3 id="morfología-2">Morfología</h3>
+<p>Pulmones hiperinsuflados con atelectasias focales; oclusión de bronquios y bronquiolos por <strong>tapones de moco</strong> con epitelio desprendido; <strong>espirales de Curschmann</strong> y <strong>cristales de Charcot-Leyden</strong> (galectina 10) en esputo y lavado <span class="cite">p. 686</span>. Remodelación: engrosamiento de la pared, <strong>fibrosis subbasal</strong> (colágeno tipos I y III), aumento de la vascularización, aumento de glándulas submucosas y células caliciformes, e <strong>hipertrofia/hiperplasia del músculo liso</strong>; esta remodelación puede dar obstrucción crónica irreversible <span class="cite">p. 686</span>.</p>
+<h3 id="clínica-1">Clínica</h3>
+<p>Crisis de horas o síntomas constantes amortiguados; en el asma grave aguda el paroxismo dura días o semanas con cianosis intensa o muerte <span class="cite">p. 686</span>. Diagnóstico: aumento de la obstrucción respecto al valor basal, espiración prolongada con sibilancias y, en el asma atópica, eosinofilia periférica con eosinófilos, espirales de Curschmann y cristales de Charcot-Leyden en esputo <span class="cite">p. 686</span>. Tratamiento: broncodilatadores, glucocorticoides y antagonistas de los leucotrienos; <strong>anti-IL-5</strong> en asma grave Th2/eosinofílica. Hasta el <strong>50%</strong> del asma infantil remite en la adolescencia, pero suele regresar en la edad adulta <span class="cite">p. 686</span>.</p>
+
+<div class="warnbox"><span class="box-title">Eje Th2: IL-4, IL-5 e IL-13</span>IL-4 induce IgE, IL-5 activa eosinófilos e IL-13 estimula moco e IgE; los mediadores con eficacia demostrada son leucotrienos C4-D4-E4, acetilcolina, anti-IL-5 y galectina 10. La remodelación bronquial añade obstrucción irreversible <span class="cite">p. 684, 686-687</span>.</div>
+</section><section id="sec-11-bronquiectasias" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 687-688</div>
+<h2>Bronquiectasias</h2>
+<p>Dilatación <strong>permanente</strong> de bronquios y bronquiolos por destrucción del músculo liso y tejido elástico por inflamación derivada de infecciones persistentes o graves; hoy poco frecuente <span class="cite">p. 687</span>.</p>
+<ul>
+<li><strong>Causas</strong>: afecciones congénitas/hereditarias predisponentes (fibrosis quística, secuestro intralobular, inmunodeficiencias, discinesia ciliar primaria, síndrome de Kartagener); neumonía necrosante grave; obstrucción bronquial (tumor, cuerpo extraño, impactación de moco , lesión localizada al segmento obstruido); trastornos inmunitarios (artritis reumatoide, LES, enfermedad inflamatoria intestinal, rechazo crónico postrasplante). <strong>Hasta el 50% son idiopáticos</strong> <span class="cite">p. 687</span>.</li>
+<li><strong>Patogenia</strong>: eje obstrucción–infección; el defecto de aclaramiento permite infección bacteriana crónica que destruye la pared bronquial; obliteración fibrosa de bronquiolos (<strong>bronquiolitis obliterante</strong>). La <strong>discinesia ciliar primaria</strong> es autosómica recesiva (1/10.000-20.000 nacimientos), con mutaciones de proteínas motoras ciliares (dineína); ~la mitad tiene <strong>síndrome de Kartagener</strong> (situs inversus + bronquiectasias + sinusitis), con infertilidad masculina por inmovilidad de espermatozoides <span class="cite">p. 687</span>.</li>
+<li>La <strong>aspergilosis broncopulmonar alérgica</strong> (asma o fibrosis quística) es una respuesta hiperinmunitaria frente a <em>Aspergillus fumigatus</em> con IgE elevada, anticuerpos anti-<em>Aspergillus</em> e inflamación eosinófila con tapones de moco, y a menudo provoca bronquiectasias <span class="cite">p. 687</span>.</li>
+</ul>
+<h3 id="morfología-3">Morfología</h3>
+<p>Lóbulos inferiores, bilateral, en vías distales; bronquios dilatados hasta <strong>4 veces</strong> lo normal, seguibles casi hasta la pleura (en el pulmón normal no se siguen a menos de 2-3 cm de la pleura); superficie de corte quística con secreciones mucopurulentas <span class="cite">p. 687</span>. Histología: exudado inflamatorio agudo y crónico, ulceración, metaplasia escamosa, abscesos y, en la cronicidad, fibrosis parietal. <em>H. influenzae</em> aparece en ~la mitad y <em>P. aeruginosa</em> en el <strong>12-30%</strong> de los cultivos de esputo <span class="cite">p. 687</span>.</p>
+<h3 id="clínica-2">Clínica</h3>
+<p>Tos intensa y persistente, expectoración fétida, a veces sanguinolenta, disnea y, en ocasiones, <strong>hemoptisis masiva</strong>; paroxismos matinales por drenaje posicional; obstrucción obstructiva con disnea y cianosis. Los antibióticos y la fisioterapia casi duplicaron la esperanza de vida; <strong>corazón pulmonar, abscesos cerebrales y amiloidosis</strong> son hoy complicaciones menos frecuentes <span class="cite">p. 688</span>.</p>
+
+</section><section id="sec-12-enfermedades-intersticiales-difusas-cronicas-restrictivas" class="card">
+<div class="section-kicker"><span class="n">12</span> pp. 688-691</div>
+<h2>Enfermedades intersticiales difusas crónicas (restrictivas)</h2>
+<p>Grupo heterogéneo con inflamación y fibrosis del intersticio y pruebas funcionales restrictivas. Clínica: disnea, taquipnea, crepitantes teleinspiratorios y posible cianosis, <strong>sin sibilancias</strong>; reducción de la capacidad de difusión, del volumen pulmonar y de la distensibilidad; radiografía con nódulos pequeños, líneas irregulares o vidrio esmerilado. Las formas avanzadas convergen en el <strong>pulmón en panal de abejas</strong>, con hipertensión pulmonar secundaria y corazón pulmonar <span class="cite">p. 688</span>.</p>
+<h3 id="fibrosis-pulmonar-idiopática-fpi">Fibrosis pulmonar idiopática (FPI)</h3>
+<p>Síndrome clínico cuyo patrón histológico es la <strong>neumonía intersticial habitual (NIH)</strong>; el mismo patrón se ve en enfermedades del tejido conjuntivo, neumonía crónica por hipersensibilidad y asbestosis, que deben excluirse <span class="cite">p. 688-689</span>.</p>
+<ul>
+<li><strong>Patogenia</strong>: reparación aberrante de lesiones repetidas del epitelio alveolar. Factores ambientales: tabaquismo (multiplica el riesgo), contaminación, microaspiración, humos de metales, polvo de madera, granjeros/peluqueros/canteros. Genética: mutaciones de los genes de telomerasa <strong><em>TERT</em>, <em>TERC</em>, <em>PARN</em> y <em>RTEL1</em></strong> (hasta el <strong>15%</strong> de las FPI familiares; <strong>25%</strong> de los esporádicos tienen telómeros periféricos acortados); mutaciones de genes de surfactante; polimorfismo del promotor de <em><strong>MUC5B</strong></em> en ~un tercio de los casos <span class="cite">p. 689</span>. Enfermedad de mayores: rara vez antes de los 50 años <span class="cite">p. 689</span>. El epitelio lesionado libera factores profibrogénicos (TGF-β), con fibroblastos anómalos vía PI3K/AKT que depositan colágeno <span class="cite">p. 689</span>.</li>
+<li><strong>Morfología</strong>: pleura con aspecto <strong>en empedrado</strong>; fibrosis blanca y gomosa en <strong>lóbulos inferiores, subpleural y a lo largo de tabiques interlobulillares</strong>. Fibrosis intersticial parcheada con <strong>focos fibroblásticos</strong> precoces junto a cicatrices antiguas, <strong>panal de abeja</strong> con espacios tapizados por neumocitos de tipo II hiperplásicos o epitelio bronquiolar; inflamación leve linfocitaria; puede superponerse DAD en las exacerbaciones agudas <span class="cite">p. 689-690</span>.</li>
+<li><strong>Clínica</strong>: inicio insidioso con disnea de esfuerzo y tos seca; mayoría entre <strong>55 y 75 años</strong>; hipoxemia, cianosis y dedos en palillos de tambor en fases avanzadas. <strong>Mediana de supervivencia de 3,8 años</strong>; el trasplante es el único tratamiento definitivo; un inhibidor de la tirosina cinasa y un antagonista del TGF-β ralentizan la progresión <span class="cite">p. 690</span>.</li>
+</ul>
+<h3 id="neumonía-intersticial-inespecífica-nii">Neumonía intersticial inespecífica (NII)</h3>
+<p>Se diagnostica por su pronóstico; en la mayoría se asocia a enfermedad del tejido conjuntivo, pero puede ser idiopática <span class="cite">p. 690</span>. Patrones <strong>celular</strong> (inflamación intersticial linfocitaria y plasmocitaria, uniforme o parcheada) y <strong>fibrosante</strong> (lesiones todas del mismo estadio, a diferencia de la NIH); <strong>sin focos fibroblásticos, panal de abeja, membranas hialinas ni granulomas</strong>. Mujeres no fumadoras en su sexta década; opacidades reticulares bilaterales simétricas en bases; el patrón celular tiene mejor pronóstico <span class="cite">p. 690</span>.</p>
+<h3 id="neumonía-en-organización-criptógena-noc">Neumonía en organización criptógena (NOC)</h3>
+<p>Respuesta a infección o lesión inflamatoria (neumonías víricas y bacterianas, toxinas inhaladas, fármacos, tejido conjuntivo, EICH). Radiografía: consolidaciones parcheadas <strong>subpleurales o peribronquiales</strong>. Histología: <strong>tapones polipoideos de tejido conjuntivo laxo (cuerpos de Masson)</strong> en conductos alveolares, alvéolos y bronquiolos, con pulmón de arquitectura conservada, <strong>sin fibrosis intersticial ni panal de abeja</strong>. Algunos se recuperan espontáneamente; la mayoría responde a corticoesteroides orales durante ≥6 meses <span class="cite">p. 690</span>.</p>
+<h3 id="afectación-pulmonar-en-enfermedades-autoinmunitarias">Afectación pulmonar en enfermedades autoinmunitarias</h3>
+<p>LES, artritis reumatoide, esclerosis sistémica y dermatomiositis-polimiositis; patrones más frecuentes: NII, neumonía intersticial habitual, neumonía en organización y bronquiolitis <span class="cite">p. 690-691</span>.</p>
+<ul>
+<li><strong>Artritis reumatoide</strong>: afectación pulmonar en el <strong>30-40%</strong> , pleuritis crónica con o sin derrame, neumonitis intersticial difusa con fibrosis, <strong>nódulos reumatoideos</strong> intrapulmonares, bronquiolitis folicular e hipertensión pulmonar. Artritis reumatoide + neumoconiosis = <strong>síndrome de Caplan</strong> <span class="cite">p. 691</span>.</li>
+<li><strong>Esclerosis sistémica</strong>: fibrosis intersticial difusa (patrón NII más frecuente que el de NIH) y afectación pleural. <strong>LES</strong>: infiltrados parcheados transitorios o neumonitis lúpica grave, pleuritis y derrame <span class="cite">p. 691</span>.</li>
+</ul>
+
+</section><section id="sec-13-neumoconiosis" class="card">
+<div class="section-kicker"><span class="n">13</span> pp. 691-695</div>
+<h2>Neumoconiosis</h2>
+<p>Reacción del pulmón no neoplásico ante polvos minerales inhalados (incluye hoy humos y vapores químicos); la regulación laboral ha reducido su incidencia <span class="cite">p. 691</span>. Factores determinantes: <strong>retención</strong> (concentración, duración, aclaramiento), <strong>tamaño</strong> (las partículas de <strong>1-5 µm</strong> son las más peligrosas, porque llegan a las vías terminales y sacos aéreos), <strong>solubilidad y citotoxicidad</strong> (partículas grandes poco solubles → neumoconiosis fibrosante colágena, como la silicosis), captación epitelial, activación del <strong>inflamasoma</strong> y tabaquismo, que empeora todos los polvos, en particular el amianto <span class="cite">p. 691</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Neumoconiosis" tabindex="0"><table>
+<thead>
+<tr>
+<th>Agente</th>
+<th>Enfermedades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Polvo de carbón</td>
+<td>Antracosis, máculas, fibrosis masiva progresiva, síndrome de Caplan</td>
+</tr>
+<tr>
+<td>Sílice</td>
+<td>Silicosis, síndrome de Caplan</td>
+</tr>
+<tr>
+<td>Amianto</td>
+<td>Asbestosis, placas pleurales, síndrome de Caplan, mesotelioma, carcinoma de pulmón, laringe, estómago y colon</td>
+</tr>
+<tr>
+<td>Berilio</td>
+<td>Beriliosis aguda, granulomatosis por berilio, carcinoma de pulmón (?)</td>
+</tr>
+<tr>
+<td>Óxidos de hierro, bario, estaño</td>
+<td>Siderosis, baritosis, estannosis</td>
+</tr>
+<tr>
+<td>Polvos orgánicos</td>
+<td>Pulmón del granjero (heno mohoso), bagazosis, pulmón del criador de pájaros</td>
+</tr>
+<tr>
+<td>Humos y vapores tóxicos</td>
+<td>Bronquitis, asma, edema pulmonar, SDRA, envenenamiento fulminante</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 692</span></p>
+<h3 id="neumoconiosis-de-los-mineros-del-carbón">Neumoconiosis de los mineros del carbón</h3>
+<p>Espectro desde <strong>antracosis</strong> asintomática hasta neumoconiosis simple (poca o ninguna disfunción) y <strong>fibrosis masiva progresiva</strong>; el silicato contaminante favorece la progresión. Los mineros también desarrollan enfisema y bronquitis crónica independiente del tabaquismo <span class="cite">p. 692</span>. Morfología: <strong>máculas de carbón</strong> de 1-2 mm (macrófagos cargados de carbón) y nódulos con red de colágeno, en lóbulos superiores y zonas superiores de los inferiores, junto a bronquiolos respiratorios, con dilatación alveolar (enfisema centrolobulillar). La fibrosis masiva progresiva son cicatrices negras de ≥1 cm (hasta 10 cm), de colágeno denso y pigmento, con centro necrótico isquémico, que puede aparecer tras años <span class="cite">p. 692-693</span>. Clínica: normalmente benigna; en &lt;<strong>10%</strong> aparece fibrosis masiva progresiva con disfunción grave, hipertensión pulmonar y corazón pulmonar, que sigue empeorando aunque cese la exposición. <strong>A diferencia de la silicosis, no aumenta la susceptibilidad a la tuberculosis ni al cáncer</strong> (sin tabaco) <span class="cite">p. 693</span>. El uso doméstico de carbón bituminoso ("carbón ahumado") sí se asocia a cáncer de pulmón incluso en no fumadores <span class="cite">p. 693</span>.</p>
+<h3 id="silicosis">Silicosis</h3>
+<p>Enfermedad laboral crónica <strong>más prevalente en el mundo</strong>, por inhalación de <strong>dióxido de silicona cristalino</strong> (cuarzo, cristobalita, tridimita; el cuarzo es el más frecuente); riesgo mayor en afroamericanos; exposición en mineras, chorros de arena (tela vaquera envejecida), canteras, joyería. Exposición intensa breve puede causar <strong>silicosis aguda</strong>, con acumulación lipoproteinácea alveolar idéntica a la proteinosis alveolar <span class="cite">p. 693</span>.</p>
+<ul>
+<li><strong>Patogenia</strong>: los macrófagos fagocitan los cristales → <strong>activación del inflamasoma</strong> con liberación de <strong>IL-1 e IL-18</strong> → reclutamiento inflamatorio y activación de fibroblastos con depósito de colágeno <span class="cite">p. 693</span>.</li>
+<li><strong>Morfología</strong>: nódulos diminutos (claros o ennegrecidos si hay polvo de carbón) en ganglios hiliares y zonas superiores; con la evolución, cicatrices duras de colágeno coalescentes; cavitación por tuberculosis sobreañadida o isquemia; <strong>calcificación en cáscara de huevo</strong> de los ganglios hiliares. Histología: nódulo con <strong>centro de fibras de colágeno arremolinadas</strong> y periferia de macrófagos cargados de polvo; partículas débilmente birrefringentes con luz polarizada <span class="cite">p. 693-694</span>.</li>
+<li><strong>Clínica</strong>: presentación <strong>entre 10 y 30 años</strong> después de la exposición (lenta, lo más frecuente), acelerada (&lt;10 años) o rápida (semanas-meses). Radiografía con nodularidad fina de zonas superiores; disnea solo con la fibrosis masiva progresiva; la enfermedad <strong>sigue empeorando sin exposición</strong>. Se asocia a <strong>mayor predisposición a tuberculosis</strong> (la sílice cristalina inhibe la destrucción de micobacterias fagocitadas por los macrófagos) y a un <strong>riesgo de cáncer de pulmón 2 veces mayor</strong> <span class="cite">p. 694</span>.</li>
+</ul>
+<h3 id="enfermedades-por-amianto">Enfermedades por amianto</h3>
+<p>El amianto es una familia de <strong>silicatos hidratados cristalinos</strong> asociados a fibrosis y cáncer. Procesos asociados: placas pleurales, fibrosis pleural difusa, derrames pleurales recurrentes, <strong>asbestosis</strong> (fibrosis intersticial parenquimatosa), <strong>carcinoma de pulmón</strong> y <strong>mesotelioma</strong>, más neoplasias de laringe, ovario y quizás colon <span class="cite">p. 694</span>.</p>
+<ul>
+<li><strong>Formas</strong>: <strong>crisotilo</strong> (serpentina; 90% del amianto industrial, ensortijado y más soluble, se elimina por aclaramiento mucociliar) y <strong>anfiboles</strong> (rectos y rígidos, llegan a zonas profundas, penetran epitelio e intersticio; <strong>más patógenos, en particular para el mesotelioma</strong>) <span class="cite">p. 694</span>.</li>
+<li>El amianto es <strong>iniciador y promotor</strong> tumoral; los carcinógenos del humo del tabaco se adsorben a las fibras. En trabajadores del amianto: exposición sola → carcinoma ×<strong>5</strong>; amianto + tabaquismo → ×<strong>55</strong> <span class="cite">p. 694</span>.</li>
+<li><strong>Morfología</strong>: <strong>asbestosis</strong> = fibrosis intersticial difusa con <strong>cuerpos de amianto</strong> (bastones fusiformes o arrosariados marrón dorado con centro translúcido: fibras recubiertas de material proteico con hierro de la ferritina fagocitaria; otras partículas hierro-proteína se llaman <strong>cuerpos ferruginosos</strong>). Empieza alrededor de bronquiolos respiratorios y conductos alveolares, <strong>comienza en lóbulos inferiores y subpleurales</strong> (a diferencia del carbón y la sílice, que afectan zonas superiores) y evoluciona a panal de abeja; puede estrechar arterias → hipertensión pulmonar y corazón pulmonar. <strong>Placas pleurales</strong>: la manifestación más frecuente de la exposición; placas bien delimitadas de colágeno denso a menudo calcificado, en pleura parietal anterior y posterolateral y cúpulas diafragmáticas; <strong>su tamaño y número no se correlacionan con el nivel de exposición</strong> <span class="cite">p. 695</span>.</li>
+<li><strong>Clínica</strong>: rara vez antes de 10 años de la primera exposición, más frecuente a los 20-30 años; disnea progresiva; radiografía con densidades lineales irregulares en <strong>lóbulos inferiores</strong> y panal de abeja avanzado; placas pleurales asintomáticas <span class="cite">p. 695</span>.</li>
+</ul>
+
+</section><section id="sec-14-complicaciones-de-los-tratamientos" class="card">
+<div class="section-kicker"><span class="n">14</span> pp. 696</div>
+<h2>Complicaciones de los tratamientos</h2>
+<ul>
+<li><strong>Fármacos</strong>: los citotóxicos (bleomicina) causan toxicidad directa y fibrosis; la <strong>amiodarona</strong> daña el pulmón en el <strong>5-15%</strong> de los pacientes; la tos por <strong>inhibidores de la ECA</strong> es muy frecuente; drogas intravenosas → granulomas y fibrosis por partículas de corte en la microvasculatura <span class="cite">p. 696</span>.</li>
+<li><strong>Radiación</strong>: neumonitis aguda (<strong>1-6 meses</strong> posradiación, en el <strong>3-44%</strong> según dosis y edad) con fiebre, disnea desproporcionada al volumen irradiado, derrame e infiltrados; DAD con <strong>atipia de neumocitos de tipo II y fibroblastos hiperplásicos</strong> y células espumosas en paredes vasculares; responde a esteroides o evoluciona a neumonitis crónica fibrosante <span class="cite">p. 696</span>.</li>
+</ul>
+
+</section><section id="sec-15-enfermedades-granulomatosas" class="card">
+<div class="section-kicker"><span class="n">15</span> pp. 696-698</div>
+<h2>Enfermedades granulomatosas</h2>
+<h3 id="sarcoidosis">Sarcoidosis</h3>
+<p>Enfermedad <strong>granulomatosa sistémica</strong> de origen desconocido; linfoadenopatía hiliar bilateral o afectación del parénquima pulmonar en el <strong>90%</strong> de los casos; lesiones oculares y cutáneas después. Diagnóstico <strong>de exclusión</strong> (micobacterias, hongos, beriliosis también producen granulomas no necrosantes). Adultos &lt;40 años, más en mujeres; en EE. UU., 10 veces más frecuente en afroamericanos; rara en chinos y sudeste asiáticos <span class="cite">p. 696</span>.</p>
+<ul>
+<li><strong>Patogenia</strong>: desregulación inmunitaria en personas predispuestas: acumulación intraalveolar e intersticial de <strong>linfocitos T CD4+</strong> con relación <strong>CD4/CD8 de 5:1 a 15:1</strong>, expansión oligoclonal (dirigida por antígeno), citocinas Th1 (IL-2, IFN-γ), IL-8, TNF y proteína inflamatoria de macrófagos 1; el <strong>TNF en el lavado broncoalveolar es un marcador de actividad</strong>. Sistémicamente: <strong>anergia</strong> cutánea (Candida, PPD) e <strong>hipergammaglobulinemia policlonal</strong>. Asociación con <strong>HLA-A1 y HLA-B8</strong> y agrupación familiar y racial <span class="cite">p. 696</span>.</li>
+<li><strong>Morfología</strong>: <strong>granulomas no necrosantes bien formados</strong> de macrófagos epitelioides agrupados con células gigantes; necrosis central poco frecuente; con la cronicidad, fibrosis hialina. En ~<strong>60%</strong> de los granulomas, <strong>cuerpos de Schaumann</strong> (concreciones laminadas de calcio y proteínas) e <strong>inclusiones asteroides</strong> , característicos pero <strong>no patognomónicos</strong> (también en tuberculosis) <span class="cite">p. 696-697</span>. Pulmón: granulomas distribuidos por los <strong>linfáticos peribronquiales y perivasculares</strong>; su localización <strong>submucosa bronquial</strong> explica el alto rendimiento de la biopsia broncoscópica; fuerte tendencia a cicatrizar. Ganglios hiliares y mediastínicos afectados en casi todos los casos; amígdalas en un cuarto a un tercio; <strong>bazo en ~75%</strong> (esplenomegalia clínica solo en 20%); hígado algo menos; <strong>médula ósea en 20%</strong>; piel en <strong>25%</strong> (nódulos, placas, <strong>eritema nudoso</strong>); ojo en <strong>25%</strong> (iritis, iridociclitis, síndrome seco); <strong>síndrome de Mikulicz</strong> (sarcoidosis de parótida y glándulas salivales); neurosarcoidosis en <strong>5-15%</strong> <span class="cite">p. 697</span>.</li>
+<li><strong>Clínica</strong>: desde hallazgo radiológico casual hasta disnea, tos, dolor torácico, hemoptisis o síntomas generales. Evolución impredecible: <strong>65-70%</strong> se recupera con secuelas mínimas; <strong>20%</strong> pierde función pulmonar o visión de forma permanente; el <strong>10-15%</strong> restante, con muerte sobre todo por <strong>fibrosis pulmonar progresiva y corazón pulmonar</strong> <span class="cite">p. 697</span>.</li>
+</ul>
+<h3 id="neumonitis-por-hipersensibilidad">Neumonitis por hipersensibilidad</h3>
+<p>Trastornos de mecanismo inmunitario, predominantemente intersticiales, por <strong>exposición intensa y prolongada a antígenos orgánicos inhalados</strong>; afecta las paredes alveolares (sinónimo: <strong>alveolitis alérgica extrínseca</strong>). Progresan a fibrosis si no se retira el agente. Ejemplos: <strong>pulmón del granjero</strong> (actinomicetos termófilos en heno húmedo), <strong>pulmón del criador de palomas</strong> (proteínas de suero, excretas y plumas), <strong>pulmón del humidificador</strong> (termófilas en agua caliente); no olvidar aves mascotas y sótanos mohosos <span class="cite">p. 698</span>.</p>
+<ul>
+<li><strong>Evidencia de mecanismo inmunitario</strong>: lavado broncoalveolar con quimiocinas (proteína 1 inflamatoria de macrófagos, IL-8), linfocitos T CD4+ y CD8+ elevados, anticuerpos séricos específicos frente al antígeno, inmunoglobulinas y complemento en paredes vasculares, y <strong>granulomas no necrosantes en dos tercios</strong> de los pacientes (hipersensibilidad tipo IV) <span class="cite">p. 698</span>.</li>
+<li><strong>Morfología</strong>: fase aguda con lesión alveolar; fase subaguda con <strong>neumonitis intersticial linfocítica y plasmocitaria</strong> (eosinófilos raros) y <strong>granulomas no necrosantes</strong>; fase crónica con fibrosis intersticial, focos fibroblásticos, panal de abeja y bronquiolitis obliterante más granulomas <span class="cite">p. 698</span>.</li>
+<li><strong>Clínica</strong>: crisis agudas 4-6 h tras la exposición, con fiebre, disnea, tos, leucocitosis e infiltrados micronodulares con trastorno restrictivo agudo, que duran 12 h o días; exposición continua → forma crónica fibrosante similar a otras neumopatías intersticiales <span class="cite">p. 698</span>.</li>
+</ul>
+<h3 id="eosinofilia-pulmonar">Eosinofilia pulmonar</h3>
+<p>Infiltrado de eosinófilos reclutados por IL-5 y otros agentes. Categorías <span class="cite">p. 698-699</span>:</p>
+<ul>
+<li><strong>Neumonía eosinófila aguda</strong> con insuficiencia respiratoria: inicio rápido con fiebre, disnea e hipoxemia; infiltrados difusos; <strong>más de 25% de eosinófilos en el lavado broncoalveolar</strong>; DAD con eosinófilos; respuesta rápida a corticoesteroides.</li>
+<li><strong>Eosinofilia secundaria</strong>: infecciones parasitarias, micóticas y bacterianas, neumonitis por hipersensibilidad, alergia a fármacos; también asma, aspergilosis broncopulmonar alérgica y <strong>síndrome de Churg-Strauss</strong> (vasculitis).</li>
+<li><strong>Neumonía eosinófila crónica idiopática</strong>: consolidación celular de predomínio <strong>periférico</strong>, con linfocitos y eosinófilos en septos y alvéolos; tos, fiebre, sudores nocturnos, disnea y pérdida de peso; responde a corticoesteroides; diagnóstico por exclusión.</li>
+</ul>
+
+</section><section id="sec-16-enfermedades-intersticiales-relacionadas-con-el-tabaquismo" class="card">
+<div class="section-kicker"><span class="n">16</span> pp. 699-700</div>
+<h2>Enfermedades intersticiales relacionadas con el tabaquismo</h2>
+<h3 id="neumonía-intersticial-descamativa-nid">Neumonía intersticial descamativa (NID)</h3>
+<p>Grandes colecciones de <strong>macrófagos del fumador</strong> (citoplasma abundante con pigmento marrón pulverulento, algunos con cuerpos laminares de surfactante fagocitado) en los espacios aéreos; tabiques engrosados por infiltrado escaso de linfocitos, células plasmáticas y eosinófilos ocasionales, revestidos por neumocitos cúbicos; <strong>fibrosis leve</strong>; enfisema frecuente <span class="cite">p. 699</span>. Cuarta-quinta década; prácticamente todos los pacientes <strong>fuman</strong>; disnea y tos seca insidiosas con dedos en palillos de tambor; anomalía restrictiva ligera con descenso moderado de la capacidad de difusión; <strong>respuesta excelente a corticoesteroides y abandono del tabaco</strong>, aunque algunos casos evolucionan a fibrosis <span class="cite">p. 699</span>.</p>
+<h3 id="enfermedad-pulmonar-intersticial-asociada-a-bronquiolitis">Enfermedad pulmonar intersticial asociada a bronquiolitis</h3>
+<p>Inflamación crónica y <strong>fibrosis peribronquiolar</strong> con macrófagos pigmentados intraluminales en bronquiolos respiratorios de primer y segundo orden; lesión frecuente en fumadores (en su forma leve, hallazgo casual); se denomina "asociada a bronquiolitis respiratoria" cuando hay síntomas, alteración funcional y de imagen. Fumadores con &gt;30 paquetes-año en la cuarta-quinta década; el abandono del tabaquismo suele mejorar el cuadro <span class="cite">p. 699</span>.</p>
+<h3 id="histiocitosis-de-células-de-langerhans-pulmonar">Histiocitosis de células de Langerhans pulmonar</h3>
+<p>Colecciones focales de <strong>células de Langerhans</strong> con eosinófilos, que evolucionan a cicatriz con destrucción de vías respiratorias y espacios quísticos irregulares; imagen con anomalías quísticas y nodulares. Las células de Langerhans son células dendríticas inmaduras con núcleos hendidos, <strong>positivas para S100, CD1a y CD207 (langerina) y negativas para CD68</strong>. Más del <strong>90% son adultos fumadores jóvenes o exfumadores</strong>; alrededor de la mitad mejora al dejar de fumar; otros casos tienen <strong>mutaciones activadoras de <em>BRAF</em></strong>, compatible con proceso neoplásico, y algunos requieren trasplante <span class="cite">p. 699</span>.</p>
+<h3 id="proteinosis-alveolar-pulmonar-pap">Proteinosis alveolar pulmonar (PAP)</h3>
+<p>Acumulación de <strong>surfactante</strong> en espacios alveolares y bronquiolares por defecto de la función macrofágica ligado a la señalización de <strong>GM-CSF</strong>; radiología con opacidades asimétricas bilaterales parcheadas. Tres clases <span class="cite">p. 699-700</span>:</p>
+<ul>
+<li><strong>Autoinmunitaria</strong> (antes "adquirida"): autoanticuerpos que neutralizan el GM-CSF; el <strong>90% de los casos</strong>; adultos.</li>
+<li><strong>Secundaria</strong>: asociada a trastornos hematopoyéticos, neoplasias, inmunodeficiencias, intolerancia a la lisina y <strong>silicosis aguda</strong>.</li>
+<li><strong>Hereditaria/congénita</strong>: muy rara, recién nacidos, mutaciones de pérdida de función del GM-CSF o su receptor.</li>
+</ul>
+<p>Morfología: precipitados intraalveolares rosa, homogéneos, <strong>positivos con PAS</strong>, con hendiduras de colesterol y proteínas de surfactante, con inflamación mínima; pulmón aumentado de peso; <strong>laminillas normales</strong> en ultraestructura (a diferencia de los trastornos por disfunción del surfactante) <span class="cite">p. 700</span>. Clínica: tos con esputo abundante gelatinoso, infecciones secundarias; puede haber disnea progresiva o evolución benigna. Tratamiento: <strong>lavado pulmonar total</strong> (referencia, útil en todas las formas), <strong>GM-CSF</strong> (eficaz en &gt;50% de las autoinmunitarias) y trasplante de células madre en la congénita <span class="cite">p. 700</span>.</p>
+<h3 id="trastornos-por-disfunción-del-surfactante">Trastornos por disfunción del surfactante</h3>
+<p>Enfermedades genéticas de genes del transporte o la secreción del surfactante; espectro desde insuficiencia respiratoria neonatal hasta enfermedad intersticial del adulto. Genes <span class="cite">p. 700</span>:</p>
+<ul>
+<li><em><strong>ABCA3</strong></em>: el más frecuentemente mutado; autosómico recesivo; insuficiencia respiratoria rápidamente progresiva en los primeros meses con muerte.</li>
+<li><strong>Proteína C del surfactante</strong> (<em>SFTPC</em>): segundo en frecuencia; <strong>autosómico dominante</strong> de evolución muy variable.</li>
+<li><strong>Proteína B del surfactante</strong> (<em>SFTPB</em>): tercer gen; autosómico recesivo; lactante a término con dificultad respiratoria progresiva; <strong>muerte entre los 3 y 6 meses salvo trasplante pulmonar</strong>.</li>
+</ul>
+<p>Morfología: material granular rosa intraalveolar, hiperplasia de neumocitos de tipo II, fibrosis intersticial y simplificación alveolar; los <strong>cuerpos laminares pequeños con núcleos electrodensos</strong> son diagnósticos de la mutación <em>ABCA3</em> <span class="cite">p. 700</span>.</p>
+
+</section><section id="sec-17-enfermedades-de-origen-vascular" class="card">
+<div class="section-kicker"><span class="n">17</span> pp. 700-705</div>
+<h2>Enfermedades de origen vascular</h2>
+<h3 id="embolia-e-infarto-de-pulmón">Embolia e infarto de pulmón</h3>
+<p>Casi todos los coágulos de las arterias pulmonares grandes son <strong>embólicos</strong>, procedentes de las <strong>venas profundas de las piernas (&gt;95%)</strong>. La embolia pulmonar causa <strong>más de 50.000 muertes al año en EE. UU.</strong>; su incidencia en autopsia varía del 1% en pacientes hospitalarios generales al 30% en quemados, politraumatizados y fracturados; causa o contribuye al <strong>10%</strong> de las muertes súbitas hospitalarias <span class="cite">p. 700-701</span>.</p>
+<ul>
+<li><strong>Factores de riesgo</strong>: trombofilia; enfermedad cardiaca, cáncer, inmovilización; <strong>fractura de cadera</strong> de riesgo particularmente alto; hipercoagulabilidad primaria (factor V de Leiden, mutaciones de la protrombina, síndrome antifosfolipídico) o secundaria (obesidad, cirugía reciente, cáncer, anticonceptivos orales, embarazo); catéteres venosos centrales como nido de trombos en aurícula derecha <span class="cite">p. 701</span>.</li>
+<li>Consecuencias: <strong>compromiso respiratorio</strong> (segmento ventilado no perfundido) y <strong>hemodinámico</strong> (aumento de la resistencia al flujo); muerte súbita por bloqueo del flujo o insuficiencia cardiaca derecha aguda (corazón pulmonar agudo) <span class="cite">p. 701</span>.</li>
+<li><strong>Morfología</strong>: émbolos grandes en la arteria pulmonar principal o sus ramas, o en la <strong>bifurcación ("en silla de montar")</strong>; los pequeños van a vasos periféricos. Si la función cardiovascular es adecuada, la arteria bronquial mantiene el parénquima: hay hemorragia <strong>sin infarto</strong>; solo ~<strong>10% de los émbolos causan infarto</strong>, sobre todo si la función cardiovascular ya está comprometida. ~<strong>75% de los infartos afectan los lóbulos inferiores</strong> y en &gt;50% son múltiples; <strong>cuneiformes con el vértice hacia el hilio</strong>; <strong>hemorrágicos</strong>, rojo-azulados, que se aclaran a las 48 h y terminan en cicatriz retraída. Las <strong>líneas de Zahn</strong> distinguen el trombo del coágulo post mortem. Émbolos infectados → <strong>infartos sépticos</strong>, algunos con absceso <span class="cite">p. 701</span>.</li>
+<li><strong>Clínica</strong>: el émbolo grande es una de las pocas causas de muerte prácticamente instantánea (disociación electromecánica); puede simular IAM con dolor torácico, disnea y shock; émbolos pequeños silentes o con dolor y tos transitorios. Síntomas de presentación en orden descendente: <strong>disnea, dolor pleurítico y tos</strong>, con dolor de pantorrillas o muslos en ~la mitad; con infarto, fiebre y hemoptisis. Un <strong>dimero D normal</strong> descarta la embolia en pacientes estables de riesgo bajo-moderado; diagnóstico por <strong>angio-TC pulmonar</strong>; el infarto se ve en la radiografía entre <strong>12 y 36 h</strong> después, como infiltrado en cuna <span class="cite">p. 702</span>. Los émbolos suelen resolverse por contracción y fibrinólisis; los pequeños múltiples no resueltos → hipertensión pulmonar y corazón pulmonar crónico. <strong>Un émbolo pequeño puede presagiar uno mayor: 30% de riesgo de recidiva</strong> si subsiste el factor predisponente <span class="cite">p. 702</span>. Prevención: deambulación precoz, calcetines elásticos, anticoagulación de alto riesgo; tratamiento con anticoagulación, trombólisis en el shock (alto riesgo hemorrágico) y <strong>filtro de vena cava inferior</strong> si la anticoagulación está contraindicada <span class="cite">p. 702</span>. Del 60 al 80% de los émbolos son clínicamente silentes; solo un 5% causa corazón pulmonar agudo, shock o muerte <span class="cite">p. 702</span>.</li>
+</ul>
+<h3 id="hipertensión-pulmonar">Hipertensión pulmonar</h3>
+<p>Presión arterial pulmonar media <strong>≥25 mmHg en reposo</strong>. Clasificación OMS en cinco grupos: (1) <strong>hipertensión arterial pulmonar</strong> (arterias musculares pequeñas); (2) por insuficiencia cardiaca izquierda; (3) por enfermedades pulmonares y/o hipoxemia; (4) tromboembólica crónica; (5) mecanismos poco claros o multifactoriales <span class="cite">p. 702</span>.</p>
+<ul>
+<li><strong>Causas frecuentes</strong>: EPOC/enfermedad intersticial (obliteración capilar); cardiopatías (estenosis mitral transmite la presión al lado arterial); tromboembolias de repetición; enfermedades autoinmunitarias (especialmente <strong>esclerosis sistémica</strong>); <strong>apnea obstructiva del sueño</strong> (grupo 3, con obesidad e hipoxemia) <span class="cite">p. 702-703</span>.</li>
+<li><strong>Hipertensión arterial pulmonar idiopática</strong>: hasta el <strong>80% de los casos "idiopáticos"</strong> tiene base genética, a veces autosómica dominante con <strong>penetrancia incompleta (solo 10-20% de los familiares)</strong>. Primer gen descubierto: <em><strong>BMPR2</strong></em> (2q33), mutado en la línea germinal en el <strong>75% de los casos familiares y el 25% de los esporádicos</strong>; insuficiencia haploide → disfunción y proliferación de células endoteliales y musculares lisas; modelo en dos pasos con genes modificadores y desencadenantes ambientales <span class="cite">p. 703</span>.</li>
+<li><strong>Morfología</strong>: hipertrofia de la media de las arterias pulmonares e <strong>hipertrofia ventricular derecha</strong>; trombos organizados/recanalizados apuntan a embolias de repetición; fibrosis difusa o enfisema indican hipoxia crónica. Lesión característica de arteriolas y arterias pequeñas (40-300 µm): hipertrofia de la media y fibrosis de la íntima; en los casos graves, <strong>lesión plexiforme</strong> (penacho capilar que llena la luz de arterias dilatadas de pared fina), prominente en la hipertensión idiopática y familiar, en cardiopatía congénita con derivación izquierda-derecha y en la asociada a VIH y fármacos <span class="cite">p. 703</span>.</li>
+<li><strong>Clínica</strong>: formas idiopáticas más frecuentes en <strong>mujeres de 20 a 40 años</strong>; síntomas solo en enfermedad avanzada: disnea y cansancio, a veces dolor anginoso; luego disnea grave, cianosis e hipertrofia ventricular derecha, con <strong>muerte por corazón pulmonar descompensado en 2-5 años en el 80%</strong> de los pacientes. Tratamiento: dirigir la causa; vasodilatadores en el grupo 1; trasplante pulmonar definitivo <span class="cite">p. 703</span>.</li>
+</ul>
+<h3 id="síndromes-de-hemorragia-pulmonar-difusa">Síndromes de hemorragia pulmonar difusa</h3>
+<p>Incluyen <strong>síndrome de Goodpasture</strong>, <strong>hemosiderosis pulmonar idiopática</strong> y <strong>hemorragia asociada a vasculitis</strong> (vasculitis por hipersensibilidad, granulomatosis con poliangitis, LES). Histología: hemorragia intraalveolar aguda y <strong>macrófagos cargados de hemosiderina</strong> (azul de Prusia positivo) <span class="cite">p. 703-704</span>.</p>
+<h4 id="hemosiderosis-pulmonar-idiopática">Hemosiderosis pulmonar idiopática</h4>
+<p>Rara; <strong>hemorragia alveolar difusa intermitente</strong>; mayoría en niños pequeños; tos productiva, hemoptisis y anemia con infiltrados difusos; <strong>sin anticuerpos frente a la membrana basal</strong> (lo que distingue de Goodpasture); respuesta favorable a prednisona y/o azatioprina sugiere mecanismo inmunitario; algunos desarrollan otros trastornos inmunitarios <span class="cite">p. 704</span>.</p>
+<h4 id="síndrome-de-goodpasture">Síndrome de Goodpasture</h4>
+<p>Enfermedad autoinmunitaria con autoanticuerpos frente al <strong>dominio no colágeno de la cadena α3 del colágeno IV</strong>; cuando solo hay enfermedad renal se llama enfermedad por anticuerpos anti-MBG; el <strong>síndrome de Goodpasture designa al 40-60% de los pacientes que desarrollan además hemorragia pulmonar</strong>. Adolescentes o adultos en la tercera década, <strong>predomina en hombres y la mayoría son fumadores</strong> <span class="cite">p. 704</span>.</p>
+<ul>
+<li><strong>Patogenia</strong>: los anticuerpos destruyen las membranas basales glomerulares y alveolares → <strong>glomerulonefritis rápidamente progresiva</strong> y <strong>neumonitis intersticial hemorrágica necrosante</strong>; contribuyen linfocitos B autorreactivos y linfocitos T; asociación con <strong>HLA-DRB1*1501 y HLA-DRB1*1502</strong> <span class="cite">p. 704-705</span>.</li>
+<li><strong>Morfología</strong>: pulmones pesados con neumonitis necrosante, hemorragia intraalveolar y macrófagos con hemosiderina; <strong>inmunofluorescencia con depósitos lineales de inmunoglobulinas</strong> a lo largo de las membranas basales alveolares; riñón con GNF proliferativa focal o con semilunas, con <strong>depósitos lineales de Ig y complemento diagnósticos</strong>, presentes incluso sin enfermedad renal clínica <span class="cite">p. 705</span>.</li>
+<li><strong>Clínica</strong>: comienza con síntomas respiratorios (<strong>hemoptisis</strong>) y consolidación focal; luego glomerulonefritis con insuficiencia renal rápidamente progresiva; <strong>causa de muerte más frecuente: uremia</strong>. La <strong>plasmaféresis</strong> (elimina anticuerpos anti-MBG) más inmunodepresión simultánea mejoró mucho el pronóstico <span class="cite">p. 705</span>.</li>
+</ul>
+<h4 id="poliangitis-con-granulomatosis">Poliangitis con granulomatosis</h4>
+<p>Antes granulomatosis de Wegener; afecta sobre todo vías respiratorias superiores y/o pulmones, con <strong>hemoptisis</strong> de presentación; la biopsia transbronquial suele dar poco tejido y puede no mostrar necrosis ni vasculitis; los hallazgos diagnósticos son la <strong>capilaritis y los granulomas mal formados y dispersos</strong> (a diferencia de los granulomas sarcoides, redondeados y bien definidos) <span class="cite">p. 705</span>.</p>
+
+</section><section id="sec-18-infecciones-pulmonares" class="card">
+<div class="section-kicker"><span class="n">18</span> pp. 705-714</div>
+<h2>Infecciones pulmonares</h2>
+<p>Las infecciones respiratorias son las más frecuentes de todos los órganos; las neumonías causan el <strong>2,3% de todas las muertes en EE. UU.</strong> Neumonía = cualquier infección del parénquima pulmonar; aparece cuando se deterioran las defensas locales (pérdida del reflejo de tos, disfunción mucociliar por humo o virus, acumulación de secreciones en fibrosis quística, alcohol y humo que interfieren los macrófagos alveolares, congestión y edema) o la resistencia sistémica <span class="cite">p. 705</span>. "La gripe condena y la infección al final ejecuta" (Cruveilhier, 1919): la causa de muerte más frecuente en las epidemias de gripe es la <strong>neumonía bacteriana sobreañadida</strong> <span class="cite">p. 705</span>. Los defectos de la inmunidad innata y humoral aumentan las infecciones por <strong>bacterias piógenas</strong>; los defectos celulares, las de <strong>micobacterias, virus del herpes y <em>Pneumocystis jiroveci</em></strong>; las mutaciones germinales de <em>MyD88</em> se asocian a neumonías neumocócicas destructivas <span class="cite">p. 705</span>. No se identifica patógeno en el <strong>50%</strong> de los casos, y entonces el síndrome clínico orienta el tratamiento empírico <span class="cite">p. 705</span>.</p>
+<h3 id="síndromes-de-neumonía-tabla-157">Síndromes de neumonía (tabla 15.7)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Infecciones pulmonares" tabindex="0"><table>
+<thead>
+<tr>
+<th>Síndrome</th>
+<th>Patógenos principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aguda extrahospitalaria</td>
+<td><em>S. pneumoniae</em>, <em>H. influenzae</em>, <em>M. catarrhalis</em>, <em>S. aureus</em>, <em>Legionella pneumophila</em>, <em>K. pneumoniae</em>, <em>P. aeruginosa</em>, <em>Mycoplasma pneumoniae</em>, <em>Chlamydia</em>, <em>Coxiella burnetii</em>, virus (VSR, parainfluenza, metapneumovirus, gripe, adenovirus)</td>
+</tr>
+<tr>
+<td>Asociada a la atención sanitaria</td>
+<td><em>S. aureus</em> sensible/resistente a meticilina, <em>P. aeruginosa</em>, <em>S. pneumoniae</em></td>
+</tr>
+<tr>
+<td>Nosocomial</td>
+<td>Enterobacteriaceae (<em>Klebsiella</em>, <em>Serratia marcescens</em>, <em>E. coli</em>), <em>Pseudomonas</em>, <em>S. aureus</em> resistente a meticilina</td>
+</tr>
+<tr>
+<td>Por aspiración</td>
+<td>Flora oral anaerobia (<em>Bacteroides</em>, <em>Prevotella</em>, <em>Fusobacterium</em>, <em>Peptostreptococcus</em>) + aerobios</td>
+</tr>
+<tr>
+<td>Crónica</td>
+<td><em>Nocardia</em>, <em>Actinomyces</em>; granulomatosa: <em>M. tuberculosis</em>, micobacterias atípicas, <em>Histoplasma</em>, <em>Coccidioides</em>, <em>Blastomyces</em></td>
+</tr>
+<tr>
+<td>Necrosante y absceso</td>
+<td>Anaerobios, <em>S. aureus</em>, <em>K. pneumoniae</em>, <em>S. pyogenes</em>, neumococos tipo 3</td>
+</tr>
+<tr>
+<td>Huésped inmunodeprimido</td>
+<td>CMV, <em>P. jiroveci</em>, complejo <em>M. avium-intracellulare</em>, <em>Aspergillus</em>, <em>Candida</em></td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 706</span></p>
+<h3 id="neumonías-bacterianas-extrahospitalarias">Neumonías bacterianas extrahospitalarias</h3>
+<p>Infección pulmonar en personas por lo demás sanas; puede ser bacteriana o vírica, sin diferenciación clínica ni radiológica suficiente; la <strong>procalcitonina</strong> se eleva más en las bacterianas <span class="cite">p. 706</span>. Predisponen: edades extremas, enfermedades crónicas (ICC, EPOC, diabetes), inmunodeficiencias y <strong>asplenia</strong> (riesgo de bacterias encapsuladas como el neumococo) <span class="cite">p. 706</span>.</p>
+<ul>
+<li><em><strong>Streptococcus pneumoniae</strong></em>: causa más frecuente de neumonía extrahospitalaria. Gram de esputo con diplococos grampositivos en lanceta apoya el diagnóstico, pero forma parte de la flora del <strong>20% de los adultos</strong> (falsos positivos); los hemocultivos son más específicos pero menos sensibles (positivos solo en el <strong>20-30%</strong> inicial). Vacunas con polisacáridos capsulares para pacientes con alto riesgo de sepsis <span class="cite">p. 706</span>.</li>
+<li><em><strong>Haemophilus influenzae</strong></em>: gramnegativo pleomorfo; seis serotipos encapsulados, el <strong>tipo b</strong> el más virulento; la vacuna redujo la enfermedad por tipo b y aumentó la relativa de las formas <strong>no tipificables</strong> (otitis media, sinusitis, bronconeumonia). Urgencia pediátrica por su elevada mortalidad; antes de la vacuna, causa frecuente de meningitis supurativa hasta los 5 años. <strong>Es la causa bacteriana más frecuente de exacerbación aguda de la EPOC</strong> <span class="cite">p. 706-707</span>.</li>
+<li><em><strong>Moraxella catarrhalis</strong></em>: neumonía en ancianos; <strong>segunda causa bacteriana de exacerbación aguda de la EPOC</strong>; una de las tres causas más frecuentes de otitis media infantil junto a neumococo y <em>H. influenzae</em> <span class="cite">p. 707</span>.</li>
+<li><em><strong>Staphylococcus aureus</strong></em>: neumonía secundaria tras enfermedad vírica respiratoria (sarampión en niños, gripe en niños y adultos); alta incidencia de <strong>absceso pulmonar y empiema</strong>; alta en adictos a drogas intravenosas con endocarditis y en la neumonía nosocomial <span class="cite">p. 707</span>.</li>
+<li><em><strong>Klebsiella pneumoniae</strong></em>: gramnegativo más frecuente; personas debilitadas y malnutridas, en particular <strong>alcohólicos crónicos</strong>; esputo mucoide espeso, a menudo hemático <span class="cite">p. 707</span>.</li>
+<li><em><strong>Pseudomonas aeruginosa</strong></em>: en fibrosis quística e inmunodeprimidos; frecuente en <strong>neutropénicos</strong>; <strong>invade vasos sanguíneos</strong> con diseminación extrapulmonar; septicemia fulminante <span class="cite">p. 707</span>.</li>
+<li><em><strong>Legionella pneumophila</strong></em>: enfermedad de los legionarios y fiebre de Pontiac (autolimitada); crece en <strong>agua artificial</strong> (torres de refrigeración, redes domésticas); transmisión por aerosol o aspiración; grave en cardiopatía, nefropatía, inmunodepresión y receptores de trasplante; <strong>mortalidad hasta 50% en inmunodeprimidos</strong>. Diagnóstico rápido por PCR en esputo o antígeno urinario; el cultivo es la referencia pero tarda 3-5 días <span class="cite">p. 707</span>.</li>
+<li><em><strong>Mycoplasma pneumoniae</strong></em>: niños y adultos jóvenes; esporádico o epidémico en comunidades cerradas (colegios, acuartelamientos, presidios) <span class="cite">p. 707</span>.</li>
+</ul>
+<h3 id="morfología-de-la-neumonía-bacteriana">Morfología de la neumonía bacteriana</h3>
+<p>Dos patrones: <strong>bronconeumonia (lobulillar)</strong> con consolidación parcheada y <strong>neumonía lobular</strong> con consolidación de un lóbulo; los patrones se superponen y el mismo microorganismo puede producir ambos <span class="cite">p. 707</span>. En la neumonía lobular se describen clásicamente <strong>cuatro estadios</strong>: (1) <strong>congestión</strong> (pulmón pesado, pastoso, rojo; exudado con escasos neutrófilos y bacterias); (2) <strong>hepatización roja</strong> (exudado masivo confluente de neutrófilos, eritrocitos y fibrina; lóbulo rojo, firme, sin aire, de consistencia hepática); (3) <strong>hepatización gris</strong> (desintegración progresiva de eritrocitos con exudado fibrinoso supurativo, color gris-pardo), y (4) <strong>resolución</strong> (exudado degradado y reabsorbido, ingerido por macrófagos, expectorado u organizado por fibroblastos) <span class="cite">p. 708</span>. La bronconeumonia es multilobular, bilateral y <strong>basal</strong> por descenso por gravedad de las secreciones <span class="cite">p. 708</span>.</p>
+<p><strong>Complicaciones</strong>: absceso pulmonar (particularmente con neumococo y <em>Klebsiella</em>), <strong>empiema</strong> (diseminación a la cavidad pleural) y diseminación bacteriémica con abscesos, endocarditis, meningitis o artritis supurativa <span class="cite">p. 708-709</span>. Clínica: fiebre de inicio brusco, escalofríos con temblores y tos con esputo mucopurulento, a veces hemoptisis; dolor pleurítico con roce; con antibióticos, mejoría en <strong>48-72 h</strong>. Mueren &lt;<strong>10%</strong> de los hospitalizados, casi siempre por complicaciones o alcoholismo crónico <span class="cite">p. 709</span>.</p>
+<h3 id="neumonía-vírica-extrahospitalaria">Neumonía vírica extrahospitalaria</h3>
+<p>Virus más frecuentes: gripe A y B, VSR, metapneumovirus humano, adenovirus, rinovirus, rubéola y varicela; favorecen la diseminación las edades extremas, la malnutrición, el alcoholismo y las enfermedades debilitantes; el daño mucociliar predispone a <strong>sobreinfecciones bacterianas, a menudo más graves que la infección vírica</strong> <span class="cite">p. 709</span>.</p>
+<ul>
+<li><strong>Gripe</strong>: los virus A infectan humanos, cerdos, caballos y aves; <strong>hemaglutinina</strong> (H1, H2, H3) se une al ácido siálico y facilita la entrada; <strong>neuraminidasa</strong> (N1, N2) libera los viriones; los anticuerpos frente a ambas previenen y mejoran la infección. Genoma de ocho cadenas de ARN. Las <strong>epidemias</strong> se deben a mutaciones puntuales (<strong>desviación antigénica</strong>); las <strong>pandemias</strong>, al reemplazo completo de ambos genes por recombinación con virus animales (<strong>desplazamiento antigénico</strong>), como en 1918 (20-40 millones de muertes) y 2009 (graves en adultos jóvenes por ausencia de anticuerpos previos). La preocupación actual es la gripe aviar <strong>H5N1</strong> <span class="cite">p. 709-710</span>.</li>
+<li><strong>Metapneumovirus humano</strong>: paramixovirus descubierto en 2001; responsable del <strong>5-10%</strong> de las hospitalizaciones y del <strong>12-20%</strong> de las visitas ambulatorias por infección respiratoria aguda infantil; indistinguible clínicamente del VSR; reinfecciones frecuentes <span class="cite">p. 710</span>.</li>
+<li><strong>Coronavirus humanos</strong>: los de alta patogenicidad (p. ej., <strong>SARS-CoV-2</strong>) se unen a <strong>ACE2</strong> en el epitelio alveolar, lo que explica el tropismo pulmonar; en predisponentes ancianos, la respuesta inmunitaria con citocinas puede causar lesión pulmonar aguda y SDRA <span class="cite">p. 710</span>.</li>
+<li><strong>Morfología</strong> (común a todos los virus): hiperemia y tumefacción mucosa con infiltrado mononuclear; la bronquiolitis con tapones de restos celulares, fibrina y exudado puede organizarse en <strong>bronquiolitis obliterante</strong> con daño permanente. En el pulmón: <strong>inflamación intersticial mononuclear</strong> con tabiques engrosados y edematosos; con SDRA, membranas hialinas. Herpes simple, varicela y adenovirus añaden necrosis epitelial <span class="cite">p. 710</span>.</li>
+<li><strong>Clínica</strong>: a menudo enmascarada como "resfriado de pecho"; la tos puede faltar, con fiebre, cefalea y mialgia; síntomas desproporcionados a los escasos signos físicos por el desequilibrio ventilación-perfusión; suelen ser leves y autolimitadas, pero en forma epidémica la morbimortalidad es significativa <span class="cite">p. 710</span>.</li>
+</ul>
+<h3 id="neumonía-asociada-a-la-atención-sanitaria">Neumonía asociada a la atención sanitaria</h3>
+<p>Factores de riesgo: hospitalización reciente ≥2 días, procedencia de residencia o centro de larga estancia, visitas a hospital o hemodiálisis, antibióticos intravenosos, quimioterapia o curas de heridas recientes; patógenos más frecuentes: <strong><em>S. aureus</em> resistente a meticilina y <em>P. aeruginosa</em></strong>; mortalidad mayor que en la extrahospitalaria <span class="cite">p. 711</span>.</p>
+<h3 id="neumonía-nosocomial">Neumonía nosocomial</h3>
+<p>Adquirida durante la estancia hospitalaria; pacientes con enfermedad grave, inmunodepresión, antibióticos prolongados o dispositivos invasivos; riesgo particularmente alto con <strong>ventilación mecánica</strong>. Aislados más frecuentes: cocos grampositivos (principalmente <em>S. aureus</em>, resistente a meticilina) y bacilos gramnegativos (Enterobacteriaceae y <em>Pseudomonas</em>) <span class="cite">p. 711</span>.</p>
+<h3 id="neumonía-por-aspiración">Neumonía por aspiración</h3>
+<p>En pacientes muy debilitados o con aspiración de contenido gástrico por reflejos nauseoso y de deglución alterados (coma, ictus, vómitos repetidos). Es en parte <strong>química</strong> (ácido gástrico) y en parte <strong>bacteriana</strong> (flora oral), con recuperación de más de un microorganismo, más aerobios que anaerobios. A menudo <strong>necrosante, de evolución fulminante y causa de muerte</strong>; en los supervivientes, el <strong>absceso pulmonar</strong> es complicación habitual. La <strong>microaspiración</strong> crónica (reflujo gastroesofágico) da granulomas necrosantes pequeños y mal formados con cuerpo extraño, generalmente sin consecuencias <span class="cite">p. 711</span>.</p>
+<h3 id="absceso-pulmonar">Absceso pulmonar</h3>
+<p>Proceso supurativo localizado con <strong>necrosis del tejido pulmonar</strong>. Gérmenes más frecuentes: estreptococos aerobios y anaerobios, <em>S. aureus</em> y gramnegativos; los <strong>anaerobios orales</strong> (<em>Bacteroides</em>, <em>Fusobacterium</em>, <em>Peptococcus</em>) son exclusivos del aislado en el <strong>60%</strong> de los casos <span class="cite">p. 711</span>. Vías de entrada: <strong>aspiración</strong> (la más frecuente; riesgo con alcohol, opioides, coma, anestesia, convulsiones, disfagia, mala higiene dental); infección pulmonar previa (<em>S. aureus</em>, <em>K. pneumoniae</em>, neumococo); <strong>embolia séptica</strong> (tromboflebitis, endocarditis derecha); <strong>neoplasia</strong> (neumonía postobstructiva); penetración traumática y extensión directa; el resto son <strong>abscesos criptógenos</strong> <span class="cite">p. 711</span>.</p>
+<p>Morfología: de milímetros a <strong>5-6 cm</strong>; los por aspiración son más frecuentes <strong>en el lado derecho</strong> (bronquio más vertical) y únicos; los asociados a neumonía o bronquiectasias, múltiples y basales; los sépticos, múltiples y diseminados. Destrucción supurativa con cavitación; sobreinfecciones saprofíticas; cavidades multiloculadas fétidas verde-negruzcas = <strong>gangrena de pulmón</strong>; en los crónicos, pared fibrosa <span class="cite">p. 712</span>. Clínica similar a las bronquiectasias: tos, fiebre y <strong>esputo purulento o sanguinolento de mal olor</strong>; dedos en palillos de tambor. <strong>Siempre descartar carcinoma subyacente en el adulto mayor: se encuentra en el 10-15% de los casos</strong>. Complicaciones: extensión a la pleura, hemorragia, abscesos cerebrales o meningitis por émbolos sépticos y, pocas veces, <strong>amiloidosis secundaria tipo AA</strong> <span class="cite">p. 712</span>.</p>
+<h3 id="neumonía-crónica-granulomatosa-micótica">Neumonía crónica (granulomatosa micótica)</h3>
+<p>Lesión localizada en el paciente inmunocompetente, con o sin ganglios regionales; reacción granulomatosa por bacterias (<em>M. tuberculosis</em>, comentado en capítulo 8) u hongos <span class="cite">p. 712</span>.</p>
+<h4 id="histoplasmosis">Histoplasmosis</h4>
+<p>Por inhalación de microconidios de <em><strong>Histoplasma capsulatum</strong></em> en polvo con guano de <strong>aves o murciélagos</strong>; endémica en los valles de los <strong>ríos Ohio y Mississippi</strong> y el Caribe. Patógeno <strong>intracelular</strong> en fagocitos, como <em>M. tuberculosis</em>; presentaciones: primaria pulmonar autolimitada (lesiones numulares), secundaria progresiva crónica <strong>en vértices</strong> (tos, fiebre, sudores nocturnos), diseminación a mediastino, suprarrenales, hígado o meninges, y enfermedad diseminada en inmunodeprimidos. La inmunidad Th1 con IFN-γ y TNF activa los macrófagos para destruir las levaduras <span class="cite">p. 712</span>. Morfología: <strong>granulomas necrosantes</strong> que se fibrosan y calcifican de forma concéntrica ("en corteza de árbol"); diagnóstico diferencial con tuberculosis, sarcoidosis y coccidioidomicosis por la identificación de <strong>levaduras de 3-5 µm de pared fina</strong> persistentes en los tejidos; en la diseminada fulminante no hay granulomas sino fagocitos mononucleados llenos de levaduras <span class="cite">p. 712</span>.</p>
+<h4 id="blastomicosis">Blastomicosis</h4>
+<p><em><strong>Blastomyces dermatitidis</strong></em>, hongo dismórfico del suelo; centro y sudeste de EE. UU., Canadá, México, Oriente Medio, África e India. Formas: pulmonar, diseminada y cutánea primaria (inoculación directa). Lesiones pulmonares: <strong>granulomas supurativos</strong>. En los tejidos, levadura redonda de <strong>5-15 µm que germina con base amplia</strong>, pared gruesa de doble contorno y núcleos visibles. La afectación de piel y laringe con hiperplasia epitelial intensa <strong>puede confundirse con carcinoma epidermoide</strong> <span class="cite">p. 713</span>.</p>
+<h4 id="coccidioidomicosis">Coccidioidomicosis</h4>
+<p><em><strong>Coccidioides immitis</strong></em>; más del <strong>80%</strong> de las personas de áreas endémicas (sudoeste y oeste de EE. UU., México) tienen reacción cutánea positiva; las artroconidias <strong>bloquean la fusión fagolisosoma</strong> y resisten la muerte intracelular. ~<strong>10%</strong> desarrolla lesiones pulmonares y <strong>&lt;1%</strong> enfermedad diseminada (piel y meninges); riesgo alto en filipinos, afroamericanos e inmunodeprimidos. Morfología: <strong>esférulas de doble pared de 20-60 µm</strong> llenas de endosporas dentro de macrófagos o células gigantes; al romperse liberan endosporas con reacción piógena superpuesta; inflamación granulomatosa, piógena o mixta <span class="cite">p. 713</span>.</p>
+<h3 id="neumonía-en-el-huésped-inmunodeprimido">Neumonía en el huésped inmunodeprimido</h3>
+<p>Infiltrado pulmonar con o sin fiebre: complicación grave y frecuente de la inmunodepresión (trasplante, quimioterapia, radioterapia); a menudo hay <strong>más de un agente</strong>; mortalidad alta. El diagnóstico diferencial incluye reacciones medicamentosas y afectación tumoral <span class="cite">p. 714</span>. Según el agente: bacterias (<em>P. aeruginosa</em>, micobacterias, gramnegativos), virus (CMV, herpes) y hongos (<em>P. jiroveci</em>, <em>Candida</em>, <em>Aspergillus</em>, ficomicetos, <em>Cryptococcus</em>) <span class="cite">p. 714</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Infecciones pulmonares" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Infiltrados difusos</th>
+<th>Infiltrados focales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frecuentes</td>
+<td>Bacterias gramnegativas, CMV, <em>P. jiroveci</em>, <em>S. aureus</em>, reacción medicamentosa</td>
+<td><em>Aspergillus</em>, <em>Candida</em>, procesos malignos</td>
+</tr>
+<tr>
+<td>Infrecuentes</td>
+<td>Neumonía bacteriana, <em>Cryptococcus</em>, <em>Aspergillus</em>, <em>Mucor</em>, <em>P. jiroveci</em>, <em>Cryptococcus</em>, malignos</td>
+<td><em>Pneumocystis</em>, <em>Cryptococcus</em>, malignos, <em>Legionella</em></td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 714</span></p>
+<h3 id="enfermedad-pulmonar-en-la-infección-por-vih">Enfermedad pulmonar en la infección por VIH</h3>
+<p>La enfermedad pulmonar causa el <strong>30-40% de las hospitalizaciones</strong> en personas con VIH; no olvidar las neumonías bacterianas por patógenos habituales (<em>S. pneumoniae</em>, <em>S. aureus</em>, <em>H. influenzae</em>, bacilos gramnegativos), más frecuentes, más graves y con más bacteriemia que en otros pacientes. También hay causas no infecciosas: <strong>sarcoma de Kaposi, linfoma no hodgkiniano y cáncer de pulmón</strong> <span class="cite">p. 714</span>. El <strong>recuento de CD4+ orienta</strong>: infecciones bacterianas y tuberculosas con CD4+ &gt;200 células/mm³; <strong>neumonía por <em>Pneumocystis</em> con CD4+ &lt;200</strong>; CMV, hongos y complejo <em>M. avium-intracellulare</em> solo con CD4+ <strong>&lt;50 células/mm³</strong>. Puede haber más de una causa simultánea y presentaciones atípicas <span class="cite">p. 714</span>.</p>
+
+</section><section id="sec-19-trasplante-de-pulmon" class="card">
+<div class="section-kicker"><span class="n">19</span> pp. 714-715</div>
+<h2>Trasplante de pulmón</h2>
+<p>Indicaciones: enfermedad pulmonar terminal no neoplásica sin otra enfermedad que impida la inmunodepresión de por vida. Las más frecuentes: <strong>EPOC terminal, fibrosis pulmonar idiopática, fibrosis quística e hipertensión arterial pulmonar idiopática/familiar</strong>. El trasplante bilateral da mejor supervivencia, pero el unilateral beneficia a dos receptores de un donante; en infecciones bilaterales crónicas (fibrosis quística, bronquiectasias) deben reemplazarse <strong>ambos</strong> pulmones <span class="cite">p. 714</span>. Complicaciones principales del injerto: <strong>infección y rechazo</strong> <span class="cite">p. 715</span>.</p>
+<ul>
+<li><strong>Infecciones</strong>: en las primeras semanas predominan las bacterianas; la profilaxis con ganciclovir redujo la neumonía por CMV; la mayoría de las infecciones aparecen entre el <strong>tercer y el duodécimo mes</strong>; <em>P. jiroveci</em> es rara por profilaxis con trimetoprim-sulfametoxazol; hongos (<em>Aspergillus</em>, <em>Candida</em>) pueden afectar las anastomosis bronquiales <span class="cite">p. 715</span>.</li>
+<li><strong>Rechazo agudo</strong>: infiltrados alrededor de vasos pequeños y/o submucosa bronquial (linfocitos, células plasmáticas, escasos neutrófilos y eosinófilos); responde bien al tratamiento <span class="cite">p. 715</span>.</li>
+<li><strong>Rechazo crónico</strong>: problema en <strong>al menos la mitad de los pacientes entre 3 y 5 años</strong>; se manifiesta con tos, disnea y deterioro <strong>irreversible</strong> de la función por fibrosis; su correlato morfológico es la <strong>bronquiolitis obliterante</strong> (oclusión fibrosa parcial o completa de las vías pequeñas), de distribución parcheada y difícil de diagnosticar por biopsia transbronquial; también puede dar bronquiectasias y fibrosis pulmonar; su evolución puede frenarse, pero no revertirse <span class="cite">p. 715</span>.</li>
+<li>El <strong>linfoma B asociado a VEB</strong> es una complicación menos frecuente, que se origina con más frecuencia dentro del aloinjerto. <strong>Mediana de supervivencia global de 6 años</strong>; mejores resultados en jóvenes y trasplante bilateral <span class="cite">p. 715</span>.</li>
+</ul>
+
+</section><section id="sec-20-tumores" class="card">
+<div class="section-kicker"><span class="n">20</span> pp. 715-724</div>
+<h2>Tumores</h2>
+<p>Del 90 al 95% de los tumores pulmonares son <strong>carcinomas</strong>, ~5% <strong>tumores carcinoides</strong> y 2-5% mesenquimatosos y otros <span class="cite">p. 715</span>. El cáncer de pulmón es el más diagnosticado y la <strong>primera causa de mortalidad por cáncer en el mundo</strong>: 2,1 millones de casos nuevos y 1,8 millones de muertes en 2018; en EE. UU., ~230.000 casos nuevos y &gt;150.000 muertes (~28% de las muertes por cáncer); mata a más personas que los cánceres de colon, mama y próstata juntos. Edades 55-84 años, máxima incidencia 65-74; solo el 2% antes de los 40. Desde 1987, el cáncer de pulmón causa más muertes anuales que el de mama en mujeres <span class="cite">p. 715</span>.</p>
+<h3 id="etiología-y-patogenia">Etiología y patogenia</h3>
+<ul>
+<li><strong>Tabaquismo</strong>: ~<strong>80%</strong> de los casos en fumadores activos o recientes; correlación prácticamente lineal con los paquetes-año; el riesgo es <strong>60 veces mayor</strong> en grandes fumadores (2 paquetes/día durante 20 años) frente a no fumadores; solo desarrolla cáncer el <strong>10-15%</strong> de los fumadores, lo que implica otros factores. Las mujeres son más susceptibles a los carcinógenos del tabaco. Dejar de fumar reduce el riesgo pero puede no volver al basal (los cambios genéticos persisten años en el epitelio de exfumadores). El humo pasivo mata ~<strong>3.000 no fumadores al año</strong> en EE. UU. <span class="cite">p. 716</span>.</li>
+<li><strong>Riesgos industriales</strong>: amianto, arsénico, cromo, uranio, níquel, cloruro de vinilo y gas mostaza. Mineros de uranio no fumadores: riesgo ×4; fumadores, ×10. <strong>Amianto</strong>: latencia de 10-30 años; trabajadores no fumadores ×5; <strong>amianto + tabaquismo ×55</strong> <span class="cite">p. 716</span>.</li>
+<li><strong>Radón</strong>: gas radiactivo vinculado al cáncer en mineros del uranio; preocupación por la exposición domiciliaria de bajo nivel <span class="cite">p. 716</span>.</li>
+<li><strong>Mutaciones adquiridas</strong>: efecto de campo en la mucosa de fumadores; cada subtipo histológico tiene su firma molecular (ver más abajo). Fumadores con variantes de <strong>P-450</strong> de alta activación de procarcinógenos, o con "genotipo sensible al mutágeno" (más roturas cromosómicas en linfocitos), tienen riesgo mayor (hasta <strong>10 veces</strong> el del genotipo sensible al mutágeno) <span class="cite">p. 716</span>.</li>
+<li><strong>Cáncer de pulmón en no fumadores</strong>: <strong>25% de los cánceres de pulmón en el mundo</strong> (10-15% en el mundo occidental); más frecuentes en mujeres, en su mayoría <strong>adenocarcinomas</strong> con mutaciones dianas; más probable <em>EGFR</em> mutado y <strong>casi nunca <em>KRAS</em></strong> <span class="cite">p. 717</span>.</li>
+<li><strong>Lesiones precursoras</strong>: hiperplasia adenomatosa atípica, adenocarcinoma in situ, displasia escamosa y carcinoma in situ, e hiperplasia difusa de células neuroendocrinas pulmonares idiopática; "precursor" no implica progresión inevitable <span class="cite">p. 717</span>.</li>
+</ul>
+<h3 id="clasificación">Clasificación</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Tumores" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo histológico</th>
+<th>Proporción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adenocarcinoma</td>
+<td>~50%</td>
+</tr>
+<tr>
+<td>Carcinoma epidermoide</td>
+<td>~20%</td>
+</tr>
+<tr>
+<td>Carcinoma de células pequeñas</td>
+<td>~15%</td>
+</tr>
+<tr>
+<td>Carcinoma de células grandes</td>
+<td>~2%</td>
+</tr>
+<tr>
+<td>Otros</td>
+<td>~13%</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 717</span> Patrones mixtos en el 4-5% de los carcinomas. La incidencia del <strong>adenocarcinoma</strong> ha aumentado y es hoy el más frecuente en ambos sexos <span class="cite">p. 717</span>.</p>
+<h3 id="morfología-de-los-principales-subtipos">Morfología de los principales subtipos</h3>
+<ul>
+<li><strong>Adenocarcinoma</strong>: periférico, más pequeño; patrones acinar, lepidico, papilar, micropapilar y sólido; mayoría expresa <strong>TTF-1</strong>. Precursoras: <strong>hiperplasia adenomatosa atípica</strong> (≤5 mm, neumocitos displásicos sobre paredes levemente fibróticas) y <strong>adenocarcinoma in situ</strong> (&lt;3 cm, crecimiento puramente lepidico sin invasión, antes "carcinoma bronquioloalveolar"); los tumores ≤3 cm con componente invasivo ≤5 mm son <strong>microinvasivos</strong>, con pronóstico bastante más favorable. Los <strong>mucinosos</strong> se diseminan por vía aérea con tumores satélite y pueden simular una neumonía lobular <span class="cite">p. 717-718</span>.</li>
+<li><strong>Carcinoma epidermoide</strong>: más frecuente en hombres, fuertemente asociado al tabaco, típicamente <strong>central/hiliar</strong> (aunque la proporción periférica aumenta); secuencia <strong>metaplasia escamosa → displasia → carcinoma in situ → invasivo</strong>. Crecimiento exofítico intraluminal con atelectasia e infección distales, o infiltración peribronquial hacia cariña y mediastino. Histología: <strong>queratinización (perlas escamosas) y puentes intercelulares</strong> <span class="cite">p. 718</span>.</li>
+<li><strong>Carcinoma de células pequeñas</strong>: muy agresivo, casi siempre tabáquico (<strong>solo 1% en no fumadores</strong>); sin fase preinvasiva conocida; metástasis extensas y desenlace letal prácticamente en todos los casos. Células pequeñas (&lt;3 veces el diámetro de un linfocito, ~25 µm), citoplasma escaso, <strong>amoldamiento nuclear</strong>, alta actividad mitótica y necrosis extensa; <strong>efecto de Azzopardi</strong> (tinción basófila de paredes vasculares por ADN de células necróticas). Diferenciación neuroendocrina (gránulos densos de ~100 nm; cromogranina, sinaptofisina, CD56). Inactivación casi universal de <strong><em>TP53</em> y <em>RB</em></strong>, pérdida del 3p y amplificación de <em><strong>MYC</strong></em> <span class="cite">p. 718-719</span>.</li>
+<li><strong>Carcinoma de células grandes</strong>: diagnóstico <strong>de exclusión</strong>; sin expresión de TTF-1 ni napsina A (adenocarcinoma) ni p40/p63 (epidermoide); variante neuroendocrina de células grandes con biología similar al microcítico pero células mayores <span class="cite">p. 719</span>.</li>
+</ul>
+<h3 id="genética-por-subtipo">Genética por subtipo</h3>
+<ul>
+<li><strong>Adenocarcinoma</strong>: ~1/3 con mutaciones activadoras de vías de factores de crecimiento: <em><strong>EGFR</strong></em> (10-15% en blancos, mayor en mujeres asiáticas no fumadoras), <em><strong>ALK</strong></em> (3-5%), <em><strong>ROS1</strong></em> (1%), <em><strong>MET</strong></em> (2-5%), <em><strong>RET</strong></em> (1-2%), <em><strong>BRAF</strong></em> (2%), <em><strong>PI3K</strong></em> (2%) y <em><strong>KRAS</strong></em> (~30%). Todas dianas o pronósticas <span class="cite">p. 717</span>.</li>
+<li><strong>Carcinoma epidermoide</strong>: deleciones de <strong>3p y 9p (locus <em>CDKN2A</em>/p16)</strong> precoces; <em><strong>TP53</strong></em> mutado en la mayoría (p53 sobreexpresada en el 10-50% de las displasias y el 60-90% de los carcinomas in situ); <em><strong>CDKN2A</strong></em> mutado en el <strong>65%</strong>; amplificación de <em><strong>FGFR1</strong></em> <span class="cite">p. 717</span>.</li>
+<li><strong>Células pequeñas</strong>: mayor carga mutacional; inactivación de <em>TP53</em> y <em>RB</em>, pérdida de 3p incluso en epitelio normal, amplificación de <em>MYC</em>; la transformación de no pequeña a pequeña se acompaña de pérdida de <em>RB</em> <span class="cite">p. 717</span>.</li>
+</ul>
+<h3 id="extensión-y-estadificación">Extensión y estadificación</h3>
+<p>Afectación ganglionar en &gt;<strong>50%</strong> como media; diseminación precoz por vía linfática y hematógena en todos los subtipos, <strong>excepto el epidermoide, que metastatiza fuera del tórax tardíamente</strong>. Metástasis: <strong>suprarrenales en &gt;50%</strong>, hígado (30-50%), cerebro (20%), hueso (20%) <span class="cite">p. 721</span>.</p>
+<p>Efectos locales y síndromes asociados (tabla 15.11): obstrucción parcial → enfisema focal; total → atelectasia; abscesos y bronquiectasias postobstructivas; <strong>síndrome de la vena cava superior</strong>; tumores apicales del surco superior (<strong>tumores de Pancoast</strong>) con dolor por distribución del nervio cubital y <strong>síndrome de Horner</strong> (enoftalmos, ptosis, miosis, anhidrosis); ronquera por invasión del nervio laríngeo recurrente; disfagia por invasión esofágica; parálisis diafragmática por el frénico <span class="cite">p. 721-722</span>.</p>
+<p>Estadificación TNM (tabla 15.10): Tis = carcinoma in situ/adenocarcinoma in situ; T1 ≤3 cm; T2 3-5 cm o bronquio principal/pleura visceral/atelectasia lobular; T3 &gt;5-7 cm o pared torácica, diafragma, nervio frénico; T4 &gt;7 cm o invasión de mediastino, corazón, grandes vasos, tráquea, nervio laríngeo recurrente, esófago, cuerpo vertebral o cariña; N1 hiliar homolateral; N2 mediastínico o subcarinal homolateral; N3 contralateral, escaleno o supraclavicular; M1a nódulo contralateral o derrame maligno pleural/pericárdico; M1b una localización extratorácica; M1c múltiples <span class="cite">p. 721</span>.</p>
+<h3 id="clínica-y-pronóstico">Clínica y pronóstico</h3>
+<p>Síntomas de presentación: <strong>tos (75%), pérdida de peso (40%), dolor torácico (40%), disnea (20%)</strong>; a veces se descubre por metástasis (dolor de espalda óseo; cefalea, hemiparesia y convulsiones cerebrales) <span class="cite">p. 721</span>. Tamizaje con <strong>TC de dosis baja</strong> en personas de alto riesgo, a costa de muchos falsos positivos <span class="cite">p. 721</span>. <strong>Supervivencia global a 5 años de 18,7%</strong>: 52% si está localizada, 22% con metástasis regionales y 4% con metástasis a distancia <span class="cite">p. 721-722</span>. El adenocarcinoma y el epidermoide se mantienen localizados más tiempo; el microcítico suele estar avanzado al diagnóstico <span class="cite">p. 722</span>. Tratamiento dirigido: inhibidores de tirosina cinasas para <em>EGFR</em>, <em>ALK</em>, <em>ROS</em> y c-MET prolongan la supervivencia (las recidivas generan mutaciones de resistencia); <em><strong>KRAS</strong></em> mutado se asocia a peor pronóstico; <strong>inhibidores del punto de control</strong> eficaces en subgrupos de adenocarcinoma y epidermoide por su alta carga de neoantígenos <span class="cite">p. 722</span>. El microcítico es muy sensible a radioterapia y quimioterapia: ~<strong>10%</strong> de los pacientes con enfermedad limitada sobreviven 5 años; en enfermedad avanzada, mediana de supervivencia de ~<strong>10 meses</strong> y curación próxima a cero <span class="cite">p. 722</span>.</p>
+<h3 id="síndromes-paraneoplásicos">Síndromes paraneoplásicos</h3>
+<p>Pueden anteceder al tumor detectable; incidencia clínicamente significativa del <strong>1-10%</strong> <span class="cite">p. 722</span>:</p>
+<ul>
+<li><strong>ADH</strong> → hiponatremia (SIADH): predominantemente <strong>carcinoma de células pequeñas</strong>.</li>
+<li><strong>ACTH</strong> → síndrome de Cushing: predominantemente <strong>células pequeñas</strong>.</li>
+<li><strong>PTHrP, prostaglandina E y citocinas</strong> → <strong>hipercalcemia</strong>: predominantemente <strong>carcinoma epidermoide</strong>.</li>
+<li>Calcitonina → hipocalcemia; gonadotropinas → ginecomastia; serotonina y bradicinina → síndrome carcinoide.</li>
+<li>Síndrome de <strong>Eaton-Lambert</strong> (autoanticuerpos contra el canal de calcio presináptico), neuropatía sensitiva periférica, acantosis nigricans, reacciones leucemoides, <strong>síndrome de Trousseau</strong> (trombosis venosa profunda y tromboembolia) y <strong>osteoartropatía pulmonar hipertrófica</strong> con dedos en palillo de tambor.</li>
+</ul>
+<h3 id="proliferaciones-y-tumores-neuroendocrinos">Proliferaciones y tumores neuroendocrinos</h3>
+<p>Espectro: tumorlets benignos (nidos hiperplásicos sin significación en zonas de cicatriz), <strong>carcinoides</strong>, carcinomas de células pequeñas y carcinomas neuroendocrinos de células grandes. Al contrario que los carcinomas, los carcinoides pueden presentarse en <strong>neoplasia endocrina múltiple tipo 1</strong> <span class="cite">p. 723</span>.</p>
+<h4 id="tumores-carcinoides">Tumores carcinoides</h4>
+<p><strong>1-5% de todos los tumores pulmonares</strong>; mayoría &lt;60 años; incidencia similar en ambos sexos; <strong>20-40% de los pacientes son no fumadores</strong>. Se dividen en típicos y atípicos <span class="cite">p. 723</span>.</p>
+<ul>
+<li><strong>Morfología</strong>: centrales (masas polipoideas intrabronquiales con mucosa intacta, a veces con invasión peribronquial en "lesión en ojal") o periféricos sólidos. Histología organoide, trabecular o en roseta con estroma fibrovascular; células regulares de núcleos redondos y citoplasma eosinófilo. <strong>Típico: &lt;2 mitosis por 10 campos de gran aumento y sin necrosis; atípico: 2-10 mitosis y/o focos de necrosis</strong>, mayor pleomorfismo e invasión linfática. Inmunohistoquímica: serotonina, enolasa neuronal específica, bombesina, calcitonina <span class="cite">p. 723</span>.</li>
+<li><strong>Clínica</strong>: tos persistente, hemoptisis, infecciones y atelectasias por crecimiento intraluminal; ~<strong>10%</strong> produce <strong>síndrome carcinoide</strong> clásico (crisis de diarrea, sofocos y cianosis). Supervivencia a 5 años: <strong>95% (típico), 70% (atípico), 30% (carcinoma neuroendocrino de células grandes) y 5% (células pequeñas)</strong> <span class="cite">p. 723</span>.</li>
+</ul>
+<h3 id="otros-tumores">Otros tumores</h3>
+<ul>
+<li>Mesenquimatosos benignos y malignos poco frecuentes: tumor miofibroblástico inflamatorio, fibroma/fibrosarcoma, <strong>linfangioleiomiomatosis</strong>, leiomioma/leiomiosarcoma, lipoma, hemangioma, condroma <span class="cite">p. 723</span>.</li>
+<li>Hematolinfoides: histiocitosis de células de Langerhans, linfoma de Hodgkin, granulomatosis linfomatoide, linfoma B positivo para VEB y linfoma B de la zona marginal <span class="cite">p. 724</span>.</li>
+<li><strong>Hamartoma pulmonar</strong>: masa redondeada radiopaca de hallazgo casual, solitaria, &lt;3-4 cm; nódulos de tejido conjuntivo (sobre todo <strong>cartílago</strong>) con hendiduras epiteliales ciliadas o no; en realidad es una <strong>neoplasia clonal</strong> con aberraciones de los cromosomas <strong>6p21 o 12q14-q15</strong> en el componente mesenquimatoso (el epitelio es atrapado) <span class="cite">p. 724</span>.</li>
+<li><strong>Linfangioleiomiomatosis</strong>: mujeres jóvenes en edad fértil; proliferación de células epitelioides perivasculares con marcadores de melanocitos y músculo liso; espacios quísticos tipo enfisema; mutaciones del gen supresor <em><strong>TSC2</strong></em> (regulador negativo de <strong>mTOR</strong>); se presenta con disnea o <strong>neumotórax espontáneo</strong>; progresión lenta por décadas; los <strong>inhibidores de mTOR</strong> frenan el deterioro pero deben usarse indefinidamente; solo el trasplante es curativo <span class="cite">p. 724</span>.</li>
+<li><strong>Tumor miofibroblástico inflamatorio</strong>: muy raro, más común en niños; fiebre, tos, dolor torácico y hemoptisis; calcificación en 25%; algunos con reordenamientos de <em><strong>ALK</strong></em>, con respuestas mantenidas a inhibidores <span class="cite">p. 724</span>.</li>
+<li><strong>Tumores mediastínicos</strong>: anterior (timoma, teratoma, linfoma, tiroides, paratiroides, metástasis); medio (quiste broncógeno, quiste pericárdico, linfoma); posterior (tumores neurógenos , schwannoma, neurofibroma, linfoma, metástasis, quiste broncógeno, hernia gastroentérica) <span class="cite">p. 724</span>.</li>
+<li><strong>Metástasis</strong>: el pulmón es la <strong>localización más frecuente de las neoplasias metastásicas</strong>; patrón clásico de <strong>nódulos delimitados ("bola de cañón")</strong> periféricos diseminados por todos los lóbulos; también nódulo solitario, afectación endobronquial o pleural y consolidación neumónica <span class="cite">p. 724</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Paraneoplásicos orientan el subtipo</span>ADH y ACTH apuntan a células pequeñas; hipercalcemia por PTHrP, a epidermoide. Eaton-Lambert, Trousseau y osteartropatía hipertrófica completan el cuadro <span class="cite">p. 722</span>.</div>
+</section><section id="sec-21-pleura" class="card">
+<div class="section-kicker"><span class="n">21</span> pp. 725-727</div>
+<h2>Pleura</h2>
+<p>La mayoría de los trastornos pleurales son <strong>secundarios</strong> a enfermedad de otra parte; los primarios son las infecciones bacterianas intrapleurales y el <strong>mesotelioma</strong> <span class="cite">p. 725</span>. El líquido pleural normal es de no más de <strong>15 ml</strong> <span class="cite">p. 725</span>.</p>
+<h3 id="derrame-pleural">Derrame pleural</h3>
+<p>Causas de acumulación: aumento de la presión hidrostática (ICC), aumento de la permeabilidad vascular (neumonía), descenso de la presión osmótica (síndrome nefrótico), aumento de la presión negativa intrapleural (atelectasias) y reducción del drenaje linfático (carcinomatosis mediastínica) <span class="cite">p. 725</span>.</p>
+<ul>
+<li><strong>Derrames inflamatorios</strong>: pleuritis serosa, serofibrinosa o fibrinosa por tuberculosis, neumonía, infarto, absceso y bronquiectasias; también artritis reumatoide, LES, uremia, infecciones sistémicas, metástasis y radioterapia. El <strong>empiema</strong> es el exudado pleural purulento por siembra bacteriana o micótica, normalmente por extensión desde el pulmón (o desde abscesos subdiafragmáticos, más a menudo por el lado derecho); pus cremoso amarillo-verde loculado; puede alcanzar 500-1.000 ml, pero suele ser pequeño y tabicado por fibrosis; se organiza en adherencias que restringen la expansión. La <strong>pleuritis hemorrágica</strong> se asocia a diátesis hemorrágicas, rickettsiosis y afectación neoplásica: debe buscarse siempre células tumorales en el exudado sanguinolento <span class="cite">p. 725</span>.</li>
+<li><strong>Derrames no inflamatorios</strong>: <strong>hidrotórax</strong> (líquido seroso pajizo), por insuficiencia cardiaca (causa más frecuente), insuficiencia renal o cirrosis; <strong>hemotórax</strong> (sangre), por traumatismo o rotura de aneurisma aórtico (casi siempre mortal); <strong>quilotórax</strong> (líquido lechoso de quilo) por traumatismo u obstrucción del <strong>conducto torácico</strong> o del conducto linfático derecho, a veces por cánceres que obstruyen los linfáticos <span class="cite">p. 725-726</span>.</li>
+</ul>
+<h3 id="neumotórax">Neumotórax</h3>
+<p>Presencia de aire o gas en la cavidad pleural; asociado en particular a <strong>enfisema, asma y tuberculosis</strong>; espontáneo, traumático o terapéutico. El <strong>neumotórax espontáneo idiopático</strong> ocurre en personas relativamente sanas por rotura de burbujas subpleurales pequeñas, normalmente <strong>apicales</strong>, y remite con la reabsorción del aire; las recidivas son frecuentes e incapacitantes. Cuando el defecto pleural actúa como válvula antirretorno, se produce el <strong>neumotórax a tensión</strong>, con presión creciente que comprime el mediastino y el pulmón contralateral <span class="cite">p. 725-726</span>.</p>
+<h3 id="tumores-pleurales">Tumores pleurales</h3>
+<p>La afectación <strong>metastásica es mucho más frecuente</strong> que la primaria (pulmón y mama sobre todo; carcinomas de ovario dan implantes difusos); los implantes producen derrame serohemático con células neoplásicas, de gran valor citológico <span class="cite">p. 726</span>.</p>
+<h4 id="tumor-fibroso-solitario">Tumor fibroso solitario</h4>
+<p>Tumor de tejidos blandos, a menudo pediculado a la pleura; de 1-2 cm a enorme, confinado a la superficie pulmonar. Histología: espirales de reticulina y colágeno con células fusiformes tipo fibroblasto; malignidad rara (pleomorfismo, mitosis, necrosis, <strong>&gt;10 cm</strong>). Inmunotinción: <strong>positivo para CD34 y STAT6, negativo para queratina</strong> , fenotipo opuesto al mesotelioma. Asociación con la <strong>fusión <em>NAB2-STAT6</em></strong> por inversión del cromosoma 12. <strong>No se relaciona con el amianto</strong> <span class="cite">p. 726</span>.</p>
+<h4 id="mesotelioma-maligno">Mesotelioma maligno</h4>
+<p>Raro, pero aumentó por la exposición a amianto; relacionado con amianto hasta en el <strong>90%</strong> de los casos en áreas con industria naval; riesgo de por vida de hasta <strong>7-10%</strong> con exposición intensa; <strong>latencia de 25 a 45 años</strong>. A diferencia del carcinoma de pulmón, <strong>el riesgo no aumenta con el tabaquismo</strong> <span class="cite">p. 726</span>. Genética: <strong>deleción homocigótica de 9p con pérdida de <em>CDKN2A</em></strong> en ~<strong>80%</strong>; mutaciones en <em><strong>NF2</strong></em> y <em><strong>BAP1</strong></em>; las mutaciones germinales de <em>BAP1</em> elevan sustancialmente el riesgo <span class="cite">p. 726-727</span>.</p>
+<ul>
+<li><strong>Morfología</strong>: lesión <strong>difusa</strong> de la pleura visceral o parietal que se extiende por el espacio pleural con derrame extenso e invasión directa; envuelve el pulmón en una capa gruesa, gelatinosa, blanco-grisácea. Tipos: <strong>epitelioide (60-80%), sarcomatoide (10-20%) y bifásico (10-15%)</strong>. Inmunohistoquímica frente al adenocarcinoma: mesotelioma <strong>positivo para queratina, calretinina, WT-1, citoqueratina 5/6 y podoplanina, y negativo para claudina 4</strong> <span class="cite">p. 727</span>.</li>
+<li><strong>Clínica</strong>: dolor torácico, disnea y <strong>derrames pleurales de repetición</strong>; solo el <strong>20%</strong> tiene asbestosis pulmonar concurrente; metástasis a ganglios hiliares, hígado y otros órganos. <strong>El 50% de los pacientes muere en los 12 meses siguientes al diagnóstico y pocos sobreviven más de 2 años</strong>. Los mesoteliomas peritoneales (relacionados con exposición intensa en el 60% de los hombres) mueren por obstrucción intestinal o inanición <span class="cite">p. 727</span>.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

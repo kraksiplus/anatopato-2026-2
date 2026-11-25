@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Anemia: clasificación por mecanismo (pérdida, hemólisis, menor producción) y morfología; VCM 82-96 fl, HCM 27-33 pg, CHCM 33-37 g/dl [p. 635-637].",
+    "Hemólisis extravascular: anemia, esplenomegalia e ictericia; intravascular: hemoglobinemia, hemoglobinuria y hemosiderinuria, sin esplenomegalia [p. 637].",
+    "Drepanocitosis: Glu→Val en β-globina; HbF inhibe la polimerización (hidroxiurea, CRISPR); autoesplenectomia explica sepsis por encapsulados [p. 641-644].",
+    "Talasemias: β mayor con eritropoyesis ineficaz y hemocromatosis secundaria por eritroferrona; α con 4 genes delecionados = hidropesía fetal (Hb de Bart) [p. 645-648].",
+    "B12 vs folato: ambas elevan homocisteína, solo B12 eleva ácido metilmalónico y da neuropatía; dar folato puede agravarla [p. 653-655].",
+    "Ferropenia: ferritina <12 µg/l y TBC alta; en inflamación ferritina alta y TBC baja por hepcidina (IL-6) [p. 656-659]."
+  ],
+  "topics": [
+    "Clasificación de las anemias por mecanismo y morfología",
+    "Anemias hemolíticas: membrana, G6PD, drepanocitosis y talasemias",
+    "Megaloblástica, ferropénica y anemia de la inflamación crónica",
+    "Anemia aplásica y otros fracasos medulares; policitemia",
+    "Diátesis hemorrágicas: plaquetas, vWF, hemofilias y CID",
+    "Microangiopatías trombóticas (PTT/SHU) y complicaciones transfusionales"
+  ],
+  "callouts": [
+    {
+      "section": "Esferocitosis hereditaria",
+      "title": "Esferocito hipercrómico y esplenectomía",
+      "text": "El esferocito es pequeño, oscuro e hipercrómico (CHCM elevada), no hipocrómico; la prueba diagnóstica es la lisis osmótica. La esplenectomía corrige la anemia pero aumenta el riesgo de sepsis bacteriana, y las crisis aplásicas las desencadena el parvovirus B19 [p. 639-640]."
+    },
+    {
+      "section": "Anemia ferropénica",
+      "title": "Hemorragia oculta en adultos",
+      "text": "Ferritina <12 µg/l, saturación de transferrina <15% y TBC aumentada la definen. En hombres adultos y posmenopáusicas debe asumirse hemorragia digestiva oculta (cáncer) hasta demostrar lo contrario [p. 655-658]."
+    },
+    {
+      "section": "Trastornos hemorrágicos: diátesis hemorrágicas",
+      "title": "Patrón mucocutáneo vs profundo",
+      "text": "Trombocitopenia y vWF dan petequias y hemorragia de mucosas con TP y TTPa normales; el déficit de factores da hematomas, hemartrosis y hemorragia profunda. La CID consume a la vez plaquetas, factores y fibrinógeno, con dímeros D elevados [p. 662-663, 671]."
+    }
+  ]
+}

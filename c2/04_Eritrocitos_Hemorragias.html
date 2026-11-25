@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trastornos de los eritrocitos y trastornos hemorrágicos · Anatomía Patológica UBB</title>
+<meta name="description" content="Trastornos de los eritrocitos y trastornos hemorrágicos. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Trastornos de los eritrocitos y trastornos hemorrágicos · Anatomía Patológica UBB">
+<meta property="og:description" content="Trastornos de los eritrocitos y trastornos hemorrágicos. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 14. Trastornos de los eritrocitos y trastornos hemorrágicos</h1>
+    <p class="lede">Guía 04 de 08. Resumen completo del capítulo 14 con 180 citas por página y 42 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>04 de 08</strong></div><div><span>Capítulo</span><strong>14</strong></div><div><span>Páginas</span><strong>635-672</strong></div><div><span>Citas</span><strong>180</strong></div><div><span>Tablas</span><strong>42</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-anemias">Anemias</a></li>
+        <li><a href="#sec-03-anemias-por-perdida-de-sangre">Anemias por pérdida de sangre</a></li>
+        <li><a href="#sec-04-anemias-hemoliticas">Anemias hemolíticas</a></li>
+        <li><a href="#sec-05-esferocitosis-hereditaria">Esferocitosis hereditaria</a></li>
+        <li><a href="#sec-06-deficiencia-de-glucosa-6-fosfato-deshidrogenasa-g6pd">Deficiencia de glucosa-6-fosfato deshidrogenasa (G6PD)</a></li>
+        <li><a href="#sec-07-enfermedad-de-celulas-falciformes-drepanocitosis">Enfermedad de células falciformes (drepanocitosis)</a></li>
+        <li><a href="#sec-08-talasemias">Talasemias</a></li>
+        <li><a href="#sec-09-hemoglobinuria-paroxistica-nocturna-hpn">Hemoglobinuria paroxística nocturna (HPN)</a></li>
+        <li><a href="#sec-10-anemia-hemolitica-inmunitaria">Anemia hemolítica inmunitaria</a></li>
+        <li><a href="#sec-11-anemia-hemolitica-por-traumatismo-eritrocitario">Anemia hemolítica por traumatismo eritrocitario</a></li>
+        <li><a href="#sec-12-anemia-megaloblastica">Anemia megaloblástica</a></li>
+        <li><a href="#sec-13-anemia-ferropenica">Anemia ferropénica</a></li>
+        <li><a href="#sec-14-anemia-de-la-inflamacion-cronica">Anemia de la inflamación crónica</a></li>
+        <li><a href="#sec-15-anemia-aplasica">Anemia aplásica</a></li>
+        <li><a href="#sec-16-aplasia-eritrocitica-pura">Aplasia eritrocítica pura</a></li>
+        <li><a href="#sec-17-otras-formas-de-fracaso-medular">Otras formas de fracaso medular</a></li>
+        <li><a href="#sec-18-policitemia">Policitemia</a></li>
+        <li><a href="#sec-19-trastornos-hemorragicos-diatesis-hemorragicas">Trastornos hemorrágicos: diátesis hemorrágicas</a></li>
+        <li><a href="#sec-20-complicaciones-de-las-transfusiones">Complicaciones de las transfusiones</a></li>
+        <li><a href="#sec-21-puntos-de-examen">Puntos de examen</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="03_Leucocitos_Ganglios_Bazo_Timo.html" title="Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo">03</a>
+        <a href="05_Pulmon.html" title="Pulmón">05</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 14 del Robbins y Cotran, 10ª edición: páginas impresas 635-672 (38 páginas), resumidas desde el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Anemia: clasificación por mecanismo (pérdida, hemólisis, menor producción) y morfología; VCM 82-96 fl, HCM 27-33 pg, CHCM 33-37 g/dl <span class="cite">p. 635-637</span>.</li><li>Hemólisis extravascular: anemia, esplenomegalia e ictericia; intravascular: hemoglobinemia, hemoglobinuria y hemosiderinuria, sin esplenomegalia <span class="cite">p. 637</span>.</li><li>Drepanocitosis: Glu→Val en β-globina; HbF inhibe la polimerización (hidroxiurea, CRISPR); autoesplenectomia explica sepsis por encapsulados <span class="cite">p. 641-644</span>.</li><li>Talasemias: β mayor con eritropoyesis ineficaz y hemocromatosis secundaria por eritroferrona; α con 4 genes delecionados = hidropesía fetal (Hb de Bart) <span class="cite">p. 645-648</span>.</li><li>B12 vs folato: ambas elevan homocisteína, solo B12 eleva ácido metilmalónico y da neuropatía; dar folato puede agravarla <span class="cite">p. 653-655</span>.</li><li>Ferropenia: ferritina &lt;12 µg/l y TBC alta; en inflamación ferritina alta y TBC baja por hepcidina (IL-6) <span class="cite">p. 656-659</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 635-662</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La <strong>anemia</strong> es la reducción de la masa total de eritrocitos circulante; en la práctica se diagnostica por hematocrito y hemoglobina bajos, salvo cambios del volumen plasmático (retención de líquidos, deshidratación) <span class="cite">p. 635</span>.</li>
+<li>Dos ejes de clasificación: <strong>por mecanismo causante</strong> (pérdida de sangre, hemólisis, descenso de producción) y <strong>por morfología</strong>: microcítica-hipocrómica = defecto de síntesis de Hb; macrocítica = maduración eritroide alterada; normocítica-normocrómica = etiologías diversas <span class="cite">p. 635</span>.</li>
+<li>Índices hematimétricos clave: <strong>VCM</strong> (82-96 fl), <strong>HCM</strong> (27-33 pg), <strong>CHCM</strong> (33-37 g/dl); en adultos la Hb normal es 13,6-17,2 g/dl (hombres) y 12,0-15,0 g/dl (mujeres), hematocrito 39-49% y 33-43% <span class="cite">p. 637</span>.</li>
+<li>Las <strong>anemias hemolíticas</strong> comparten: vida eritrocitaria &lt;120 días, eritropoyetina elevada con reticulocitosis y acumulación de productos de degradación de la Hb <span class="cite">p. 637</span>. <strong>Extravascular</strong> (fagocitos esplénicos; anemia + esplenomegalia + ictericia) vs <strong>intravascular</strong> (hemoglobinemia, hemoglobinuria, hemosiderinuria, sin esplenomegalia) <span class="cite">p. 637</span>.</li>
+<li>La <strong>esferocitosis hereditaria</strong> es un defecto del esqueleto de la membrana (espectrina, anquirina, banda 3, bandas 4.1/4.2), autosómico dominante en el 75% de los casos; el esferocito rígido queda atrapado en los cordones esplénicos <span class="cite">p. 638</span>.</li>
+<li>La <strong>deficiencia de G6PD</strong> (ligada al X) impide generar NADPH y glutatión reducido; el estrés oxidativo (infecciones, primaquina, habas) forma <strong>cuerpos de Heinz</strong> y <strong>células mordidas</strong>; la hemólisis es episódica y autolimitada <span class="cite">p. 640</span>.</li>
+<li>La <strong>drepanocitosis</strong> es una mutación puntual de la β-globina (Glu→Val) que polimeriza la HbS desoxigenada; causa hemólisis, <strong>crisis vasooclusivas</strong>, autoesplenectomia y daño crónico de órganos; la HbF inhibe la polimerización (base de la hidroxiurea) <span class="cite">p. 641</span>.</li>
+<li>Las <strong>talasemias</strong> son defectos cuantitativos de la síntesis de globinas: en la β-talasemia el exceso de cadenas α precipita y produce <strong>eritropoyesis ineficaz</strong> con sobrecarga de hierro por eritroferrona; en la α-talasemia el número de genes delecionados (de 1 a 4) define el síndrome <span class="cite">p. 644</span>.</li>
+<li>La <strong>anemia megaloblástica</strong> (déficit de B12 o folato) es un defecto de la síntesis de ADN con <strong>asincronía núcleo-citoplasma</strong>, macroovalocitos, neutrófilos hipersegmentados y eritropoyesis ineficaz; solo la deficiencia de B12 añade daño neurológico <span class="cite">p. 651</span>.</li>
+<li>La <strong>anemia ferropénica</strong> es el trastorno nutricional más frecuente del mundo: microcitosis-hipocromia, ferritina &lt;12 µg/l y saturación de transferrina &lt;15%; en hombres adultos y posmenopáusicas debe asumirse hemorragia digestiva oculta hasta demostrar lo contrario <span class="cite">p. 655</span>.</li>
+<li>La <strong>anemia de la inflamación crónica</strong> se explica por la IL-6 → hepcidina ↑ → bloqueo de la ferroportina (hierro atrapado en macrófagos) más eritropoyetina inadecuadamente baja; ferritina alta con TBC baja la diferencia de la ferropenia <span class="cite">p. 658-659</span>.</li>
+<li>En las diátesis hemorrágicas: <strong>trombocitopenia/vWF</strong> → petequias, hemorragias de piel y mucosas, TP y TTP normales; <strong>déficit de factores</strong> → hematomas, hemartrosis y hemorragia de tejidos profundos. La <strong>CID</strong> consume a la vez plaquetas, factores y fibrinógeno <span class="cite">p. 662-663</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-anemias" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 635</div>
+<h2>Anemias</h2>
+<p>Definición y clasificación: reducción de la masa de eritrocitos; se diagnostica por hematocrito y Hb. La clasificación morfológica usa VCM, HCM, CHCM y la amplitud de la distribución eritrocítica (11,5-14,5) <span class="cite">p. 635, 637</span>.</p>
+<h3 id="clínica-general-de-la-anemia">Clínica general de la anemia</h3>
+<p>Palidez, debilidad, cansancio fácil y disnea de mínimos esfuerzos; la hipoxia produce cambios grasos en hígado, miocardio y riñón, puede desencadenar <strong>angina de pecho</strong> sobre una coronariopatía previa, y la hipoxia del SNC causa cefalea, visión borrosa y debilidad <span class="cite">p. 635-636</span>.</p>
+
+</section><section id="sec-03-anemias-por-perdida-de-sangre" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 636-637</div>
+<h2>Anemias por pérdida de sangre</h2>
+<h3 id="pérdida-de-sangre-aguda">Pérdida de sangre aguda</h3>
+<p>Dominada por la pérdida de volumen intravascular: colapso cardiovascular, shock y muerte si es masiva. El líquido intersticial restituye el volumen con <strong>hemodilución</strong>; la hipoxia tisular eleva la eritropoyetina y los reticulocitos aparecen a los ~5 días, llegando al <strong>10-15% a los 7 días</strong>. La hemorragia masiva produce <strong>leucocitosis</strong> por hormonas adrenérgicas y <strong>trombocitosis</strong> reactiva <span class="cite">p. 636-637</span>. El hierro se recaptura solo si la hemorragia es interna; la externa causa ferropenia <span class="cite">p. 637</span>.</p>
+<h3 id="pérdida-de-sangre-crónica">Pérdida de sangre crónica</h3>
+<p>Anemia solo cuando la pérdida excede la capacidad regenerativa o se depletan las reservas de hierro → <strong>anemia ferropénica</strong> <span class="cite">p. 637</span>.</p>
+
+</section><section id="sec-04-anemias-hemoliticas" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 637-638</div>
+<h2>Anemias hemolíticas</h2>
+<p>Características comunes: vida eritrocitaria acortada, eritropoyetina elevada, reticulocitosis, acumulación de productos de degradación de la Hb <span class="cite">p. 637</span>.</p>
+<h3 id="hemólisis-extravascular-vs-intravascular">Hemólisis extravascular vs intravascular</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Anemias hemolíticas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Extravascular</th>
+<th>Intravascular</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sitio de destrucción</td>
+<td>Fagocitos (bazo, hígado, médula)</td>
+<td>Lecho vascular (trauma, complemento, tóxicos, parásitos)</td>
+</tr>
+<tr>
+<td>Cuadro</td>
+<td>Anemia, <strong>esplenomegalia</strong>, ictericia</td>
+<td>Anemia, hemoglobinemia, <strong>hemoglobinuria</strong>, hemosiderinuria, ictericia</td>
+</tr>
+<tr>
+<td>Haptoglobina</td>
+<td>Descenso variable</td>
+<td>Descenso marcado (agota)</td>
+</tr>
+<tr>
+<td>Esplenectomía</td>
+<td>Beneficiosa</td>
+<td>No indicada por hemólisis</td>
+</tr>
+<tr>
+<td>Causas típicas</td>
+<td>Membranopatías, esferocitos, opsonización IgG</td>
+<td>Válvulas mecánicas, microangiopatías, clostridios, paludismo</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 637</span>. La hemoglobina libre se oxida a <strong>metahemoglobina</strong> marrón; el hierro puede acumularse en el túbulo proximal (<strong>hemosiderosis renal</strong>). La hiperbilirrubinemia no conjugada favorece <strong>litiasis biliar pigmentada</strong> <span class="cite">p. 637</span>.</p>
+<h3 id="morfología-común">Morfología común</h3>
+<p>Hiperplasia eritroide medular (normoblastos), reticulocitosis, <strong>hemosiderosis</strong> de bazo-hígado-médula, hematopoyesis extramedular si es grave y colelitiasis pigmentada en la hemólisis crónica <span class="cite">p. 638</span>.</p>
+
+</section><section id="sec-05-esferocitosis-hereditaria" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 638-640</div>
+<h2>Esferocitosis hereditaria</h2>
+<p>Prevalencia máxima en el norte de Europa (1:5.000); herencia autosómica dominante en el <strong>75%</strong>; el resto son heterocigotos compuestos <span class="cite">p. 638</span>.</p>
+<h3 id="patogenia">Patogenia</h3>
+<p>Mutaciones que dejan sin proteína al esqueleto de la membrana (anquirina, banda 3, espectrina α/β, bandas 4.2/4.1); la vida media cae a <strong>10-20 días</strong> frente a los 120 normales. Los eritrocitos jóvenes son normales; al envejecer pierden fragmentos de membrana y adoptan la forma de esfera (mínima superficie/volumen); el bazo las atrapa en los cordones de Billroth y los macrófagos las fagocitan (eritroestasia, depleción de glucosa, pH bajo agravan) <span class="cite">p. 638-639</span>.</p>
+<h3 id="morfología-y-clínica">Morfología y clínica</h3>
+<p>Esferocitos pequeños, oscuros (<strong>hipercrómicos</strong>), sin palidez central; reticulocitosis, cuerpos de Howell-Jolly si hay asplenia; <strong>colelitiasis en el 40-50%</strong> de los adultos; esplenomegalia moderada (500-1.000 g) <span class="cite">p. 639</span>. Diagnóstico: historia familiar + sensibilidad a la <strong>lisis osmótica</strong> (2/3 de los casos) + CHCM elevada por deshidratación <span class="cite">p. 639</span>. Evolución salpicada por <strong>crisis aplásicas</strong> (parvovirus B19, 1-2 semanas) y <strong>crisis hemolíticas</strong> (p. ej., mononucleosis infecciosa). La esplenectomía corrige la anemia pero aumenta el riesgo de sepsis bacteriana <span class="cite">p. 640</span>.</p>
+
+<div class="warnbox"><span class="box-title">Esferocito hipercrómico y esplenectomía</span>El esferocito es pequeño, oscuro e hipercrómico (CHCM elevada), no hipocrómico; la prueba diagnóstica es la lisis osmótica. La esplenectomía corrige la anemia pero aumenta el riesgo de sepsis bacteriana, y las crisis aplásicas las desencadena el parvovirus B19 <span class="cite">p. 639-640</span>.</div>
+</section><section id="sec-06-deficiencia-de-glucosa-6-fosfato-deshidrogenasa-g6pd" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 640</div>
+<h2>Deficiencia de glucosa-6-fosfato deshidrogenasa (G6PD)</h2>
+<p>Rasgo <strong>recesivo ligado al X</strong>; la G6PD genera NADPH → glutatión reducido, defensa frente al H₂O₂ oxidante <span class="cite">p. 640</span>. Variantes clínicamente significativas: <strong>G6PD A⁻</strong> (10% de los negros americanos) y <strong>G6PD mediterránea</strong> (más grave); su frecuencia alta se explica por protección frente al paludismo por <em>P. falciparum</em> <span class="cite">p. 640</span>. Como los eritrocitos maduros no sintetizan proteínas, los eritrocitos viejos son los más vulnerables: la hemólisis es <strong>episódica y autolimitada</strong> <span class="cite">p. 640</span>.</p>
+<p>Desencadenantes: <strong>infecciones</strong> (hepatitis vírica, neumonía, fiebre tifoidea), <strong>fármacos oxidantes</strong> (primaquina, cloroquina, sulfonamidas, nitrofurantoína) y <strong>habas (fabismo)</strong> <span class="cite">p. 640</span>. Los oxidantes precipitan la globina en <strong>cuerpos de Heinz</strong>; los macrófagos esplénicos los arrancan formando <strong>células mordidas</strong> y esferocitos <span class="cite">p. 640</span>. La hemólisis aguda (intravascular + extravascular) comienza <strong>2-3 días</strong> después de la exposición y cesa cuando solo quedan eritrocitos jóvenes; reticulocitosis anuncia la recuperación. Por ser episódica, no hay esplenomegalia ni colelitiasis crónica <span class="cite">p. 640</span>.</p>
+
+</section><section id="sec-07-enfermedad-de-celulas-falciformes-drepanocitosis" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 641-644</div>
+<h2>Enfermedad de células falciformes (drepanocitosis)</h2>
+<h3 id="patogenia-1">Patogenia</h3>
+<p>Mutación sin sentido en el gen de la β-globina: <strong>glutamato → valina</strong> (HbS). El 8-10% de los afroamericanos es heterocigoto (<strong>rasgo falciforme</strong>, asintomático); el homocigoto desarrolla la enfermedad (70.000-100.000 personas en EE. UU.) <span class="cite">p. 641</span>. La HbS desoxigenada polimeriza en fibras que distorsionan el eritrocito. Factores que modulan la falciformación <span class="cite">p. 641-642</span>:</p>
+<ul>
+<li><strong>Otros tipos de Hb</strong>: HbA (40% en HbAS) y sobre todo <strong>HbF</strong> inhiben la polimerización; los lactantes son sintomáticos solo desde los <strong>5-6 meses</strong>, cuando cae la HbF. La <strong>persistencia hereditaria de HbF</strong> da enfermedad leve. La <strong>HbC</strong> (enfermedad HbSC, 50% de HbS + deshidratación) da un cuadro algo más leve que la SS.</li>
+<li><strong>CHCM</strong>: la deshidratación intracelular facilita la falciformación; la α-talasemia coexistente la atenúa.</li>
+<li><strong>pH intracelular</strong>: la acidosis reduce la afinidad por el O₂ y agrava.</li>
+<li><strong>Tiempo de tránsito microvascular</strong>: los lechos lentos (bazo, médula ósea, tejidos inflamados) son los que se ocluyen.</li>
+</ul>
+<p>Los ciclos repetidos de falciformación dañan la membrana (entrada de Ca²⁺, salida de K⁺ y H₂O), produciendo <strong>células falciformes irreversibles</strong>, cuya proporción se correlaciona con la hemólisis. La hemoglobina libre <strong>consume óxido nítrico</strong>, lo que favorece vasoconstricción y estasis <span class="cite">p. 642</span>.</p>
+<h3 id="morfología">Morfología</h3>
+<p>Frotis: falciformes irreversibles, reticulocitosis, <strong>dianocitos</strong> y cuerpos de Howell-Jolly por asplenia. Médula hiperplásica con reabsorción ósea y aspecto radiológico de <strong>"corte de pelo militar"</strong>. En la primera infancia el bazo crece hasta ~500 g por congestión; después la eritroestasia produce infarto, fibrosis y <strong>autoesplenectomia</strong> (masa fibrosa atrófica en la adolescencia/adultez). Infartos en huesos, cerebro, riñón, hígado, retina y pulmón (corazón pulmonar); úlceras de pierna en adultos <span class="cite">p. 642-643</span>.</p>
+<h3 id="clínica-y-pronóstico">Clínica y pronóstico</h3>
+<p>Anemia hemolítica moderada (<strong>hematocrito 18-30%</strong>) con reticulocitosis e hiperbilirrubinemia <span class="cite">p. 643</span>. Crisis:</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedad de células falciformes (drepanocitosis)" tabindex="0"><table>
+<thead>
+<tr>
+<th>Crisis</th>
+<th>Mecanismo</th>
+<th>Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vasooclusiva (dolor)</strong></td>
+<td>Infarto hipóxico por oclusión</td>
+<td>Huesos, pulmón, hígado, cerebro, bazo, pene; <strong>síndrome mano-pie (dactilitis)</strong> en niños; puede confundirse con osteomielitis</td>
+</tr>
+<tr>
+<td><strong>Torácica aguda</strong></td>
+<td>Falciformación en lechos pulmonares inflamados</td>
+<td>Fiebre, tos, dolor torácico, infiltrados; potencialmente mortal</td>
+</tr>
+<tr>
+<td><strong>Secuestro</strong></td>
+<td>Atrapamiento masivo esplénico (niños)</td>
+<td>Hipovolemia y shock; requiere transfusión de intercambio</td>
+</tr>
+<tr>
+<td><strong>Aplásica</strong></td>
+<td>Parvovirus B19 en progenitores eritroides</td>
+<td>Empeoramiento brusco, 1-2 semanas</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 643-644</span>. <strong>Priapismo</strong> hasta en el <strong>45%</strong> de los hombres tras la pubertad; ACV y retinopatía por oclusión vascular <span class="cite">p. 644</span>. Infecciones por <strong>microorganismos encapsulados</strong> (<em>S. pneumoniae</em>, <em>H. influenzae</em>) por autoesplenectomia; vacunación y profilaxis antibiótica <span class="cite">p. 644</span>. Pronóstico mejorado: <strong>90% sobrevive a los 20 años</strong>, ~50% sobrepasa la quinta década <span class="cite">p. 644</span>. Tratamiento: <strong>hidroxiurea</strong> (aumenta HbF y es antiinflamatoria), <strong>L-glutamina</strong>, trasplante de células madre y <strong>edición génica (CRISPR)</strong> para reinducir HbF <span class="cite">p. 644</span>.</p>
+
+</section><section id="sec-08-talasemias" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 644-647</div>
+<h2>Talasemias</h2>
+<p>Mutaciones de la línea germinal que reducen la síntesis de α- o β-globina: anemia por <strong>déficit de Hb</strong> y por <strong>exceso de la cadena opuesta</strong>. Los dos genes α están en el cromosoma 16 y el gen β en el cromosoma 11; endémica en el Mediterráneo, Oriente Medio, África tropical e India; frecuencia sostenida por protección palúdica <span class="cite">p. 644</span>.</p>
+<h3 id="β-talasemia">β-talasemia</h3>
+<p>Mutaciones (más de 100, casi todas puntuales) en dos categorías: <strong>β⁰</strong> (sin síntesis) y <strong>β⁺</strong> (síntesis reducida) <span class="cite">p. 644-645</span>:</p>
+<ul>
+<li><strong>Mutaciones de corte y empalme</strong>: causa más frecuente de β⁺ (sitios de corte ectópicos).</li>
+<li><strong>Mutaciones del promotor</strong>: reducen la transcripción en <strong>75-80%</strong> (β⁺).</li>
+<li><strong>Mutaciones de terminación de cadena</strong> (sin sentido, corrimientos del marco): causa más frecuente de β⁰.</li>
+</ul>
+<p>El exceso de cadenas α sin pareja precipita en inclusiones insolubles que dañan la membrana: en la β-talasemia grave, el <strong>70-85% de los precursores</strong> muere por apoptosis (<strong>eritropoyesis ineficaz</strong>), y los eritrocitos que salen se hemolizan en el bazo <span class="cite">p. 645</span>. La eritropoyesis ineficaz libera <strong>eritroferrona</strong>, que suprime la hepcidina → <strong>absorción aumentada de hierro</strong> + transfusiones → <strong>hemocromatosis secundaria</strong> (corazón, hígado, páncreas) <span class="cite">p. 646</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Talasemias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Fenotipo</th>
+<th>Genotipo</th>
+<th>Clínica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>β-talasemia mayor</strong></td>
+<td>β⁰/β⁰, β⁺/β⁺, β⁰/β⁺</td>
+<td>Anemia grave con dependencia transfusional</td>
+</tr>
+<tr>
+<td><strong>β-talasemia intermedia</strong></td>
+<td>β⁺/β⁺, β⁰/β⁺, variantes</td>
+<td>Anemia moderada, sin transfusiones periódicas</td>
+</tr>
+<tr>
+<td><strong>β-talasemia menor</strong></td>
+<td>β⁰/β, β⁺/β</td>
+<td>Asintomática o anemia microcítica leve</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 646</span>. <strong>β-talasemia mayor</strong>: anemia desde los <strong>6-9 meses</strong> (cambio HbF→HbA); no transfundidos, Hb de <strong>3-6 g/dl</strong>, HbF elevada. Frotis: anisocitosis, poiquilocitosis, microcitosis, hipocromia, <strong>células diana</strong>, punteado basófilo; reticulocitos menos elevados de lo esperado por eritropoyesis ineficaz; normoblastos circulantes <span class="cite">p. 647</span>. Deformidades óseas (pómulos, cráneo en corte de pelo militar), esplenomegalia hasta <strong>1.500 g</strong>, hepatoesplenomegalia por hematopoyesis extramedular. La <strong>enfermedad cardíaca por sobrecarga de hierro</strong> es la principal causa de muerte; quelación obligada. Con transfusiones + quelación se llega a la tercera década; el trasplante de células madre es el único tratamiento curativo <span class="cite">p. 647</span>. <strong>β-talasemia menor</strong>: asintomática; frotis con hipocromia, microcitosis, punteado basófilo y células diana; <strong>HbA2 elevada al 4-8%</strong> (normal 2,5 ± 0,3%), clave para no confundir con ferropenia (hierro sérico, TBC y ferritina normales) <span class="cite">p. 647</span>.</p>
+<h3 id="α-talasemia">α-talasemia</h3>
+<p>Cuatro genes α; cada uno aporta 25% de la cadena α. Causa más frecuente: <strong>deleciones génicas</strong>. El exceso de cadenas γ forma tetrámeros γ4 (<strong>Hb de Bart</strong>) en el recién nacido y el exceso de β forma β4 (<strong>HbH</strong>) en el adulto; ambos son solubles y estables, por lo que la hemólisis y la eritropoyesis ineficaz son menores que en la β-talasemia <span class="cite">p. 647-648</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Talasemias" tabindex="0"><table>
+<thead>
+<tr>
+<th>Nº genes delecionados</th>
+<th>Síndrome</th>
+<th>Característica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Portador silente</td>
+<td>Microcitosis leve, asintomático</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Rasgo α-talasémico</td>
+<td>Como β-talasemia menor; –/αα frecuente en asiáticos, –α/–α en africanos</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Enfermedad HbH</strong></td>
+<td>Anemia moderada tipo β-talasemia intermedia; HbH de altísima afinidad por O₂ y con tendencia a oxidarse y precipitar</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Hidropesía fetal</strong></td>
+<td>Tetrámeros γ4 (Hb de Bart); muerte intraútero o al parto; hoy salvables con transfusiones intraútero, dependencia transfusional de por vida</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 646, 648</span>.</p>
+
+</section><section id="sec-09-hemoglobinuria-paroxistica-nocturna-hpn" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 648-649</div>
+<h2>Hemoglobinuria paroxística nocturna (HPN)</h2>
+<p>Única anemia hemolítica por <strong>defecto genético adquirido</strong>: mutaciones somáticas de <em><strong>PIGA</strong></em> (ligado al X), necesarias para sintetizar el anclaje <strong>glucosilfosfatidilinositol (GPI)</strong> de las proteínas reguladoras del complemento. Incidencia 2-5 por millón en EE. UU. <span class="cite">p. 648</span>. Faltan <strong>CD55</strong> (factor acelerador de la descomposición), <strong>CD59</strong> (inhibidor de la convertasa C3, el más importante) y la proteína de unión al C8; el eritrocito queda indefenso frente al <strong>complejo de ataque a la membrana C5b-C9</strong> → <strong>hemólisis intravascular</strong> <span class="cite">p. 648</span>. La hemólisis nocturna clásica (por descenso del pH durante el sueño) solo aparece en el <strong>25%</strong> de los casos; lo habitual es hemólisis crónica <span class="cite">p. 648</span>. La hemosiderinuria causa ferropenia sobreañadida. <strong>La trombosis es la principal causa de muerte</strong> (40% con trombosis venosas: hepática, porta, cerebrales) <span class="cite">p. 648</span>. El <strong>5-10%</strong> evoluciona a leucemia mieloide aguda o síndrome mielodisplásico <span class="cite">p. 649</span>. Diagnóstico por <strong>citometría de flujo</strong> (población CD55⁻/CD59⁻). Tratamiento: <strong>eculizumab</strong> (anti-C5; reduce hemólisis y riesgo trombótico en &gt;90%, con riesgo de infección meningocócica); único curativo: trasplante de células madre <span class="cite">p. 649</span>.</p>
+
+</section><section id="sec-10-anemia-hemolitica-inmunitaria" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 649-650</div>
+<h2>Anemia hemolítica inmunitaria</h2>
+<p>Anticuerpos contra eritrocitos propios o modificados por fármacos; diagnóstico por <strong>prueba de Coombs directa</strong> (antiglobulina que aglutina eritrocitos recubiertos de Ig/complemento) <span class="cite">p. 649</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Anemia hemolítica inmunitaria" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Anticuerpo</th>
+<th>Frecuencia</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anticuerpos calientes</strong></td>
+<td>IgG (activos a 37 °C)</td>
+<td>~80% de los casos</td>
+<td>Opsonización → hemólisis <strong>extravascular</strong> (esferocitos por pérdida de membrana); antígenos Rh</td>
+</tr>
+<tr>
+<td><strong>Crioaglutininas</strong></td>
+<td>IgM (activos &lt;37 °C, óptimo 0-4 °C)</td>
+<td>15-20%</td>
+<td>Fijan complemento en frío; la IgM se libera y queda C3b sublítico → hemólisis extravascular; acrocianosis, Raynaud</td>
+</tr>
+<tr>
+<td><strong>Hemolisina fría</strong></td>
+<td>IgG anti-antígeno P</td>
+<td>Rara; niños postvíricos</td>
+<td>Fijan complemento al recalentar → <strong>hemoglobinuria paroxística a frigore</strong>, hemólisis intravascular a veces mortal</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 649-650</span>. Calientes: 50% idiopáticas, resto secundarias a LES, fármacos y neoplasias linfoides. Fármacos por dos mecanismos: <strong>hapteno antigénico</strong> (penicilina, cefalosporinas; 1-2 semanas de tratamiento) y <strong>rotura de tolerancia</strong> (α-metildopa: 10% de Coombs+, solo 1% con hemólisis) <span class="cite">p. 649-650</span>. Crioaglutininas transitorias: <em>Mycoplasma pneumoniae</em>, VEB, CMV, gripe, VIH; crónicas: neoplasias linfoides o idiopáticas. Tratamiento de calientes: retirar fármaco, inmunodepresores, esplenectomía <span class="cite">p. 650</span>.</p>
+
+</section><section id="sec-11-anemia-hemolitica-por-traumatismo-eritrocitario" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 650</div>
+<h2>Anemia hemolítica por traumatismo eritrocitario</h2>
+<p>Prótesis valvulares mecánicas (cizallamiento) y <strong>anemia hemolítica microangiopática</strong>: CID, PTT, SHU, hipertensión maligna, LES y cáncer diseminado; los trombos estrechan la luz y fragmentan los eritrocitos → <strong>esquistocitos</strong>, equinocitos y fragmentos triangulares en el frotis <span class="cite">p. 650</span>.</p>
+
+</section><section id="sec-12-anemia-megaloblastica" class="card">
+<div class="section-kicker"><span class="n">12</span> pp. 651-655</div>
+<h2>Anemia megaloblástica</h2>
+<p>Denominador común: alteración de la síntesis de ADN → <strong>eritropoyesis ineficaz</strong> y precursores gigantes. Causas: déficit de B12 (anemia perniciosa, gastrectomía, resección ileal, <em>Diphyllobothrium</em>, sobrecrecimiento bacteriano, vegetarianismo estricto) y de folato (ingesta baja, alcoholismo, embarazo, infancia, cáncer diseminado, esprúe, fenitoína y anticonceptivos orales, metotrexato) <span class="cite">p. 651</span>.</p>
+<h3 id="morfología-1">Morfología</h3>
+<p>Sangre: <strong>macroovalocitos</strong>, anisocitosis y poiquilocitosis, reticulocitopenia, <strong>neutrófilos hipersegmentados (≥5 lóbulos)</strong>. Médula hipercelular con <strong>megaloblastos</strong>: cromatina nuclear inmadura y abierta con citoplasma ya hemoglobinizado (<strong>asincronía núcleo-citoplasma</strong>); cayados y metamielocitos gigantes; megacariocitos aberrantes. La mayoría de los precursores apoptosan → <strong>pancitopenia</strong> <span class="cite">p. 651-652</span>.</p>
+<h3 id="anemia-perniciosa-déficit-de-b12">Anemia perniciosa (déficit de B12)</h3>
+<p>Gastritis autoinmunitaria del fondo con pérdida de células parietales → falta de <strong>factor intrínseco</strong>. Metabolismo: la B12 se libera de las proteínas alimentarias por pepsina, se une a la <strong>haptocorrina</strong> salival, se libera por proteasas pancreáticas en el duodeno, se une al factor intrínseco y se absorbe en el <strong>íleon</strong> por el receptor <strong>cubilina</strong>; viaja en plasma con la <strong>transcobalamina II</strong> <span class="cite">p. 652-653</span>. Funciones bioquímicas (solo dos): (1) <strong>metilcobalamina</strong> como cofactor de la metionina sintasa (homocisteína→metionina, regenera FH4 desde N5-metil-FH4, imprescindible para dUMP→dTMP); (2) <strong>adenosilcobalamina</strong> en la metilmalonil-CoA mutasa (metilmalonil-CoA→succinil-CoA); su bloqueo eleva el <strong>ácido metilmalónico</strong>, posible sustrato de la degeneración mielínica <span class="cite">p. 653</span>.</p>
+<p>Enfermedad de adultos mayores (mediana <strong>60 años</strong>). Tres autoanticuerpos: <strong>tipo I</strong> (75% de los casos; bloquean la unión B12-factor intrínseco), <strong>tipo II</strong> (impiden la unión del complejo) y <strong>tipo III</strong> (85-90%; anti-bomba de protones de la célula parietal, inespecífico, presente hasta en 50% de ancianos con gastritis idiopática) <span class="cite">p. 653</span>. La lesión mucosa la inician linfocitos T autorreactivos; asociada a <strong>tiroiditis y suprarrenalitis autoinmunitarias</strong> <span class="cite">p. 654</span>. Morfología gástrica: gastritis atrófica del fondo, aclorhidria, <strong>metaplasia intestinal</strong>, glositis atrófica ("lengua de ternera"); <strong>degeneración combinada subaguda</strong> de la médula (tractos dorsal y lateral: paraparesia espástica, ataxia sensorial, parestesias) <span class="cite">p. 654</span>. Diagnóstico: megaloblastosis + leucopenia con granulocitos hipersegmentados + B12 baja + <strong>homocisteína y metilmalónico elevados</strong>; anticuerpos anti-factor intrínseco muy específicos; respuesta reticulocitaria a los <strong>5 días</strong> de B12 parenteral. Mayor <strong>riesgo de carcinoma gástrico</strong> (no revierte con B12) <span class="cite">p. 654</span>.</p>
+<h3 id="anemia-por-deficiencia-de-folatos">Anemia por deficiencia de folatos</h3>
+<p>Mismo cuadro morfológico que la deficiencia de B12. El FH4 dona fragmentos de un carbono para purinas, dTMP y la conversión de homocisteína en metionina; el dTMP es lo crítico para el ADN. Reservas corporales modestas: la deficiencia aparece en <strong>semanas-meses</strong>; la cocción destruye hasta el <strong>95%</strong> de los folatos de los vegetales <span class="cite">p. 654-655</span>. Absorción en <strong>yeyuno proximal</strong> como 5-metiltetrahidrofolato. Causas: ingesta baja (alcohólicos, indigencia, ancianos), malabsorción (esprúe, linfoma, fenitoína), aumento de demandas (embarazo, infancia, anemia hemolítica crónica, cáncer) y <strong>metotrexato</strong> (inhibe la dihidrofolato reductasa) <span class="cite">p. 655</span>. Laboratorio: <strong>folato sérico/eritrocitario bajo, homocisteína alta, metilmalónico NORMAL y sin síntomas neurológicos</strong>; tratar con folato la deficiencia de B12 corrige la anemia pero <strong>puede agravar la neuropatía</strong>: descartar B12 antes de suplementar <span class="cite">p. 655</span>.</p>
+
+</section><section id="sec-13-anemia-ferropenica" class="card">
+<div class="section-kicker"><span class="n">13</span> pp. 655-658</div>
+<h2>Anemia ferropénica</h2>
+<p>El trastorno nutricional más frecuente del mundo <span class="cite">p. 655</span>. Metabolismo del hierro: contenido corporal <strong>2,5 g en mujeres y hasta 6 g en hombres</strong>; 80% del hierro funcional está en la hemoglobina; las reservas (ferritina/hemosiderina, hígado y macrófagos) son el 15-20% <span class="cite">p. 655</span>. La <strong>transferrina</strong> transporta el hierro (saturada en un tercio; hierro sérico ~120 µg/dl hombres, 100 µg/dl mujeres); la <strong>ferritina sérica</strong> refleja las reservas: <strong>&lt;12 µg/l en la ferropenia</strong>, hasta ~5.000 µg/l en sobrecarga <span class="cite">p. 656</span>. Absorción duodenal: Fe³⁺ se reduce a Fe²⁺ (citocromo b duodenal, STEAP3) → <strong>DMT1</strong> apical → <strong>ferroportina</strong> basolateral con oxidación por <strong>hefaestina/ceruloplasmina</strong> → unión a transferrina. La <strong>hepcidina</strong> hepática se une a la ferroportina y la degrada: hierro alto o inflamación → hepcidina alta → hierro atrapado; reservas bajas → hepcidina baja → absorción libre. Mutaciones que inactivan <strong>TMPRSS6</strong> producen una anemia microcítica refractaria por hepcidina alta <span class="cite">p. 656-657</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Anemia ferropénica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Ferropenia</th>
+<th>Inflamación crónica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hierro sérico</td>
+<td>Bajo</td>
+<td>Bajo</td>
+</tr>
+<tr>
+<td>Ferritina sérica</td>
+<td>Baja (&lt;12 µg/l)</td>
+<td><strong>Alta</strong></td>
+</tr>
+<tr>
+<td>TBC (transferrina)</td>
+<td><strong>Aumentada</strong></td>
+<td><strong>Disminuida</strong></td>
+</tr>
+<tr>
+<td>Depósitos macrofágicos medulares</td>
+<td>Ausentes</td>
+<td>Abundantes</td>
+</tr>
+<tr>
+<td>Hepcidina</td>
+<td>Baja</td>
+<td>Alta (IL-6)</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 656-659</span>.</p>
+<h3 id="etiología">Etiología</h3>
+<ol type="1">
+<li>Ingesta insuficiente (lactantes , la leche materna aporta solo <strong>0,3 mg/l</strong>, pobreza, ancianos, adolescentes); 2. absorción alterada (esprúe, esteatorrea, gastrectomía); 3. demandas aumentadas (crecimiento, embarazo); 4. <strong>pérdida de sangre crónica</strong>: la causa más frecuente en países de ingresos altos. En hombres adultos y posmenopáusicas, la ferropenia <strong>debe atribuirse a hemorragia digestiva oculta hasta demostrar lo contrario</strong> (riesgo de pasar por alto un cáncer) <span class="cite">p. 657-658</span>. Para balancear se deben absorber ~<strong>1 mg/día</strong>; solo se absorbe el 10-15% del hierro ingerido (20% del hemo frente a 1-2% del no hemo) <span class="cite">p. 657</span>.</li>
+</ol>
+<h3 id="patogenia-morfología-y-clínica">Patogenia, morfología y clínica</h3>
+<p>Secuencia: se agotan las reservas → cae el hierro sérico y la saturación → aparece la anemia solo cuando las reservas están completamente agotadas <span class="cite">p. 658</span>. Frotis: microcitosis, hipocromia (palidez central mayor de un tercio del diámetro) y <strong>células lápiz</strong>; en la médula, <strong>ausencia de hierro teñible</strong> (azul de Prusia) <span class="cite">p. 658</span>. Clínica: ferropenia grave de larga evolución → <strong>coiloniquia</strong>, alopecia, atrofia de lengua y mucosa gástrica, malabsorción, <strong>pica</strong> y movimientos periódicos de las extremidades durante el sueño; <strong>síndrome de Plummer-Vinson</strong> (membranas esofágicas + anemia microcítica-hipocrómica + glositis atrófica) <span class="cite">p. 658</span>. Laboratorio: hierro y ferritina bajos, <strong>TBC alta, saturación de transferrina &lt;15%</strong>, hepcidina baja. Con hierro oral, reticulocitosis a los <strong>5-7 días</strong> <span class="cite">p. 658</span>.</p>
+
+<div class="warnbox"><span class="box-title">Hemorragia oculta en adultos</span>Ferritina &lt;12 µg/l, saturación de transferrina &lt;15% y TBC aumentada la definen. En hombres adultos y posmenopáusicas debe asumirse hemorragia digestiva oculta (cáncer) hasta demostrar lo contrario <span class="cite">p. 655-658</span>.</div>
+</section><section id="sec-14-anemia-de-la-inflamacion-cronica" class="card">
+<div class="section-kicker"><span class="n">14</span> pp. 658-659</div>
+<h2>Anemia de la inflamación crónica</h2>
+<p>Frecuente en pacientes hospitalizados. Enfermedades asociadas: infecciones crónicas (osteomielitis, endocarditis, abscesos pulmonares), trastornos inmunitarios (artritis reumatoide, EII) y neoplasias (pulmón, mama, Hodgkin) <span class="cite">p. 658</span>. Patogenia: la <strong>IL-6</strong> aumenta la hepcidina hepática → bloqueo de la ferroportina de los macrófagos (hierro inutilizable) + <strong>eritropoyetina inadecuadamente baja</strong> (supresión por citocinas). El secuestro de hierro sería un mecanismo de defensa (bacterias que requieren hierro); la hepcidina se estructura junto con las <strong>defensinas</strong> <span class="cite">p. 658-659</span>. Anemia leve, normocítica-normocrómica o microcítica-hipocrómica; la ferritina alta con TBC baja y depósitos macrofágicos conservados la separan de la ferropenia. Se trata la enfermedad de base; eritropoyetina útil en algunos pacientes con cáncer <span class="cite">p. 659</span>.</p>
+
+</section><section id="sec-15-anemia-aplasica" class="card">
+<div class="section-kicker"><span class="n">15</span> pp. 659-661</div>
+<h2>Anemia aplásica</h2>
+<p><strong>Fracaso hematopoyético primario crónico con pancitopenia</strong> (anemia, neutropenia, trombocitopenia). Causas: fármacos dosis-dependientes (quimioterápicos, <strong>benceno</strong>), reacciones <strong>idiosincrásicas</strong> (cloranfenicol, sales de oro, fenilbutazona, carbamacepina), radiación corporal total, infecciones víricas (hepatitis vírica ~5% de los casos, CMV, VEB, varicela-zóster) y hereditarias (<strong>anemia de Fanconi</strong>, defectos de la <strong>telomerasa</strong> en el 5-10% de las formas del adulto); <strong>65% son idiopáticas</strong> <span class="cite">p. 659</span>. Telómeros anormalmente cortos en hasta la mitad de los casos <span class="cite">p. 659</span>.</p>
+<p>Patogenia: modelo dominante de <strong>supresión inmunitaria</strong> de las células madre: linfocitos Th1 activados producen <strong>IFN-γ y TNF</strong> que suprimen y matan progenitores; apoyo clínico: <strong>globulina antitimocitos y ciclosporina responden en el 60-70%</strong>. Modelo alternativo/incluyente: anomalía intrínseca de la célula madre (aberraciones cariotípicas, transformación a SMD/LMA, telómeros cortos) <span class="cite">p. 659-660</span>. Morfología: médula <strong>intensamente hipocelular</strong>, casi solo adipocitos y estroma; aspirado "punción seca"; la <strong>biopsia medular</strong> es el estudio diagnóstico <span class="cite">p. 660</span>. Clínica: inicio insidioso, pancitopenia, <strong>esplenomegalia ausente</strong> (su presencia hace dudar del diagnóstico), eritrocitos levemente macrocíticos y <strong>reticulocitopenia</strong>. Diagnóstico diferencial: leucemia aleucémica y <strong>síndrome mielodisplásico</strong>, ambos con médula hipercelular <span class="cite">p. 661</span>. Pronóstico: trasplante de células madre con supervivencia a 5 años <strong>&gt;75%</strong> con donante; inmunodepresores en mayores o sin donante <span class="cite">p. 661</span>.</p>
+
+</section><section id="sec-16-aplasia-eritrocitica-pura" class="card">
+<div class="section-kicker"><span class="n">16</span> pp. 661</div>
+<h2>Aplasia eritrocítica pura</h2>
+<p>Solo se suprimen los progenitores eritroides. Formas: aguda (<strong>parvovirus B19</strong> → crisis aplásica en anemias hemolíticas; persistente en inmunodeprimidos) y crónica, generalmente autoinmunitaria, asociada a <strong>timoma</strong> y <strong>leucemia linfocítica de gránulos grandes</strong>, fármacos y anticuerpos anti-eritropoyetina. Con timoma, la resección mejora a la mitad de los pacientes <span class="cite">p. 661</span>.</p>
+
+</section><section id="sec-17-otras-formas-de-fracaso-medular" class="card">
+<div class="section-kicker"><span class="n">17</span> pp. 661</div>
+<h2>Otras formas de fracaso medular</h2>
+<ul>
+<li><strong>Anemia mieloptísica</strong>: ocupación de la médula por cáncer metastásico (mama, pulmón, próstata) o proceso infiltrante; <strong>leucoeritroblastosis</strong> y eritrocitos en forma de <strong>lágrima</strong> <span class="cite">p. 661</span>.</li>
+<li><strong>Insuficiencia renal crónica</strong>: anemia proporcional a la uremia por falta de eritropoyetina; la uremia también acorta la vida eritrocitaria y daña la función plaquetaria; responde a eritropoyetina recombinante + hierro <span class="cite">p. 661</span>.</li>
+<li><strong>Enfermedad hepatocelular</strong>: anemia levemente <strong>macrocítica</strong> por incorporación de colesterol y fosfolípidos a la membrana <span class="cite">p. 661</span>.</li>
+<li><strong>Hipotiroidismo</strong>: anemia normocítica-normocrómica leve <span class="cite">p. 661</span>.</li>
+</ul>
+
+</section><section id="sec-18-policitemia" class="card">
+<div class="section-kicker"><span class="n">18</span> pp. 662</div>
+<h2>Policitemia</h2>
+<p>Aumento del número de eritrocitos. <strong>Relativa</strong> (hemoconcentración: deshidratación, diuréticos, <strong>policitemia de estrés o síndrome de Gaisböck</strong>: hombres hipertensos, obesos y "estresados") vs <strong>absoluta</strong> (aumento real de la masa eritrocitaria) <span class="cite">p. 662</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Policitemia" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Eritropoyetina</th>
+<th>Causas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primaria</td>
+<td>Baja</td>
+<td><strong>Policitemia vera</strong> (neoplasia mieloproliferativa); mutaciones familiares del receptor de eritropoyetina (raro)</td>
+</tr>
+<tr>
+<td>Secundaria</td>
+<td>Alta</td>
+<td>Compensatoria: hipoxia (gran altitud, neumopatía, cardiopatía cianótica). Paraneoplásica: tumores secretores de eritropoyetina (carcinoma de células renales, hepatocarcinoma, hemangioblastoma cerebeloso). Defectos que estabilizan <strong>HIF-1</strong>: policitemia de Chuvash (<em>VHL</em>), mutaciones de prolil-hidroxilasa</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 662</span>.</p>
+
+</section><section id="sec-19-trastornos-hemorragicos-diatesis-hemorragicas" class="card">
+<div class="section-kicker"><span class="n">19</span> pp. 662-671</div>
+<h2>Trastornos hemorrágicos: diátesis hemorrágicas</h2>
+<p>Causas: fragilidad vascular, defecto plaquetario o defecto de la coagulación <span class="cite">p. 662</span>.</p>
+<h3 id="evaluación-de-laboratorio">Evaluación de laboratorio</h3>
+<ul>
+<li><strong>TP</strong>: vías <strong>extrínseca y común</strong>; prolongado en déficit de V, VII, X, protrombina o fibrinógeno.</li>
+<li><strong>TTPa</strong>: vías <strong>intrínseca y común</strong>; prolongado en déficit de V, VIII, IX, X, XI, XII, protrombina, fibrinógeno o por anticuerpos antifosfolípidos.</li>
+<li><strong>Recuento de plaquetas</strong>: referencia <strong>150-350 × 10³/µl</strong>; confirmar trombocitopenias con frotis (aglutinación = pseudo-trombocitopenia).</li>
+<li>Pruebas plaquetarias: agregación con agonistas, cuantificación/función de vWF (<strong>aglutinación con ristocetina</strong>). El tiempo de hemorragia ha caído en desuso.</li>
+</ul>
+<p class="small table-source">Fuente: <span class="cite">p. 662-663</span>.</p>
+<h3 id="trastornos-por-anomalías-de-las-paredes-vasculares">Trastornos por anomalías de las paredes vasculares</h3>
+<p>Petequias y púrpura de piel y mucosas con recuentos y pruebas de coagulación normales. Causas: infecciones (meningococemia, septicemia, endocarditis, rickettsiosis), vasculitis por hipersensibilidad a fármacos, defectos de colágeno (<strong>escorbuto, síndrome de Ehlers-Danlos</strong>), fragilidad vascular adquirida (púrpura senil, <strong>síndrome de Cushing</strong>), <strong>púrpura de Schönlein-Henoch</strong>, <strong>telangiectasia hemorrágica hereditaria (Rendu-Weber-Osler)</strong> , autosómica dominante, genes del TGF-β, epistaxis y hemorragias digestivas, la de hemorragias más graves , y amiloidosis AL perivascular <span class="cite">p. 663</span>.</p>
+<h3 id="trombocitopenia">Trombocitopenia</h3>
+<p><strong>&lt;150.000/µl</strong>; entre 20.000-50.000/µl agrava la hemorragia postraumática; <strong>&lt;20.000/µl → hemorragias espontáneas</strong>; con trombocitopenia aislada el TP y TTP son normales. Hemorragias de pequeños vasos: piel, mucosas digestivas y genitourinarias; el riesgo mayor es la <strong>hemorragia intracraneal</strong> <span class="cite">p. 663</span>. Cuatro mecanismos: descenso de producción, menor supervivencia (inmunitaria o no), <strong>secuestro esplénico</strong> (30-35% normal; hasta 80-90% en esplenomegalia) y <strong>dilución</strong> por transfusiones masivas <span class="cite">p. 663-664</span>.</p>
+<h3 id="púrpura-trombocitopénica-inmunitaria-pti-crónica">Púrpura trombocitopénica inmunitaria (PTI) crónica</h3>
+<p>Autoanticuerpos, en general <strong>IgG contra glucoproteínas IIb-IIIa o Ib-IX</strong> (demostrables en el 80% de los casos), que opsonizan las plaquetas para los fagocitos del bazo; algunos también dañan los megacariocitos. Secundaria a LES, VIH y neoplasias linfoides B; el resto primarias <span class="cite">p. 664</span>. Morfología: megatrombocitos en sangre; médula con megacariocitos aumentados e inmaduros (trombopoyesis acelerada) <span class="cite">p. 664</span>. Clínica: mujeres adultas <strong>&lt;40 años, M:H 3:1</strong>; petequias en zonas dependientes, equimosis, epistaxis, gingivorragia, menorragia; la esplenomegalia y las linfoadenopatías <strong>no</strong> existen en la forma primaria <span class="cite">p. 664</span>. Diagnóstico de exclusión (las pruebas de autoanticuerpos tienen baja sensibilidad/especificidad); TP y TTP normales. Tratamiento: <strong>glucocorticoides</strong> (inhiben la fagocitosis); seguimiento si plaquetas <strong>&gt;30.000/µl</strong>; <strong>esplenectomía</strong> normaliza el recuento en ~2/3; inmunoglobulina IV, <strong>rituximab</strong> (anti-CD20) y <strong>TPO-miméticos</strong> en refractarios <span class="cite">p. 664-665</span>.</p>
+<h3 id="pti-aguda">PTI aguda</h3>
+<p>Niños, ambos sexos, <strong>1-2 semanas después de una virosis</strong>; autolimitada, se resuelve antes de <strong>6 meses</strong>; en el <strong>20%</strong> (los sin pródromo vírico) se cronifica <span class="cite">p. 665</span>.</p>
+<h3 id="trombocitopenia-medicamentosa">Trombocitopenia medicamentosa</h3>
+<p>Quinina, quinidina y vancomicina (anticuerpos dependientes de fármaco); anti-GpIIb/IIIa (epítopo neoformado). <strong>Trombocitopenia inducida por heparina (TIH)</strong>: tipo I, rápida y leve (efecto agregante directo); <strong>tipo II</strong>, a los <strong>5-14 días</strong>, por anticuerpos contra complejos <strong>heparina-factor plaquetario 4 (PF4)</strong>: activación plaquetaria con <strong>trombosis paradójica</strong> (arterial y venosa); obliga a suspender la heparina (incluidas las de bajo peso molecular) y usar otro anticoagulante <span class="cite">p. 665</span>.</p>
+<h3 id="trombocitopenia-asociada-al-vih">Trombocitopenia asociada al VIH</h3>
+<p>Producción disminuida (los megacariocitos expresan <strong>CD4 y CXCR4</strong> y se infectan, con apoptosis) más destrucción inmunitaria (autoanticuerpos anti-GpIIb-IIIa y complejos inmunitarios) <span class="cite">p. 665</span>.</p>
+<h3 id="microangiopatías-trombóticas-ptt-y-shu">Microangiopatías trombóticas: PTT y SHU</h3>
+<p>Trombos plaquetarios en la microcirculación → anemia hemolítica microangiopática, disfunción de órganos y trombocitopenia por consumo; a diferencia de la CID, <strong>el TP y el TTP suelen ser normales</strong> <span class="cite">p. 665-666</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos hemorrágicos: diátesis hemorrágicas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th><strong>PTT</strong></th>
+<th><strong>SHU típico</strong></th>
+<th><strong>SHU atípico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mecanismo</td>
+<td>Déficit de <strong>ADAMTS13</strong> (metaloproteasa del vWF) → acumulación de multímeros de vWF de muy alto peso → activación espontánea plaquetaria</td>
+<td>Toxina Shiga de <strong><em>E. coli</em> O157:H7</strong> lesiona el endotelio</td>
+<td>Déficit de reguladores de la vía alternativa del complemento (factor H, <strong>CD46/MCP</strong>, factor I)</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>Hereditaria (rara, inicio en adolescencia) o <strong>adquirida</strong> (autoanticuerpos)</td>
+<td>Diarrea sanguinolenta previa; niños y ancianos</td>
+<td>Hereditaria o autoanticuerpos; evolución remitente-recidivante</td>
+</tr>
+<tr>
+<td>ADAMTS13</td>
+<td>Baja</td>
+<td>Normal</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>Tratamiento</td>
+<td><strong>Plasmaféresis</strong> (&gt;80% de éxito, antes mortal)</td>
+<td>Soporte; puede dejar daño renal permanente</td>
+<td><strong>Anti-C5 (eculizumab)</strong>, inmunodepresores</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 666</span>. El quinteto clásico de la PTT: fiebre, trombocitopenia, anemia hemolítica microangiopática, defectos neurológicos transitorios e insuficiencia renal; el SHU se distingue por predominio renal y ausencia de síntomas neurológicos, pero hoy se difuminan <span class="cite">p. 665</span>. Otras asociaciones: ciclosporina, quimioterápicos, radiación, trasplante medular, VIH, sepsis neumocócica, LES, neoplasias linfoides <span class="cite">p. 666</span>.</p>
+<h3 id="defectos-cualitativos-de-la-función-plaquetaria">Defectos cualitativos de la función plaquetaria</h3>
+<p>Hereditarios, con recuento normal: <strong>síndrome de Bernard-Soulier</strong> (autosómico recesivo, déficit de <strong>GpIb-IX</strong>, defecto de <strong>adhesión</strong> al vWF); <strong>trombastenia de Glanzmann</strong> (autosómico recesivo, déficit de <strong>GpIIb-IIIa</strong>, defecto de <strong>agregación</strong> por falta de unión al fibrinógeno); trastornos de la <strong>secreción/liberación</strong> (granulos) <span class="cite">p. 666</span>. Adquiridos: <strong>ácido acetilsalicílico</strong> (inhibición irreversible de la ciclooxigenasa → no tromboxano A₂) y <strong>uremia</strong> (déficit de adhesión, secreción y agregación) <span class="cite">p. 667</span>.</p>
+<h3 id="coagulopatías-hereditarias-complejo-factor-viii-vwf">Coagulopatías hereditarias: complejo factor VIII-vWF</h3>
+<p>El factor VIII (cofactor del factor IX para activar el X) se sintetiza en células endoteliales (y se describe también de hígado y riñón en la figura 14.26) y circula <strong>unido y estabilizado al vWF</strong>, que aumenta su semivida de <strong>~2,4 a 12 h</strong>; el vWF (multímeros de hasta 100 subunidades, &gt;20 × 10⁶ Da) media la <strong>adhesión plaquetaria</strong> (GpIb-IX–vWF–colágeno subendotelial) <span class="cite">p. 667</span>. Función del vWF medida por <strong>aglutinación con ristocetina</strong> <span class="cite">p. 668</span>.</p>
+<h3 id="enfermedad-de-von-willebrand">Enfermedad de von Willebrand</h3>
+<p>Trastorno hemorrágico <strong>hereditario más frecuente</strong> del hombre; afecta al <strong>1%</strong> de los adultos en EE. UU. Autosómico dominante (variantes recesivas raras); hemorragias de mucosas (epistaxis, menorragia, hemorragia quirúrgica y dental) <span class="cite">p. 668</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos hemorrágicos: diátesis hemorrágicas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Defecto</th>
+<th>Herencia</th>
+<th>Clínica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tipo 1</strong> (70% de los casos)</td>
+<td>Cuantitativo: déficit leve-moderado de vWF</td>
+<td>Autosómica dominante, penetrancia incompleta</td>
+<td>Leve</td>
+</tr>
+<tr>
+<td><strong>Tipo 2</strong> (25%; 2A el más frecuente)</td>
+<td>Cualitativo: multímeros grandes e intermedios ausentes</td>
+<td>Autosómica dominante</td>
+<td>Leve-moderada</td>
+</tr>
+<tr>
+<td><strong>Tipo 3</strong></td>
+<td>Cuantitativo grave: casi nula síntesis de vWF (deleciones bialélicas)</td>
+<td>Autosómica recesiva</td>
+<td>Grave; factor VIII también bajo</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 668</span>. Laboratorio: actividad del cofactor ristocetina reducida; <strong>TTPa prolongado en tipos 1 y 3</strong> por inestabilidad del factor VIII; recuento plaquetario normal. Tratamiento: <strong>desmopresina</strong> (libera vWF) en tipos 1 y 2, concentrados con factor VIII-vWF o vWF recombinante; el tipo 3 requiere profilaxis con concentrados <span class="cite">p. 668</span>.</p>
+<h3 id="hemofilia-a-déficit-de-factor-viii">Hemofilia A (déficit de factor VIII)</h3>
+<p>Enfermedad hereditaria hemorrágica <strong>potencialmente mortal más frecuente</strong>; <strong>recesiva ligada al X</strong>; el 30% son mutaciones de novo. La gravedad se correlaciona con la actividad del factor VIII: <strong>&lt;1% grave, 2-5% moderada, 6-50% leve</strong>; los casos graves se deben sobre todo a la <strong>inversión del cromosoma X</strong> <span class="cite">p. 668</span>. Clínica: hematomas fáciles, hemorragias masivas tras trauma o cirugía y <strong>hemartrosis</strong> recurrentes invalidantes; las <strong>petequias están ausentes</strong>. Laboratorio: <strong>TTPa prolongado con TP normal</strong> <span class="cite">p. 668</span>. Tratamiento: factor VIII recombinante; el <strong>15%</strong> de los graves desarrolla <strong>inhibidores</strong> (anticuerpos anti-VIII), tratables con anticuerpos bispecíficos anti-IXa/X (emicizumab-type). Los concentrados plasmáticos históricos transmitieron el VIH a toda una generación de hemofílicos <span class="cite">p. 669</span>.</p>
+<h3 id="hemofilia-b-enfermedad-de-christmas-déficit-de-factor-ix">Hemofilia B (enfermedad de Christmas, déficit de factor IX)</h3>
+<p>Clínicamente <strong>indistinguible</strong> de la hemofilia A (los factores VIII y IX activan juntos el X); ligada al X; en el <strong>15%</strong> el factor IX existe pero es disfuncionante; TTPa prolongado, TP normal; diagnóstico solo por dosificación del factor; tratamiento con factor IX recombinante <span class="cite">p. 669</span>.</p>
+<h3 id="coagulación-intravascular-diseminada-cid">Coagulación intravascular diseminada (CID)</h3>
+<p>Trastorno <strong>trombohemorrágico</strong> agudo, subagudo o crónico, <strong>siempre secundario</strong>: activación excesiva de la coagulación con trombosis microvascular generalizada → consumo de plaquetas, fibrinógeno y factores + activación secundaria de la fibrinólisis <span class="cite">p. 669</span>. Desencadenantes: liberación de <strong>factor tisular</strong> (complicaciones obstétricas: placenta, feto muerto retenido, líquido amniótico; traumatismos y quemaduras; moco de adenocarcinomas que activa directamente el factor X) y <strong>lesión endotelial extensa</strong> (el <strong>TNF</strong> de la sepsis induce factor tisular y reduce trombomodulina; meningococos, rickettsias, golpe de calor, LES) <span class="cite">p. 669-670</span>. Cánceres más asociados: <strong>leucemia promielocítica aguda</strong> y adenocarcinomas de pulmón, páncreas, colon y estómago <span class="cite">p. 670</span>. Consecuencias: microtrombos de fibrina → isquemia y <strong>anemia hemolítica microangiopática</strong> (esquistocitos); consumo + <strong>plasmina</strong> (que digiere además los factores V y VIII) + productos de degradación de la fibrina (inhiben la trombina, la agregación plaquetaria y la polimerización de fibrina) → <strong>hemorragia</strong> <span class="cite">p. 670</span>.</p>
+<p>Morfología: trombos de fibrina más frecuentes en <strong>cerebro, corazón, pulmones, riñones, suprarrenales, bazo e hígado</strong>; glomérulos con microinfartos o <strong>necrosis cortical renal bilateral</strong>; membranas hialinas alveolares (SDRA); microinfartos y hemorragia del SNC; en la meningococemia, las hemorragias suprarrenales masivas (<strong>síndrome de Waterhouse-Friderichsen</strong>) <span class="cite">p. 670</span>. Clínica: CID <strong>aguda</strong> (sepsis, embolia de líquido amniótico) dominada por la hemorragia; <strong>crónica</strong> (carcinomatosis, feto muerto retenido) dominada por trombosis <span class="cite">p. 670-671</span>. Diagnóstico: fibrinógeno bajo, plaquetas bajas, TP y TTPa prolongados, <strong>dímeros D</strong> elevados. Tratamiento: eliminar la causa; equilibrio difícil entre trombosis y hemorragia <span class="cite">p. 671</span>. Forma localizada: hemangiomas gigantes (<strong>síndrome de Kasabach-Merritt</strong>) <span class="cite">p. 670</span>.</p>
+
+<div class="warnbox"><span class="box-title">Patrón mucocutáneo vs profundo</span>Trombocitopenia y vWF dan petequias y hemorragia de mucosas con TP y TTPa normales; el déficit de factores da hematomas, hemartrosis y hemorragia profunda. La CID consume a la vez plaquetas, factores y fibrinógeno, con dímeros D elevados <span class="cite">p. 662-663, 671</span>.</div>
+</section><section id="sec-20-complicaciones-de-las-transfusiones" class="card">
+<div class="section-kicker"><span class="n">20</span> pp. 671-672</div>
+<h2>Complicaciones de las transfusiones</h2>
+<p>Reacción más frecuente: <strong>febril no hemolítica</strong> (fiebre y escalofríos ≤6 h; mediadores de leucocitos del donante; aumenta con el tiempo de almacenamiento) <span class="cite">p. 671</span>.</p>
+<ul>
+<li><strong>Reacciones alérgicas anafilácticas</strong>: en déficit de <strong>IgA</strong> (1:300-1:500 personas) con anticuerpos anti-IgA; graves en <strong>1 de cada 20.000-50.000</strong> transfusiones. Urticaria simple por IgE en el <strong>1-3%</strong>, leve y antihistamínica <span class="cite">p. 671</span>.</li>
+<li><strong>Reacciones hemolíticas agudas</strong>: error de identificación → incompatibilidad <strong>ABO</strong>; IgM preformadas → hemólisis intravascular con fiebre, escalofríos y dolor en el flanco a poco de iniciar; los síntomas se deben a la <strong>activación del complemento</strong>; Coombs directa positiva; puede avanzar a CID, shock e insuficiencia renal aguda <span class="cite">p. 671</span>.</li>
+<li><strong>Reacciones hemolíticas tardías</strong>: anticuerpos IgG anti-antígenos proteicos (Rh, Kell, Kidd) en receptores previamente sensibilizados; puede ser grave si fijan complemento; si no, hemólisis extravascular con esferocitosis y cuadro leve <span class="cite">p. 671-672</span>.</li>
+<li><strong>Lesión pulmonar aguda asociada a la transfusión (LPAAT/TRALI)</strong>: incidencia &lt;1:10.000; modelo de <strong>doble golpe</strong> (secuestro e iniciación de neutrófilos en el pulmón + activación por anticuerpos del donante, con frecuencia anti-CPH de mujeres multíparas); insuficiencia respiratoria súbita con infiltrados bilaterales que <strong>no responden a diuréticos</strong>; mortalidad <strong>5%</strong> en casos sin complicaciones, hasta <strong>67%</strong> en graves; excluir donantes multíparas la ha reducido <span class="cite">p. 672</span>.</li>
+<li><strong>Infecciones</strong>: contaminación bacteriana (flora cutánea) mucho más frecuente en <strong>plaquetas</strong> (1 de cada 5.000; se almacenan a temperatura ambiente) que en eritrocitos. Transmisión vírica residual: VIH <strong>1:1,5 millones</strong>, hepatitis C <strong>1:1,2 millones</strong>, hepatitis B <strong>1:1.000.000</strong> <span class="cite">p. 672</span>.</li>
+</ul>
+
+</section><section id="sec-21-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">21</span> pp. 635-671</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li><strong>Índices hematimétricos normales del adulto</strong>: VCM 82-96 fl, HCM 27-33 pg, CHCM 33-37 g/dl; Hb 13,6-17,2 (H) / 12,0-15,0 (M) g/dl; reticulocitos 0,5-1,5% <span class="cite">p. 637</span>.</li>
+<li><strong>No confundir</strong>: microcítica-hipocrómica = problema de <strong>síntesis de Hb</strong> (ferropenia, talasemias); macrocítica = problema de <strong>maduración</strong> (megaloblastosis); normocítica-normocrómica = etiologías diversas <span class="cite">p. 635</span>.</li>
+<li>La anemia de la <strong>pérdida aguda</strong> es inicialmente normocítica-normocrómica; la <strong>reticulocitosis (10-15% al 7º día)</strong> aparece a los ~5 días; la pérdida crónica termina en ferropenia <span class="cite">p. 636-637</span>.</li>
+<li><strong>No confundir hemólisis extravascular</strong> (anemia + esplenomegalia + ictericia, haptoglobina variable) <strong>con intravascular</strong> (hemoglobinemia, hemoglobinuria, hemosiderinuria, metahemoglobinuria; sin esplenomegalia) <span class="cite">p. 637</span>.</li>
+<li>La esferocitosis hereditaria es autosómica dominante (75%); el esferocito es <strong>hipercrómico</strong> (CHCM elevada por deshidratación) y <strong>no</strong> hipocrómico; la prueba es la lisis osmótica, y la esferocitosis no es patognomónica (también en anemia hemolítica autoinmunitaria) <span class="cite">p. 638-639</span>.</li>
+<li>La <strong>crisis aplásica</strong> de las anemias hemolíticas crónicas (EH, drepanocitosis) la desencadena el <strong>parvovirus B19</strong>; dura 1-2 semanas <span class="cite">p. 640, 644</span>.</li>
+<li>La deficiencia de <strong>G6PD es ligada al X</strong>; variantes A⁻ (10% de negros americanos) y mediterránea (más grave); hemólisis <strong>2-3 días</strong> tras el oxidante, autolimitada porque solo lisan los eritrocitos viejos; cuerpos de <strong>Heinz</strong> + <strong>células mordidas</strong> <span class="cite">p. 640</span>.</li>
+<li><strong>No confundir</strong> el rasgo falciforme (HbAS, 40% de HbS, asintomático salvo hipoxia extrema) con la enfermedad (HbSS, casi toda la Hb es S) <span class="cite">p. 641</span>.</li>
+<li>La mutación de la drepanocitosis es <strong>Glu→Val</strong> en la β-globina; la HbF (γ2) inhibe la polimerización: sintomático desde los <strong>5-6 meses</strong> y base de la <strong>hidroxiurea</strong> y del abordaje CRISPR <span class="cite">p. 641, 644</span>.</li>
+<li>Los factores que agravan la falciformación: deshidratación (↑CHCM), acidosis, hipoxia y estasis microvascular (inflamación); la α-talasemia concomitante <strong>alivia</strong> la enfermedad <span class="cite">p. 641-642</span>.</li>
+<li>En la drepanocitosis, el hematocrito es <strong>18-30%</strong>; el priapismo alcanza el <strong>45%</strong> de los hombres postpuberales; la autoesplenectomia explica la sepsis por <strong>encapsulados</strong> (<em>S. pneumoniae</em>, <em>H. influenzae</em>) <span class="cite">p. 643-644</span>.</li>
+<li><strong>β-talasemia mayor</strong>: anemia desde los 6-9 meses, Hb 3-6 g/dl no transfundido, HbF dominante; <strong>70-85% de eritropoyesis ineficaz</strong>; muerte por <strong>hemocromatosis secundaria</strong> cardíaca <span class="cite">p. 645-647</span>.</li>
+<li>La eritropoyesis ineficaz libera <strong>eritroferrona</strong>, que suprime la <strong>hepcidina</strong> → hiperabsorción intestinal de hierro + transfusiones → sobrecarga; no confundir con la inflamación, donde la hepcidina está <strong>alta</strong> <span class="cite">p. 646, 656</span>.</li>
+<li><strong>β-talasemia menor</strong>: HbA2 elevada al <strong>4-8%</strong> (normal 2,5 ± 0,3%); clave para no tratarla como ferropenia (ferritina y hierro normales) <span class="cite">p. 647</span>.</li>
+<li><strong>α-talasemia</strong>: 4 genes (cromosoma 16); 1 gen = portador silente; 2 = rasgo (–/αα asiático, –α/–α africano); 3 = <strong>HbH (β4)</strong>; 4 = <strong>hidropesía fetal (Hb de Bart, γ4)</strong>, letal sin transfusiones intraútero <span class="cite">p. 648</span>.</li>
+<li>La HPN es la <strong>única anemia hemolítica por defecto genético adquirido</strong> (<em>PIGA</em> somático); falta CD55/CD59 → lisis por C5b-C9; <strong>trombosis (40%) es la principal causa de muerte</strong>; diagnóstico por citometría de flujo; tratamiento <strong>eculizumab</strong> (anti-C5) <span class="cite">p. 648-649</span>.</li>
+<li><strong>Anemia hemolítica inmunitaria</strong>: calientes = <strong>IgG, 80% de los casos, extravascular, anti-Rh, Coombs directa +</strong>; crioaglutininas = <strong>IgM, 15-20%, anti-I/i, Raynaud/acrocianosis</strong>; hemolisina fría = <strong>IgG anti-P</strong>, niños postvíricos, hemoglobinuria a frigore <span class="cite">p. 649-650</span>.</li>
+<li>Fármacos y anemia hemolítica: <strong>penicilina/cefalosporinas</strong> (hapteno) vs <strong>α-metildopa</strong> (rotura de tolerancia; 10% Coombs+, solo 1% con hemólisis) <span class="cite">p. 650</span>.</li>
+<li>Megaloblastosis: macroovalocitos + <strong>neutrófilos hipersegmentados (≥5 lóbulos)</strong> + asincronía núcleo-citoplasma; pancitopenia por eritropoyesis ineficaz <span class="cite">p. 651-652</span>.</li>
+<li><strong>No confundir B12 con folato en el laboratorio</strong>: ambas elevan la homocisteína, pero solo la deficiencia de B12 eleva el <strong>ácido metilmalónico</strong> y produce neuropatía (degeneración combinada subaguda); dar folato con déficit de B12 corrige la anemia pero <strong>puede agravar</strong> la neurológica <span class="cite">p. 653, 655</span>.</li>
+<li>La <strong>anemia perniciosa</strong>: gastritis autoinmunitaria del fondo con anti-factor intrínseco (tipo I, 75%) y anti-bomba de protones (tipo III, 85-90%); mediana de edad 60 años; <strong>riesgo aumentado de carcinoma gástrico</strong> que no revierte con B12 <span class="cite">p. 653-654</span>.</li>
+<li>Ferropenia: ferritina <strong>&lt;12 µg/l</strong>, saturación de transferrina <strong>&lt;15%</strong>, <strong>TBC aumentada</strong>, hepcidina baja; respuesta reticulocitaria a los <strong>5-7 días</strong> de hierro oral <span class="cite">p. 656-658</span>.</li>
+<li>En hombres adultos y mujeres posmenopáusicas, la ferropenia es <strong>hemorragia digestiva oculta (cáncer) hasta demostrar lo contrario</strong> <span class="cite">p. 658</span>.</li>
+<li><strong>No confundir</strong> ferropenia (hierro ↓, ferritina ↓, TBC ↑) con anemia de la inflamación crónica (hierro ↓, <strong>ferritina ↑</strong>, <strong>TBC ↓</strong>, hepcidina ↑ por IL-6); esta última también tiene eritropoyetina inadecuadamente baja <span class="cite">p. 658-659</span>.</li>
+<li>Anemia aplásica: médula <strong>hipocelular</strong>, sin esplenomegalia, reticulocitopenia; los inmunodepresores responden en <strong>60-70%</strong>; distinguir del <strong>SMD/leucemia aleucémica</strong> (médula hipercelular) <span class="cite">p. 660-661</span>.</li>
+<li>Trombocitopenia: <strong>&lt;150.000/µl</strong>; <strong>&lt;20.000/µl</strong> = hemorragias espontáneas; con recuento aislado bajo, TP y TTPa <strong>normales</strong>; riesgo máximo: hemorragia intracraneal <span class="cite">p. 663</span>.</li>
+<li>PTI crónica: mujer &lt;40 años (M:H 3:1), anti-<strong>GpIIb-IIIa/Ib-IX</strong>, esplenectomía eficaz en ~2/3; <strong>sin esplenomegalia</strong> (su presencia sugiere PTI secundaria a neoplasia linfoide) <span class="cite">p. 664</span>.</li>
+<li><strong>TIH tipo II</strong>: a los <strong>5-14 días</strong>, anti-complejo <strong>heparina-PF4</strong>, trombosis paradójica; contraindicadas también las heparinas de bajo peso molecular tras su instalación <span class="cite">p. 665</span>.</li>
+<li><strong>PTT = ADAMTS13</strong> (déficit hereditario o autoanticuerpo; plasmaféresis &gt;80% de éxito) vs <strong>SHU típico = toxina Shiga de <em>E. coli</em> O157:H7</strong> vs <strong>SHU atípico = factor H/CD46/factor I</strong> (eculizumab); en ambas microangiopatías el TP y TTPa suelen ser normales, a diferencia de la CID <span class="cite">p. 665-666</span>.</li>
+<li><strong>No confundir Bernard-Soulier</strong> (déficit de GpIb-IX, defecto de <strong>adhesión</strong>) <strong>con Glanzmann</strong> (déficit de GpIIb-IIIa, defecto de <strong>agregación</strong>); ambos autosómicos recesivos con recuento plaquetario normal <span class="cite">p. 666</span>.</li>
+<li>Enfermedad de von Willebrand: la hereditaria <strong>más frecuente</strong> (1% de adultos en EE. UU.); tipo 1 (70%, AD, cuantitativo), tipo 2 (25%, cualitativo, 2A), tipo 3 (AR, grave, factor VIII también bajo); <strong>TTPa prolongado en tipos 1 y 3</strong>; desmopresina en tipos 1 y 2 <span class="cite">p. 668</span>.</li>
+<li>Hemofilia A (factor VIII) y B (factor IX, enfermedad de Christmas): ambas ligadas al X, TTPa prolongado con TP normal, <strong>hemartrosis</strong> sin petequias; gravedad de la A: &lt;1% / 2-5% / 6-50%; <strong>15%</strong> de inhibidores en la A grave <span class="cite">p. 668-669</span>.</li>
+<li><strong>CID</strong>: siempre secundaria; consumo de plaquetas, fibrinógeno y factores + fibrinólisis; dímeros D elevados; CID aguda = hemorragia (obstétrica, sepsis), CID crónica = trombosis (cáncer, feto muerto retenido); trombos más frecuentes en cerebro, corazón y pulmones; <strong>Waterhouse-Friderichsen</strong> en la meningococemia <span class="cite">p. 669-671</span>.</li>
+<li>Transfusiones: reacción más frecuente = <strong>febril no hemolítica</strong>; anafilaxia en <strong>déficit de IgA</strong> (1:20.000-50.000); hemólisis aguda = incompatibilidad <strong>ABO</strong> por IgM; <strong>TRALI</strong> con infiltrados no respondientes a diuréticos, mortalidad hasta 67% <span class="cite">p. 671-672</span>.</li>
+</ul>
+
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+</script>
+</body>
+</html>

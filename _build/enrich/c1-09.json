@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Los xenobióticos se metabolizan en fase I (citocromo P-450) y fase II (conjugación); el metabolismo puede detoxificar o activar metabolitos tóxicos (tetracloruro de carbono, benzo[a]pireno).",
+    "El CO tiene 200 veces más afinidad por la hemoglobina: carboxihemoglobina que no transporta O2, hipoxia, lesión de ganglios basales y color rojo cereza.",
+    "Metales: plomo (encefalopatía, neuropatía, anemia con punteado basófilo), mercurio (Minamata), arsénico (cáncer) y cadmio (EPOC, itai-itai).",
+    "El tabaco causa el 90% de los cánceres de pulmón con efecto multiplicativo con alcohol y amianto; el alcohol produce cirrosis, Wernicke-Kórsakov, miocardiopatía y síndrome alcohólico fetal.",
+    "Paracetamol: necrosis centrolobulillar por NAPQI, se trata con N-acetilcisteína; la radiación ionizante daña el ADN, causa fibrosis y cáncer (>100 mSv).",
+    "Marasmo (déficit calórico, emaciación, albúmina normal) frente a kwashiorkor (déficit proteico, edema, hipoalbuminemia, hígado graso)."
+  ],
+  "topics": [
+    "Cambio climático como causa de enfermedad ambiental",
+    "Metabolismo de xenobióticos y citocromo P-450",
+    "Contaminación del aire, CO y metales pesados",
+    "Tabaco, alcohol, fármacos y drogas de abuso",
+    "Agentes físicos: quemaduras, temperatura y radiación",
+    "Nutrición: marasmo, kwashiorkor, vitaminas y obesidad"
+  ],
+  "callouts": [
+    {
+      "section": "Toxicidad de los agentes químicos y físicos",
+      "title": "Fase I no siempre detoxifica",
+      "text": "El P-450 puede activar xenobióticos: el tetracloruro de carbono genera el radical triclorometilo que necrosa el hígado, y el benzo[a]pireno del tabaco forma aductos de ADN en el pulmón. La inducción por alcohol o tabaco y los polimorfismos explican la susceptibilidad individual."
+    },
+    {
+      "section": "Enfermedades nutricionales",
+      "title": "Marasmo vs kwashiorkor",
+      "text": "Marasmo: carencia calórica grave, emaciación por catabolismo de músculo y grasa, albúmina normal. Kwashiorkor: privación proteica con hipoalbuminemia, edema generalizado, hígado graso y lesiones cutáneas en pintura descascarillada."
+    },
+    {
+      "section": "Efectos del alcohol",
+      "title": "Del hígado graso a la cirrosis",
+      "text": "La oxidación por la alcohol deshidrogenasa reduce el NAD y favorece el hígado graso y la acidosis láctica; el CYP2E1 genera especies reactivas del oxígeno y la endotoxina dispara TNF. Cerca del 50% de los asiáticos tiene la ALDH2*2 de baja actividad."
+    }
+  ]
+}

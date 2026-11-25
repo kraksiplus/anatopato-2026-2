@@ -1,0 +1,34 @@
+{
+  "essentials": [
+    "Inmunidad innata: inmediata, sin memoria (TLR, NLR/inflamasoma, NK, complemento); adaptativa: tarda días, humoral (B) y celular (T), con memoria.",
+    "Diversidad de receptores por recombinación somática (RAG-1/RAG-2); reordenamientos distinguen proliferaciones policlonales de monoclonales.",
+    "Hipersensibilidad: I (IgE/mastocitos), II (anticuerpos contra células o matriz), III (inmunocomplejos, necrosis fibrinoide), IV (linfocitos T).",
+    "Autoinmunidad: fallo de tolerancia central (AIRE, deleción, edición) y periférica (CTLA-4/PD-1, T reguladores FOXP3, Fas); genes HLA más desencadenantes ambientales.",
+    "LES: anti-ADNbc y anti-Sm diagnósticos; nefritis lúpica clase IV difusa la más grave; rechazo de injerto hiperagudo, agudo, humoral (C4d) y crónico.",
+    "VIH infecta CD4+ (sida < 200/µl); amiloidosis: depósito de proteínas en hoja beta, rojo Congo con birrefringencia verde manzana."
+  ],
+  "topics": [
+    "Inmunidad innata y adaptativa: células, receptores y citocinas",
+    "Los cuatro tipos de hipersensibilidad y sus ejemplos clínicos",
+    "Tolerancia y mecanismos de la autoinmunidad (LES, Sjögren, esclerodermia)",
+    "Rechazo de trasplantes e inmunodeficiencias primarias y secundarias",
+    "VIH/sida y amiloidosis"
+  ],
+  "callouts": [
+    {
+      "section": "Hipersensibilidad: lesión tisular mediada por el sistema inmunitario",
+      "title": "Clave de los 4 tipos",
+      "text": "I: IgE y mastocitos (anafilaxia, asma). II: anticuerpos contra células o matriz (anemia hemolítica, Goodpasture, miastenia). III: inmunocomplejos con vasculitis y necrosis fibrinoide (lupus, Arthus). IV: linfocitos T (granulomas, diabetes de tipo I, dermatitis de contacto)."
+    },
+    {
+      "section": "Enfermedades autoinmunitarias",
+      "title": "Marcadores serológicos que caen en examen",
+      "text": "LES: anti-ADNbc y anti-Sm son virtualmente diagnósticos; anti-histona en lupus por fármacos. Sjögren: anti-SS-A/SS-B, riesgo de linfoma 40 veces mayor. Esclerosis sistémica: anti-Scl-70 (difusa) y anticentroméricos (limitada, CREST). HLA-B27: espondilitis anquilosante (riesgo 100-200 veces)."
+    },
+    {
+      "section": "Amiloidosis",
+      "title": "Reconocimiento y formas",
+      "text": "Fibrillas de 7,5 a 10 nm en hoja beta: rojo Congo con birrefringencia verde manzana a luz polarizada. AL (cadenas ligeras, primaria, mediana de supervivencia 2 años) y AA (reactiva a inflamación crónica); riñón es el órgano más afectado y grave."
+    }
+  ]
+}

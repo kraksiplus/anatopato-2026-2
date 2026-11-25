@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "La inflamación aguda es la respuesta vascular y leucocitaria rápida (neutrófilos) en tres pasos: vasodilatación, aumento de permeabilidad y migración de leucocitos al sitio de lesión.",
+    "Reclutamiento: selectinas median el rodamiento, integrinas la adhesión firme y CD31/PECAM-1 la diapédesis; los neutrófilos llegan a las 6-24 h y los monocitos a las 24-48 h.",
+    "La destrucción microbiana usa estallido respiratorio (NADPH oxidasa, sistema H2O2-MPO-haluro), NO y enzimas lisosómicas; su defecto causa enfermedad granulomatosa crónica.",
+    "La inflamación crónica combina infiltrado mononuclear (macrófagos M1 y M2, linfocitos Th1, Th2, Th17), lesión tisular y reparación; el granuloma contiene agentes persistentes.",
+    "Los mediadores clave son histamina, eicosanoides (PG, leucotrienos), citocinas (TNF, IL-1, IL-6), quimiocinas y complemento; la terminación activa usa lipoxinas, TGF-β e IL-10.",
+    "La reparación depende del tipo celular (lábiles, estables, permanentes): regeneración o cicatriz con tejido de granulación, TGF-β fibrogénico, angiogenia y remodelado MMP/TIMP."
+  ],
+  "topics": [
+    "Inflamación aguda: cambios vasculares, permeabilidad y reclutamiento leucocitario",
+    "Fagocitosis, mediadores químicos y complemento",
+    "Inflamación crónica, macrófagos M1/M2 y granulomas",
+    "Efectos sistémicos: fase aguda, fiebre y sepsis",
+    "Reparación: regeneración, cicatrización y factores de crecimiento",
+    "Anomalías de la cicatrización: queloides, úlceras, contracturas"
+  ],
+  "callouts": [
+    {
+      "section": "Reclutamiento de leucocitos",
+      "title": "Selectinas, integrinas y cronología",
+      "text": "Selectinas = rodamiento, integrinas = adhesión firme, CD31/PECAM-1 = transmigración; la quimiocina pasa las integrinas a alta afinidad. Neutrófilos llegan a las 6 a 24 h y monocitos a las 24 a 48 h."
+    },
+    {
+      "section": "Fagocitosis y eliminación del agente causal",
+      "title": "Estallido respiratorio y sus defectos",
+      "text": "La NADPH oxidasa genera superóxido y el sistema H2O2-MPO-haluro produce hipoclorito, el bactericida más potente del neutrófilo. Su defecto causa enfermedad granulomatosa crónica; la TEN es fuente de antígenos nucleares en el lupus."
+    },
+    {
+      "section": "Inflamación crónica",
+      "title": "Tubérculo caseoso vs granuloma no necrosante",
+      "text": "El granuloma contiene agentes difíciles de erradicar: células epitelioides y gigantes de Langhans. Necrosis caseosa sugiere tuberculosis (siempre descartarla); granulomas no necrosantes: Crohn, sarcoidosis y cuerpo extraño."
+    }
+  ]
+}
