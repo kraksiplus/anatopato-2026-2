@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+_build/cites/work/
+_build/cites/cand/
+_build/cites/final/
+_build/cites/audit/

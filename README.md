@@ -8,7 +8,7 @@ Publicado en https://kraksiplus.github.io/anatopato-2026-2/
 
 | Certamen | Qué incluye |
 |---|---|
-| [Certamen 1](c1/index.html) | 10 capítulos del Robbins, el Manual integrado y un atlas visual de 30 figuras |
+| [Certamen 1](c1/index.html) | 10 capítulos del Robbins con citas por página, el Manual integrado y un atlas visual de 30 figuras |
 | [Certamen 2](c2/index.html) | 8 capítulos del Robbins, con cita de la página impresa |
 
 Cada guía es un HTML autocontenido: funciona sin internet, guarda el tema claro u oscuro y se imprime o exporta a PDF desde el navegador.
@@ -28,7 +28,7 @@ Las figuras provienen de Robbins y Cotran, *Patología estructural y funcional*,
 
 - Robbins y Cotran, *Patología Estructural y Funcional*, 10ª edición.
 - Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 18, con cita `[p. N]` de la página impresa.
-- Certamen 1: capítulos 1 a 10 y Manual integrado de las clases. Los resúmenes del C1 no tienen cita por página y cada guía lo advierte.
+- Certamen 1: capítulos 1 a 10 y Manual integrado de las clases. Los capítulos llevan cita `[p. N]` de la página impresa; el manual declara el rango de páginas por tema y el índice del apéndice B.
 - No se publican los PDF originales ni el OCR crudo.
 
 ## Estructura
@@ -50,6 +50,8 @@ python3 _build/qa.py
 ```
 
 El generador lee los resúmenes Markdown desde `../Anatopato/`, fuera de este repositorio. El repositorio publicado solo contiene el HTML final y las figuras seleccionadas.
+
+Las citas por página de los capítulos del Certamen 1 se revisaron contra el OCR con los scripts `_build/cite_*.py`. No se ejecutan al reconstruir el sitio: los resúmenes fuente ya contienen las citas.
 
 Para regenerar las figuras se necesitan los PDFs de los capítulos y el entorno de OCR:
 

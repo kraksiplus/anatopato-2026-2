@@ -141,6 +141,14 @@ def check_page(page: dict) -> None:
         errors.append(f"{page['file']}: sin citas")
     if page.get("cites") and expected_cites and abs(cites - expected_cites) > 2:
         warnings.append(f"{page['file']}: citas HTML {cites} vs MD {expected_cites}")
+    if page.get("cites"):
+        lo, _, hi = str(page.get("printed", "")).partition("-")
+        lo = int(lo)
+        hi = int(hi or lo)
+        for span in doc.xpath('//span[contains(@class,"cite")]'):
+            for num in re.findall(r"\d+", span.text_content()):
+                if not (lo <= int(num) <= hi):
+                    errors.append(f"{page['file']}: cita p. {num} fuera de {lo}-{hi}")
 
     print(
         f"{page['id']:<12} h2={html_h2:<3} md_h2={md_h2:<3} "

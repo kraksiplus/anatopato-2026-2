@@ -340,10 +340,11 @@ def build_body(page: dict) -> tuple[str, list, dict]:
             "Manual integrado del Certamen 1, construido desde los apuntes de las 11 clases "
             "(192 páginas) y contrastado con Robbins y Cotran, 10ª edición. Está ordenado por peso "
             "en el certamen, no por número de clase. Incluye las 40 cifras de mayor rendimiento, "
-            "12 temas integrados, un índice tema-clase-Robbins y las correcciones a los apuntes."
+            "12 temas integrados, el rango de páginas del Robbins por tema y las correcciones a los apuntes."
             "</div>"
-            '<p class="small">Los resúmenes de clase no usan citas por página o diapositiva; el manual '
-            "declara sus fuentes en el apéndice C.</p>"
+            '<p class="small">Este manual se construyó desde los apuntes de clase. Las guías de los '
+            "capítulos 1 a 10 llevan cita por página del Robbins; aquí se usan rangos por tema, "
+            "con el índice tema-clase-Robbins en el apéndice B.</p>"
             "</section>"
         )
     elif page.get("cites"):
@@ -353,11 +354,11 @@ def build_body(page: dict) -> tuple[str, list, dict]:
             "<h2>Qué cubre esta guía</h2>"
             '<div class="keybox"><span class="box-title">Alcance</span>'
             f"Capítulo {page['num']} del Robbins y Cotran, 10ª edición: páginas impresas "
-            f"{page['printed']} ({page['pages']} páginas), resumidas desde el OCR del capítulo. "
+            f"{page['printed']} ({page['pages']} páginas), contrastadas con el OCR del capítulo. "
             "Cada afirmación clínica lleva la página de origen."
             "</div>"
             '<p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa '
-            "del libro. El texto se publica sin agregar contenido que no esté en el capítulo.</p>"
+            "del libro. El texto se contrastó con el OCR del capítulo.</p>"
             "</section>"
         )
     else:
@@ -532,7 +533,7 @@ def index_page(cert: int) -> str:
     total_figs = sum(figs_by_page.values())
     if cert == 1:
         h1 = "Certamen 1<br>Patología general"
-        lede = "Diez capítulos del Robbins y el Manual integrado del Certamen 1. La base conceptual de la Anatomía Patológica."
+        lede = "Diez capítulos del Robbins, con citas por página, y el Manual integrado del Certamen 1. La base conceptual de la Anatomía Patológica."
         eyebrow = "Anatomía Patológica · Certamen 1"
     else:
         h1 = "Certamen 2<br>Patología sistémica"
@@ -585,8 +586,8 @@ def index_page(cert: int) -> str:
     <li><strong>Puntos de examen:</strong> al final de cada guía, para repasar sin releer.</li>
   </ol>
   <div class="keybox"><span class="box-title">Cómo citar</span>
-    En el Certamen 2 cada afirmación lleva <span class="cite">p. N</span>, la página impresa del Robbins.
-    En el Certamen 1 los resúmenes no tienen cita por página y se advierte en cada guía.
+    En el Certamen 1 y en el Certamen 2 cada afirmación lleva <span class="cite">p. N</span>, la página impresa del Robbins.
+    El Manual del Certamen 1 declara el rango de páginas por tema y el índice del apéndice B.
   </div>
 </section>
 
@@ -667,7 +668,7 @@ def root_page() -> str:
       <div class="big">01</div>
       <h3>Patología general</h3>
       <p>10 capítulos del Robbins y el Manual integrado: lesión celular, inflamación, hemodinamia, genética, inmunidad, neoplasias, infecciosas, ambientales y pediatría.</p>
-      <div class="badges"><span>10 capítulos</span><span>Manual</span><span>sin citas por página</span><span>{c1_figs} figuras</span></div>
+      <div class="badges"><span>10 capítulos</span><span>Manual</span><span>con citas por página</span><span>{c1_figs} figuras</span></div>
     </a>
     <a class="cert-card" href="c2/index.html">
       <p class="eyebrow">Certamen 2</p>
@@ -699,7 +700,7 @@ def root_page() -> str:
     <li>Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª edición.</li>
     <li>Las figuras provienen de Robbins y Cotran, 10ª ed. (Elsevier España, 2021) y pertenecen a Elsevier y a los autores. Se usan con fines educativos y sin fines comerciales. <a href="creditos.html">Créditos de las figuras</a>.</li>
     <li>Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 18, con cita de la página impresa.</li>
-    <li>Certamen 1: capítulos 1 a 10 y Manual integrado de las clases, sin cita por página.</li>
+    <li>Certamen 1: capítulos 1 a 10 y Manual integrado de las clases, con citas por página en los capítulos.</li>
     <li>No se publican PDFs ni OCR crudo. Material docente, no una recomendación clínica.</li>
   </ul>
 </section>"""
