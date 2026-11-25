@@ -1,0 +1,103 @@
+{
+  "chapter": 14,
+  "page_id": "c2-14",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "14.3",
+      "page": 639,
+      "caption": "Fisiopatología de la esferocitosis hereditaria: el defecto del esqueleto de membrana produce esferocitos rígidos que quedan atrapados y fagocitados en los cordones esplénicos.",
+      "section": "Esferocitosis hereditaria",
+      "after_text": "el bazo las atrapa en los cordones de Billroth y los macrófagos",
+      "kind": "mechanism",
+      "why": "Diagrama de patogenia central de la membranopatía más frecuente, citado en Ideas clave",
+      "image": "assets/fig/cap14/fig-14-3.webp",
+      "width": 701,
+      "height": 807
+    },
+    {
+      "number": "14.4",
+      "page": 639,
+      "caption": "Esferocitosis hereditaria en frotis periférico: esferocitos pequeños, oscuros y sin palidez central; cuerpos de Howell-Jolly en un paciente con asplenia.",
+      "section": "Esferocitosis hereditaria",
+      "after_text": "sin palidez central; reticulocitosis, cuerpos de Howell-Jolly",
+      "kind": "diagnostic",
+      "why": "Imagen clásica del esferocito hipercrómico, hallazgo diagnóstico clave",
+      "image": "assets/fig/cap14/fig-14-4.webp",
+      "width": 723,
+      "height": 488
+    },
+    {
+      "number": "14.7",
+      "page": 642,
+      "caption": "Fisiopatología de la drepanocitosis: la HbS desoxigenada polimeriza, deformación falciforme, obstrucción microvascular, hipoxia y más falciformación en un círculo vicioso.",
+      "section": "Enfermedad de células falciformes (drepanocitosis)",
+      "after_text": "Los ciclos repetidos de falciformación dañan la membrana",
+      "kind": "mechanism",
+      "why": "Círculo vicioso de la falciformación, mecanismo central del capítulo",
+      "image": "assets/fig/cap14/fig-14-7.webp",
+      "width": 756,
+      "height": 904
+    },
+    {
+      "number": "14.8",
+      "page": 643,
+      "caption": "Drepanocitosis en frotis de sangre periférica: células falciformes irreversibles, anisocitosis, poiquilocitosis y células diana.",
+      "section": "Enfermedad de células falciformes (drepanocitosis)",
+      "after_text": "Frotis: falciformes irreversibles, reticulocitosis",
+      "kind": "diagnostic",
+      "why": "Frotis patognomónico de la enfermedad falciforme",
+      "image": "assets/fig/cap14/fig-14-8.webp",
+      "width": 725,
+      "height": 1055
+    },
+    {
+      "number": "14.11",
+      "page": 645,
+      "caption": "Patogenia de la beta-talasemia mayor: las cadenas alfa sin emparejar precipitan, dañan la membrana y producen eritropoyesis ineficaz y hemólisis.",
+      "section": "Talasemias",
+      "after_text": "El exceso de cadenas α sin pareja precipita",
+      "kind": "mechanism",
+      "why": "Explica eritropoyesis ineficaz y sobrecarga de hierro, concepto de examen",
+      "image": "assets/fig/cap14/fig-14-11.webp",
+      "width": 1462,
+      "height": 1189
+    },
+    {
+      "number": "14.16",
+      "page": 651,
+      "caption": "Anemia megaloblástica en frotis periférico: neutrófilo hipersegmentado con un núcleo de seis lóbulos.",
+      "section": "Anemia megaloblástica",
+      "after_text": "neutrófilos hipersegmentados (≥5 lóbulos). Médula hipercelular con megaloblastos",
+      "kind": "diagnostic",
+      "why": "Neutrófilo hipersegmentado, hallazgo diagnóstico citado en Puntos de examen",
+      "image": "assets/fig/cap14/fig-14-16.webp",
+      "width": 744,
+      "height": 478
+    },
+    {
+      "number": "14.23",
+      "page": 658,
+      "caption": "Deficiencia de hierro en frotis periférico: eritrocitos hipocrómicos y microcíticos con un borde estrecho de hemoglobina periférica.",
+      "section": "Anemia ferropénica",
+      "after_text": "microcitosis, hipocromia (palidez central mayor de un tercio del diámetro)",
+      "kind": "diagnostic",
+      "why": "Imagen clásica de la anemia microcítica-hipocrómica más frecuente",
+      "image": "assets/fig/cap14/fig-14-23.webp",
+      "width": 744,
+      "height": 383
+    },
+    {
+      "number": "14.27",
+      "page": 670,
+      "caption": "Fisiopatología de la coagulación intravascular diseminada: liberación de factor tisular y lesión endotelial desencadenan trombosis microvascular con consumo de plaquetas y factores.",
+      "section": "Trastornos hemorrágicos: diátesis hemorrágicas",
+      "after_text": "Desencadenantes: liberación de factor tisular",
+      "kind": "mechanism",
+      "why": "Diagrama de la CID, trastorno trombohemorrágico central del bloque final",
+      "image": "assets/fig/cap14/fig-14-27.webp",
+      "width": 765,
+      "height": 783
+    }
+  ]
+}

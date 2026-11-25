@@ -1,0 +1,44 @@
+{
+  "chapter": 1,
+  "printed_start": 1,
+  "figures": [
+    {
+      "number": "1.1",
+      "page": 2,
+      "bbox": [
+        70,
+        1020,
+        1555,
+        1615
+      ]
+    },
+    {
+      "number": "1.2",
+      "page": 4
+    },
+    {
+      "number": "1.3",
+      "page": 5
+    },
+    {
+      "number": "1.5",
+      "page": 6
+    },
+    {
+      "number": "1.6",
+      "page": 7
+    },
+    {
+      "number": "1.11",
+      "page": 16
+    },
+    {
+      "number": "1.19",
+      "page": 27
+    },
+    {
+      "number": "1.22",
+      "page": 29
+    }
+  ]
+}

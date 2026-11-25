@@ -75,6 +75,137 @@ def load_enrich(page_id: str) -> dict:
     return {}
 
 
+def load_figures(page_id: str) -> dict:
+    path = BUILD / "figures" / f"{page_id}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {"figures": []}
+
+
+def figure_anchor(page_id: str, number: str) -> str:
+    return "fig-" + number.replace(".", "-")
+
+
+def find_anchor_html(fragment: str, anchor: str) -> int | None:
+    """Posición en el HTML de un texto que puede estar partido por etiquetas."""
+    chars = []
+    positions = []
+    i = 0
+    while i < len(fragment):
+        if fragment[i] == "<":
+            j = fragment.find(">", i)
+            if j == -1:
+                break
+            i = j + 1
+            continue
+        chars.append(fragment[i])
+        positions.append(i)
+        i += 1
+    start = "".join(chars).find(anchor)
+    return positions[start] if start != -1 else None
+
+
+def figure_html(fig: dict, page: dict) -> str:
+    num = fig["number"]
+    fid = figure_anchor(page["id"], num)
+    img = "../" + fig["image"]
+    caption_html = inline(fig["caption"])
+    alt = html.escape(
+        f"Figura {num}. {fig['caption']} Robbins y Cotran, 10ª ed., p. {fig['page']}.",
+        quote=True,
+    )
+    data_caption = html.escape(f"Figura {num}. {fig['caption']}", quote=True)
+    source = (
+        f"Robbins y Cotran, <em>Patología estructural y funcional</em>, "
+        f"10ª ed., Elsevier España, 2021, p. {fig['page']}."
+    )
+    return f"""<figure class="fig" id="{fid}">
+  <a class="fig-open" href="{img}" data-caption="{data_caption}" data-alt="{alt}">
+    <img src="{img}" width="{fig['width']}" height="{fig['height']}" loading="lazy" decoding="async" alt="{alt}">
+  </a>
+  <figcaption>
+    <strong>Figura {num}.</strong> {caption_html}
+    <span class="fig-source">{source} <a href="../creditos.html#{fid}">Ver créditos</a></span>
+  </figcaption>
+</figure>"""
+
+
+def insert_figure(section: str, fig: dict, page: dict) -> tuple[str, bool]:
+    block = figure_html(fig, page)
+    anchor = (fig.get("after_text") or "").strip()
+    if not anchor:
+        return section.replace("</section>", block + "\n</section>"), True
+    start = find_anchor_html(section, anchor)
+    if start is None:
+        return section.replace("</section>", block + "\n</section>"), False
+
+    li_open = section.rfind("<li", 0, start)
+    p_close = section.find("</p>", start)
+    if li_open != -1 and section.find("</li>", li_open, start) == -1:
+        # El ancla está dentro de una lista: la figura va después de la lista
+        # completa, no como hijo directo de <ul>.
+        closes = [c for c in (section.find("</ul>", start), section.find("</ol>", start)) if c != -1]
+        if closes:
+            pos = min(closes) + 5
+        elif p_close != -1:
+            pos = p_close + len("</p>")
+        else:
+            pos = len(section)
+    elif p_close != -1:
+        pos = p_close + len("</p>")
+    else:
+        pos = section.find("</section>", start)
+        if pos == -1:
+            pos = len(section)
+    return section[:pos] + "\n" + block + section[pos:], True
+
+
+def atlas_html(figures: list, page: dict) -> str:
+    if not figures:
+        return ""
+    items = []
+    for fig in figures:
+        fid = figure_anchor(page["id"], fig["number"])
+        img = "../" + fig["image"]
+        items.append(
+            f'<a class="fig-thumb" href="#{fid}" aria-label="Figura {fig["number"]}">'
+            f'<img src="{img}" loading="lazy" decoding="async" alt="Figura {fig["number"]}">'
+            f'<span>Figura {fig["number"]}</span></a>'
+        )
+    return (
+        '<section id="atlas" class="card">\n'
+        '<div class="section-kicker"><span class="n">★</span> Atlas</div>\n'
+        "<h2>Figuras del capítulo</h2>\n"
+        '<p class="small">Toca una miniatura para volver a la figura en su sección.</p>\n'
+        f'<div class="fig-grid">{"".join(items)}</div>\n'
+        "</section>"
+    )
+
+
+def manual_atlas_html(figures: list) -> str:
+    if not figures:
+        return ""
+    items = []
+    for fig in figures:
+        fid = figure_anchor("", fig["number"])
+        href = f"{fig['chapter_file']}#{fid}"
+        img = "../" + fig["image"]
+        alt = html.escape(f"Figura {fig['number']}. {fig['caption']}", quote=True)
+        items.append(
+            f'<a class="fig-thumb" href="{href}" aria-label="Figura {fig["number"]}">'
+            f'<img src="{img}" loading="lazy" decoding="async" alt="{alt}">'
+            f'<span>Figura {fig["number"]}</span><small>Cap. {fig["chapter"]}</small></a>'
+        )
+    return (
+        '<section id="atlas" class="card">\n'
+        '<div class="section-kicker"><span class="n">★</span> Atlas</div>\n'
+        "<h2>Atlas visual del Certamen 1</h2>\n"
+        '<p class="small">Treinta figuras de los capítulos, para repaso rápido. Toca una para abrirla en su guía. La fuente y titularidad de cada figura está en su capítulo y en <a href="../creditos.html">Créditos de las figuras</a>.</p>\n'
+        f'<div class="fig-grid">{"".join(items)}</div>\n'
+        "</section>"
+    )
+
+
 def table_wrap(fragment: str, label: str) -> str:
     def repl(match):
         return (
@@ -133,6 +264,9 @@ def build_body(page: dict) -> tuple[str, list, dict]:
 
     enrich = load_enrich(page["id"])
     callouts = enrich.get("callouts", [])
+    fig_data = load_figures(page["id"])
+    figures = fig_data.get("figures", [])
+    atlas_only = bool(fig_data.get("atlas_only"))
 
     sections = []
     titles = []
@@ -153,11 +287,36 @@ def build_body(page: dict) -> tuple[str, list, dict]:
                     sections[i] = sections[i].replace("</section>", box + "\n</section>")
                     break
 
+    def section_rank(title: str, wanted: str) -> tuple[int, int]:
+        tl, wl = title.lower(), wanted.lower()
+        if tl == wl:
+            return (0, len(tl))
+        if tl.startswith(wl):
+            return (1, len(tl))
+        if wl in tl:
+            return (2, len(tl))
+        return (9, len(tl))
+
+    inserted_ids = set()
+    for fig in ([] if atlas_only else reversed(figures)):
+        wanted = fig.get("section", "")
+        ranked = [(section_rank(t, wanted), i) for i, t in enumerate(titles)]
+        ranked.sort()
+        target = ranked[0][1] if ranked and ranked[0][0][0] < 9 else None
+        if target is None:
+            print(f"AVISO {page['id']}: figura {fig['number']} sin sección")
+            continue
+        sections[target], ok = insert_figure(sections[target], fig, page)
+        if not ok:
+            print(f"AVISO {page['id']}: figura {fig['number']} sin ancla, al final de la sección")
+        inserted_ids.add(fig["number"])
+    inserted = figures if atlas_only else [fig for fig in figures if fig["number"] in inserted_ids]
+
     cite_spans = len(re.findall(r'<span class="cite">', "".join(sections)))
     tables = len(re.findall(r"<table>", "".join(sections)))
     rows = len(re.findall(r"<tr", "".join(sections)))
     stats = {"words": words, "cites": cite_spans, "tables": tables, "rows": rows,
-             "sections": len(sections), "titles": titles}
+             "sections": len(sections), "titles": titles, "figures": inserted}
 
     essentials = enrich.get("essentials", [])
     if essentials:
@@ -216,7 +375,8 @@ def build_body(page: dict) -> tuple[str, list, dict]:
             "</section>"
         )
 
-    body_html = alcance + essential_block + "".join(sections)
+    atlas = manual_atlas_html(inserted) if atlas_only else atlas_html(inserted, page)
+    body_html = alcance + essential_block + "".join(sections) + atlas
     return head + body_html, stats, enrich
 
 
@@ -224,20 +384,28 @@ def hero_html(page: dict, stats: dict) -> str:
     c = page["certamen"]
     if page["kind"] == "manual":
         eyebrow = "Certamen 1 · Anatomía Patológica"
+        figs = len(stats.get("figures", []))
         lede = page.get("lede", "")
+        if figs:
+            lede += f" Incluye un atlas de {figs} figuras."
         meta = [
             ("Temas", "12"), ("Clases", "11"), ("Filas de tabla", str(stats["rows"])),
             ("Fuente", "Apuntes + Robbins 10ª ed."), ("Ramo", "Anatomía Patológica · UBB 2026-2"),
         ]
+        if figs:
+            meta.insert(3, ("Figuras", str(figs)))
         h1 = page["title"]
     else:
         eyebrow = f"Certamen {c} · Anatomía Patológica"
+        figs = len(stats.get("figures", []))
+        fig_txt = f" {figs} figuras seleccionadas." if figs else ""
         lede = (
             f"Guía {page['num'] if c == 1 else page['num'] - 10:02d} de {page['of']:02d}. "
             f"Resumen completo del capítulo {page['num']} con "
             + (f"{stats['cites']} citas por página y {stats['rows']} filas de tabla."
                if page.get("cites") else
                f"{stats['rows']} filas de tabla. Sin citas por página: material del Certamen 1.")
+            + fig_txt
         )
         meta = [
             ("Guía", f"{page['num'] if c == 1 else page['num'] - 10:02d} de {page['of']:02d}"),
@@ -247,6 +415,8 @@ def hero_html(page: dict, stats: dict) -> str:
             ("Tablas", str(stats["rows"])),
             ("Fuente", "Robbins y Cotran, 10ª ed."),
         ]
+        if figs:
+            meta.insert(4, ("Figuras", str(figs)))
         h1 = f"Capítulo {page['num']}. {page['title']}"
 
     meta_html = "".join(
@@ -275,6 +445,8 @@ def toc_html(page: dict, stats: dict, enrich: dict) -> str:
     for i, title in enumerate(stats["titles"]):
         sid = f"sec-{i + 1:02d}-{slug(title)}"
         items.append(f'<li><a href="#{sid}">{html.escape(title)}</a></li>')
+    if stats.get("figures"):
+        items.append('<li><a href="#atlas">Atlas de figuras</a></li>')
     return "\n".join("        " + x for x in items)
 
 
@@ -317,6 +489,7 @@ def build_page(page: dict) -> Path:
         "%%NAV%%": nav_html(page),
         "%%BODY%%": body,
         "%%JS%%": JS,
+        "%%CREDITS%%": "../creditos.html",
     }.items():
         out = out.replace(key, val)
     if EMDASH in out:
@@ -355,6 +528,8 @@ def index_page(cert: int) -> str:
     chapters = [p for p in pages if p["kind"] == "chapter"]
     manual = next((p for p in pages if p["kind"] == "manual"), None)
     total_cites = sum(1 for p in chapters if p.get("cites"))
+    figs_by_page = {p["id"]: len(load_figures(p["id"]).get("figures", [])) for p in chapters}
+    total_figs = sum(figs_by_page.values())
     if cert == 1:
         h1 = "Certamen 1<br>Patología general"
         lede = "Diez capítulos del Robbins y el Manual integrado del Certamen 1. La base conceptual de la Anatomía Patológica."
@@ -368,7 +543,8 @@ def index_page(cert: int) -> str:
     cards = "\n".join(card(p) for p in order)
     rows = "".join(
         f"<tr><td>{i + 1}</td><td><a href=\"{Path(p['file']).name}\">{html.escape(p['title'])}</a></td>"
-        f"<td>{p['printed']}</td><td>{p['pages']}</td><td>{'Sí' if p.get('cites') else 'No'}</td></tr>"
+        f"<td>{p['printed']}</td><td>{p['pages']}</td>"
+        f"<td>{figs_by_page[p['id']]}</td><td>{'Sí' if p.get('cites') else 'No'}</td></tr>"
         for i, p in enumerate(chapters)
     )
     total_pages = sum(p["pages"] for p in chapters)
@@ -382,6 +558,7 @@ def index_page(cert: int) -> str:
       <div><span>Páginas del libro</span><strong>{total_pages}</strong></div>
       <div><span>Manual</span><strong>{'Sí' if manual else 'No'}</strong></div>
       <div><span>Citas por página</span><strong>{'Sí' if total_cites else 'No'}</strong></div>
+      <div><span>Figuras</span><strong>{total_figs}</strong></div>
       <div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div>
     </div>
     <div class="hero-actions">
@@ -418,7 +595,7 @@ def index_page(cert: int) -> str:
   <h2>Cobertura</h2>
   <div class="table-wrap" role="region" aria-label="Cobertura por capítulo" tabindex="0">
     <table>
-      <thead><tr><th>#</th><th>Capítulo</th><th>Páginas impresas</th><th>Páginas</th><th>Citas</th></tr></thead>
+      <thead><tr><th>#</th><th>Capítulo</th><th>Páginas impresas</th><th>Páginas</th><th>Figuras</th><th>Citas</th></tr></thead>
       <tbody>{rows}</tbody>
     </table>
   </div>
@@ -429,6 +606,7 @@ def index_page(cert: int) -> str:
   <h2>Notas de fuente</h2>
   <ul>
     <li>Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª edición.</li>
+    <li>Las figuras provienen de Robbins y Cotran, 10ª ed. (Elsevier España, 2021) y pertenecen a Elsevier y a los autores. Se usan con fines educativos y sin fines comerciales. <a href="../creditos.html">Créditos de las figuras</a>.</li>
     <li>Los PDF originales y el OCR crudo no se publican; solo el HTML de estudio.</li>
     <li>Material docente, no una recomendación clínica.</li>
   </ul>
@@ -448,6 +626,7 @@ def index_page(cert: int) -> str:
         "%%NAV%%": nav,
         "%%BODY%%": body,
         "%%JS%%": JS,
+        "%%CREDITS%%": "../creditos.html",
     }.items():
         out = out.replace(key, val)
     if EMDASH in out:
@@ -461,7 +640,10 @@ def index_page(cert: int) -> str:
 def root_page() -> str:
     c1 = [p for p in PAGES if p["certamen"] == 1 and p["kind"] == "chapter"]
     c2 = [p for p in PAGES if p["certamen"] == 2 and p["kind"] == "chapter"]
-    hero = """<header class="hero">
+    c1_figs = sum(len(load_figures(p["id"]).get("figures", [])) for p in c1)
+    c2_figs = sum(len(load_figures(p["id"]).get("figures", [])) for p in c2)
+    total_figs = c1_figs + c2_figs
+    hero = f"""<header class="hero">
   <div class="hero-inner">
     <p class="eyebrow">Medicina UBB · 2026-2</p>
     <h1>Anatomía Patológica<br>Certámenes 1 y 2</h1>
@@ -470,6 +652,7 @@ def root_page() -> str:
       <div><span>Certámenes</span><strong>2</strong></div>
       <div><span>Capítulos</span><strong>18</strong></div>
       <div><span>Guías</span><strong>19</strong></div>
+      <div><span>Figuras</span><strong>{total_figs}</strong></div>
       <div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div>
       <div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div>
     </div>
@@ -484,14 +667,14 @@ def root_page() -> str:
       <div class="big">01</div>
       <h3>Patología general</h3>
       <p>10 capítulos del Robbins y el Manual integrado: lesión celular, inflamación, hemodinamia, genética, inmunidad, neoplasias, infecciosas, ambientales y pediatría.</p>
-      <div class="badges"><span>10 capítulos</span><span>Manual</span><span>sin citas por página</span></div>
+      <div class="badges"><span>10 capítulos</span><span>Manual</span><span>sin citas por página</span><span>{c1_figs} figuras</span></div>
     </a>
     <a class="cert-card" href="c2/index.html">
       <p class="eyebrow">Certamen 2</p>
       <div class="big">02</div>
       <h3>Patología sistémica</h3>
       <p>8 capítulos del Robbins con citas por página: vasos, corazón, leucocitos, eritrocitos, pulmón, cabeza y cuello, tubo digestivo, hígado y vía biliar.</p>
-      <div class="badges"><span>8 capítulos</span><span>con citas</span><span>1.847 citas</span></div>
+      <div class="badges"><span>8 capítulos</span><span>con citas</span><span>1.847 citas</span><span>{c2_figs} figuras</span></div>
     </a>
   </div>
 </section>
@@ -514,6 +697,7 @@ def root_page() -> str:
   <h2>Trazabilidad</h2>
   <ul>
     <li>Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª edición.</li>
+    <li>Las figuras provienen de Robbins y Cotran, 10ª ed. (Elsevier España, 2021) y pertenecen a Elsevier y a los autores. Se usan con fines educativos y sin fines comerciales. <a href="creditos.html">Créditos de las figuras</a>.</li>
     <li>Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 18, con cita de la página impresa.</li>
     <li>Certamen 1: capítulos 1 a 10 y Manual integrado de las clases, sin cita por página.</li>
     <li>No se publican PDFs ni OCR crudo. Material docente, no una recomendación clínica.</li>
@@ -532,12 +716,104 @@ def root_page() -> str:
         "%%NAV%%": '<a href="c1/index.html">C1</a> &nbsp;·&nbsp; <a href="c2/index.html">C2</a>',
         "%%BODY%%": body,
         "%%JS%%": JS,
+        "%%CREDITS%%": "creditos.html",
     }.items():
         out = out.replace(key, val)
     if EMDASH in out:
         raise SystemExit("Em dash detectado en portada")
     (ROOT / "index.html").write_text(out, encoding="utf-8")
     print("portada: index.html")
+    return out
+
+
+def credits_page() -> str:
+    items = []
+    for page in PAGES:
+        if page["kind"] == "manual":
+            continue
+        for fig in load_figures(page["id"]).get("figures", []):
+            items.append((page, fig))
+    items.sort(
+        key=lambda x: (
+            x[0]["certamen"],
+            x[0]["num"] or 0,
+            [int(n) for n in x[1]["number"].split(".")],
+        )
+    )
+
+    rows = []
+    for page, fig in items:
+        fid = figure_anchor(page["id"], fig["number"])
+        rows.append(
+            f'<tr id="{fid}"><td><a href="{page["file"]}#{fid}">Figura {fig["number"]}</a></td>'
+            f'<td>{html.escape(page["title"])}</td>'
+            f'<td>{fig["page"]}</td>'
+            f'<td>C{page["certamen"]}</td></tr>'
+        )
+    body_rows = "".join(rows) or '<tr><td colspan="4">Sin figuras registradas.</td></tr>'
+    chapters = len({p["id"] for p, _ in items})
+
+    hero = f"""<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Anatomía Patológica · Fuentes</p>
+    <h1>Créditos de las figuras</h1>
+    <p class="lede">Cada figura de las guías, con su capítulo y su página impresa. La titularidad es de Elsevier y de los autores de la obra.</p>
+    <div class="meta-grid">
+      <div><span>Figuras</span><strong>{len(items)}</strong></div>
+      <div><span>Capítulos</span><strong>{chapters}</strong></div>
+      <div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div>
+      <div><span>Editorial</span><strong>Elsevier, 2021</strong></div>
+      <div><span>Uso</span><strong>Educativo, sin fines comerciales</strong></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn primary" href="index.html">Volver a la portada</a>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+    </div>
+  </div>
+</header>"""
+    body = f"""<section id="aviso" class="card">
+  <div class="section-kicker"><span class="n">01</span> Aviso</div>
+  <h2>Fuente y titularidad</h2>
+  <div class="warnbox"><span class="box-title">Robbins y Cotran, 10ª edición</span>
+    Las figuras provienen de Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª edición
+    (Elsevier España, 2021). La titularidad corresponde a Elsevier y a los autores de la obra.
+    Se reproducen con fines exclusivamente educativos y sin fines comerciales, citando el número de
+    figura y la página impresa. Los PDF originales y el OCR crudo no se distribuyen.
+  </div>
+  <p class="small">Si eres titular de derechos y deseas la retirada de una figura, abre un
+    <a href="https://github.com/kraksiplus/anatopato-2026-2/issues">issue en el repositorio</a>.
+    El sitio puede regenerarse sin imágenes sin romper el texto.</p>
+</section>
+
+<section id="listado" class="card">
+  <div class="section-kicker"><span class="n">02</span> Listado</div>
+  <h2>Todas las figuras</h2>
+  <div class="table-wrap" role="region" aria-label="Listado de figuras y fuentes" tabindex="0">
+    <table>
+      <thead><tr><th>Figura</th><th>Capítulo</th><th>Página</th><th>Guía</th></tr></thead>
+      <tbody>{body_rows}</tbody>
+    </table>
+  </div>
+</section>"""
+    toc = """<li><a href="#aviso">Aviso</a></li>
+        <li><a href="#listado">Listado</a></li>"""
+    out = TPL
+    for key, val in {
+        "%%TITLE%%": "Créditos de las figuras · Anatomía Patológica UBB",
+        "%%DESC%%": "Fuente, página y titularidad de cada figura usada en las guías de Anatomía Patológica.",
+        "%%CSS%%": CSS,
+        "%%HERO%%": hero,
+        "%%TOC%%": toc,
+        "%%NAV%%": '<a href="index.html">Portada</a>',
+        "%%BODY%%": body,
+        "%%JS%%": JS,
+        "%%CREDITS%%": "creditos.html",
+    }.items():
+        out = out.replace(key, val)
+    if EMDASH in out:
+        raise SystemExit("Em dash detectado en créditos")
+    (ROOT / "creditos.html").write_text(out, encoding="utf-8")
+    print(f"créditos: creditos.html ({len(items)} figuras)")
     return out
 
 
@@ -549,6 +825,7 @@ def main():
     if args.page:
         page = next(p for p in PAGES if p["id"] == args.page)
         build_page(page)
+        credits_page()
         return
     if not args.indexes:
         for page in PAGES:
@@ -556,6 +833,7 @@ def main():
     index_page(1)
     index_page(2)
     root_page()
+    credits_page()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Créditos de las figuras · Anatomía Patológica UBB</title>
+<meta name="description" content="Fuente, página y titularidad de cada figura usada en las guías de Anatomía Patológica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Créditos de las figuras · Anatomía Patológica UBB">
+<meta property="og:description" content="Fuente, página y titularidad de cada figura usada en las guías de Anatomía Patológica.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Anatomía Patológica · Fuentes</p>
+    <h1>Créditos de las figuras</h1>
+    <p class="lede">Cada figura de las guías, con su capítulo y su página impresa. La titularidad es de Elsevier y de los autores de la obra.</p>
+    <div class="meta-grid">
+      <div><span>Figuras</span><strong>141</strong></div>
+      <div><span>Capítulos</span><strong>18</strong></div>
+      <div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div>
+      <div><span>Editorial</span><strong>Elsevier, 2021</strong></div>
+      <div><span>Uso</span><strong>Educativo, sin fines comerciales</strong></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn primary" href="index.html">Volver a la portada</a>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+<li><a href="#aviso">Aviso</a></li>
+        <li><a href="#listado">Listado</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html">Portada</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="aviso" class="card">
+  <div class="section-kicker"><span class="n">01</span> Aviso</div>
+  <h2>Fuente y titularidad</h2>
+  <div class="warnbox"><span class="box-title">Robbins y Cotran, 10ª edición</span>
+    Las figuras provienen de Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª edición
+    (Elsevier España, 2021). La titularidad corresponde a Elsevier y a los autores de la obra.
+    Se reproducen con fines exclusivamente educativos y sin fines comerciales, citando el número de
+    figura y la página impresa. Los PDF originales y el OCR crudo no se distribuyen.
+  </div>
+  <p class="small">Si eres titular de derechos y deseas la retirada de una figura, abre un
+    <a href="https://github.com/kraksiplus/anatopato-2026-2/issues">issue en el repositorio</a>.
+    El sitio puede regenerarse sin imágenes sin romper el texto.</p>
+</section>
+
+<section id="listado" class="card">
+  <div class="section-kicker"><span class="n">02</span> Listado</div>
+  <h2>Todas las figuras</h2>
+  <div class="table-wrap" role="region" aria-label="Listado de figuras y fuentes" tabindex="0">
+    <table>
+      <thead><tr><th>Figura</th><th>Capítulo</th><th>Página</th><th>Guía</th></tr></thead>
+      <tbody><tr id="fig-1-1"><td><a href="c1/01_La_Celula.html#fig-1-1">Figura 1.1</a></td><td>La célula como unidad de salud y enfermedad</td><td>2</td><td>C1</td></tr><tr id="fig-1-2"><td><a href="c1/01_La_Celula.html#fig-1-2">Figura 1.2</a></td><td>La célula como unidad de salud y enfermedad</td><td>4</td><td>C1</td></tr><tr id="fig-1-3"><td><a href="c1/01_La_Celula.html#fig-1-3">Figura 1.3</a></td><td>La célula como unidad de salud y enfermedad</td><td>5</td><td>C1</td></tr><tr id="fig-1-5"><td><a href="c1/01_La_Celula.html#fig-1-5">Figura 1.5</a></td><td>La célula como unidad de salud y enfermedad</td><td>6</td><td>C1</td></tr><tr id="fig-1-6"><td><a href="c1/01_La_Celula.html#fig-1-6">Figura 1.6</a></td><td>La célula como unidad de salud y enfermedad</td><td>7</td><td>C1</td></tr><tr id="fig-1-11"><td><a href="c1/01_La_Celula.html#fig-1-11">Figura 1.11</a></td><td>La célula como unidad de salud y enfermedad</td><td>16</td><td>C1</td></tr><tr id="fig-1-19"><td><a href="c1/01_La_Celula.html#fig-1-19">Figura 1.19</a></td><td>La célula como unidad de salud y enfermedad</td><td>27</td><td>C1</td></tr><tr id="fig-1-22"><td><a href="c1/01_La_Celula.html#fig-1-22">Figura 1.22</a></td><td>La célula como unidad de salud y enfermedad</td><td>29</td><td>C1</td></tr><tr id="fig-2-3"><td><a href="c1/02_Lesion_Celular.html#fig-2-3">Figura 2.3</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>37</td><td>C1</td></tr><tr id="fig-2-7"><td><a href="c1/02_Lesion_Celular.html#fig-2-7">Figura 2.7</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>40</td><td>C1</td></tr><tr id="fig-2-13"><td><a href="c1/02_Lesion_Celular.html#fig-2-13">Figura 2.13</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>44</td><td>C1</td></tr><tr id="fig-2-18"><td><a href="c1/02_Lesion_Celular.html#fig-2-18">Figura 2.18</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>50</td><td>C1</td></tr><tr id="fig-2-27"><td><a href="c1/02_Lesion_Celular.html#fig-2-27">Figura 2.27</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>60</td><td>C1</td></tr><tr id="fig-2-28"><td><a href="c1/02_Lesion_Celular.html#fig-2-28">Figura 2.28</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>61</td><td>C1</td></tr><tr id="fig-2-30"><td><a href="c1/02_Lesion_Celular.html#fig-2-30">Figura 2.30</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>63</td><td>C1</td></tr><tr id="fig-2-36"><td><a href="c1/02_Lesion_Celular.html#fig-2-36">Figura 2.36</a></td><td>Lesión celular, muerte celular y adaptaciones</td><td>68</td><td>C1</td></tr><tr id="fig-3-4"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-4">Figura 3.4</a></td><td>Inflamación y reparación</td><td>77</td><td>C1</td></tr><tr id="fig-3-8"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-8">Figura 3.8</a></td><td>Inflamación y reparación</td><td>82</td><td>C1</td></tr><tr id="fig-3-10"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-10">Figura 3.10</a></td><td>Inflamación y reparación</td><td>87</td><td>C1</td></tr><tr id="fig-3-14"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-14">Figura 3.14</a></td><td>Inflamación y reparación</td><td>93</td><td>C1</td></tr><tr id="fig-3-20"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-20">Figura 3.20</a></td><td>Inflamación y reparación</td><td>98</td><td>C1</td></tr><tr id="fig-3-23"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-23">Figura 3.23</a></td><td>Inflamación y reparación</td><td>100</td><td>C1</td></tr><tr id="fig-3-29"><td><a href="c1/03_Inflamacion_Reparacion.html#fig-3-29">Figura 3.29</a></td><td>Inflamación y reparación</td><td>109</td><td>C1</td></tr><tr id="fig-4-3"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-3">Figura 4.3</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>118</td><td>C1</td></tr><tr id="fig-4-4"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-4">Figura 4.4</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>119</td><td>C1</td></tr><tr id="fig-4-6"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-6">Figura 4.6</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>121</td><td>C1</td></tr><tr id="fig-4-12"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-12">Figura 4.12</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>125</td><td>C1</td></tr><tr id="fig-4-14"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-14">Figura 4.14</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>129</td><td>C1</td></tr><tr id="fig-4-16"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-16">Figura 4.16</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>131</td><td>C1</td></tr><tr id="fig-4-19"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-19">Figura 4.19</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>133</td><td>C1</td></tr><tr id="fig-4-21"><td><a href="c1/04_Hemodinamia_Shock.html#fig-4-21">Figura 4.21</a></td><td>Trastornos hemodinámicos, enfermedad tromboembólica y shock</td><td>136</td><td>C1</td></tr><tr id="fig-5-2"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-2">Figura 5.2</a></td><td>Trastornos genéticos</td><td>143</td><td>C1</td></tr><tr id="fig-5-7"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-7">Figura 5.7</a></td><td>Trastornos genéticos</td><td>152</td><td>C1</td></tr><tr id="fig-5-10"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-10">Figura 5.10</a></td><td>Trastornos genéticos</td><td>155</td><td>C1</td></tr><tr id="fig-5-13"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-13">Figura 5.13</a></td><td>Trastornos genéticos</td><td>159</td><td>C1</td></tr><tr id="fig-5-16"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-16">Figura 5.16</a></td><td>Trastornos genéticos</td><td>163</td><td>C1</td></tr><tr id="fig-5-20"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-20">Figura 5.20</a></td><td>Trastornos genéticos</td><td>168</td><td>C1</td></tr><tr id="fig-5-25"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-25">Figura 5.25</a></td><td>Trastornos genéticos</td><td>176</td><td>C1</td></tr><tr id="fig-5-33"><td><a href="c1/05_Trastornos_Geneticos.html#fig-5-33">Figura 5.33</a></td><td>Trastornos genéticos</td><td>186</td><td>C1</td></tr><tr id="fig-6-1"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-1">Figura 6.1</a></td><td>Enfermedades del sistema inmunitario</td><td>202</td><td>C1</td></tr><tr id="fig-6-14"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-14">Figura 6.14</a></td><td>Enfermedades del sistema inmunitario</td><td>206</td><td>C1</td></tr><tr id="fig-6-18"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-18">Figura 6.18</a></td><td>Enfermedades del sistema inmunitario</td><td>213</td><td>C1</td></tr><tr id="fig-6-24"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-24">Figura 6.24</a></td><td>Enfermedades del sistema inmunitario</td><td>223</td><td>C1</td></tr><tr id="fig-6-36"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-36">Figura 6.36</a></td><td>Enfermedades del sistema inmunitario</td><td>239</td><td>C1</td></tr><tr id="fig-6-42"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-42">Figura 6.42</a></td><td>Enfermedades del sistema inmunitario</td><td>253</td><td>C1</td></tr><tr id="fig-6-47"><td><a href="c1/06_Sistema_Inmunitario.html#fig-6-47">Figura 6.47</a></td><td>Enfermedades del sistema inmunitario</td><td>263</td><td>C1</td></tr><tr id="fig-7-9"><td><a href="c1/07_Neoplasias.html#fig-7-9">Figura 7.9</a></td><td>Neoplasias</td><td>272</td><td>C1</td></tr><tr id="fig-7-10"><td><a href="c1/07_Neoplasias.html#fig-7-10">Figura 7.10</a></td><td>Neoplasias</td><td>273</td><td>C1</td></tr><tr id="fig-7-15"><td><a href="c1/07_Neoplasias.html#fig-7-15">Figura 7.15</a></td><td>Neoplasias</td><td>275</td><td>C1</td></tr><tr id="fig-7-22"><td><a href="c1/07_Neoplasias.html#fig-7-22">Figura 7.22</a></td><td>Neoplasias</td><td>287</td><td>C1</td></tr><tr id="fig-7-25"><td><a href="c1/07_Neoplasias.html#fig-7-25">Figura 7.25</a></td><td>Neoplasias</td><td>293</td><td>C1</td></tr><tr id="fig-7-26"><td><a href="c1/07_Neoplasias.html#fig-7-26">Figura 7.26</a></td><td>Neoplasias</td><td>294</td><td>C1</td></tr><tr id="fig-7-27"><td><a href="c1/07_Neoplasias.html#fig-7-27">Figura 7.27</a></td><td>Neoplasias</td><td>296</td><td>C1</td></tr><tr id="fig-7-44"><td><a href="c1/07_Neoplasias.html#fig-7-44">Figura 7.44</a></td><td>Neoplasias</td><td>332</td><td>C1</td></tr><tr id="fig-8-1"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-1">Figura 8.1</a></td><td>Enfermedades infecciosas</td><td>342</td><td>C1</td></tr><tr id="fig-8-3"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-3">Figura 8.3</a></td><td>Enfermedades infecciosas</td><td>345</td><td>C1</td></tr><tr id="fig-8-12"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-12">Figura 8.12</a></td><td>Enfermedades infecciosas</td><td>357</td><td>C1</td></tr><tr id="fig-8-23"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-23">Figura 8.23</a></td><td>Enfermedades infecciosas</td><td>369</td><td>C1</td></tr><tr id="fig-8-26"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-26">Figura 8.26</a></td><td>Enfermedades infecciosas</td><td>373</td><td>C1</td></tr><tr id="fig-8-44"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-44">Figura 8.44</a></td><td>Enfermedades infecciosas</td><td>388</td><td>C1</td></tr><tr id="fig-8-46"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-46">Figura 8.46</a></td><td>Enfermedades infecciosas</td><td>390</td><td>C1</td></tr><tr id="fig-8-48"><td><a href="c1/08_Enfermedades_Infecciosas.html#fig-8-48">Figura 8.48</a></td><td>Enfermedades infecciosas</td><td>391</td><td>C1</td></tr><tr id="fig-9-3"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-3">Figura 9.3</a></td><td>Enfermedades ambientales y nutricionales</td><td>408</td><td>C1</td></tr><tr id="fig-9-6"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-6">Figura 9.6</a></td><td>Enfermedades ambientales y nutricionales</td><td>412</td><td>C1</td></tr><tr id="fig-9-11"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-11">Figura 9.11</a></td><td>Enfermedades ambientales y nutricionales</td><td>419</td><td>C1</td></tr><tr id="fig-9-13"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-13">Figura 9.13</a></td><td>Enfermedades ambientales y nutricionales</td><td>423</td><td>C1</td></tr><tr id="fig-9-15"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-15">Figura 9.15</a></td><td>Enfermedades ambientales y nutricionales</td><td>429</td><td>C1</td></tr><tr id="fig-9-21"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-21">Figura 9.21</a></td><td>Enfermedades ambientales y nutricionales</td><td>434</td><td>C1</td></tr><tr id="fig-9-22"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-22">Figura 9.22</a></td><td>Enfermedades ambientales y nutricionales</td><td>436</td><td>C1</td></tr><tr id="fig-9-26"><td><a href="c1/09_Ambientales_Nutricionales.html#fig-9-26">Figura 9.26</a></td><td>Enfermedades ambientales y nutricionales</td><td>441</td><td>C1</td></tr><tr id="fig-10-5"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-5">Figura 10.5</a></td><td>Enfermedades de la lactancia y la infancia</td><td>457</td><td>C1</td></tr><tr id="fig-10-6"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-6">Figura 10.6</a></td><td>Enfermedades de la lactancia y la infancia</td><td>459</td><td>C1</td></tr><tr id="fig-10-7"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-7">Figura 10.7</a></td><td>Enfermedades de la lactancia y la infancia</td><td>460</td><td>C1</td></tr><tr id="fig-10-8"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-8">Figura 10.8</a></td><td>Enfermedades de la lactancia y la infancia</td><td>461</td><td>C1</td></tr><tr id="fig-10-10"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-10">Figura 10.10</a></td><td>Enfermedades de la lactancia y la infancia</td><td>463</td><td>C1</td></tr><tr id="fig-10-16"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-16">Figura 10.16</a></td><td>Enfermedades de la lactancia y la infancia</td><td>468</td><td>C1</td></tr><tr id="fig-10-23"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-23">Figura 10.23</a></td><td>Enfermedades de la lactancia y la infancia</td><td>478</td><td>C1</td></tr><tr id="fig-10-27"><td><a href="c1/10_Lactancia_Infancia.html#fig-10-27">Figura 10.27</a></td><td>Enfermedades de la lactancia y la infancia</td><td>482</td><td>C1</td></tr><tr id="fig-11-1"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-1">Figura 11.1</a></td><td>Vasos sanguíneos</td><td>486</td><td>C2</td></tr><tr id="fig-11-2"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-2">Figura 11.2</a></td><td>Vasos sanguíneos</td><td>488</td><td>C2</td></tr><tr id="fig-11-6"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-6">Figura 11.6</a></td><td>Vasos sanguíneos</td><td>493</td><td>C2</td></tr><tr id="fig-11-7"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-7">Figura 11.7</a></td><td>Vasos sanguíneos</td><td>494</td><td>C2</td></tr><tr id="fig-11-10"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-10">Figura 11.10</a></td><td>Vasos sanguíneos</td><td>497</td><td>C2</td></tr><tr id="fig-11-14"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-14">Figura 11.14</a></td><td>Vasos sanguíneos</td><td>501</td><td>C2</td></tr><tr id="fig-11-15"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-15">Figura 11.15</a></td><td>Vasos sanguíneos</td><td>501</td><td>C2</td></tr><tr id="fig-11-19"><td><a href="c2/01_Vasos_Sanguineos.html#fig-11-19">Figura 11.19</a></td><td>Vasos sanguíneos</td><td>504</td><td>C2</td></tr><tr id="fig-12-2"><td><a href="c2/02_Corazon.html#fig-12-2">Figura 12.2</a></td><td>Corazón</td><td>531</td><td>C2</td></tr><tr id="fig-12-3"><td><a href="c2/02_Corazon.html#fig-12-3">Figura 12.3</a></td><td>Corazón</td><td>537</td><td>C2</td></tr><tr id="fig-12-5"><td><a href="c2/02_Corazon.html#fig-12-5">Figura 12.5</a></td><td>Corazón</td><td>539</td><td>C2</td></tr><tr id="fig-12-9"><td><a href="c2/02_Corazon.html#fig-12-9">Figura 12.9</a></td><td>Corazón</td><td>544</td><td>C2</td></tr><tr id="fig-12-17"><td><a href="c2/02_Corazon.html#fig-12-17">Figura 12.17</a></td><td>Corazón</td><td>552</td><td>C2</td></tr><tr id="fig-12-20"><td><a href="c2/02_Corazon.html#fig-12-20">Figura 12.20</a></td><td>Corazón</td><td>558</td><td>C2</td></tr><tr id="fig-12-23"><td><a href="c2/02_Corazon.html#fig-12-23">Figura 12.23</a></td><td>Corazón</td><td>562</td><td>C2</td></tr><tr id="fig-12-28"><td><a href="c2/02_Corazon.html#fig-12-28">Figura 12.28</a></td><td>Corazón</td><td>568</td><td>C2</td></tr><tr id="fig-13-1"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-1">Figura 13.1</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>585</td><td>C2</td></tr><tr id="fig-13-4"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-4">Figura 13.4</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>591</td><td>C2</td></tr><tr id="fig-13-5"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-5">Figura 13.5</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>594</td><td>C2</td></tr><tr id="fig-13-6"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-6">Figura 13.6</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>596</td><td>C2</td></tr><tr id="fig-13-10"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-10">Figura 13.10</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>599</td><td>C2</td></tr><tr id="fig-13-20"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-20">Figura 13.20</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>608</td><td>C2</td></tr><tr id="fig-13-24"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-24">Figura 13.24</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>613</td><td>C2</td></tr><tr id="fig-13-33"><td><a href="c2/03_Leucocitos_Ganglios_Bazo_Timo.html#fig-13-33">Figura 13.33</a></td><td>Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</td><td>623</td><td>C2</td></tr><tr id="fig-14-3"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-3">Figura 14.3</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>639</td><td>C2</td></tr><tr id="fig-14-4"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-4">Figura 14.4</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>639</td><td>C2</td></tr><tr id="fig-14-7"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-7">Figura 14.7</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>642</td><td>C2</td></tr><tr id="fig-14-8"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-8">Figura 14.8</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>643</td><td>C2</td></tr><tr id="fig-14-11"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-11">Figura 14.11</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>645</td><td>C2</td></tr><tr id="fig-14-16"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-16">Figura 14.16</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>651</td><td>C2</td></tr><tr id="fig-14-23"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-23">Figura 14.23</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>658</td><td>C2</td></tr><tr id="fig-14-27"><td><a href="c2/04_Eritrocitos_Hemorragias.html#fig-14-27">Figura 14.27</a></td><td>Trastornos de los eritrocitos y trastornos hemorrágicos</td><td>670</td><td>C2</td></tr><tr id="fig-15-3"><td><a href="c2/05_Pulmon.html#fig-15-3">Figura 15.3</a></td><td>Pulmón</td><td>677</td><td>C2</td></tr><tr id="fig-15-4"><td><a href="c2/05_Pulmon.html#fig-15-4">Figura 15.4</a></td><td>Pulmón</td><td>677</td><td>C2</td></tr><tr id="fig-15-8"><td><a href="c2/05_Pulmon.html#fig-15-8">Figura 15.8</a></td><td>Pulmón</td><td>680</td><td>C2</td></tr><tr id="fig-15-13"><td><a href="c2/05_Pulmon.html#fig-15-13">Figura 15.13</a></td><td>Pulmón</td><td>689</td><td>C2</td></tr><tr id="fig-15-20"><td><a href="c2/05_Pulmon.html#fig-15-20">Figura 15.20</a></td><td>Pulmón</td><td>695</td><td>C2</td></tr><tr id="fig-15-29"><td><a href="c2/05_Pulmon.html#fig-15-29">Figura 15.29</a></td><td>Pulmón</td><td>703</td><td>C2</td></tr><tr id="fig-15-32"><td><a href="c2/05_Pulmon.html#fig-15-32">Figura 15.32</a></td><td>Pulmón</td><td>707</td><td>C2</td></tr><tr id="fig-15-43"><td><a href="c2/05_Pulmon.html#fig-15-43">Figura 15.43</a></td><td>Pulmón</td><td>719</td><td>C2</td></tr><tr id="fig-16-4"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-4">Figura 16.4</a></td><td>Cabeza y cuello</td><td>735</td><td>C2</td></tr><tr id="fig-16-6"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-6">Figura 16.6</a></td><td>Cabeza y cuello</td><td>737</td><td>C2</td></tr><tr id="fig-16-7"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-7">Figura 16.7</a></td><td>Cabeza y cuello</td><td>738</td><td>C2</td></tr><tr id="fig-16-13"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-13">Figura 16.13</a></td><td>Cabeza y cuello</td><td>743</td><td>C2</td></tr><tr id="fig-16-15"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-15">Figura 16.15</a></td><td>Cabeza y cuello</td><td>746</td><td>C2</td></tr><tr id="fig-16-18"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-18">Figura 16.18</a></td><td>Cabeza y cuello</td><td>749</td><td>C2</td></tr><tr id="fig-16-20"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-20">Figura 16.20</a></td><td>Cabeza y cuello</td><td>750</td><td>C2</td></tr><tr id="fig-16-21"><td><a href="c2/06_Cabeza_Cuello.html#fig-16-21">Figura 16.21</a></td><td>Cabeza y cuello</td><td>751</td><td>C2</td></tr><tr id="fig-17-8"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-8">Figura 17.8</a></td><td>Tubo digestivo</td><td>761</td><td>C2</td></tr><tr id="fig-17-12"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-12">Figura 17.12</a></td><td>Tubo digestivo</td><td>765</td><td>C2</td></tr><tr id="fig-17-13"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-13">Figura 17.13</a></td><td>Tubo digestivo</td><td>768</td><td>C2</td></tr><tr id="fig-17-26"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-26">Figura 17.26</a></td><td>Tubo digestivo</td><td>784</td><td>C2</td></tr><tr id="fig-17-30"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-30">Figura 17.30</a></td><td>Tubo digestivo</td><td>793</td><td>C2</td></tr><tr id="fig-17-34"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-34">Figura 17.34</a></td><td>Tubo digestivo</td><td>801</td><td>C2</td></tr><tr id="fig-17-49"><td><a href="c2/07_Tubo_Digestivo.html#fig-17-49">Figura 17.49</a></td><td>Tubo digestivo</td><td>815</td><td>C2</td></tr><tr id="fig-18-4"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-4">Figura 18.4</a></td><td>Hígado y vesícula biliar</td><td>827</td><td>C2</td></tr><tr id="fig-18-7"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-7">Figura 18.7</a></td><td>Hígado y vesícula biliar</td><td>830</td><td>C2</td></tr><tr id="fig-18-9"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-9">Figura 18.9</a></td><td>Hígado y vesícula biliar</td><td>832</td><td>C2</td></tr><tr id="fig-18-14"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-14">Figura 18.14</a></td><td>Hígado y vesícula biliar</td><td>838</td><td>C2</td></tr><tr id="fig-18-19"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-19">Figura 18.19</a></td><td>Hígado y vesícula biliar</td><td>845</td><td>C2</td></tr><tr id="fig-18-23"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-23">Figura 18.23</a></td><td>Hígado y vesícula biliar</td><td>849</td><td>C2</td></tr><tr id="fig-18-26"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-26">Figura 18.26</a></td><td>Hígado y vesícula biliar</td><td>852</td><td>C2</td></tr><tr id="fig-18-35"><td><a href="c2/08_Higado_Vesicula_Biliar.html#fig-18-35">Figura 18.35</a></td><td>Hígado y vesícula biliar</td><td>859</td><td>C2</td></tr></tbody>
+    </table>
+  </div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

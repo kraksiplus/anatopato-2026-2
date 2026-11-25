@@ -1,0 +1,91 @@
+{
+  "chapter": 6,
+  "page_id": "c1-06",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "6.1",
+      "page": 202,
+      "caption": "Subgrupos de linfocitos T colaboradores: según las citocinas del momento, los CD4+ vírgenes se diferencian en Th1, Th2 y Th17, con funciones y citocinas distintas.",
+      "section": "Respuesta inmunitaria normal",
+      "after_text": "activados secretan IL-2 y expresan receptores de alta afinidad",
+      "kind": "mechanism",
+      "why": "Los subgrupos Th1/Th2/Th17 son base de las hipersensibilidades y autoinmunidad; citados en Puntos de examen",
+      "image": "assets/fig/cap06/fig-6-1.webp",
+      "width": 1250,
+      "height": 675
+    },
+    {
+      "number": "6.14",
+      "page": 206,
+      "caption": "Secuencia de la hipersensibilidad inmediata (tipo I): el alérgeno induce Th2 e IgE, la IgE se fija a FceRI del mastocito y la reexposición desencadena degranulación y fase tardía.",
+      "section": "Hipersensibilidad: lesión tisular mediada por el sistema inmunitario",
+      "after_text": "Al reexponerse el alérgeno se entrecruzan IgE y FceRI y se desencadena la degranulación",
+      "kind": "mechanism",
+      "why": "Es el mecanismo central del tipo I, la hipersensibilidad más preguntada",
+      "image": "assets/fig/cap06/fig-6-14.webp",
+      "width": 638,
+      "height": 1496
+    },
+    {
+      "number": "6.18",
+      "page": 213,
+      "caption": "Mecanismos de la hipersensibilidad de tipo IV: citocinas de Th1 y Th17 que causan inflamación y activan macrófagos, y lisis directa por CTL CD8+.",
+      "section": "Hipersensibilidad: lesión tisular mediada por el sistema inmunitario",
+      "after_text": "infiltrado mononuclear perivascular y granulomas (respuesta a antígenos",
+      "kind": "mechanism",
+      "why": "Completa la clasificación de los cuatro tipos; explica granulomas y dermatitis de contacto",
+      "image": "assets/fig/cap06/fig-6-18.webp",
+      "width": 1442,
+      "height": 796
+    },
+    {
+      "number": "6.24",
+      "page": 223,
+      "caption": "Patrones de tinción de los anticuerpos antinucleares: homogéneo, moteado, nucleolar y centromérico, cada uno sugerente de distintos autoanticuerpos.",
+      "section": "Enfermedades autoinmunitarias",
+      "after_text": "Se detectan por inmunofluorescencia indirecta y su patrón orienta",
+      "kind": "diagnostic",
+      "why": "Los patrones de ANA son diagnóstico diferencial clásico de las enfermedades autoinmunitarias",
+      "image": "assets/fig/cap06/fig-6-24.webp",
+      "width": 1451,
+      "height": 1111
+    },
+    {
+      "number": "6.36",
+      "page": 239,
+      "caption": "Rechazo crónico del injerto: arterioesclerosis del injerto por citocinas de linfocitos T y anticuerpos, con glomerulopatía por trasplante en el riñón.",
+      "section": "Rechazo de trasplantes de tejidos",
+      "after_text": "Arterioesclerosis del injerto (proliferación de la íntima) y fibrosis",
+      "kind": "diagnostic",
+      "why": "La arterioesclerosis del injerto es la lesión característica del rechazo crónico, citada en Puntos de examen",
+      "image": "assets/fig/cap06/fig-6-36.webp",
+      "width": 1463,
+      "height": 851
+    },
+    {
+      "number": "6.42",
+      "page": 253,
+      "caption": "Patogenia de la infección por VIH-1: entrada por mucosas, propagación al tejido linfoide, viremia y pérdida progresiva de linfocitos T CD4+.",
+      "section": "Síndrome de inmunodeficiencia adquirida (sida)",
+      "after_text": "infección aguda de linfocitos T y DC de las mucosas, viremia con diseminación",
+      "kind": "mechanism",
+      "why": "Esquema patogénico central del sida, sección clave del capítulo",
+      "image": "assets/fig/cap06/fig-6-42.webp",
+      "width": 735,
+      "height": 1477
+    },
+    {
+      "number": "6.47",
+      "page": 263,
+      "caption": "Amiloidosis en hígado con rojo Congo: depósitos rojizos en paredes vasculares y sinusoides que muestran birrefringencia verde manzana con luz polarizada.",
+      "section": "Amiloidosis",
+      "after_text": "muestra birrefringencia verde manzana con luz polarizada; al microscopio electrónico",
+      "kind": "diagnostic",
+      "why": "El hallazgo rojo Congo con birrefringencia verde manzana es patognomónico y muy preguntado",
+      "image": "assets/fig/cap06/fig-6-47.webp",
+      "width": 1410,
+      "height": 368
+    }
+  ]
+}

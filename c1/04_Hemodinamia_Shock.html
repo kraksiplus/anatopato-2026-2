@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 4. Trastornos hemodinámicos, enfermedad tromboembólica y shock</h1>
-    <p class="lede">Guía 04 de 10. Resumen completo del capítulo 4 con 31 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>04 de 10</strong></div><div><span>Capítulo</span><strong>4</strong></div><div><span>Páginas</span><strong>115-140</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>31</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 04 de 10. Resumen completo del capítulo 4 con 31 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>04 de 10</strong></div><div><span>Capítulo</span><strong>4</strong></div><div><span>Páginas</span><strong>115-140</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>31</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -476,6 +532,7 @@
         <li><a href="#sec-08-infarto">Infarto</a></li>
         <li><a href="#sec-09-shock">Shock</a></li>
         <li><a href="#sec-10-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -614,6 +671,15 @@
 <li><strong>Congestión hepática aguda</strong>: vena central y sinusoides distendidos. El área centrolobulillar (extremo distal de la irrigación hepática) sufre necrosis isquémica; los hepatocitos periportales, mejor oxigenados, desarrollan degeneración grasa.</li>
 <li><strong>Congestión hepática pasiva crónica</strong>: regiones centrolobulillares rojizas y ligeramente hundidas por muerte celular, destacando sobre un fondo marrón no congestionado (<strong>hígado en nuez moscada</strong>). Histología: hemorragia centrolobulillar, macrófagos con hemosiderina y pérdida y necrosis de hepatocitos de grado variable.</li>
 </ul>
+<figure class="fig" id="fig-4-3">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-3.webp" data-caption="Figura 4.3. Hígado con congestión pasiva crónica: áreas centrolobulillares rojizas y hundidas sobre parénquima marrón viable, formando el patrón de hígado en nuez moscada." data-alt="Figura 4.3. Hígado con congestión pasiva crónica: áreas centrolobulillares rojizas y hundidas sobre parénquima marrón viable, formando el patrón de hígado en nuez moscada. Robbins y Cotran, 10ª ed., p. 118.">
+    <img src="../assets/fig/cap04/fig-4-3.webp" width="1474" height="466" loading="lazy" decoding="async" alt="Figura 4.3. Hígado con congestión pasiva crónica: áreas centrolobulillares rojizas y hundidas sobre parénquima marrón viable, formando el patrón de hígado en nuez moscada. Robbins y Cotran, 10ª ed., p. 118.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.3.</strong> Hígado con congestión pasiva crónica: áreas centrolobulillares rojizas y hundidas sobre parénquima marrón viable, formando el patrón de hígado en nuez moscada.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 118. <a href="../creditos.html#fig-4-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-04-hemostasia-trastornos-hemorragicos-y-trombosis" class="card">
 <div class="section-kicker"><span class="n">04</span> Sección</div>
@@ -632,6 +698,15 @@
 <li><strong>Hemostasia secundaria (depósito de fibrina)</strong>: la lesión expone el <strong>factor tisular</strong>, glucoproteína procoagulante de membrana expresada por células subendoteliales (músculo liso, fibroblastos). Este une y activa el factor VII, desencadenando una cascada que culmina en la generación de trombina. La trombina escinde el fibrinógeno en fibrina insoluble y activa también intensamente las plaquetas, con lo que consolida el tapón inicial en un coágulo definitivo.</li>
 <li><strong>Estabilización y reabsorción del coágulo</strong>: se ponen en marcha mecanismos contrarreguladores (p. ej., el <strong>activador del plasminógeno tisular [t-PA]</strong> producido por las células endoteliales, y la trombomodulina) que limitan la coagulación a la zona de lesión y terminan por provocar la reabsorción del coágulo y la reparación del tejido.</li>
 </ol>
+<figure class="fig" id="fig-4-4">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-4.webp" data-caption="Figura 4.4. Secuencia de la hemostasia en la zona de lesión vascular: vasoconstricción arteriolar, tapón plaquetario y depósito de fibrina." data-alt="Figura 4.4. Secuencia de la hemostasia en la zona de lesión vascular: vasoconstricción arteriolar, tapón plaquetario y depósito de fibrina. Robbins y Cotran, 10ª ed., p. 119.">
+    <img src="../assets/fig/cap04/fig-4-4.webp" width="740" height="1500" loading="lazy" decoding="async" alt="Figura 4.4. Secuencia de la hemostasia en la zona de lesión vascular: vasoconstricción arteriolar, tapón plaquetario y depósito de fibrina. Robbins y Cotran, 10ª ed., p. 119.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.4.</strong> Secuencia de la hemostasia en la zona de lesión vascular: vasoconstricción arteriolar, tapón plaquetario y depósito de fibrina.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 119. <a href="../creditos.html#fig-4-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="plaquetas">Plaquetas</h3>
 <p>Fragmentos celulares sin núcleo, en forma de disco, que se desprenden de los megacariocitos de la médula ósea. Forman el tapón primario y aportan una superficie que une y concentra los factores de la coagulación activados. Dependen de receptores de glucoproteínas, un citoesqueleto contráctil y dos tipos de gránulos:</p>
 <ul>
@@ -691,6 +766,15 @@
 <li>Aunque el TP y el TTP son muy útiles para evaluar a los pacientes, no recapitulan la coagulación in vivo. Deficits de factores V, VII, VIII, IX y X: hemorragia moderada o grave; carencia de protrombina: probablemente incompatible con la vida; déficit de XI: hemorragia leve; carencia de XII: sin hemorragia, sino susceptibilidad a las trombosis (se apoya en su implicación en la vía de la bradicinina y la fibrinólisis).</li>
 <li>En organismos vivos, el complejo <strong>factor VIIa/factor tisular es el activador más importante del factor IX</strong>, y el complejo <strong>factor IXa/factor VIIIa el más importante del factor X</strong>; la trombina amplifica la coagulación activando además los factores XI, V y VIII (retroalimentación).</li>
 </ul>
+<figure class="fig" id="fig-4-6">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-6.webp" data-caption="Figura 4.6. Cascada de la coagulación en el laboratorio (vías intrínseca y extrínseca, TP y TTP) y en el organismo vivo, iniciada por el factor tisular." data-alt="Figura 4.6. Cascada de la coagulación en el laboratorio (vías intrínseca y extrínseca, TP y TTP) y en el organismo vivo, iniciada por el factor tisular. Robbins y Cotran, 10ª ed., p. 121.">
+    <img src="../assets/fig/cap04/fig-4-6.webp" width="1457" height="699" loading="lazy" decoding="async" alt="Figura 4.6. Cascada de la coagulación en el laboratorio (vías intrínseca y extrínseca, TP y TTP) y en el organismo vivo, iniciada por el factor tisular. Robbins y Cotran, 10ª ed., p. 121.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.6.</strong> Cascada de la coagulación en el laboratorio (vías intrínseca y extrínseca, TP y TTP) y en el organismo vivo, iniciada por el factor tisular.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 121. <a href="../creditos.html#fig-4-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>Funciones de la <strong>trombina</strong>, el factor más importante de la coagulación y nexo entre hemostasia, inflamación y reparación:</p>
 <ul>
 <li>Convierte el fibrinógeno soluble en monómeros de fibrina que polimerizan en fibrillas insolubles.</li>
@@ -779,6 +863,15 @@
 <li><strong>Hipercoagulabilidad de la sangre</strong></li>
 </ol>
 <p>La integridad del endotelio es el factor más importante. La lesión del endotelio puede promover la trombosis alterando el flujo local y afectando a la coagulabilidad; el flujo anómalo (estasis o turbulencia), a su vez, puede causar lesión endotelial. Estos factores actúan de forma independiente o combinada.</p>
+<figure class="fig" id="fig-4-12">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-12.webp" data-caption="Figura 4.12. Triada de Virchow en la trombosis: lesión endotelial, alteración del flujo sanguíneo e hipercoagulabilidad, que se potencian entre sí." data-alt="Figura 4.12. Triada de Virchow en la trombosis: lesión endotelial, alteración del flujo sanguíneo e hipercoagulabilidad, que se potencian entre sí. Robbins y Cotran, 10ª ed., p. 125.">
+    <img src="../assets/fig/cap04/fig-4-12.webp" width="757" height="701" loading="lazy" decoding="async" alt="Figura 4.12. Triada de Virchow en la trombosis: lesión endotelial, alteración del flujo sanguíneo e hipercoagulabilidad, que se potencian entre sí. Robbins y Cotran, 10ª ed., p. 125.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.12.</strong> Triada de Virchow en la trombosis: lesión endotelial, alteración del flujo sanguíneo e hipercoagulabilidad, que se potencian entre sí.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 125. <a href="../creditos.html#fig-4-12">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="lesión-endotelial">Lesión endotelial</h3>
 <ul>
 <li>Subyace casi inevitablemente a la formación de trombos en el <strong>corazón</strong> y la <strong>circulación arterial</strong>, donde la alta velocidad del flujo impide la coagulación clásica; por eso los trombos cardiacos y arteriales son muy ricos en plaquetas. La activación plaquetaria es un requisito previo para la trombosis arterial, y de ahí el uso de ácido acetilsalicílico e inhibidores de la función plaquetaria en la enfermedad arterial coronaria y el infarto agudo de miocardio.</li>
@@ -895,6 +988,15 @@
 <li><strong>Coágulos post mortem</strong>: gelatinosos; porción inferior roja oscura (eritrocitos depositados por la gravedad) y porción superior amarilla ("grasa de pollo"); habitualmente <strong>no adheridos</strong> a la pared del vaso.</li>
 <li><strong>Vegetaciones</strong>: trombos sobre las válvulas cardiacas; pueden estar <strong>infectadas</strong> o ser <strong>estériles</strong>. Las bacterias y los hongos transportados por la sangre se adhieren a válvulas previamente dañadas (p. ej., cardiopatía reumática) o causan directamente lesión vascular; en ambos casos, la lesión endotelial y la alteración del flujo inducen la formación de grandes masas trombóticas (<strong>endocarditis infecciosa</strong>). También aparecen vegetaciones estériles en estados de hipercoagulabilidad (<strong>endocarditis trombóticas no bacterianas</strong>) y la endocarditis verrugosa estéril (<strong>endocarditis de Libman-Sacks</strong>) del lupus eritematoso sistémico.</li>
 </ul>
+<figure class="fig" id="fig-4-14">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-14.webp" data-caption="Figura 4.14. Trombos murales: en la punta de los ventrículos sobre cicatrices fibrosas y en un aneurisma de la aorta abdominal sobre lesiones ateroescleróticas." data-alt="Figura 4.14. Trombos murales: en la punta de los ventrículos sobre cicatrices fibrosas y en un aneurisma de la aorta abdominal sobre lesiones ateroescleróticas. Robbins y Cotran, 10ª ed., p. 129.">
+    <img src="../assets/fig/cap04/fig-4-14.webp" width="1458" height="447" loading="lazy" decoding="async" alt="Figura 4.14. Trombos murales: en la punta de los ventrículos sobre cicatrices fibrosas y en un aneurisma de la aorta abdominal sobre lesiones ateroescleróticas. Robbins y Cotran, 10ª ed., p. 129.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.14.</strong> Trombos murales: en la punta de los ventrículos sobre cicatrices fibrosas y en un aneurisma de la aorta abdominal sobre lesiones ateroescleróticas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 129. <a href="../creditos.html#fig-4-14">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="evolución-del-trombo">Evolución del trombo</h3>
 <p>En los días-semanas siguientes, los trombos pasan por alguna combinación de los cuatro procesos siguientes:</p>
 <ol type="1">
@@ -942,6 +1044,15 @@
 <li><strong>Embolia paradójica</strong>: rara vez, un émbolo venoso atraviesa un defecto interauricular o interventricular y accede a la circulación arterial sistémica.</li>
 <li>Quien sufre una EP tiene un <strong>alto riesgo de sufrir otra</strong>.</li>
 </ul>
+<figure class="fig" id="fig-4-16">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-16.webp" data-caption="Figura 4.16. Émbolo de una trombosis venosa profunda de la extremidad inferior encajado en la bifurcación de la arteria pulmonar." data-alt="Figura 4.16. Émbolo de una trombosis venosa profunda de la extremidad inferior encajado en la bifurcación de la arteria pulmonar. Robbins y Cotran, 10ª ed., p. 131.">
+    <img src="../assets/fig/cap04/fig-4-16.webp" width="700" height="520" loading="lazy" decoding="async" alt="Figura 4.16. Émbolo de una trombosis venosa profunda de la extremidad inferior encajado en la bifurcación de la arteria pulmonar. Robbins y Cotran, 10ª ed., p. 131.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.16.</strong> Émbolo de una trombosis venosa profunda de la extremidad inferior encajado en la bifurcación de la arteria pulmonar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 131. <a href="../creditos.html#fig-4-16">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="tromboembolia-sistémica">Tromboembolia sistémica</h3>
 <ul>
 <li>La mayoría de los émbolos sistémicos (<strong>80%</strong>) procede de <strong>trombos murales intracardiacos</strong>:
@@ -1039,6 +1150,15 @@
 <li><strong>Excepción</strong>: los infartos del conocimiento del sistema nervioso central resultan en <strong>necrosis licuefactiva</strong>.</li>
 <li><strong>Infartos sépticos</strong>: cuando hay embolización de <strong>vegetaciones infectadas de las válvulas cardiacas</strong> o colonización microbiana del tejido necrótico. En estos casos, el infarto se convierte en un <strong>absceso</strong>, con una reacción inflamatoria mayor; la fase final de organización sigue el patrón ya descrito.</li>
 </ul>
+<figure class="fig" id="fig-4-19">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-19.webp" data-caption="Figura 4.19. Infartos rojo y blanco: infarto rojo pulmonar hemorrágico en forma de cuna e infarto blanco esplénico bien delimitado." data-alt="Figura 4.19. Infartos rojo y blanco: infarto rojo pulmonar hemorrágico en forma de cuna e infarto blanco esplénico bien delimitado. Robbins y Cotran, 10ª ed., p. 133.">
+    <img src="../assets/fig/cap04/fig-4-19.webp" width="743" height="614" loading="lazy" decoding="async" alt="Figura 4.19. Infartos rojo y blanco: infarto rojo pulmonar hemorrágico en forma de cuna e infarto blanco esplénico bien delimitado. Robbins y Cotran, 10ª ed., p. 133.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.19.</strong> Infartos rojo y blanco: infarto rojo pulmonar hemorrágico en forma de cuna e infarto blanco esplénico bien delimitado.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 133. <a href="../creditos.html#fig-4-19">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="factores-que-influyen-en-el-desarrollo-del-infarto">Factores que influyen en el desarrollo del infarto</h3>
 <p>Una oclusión vascular tiene efectos desde casi nulos hasta una necrosis suficiente para causar la muerte; los <strong>determinantes principales</strong> son:</p>
 <ul>
@@ -1096,6 +1216,15 @@
 </ul>
 <h3 id="patogenia-del-shock-séptico">Patogenia del shock séptico</h3>
 <p>Los productos microbianos (PAMP) activan las células endoteliales y humoral-celulares del sistema innato, iniciando cascadas de procesos orientados al <strong>insuficiencia multiorgánica terminal</strong>. Mecanismos principales:</p>
+<figure class="fig" id="fig-4-21">
+  <a class="fig-open" href="../assets/fig/cap04/fig-4-21.webp" data-caption="Figura 4.21. Vías principales en la patogenia del shock séptico: los productos microbianos activan el sistema inmunitario innato y conducen a la insuficiencia multiorgánica." data-alt="Figura 4.21. Vías principales en la patogenia del shock séptico: los productos microbianos activan el sistema inmunitario innato y conducen a la insuficiencia multiorgánica. Robbins y Cotran, 10ª ed., p. 136.">
+    <img src="../assets/fig/cap04/fig-4-21.webp" width="1474" height="970" loading="lazy" decoding="async" alt="Figura 4.21. Vías principales en la patogenia del shock séptico: los productos microbianos activan el sistema inmunitario innato y conducen a la insuficiencia multiorgánica. Robbins y Cotran, 10ª ed., p. 136.">
+  </a>
+  <figcaption>
+    <strong>Figura 4.21.</strong> Vías principales en la patogenia del shock séptico: los productos microbianos activan el sistema inmunitario innato y conducen a la insuficiencia multiorgánica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 136. <a href="../creditos.html#fig-4-21">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <ul>
 <li><strong>Respuestas inflamatorias y antiinflamatorias</strong>:
 <ul>
@@ -1170,6 +1299,11 @@
 <li><strong>Shock</strong>: cardiógeno (necrosis de la bomba, p. ej., infarto), hipovolémico (pérdida de volumen, p. ej., hemorragia) y distributivo (séptico, anafiláctico, neurógeno). Conocer la clínica de cada tipo (frío y pálido en hipovolémico y cardiógeno; caliente y enrojecido en el séptico) y las tres fases del shock (no progresiva, progresiva e irreversible).</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-4-3" aria-label="Figura 4.3"><img src="../assets/fig/cap04/fig-4-3.webp" loading="lazy" decoding="async" alt="Figura 4.3"><span>Figura 4.3</span></a><a class="fig-thumb" href="#fig-4-4" aria-label="Figura 4.4"><img src="../assets/fig/cap04/fig-4-4.webp" loading="lazy" decoding="async" alt="Figura 4.4"><span>Figura 4.4</span></a><a class="fig-thumb" href="#fig-4-6" aria-label="Figura 4.6"><img src="../assets/fig/cap04/fig-4-6.webp" loading="lazy" decoding="async" alt="Figura 4.6"><span>Figura 4.6</span></a><a class="fig-thumb" href="#fig-4-12" aria-label="Figura 4.12"><img src="../assets/fig/cap04/fig-4-12.webp" loading="lazy" decoding="async" alt="Figura 4.12"><span>Figura 4.12</span></a><a class="fig-thumb" href="#fig-4-14" aria-label="Figura 4.14"><img src="../assets/fig/cap04/fig-4-14.webp" loading="lazy" decoding="async" alt="Figura 4.14"><span>Figura 4.14</span></a><a class="fig-thumb" href="#fig-4-16" aria-label="Figura 4.16"><img src="../assets/fig/cap04/fig-4-16.webp" loading="lazy" decoding="async" alt="Figura 4.16"><span>Figura 4.16</span></a><a class="fig-thumb" href="#fig-4-19" aria-label="Figura 4.19"><img src="../assets/fig/cap04/fig-4-19.webp" loading="lazy" decoding="async" alt="Figura 4.19"><span>Figura 4.19</span></a><a class="fig-thumb" href="#fig-4-21" aria-label="Figura 4.21"><img src="../assets/fig/cap04/fig-4-21.webp" loading="lazy" decoding="async" alt="Figura 4.21"><span>Figura 4.21</span></a></div>
 </section>
   </main>
 </div>
@@ -1177,7 +1311,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1195,8 +1336,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1216,6 +1357,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

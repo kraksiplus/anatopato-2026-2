@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 6. Enfermedades del sistema inmunitario</h1>
-    <p class="lede">Guía 06 de 10. Resumen completo del capítulo 6 con 73 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>06 de 10</strong></div><div><span>Capítulo</span><strong>6</strong></div><div><span>Páginas</span><strong>189-266</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>73</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 06 de 10. Resumen completo del capítulo 6 con 73 filas de tabla. Sin citas por página: material del Certamen 1. 7 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>06 de 10</strong></div><div><span>Capítulo</span><strong>6</strong></div><div><span>Páginas</span><strong>189-266</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>7</strong></div><div><span>Tablas</span><strong>73</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -475,6 +531,7 @@
         <li><a href="#sec-07-sindrome-de-inmunodeficiencia-adquirida-sida">Síndrome de inmunodeficiencia adquirida (sida)</a></li>
         <li><a href="#sec-08-amiloidosis">Amiloidosis</a></li>
         <li><a href="#sec-09-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -654,6 +711,15 @@
 <li>Los linfocitos T vírgenes activados secretan <strong>IL-2</strong> y expresan receptores de alta afinidad, lo que produce expansión clonal.</li>
 <li>Los linfocitos CD4+ colaboradores actúan mediante <strong>CD40L</strong> y citocinas.</li>
 </ul>
+<figure class="fig" id="fig-6-1">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-1.webp" data-caption="Figura 6.1. Subgrupos de linfocitos T colaboradores: según las citocinas del momento, los CD4+ vírgenes se diferencian en Th1, Th2 y Th17, con funciones y citocinas distintas." data-alt="Figura 6.1. Subgrupos de linfocitos T colaboradores: según las citocinas del momento, los CD4+ vírgenes se diferencian en Th1, Th2 y Th17, con funciones y citocinas distintas. Robbins y Cotran, 10ª ed., p. 202.">
+    <img src="../assets/fig/cap06/fig-6-1.webp" width="1250" height="675" loading="lazy" decoding="async" alt="Figura 6.1. Subgrupos de linfocitos T colaboradores: según las citocinas del momento, los CD4+ vírgenes se diferencian en Th1, Th2 y Th17, con funciones y citocinas distintas. Robbins y Cotran, 10ª ed., p. 202.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.1.</strong> Subgrupos de linfocitos T colaboradores: según las citocinas del momento, los CD4+ vírgenes se diferencian en Th1, Th2 y Th17, con funciones y citocinas distintas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 202. <a href="../creditos.html#fig-6-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Respuesta inmunitaria normal" tabindex="0"><table>
 <thead>
 <tr>
@@ -756,6 +822,15 @@
 <li>La IgE se une al receptor de alta afinidad <strong>FceRI</strong> de mastocitos y basófilos. Los <strong>mastocitos</strong> residen sobre todo cerca de vasos pequeños y tejidos subepiteliales; los <strong>basófilos</strong> circulan en sangre.</li>
 <li>Al reexponerse el alérgeno se entrecruzan IgE y FceRI y se desencadena la degranulación y la síntesis de mediadores nuevos. Los mastocitos también pueden activarse sin IgE por <strong>anafilotoxinas</strong> C5a y C3a, quimiocinas como IL-8, fármacos (codeína, morfina) y estímulos físicos.</li>
 </ol>
+<figure class="fig" id="fig-6-14">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-14.webp" data-caption="Figura 6.14. Secuencia de la hipersensibilidad inmediata (tipo I): el alérgeno induce Th2 e IgE, la IgE se fija a FceRI del mastocito y la reexposición desencadena degranulación y fase tardía." data-alt="Figura 6.14. Secuencia de la hipersensibilidad inmediata (tipo I): el alérgeno induce Th2 e IgE, la IgE se fija a FceRI del mastocito y la reexposición desencadena degranulación y fase tardía. Robbins y Cotran, 10ª ed., p. 206.">
+    <img src="../assets/fig/cap06/fig-6-14.webp" width="638" height="1496" loading="lazy" decoding="async" alt="Figura 6.14. Secuencia de la hipersensibilidad inmediata (tipo I): el alérgeno induce Th2 e IgE, la IgE se fija a FceRI del mastocito y la reexposición desencadena degranulación y fase tardía. Robbins y Cotran, 10ª ed., p. 206.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.14.</strong> Secuencia de la hipersensibilidad inmediata (tipo I): el alérgeno induce Th2 e IgE, la IgE se fija a FceRI del mastocito y la reexposición desencadena degranulación y fase tardía.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 206. <a href="../creditos.html#fig-6-14">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
 <thead>
 <tr>
@@ -889,6 +964,15 @@
 <li><strong>Citólisis por CTL</strong> (CD8+), que matan directamente células diana (infectadas por virus, tumorales o de injertos).</li>
 </ol>
 <p>Morfología: infiltrado mononuclear perivascular y <strong>granulomas</strong> (respuesta a antígenos no eliminables, como microbios intracelulares o partículas no degradables). Ejemplos Th1: reacción a la tuberculina, dermatitis de contacto, rechazo del injerto. Ejemplos Th17: psoriasis, asma, enfermedad inflamatoria intestinal.</p>
+<figure class="fig" id="fig-6-18">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-18.webp" data-caption="Figura 6.18. Mecanismos de la hipersensibilidad de tipo IV: citocinas de Th1 y Th17 que causan inflamación y activan macrófagos, y lisis directa por CTL CD8+." data-alt="Figura 6.18. Mecanismos de la hipersensibilidad de tipo IV: citocinas de Th1 y Th17 que causan inflamación y activan macrófagos, y lisis directa por CTL CD8+. Robbins y Cotran, 10ª ed., p. 213.">
+    <img src="../assets/fig/cap06/fig-6-18.webp" width="1442" height="796" loading="lazy" decoding="async" alt="Figura 6.18. Mecanismos de la hipersensibilidad de tipo IV: citocinas de Th1 y Th17 que causan inflamación y activan macrófagos, y lisis directa por CTL CD8+. Robbins y Cotran, 10ª ed., p. 213.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.18.</strong> Mecanismos de la hipersensibilidad de tipo IV: citocinas de Th1 y Th17 que causan inflamación y activan macrófagos, y lisis directa por CTL CD8+.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 213. <a href="../creditos.html#fig-6-18">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Hipersensibilidad: lesión tisular mediada por el sistema inmunitario" tabindex="0"><table>
 <thead>
 <tr>
@@ -990,6 +1074,15 @@
 <li><strong>Anti-ADN bicatenario</strong> y <strong>anti-Sm</strong> son <strong>virtualmente diagnósticos</strong> de LES.</li>
 <li><strong>Antifosfolipídicos</strong>: contra proteínas que se unen a fosfolípidos (protrombina, anexina V, beta2-glucoproteína I). Producen un estado <strong>hipercoagulable</strong> (trombosis, abortos de repetición), dan falsos positivos en la prueba de sífilis y alargan las pruebas de coagulación (<strong>anticoagulante lúpico</strong>).</li>
 </ul>
+<figure class="fig" id="fig-6-24">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-24.webp" data-caption="Figura 6.24. Patrones de tinción de los anticuerpos antinucleares: homogéneo, moteado, nucleolar y centromérico, cada uno sugerente de distintos autoanticuerpos." data-alt="Figura 6.24. Patrones de tinción de los anticuerpos antinucleares: homogéneo, moteado, nucleolar y centromérico, cada uno sugerente de distintos autoanticuerpos. Robbins y Cotran, 10ª ed., p. 223.">
+    <img src="../assets/fig/cap06/fig-6-24.webp" width="1451" height="1111" loading="lazy" decoding="async" alt="Figura 6.24. Patrones de tinción de los anticuerpos antinucleares: homogéneo, moteado, nucleolar y centromérico, cada uno sugerente de distintos autoanticuerpos. Robbins y Cotran, 10ª ed., p. 223.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.24.</strong> Patrones de tinción de los anticuerpos antinucleares: homogéneo, moteado, nucleolar y centromérico, cada uno sugerente de distintos autoanticuerpos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 223. <a href="../creditos.html#fig-6-24">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>Patogenia (genes + ambiente):</p>
 <ul>
 <li><strong>Genes</strong>: HLA-DQ ligado a autoanticuerpos específicos; deficiencias de complemento (<strong>C2, C4, C1q</strong>) que dificultan la eliminación de inmunocomplejos; muchos loci de señalización linfocitaria e interferón (que explican como mucho el 20% de la predisposición).</li>
@@ -1073,6 +1166,15 @@
 </tbody>
 </table></div>
 <p>Para aumentar la supervivencia: compatibilidad de <strong>grupos sanguíneos</strong> y prueba cruzada (evita el rechazo hiperagudo) e <strong>inmunodepresores</strong> (corticoesteroides, micofenolato mofetilo, y sobre todo <strong>inhibidores de la calcineurina</strong>: tacrolimús y ciclosporina, y anticuerpos anti-linfocito T). Complicaciones: infecciones oportunistas, leucopenia y anemia (micofenolato) y nefrotoxicidad (ciclosporina).</p>
+<figure class="fig" id="fig-6-36">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-36.webp" data-caption="Figura 6.36. Rechazo crónico del injerto: arterioesclerosis del injerto por citocinas de linfocitos T y anticuerpos, con glomerulopatía por trasplante en el riñón." data-alt="Figura 6.36. Rechazo crónico del injerto: arterioesclerosis del injerto por citocinas de linfocitos T y anticuerpos, con glomerulopatía por trasplante en el riñón. Robbins y Cotran, 10ª ed., p. 239.">
+    <img src="../assets/fig/cap06/fig-6-36.webp" width="1463" height="851" loading="lazy" decoding="async" alt="Figura 6.36. Rechazo crónico del injerto: arterioesclerosis del injerto por citocinas de linfocitos T y anticuerpos, con glomerulopatía por trasplante en el riñón. Robbins y Cotran, 10ª ed., p. 239.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.36.</strong> Rechazo crónico del injerto: arterioesclerosis del injerto por citocinas de linfocitos T y anticuerpos, con glomerulopatía por trasplante en el riñón.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 239. <a href="../creditos.html#fig-6-36">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Trasplante de células madre hematopoyéticas (HSC)</strong>: se usa para tratar neoplasias hematológicas e inmunodeficiencias; requiere compatibilidad del HLA (idealmente hermanos, 25% de probabilidad de coincidencia) y puede complicarse con <strong>enfermedad injerto contra huésped</strong>.</p>
 
 </section><section id="sec-06-enfermedades-por-inmunodeficiencia" class="card">
@@ -1184,6 +1286,15 @@
 <li><strong>Morfología</strong>: hiperplasia folicular de linfocitos B en fases precoces, seguida de involución linfoide con ganglios pequeños y atróficos; infecciones oportunistas y respuestas inflamatorias atípicas (p. ej., sin granulomas por falta de CD4+).</li>
 <li><strong>Clínica y tratamiento</strong>: infecciones oportunistas, linfomas B y sarcoma de Kaposi (<strong>SK</strong>), y anomalías del SNC. El <strong>TARGA</strong> (tratamiento antirretroviral) ha reducido la mortalidad, pero la cura sigue siendo esquiva y no hay vacuna eficaz por la gran variabilidad del virus.</li>
 </ul>
+<figure class="fig" id="fig-6-42">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-42.webp" data-caption="Figura 6.42. Patogenia de la infección por VIH-1: entrada por mucosas, propagación al tejido linfoide, viremia y pérdida progresiva de linfocitos T CD4+." data-alt="Figura 6.42. Patogenia de la infección por VIH-1: entrada por mucosas, propagación al tejido linfoide, viremia y pérdida progresiva de linfocitos T CD4+. Robbins y Cotran, 10ª ed., p. 253.">
+    <img src="../assets/fig/cap06/fig-6-42.webp" width="735" height="1477" loading="lazy" decoding="async" alt="Figura 6.42. Patogenia de la infección por VIH-1: entrada por mucosas, propagación al tejido linfoide, viremia y pérdida progresiva de linfocitos T CD4+. Robbins y Cotran, 10ª ed., p. 253.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.42.</strong> Patogenia de la infección por VIH-1: entrada por mucosas, propagación al tejido linfoide, viremia y pérdida progresiva de linfocitos T CD4+.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 253. <a href="../creditos.html#fig-6-42">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-08-amiloidosis" class="card">
 <div class="section-kicker"><span class="n">08</span> Sección</div>
@@ -1197,6 +1308,15 @@
 <li><strong>Morfología por órgano</strong>: <strong>riñón</strong> (el más frecuente y grave; depósitos glomerulares que llevan a proteinuria, síndrome nefrótico e insuficiencia renal); <strong>bazo</strong> (bazo sagú con depósitos foliculares, o bazo lardáceo con afectación de la pulpa roja); <strong>hígado</strong> (hepatomegalia, amiloide en el espacio de Disse); <strong>corazón</strong> (miocardiopatía restrictiva y arritmias); y otros (macroglosia, vías respiratorias, nervios).</li>
 <li><strong>Clínica y pronóstico</strong>: síntomas iniciales inespecíficos (debilidad, pérdida de peso, síncope) y luego afectación renal, cardiaca y digestiva. Diagnóstico por biopsia (riñón, recto, encía o grasa abdominal con rojo Congo), electroforesis e inmunoelectroforesis, y gammagrafía con amiloide P. La amiloidosis AL tiene una mediana de supervivencia de unos 2 años.</li>
 </ul>
+<figure class="fig" id="fig-6-47">
+  <a class="fig-open" href="../assets/fig/cap06/fig-6-47.webp" data-caption="Figura 6.47. Amiloidosis en hígado con rojo Congo: depósitos rojizos en paredes vasculares y sinusoides que muestran birrefringencia verde manzana con luz polarizada." data-alt="Figura 6.47. Amiloidosis en hígado con rojo Congo: depósitos rojizos en paredes vasculares y sinusoides que muestran birrefringencia verde manzana con luz polarizada. Robbins y Cotran, 10ª ed., p. 263.">
+    <img src="../assets/fig/cap06/fig-6-47.webp" width="1410" height="368" loading="lazy" decoding="async" alt="Figura 6.47. Amiloidosis en hígado con rojo Congo: depósitos rojizos en paredes vasculares y sinusoides que muestran birrefringencia verde manzana con luz polarizada. Robbins y Cotran, 10ª ed., p. 263.">
+  </a>
+  <figcaption>
+    <strong>Figura 6.47.</strong> Amiloidosis en hígado con rojo Congo: depósitos rojizos en paredes vasculares y sinusoides que muestran birrefringencia verde manzana con luz polarizada.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 263. <a href="../creditos.html#fig-6-47">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Reconocimiento y formas</span>Fibrillas de 7,5 a 10 nm en hoja beta: rojo Congo con birrefringencia verde manzana a luz polarizada. AL (cadenas ligeras, primaria, mediana de supervivencia 2 años) y AA (reactiva a inflamación crónica); riñón es el órgano más afectado y grave.</div>
 </section><section id="sec-09-puntos-de-examen" class="card">
@@ -1221,6 +1341,11 @@
 <li><strong>Amiloidosis</strong>: proteínas mal plegadas en lámina beta, rojo Congo con birrefringencia verde manzana; formas <strong>AL</strong> y <strong>AA</strong> entre las principales.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-6-1" aria-label="Figura 6.1"><img src="../assets/fig/cap06/fig-6-1.webp" loading="lazy" decoding="async" alt="Figura 6.1"><span>Figura 6.1</span></a><a class="fig-thumb" href="#fig-6-14" aria-label="Figura 6.14"><img src="../assets/fig/cap06/fig-6-14.webp" loading="lazy" decoding="async" alt="Figura 6.14"><span>Figura 6.14</span></a><a class="fig-thumb" href="#fig-6-18" aria-label="Figura 6.18"><img src="../assets/fig/cap06/fig-6-18.webp" loading="lazy" decoding="async" alt="Figura 6.18"><span>Figura 6.18</span></a><a class="fig-thumb" href="#fig-6-24" aria-label="Figura 6.24"><img src="../assets/fig/cap06/fig-6-24.webp" loading="lazy" decoding="async" alt="Figura 6.24"><span>Figura 6.24</span></a><a class="fig-thumb" href="#fig-6-36" aria-label="Figura 6.36"><img src="../assets/fig/cap06/fig-6-36.webp" loading="lazy" decoding="async" alt="Figura 6.36"><span>Figura 6.36</span></a><a class="fig-thumb" href="#fig-6-42" aria-label="Figura 6.42"><img src="../assets/fig/cap06/fig-6-42.webp" loading="lazy" decoding="async" alt="Figura 6.42"><span>Figura 6.42</span></a><a class="fig-thumb" href="#fig-6-47" aria-label="Figura 6.47"><img src="../assets/fig/cap06/fig-6-47.webp" loading="lazy" decoding="async" alt="Figura 6.47"><span>Figura 6.47</span></a></div>
 </section>
   </main>
 </div>
@@ -1228,7 +1353,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1246,8 +1378,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1267,6 +1399,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

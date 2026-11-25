@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
     <h1>Capítulo 16. Cabeza y cuello</h1>
-    <p class="lede">Guía 06 de 08. Resumen completo del capítulo 16 con 115 citas por página y 15 filas de tabla.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>06 de 08</strong></div><div><span>Capítulo</span><strong>16</strong></div><div><span>Páginas</span><strong>731-752</strong></div><div><span>Citas</span><strong>115</strong></div><div><span>Tablas</span><strong>15</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 06 de 08. Resumen completo del capítulo 16 con 115 citas por página y 15 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>06 de 08</strong></div><div><span>Capítulo</span><strong>16</strong></div><div><span>Páginas</span><strong>731-752</strong></div><div><span>Citas</span><strong>115</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>15</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -474,6 +530,7 @@
         <li><a href="#sec-06-glandulas-salivales">Glándulas salivales</a></li>
         <li><a href="#sec-07-quistes-y-tumores-odontogenos">Quistes y tumores odontógenos</a></li>
         <li><a href="#sec-08-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C2">Índice C2</a>
@@ -536,6 +593,15 @@
 <li><strong>Eritroplasia</strong>: área roja aterciopelada, deprimida; mucho más ominosa: ~90% con displasia grave/carcinoma in situ/carcinoma mínimamente invasivo. Formas mixtas: <strong>leucoeritroplasia moteada</strong>. Adultos 40-70 años, varones 2:1; tabaco como antecedente común <span class="cite">p. 734-735</span>.</li>
 <li>~15% de las lesiones premalignas progresa a CE en un promedio de 5 años; los criterios de displasia son subjetivos incluso entre patólogos <span class="cite">p. 736</span>.</li>
 </ul>
+<figure class="fig" id="fig-16-4">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-4.webp" data-caption="Figura 16.4. Eritroplasia: decoloración roja de la encía maxilar y de la cresta alveolar mandibular; la biopsia de ambas lesiones reveló carcinoma in situ." data-alt="Figura 16.4. Eritroplasia: decoloración roja de la encía maxilar y de la cresta alveolar mandibular; la biopsia de ambas lesiones reveló carcinoma in situ. Robbins y Cotran, 10ª ed., p. 735.">
+    <img src="../assets/fig/cap16/fig-16-4.webp" width="698" height="918" loading="lazy" decoding="async" alt="Figura 16.4. Eritroplasia: decoloración roja de la encía maxilar y de la cresta alveolar mandibular; la biopsia de ambas lesiones reveló carcinoma in situ. Robbins y Cotran, 10ª ed., p. 735.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.4.</strong> Eritroplasia: decoloración roja de la encía maxilar y de la cresta alveolar mandibular; la biopsia de ambas lesiones reveló carcinoma in situ.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 735. <a href="../creditos.html#fig-16-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="carcinoma-epidermoide">Carcinoma epidermoide</h3>
 <ul>
 <li><strong>Epidemiología</strong>: 95% de los tumores malignos de cabeza y cuello; sexta neoplasia más común en el mundo; ~50.000 casos/año en EE. UU. y &gt;650.000 en el mundo <span class="cite">p. 735</span>.</li>
@@ -547,6 +613,24 @@
 <li>A diferencia del cérvix, en el CE queratinizante la displasia de espesor total (carcinoma in situ) no siempre precede a la invasión. El grado de diferenciación <strong>no</strong> se correlaciona con el comportamiento <span class="cite">p. 737</span>.</li>
 <li><strong>Extensión</strong>: ganglios cervicales como sitio local más propicio; metástasis a distancia a mediastino, pulmones, hígado y huesos, a menudo ya presentes al diagnóstico <span class="cite">p. 737</span>.</li>
 </ul>
+<figure class="fig" id="fig-16-6">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-6.webp" data-caption="Figura 16.6. Carcinoma epidermoide queratinizante: ulceración e induración de la mucosa oral, con nidos de queratinocitos malignos y remolinos escamosos que infiltran el estroma y el músculo." data-alt="Figura 16.6. Carcinoma epidermoide queratinizante: ulceración e induración de la mucosa oral, con nidos de queratinocitos malignos y remolinos escamosos que infiltran el estroma y el músculo. Robbins y Cotran, 10ª ed., p. 737.">
+    <img src="../assets/fig/cap16/fig-16-6.webp" width="1455" height="481" loading="lazy" decoding="async" alt="Figura 16.6. Carcinoma epidermoide queratinizante: ulceración e induración de la mucosa oral, con nidos de queratinocitos malignos y remolinos escamosos que infiltran el estroma y el músculo. Robbins y Cotran, 10ª ed., p. 737.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.6.</strong> Carcinoma epidermoide queratinizante: ulceración e induración de la mucosa oral, con nidos de queratinocitos malignos y remolinos escamosos que infiltran el estroma y el músculo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 737. <a href="../creditos.html#fig-16-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-16-7">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-7.webp" data-caption="Figura 16.7. Carcinoma epidermoide no queratinizante (VPH positivo): células basaloides en nidos y cordones, con fuerte tinción nuclear y citoplásmica de p16 y expresión de ARN de E6 y E7 del VPH." data-alt="Figura 16.7. Carcinoma epidermoide no queratinizante (VPH positivo): células basaloides en nidos y cordones, con fuerte tinción nuclear y citoplásmica de p16 y expresión de ARN de E6 y E7 del VPH. Robbins y Cotran, 10ª ed., p. 738.">
+    <img src="../assets/fig/cap16/fig-16-7.webp" width="712" height="1586" loading="lazy" decoding="async" alt="Figura 16.7. Carcinoma epidermoide no queratinizante (VPH positivo): células basaloides en nidos y cordones, con fuerte tinción nuclear y citoplásmica de p16 y expresión de ARN de E6 y E7 del VPH. Robbins y Cotran, 10ª ed., p. 738.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.7.</strong> Carcinoma epidermoide no queratinizante (VPH positivo): células basaloides en nidos y cordones, con fuerte tinción nuclear y citoplásmica de p16 y expresión de ARN de E6 y E7 del VPH.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 738. <a href="../creditos.html#fig-16-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Cavidad oral" tabindex="0"><table>
 <thead>
 <tr>
@@ -630,6 +714,15 @@
 <li><strong>Carcinoma de laringe</strong>: CE en hombres fumadores crónicos; alcohol sinérgico con tabaco; también asbesto, radiación y VPH. Secuencia hiperplasia→displasia→carcinoma: riesgo de transformación 1-2% a 5-10 años con displasia leve vs 5-10% con displasia grave; los cambios pueden regresar al dejar de fumar <span class="cite">p. 743</span>.</li>
 <li>95% son CE habituales; mayoría en cuerdas vocales; hombres en la sexta década; debut con ronquera persistente, disfagia y disfonía. Pronóstico según estadio; técnica conservadora de órgano en etapas tempranas <span class="cite">p. 744</span>.</li>
 </ul>
+<figure class="fig" id="fig-16-13">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-13.webp" data-caption="Figura 16.13. Comparación esquemática de un nódulo del cantante, un papiloma benigno y un carcinoma exofítico de laringe, que resalta las diferencias en su aspecto clínico." data-alt="Figura 16.13. Comparación esquemática de un nódulo del cantante, un papiloma benigno y un carcinoma exofítico de laringe, que resalta las diferencias en su aspecto clínico. Robbins y Cotran, 10ª ed., p. 743.">
+    <img src="../assets/fig/cap16/fig-16-13.webp" width="700" height="475" loading="lazy" decoding="async" alt="Figura 16.13. Comparación esquemática de un nódulo del cantante, un papiloma benigno y un carcinoma exofítico de laringe, que resalta las diferencias en su aspecto clínico. Robbins y Cotran, 10ª ed., p. 743.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.13.</strong> Comparación esquemática de un nódulo del cantante, un papiloma benigno y un carcinoma exofítico de laringe, que resalta las diferencias en su aspecto clínico.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 743. <a href="../creditos.html#fig-16-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-04-oidos" class="card">
 <div class="section-kicker"><span class="n">04</span> pp. 744-745</div>
@@ -661,6 +754,15 @@
 <li>5ª-6ª décadas; esporádicos o familiares. Los asociados a MEN-2 son feocromocitomas suprarrenales; los de los síndromes <strong>PGL 1-4</strong> (genes SDH) se localizan en cabeza y cuello; ~un tercio de los paragangliomas de cabeza y cuello tienen mutación de línea germinal <span class="cite">p. 746</span>.</li>
 <li>Recidivan con frecuencia tras la extirpación; ~50% acaba siendo mortal por crecimiento infiltrante. <strong>La histología no predice el pronóstico</strong> (mitosis, pleomorfismo e invasión vascular no son fiables); las mutaciones de <strong>SDHB</strong> se asocian a 30-50% de metástasis <span class="cite">p. 746</span>.</li>
 </ul>
+<figure class="fig" id="fig-16-15">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-15.webp" data-caption="Figura 16.15. Tumor del cuerpo carotideo: nidos de células tumorales (zellballen) separados por tabiques con capilares, y positividad para cromogranina por inmunohistoquímica." data-alt="Figura 16.15. Tumor del cuerpo carotideo: nidos de células tumorales (zellballen) separados por tabiques con capilares, y positividad para cromogranina por inmunohistoquímica. Robbins y Cotran, 10ª ed., p. 746.">
+    <img src="../assets/fig/cap16/fig-16-15.webp" width="758" height="879" loading="lazy" decoding="async" alt="Figura 16.15. Tumor del cuerpo carotideo: nidos de células tumorales (zellballen) separados por tabiques con capilares, y positividad para cromogranina por inmunohistoquímica. Robbins y Cotran, 10ª ed., p. 746.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.15.</strong> Tumor del cuerpo carotideo: nidos de células tumorales (zellballen) separados por tabiques con capilares, y positividad para cromogranina por inmunohistoquímica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 746. <a href="../creditos.html#fig-16-15">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Quiste branquial vs tirogloso</span>Branquial: segundo arco, lateral, adultos jóvenes, tejido linfoide con centros germinales, nunca maligniza. Tirogloso: línea media por el trayecto del descenso tiroideo desde el orificio ciego. Cautela: la mayoría de los CE quísticos del cuello son metástasis <span class="cite">p. 745</span>.</div>
 </section><section id="sec-06-glandulas-salivales" class="card">
@@ -718,6 +820,33 @@
 </tbody>
 </table></div>
 <p class="small table-source">Fuente: <span class="cite">p. 748-751</span></p>
+<figure class="fig" id="fig-16-18">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-18.webp" data-caption="Figura 16.18. Adenoma pleomorfo: tumor bien delimitado con células epiteliales y mioepiteliales formando conductos en una matriz condromixoide." data-alt="Figura 16.18. Adenoma pleomorfo: tumor bien delimitado con células epiteliales y mioepiteliales formando conductos en una matriz condromixoide. Robbins y Cotran, 10ª ed., p. 749.">
+    <img src="../assets/fig/cap16/fig-16-18.webp" width="1410" height="505" loading="lazy" decoding="async" alt="Figura 16.18. Adenoma pleomorfo: tumor bien delimitado con células epiteliales y mioepiteliales formando conductos en una matriz condromixoide. Robbins y Cotran, 10ª ed., p. 749.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.18.</strong> Adenoma pleomorfo: tumor bien delimitado con células epiteliales y mioepiteliales formando conductos en una matriz condromixoide.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 749. <a href="../creditos.html#fig-16-18">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-16-20">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-20.webp" data-caption="Figura 16.20. Carcinoma mucoepidermoide: sábanas y microquistes con células de morfología variable, de mucinosas a intermedias y escamosas." data-alt="Figura 16.20. Carcinoma mucoepidermoide: sábanas y microquistes con células de morfología variable, de mucinosas a intermedias y escamosas. Robbins y Cotran, 10ª ed., p. 750.">
+    <img src="../assets/fig/cap16/fig-16-20.webp" width="665" height="808" loading="lazy" decoding="async" alt="Figura 16.20. Carcinoma mucoepidermoide: sábanas y microquistes con células de morfología variable, de mucinosas a intermedias y escamosas. Robbins y Cotran, 10ª ed., p. 750.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.20.</strong> Carcinoma mucoepidermoide: sábanas y microquistes con células de morfología variable, de mucinosas a intermedias y escamosas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 750. <a href="../creditos.html#fig-16-20">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-16-21">
+  <a class="fig-open" href="../assets/fig/cap16/fig-16-21.webp" data-caption="Figura 16.21. Carcinoma adenoideo quístico: patrones de crecimiento cribiforme, tubular y sólido, además de infiltración perineural característica." data-alt="Figura 16.21. Carcinoma adenoideo quístico: patrones de crecimiento cribiforme, tubular y sólido, además de infiltración perineural característica. Robbins y Cotran, 10ª ed., p. 751.">
+    <img src="../assets/fig/cap16/fig-16-21.webp" width="757" height="828" loading="lazy" decoding="async" alt="Figura 16.21. Carcinoma adenoideo quístico: patrones de crecimiento cribiforme, tubular y sólido, además de infiltración perineural característica. Robbins y Cotran, 10ª ed., p. 751.">
+  </a>
+  <figcaption>
+    <strong>Figura 16.21.</strong> Carcinoma adenoideo quístico: patrones de crecimiento cribiforme, tubular y sólido, además de infiltración perineural característica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 751. <a href="../creditos.html#fig-16-21">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <ul>
 <li>El carcinoma ex adenoma pleomorfo exige adenoma pleomorfo benigno residual para su diagnóstico; mortalidad a 5 años 30-50% <span class="cite">p. 749</span>.</li>
 </ul>
@@ -773,6 +902,11 @@
 <li>Tumor odontógeno queratoquístico: recidiva hasta <strong>60%</strong>; quistes múltiples = <strong>síndrome de Gorlin</strong> (<em>PTCH</em>, 9q22) <span class="cite">p. 737</span>.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-16-4" aria-label="Figura 16.4"><img src="../assets/fig/cap16/fig-16-4.webp" loading="lazy" decoding="async" alt="Figura 16.4"><span>Figura 16.4</span></a><a class="fig-thumb" href="#fig-16-6" aria-label="Figura 16.6"><img src="../assets/fig/cap16/fig-16-6.webp" loading="lazy" decoding="async" alt="Figura 16.6"><span>Figura 16.6</span></a><a class="fig-thumb" href="#fig-16-7" aria-label="Figura 16.7"><img src="../assets/fig/cap16/fig-16-7.webp" loading="lazy" decoding="async" alt="Figura 16.7"><span>Figura 16.7</span></a><a class="fig-thumb" href="#fig-16-13" aria-label="Figura 16.13"><img src="../assets/fig/cap16/fig-16-13.webp" loading="lazy" decoding="async" alt="Figura 16.13"><span>Figura 16.13</span></a><a class="fig-thumb" href="#fig-16-15" aria-label="Figura 16.15"><img src="../assets/fig/cap16/fig-16-15.webp" loading="lazy" decoding="async" alt="Figura 16.15"><span>Figura 16.15</span></a><a class="fig-thumb" href="#fig-16-18" aria-label="Figura 16.18"><img src="../assets/fig/cap16/fig-16-18.webp" loading="lazy" decoding="async" alt="Figura 16.18"><span>Figura 16.18</span></a><a class="fig-thumb" href="#fig-16-20" aria-label="Figura 16.20"><img src="../assets/fig/cap16/fig-16-20.webp" loading="lazy" decoding="async" alt="Figura 16.20"><span>Figura 16.20</span></a><a class="fig-thumb" href="#fig-16-21" aria-label="Figura 16.21"><img src="../assets/fig/cap16/fig-16-21.webp" loading="lazy" decoding="async" alt="Figura 16.21"><span>Figura 16.21</span></a></div>
 </section>
   </main>
 </div>
@@ -780,7 +914,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -798,8 +939,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -819,6 +960,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

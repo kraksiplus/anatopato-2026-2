@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Manual del Certamen 1</h1>
-    <p class="lede">Manual integrado del Certamen 1: 11 clases, 12 temas y las cifras de mayor rendimiento, ordenados por peso en el certamen.</p>
-    <div class="meta-grid"><div><span>Temas</span><strong>12</strong></div><div><span>Clases</span><strong>11</strong></div><div><span>Filas de tabla</span><strong>195</strong></div><div><span>Fuente</span><strong>Apuntes + Robbins 10ª ed.</strong></div><div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div></div>
+    <p class="lede">Manual integrado del Certamen 1: 11 clases, 12 temas y las cifras de mayor rendimiento, ordenados por peso en el certamen. Incluye un atlas de 30 figuras.</p>
+    <div class="meta-grid"><div><span>Temas</span><strong>12</strong></div><div><span>Clases</span><strong>11</strong></div><div><span>Filas de tabla</span><strong>195</strong></div><div><span>Figuras</span><strong>30</strong></div><div><span>Fuente</span><strong>Apuntes + Robbins 10ª ed.</strong></div><div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -483,6 +539,7 @@
         <li><a href="#sec-15-a-correcciones-a-los-apuntes">A. Correcciones a los apuntes</a></li>
         <li><a href="#sec-16-b-indice-tema-clase-robbins">B. Índice tema → clase → Robbins</a></li>
         <li><a href="#sec-17-c-fuentes">C. Fuentes</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -2378,6 +2435,11 @@
 </ul>
 <p><em>Fin del manual.</em></p>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Atlas visual del Certamen 1</h2>
+<p class="small">Treinta figuras de los capítulos, para repaso rápido. Toca una para abrirla en su guía. La fuente y titularidad de cada figura está en su capítulo y en <a href="../creditos.html">Créditos de las figuras</a>.</p>
+<div class="fig-grid"><a class="fig-thumb" href="01_La_Celula.html#fig-1-1" aria-label="Figura 1.1"><img src="../assets/fig/cap01/fig-1-1.webp" loading="lazy" decoding="async" alt="Figura 1.1. Organización del ADN nuclear: eucromatina dispersa y transcripcionalmente activa, y heterocromatina compacta e inactiva, observables al microscopio óptico."><span>Figura 1.1</span><small>Cap. 1</small></a><a class="fig-thumb" href="01_La_Celula.html#fig-1-19" aria-label="Figura 1.19"><img src="../assets/fig/cap01/fig-1-19.webp" loading="lazy" decoding="async" alt="Figura 1.19. Regulación del ciclo celular por ciclinas, CDK e inhibidores de CDK: complejos ciclina-CDK activos en cada fase del ciclo."><span>Figura 1.19</span><small>Cap. 1</small></a><a class="fig-thumb" href="02_Lesion_Celular.html#fig-2-7" aria-label="Figura 2.7"><img src="../assets/fig/cap02/fig-2-7.webp" loading="lazy" decoding="async" alt="Figura 2.7. Necrosis coagulativa: A, infarto renal amarillo en cuña; B, microscopía con riñón normal y células necróticas que conservan el contorno, con pérdida de núcleos e infiltrado inflamatorio."><span>Figura 2.7</span><small>Cap. 2</small></a><a class="fig-thumb" href="02_Lesion_Celular.html#fig-2-13" aria-label="Figura 2.13"><img src="../assets/fig/cap02/fig-2-13.webp" loading="lazy" decoding="async" alt="Figura 2.13. Mecanismos de la apoptosis: las vías mitocondrial (intrínseca) y del receptor de muerte (extrínseca) difieren en su inducción, pero ambas culminan en la activación de caspasas."><span>Figura 2.13</span><small>Cap. 2</small></a><a class="fig-thumb" href="02_Lesion_Celular.html#fig-2-30" aria-label="Figura 2.30"><img src="../assets/fig/cap02/fig-2-30.webp" loading="lazy" decoding="async" alt="Figura 2.30. Hígado graso (esteatosis): a gran aumento, el núcleo preservado queda comprimido en el ribete periférico de citoplasma alrededor de la vacuola de grasa."><span>Figura 2.30</span><small>Cap. 2</small></a><a class="fig-thumb" href="03_Inflamacion_Reparacion.html#fig-3-4" aria-label="Figura 3.4"><img src="../assets/fig/cap03/fig-3-4.webp" loading="lazy" decoding="async" alt="Figura 3.4. Migración de leucocitos a través del vaso en varios pasos: rodamiento por selectinas, activación y adhesión firme por integrinas, transmigración y quimiotaxia hacia el agente causal."><span>Figura 3.4</span><small>Cap. 3</small></a><a class="fig-thumb" href="03_Inflamacion_Reparacion.html#fig-3-23" aria-label="Figura 3.23"><img src="../assets/fig/cap03/fig-3-23.webp" loading="lazy" decoding="async" alt="Figura 3.23. Granuloma tuberculoso típico: necrosis central rodeada de células gigantes de tipo Langhans, células epitelioides y linfocitos."><span>Figura 3.23</span><small>Cap. 3</small></a><a class="fig-thumb" href="03_Inflamacion_Reparacion.html#fig-3-29" aria-label="Figura 3.29"><img src="../assets/fig/cap03/fig-3-29.webp" loading="lazy" decoding="async" alt="Figura 3.29. Comparación de la cicatrización por primera y segunda intención, con abundante tejido de granulación y contracción de la herida en esta última."><span>Figura 3.29</span><small>Cap. 3</small></a><a class="fig-thumb" href="04_Hemodinamia_Shock.html#fig-4-12" aria-label="Figura 4.12"><img src="../assets/fig/cap04/fig-4-12.webp" loading="lazy" decoding="async" alt="Figura 4.12. Triada de Virchow en la trombosis: lesión endotelial, alteración del flujo sanguíneo e hipercoagulabilidad, que se potencian entre sí."><span>Figura 4.12</span><small>Cap. 4</small></a><a class="fig-thumb" href="04_Hemodinamia_Shock.html#fig-4-19" aria-label="Figura 4.19"><img src="../assets/fig/cap04/fig-4-19.webp" loading="lazy" decoding="async" alt="Figura 4.19. Infartos rojo y blanco: infarto rojo pulmonar hemorrágico en forma de cuna e infarto blanco esplénico bien delimitado."><span>Figura 4.19</span><small>Cap. 4</small></a><a class="fig-thumb" href="04_Hemodinamia_Shock.html#fig-4-21" aria-label="Figura 4.21"><img src="../assets/fig/cap04/fig-4-21.webp" loading="lazy" decoding="async" alt="Figura 4.21. Vías principales en la patogenia del shock séptico: los productos microbianos activan el sistema inmunitario innato y conducen a la insuficiencia multiorgánica."><span>Figura 4.21</span><small>Cap. 4</small></a><a class="fig-thumb" href="05_Trastornos_Geneticos.html#fig-5-7" aria-label="Figura 5.7"><img src="../assets/fig/cap05/fig-5-7.webp" loading="lazy" decoding="async" alt="Figura 5.7. Vía del receptor de LDL y regulación del metabolismo del colesterol: endocitosis en fositas revestidas, liberación del colesterol e inhibición de la HMG-CoA reductasa."><span>Figura 5.7</span><small>Cap. 5</small></a><a class="fig-thumb" href="05_Trastornos_Geneticos.html#fig-5-20" aria-label="Figura 5.20"><img src="../assets/fig/cap05/fig-5-20.webp" loading="lazy" decoding="async" alt="Figura 5.20. Características clínicas y cariotipos de las trisomías autosómicas: Down (21), Edwards (18) y Patau (13)."><span>Figura 5.20</span><small>Cap. 5</small></a><a class="fig-thumb" href="05_Trastornos_Geneticos.html#fig-5-25" aria-label="Figura 5.25"><img src="../assets/fig/cap05/fig-5-25.webp" loading="lazy" decoding="async" alt="Figura 5.25. Árbol genealógico del síndrome del cromosoma X frágil: expansión de la premutación a mutación completa durante la ovogenia, con anticipación."><span>Figura 5.25</span><small>Cap. 5</small></a><a class="fig-thumb" href="06_Sistema_Inmunitario.html#fig-6-1" aria-label="Figura 6.1"><img src="../assets/fig/cap06/fig-6-1.webp" loading="lazy" decoding="async" alt="Figura 6.1. Subgrupos de linfocitos T colaboradores: según las citocinas del momento, los CD4+ vírgenes se diferencian en Th1, Th2 y Th17, con funciones y citocinas distintas."><span>Figura 6.1</span><small>Cap. 6</small></a><a class="fig-thumb" href="06_Sistema_Inmunitario.html#fig-6-18" aria-label="Figura 6.18"><img src="../assets/fig/cap06/fig-6-18.webp" loading="lazy" decoding="async" alt="Figura 6.18. Mecanismos de la hipersensibilidad de tipo IV: citocinas de Th1 y Th17 que causan inflamación y activan macrófagos, y lisis directa por CTL CD8+."><span>Figura 6.18</span><small>Cap. 6</small></a><a class="fig-thumb" href="06_Sistema_Inmunitario.html#fig-6-47" aria-label="Figura 6.47"><img src="../assets/fig/cap06/fig-6-47.webp" loading="lazy" decoding="async" alt="Figura 6.47. Amiloidosis en hígado con rojo Congo: depósitos rojizos en paredes vasculares y sinusoides que muestran birrefringencia verde manzana con luz polarizada."><span>Figura 6.47</span><small>Cap. 6</small></a><a class="fig-thumb" href="07_Neoplasias.html#fig-7-26" aria-label="Figura 7.26"><img src="../assets/fig/cap07/fig-7-26.webp" loading="lazy" decoding="async" alt="Figura 7.26. Función de RB en el punto de control G1/S: el RB hipofosforilado bloquea a E2F; su fosforilación por complejos ciclina-CDK libera E2F y permite la progresión del ciclo."><span>Figura 7.26</span><small>Cap. 7</small></a><a class="fig-thumb" href="07_Neoplasias.html#fig-7-27" aria-label="Figura 7.27"><img src="../assets/fig/cap07/fig-7-27.webp" loading="lazy" decoding="async" alt="Figura 7.27. Función de p53 en el mantenimiento de la integridad del genoma: ante daño del ADN o hipoxia induce detención en G1, reparación, senescencia o apoptosis."><span>Figura 7.27</span><small>Cap. 7</small></a><a class="fig-thumb" href="07_Neoplasias.html#fig-7-15" aria-label="Figura 7.15"><img src="../assets/fig/cap07/fig-7-15.webp" loading="lazy" decoding="async" alt="Figura 7.15. Metástasis: hígado salpicado de nódulos metastásicos y nódulo pulmonar de un adenocarcinoma de colon."><span>Figura 7.15</span><small>Cap. 7</small></a><a class="fig-thumb" href="07_Neoplasias.html#fig-7-44" aria-label="Figura 7.44"><img src="../assets/fig/cap07/fig-7-44.webp" loading="lazy" decoding="async" alt="Figura 7.44. Citología cervicovaginal (Pap): comparación entre el frotis normal y el frotis con células malignas pleomorfas e hipercromáticas."><span>Figura 7.44</span><small>Cap. 7</small></a><a class="fig-thumb" href="08_Enfermedades_Infecciosas.html#fig-8-23" aria-label="Figura 8.23"><img src="../assets/fig/cap08/fig-8-23.webp" loading="lazy" decoding="async" alt="Figura 8.23. Secuencia de la tuberculosis pulmonar primaria: desde la inhalación de M. tuberculosis hasta el desarrollo de inmunidad mediada por células."><span>Figura 8.23</span><small>Cap. 8</small></a><a class="fig-thumb" href="08_Enfermedades_Infecciosas.html#fig-8-26" aria-label="Figura 8.26"><img src="../assets/fig/cap08/fig-8-26.webp" loading="lazy" decoding="async" alt="Figura 8.26. Espectro morfológico de la tuberculosis: tubérculo con caseificación central rodeada de células epitelioides y gigantes multinucleadas."><span>Figura 8.26</span><small>Cap. 8</small></a><a class="fig-thumb" href="08_Enfermedades_Infecciosas.html#fig-8-46" aria-label="Figura 8.46"><img src="../assets/fig/cap08/fig-8-46.webp" loading="lazy" decoding="async" alt="Figura 8.46. Ciclo vital de Plasmodium falciparum, con las fases exoeritrocítica y eritrocítica."><span>Figura 8.46</span><small>Cap. 8</small></a><a class="fig-thumb" href="09_Ambientales_Nutricionales.html#fig-9-3" aria-label="Figura 9.3"><img src="../assets/fig/cap09/fig-9-3.webp" loading="lazy" decoding="async" alt="Figura 9.3. Metabolismo de los xenobióticos en dos fases: la fase I (citocromo P-450) puede detoxificarlos o generar metabolitos reactivos tóxicos para la célula."><span>Figura 9.3</span><small>Cap. 9</small></a><a class="fig-thumb" href="09_Ambientales_Nutricionales.html#fig-9-21" aria-label="Figura 9.21"><img src="../assets/fig/cap09/fig-9-21.webp" loading="lazy" decoding="async" alt="Figura 9.21. Malnutrición infantil: marasmo con emaciación y pérdida de grasa subcutánea frente a kwashiorkor con edema generalizado, ascitis e hinchazón facial."><span>Figura 9.21</span><small>Cap. 9</small></a><a class="fig-thumb" href="09_Ambientales_Nutricionales.html#fig-9-26" aria-label="Figura 9.26"><img src="../assets/fig/cap09/fig-9-26.webp" loading="lazy" decoding="async" alt="Figura 9.26. Raquitismo: unión costocondral con pérdida de las empalizadas de cartílago y transición desordenada de cartílago a hueso, frente a la unión normal."><span>Figura 9.26</span><small>Cap. 9</small></a><a class="fig-thumb" href="10_Lactancia_Infancia.html#fig-10-5" aria-label="Figura 10.5"><img src="../assets/fig/cap10/fig-10-5.webp" loading="lazy" decoding="async" alt="Figura 10.5. Periodos críticos del desarrollo de los distintos sistemas orgánicos y malformaciones asociadas según el momento de exposición al teratógeno."><span>Figura 10.5</span><small>Cap. 10</small></a><a class="fig-thumb" href="10_Lactancia_Infancia.html#fig-10-23" aria-label="Figura 10.23"><img src="../assets/fig/cap10/fig-10-23.webp" loading="lazy" decoding="async" alt="Figura 10.23. Neuroblastoma suprarrenal: células pequeñas primitivas en matriz fibrilar (neurópilo) con seudorrosetas de Homer-Wright."><span>Figura 10.23</span><small>Cap. 10</small></a><a class="fig-thumb" href="10_Lactancia_Infancia.html#fig-10-27" aria-label="Figura 10.27"><img src="../assets/fig/cap10/fig-10-27.webp" loading="lazy" decoding="async" alt="Figura 10.27. Tumor de Wilms: componente blastomatoso de células azules con túbulos primitivos (patrón trifásico) y un foco de anaplasia con núcleos grandes y atípicos."><span>Figura 10.27</span><small>Cap. 10</small></a></div>
 </section>
   </main>
 </div>
@@ -2385,7 +2447,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -2403,8 +2472,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -2424,6 +2493,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

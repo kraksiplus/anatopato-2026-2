@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
     <h1>Capítulo 11. Vasos sanguíneos</h1>
-    <p class="lede">Guía 01 de 08. Resumen completo del capítulo 11 con 245 citas por página y 26 filas de tabla.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>01 de 08</strong></div><div><span>Capítulo</span><strong>11</strong></div><div><span>Páginas</span><strong>485-526</strong></div><div><span>Citas</span><strong>245</strong></div><div><span>Tablas</span><strong>26</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 01 de 08. Resumen completo del capítulo 11 con 245 citas por página y 26 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>01 de 08</strong></div><div><span>Capítulo</span><strong>11</strong></div><div><span>Páginas</span><strong>485-526</strong></div><div><span>Citas</span><strong>245</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>26</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -479,6 +535,7 @@
         <li><a href="#sec-11-tumores-vasculares">Tumores vasculares</a></li>
         <li><a href="#sec-12-patologia-de-la-intervencion-vascular">Patología de la intervención vascular</a></li>
         <li><a href="#sec-13-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C2">Índice C2</a>
@@ -510,6 +567,15 @@
 <div class="section-kicker"><span class="n">02</span> pp. 485-488</div>
 <h2>Estructura y función vasculares</h2>
 <p>Las paredes arteriales son más gruesas que las venas del mismo nivel para acomodar el flujo pulsátil; el cociente grosor/luz aumenta en los vasos pequeños, que controlan flujo y presión <span class="cite">p. 485</span>. Constituyentes básicos: células endoteliales (CE) y musculares lisas (CML) más MEC (elastina, colágeno, glucosaminoglucanos), organizadas en <strong>íntima, media y adventicia</strong> <span class="cite">p. 485-486</span>.</p>
+<figure class="fig" id="fig-11-1">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-1.webp" data-caption="Figura 11.1. Especializaciones regionales de la vasculatura. El grosor y la composición de las capas varían según las fuerzas hemodinámicas y los requerimientos tisulares." data-alt="Figura 11.1. Especializaciones regionales de la vasculatura. El grosor y la composición de las capas varían según las fuerzas hemodinámicas y los requerimientos tisulares. Robbins y Cotran, 10ª ed., p. 486.">
+    <img src="../assets/fig/cap11/fig-11-1.webp" width="1474" height="979" loading="lazy" decoding="async" alt="Figura 11.1. Especializaciones regionales de la vasculatura. El grosor y la composición de las capas varían según las fuerzas hemodinámicas y los requerimientos tisulares. Robbins y Cotran, 10ª ed., p. 486.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.1.</strong> Especializaciones regionales de la vasculatura. El grosor y la composición de las capas varían según las fuerzas hemodinámicas y los requerimientos tisulares.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 486. <a href="../creditos.html#fig-11-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <ul>
 <li><strong>Arterias elásticas</strong> (aorta, tronco braquiocefálico, subclavia, carótida e ilíaca; pulmonares): media en unidades laminares de elastina y CML; se expanden en sístole y se contraen en diástole. Con la edad pierden distensibilidad, se vuelven tortuosas y ectásicas <span class="cite">p. 486</span>.</li>
 <li><strong>Arterias musculares</strong> (coronarias, renales y ramas menores): CML circunferenciales; la vasoconstricción/dilatación responde al sistema nervioso autónomo y a factores metabólicos locales <span class="cite">p. 486-487</span>.</li>
@@ -523,6 +589,15 @@
 <h3 id="propiedades-y-disfunción-endotelial">Propiedades y disfunción endotelial</h3>
 <p>Las CE mantienen una superficie <strong>no trombógena</strong>, modulan el tono de las CML, metabolizan hormonas (angiotensina), regulan inflamación y crecimiento de CML <span class="cite">p. 488</span>. Productos clave: antitrombóticos (<strong>prostaciclina</strong>, <strong>trombomodulina</strong>, moléculas tipo heparina, activador del plasminógeno); protrombóticos (<strong>factor de von Willebrand</strong>, factor tisular, PAI); vasoconstrictores (<strong>endotelina</strong>, ECA); vasodilatadores (<strong>NO</strong>, prostaciclina); moléculas de adhesión (VCAM-1, ICAM, selectinas E y P); citocinas (IL-1, IL-6, quimiocinas) <span class="cite">p. 488</span>.</p>
 <p>La <strong>disfunción endotelial</strong> es un fenotipo proinflamatorio y protrombógeno, responsable parcial de trombosis, ateroesclerosis e lesión hipertensiva. Puede ser rápida y reversible (contracción por histamina, minutos) o dependiente de nueva síntesis proteica (moléculas de adhesión, horas-días) <span class="cite">p. 488</span>.</p>
+<figure class="fig" id="fig-11-2">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-2.webp" data-caption="Figura 11.2. Estados basal y activado de las células endoteliales. El flujo laminar y los factores de crecimiento mantienen un estado basal; la lesión o los mediadores inflamatorios inducen activación endotelial." data-alt="Figura 11.2. Estados basal y activado de las células endoteliales. El flujo laminar y los factores de crecimiento mantienen un estado basal; la lesión o los mediadores inflamatorios inducen activación endotelial. Robbins y Cotran, 10ª ed., p. 488.">
+    <img src="../assets/fig/cap11/fig-11-2.webp" width="744" height="581" loading="lazy" decoding="async" alt="Figura 11.2. Estados basal y activado de las células endoteliales. El flujo laminar y los factores de crecimiento mantienen un estado basal; la lesión o los mediadores inflamatorios inducen activación endotelial. Robbins y Cotran, 10ª ed., p. 488.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.2.</strong> Estados basal y activado de las células endoteliales. El flujo laminar y los factores de crecimiento mantienen un estado basal; la lesión o los mediadores inflamatorios inducen activación endotelial.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 488. <a href="../creditos.html#fig-11-2">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>Las <strong>CML</strong> vasculares proliferan, sintetizan colágeno, elastina y proteoglucanos, elaboran factores de crecimiento y median la vasoconstricción/dilatación <span class="cite">p. 488</span>.</p>
 
 </section><section id="sec-03-anomalias-vasculares" class="card">
@@ -585,6 +660,15 @@
 </tbody>
 </table></div>
 <p>La hipertensión también acelera la aterogenia y produce cambios degenerativos de arterias grandes y medias que predisponen a <strong>disección aórtica</strong> y <strong>hemorragia cerebrovascular</strong> <span class="cite">p. 492</span>.</p>
+<figure class="fig" id="fig-11-6">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-6.webp" data-caption="Figura 11.6. Patología vascular en la hipertensión. A. Arterioloesclerosis hialina, con pared engrosada y luz estrecha. B. Arterioloesclerosis hiperplásica en piel de cebolla." data-alt="Figura 11.6. Patología vascular en la hipertensión. A. Arterioloesclerosis hialina, con pared engrosada y luz estrecha. B. Arterioloesclerosis hiperplásica en piel de cebolla. Robbins y Cotran, 10ª ed., p. 493.">
+    <img src="../assets/fig/cap11/fig-11-6.webp" width="1449" height="488" loading="lazy" decoding="async" alt="Figura 11.6. Patología vascular en la hipertensión. A. Arterioloesclerosis hialina, con pared engrosada y luz estrecha. B. Arterioloesclerosis hiperplásica en piel de cebolla. Robbins y Cotran, 10ª ed., p. 493.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.6.</strong> Patología vascular en la hipertensión. A. Arterioloesclerosis hialina, con pared engrosada y luz estrecha. B. Arterioloesclerosis hiperplásica en piel de cebolla.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 493. <a href="../creditos.html#fig-11-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-05-arterioesclerosis" class="card">
 <div class="section-kicker"><span class="n">05</span> pp. 493</div>
@@ -601,6 +685,15 @@
 <div class="section-kicker"><span class="n">06</span> pp. 493-504</div>
 <h2>Ateroesclerosis</h2>
 <p>Base de la enfermedad coronaria, cerebral y vascular periférica; en el mundo occidental causa ~la mitad de todas las muertes; el infarto de miocardio explica casi una cuarta parte de los fallecimientos en EE. UU. <span class="cite">p. 493-494</span>. La placa (<strong>ateroma</strong>) es una lesión intimal elevada con <strong>núcleo lipídico</strong> blando y <strong>cubierta fibrosa</strong>; además de obstruir, puede romperse y trombosar, y aumenta la distancia de difusión hacia la media, debilitando la pared (aneurismas) <span class="cite">p. 494</span>.</p>
+<figure class="fig" id="fig-11-7">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-7.webp" data-caption="Figura 11.7. Estructura básica de una placa ateroesclerótica. La lesión se centra en la íntima, con interacciones entre células, lípidos y matriz extracelular." data-alt="Figura 11.7. Estructura básica de una placa ateroesclerótica. La lesión se centra en la íntima, con interacciones entre células, lípidos y matriz extracelular. Robbins y Cotran, 10ª ed., p. 494.">
+    <img src="../assets/fig/cap11/fig-11-7.webp" width="1474" height="465" loading="lazy" decoding="async" alt="Figura 11.7. Estructura básica de una placa ateroesclerótica. La lesión se centra en la íntima, con interacciones entre células, lípidos y matriz extracelular. Robbins y Cotran, 10ª ed., p. 494.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.7.</strong> Estructura básica de una placa ateroesclerótica. La lesión se centra en la íntima, con interacciones entre células, lípidos y matriz extracelular.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 494. <a href="../creditos.html#fig-11-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>En Europa oriental la mortalidad coronaria es 3-5 veces la estadounidense y 7-12 veces la de Japón; en África, India y sudeste asiático ya supera la de EE. UU. <span class="cite">p. 494</span>.</p>
 <h3 id="factores-de-riesgo">Factores de riesgo</h3>
 <div class="table-wrap" role="region" aria-label="Tabla: Ateroesclerosis" tabindex="0"><table>
@@ -644,6 +737,15 @@
 </ul>
 <h3 id="patogenia-hipótesis-de-la-respuesta-a-la-lesión">Patogenia: hipótesis de la "respuesta a la lesión"</h3>
 <p>La ateroesclerosis es una respuesta <strong>inflamatoria y de cicatrización crónica</strong> a la lesión endotelial. Secuencia <span class="cite">p. 497</span>:</p>
+<figure class="fig" id="fig-11-10">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-10.webp" data-caption="Figura 11.10. Evolución de la placa arterial según la hipótesis de la respuesta a la lesión: desde la lesión endotelial hasta la placa desarrollada." data-alt="Figura 11.10. Evolución de la placa arterial según la hipótesis de la respuesta a la lesión: desde la lesión endotelial hasta la placa desarrollada. Robbins y Cotran, 10ª ed., p. 497.">
+    <img src="../assets/fig/cap11/fig-11-10.webp" width="708" height="1932" loading="lazy" decoding="async" alt="Figura 11.10. Evolución de la placa arterial según la hipótesis de la respuesta a la lesión: desde la lesión endotelial hasta la placa desarrollada. Robbins y Cotran, 10ª ed., p. 497.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.10.</strong> Evolución de la placa arterial según la hipótesis de la respuesta a la lesión: desde la lesión endotelial hasta la placa desarrollada.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 497. <a href="../creditos.html#fig-11-10">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <ol type="1">
 <li><strong>Lesión y disfunción endoteliales</strong>: mayor permeabilidad, adhesión de leucocitos, trombosis.</li>
 <li><strong>Acumulación de lipoproteínas</strong> (LDL y formas oxidadas) en la pared.</li>
@@ -668,6 +770,24 @@
 <li><strong>Distribución</strong> (en orden descendente): aorta abdominal inferior e ilíacas &gt; coronarias &gt; poplíteas &gt; carótidas internas y polígono de Willis; las extremidades superiores y las mesentérica y renal (salvo orígenes) se preservan <span class="cite">p. 501</span>.</li>
 <li>Las <strong>placas fibrosas</strong> son casi solo CML y tejido fibroso muy calcificado <span class="cite">p. 502</span>.</li>
 </ul>
+<figure class="fig" id="fig-11-14">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-14.webp" data-caption="Figura 11.14. Ateroesclerosis macroscópica de la aorta. A. Placas fibrosas leves. B. Lesiones difusas complicadas, con placa ulcerada y trombo." data-alt="Figura 11.14. Ateroesclerosis macroscópica de la aorta. A. Placas fibrosas leves. B. Lesiones difusas complicadas, con placa ulcerada y trombo. Robbins y Cotran, 10ª ed., p. 501.">
+    <img src="../assets/fig/cap11/fig-11-14.webp" width="1465" height="481" loading="lazy" decoding="async" alt="Figura 11.14. Ateroesclerosis macroscópica de la aorta. A. Placas fibrosas leves. B. Lesiones difusas complicadas, con placa ulcerada y trombo. Robbins y Cotran, 10ª ed., p. 501.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.14.</strong> Ateroesclerosis macroscópica de la aorta. A. Placas fibrosas leves. B. Lesiones difusas complicadas, con placa ulcerada y trombo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 501. <a href="../creditos.html#fig-11-14">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-11-15">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-15.webp" data-caption="Figura 11.15. Histología de una placa ateromatosa coronaria. A. Cubierta fibrosa y núcleo necrótico. B. Detalle de la placa. C. Células inflamatorias y neovascularización." data-alt="Figura 11.15. Histología de una placa ateromatosa coronaria. A. Cubierta fibrosa y núcleo necrótico. B. Detalle de la placa. C. Células inflamatorias y neovascularización. Robbins y Cotran, 10ª ed., p. 501.">
+    <img src="../assets/fig/cap11/fig-11-15.webp" width="1465" height="573" loading="lazy" decoding="async" alt="Figura 11.15. Histología de una placa ateromatosa coronaria. A. Cubierta fibrosa y núcleo necrótico. B. Detalle de la placa. C. Células inflamatorias y neovascularización. Robbins y Cotran, 10ª ed., p. 501.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.15.</strong> Histología de una placa ateromatosa coronaria. A. Cubierta fibrosa y núcleo necrótico. B. Detalle de la placa. C. Células inflamatorias y neovascularización.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 501. <a href="../creditos.html#fig-11-15">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="cambios-agudos-de-la-placa-y-complicaciones">Cambios agudos de la placa y complicaciones</h3>
 <ul>
 <li><strong>Rotura/fisura</strong>: expone constituyentes trombógenos → trombosis frecuentemente oclusiva total <span class="cite">p. 502</span>.</li>
@@ -691,6 +811,15 @@
 <div class="section-kicker"><span class="n">07</span> pp. 504-508</div>
 <h2>Aneurismas y disección</h2>
 <p>Un <strong>aneurisma</strong> es una dilatación localizada anómala de un vaso o el corazón. <strong>Aneurisma verdadero</strong>: afecta todas las capas de una pared intacta pero atenuada. <strong>Falso aneurisma (seudoaneurisma)</strong>: defecto parietal con hematoma extravascular que comunica con la luz ("hematoma pulsátil"), p. ej., rotura ventricular contenida por adherencias pericárdicas o fuga en la anastomosis de un injerto. <strong>Disección</strong>: la sangre se abre túnel por la media o media-adventicia <span class="cite">p. 504-505</span>.</p>
+<figure class="fig" id="fig-11-19">
+  <a class="fig-open" href="../assets/fig/cap11/fig-11-19.webp" data-caption="Figura 11.19. Tipos de aneurisma y disección. A. Vaso normal. B. Aneurisma sacular. C. Aneurisma fusiforme. D. Falso aneurisma. E. Disección." data-alt="Figura 11.19. Tipos de aneurisma y disección. A. Vaso normal. B. Aneurisma sacular. C. Aneurisma fusiforme. D. Falso aneurisma. E. Disección. Robbins y Cotran, 10ª ed., p. 504.">
+    <img src="../assets/fig/cap11/fig-11-19.webp" width="1474" height="470" loading="lazy" decoding="async" alt="Figura 11.19. Tipos de aneurisma y disección. A. Vaso normal. B. Aneurisma sacular. C. Aneurisma fusiforme. D. Falso aneurisma. E. Disección. Robbins y Cotran, 10ª ed., p. 504.">
+  </a>
+  <figcaption>
+    <strong>Figura 11.19.</strong> Tipos de aneurisma y disección. A. Vaso normal. B. Aneurisma sacular. C. Aneurisma fusiforme. D. Falso aneurisma. E. Disección.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 504. <a href="../creditos.html#fig-11-19">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <ul>
 <li><strong>Sacular</strong>: evaginación esférica de una porción de la pared; intracraneales 2-20 mm; aórticos 5-10 cm, a menudo con trombos <span class="cite">p. 505</span>.</li>
 <li><strong>Fusiforme</strong>: dilatación circunferencial difusa de un segmento largo; en aorta 5-10 cm <span class="cite">p. 505</span>.</li>
@@ -1026,6 +1155,11 @@
 </ul>
 
 <div class="warnbox"><span class="box-title">Comparaciones que caen en prueba</span>Arterioloesclerosis hialina (HTA crónica y diabetes) vs hiperplásica en piel de cebolla (HTA maligna). Células gigantes (&gt;50 años, riesgo de ceguera) vs Takayasu (&lt;50 años, sin pulso): histología idéntica, solo cambia la edad. ANCA-MPO (polivasculitis microscópica, Churg-Strauss) vs ANCA-PR3 (GPV hasta 95%).</div>
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-11-1" aria-label="Figura 11.1"><img src="../assets/fig/cap11/fig-11-1.webp" loading="lazy" decoding="async" alt="Figura 11.1"><span>Figura 11.1</span></a><a class="fig-thumb" href="#fig-11-2" aria-label="Figura 11.2"><img src="../assets/fig/cap11/fig-11-2.webp" loading="lazy" decoding="async" alt="Figura 11.2"><span>Figura 11.2</span></a><a class="fig-thumb" href="#fig-11-6" aria-label="Figura 11.6"><img src="../assets/fig/cap11/fig-11-6.webp" loading="lazy" decoding="async" alt="Figura 11.6"><span>Figura 11.6</span></a><a class="fig-thumb" href="#fig-11-7" aria-label="Figura 11.7"><img src="../assets/fig/cap11/fig-11-7.webp" loading="lazy" decoding="async" alt="Figura 11.7"><span>Figura 11.7</span></a><a class="fig-thumb" href="#fig-11-10" aria-label="Figura 11.10"><img src="../assets/fig/cap11/fig-11-10.webp" loading="lazy" decoding="async" alt="Figura 11.10"><span>Figura 11.10</span></a><a class="fig-thumb" href="#fig-11-14" aria-label="Figura 11.14"><img src="../assets/fig/cap11/fig-11-14.webp" loading="lazy" decoding="async" alt="Figura 11.14"><span>Figura 11.14</span></a><a class="fig-thumb" href="#fig-11-15" aria-label="Figura 11.15"><img src="../assets/fig/cap11/fig-11-15.webp" loading="lazy" decoding="async" alt="Figura 11.15"><span>Figura 11.15</span></a><a class="fig-thumb" href="#fig-11-19" aria-label="Figura 11.19"><img src="../assets/fig/cap11/fig-11-19.webp" loading="lazy" decoding="async" alt="Figura 11.19"><span>Figura 11.19</span></a></div>
 </section>
   </main>
 </div>
@@ -1033,7 +1167,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1051,8 +1192,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1072,6 +1213,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

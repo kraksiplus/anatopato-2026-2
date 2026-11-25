@@ -1,0 +1,187 @@
+{
+  "chapter": 11,
+  "headings": [
+    "Ideas clave",
+    "Estructura y función vasculares",
+    "Anomalías vasculares",
+    "Enfermedad vascular hipertensiva",
+    "Arterioesclerosis",
+    "Ateroesclerosis",
+    "Aneurismas y disección",
+    "Vasculitis",
+    "Trastornos por hiperreactividad de los vasos sanguíneos",
+    "Venas y vasos linfáticos",
+    "Tumores vasculares",
+    "Patología de la intervención vascular",
+    "Puntos de examen"
+  ],
+  "figures": [
+    {
+      "number": "11.1",
+      "page": 486,
+      "caption": "NTES Figura I 1.1 Especializaciones regionales de la vasculatura. Aunque su organización básica es constante, el grosor y la composición de las distintas capas varían en virtud de las fuerzas hemodinámicas y los requerimientos tisulares. Así, la aorta y otras arterias elásticas tienen un sustancial tejido elástico, para aco"
+    },
+    {
+      "number": "11.2",
+      "page": 488,
+      "caption": "vado Figura 11.2 Estados basal y activado de las células endoteliales. La presión arterial normal, el flujo laminar y las concentraciones estables de factores de crecimiento favorecen un estado basal de las células endoteliales que mantiene una superficie no adhesiva y no trombótica con un tono del músculo liso de la pared"
+    },
+    {
+      "number": "11.3",
+      "page": 489,
+      "caption": "edia Figura 11.3 Respuesta prototipica a la lesión vascular. Representación esquemática del engrosamiento de la intima, destacando la migración de células musculares lisas de la intima y la proliferación asociada a síntesis de matriz extracelular. Las células de músculo liso de la intima pueden provenir de la media un fenot"
+    },
+    {
+      "number": "11.4",
+      "page": 490,
+      "caption": "ALES Figura I 1.4Regulación de la presión arterial. Diversas influencias sobre el gasto cardiaco (p. ej., volemia y contractilidad miocárdica) y la resistencia periférica (neurales, humorales y efectoras locales) repercuten en la presión arterial."
+    },
+    {
+      "number": "11.5",
+      "page": 491,
+      "caption": "sina Figura I 1.5 Interacción de eje renina-angiotensina-aldosterona y péptido natriurético auricular en el mantenimiento de la homeostasia de la presión arterial. O"
+    },
+    {
+      "number": "11.6",
+      "page": 493,
+      "caption": "osis Figura I 1.6 Patología vascular en la hipertensión. A. Arterioloesclerosis hialina. La pared arteriolar está engrosada, con aumento de depósito de proteínas (hialinizadas), y la luz está significativamente estrechada. B. Arterioloesclerosis hiperplásica (piel de cebolla) que produce la obliteración de la luz (flecha) ("
+    },
+    {
+      "number": "11.7",
+      "page": 494,
+      "caption": "EDIA Figura I 1.7 Estructura básica de una placa ateroesclerótica. Obsérvese que la ateroesclerosis es un proceso centrado en la intima con interacciones complejas entre células y materiales extracelulares. Las placas pueden tener efectos secundarios en la media subyacente, incluida una reducción de las células musculares l"
+    },
+    {
+      "number": "11.8",
+      "page": 495,
+      "caption": "nos) Figura I 1.8 Riesgo de muerte por enfermedad cardiovascular a lo largo de la vida. A. Riesgo estimado a los 10 anos de enfermedad arterial coronaria en un hombre y una mujer hipotéticos de 55 anos en función de los factores de riesgo tradicionales (hiperlipidemia, hipertensión, consumo de tabaco y diabetes). ECG, elect"
+    },
+    {
+      "number": "11.9",
+      "page": 496,
+      "caption": "(%) Figura 1 1.9 La proteína C reactiva añade información pronostica a todos los grados de riesgo tradicional identificados en el Framingham Heart Study. El riesgo relativo (eje de ordenadas) hace referencia al riesgo de padecer un episodio cardiovascular (p. ej., infarto de miocardio). El eje de abscisas corresponde al ri"
+    },
+    {
+      "number": "11.10",
+      "page": 497,
+      "caption": "Figura 11.10 Evolución de los cambios de la pared arterial en respuesta a la hipótesis de lesión. I, normal. 2, lesión endotelial con adhesión de monocitos y plaquetas. 3, migración de monocitos y células musculares lisas a la intima, con activación de macrófagos. 4, captación por macrófagos y células musculares lisas"
+    },
+    {
+      "number": "11.11",
+      "page": 499,
+      "caption": "L-18 Figura I1.11 Acción de los cristales de colesterol en la activación del inflamasoma y producción de interleucina I en la placa ateroesclerótica. Las lipoproteinas de baja densidad (LDL) oxidadas conducen a la activación de macrófagos subendoteliales a través de la iniciación, mediada por los receptores de tipo Toll (TL"
+    },
+    {
+      "number": "11.12",
+      "page": 499,
+      "caption": ". La figura 11.12 resume las principales vías patógenas que actúan en la aterogenia, destacando la naturaleza multifactorial de la enfermedad. El esquema pone de relieve el concepto de ateroesclerosis como respuesta inflamatoria crónica (y, en última instancia, como intento de <cicatrización> vascular), generada por diversa"
+    },
+    {
+      "number": "11.13",
+      "page": 500,
+      "caption": "a I. Figura I 1.13 Estría grasa constituida por acumulación de macrófagos espumosos en la intima. A. Aorta con estrías grasas (flechas), asociadas en buena medida al origen de las ramificaciones. B. Microfotografia de una estría grasa de un conejo hipercolesterolémico experimental que muestra células espumosas derivadas de"
+    },
+    {
+      "number": "11.14",
+      "page": 501,
+      "caption": "01 B Figura 1 1.14 Imágenes macroscópicas de ateroesclerosis de la aorta. A. Ateroesclerosis leve compuesta por placas fibrosas, una de las cuales está indicada con una flecha. B. Enfermedad grave con lesiones difusas y complicadas que incluyen una placa ulcerada (flecha de punta hueca) y una lesión con un trombo superpuest"
+    },
+    {
+      "number": "11.15",
+      "page": 501,
+      "caption": "5C). Figura 11.15 Características histológicas de una placa ateromatosa en la arteria coronaria. A. La arquitectura general muestra una cubierta fibrosa (F) y un núcleo necrótico central (C) que contiene colesterol y otros lípidos. La luz (L) se ve moderadamente afectada. Obsérvese que un segmento de la pared està libre de"
+    },
+    {
+      "number": "11.16",
+      "page": 502,
+      "caption": "02 B Figura 1 1.16 Rotura de placa ateroesclerótica. A. Rotura de placa sin trombo superpuesto de un paciente que murió repentinamente. B. Trombosis coronaria aguda superpuesta a una placa ateroesclerótica, con disociación focal de la cubierta fibrosa, que desencadenó un infarto de miocardio mortal. Tanto en A como en B, la"
+    },
+    {
+      "number": "11.17",
+      "page": 502,
+      "caption": "n la figura 11.17. A continuación se describen los rasgos de las lesiones ateroescleróticas, que suelen ser responsables de las manifestaciones clínico-patológicas. Estenosis ateroesclerótica. En las pequeñas arterias, las placas ateroescleróticas pueden obstruir gradualmente las luces vasculares, afectando al flujo sanguín"
+    },
+    {
+      "number": "11.18",
+      "page": 503,
+      "caption": "rosa Figura 11.18 Placas ateroescleróticas vulnerables y estables. Las placas estables presentan una cubierta engrosada constituida por colágeno denso, con mínima inflamación y núcleo ateromatoso subyacente. Las placas vulnerables presentan una cubierta fibrosa fina, núcleo lipídico grande y mayor inflamación. (Modificado d"
+    },
+    {
+      "number": "11.19",
+      "page": 504,
+      "caption": "ción Figura I1.19 Aneurismas. A. Vaso normal. B. Aneurisma verdadero de tipo sacular. La pared se abomba focalmente hacia fuera y puede atenuarse, aunque por lo demás está intacta. C. Aneurisma verdadero de tipo fusiforme. Hay dilatación circunferencial del vaso, sin rotura. D. Falso aneurisma. La pared está rota y se produ"
+    },
+    {
+      "number": "11.22",
+      "page": 507,
+      "caption": "r- B Figura I 1.22 Disección aórtica. A. Fotografía macroscópica de una aorta abierta, con disección proximal que se origina a partir de un desgarro de la intima, pequeño y oblicuo (catéter), que permite que la sangre penetre en la media y cree un hematoma intramural retrógrado (flechas finas). Obsérvese que el desgarro de"
+    },
+    {
+      "number": "11.23",
+      "page": 508,
+      "caption": "po B Figura 11.23 Clasificación de las disecciones. La de tipo A (proximal) afecta a la aorta ascendente, como parte de una disección más extensa (DeBakey I) o de forma aislada (DeBakey II). Las de tipo B (distal o DeBakey III) se desarrollan después del origen de los grandes vasos. Las disecciones de tipo A se asocian a un"
+    },
+    {
+      "number": "11.24",
+      "page": 510,
+      "caption": "ure) Figura I 1.24 Localizaciones vasculares habitualmente afectadas en las formas más comunes de vasculitis y presuntas etiologías. Obsérvese un sustancial solapamiento de distribuciones. ANCA, anticuerpos citoplasmicos antineutrófilos; LES, lupus eritematoso sistémico. y la especificidad establecidas en ensayos para inmun"
+    },
+    {
+      "number": "11.25",
+      "page": 511,
+      "caption": "ntes Figura 11.25 Arteritis de células gigantes (temporal). A. Tinción con hematoxilina y eosina de una arteria temporal que muestra células gigantes en la membrana elástica interna degenerada en la arteritis activa (flecha). B. Tinción para tejido elástico que muestra la destrucción focal de la membrana elástica interna (f"
+    },
+    {
+      "number": "11.26",
+      "page": 512,
+      "caption": "A B Figura I1.26 Arteritis de Takayasu. A. Angiografia del cayado aórtico que muestra estenosis de las arterias braquiocefálica, carótida y subclavia (flechas). B. Fotografía macroscópica de dos cortes transversales de la arteria carótida derecha, obtenidos en la autopsia del paciente mostrado en A, en los que se observa u"
+    },
+    {
+      "number": "11.27",
+      "page": 513,
+      "caption": "y un Figura 11.27 Panarteritis nudosa. Hay necrosis fibrinoide segmentaría y oclusión trombótica de la luz de esta pequeña arteria. Obsérvese que parte de la pared vascular, arriba a la derecha (flecha), no está afectada. (Por cortesía de Sidney Murphree, MD, Department of Pathology, University H of Texas Southwestern Medic"
+    },
+    {
+      "number": "11.28",
+      "page": 514,
+      "caption": "ones Figura 1 1.28 Vasculitis de pequeños vasos asociada a anticuerpos citoplásmicos antineutrófilos. A. Vasculitis leucocitoclástica (polivasculitis microscópica) con fragmentación de neutrófilos en las paredes vasculares y en torno a ellas. B y C. Granulomatosis con polivasculitis. B. Vasculitis de una pequeña arteria con"
+    },
+    {
+      "number": "11.29",
+      "page": 515,
+      "caption": "515 Figura I 1.29 Tromboangitis obliterante (enfermedad de Buerger). La luz está obstruida por un trombo que contiene abscesos (flecha), y la pared vascular està infiltrada con leucocitos. Buerger presentan hipersensibilidad a los extractos de tabaco inyectados por vía intradérmica, y sus vasos sufren un trastorno de la va"
+    },
+    {
+      "number": "11.30",
+      "page": 516,
+      "caption": "as B Figura 11.30 Fenómeno de Raynaud. A. Palidez netamente delimitada de la porción distal de los dedos por el cierre de las arterias digitales. B. Cianosis en las puntas de los dedos. (Reproducido a partir de Salvarani C, et al: Polymyalgia rheumatica and giant-cell arteritis, N Engl] Med 347:261, 2002."
+    },
+    {
+      "number": "11.32",
+      "page": 521,
+      "caption": "es B Figura 1 1.32 Angiomatosis bacilar. A. Lesión cutánea característica. B. Aspecto histológico con inflamación neutrófila aguda y proliferación vascular (capilar). MD, Beth Israel Deaconess Medical Center, Boston, Mass.; B y recuadro, por cortesía de Scott Granter, MD, Brigham and Women's Hospital, Boston, Mass. particul"
+    },
+    {
+      "number": "11.34",
+      "page": 523,
+      "caption": "523 Figura I1.34 Angiosarcoma. A. Angiosarcoma que afecta al ventrículo derecho. B. Angiosarcoma moderadamente diferenciado con densos cúmulos de células atípicas que revisten las luces vasculares patentes. C. Tinción inmunohistoquimica para el marcador celular endotelial CD31 que muestra la naturaleza endotelial de las cé"
+    },
+    {
+      "number": "11.35",
+      "page": 524,
+      "caption": "ss.) Figura 11.35 Reestenosis tras una angioplastia y colocación de endoprótesis. A. Imagen macroscópica que muestra una placa ateroesclerótica amarilla residual (flechas) y una nueva lesión de la intima concéntrica de color pardo blanquecino dentro de esa placa. B. La imagen histológica muestra una neointima engrosada que"
+    },
+    {
+      "number": "11.36",
+      "page": 524,
+      "caption": "nos. Figura 11.36Hiperplasia de la intima en la anastomosis distal de un injerto femoropopliteo sintético. A. Angiografia que muestra constricción (flecha). B. Microfotografia que muestra un injerto de Gore-Tex (flecha) con proliferación manifiesta de la intima y luz residual muy pequeña (asterisco). (A, por cortesía de Ant"
+    }
+  ],
+  "missing": [
+    20,
+    21,
+    31,
+    33
+  ],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

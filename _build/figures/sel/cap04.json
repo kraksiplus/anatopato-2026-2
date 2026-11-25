@@ -1,0 +1,78 @@
+{
+  "chapter": 4,
+  "page_id": "c1-04",
+  "figures": [
+    {
+      "number": "4.3",
+      "page": 118,
+      "caption": "Hígado con congestión pasiva crónica: áreas centrolobulillares rojizas y hundidas sobre parénquima marrón viable, formando el patrón de hígado en nuez moscada.",
+      "section": "Hiperemia y congestión",
+      "after_text": "regiones centrolobulillares rojizas y ligeramente hundidas por muerte celular",
+      "kind": "diagnostic",
+      "why": "Lesión clásica de congestión crónica, citada en Puntos de examen"
+    },
+    {
+      "number": "4.4",
+      "page": 119,
+      "caption": "Secuencia de la hemostasia en la zona de lesión vascular: vasoconstricción arteriolar, tapón plaquetario y depósito de fibrina.",
+      "section": "Hemostasia, trastornos hemorrágicos y trombosis",
+      "after_text": "Vasoconstricción arteriolar: inmediata; reduce el flujo sanguíneo de la zona",
+      "kind": "mechanism",
+      "why": "Diagrama de patogenia central del capítulo, la hemostasia en etapas aparece en Puntos de examen"
+    },
+    {
+      "number": "4.6",
+      "page": 121,
+      "caption": "Cascada de la coagulación en el laboratorio (vías intrínseca y extrínseca, TP y TTP) y en el organismo vivo, iniciada por el factor tisular.",
+      "section": "Hemostasia, trastornos hemorrágicos y trombosis",
+      "after_text": "no recapitulan la coagulación in vivo",
+      "kind": "mechanism",
+      "why": "Base para interpretar TP y TTP, contenido explícito de Puntos de examen"
+    },
+    {
+      "number": "4.12",
+      "page": 125,
+      "caption": "Triada de Virchow en la trombosis: lesión endotelial, alteración del flujo sanguíneo e hipercoagulabilidad, que se potencian entre sí.",
+      "section": "Trombosis",
+      "after_text": "La integridad del endotelio es el factor más importante",
+      "kind": "mechanism",
+      "why": "Concepto central de la trombosis, destacado en Ideas clave y Puntos de examen"
+    },
+    {
+      "number": "4.14",
+      "page": 129,
+      "caption": "Trombos murales: en la punta de los ventrículos sobre cicatrices fibrosas y en un aneurisma de la aorta abdominal sobre lesiones ateroescleróticas.",
+      "section": "Trombosis",
+      "after_text": "Trombos murales: en las cavidades cardiacas o en la luz de la aorta",
+      "kind": "diagnostic",
+      "why": "Fuente principal de la tromboembolia sistémica (80% cardíaca), imagen clásica"
+    },
+    {
+      "number": "4.16",
+      "page": 131,
+      "caption": "Émbolo de una trombosis venosa profunda de la extremidad inferior encajado en la bifurcación de la arteria pulmonar.",
+      "section": "Embolia",
+      "after_text": "quedar atascados en la vasculatura arterial pulmonar",
+      "kind": "diagnostic",
+      "why": "Imagen patognomónica de la embolia de pulmón masiva, causa de muerte súbita"
+    },
+    {
+      "number": "4.19",
+      "page": 133,
+      "caption": "Infartos rojo y blanco: infarto rojo pulmonar hemorrágico en forma de cuna e infarto blanco esplénico bien delimitado.",
+      "section": "Infarto",
+      "after_text": "Infarto reciente: mal delimitado y ligeramente hemorrágico",
+      "kind": "diagnostic",
+      "why": "Contraste clásico rojo versus blanco, señalado en Puntos de examen"
+    },
+    {
+      "number": "4.21",
+      "page": 136,
+      "caption": "Vías principales en la patogenia del shock séptico: los productos microbianos activan el sistema inmunitario innato y conducen a la insuficiencia multiorgánica.",
+      "section": "Shock",
+      "after_text": "Los productos microbianos (PAMP) activan las células endoteliales",
+      "kind": "mechanism",
+      "why": "Único diagrama de la patogenia del shock séptico, sección con gran detalle en el resumen"
+    }
+  ]
+}

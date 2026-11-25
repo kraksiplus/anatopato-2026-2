@@ -1,0 +1,137 @@
+{
+  "chapter": 1,
+  "headings": [
+    "Ideas clave",
+    "Genoma y ADN no codificante",
+    "Organización de las histonas y epigenoma",
+    "Micro-ARN y ARN largo no codificante",
+    "Edición génica",
+    "Mantenimiento celular: membrana plasmática y transporte",
+    "Citoesqueleto y uniones célula-célula",
+    "Maquinaria biosintética retículo endoplásmico y aparato de Golgi",
+    "Eliminación de desechos lisosomas y proteosoma",
+    "Metabolismo celular y función mitocondrial",
+    "Activación celular y señalización",
+    "Matriz extracelular",
+    "Mantenimiento de las poblaciones celulares: proliferación y ciclo celular",
+    "Células madre",
+    "Medicina regenerativa",
+    "Puntos de examen"
+  ],
+  "figures": [
+    {
+      "number": "1.1",
+      "page": 2,
+      "caption": "eína Figura 1.1 Organización del ADN nuclear. Con el microscopio óptico, se observa que el material genético está organizado en eucromatina, dispersa y transcripcionalmente activa, y heterocromatina, con empaquetamiento compacto y transcripcionalmente inactiva. En ocasiones, la cromatina está conectada mecánicamente con la"
+    },
+    {
+      "number": "1.2",
+      "page": 4,
+      "caption": "n H1 Figura I.2 Organización de las histonas. A. Los nucleosomas están compuestos por octámeros de proteínas histonas (cada dos de ellas formadas por subunidades de histonas H2A, H2B, H3 y H4), rodeadas por I,8 vueltas de I47 pb de ADN. Las histonas se localizan en secuencias de ADN de enlace de 20-80 nucleótidos entre los"
+    },
+    {
+      "number": "1.3",
+      "page": 5,
+      "caption": "ito. Figura 1.3 Generación de micro-ARN (miARN) y su modo de actuación en la regulación de la función génica. La transcripción de un miARN un produce un miARN primario (PRI-miARN), que es procesado en el núcleo sa para formar un pre-miARN, compuesto por una sola cadena de ARN cion con estructuras en horquilla secundarias qu"
+    },
+    {
+      "number": "1.4",
+      "page": 5,
+      "caption": "ades Figura 1.4 Funciones de los ARN largos no codificantes (ARNInc). A. Los ARNInc pueden facilitar la unión de factores de transcripción, promoviendo así la activación génica. B. Por el contrario, los mismos ARNInc pueden unirse de manera preventiva a factores de transcripción para inhibirla. C. La modificación de las his"
+    },
+    {
+      "number": "1.5",
+      "page": 6,
+      "caption": "fica Figura 1.5 Edición génica con repeticiones palindrómicas cortas agrupadas y regularmente espaciadas (CRISPR) y la nucleasa Cas9. En las bacterias, las secuencias de ADN integradas por CRISPR son transcritas a ARN guía (ARNg), con una región constante y una secuencia variable de aproximadamente 20 bases. Las regiones co"
+    },
+    {
+      "number": "1.6",
+      "page": 7,
+      "caption": "olos Figura 1.6 Componentes subcelulares básicos de las células. La tabla presenta el número de los diferentes orgánulos de un hepatocito típico, así como su volumen en la célula. La figura muestra las relaciones geográficas, pero no se ha realizado a una escala exacta. RE, retículo endoplásmico. (Modificado de Weibel ER, S"
+    },
+    {
+      "number": "1.7",
+      "page": 8,
+      "caption": "idos Figura I.7 Organización y asimetría de la membrana plasmática. A. La membrana plasmática es una bicapa de fosfolipidos, colesterol y proteínas asociadas. La distribución de los fosfolipidos en la membrana es asimétrica, debido a la actividad de las flipasas; la fosfatidilcolina y la esfingomielina están sobrerrepresent"
+    },
+    {
+      "number": "1.8",
+      "page": 10,
+      "caption": "rdío Figura I.8 Movimiento de moléculas pequeñas y estructuras más grandes a través de las membranas. La bicapa lipídica es relativamente impermeable a todas las moléculas, excepto a las más pequeñas y/o las más hidrófobas. En consecuencia, la importación o exportación de especies cargadas requiere proteínas transportadoras"
+    },
+    {
+      "number": "1.9",
+      "page": 11,
+      "caption": "asal Figura 1.9 Elementos del citoesqueleto e interacciones célula-célula. La adhesión interepitelial comporta diversas interacciones con proteínas de superficie en las uniones herméticas, las uniones adherentes y los desmosomas. La adhesión a la matriz extracelular depende de las integrinas celulares (y proteínas asociadas"
+    },
+    {
+      "number": "1.10",
+      "page": 14,
+      "caption": "inas Figura 1.10 Catabolismo intracelular. A. Degradación lisosómica. En la heterofagia (lado derecho de la figura A), los lisosomas se fusionan con endosomas o fagosomas para facilitar la degradación de los contenidos internalizados (v. fig. I .8). Los productos finales son liberados al citosol para la nutrición, o son des"
+    },
+    {
+      "number": "1.11",
+      "page": 16,
+      "caption": "sis) Figura I.11 Funciones de las mitocondrias. Además de la generación eficaz de trifosfato de adenosina (ATP) a partir de sustratos de hidratos de carbono y ácidos grasos, las mitocondrias también desempeñan una importante función en el metabolismo intermediario, actuando como fuente de sustratos usados en la síntesis de"
+    },
+    {
+      "number": "1.12",
+      "page": 18,
+      "caption": "otch Figura 1.12 Señalización mediada por receptores. A. Tipos de receptores de sealización incluyendo (de izquierda a derecha) receptores que utilizan una tirosina cinasa no receptora, tirosina cinasas receptoras, receptores nucleares acoplados a la proteína G (GPCR) con siete dominios transmembrana unidos a proteínas G he"
+    },
+    {
+      "number": "1.13",
+      "page": 22,
+      "caption": "ORMA Figura 1.13 Interacciones de la matriz extracelular (MEC) y los factores de crecimiento para mediar la señalización celular. Las integrinas de la superficie celular interactúan con el citoesqueleto en complejos de adhesión focales (agregados de proteínas como vinculina, -actinina y talina; v. fig. 1.17C). Se activa así"
+    },
+    {
+      "number": "1.14",
+      "page": 23,
+      "caption": "adas Figura 1.14 Principales componentes de la matriz extracelular (MEC), incluidos colágenos, proteoglucanos y glucoproteinas adhesivas. Las células epiteliales y mesenquimatosas (p. ej., fibroblastos) interactúan con la MEC a través de las integrinas. Las membranas basales y la MEC intersticial presentan una arquitectura"
+    },
+    {
+      "number": "1.15",
+      "page": 24,
+      "caption": "ular Figura 1.15 Componentes de la matriz extracelular (MEC). A. Colágeno fibrilar y estructuras fibrilares elásticas. Debido al apilamiento y al extenso entrecruzamiento lateral de fibrillas similares a bastones, las fibras de colágeno presentan una notable fuerza de tensión, pero no mucha elasticidad. La elastina está tam"
+    },
+    {
+      "number": "1.16",
+      "page": 25,
+      "caption": "asa) Figura 1.16 Vía biosintética del colágeno. Algunos tipos de colágeno son heterotrimeros (tipos I, V y XI), mientras que otros son homotrimeros (tipos II y Il). Las cadenas que conforman las moléculas de colágeno fibrilar son sintetizadas como cadenas precursoras pro-, con grandes regiones polipeptidicas globulares que"
+    },
+    {
+      "number": "1.17",
+      "page": 26,
+      "caption": "NA C Figura 1.17 Interacciones entre las células y la matriz extracelular (MEC): señalización de glucoproteinas adhesivas e integrinas. A. La fibronectina es un dimero con enlaces disulfuro, con diversos dominios que permiten la unión a MEC e integrinas, en este último caso mediante unidades arginina-glicina-ácido aspártico"
+    },
+    {
+      "number": "1.18",
+      "page": 26,
+      "caption": "ular Figura I.18 Puntos de referencia del ciclo celular. La figura muestra las fases del ciclo celular (Go, G, G, S y M), la localización del punto de restricción G, y los puntos de control G,/S y G/M. El punto de restricción G, hace referencia al estadio en G, en el que la célula está implicada en el avance en el ciclo cel"
+    },
+    {
+      "number": "1.19",
+      "page": 27,
+      "caption": "p57 Figura 1.19 Función de las ciclinas, las cinasas dependientes de ciclinas (CDK) y los inhibidores de CDK (CDKI) en la regulación del ciclo celular. Las flechas sombreadas representan las fases del ciclo celular durante las que los complejos ciclina-CDK específicos están activos. Como se ilustra, los complejos ciclina D"
+    },
+    {
+      "number": "1.21",
+      "page": 29,
+      "caption": "onas Figura I.21 Células madre embrionarias (ES). El cigoto, formado por la unión de un espermatozoide y un óvulo, se divide para formar blastocistos, y la masa celular interna del blastocisto genera el embrión. Las células pluripotenciales de la masa celular interna, conocidas como células ES, pueden ser inducidas para que"
+    },
+    {
+      "number": "1.22",
+      "page": 29,
+      "caption": "gado Figura I.22 Nichos de células madre en varios tejidos. A. Las células madre cutáneas se localizan en el área de la protuberancia del folículo piloso, en las glándulas sebáceas y en la capa basal de la epidermis. B. Las células madre cilíndricas de la base de las criptas (CBC) del intestino delgado se localizan en la ba"
+    },
+    {
+      "number": "1.23",
+      "page": 30,
+      "caption": "ermo Figura 1.23 Células madre pluripotenciales inducidas (iPS). Los genes que confieren propiedades de las células madre se introducen en las células diferenciadas de un paciente, dando lugar a células madre que pueden ser inducidas para diferenciarse en varias estirpes. (Modificado de Hochedlinger K, Jaenisch R: Nuclear t"
+    }
+  ],
+  "missing": [
+    20
+  ],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

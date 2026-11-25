@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 5. Trastornos genéticos</h1>
-    <p class="lede">Guía 05 de 10. Resumen completo del capítulo 5 con 89 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>05 de 10</strong></div><div><span>Capítulo</span><strong>5</strong></div><div><span>Páginas</span><strong>141-188</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>89</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 05 de 10. Resumen completo del capítulo 5 con 89 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>05 de 10</strong></div><div><span>Capítulo</span><strong>5</strong></div><div><span>Páginas</span><strong>141-188</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>89</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -480,6 +536,7 @@
         <li><a href="#sec-12-trastornos-monogenicos-de-herencia-no-clasica">Trastornos monogénicos de herencia no clásica</a></li>
         <li><a href="#sec-13-diagnostico-genetico-molecular">Diagnóstico genético molecular</a></li>
         <li><a href="#sec-14-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -523,7 +580,16 @@
 <ul>
 <li>Si el número de bases afectadas es tres o un múltiplo de tres, la pauta de lectura se conserva y se sintetiza una proteína que pierde o gana uno o más aminoácidos. Ejemplo: la deleción de tres bases en el gen de la fibrosis quística (pérdida de fenilalanina, mutación F508).</li>
 <li>Si el número no es múltiplo de tres, se produce una <strong>mutación con desplazamiento de la pauta de lectura</strong>: incorporación de aminoácidos incorrectos y truncamiento en un codón de terminación prematuro. Ejemplos: deleción de una base en el locus ABO (responsable del alelo O) e inserción de cuatro bases en el gen de la hexosaminidasa A (principal causa de enfermedad de Tay-Sachs en judíos askenazíes).</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-5-2">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-2.webp" data-caption="Figura 5.2. Deleción de tres bases en el gen de la fibrosis quística: se pierde fenilalanina, pero la pauta de lectura se conserva porque la deleción es múltiplo de tres." data-alt="Figura 5.2. Deleción de tres bases en el gen de la fibrosis quística: se pierde fenilalanina, pero la pauta de lectura se conserva porque la deleción es múltiplo de tres. Robbins y Cotran, 10ª ed., p. 143.">
+    <img src="../assets/fig/cap05/fig-5-2.webp" width="700" height="285" loading="lazy" decoding="async" alt="Figura 5.2. Deleción de tres bases en el gen de la fibrosis quística: se pierde fenilalanina, pero la pauta de lectura se conserva porque la deleción es múltiplo de tres. Robbins y Cotran, 10ª ed., p. 143.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.2.</strong> Deleción de tres bases en el gen de la fibrosis quística: se pierde fenilalanina, pero la pauta de lectura se conserva porque la deleción es múltiplo de tres.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 143. <a href="../creditos.html#fig-5-2">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li><strong>Variantes estructurales</strong>: cambios del número de copias (amplificaciones o deleciones) y translocaciones con pérdida o ganación de función aberrante. Pueden ser germinales (suelen afectar a porciones contiguas de cromosoma, como en el síndrome de microdeleción del cromosoma 22q) o somáticas (cáncer; ejemplo clásico: cromosoma Filadelfia, translocación t(9;22) entre BCR y ABL en la leucemia mieloide crónica). La NGS permite detectar estas alteraciones con alta resolución; por ejemplo, se han descrito en trastornos frecuentes como el autismo.</li>
 <li><strong>Mutaciones de repeticiones de trinucleótidos</strong>: amplificación de una secuencia de tres nucleótidos que casi siempre contiene guanina y citosina. Ejemplo: el síndrome del cromosoma X frágil presenta entre 250 y 4.000 repeticiones CGG en la región reguladora del gen FMR1; en la población normal el promedio es de 29. Son mutaciones <strong>dinámicas</strong>: el grado de amplificación aumenta durante la gametogenia, lo que condiciona el patrón de herencia y el fenotipo.</li>
 <li>Otros genes no codifican proteínas, sino que producen <strong>ARN no codificantes</strong> (entre las familias más importantes, los micro-ARN y los ARN largos no codificantes), con funciones reguladoras.</li>
@@ -762,6 +828,15 @@
 <li><strong>Clases de mutaciones del receptor de LDL</strong> (más de 2.000 descritas): I, no se sintetiza (alelo nulo); II, receptor mal plegado que se acumula en el retículo endoplásmico; III, receptor en superficie que no se une a LDL; IV, receptor que se une pero no se localiza en las fositas revestidas; V, no se disocia del ligando en el endosoma y se degrada; VI, no se direcciona a la membrana basolateral.</li>
 <li>Tratamiento: <strong>estatinas</strong> (inhibición de la HMG-CoA reductasa) y <strong>anticuerpos anti-PCSK9</strong> aumentan los receptores de LDL. PCSK9 se descubrió en personas con colesterol extremadamente bajo por variantes de pérdida de función del gen.</li>
 </ul>
+<figure class="fig" id="fig-5-7">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-7.webp" data-caption="Figura 5.7. Vía del receptor de LDL y regulación del metabolismo del colesterol: endocitosis en fositas revestidas, liberación del colesterol e inhibición de la HMG-CoA reductasa." data-alt="Figura 5.7. Vía del receptor de LDL y regulación del metabolismo del colesterol: endocitosis en fositas revestidas, liberación del colesterol e inhibición de la HMG-CoA reductasa. Robbins y Cotran, 10ª ed., p. 152.">
+    <img src="../assets/fig/cap05/fig-5-7.webp" width="1474" height="1009" loading="lazy" decoding="async" alt="Figura 5.7. Vía del receptor de LDL y regulación del metabolismo del colesterol: endocitosis en fositas revestidas, liberación del colesterol e inhibición de la HMG-CoA reductasa. Robbins y Cotran, 10ª ed., p. 152.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.7.</strong> Vía del receptor de LDL y regulación del metabolismo del colesterol: endocitosis en fositas revestidas, liberación del colesterol e inhibición de la HMG-CoA reductasa.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 152. <a href="../creditos.html#fig-5-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-07-trastornos-asociados-a-defectos-enzimaticos" class="card">
 <div class="section-kicker"><span class="n">07</span> Sección</div>
@@ -774,6 +849,15 @@
 <li>Tratamiento: sustitución enzimática; reducción de sustrato; <strong>chaperonas moleculares</strong> (estabilizan el plegamiento de la enzima mutante); trasplante de células madre hematopoyéticas y terapia génica en casos seleccionados.</li>
 <li>Relación con enfermedades frecuentes: el portador de Gaucher es factor de riesgo de enfermedad de Parkinson (y prácticamente todos los pacientes de Gaucher desarrollan Parkinson); la Niemann-Pick tipo C eleva el riesgo de enfermedad de Alzheimer.</li>
 </ul>
+<figure class="fig" id="fig-5-10">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-10.webp" data-caption="Figura 5.10. Patogenia de las enfermedades por depósito lisosómico: el bloqueo de una enzima de la cascada degradativa genera acumulación del sustrato dentro del lisosoma." data-alt="Figura 5.10. Patogenia de las enfermedades por depósito lisosómico: el bloqueo de una enzima de la cascada degradativa genera acumulación del sustrato dentro del lisosoma. Robbins y Cotran, 10ª ed., p. 155.">
+    <img src="../assets/fig/cap05/fig-5-10.webp" width="699" height="1196" loading="lazy" decoding="async" alt="Figura 5.10. Patogenia de las enfermedades por depósito lisosómico: el bloqueo de una enzima de la cascada degradativa genera acumulación del sustrato dentro del lisosoma. Robbins y Cotran, 10ª ed., p. 155.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.10.</strong> Patogenia de las enfermedades por depósito lisosómico: el bloqueo de una enzima de la cascada degradativa genera acumulación del sustrato dentro del lisosoma.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 155. <a href="../creditos.html#fig-5-10">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Trastornos asociados a defectos enzimáticos" tabindex="0"><table>
 <thead>
 <tr>
@@ -903,6 +987,15 @@
 <li>Relación con Parkinson: riesgo 20 veces superior en los pacientes con Gaucher; entre el 5 y el 10% de los pacientes con Parkinson tienen mutaciones del gen de la glucocerebrosidasa; existe una relación recíproca entre la enzima y la agregación de alfa-sinucleína.</li>
 <li>Diagnóstico: actividad enzimática en leucocitos o fibroblastos en cultivo (no identifica heterocigotos; se detectan por mutación conocida). Tratamiento con enzima recombinante eficaz (esperanza de vida normal en tipo I, aunque muy caro); trasplante alogénico de células madre hematopoyéticas potencialmente curativo; terapia génica; reducción de sustrato con inhibidores de la glucosilceramida sintetasa.</li>
 </ul>
+<figure class="fig" id="fig-5-13">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-13.webp" data-caption="Figura 5.13. Enfermedad de Gaucher en médula ósea: células de Gaucher, macrófagos con citoplasma fibrilar que recuerda a papel arrugado por acumulación de glucocerebrósido." data-alt="Figura 5.13. Enfermedad de Gaucher en médula ósea: células de Gaucher, macrófagos con citoplasma fibrilar que recuerda a papel arrugado por acumulación de glucocerebrósido. Robbins y Cotran, 10ª ed., p. 159.">
+    <img src="../assets/fig/cap05/fig-5-13.webp" width="700" height="1086" loading="lazy" decoding="async" alt="Figura 5.13. Enfermedad de Gaucher en médula ósea: células de Gaucher, macrófagos con citoplasma fibrilar que recuerda a papel arrugado por acumulación de glucocerebrósido. Robbins y Cotran, 10ª ed., p. 159.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.13.</strong> Enfermedad de Gaucher en médula ósea: células de Gaucher, macrófagos con citoplasma fibrilar que recuerda a papel arrugado por acumulación de glucocerebrósido.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 159. <a href="../creditos.html#fig-5-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="mucopolisacaridosis-mps">Mucopolisacaridosis (MPS)</h3>
 <ul>
 <li>Deficiencia de las enzimas que degradan los glucosaminoglucanos (sulfato de dermatano, heparano, queratano y condroitina); 11 variantes clínicas; todas autosómicas recesivas menos el síndrome de Hunter (MPS II), ligado al X. La excreción urinaria de mucopolisacáridos está aumentada y sirve de herramienta diagnóstica.</li>
@@ -953,7 +1046,16 @@
 <li>Otros tipos citados: fosforilasa hepática y enzima desramificante (tipo hepático-hipoglucémico, con acumulación en muchos órganos y clínica dominada por hepatomegalia e hipoglucemia); fosfofructocinasa muscular (tipo VII); y ausencia de las enzimas ramificante y desramificante, con depósito generalizado y muerte precoz. En las formas hepáticas domina la <strong>hipoglucemia</strong>; en las miopáticas, la debilidad muscular y los calambres por falta de energía glucolítica sin elevación de lactato.</li>
 </ul>
 
-</section><section id="sec-09-trastornos-asociados-a-defectos-en-las-proteinas-que-regulan-el-" class="card">
+
+<figure class="fig" id="fig-5-16">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-16.webp" data-caption="Figura 5.16. Enfermedad de Pompe: fibras miocárdicas llenas de glucógeno lisosómico que aparecen como espacios claros frente al miocardio normal." data-alt="Figura 5.16. Enfermedad de Pompe: fibras miocárdicas llenas de glucógeno lisosómico que aparecen como espacios claros frente al miocardio normal. Robbins y Cotran, 10ª ed., p. 163.">
+    <img src="../assets/fig/cap05/fig-5-16.webp" width="1461" height="763" loading="lazy" decoding="async" alt="Figura 5.16. Enfermedad de Pompe: fibras miocárdicas llenas de glucógeno lisosómico que aparecen como espacios claros frente al miocardio normal. Robbins y Cotran, 10ª ed., p. 163.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.16.</strong> Enfermedad de Pompe: fibras miocárdicas llenas de glucógeno lisosómico que aparecen como espacios claros frente al miocardio normal.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 163. <a href="../creditos.html#fig-5-16">Ver créditos</a></span>
+  </figcaption>
+</figure></section><section id="sec-09-trastornos-asociados-a-defectos-en-las-proteinas-que-regulan-el-" class="card">
 <div class="section-kicker"><span class="n">09</span> Sección</div>
 <h2>Trastornos asociados a defectos en las proteínas que regulan el crecimiento celular</h2>
 <ul>
@@ -1077,6 +1179,15 @@
 <ul>
 <li>También se han descrito trisomías de los cromosomas 8, 9, 13, 18 y 22; las trisomías 18 y 13 presentan malformaciones mucho más graves y diversas que la 21, con asociación a mayor edad materna; es muy raro que estos lactantes cumplan el año de vida (la mayoría fallece en semanas o meses).</li>
 </ul>
+<figure class="fig" id="fig-5-20">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-20.webp" data-caption="Figura 5.20. Características clínicas y cariotipos de las trisomías autosómicas: Down (21), Edwards (18) y Patau (13)." data-alt="Figura 5.20. Características clínicas y cariotipos de las trisomías autosómicas: Down (21), Edwards (18) y Patau (13). Robbins y Cotran, 10ª ed., p. 168.">
+    <img src="../assets/fig/cap05/fig-5-20.webp" width="765" height="689" loading="lazy" decoding="async" alt="Figura 5.20. Características clínicas y cariotipos de las trisomías autosómicas: Down (21), Edwards (18) y Patau (13). Robbins y Cotran, 10ª ed., p. 168.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.20.</strong> Características clínicas y cariotipos de las trisomías autosómicas: Down (21), Edwards (18) y Patau (13).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 168. <a href="../creditos.html#fig-5-20">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="síndrome-por-deleción-del-cromosoma-22q112">Síndrome por deleción del cromosoma 22q11.2</h4>
 <ul>
 <li>Espectro de trastornos por una pequeña deleción de la banda q11.2 del brazo largo del 22 (región de unas 1,5 Mb con 30-40 genes). Afecta a 1 de cada 4.000 nacimientos y con frecuencia no se diagnostica por la variabilidad clínica.</li>
@@ -1239,7 +1350,16 @@
 <li>Mujeres afectadas: entre el 30 y el 50% de las portadoras tienen discapacidad intelectual.</li>
 <li>El riesgo de fenotipo depende de la posición en el árbol genealógico: hermanos de un varón transmisor, riesgo del 9% de discapacidad intelectual; nietos, riesgo del 40%.</li>
 <li><strong>Anticipación</strong>: empeora con cada generación, por conversión de las premutaciones en mutaciones completas durante la ovogenia.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-5-25">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-25.webp" data-caption="Figura 5.25. Árbol genealógico del síndrome del cromosoma X frágil: expansión de la premutación a mutación completa durante la ovogenia, con anticipación." data-alt="Figura 5.25. Árbol genealógico del síndrome del cromosoma X frágil: expansión de la premutación a mutación completa durante la ovogenia, con anticipación. Robbins y Cotran, 10ª ed., p. 176.">
+    <img src="../assets/fig/cap05/fig-5-25.webp" width="1474" height="877" loading="lazy" decoding="async" alt="Figura 5.25. Árbol genealógico del síndrome del cromosoma X frágil: expansión de la premutación a mutación completa durante la ovogenia, con anticipación. Robbins y Cotran, 10ª ed., p. 176.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.25.</strong> Árbol genealógico del síndrome del cromosoma X frágil: expansión de la premutación a mutación completa durante la ovogenia, con anticipación.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 176. <a href="../creditos.html#fig-5-25">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li>Patogenia: en la población normal, el gen FMR1 contiene entre 6 y 55 repeticiones CGG en el extremo 5' no traducido. Cuando superan 230 repeticiones, toda la región 5' se metila; la metilación se extiende hacia la región promotora y la transcripción de FMR1 queda suprimida (pérdida de función). El producto del gen, la FMRP (proteína de retraso mental del X frágil), es una proteína citoplásmica expresada ampliamente, sobre todo en el encéfalo y el testículo, los dos órganos más afectados. Se une al ARNm asociado a polisomas y regula su transporte intracelular hacia las dendritas (donde se ensambla en complejos con transcritos de proteínas pre- y postsinápticas, exportados al citoplasma y transportados a las dendritas cerca de las sinapsis) y es un regulador de la traducción: suprime la síntesis proteica a partir de los ARNm unidos en respuesta a la señalización de los receptores metabótropos del glutamato tipo I (mGlu-R). Su déficit genera un desequilibrio en la síntesis proteica sináptica y pérdida de plasticidad sináptica, esencial para el aprendizaje y la memoria.</li>
 <li>Diagnóstico: la PCR de las repeticiones es actualmente el método de elección.</li>
 <li>Trastornos de portadores de la premutación:
@@ -1394,7 +1514,16 @@
 <li>El diagnóstico de un número creciente de enfermedades requiere análisis de metilación de promotores: en el SXF (hipermetilación que silencia FMR1) y en los síndromes de Prader-Willi y Angelman. Para detectar la metilación se emplea el tratamiento con bisulfito sódico, que convierte la citosina no metilada en uracilo (actúa como la tímina en las reacciones en dirección 3') mientras las citosinas metiladas quedan protegidas, y tras el tratamiento ambas se distinguen por secuenciación.</li>
 </ul>
 
-</section><section id="sec-14-puntos-de-examen" class="card">
+
+<figure class="fig" id="fig-5-33">
+  <a class="fig-open" href="../assets/fig/cap05/fig-5-33.webp" data-caption="Figura 5.33. Principio de la secuenciación de próxima generación: separación espacial de moléculas, amplificación local y secuenciación en paralelo." data-alt="Figura 5.33. Principio de la secuenciación de próxima generación: separación espacial de moléculas, amplificación local y secuenciación en paralelo. Robbins y Cotran, 10ª ed., p. 186.">
+    <img src="../assets/fig/cap05/fig-5-33.webp" width="1474" height="706" loading="lazy" decoding="async" alt="Figura 5.33. Principio de la secuenciación de próxima generación: separación espacial de moléculas, amplificación local y secuenciación en paralelo. Robbins y Cotran, 10ª ed., p. 186.">
+  </a>
+  <figcaption>
+    <strong>Figura 5.33.</strong> Principio de la secuenciación de próxima generación: separación espacial de moléculas, amplificación local y secuenciación en paralelo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 186. <a href="../creditos.html#fig-5-33">Ver créditos</a></span>
+  </figcaption>
+</figure></section><section id="sec-14-puntos-de-examen" class="card">
 <div class="section-kicker"><span class="n">14</span> Sección</div>
 <h2>Puntos de examen</h2>
 <ul class="exam-list">
@@ -1422,6 +1551,11 @@
 <li>Epigenética: el aumento de la metilación de los islotes CpG disminuye la expresión génica; el bisulfito sódico distingue citosinas metiladas y no metiladas.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-5-2" aria-label="Figura 5.2"><img src="../assets/fig/cap05/fig-5-2.webp" loading="lazy" decoding="async" alt="Figura 5.2"><span>Figura 5.2</span></a><a class="fig-thumb" href="#fig-5-7" aria-label="Figura 5.7"><img src="../assets/fig/cap05/fig-5-7.webp" loading="lazy" decoding="async" alt="Figura 5.7"><span>Figura 5.7</span></a><a class="fig-thumb" href="#fig-5-10" aria-label="Figura 5.10"><img src="../assets/fig/cap05/fig-5-10.webp" loading="lazy" decoding="async" alt="Figura 5.10"><span>Figura 5.10</span></a><a class="fig-thumb" href="#fig-5-13" aria-label="Figura 5.13"><img src="../assets/fig/cap05/fig-5-13.webp" loading="lazy" decoding="async" alt="Figura 5.13"><span>Figura 5.13</span></a><a class="fig-thumb" href="#fig-5-16" aria-label="Figura 5.16"><img src="../assets/fig/cap05/fig-5-16.webp" loading="lazy" decoding="async" alt="Figura 5.16"><span>Figura 5.16</span></a><a class="fig-thumb" href="#fig-5-20" aria-label="Figura 5.20"><img src="../assets/fig/cap05/fig-5-20.webp" loading="lazy" decoding="async" alt="Figura 5.20"><span>Figura 5.20</span></a><a class="fig-thumb" href="#fig-5-25" aria-label="Figura 5.25"><img src="../assets/fig/cap05/fig-5-25.webp" loading="lazy" decoding="async" alt="Figura 5.25"><span>Figura 5.25</span></a><a class="fig-thumb" href="#fig-5-33" aria-label="Figura 5.33"><img src="../assets/fig/cap05/fig-5-33.webp" loading="lazy" decoding="async" alt="Figura 5.33"><span>Figura 5.33</span></a></div>
 </section>
   </main>
 </div>
@@ -1429,7 +1563,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1447,8 +1588,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1468,6 +1609,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

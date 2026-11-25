@@ -1,0 +1,78 @@
+{
+  "chapter": 2,
+  "page_id": "c1-02",
+  "figures": [
+    {
+      "number": "2.3",
+      "page": 37,
+      "caption": "Desarrollo secuencial de los cambios bioquímicos y morfológicos de la lesión celular: la célula puede estar no funcional y aun ser viable; si el estímulo persiste, la lesión se hace irreversible y sobreviene la muerte celular.",
+      "section": "Revisión de las respuestas celulares al estrés",
+      "after_text": "a menos que el flujo se restablezca rápidamente",
+      "kind": "mechanism",
+      "why": "Esquema central del capítulo: secuencia adaptación, lesión reversible, punto de no retorno y muerte."
+    },
+    {
+      "number": "2.7",
+      "page": 40,
+      "caption": "Necrosis coagulativa: A, infarto renal amarillo en cuña; B, microscopía con riñón normal y células necróticas que conservan el contorno, con pérdida de núcleos e infiltrado inflamatorio.",
+      "section": "Progresión de la lesión y muerte celular",
+      "after_text": "La arquitectura del tejido muerto se conserva durante",
+      "kind": "diagnostic",
+      "why": "Patrón de necrosis más frecuente (infarto isquémico); imagen clásica de examen."
+    },
+    {
+      "number": "2.13",
+      "page": 44,
+      "caption": "Mecanismos de la apoptosis: las vías mitocondrial (intrínseca) y del receptor de muerte (extrínseca) difieren en su inducción, pero ambas culminan en la activación de caspasas.",
+      "section": "Progresión de la lesión y muerte celular",
+      "after_text": "Dos vías distintas convergen en la activación de las caspasas",
+      "kind": "mechanism",
+      "why": "Panorama de las dos vías apoptóticas, concepto clave citado en Ideas clave y Puntos de examen."
+    },
+    {
+      "number": "2.18",
+      "page": 50,
+      "caption": "Formas y lugares principales de daño en la lesión celular, con las dianas intracelulares: ATP, mitocondrias, membranas, ADN y ERO.",
+      "section": "Mecanismos de la lesión celular",
+      "after_text": "Las dianas principales de los estímulos nocivos son las",
+      "kind": "mechanism",
+      "why": "Vista de conjunto de los mecanismos de lesión, columna vertebral de la sección."
+    },
+    {
+      "number": "2.27",
+      "page": 60,
+      "caption": "Atrofia: A, cerebro normal de un adulto joven; B, atrofia cerebral por enfermedad cerebrovascular ateroesclerótica, con circunvoluciones estrechadas y surcos ensanchados.",
+      "section": "Adaptaciones del crecimiento y la diferenciación celular",
+      "after_text": "por ateroesclerosis, en el encéfalo del anciano se llama",
+      "kind": "diagnostic",
+      "why": "Macroscopía clásica de la atrofia senil, adaptación ilustrada en Puntos de examen."
+    },
+    {
+      "number": "2.28",
+      "page": 61,
+      "caption": "Metaplasia de epitelio cilíndrico a escamoso: A, diagrama esquemático; B, metaplasia escamosa en un bronquio de fumador.",
+      "section": "Adaptaciones del crecimiento y la diferenciación celular",
+      "after_text": "la más frecuente es de cilíndrico a escamoso",
+      "kind": "diagnostic",
+      "why": "Ejemplo prototípico de metaplasia (fumador), con riesgo de transformación maligna."
+    },
+    {
+      "number": "2.30",
+      "page": 63,
+      "caption": "Hígado graso (esteatosis): a gran aumento, el núcleo preservado queda comprimido en el ribete periférico de citoplasma alrededor de la vacuola de grasa.",
+      "section": "Acumulaciones intracelulares",
+      "after_text": "las causas más frecuentes del hígado graso son",
+      "kind": "diagnostic",
+      "why": "Histología del cambio graso, acumulación intracelular más citada en el capítulo."
+    },
+    {
+      "number": "2.36",
+      "page": 68,
+      "caption": "Telómeros y telomerasa en la senectud replicativa: la longitud del telómero disminuye con las divisiones celulares; en las células somáticas sin telomerasa, el acortamiento progresivo detiene el ciclo.",
+      "section": "Envejecimiento celular",
+      "after_text": "en cada división celular, los telómeros de las células",
+      "kind": "mechanism",
+      "why": "Mecanismo central de la senectud replicativa, citado en Ideas clave."
+    }
+  ]
+}

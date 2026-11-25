@@ -1,0 +1,312 @@
+{
+  "chapter": 8,
+  "headings": [
+    "Ideas clave",
+    "Principios generales de patogenia microbiana",
+    "Tipos de respuesta inflamatoria ante las infecciones",
+    "Infecciones víricas",
+    "Infecciones bacterianas",
+    "Infecciones fúngicas",
+    "Infecciones parasitarias",
+    "Infecciones de transmisión sexual",
+    "Enfermedades infecciosas emergentes y bioterrorismo",
+    "Técnicas especiales para el diagnóstico",
+    "Puntos de examen"
+  ],
+  "figures": [
+    {
+      "number": "3.18",
+      "page": 361,
+      "caption": "n la figura 3.18B) El recuadro muestra la tinción de Gram de la misma zona, en la que se O aprecian acúmulos bacterianos. 361 Infecciones bacterianas diagnostican mediante cultivo y, en caso de la faringitis, mediante pruebas rápidas de detección de antígeno estreptocócico. Los enterococos son cocos grampositivos que tambié"
+    },
+    {
+      "number": "8.1",
+      "page": 342,
+      "caption": "itis Figura 8.1 Vías de entrada y diseminación de los microbios. Para penetrar en el organismo, los microbios atraviesan la barrera epitelial o mucosa. La infección puede quedar localizada en el punto de entrada o diseminarse a otras partes del organismo. La mayoría de los microbios comunes (se muestran algunos ejemplos) se"
+    },
+    {
+      "number": "8.2",
+      "page": 343,
+      "caption": "icos Figura 8.2 Mecanismos utilizados por los patógenos víricos y bacterianos para eludir la inmunidad innata y adquirida. (Modificado con autorización a partir de Finlay B, McFadden G: Anti-immunology: evasión of the host immune system by bacterial and viral pathogens, Cell 2006;124:767782.) Tabla 8.2 Mecanismos de variaci"
+    },
+    {
+      "number": "8.3",
+      "page": 345,
+      "caption": "sped Figura 8.3 Mecanismos mediante los cuales los virus daan las células. Las barreras físicas pueden influir en el tropismo por un determinado tejido. Por ejemplo, los enterovirus se replican en el intestino en parte porque son resistentes a la inactivación por los ácidos, la bilis y las enzimas digestivas. Los rinovirus"
+    },
+    {
+      "number": "8.4",
+      "page": 348,
+      "caption": "ando Figura 8.4 Sífilis secundaria en la dermis con infiltrado linfoplasmocitico perivascular y proliferación endotelial."
+    },
+    {
+      "number": "8.5",
+      "page": 349,
+      "caption": "Figura 8.5 Vesícula de virus del herpes en la mucosa. Véanse las inclusiones víricas en la figura 8.9. lugar a células multinucleadas denominadas policariones (p. ej., el virus del sarampión o los virus del herpes). En la piel aparecen algunas veces lesiones celulares focales que pueden hacer que se desprendan las célu"
+    },
+    {
+      "number": "8.6",
+      "page": 349,
+      "caption": "349 Figura 8.6 Infección de la vejiga urinaria por Schistosoma haematobium, con numerosos huevos calcificados y abundante tejido cicatricial. daremos ahora las infecciones especificas causadas por virus, bacterias, hongos y parásitos, centrándonos en sus mecanismos patogénicos y en sus efectos patológicos, sin entrar en su"
+    },
+    {
+      "number": "8.7",
+      "page": 351,
+      "caption": "Figura 8.7 Células gigantes del sarampión en el pulmón. Obsérvense las inclusiones eosinófilas cristalinas intranucleares. parotiditis también pertenece a la familia Paramyxoviridae. El virus de la parotiditis tiene dos tipos de glucoproteinas de superficie; una de ellas presenta actividad hemaglutinina y neuraminidasa"
+    },
+    {
+      "number": "8.8",
+      "page": 353,
+      "caption": "0 um Figura 8.8 Morfología del encéfalo de un niño de 2 meses con infección congénita por el virus del Zika. A. Banda subcortical de células en degeneración, con prominentes calcificaciones. B. Corteza con neuronas en degeneración (puntas de flecha). (Tomado de Martínez, Pathology of congenital Zika syndrome in Brazil: a ca"
+    },
+    {
+      "number": "8.9",
+      "page": 349,
+      "caption": "n la figura 8.9. lugar a células multinucleadas denominadas policariones (p. ej., el virus del sarampión o los virus del herpes). En la piel aparecen algunas veces lesiones celulares focales que pueden hacer que se desprendan las células epiteliales y se formen vesículas (fig. 8.5). Algunos virus pueden inducir la prolifera"
+    },
+    {
+      "number": "8.10",
+      "page": 356,
+      "caption": "356 Figura 8.10 Lesión cutánea de la varicela (virus de la varicela-zóster) con vesícula intraepitelial. predominantemente mononuclear, con inclusiones intranucleares herpéticas en las neuronas y sus células de soporte (fig. 8.I I). El VVZ también puede causar neumonía intersticial, encefalitis, mielitis transversa, vascul"
+    },
+    {
+      "number": "8.12",
+      "page": 357,
+      "caption": "Figura 8.12 Citomegalovirus: inclusiones pulmonares nucleares (bien definidas) y citoplásmicas (mal definidas). el cerebro suele ser mas pequeño de lo normal (microcefalia) y puede presentar focos de calcificación. El diagnóstico de la infección neonatal por CMV se realiza mediante cultivo del virus o amplificación med"
+    },
+    {
+      "number": "8.13",
+      "page": 359,
+      "caption": "Figura 8.13 Linfocitos atípicos en la mononucleosis infecciosa. la concentración de enzimas hepáticas, alteraciones del apetito y, en algunas ocasiones, insuficiencia hepática. Otras están relacionadas con el sistema nervioso, los riniones, la médula 6sea, los pulmones, los ojos, el corazón y el bazo. La rotura de este"
+    },
+    {
+      "number": "8.14",
+      "page": 360,
+      "caption": "itis Figura 8.14 Múltiples consecuencias de la infección estafilocócica. Las infecciones especificas de cada 6rgano se describen en otros capítulos. Los estafilococos coagulasa-negativos, como S. epidermidis, suelen provocar infecciones oportunistas en pacientes con catéteres o con prótesis valvulares cardiacas y en adictos"
+    },
+    {
+      "number": "8.15",
+      "page": 361,
+      "caption": "lito Figura 8.15 Absceso pulmonar estafilocócico con un gran infiltrado neutrófilo y destrucción de los alvéolos (compárese con la figura 3.18B) El recuadro muestra la tinción de Gram de la misma zona, en la que se O aprecian acúmulos bacterianos. 361 Infecciones bacterianas diagnostican mediante cultivo y, en caso de la fa"
+    },
+    {
+      "number": "8.16",
+      "page": 362,
+      "caption": "362 Figura 8.16 Erisipela estreptocócica. La escarlatina asociada a faringitis por S. pyogenes es especialmente frecuente entre los 3 y los 15 anos. Se manifiesta en forma de un exantema eritematoso punteado que es especialmente prominente en el tronco y en las caras internas de brazos y piernas. La cara también se suele v"
+    },
+    {
+      "number": "8.17",
+      "page": 362,
+      "caption": "y de Figura 8.17 Membrana de difteria (flecha) sobre un bronquio transversal. (Por cortesía del Dr. Robin A. Cooke, Department of Anatomical Pathology, Princess Alexandria Hospital, Brisbane, Australia.)"
+    },
+    {
+      "number": "8.18",
+      "page": 363,
+      "caption": "ULAR Figura 8.18 Mecanismo de acción de las toxinas del carbunco. Obsérvese que cada grupo de subunidades B se une al factor edema o al factor letal, pero no a ambos (como se muestra, para simplificar). (Modificado de Mourez M, Lacy DB, Cunningham K, et al: 2001: A year of major advances in anthrax toxin research, Trends Mi"
+    },
+    {
+      "number": "8.19",
+      "page": 364,
+      "caption": "ras. Figura 8.19 Bacillus anthracis en el seno subcapsular de un ganglio linfático del hilio de un paciente que falleció por carbunco inhalatorio. (Por cortesía del Dr. Lev Grinberg, Department of Pathology, Hospital 40, Ekaterinburg. Russia, y del Dr. David Walker, UTMB Center for Biodefense and Emerging Infectious Disease"
+    },
+    {
+      "number": "8.20",
+      "page": 364,
+      "caption": "ivo. Figura 8.20 Nocardia asteroides en una tinción de Gram de una muestra de esputo. Obsérvese la disposición en forma de rosario ramificado de los organismos grampositivos, así como la presencia de leucocitos. (Por cortesía de la Dra. Ellen Jo Barón, Stanford University Medical Center, Stanford, Calif.)"
+    },
+    {
+      "number": "8.21",
+      "page": 366,
+      "caption": "les. Figura 8.21 Acumulaciones de bacilos (flechas) sobre los cilios de las células epiteliales bronquiales de un paciente con tosferina. En el recuadro se muestran estos acúmulos tenidos mediante técnicas inmunohistoquimicas con un anticuerpo monoclonal frente al lipooligosacárido A de Bordetella pertussis. (Imágenes por c"
+    },
+    {
+      "number": "8.22",
+      "page": 367,
+      "caption": "367 Figura 8.22 Vasculitis por Pseudomonas en la que masas de organismos forman una nube perivascular púrpura-azulada. YopH y YopT inhiben la fagocitosis mediante la inactivación de moléculas que regulan la polimerización de la actina. YopJ bloquea las vías de señalización que activa el LPS, con lo que impide la formación"
+    },
+    {
+      "number": "8.23",
+      "page": 369,
+      "caption": "rias Figura 8.23 La secuencia de acontecimientos en la tuberculosis pulmonar primaria comienza con la inhalación de organismos de una cepa virulenta de Mycobacterium tuberculosis y culmina con el desarrollo de inmunidad mediada por células frente al organismo. A. Acontecimientos que ocurren durante las primeras fases de la"
+    },
+    {
+      "number": "8.24",
+      "page": 371,
+      "caption": "ción Figura 8.24 Evolución natural y espectro de la tuberculosis (TB). (Modificado de un esquema del profesor R. K. Kumar, The University of New South Wales, School of Pathology, Sydney, Australia.) disponibles para la detección de M. tuberculosis en pacientes con enfermedad activa. En casos sospechosos de tuberculosis se d"
+    },
+    {
+      "number": "8.25",
+      "page": 372,
+      "caption": "les- Figura 8.25 Tuberculosis pulmonar primaria, complejo de Ghon. El foco parenquimatoso blanco-grisáceo se encuentra bajo la pleura, en la parte linfáticos hiliares caseificados (flecha azul). centes con caseificación central. En la fase exudativa inicial, y durante la formación del granuloma caseoso, suele ser posible id"
+    },
+    {
+      "number": "8.26",
+      "page": 373,
+      "caption": "anas Figura 8.26 Espectro morfológico de la tuberculosis. Un tubérculo característico a bajo aumento (A) y a alto aumento (B) muestra caseificación granulosa central rodeada por células epitelioides y multinucleares gigantes. Esta es la respuesta habitual en personas que han desarrollado inmunidad mediada por células frente"
+    },
+    {
+      "number": "8.27",
+      "page": 373,
+      "caption": "ito. Figura 8.27 Tuberculosis pulmonar secundaria. Las partes superiores de ambos pulmones presentan zonas blanco-grisáceas de caseificación y múltiples zonas de reblandecimiento y cavitación. nes, la mucosa que recubre estas zonas está salpicada de diminutas lesiones granulomatosas, que pueden ser visibles solamente al mic"
+    },
+    {
+      "number": "8.28",
+      "page": 374,
+      "caption": "374 Figura 8.28 Tuberculosis miliar del bazo. En la superficie del corte se aprecian numerosos tubérculos blanco-grisáceos. foadenitis tiende a ser unifocal y localizada. Por el contrario, los pacientes infectados con el VIH casi siempre presentan enfermedad multifocal, síntomas sistémicos y tuberculosis activa en los pulm"
+    },
+    {
+      "number": "8.29",
+      "page": 374,
+      "caption": "los Figura 8.29 Infección por Mycobacterium avium en un paciente con sida; se aprecia una gran cantidad de organismos acidorresistentes. Este patrón es más frecuente en pacientes con inmunodeficiencias adquiridas."
+    },
+    {
+      "number": "8.30",
+      "page": 376,
+      "caption": "376 Figura 8.30 Los dos tipos más frecuentes de infiltrado inflamatorio en la lepra. A. Densa infiltración dérmica de macrófagos alrededor de anexos, vasos y nervios, que da lugar a nódulos subcutáneos. B. Densa infiltración linfocitica e histiocitica crónica en los haces nerviosos más grandes, con la consiguiente mononeur"
+    },
+    {
+      "number": "8.31",
+      "page": 376,
+      "caption": "tia. Figura 8.31 Lepra lepromatosa. Bacilos acidorresistentes (<bastoncillos rojos>) en el interior de los macrófagos. 5 millones de nuevos casos de sífilis, y las infecciones congénitas no son infrecuentes. Patogenia Todas las fases de la sífilis se caracterizan por una endoarteritis proliferativa que afecta a los pequeños"
+    },
+    {
+      "number": "8.32",
+      "page": 376,
+      "caption": "que Figura 8.32 Treponema pallidum (tinción argéntica de Steiner). Se observan modifica su estructura durante el curso de la infección mediante fenómenos de conversión génica (recombinación) entre secuencias silentes donadoras y el propio gen tprK. La dificultad de desarrollar un sistema de cultivo in vitro continuo para e"
+    },
+    {
+      "number": "8.33",
+      "page": 377,
+      "caption": "par Figura 8.33 Diversidad de manifestaciones de la sífilis. planos. En las mucosas oral, faríngea y genital se pueden formar unas erosiones superficiales de color gris plateado. También son frecuentes en la sífilis secundaria las adenopatias, la febricula, el malestar y la pérdida de peso. Entre un 8 y un 40% de los pacie"
+    },
+    {
+      "number": "8.34",
+      "page": 378,
+      "caption": "cila Figura 8.34 Chancro sifilítico en el escroto (véase la histopatologia de la sífilis en la figura 8.35). (Por cortesía del Dr. Richard Johnson, Beth Israel-Deaconess Hospital, Boston, Mass.) entre lesiones microscópicas parecidas a tubérculos hasta grandes masas de aspecto tumoral. Pueden afectar a cualquier órgano, per"
+    },
+    {
+      "number": "8.35",
+      "page": 378,
+      "caption": "n la figura 8.35). (Por cortesía del Dr. Richard Johnson, Beth Israel-Deaconess Hospital, Boston, Mass.) entre lesiones microscópicas parecidas a tubérculos hasta grandes masas de aspecto tumoral. Pueden afectar a cualquier órgano, pero son más frecuentes en la piel, tejido subcutáneo, huesos y articulaciones. En el hígado,"
+    },
+    {
+      "number": "8.36",
+      "page": 379,
+      "caption": "ción Figura 8.36 La enfermedad de Lyme progresa en tres fases clínicamente reconocibles: temprana localizada, temprana diseminada y tardía diseminada. Aunque lsevier. las manifestaciones iniciales son consecuencia directa de la infección por espiroquetas, es probable que los signos y los síntomas tardíos sean inmunomediados"
+    },
+    {
+      "number": "8.37",
+      "page": 381,
+      "caption": "381 Figura 8.37 Clostridium perfringens, bacilos grampositivos con forma de furgón entremezclados con restos necróticos en tejido gangrenoso. región afectada y la piel que la recubre aparecen hinchadas debido a la presencia de abundante exudado liquido, carente de células inflamatorias; en la piel se forman grandes vesícul"
+    },
+    {
+      "number": "8.38",
+      "page": 383,
+      "caption": "383 Figura 8.38 Nódulo tífico cerebral. Figura 8.39 Fiebre exantemática de las Montanas Rocosas con trombosis vascular y vasculitis. INFECCIONESFUNGICAS Los hongos son organismos eucariotas que crecen en forma de filamentos pluricelulares (mohos) o como células individuales que pueden encontrarse aisladas o en forma de cad"
+    },
+    {
+      "number": "8.39",
+      "page": 383,
+      "caption": "ral. Figura 8.39 Fiebre exantemática de las Montanas Rocosas con trombosis vascular y vasculitis. INFECCIONESFUNGICAS Los hongos son organismos eucariotas que crecen en forma de filamentos pluricelulares (mohos) o como células individuales que pueden encontrarse aisladas o en forma de cadenas (leva- Figura 8.40 Granulocitos"
+    },
+    {
+      "number": "8.40",
+      "page": 383,
+      "caption": "eva- Figura 8.40 Granulocitos en sangre periférica (neutrófilos en banda) con inclusiones de Anaplasma (flechas). (Por cortesía del Dr. Tad Weiczorek, Faulkner Hospital, Boston, Mass.)"
+    },
+    {
+      "number": "8.41",
+      "page": 385,
+      "caption": "icas Figura 8.41 Morfología de las infecciones por Cándida. A. Candidiasis intensa en el esófago distal. B. Mediante la tinción con hematoxilina y eosina de la candidiasis esofágica se visualiza una densa maraña de especies de Cándida. C. Seudohifas y levaduras en gemación características de especies de Cándida. (C, por cor"
+    },
+    {
+      "number": "8.42",
+      "page": 386,
+      "caption": "tipo Figura 8.42 Tinción con mucicarmin de criptococos (color rojo) en un espacio perivascular de Virchow-Robin del cerebro (lesión en pompa de jabón)."
+    },
+    {
+      "number": "8.43",
+      "page": 387,
+      "caption": "del Figura 8.43 Neumonía causada por Pneumocystis jiroveci. A. Alvéolos pulmonares llenos de exudado espumoso (flecha) e inflamación intersticial. B. Tinción lsevier. con plata de los alvéolos, que muestra quistes de Pneumocystis jiroveci tenidos de negro (flechas). (Tomado de Procop GW, Pritt BS: Pathology of Infectious H"
+    },
+    {
+      "number": "8.44",
+      "page": 388,
+      "caption": "ngos Figura 8.44 Infección por Aspergillus. A. Aspergilosis pulmonar invasiva en un paciente trasplantado de médula ósea. B. La tinción de metenamina-plata de Gomori pone de manifiesto hifas con septos y ramificaciones en ángulo agudo, compatibles con Aspergilus."
+    },
+    {
+      "number": "8.45",
+      "page": 389,
+      "caption": "Figura 8.45 Vasos sanguíneos meníngeos con especies de Mucor angioinvasoras. Obsérvese la anchura irregular de las hifas y sus ramificaciones, que forman ángulos prácticamente rectos. Compárese con Aspergillus (fig. 8.44). (fig. 8.45). Las tres localizaciones en que se produce la invasión primaria son los senos nasales"
+    },
+    {
+      "number": "8.46",
+      "page": 390,
+      "caption": "CD36 Figura 8.46 Ciclo vital de Plasmodium falciparum. Se representan tanto la fase exoeritrocitica como la eritrocitica. ICAM-1, molécula de adhesión Hospital, Boston, Mass.) Mutaciones puntuales en los genes de la globina: anemia falciforme (HbS), enfermedad por HbC (hemoglobinopatias). Mutaciones que dan lugar a defectos"
+    },
+    {
+      "number": "8.47",
+      "page": 391,
+      "caption": "391 Figura 8.47 Tinción de Field de eritrocitos infectados por Plasmodium falciparum aislados en un capilar en un caso de paludismo cerebral. siosis adquirida por transfusiones. El género Babesia parasita eritrocitos y produce fiebre y anemia hemolítica. Aunque la mayoría de las infecciones son asintomáticas, la infección"
+    },
+    {
+      "number": "8.48",
+      "page": 391,
+      "caption": "mos. Figura 8.48 Eritrocitos con Babesia en los que se aprecia la típica forma de cruz de Malta. (Por cortesía de Lynne García, LSG and Associates, Santa Mónica, Calif.)"
+    },
+    {
+      "number": "8.49",
+      "page": 393,
+      "caption": "Figura 8.49 Tinción de Giemsa de un macrófago tisular infectado por Leishmania donovani. infecciones bacterianas secundarias de extrema gravedad, como neumonías, sepsis o tuberculosis. Las hemorragias debidas a la trombocitopenia también pueden ser fatales. La leishmaniosis cutánea es una enfermedad localizada y leve q"
+    },
+    {
+      "number": "8.50",
+      "page": 394,
+      "caption": "394 Figura 8.50 Parásitos delgados de la tripanosomiasis africana en sangre. Enfermedad de Chagas Trypanosoma cruzi es un protozoo parasito intracelular con cinetoplasto que provoca la tripanosomiasis americana (enfermedad de Chagas). La enfermedad de Chagas es poco frecuente en EE. UU. y en México, registrándose mas casos"
+    },
+    {
+      "number": "8.51",
+      "page": 395,
+      "caption": "395 Figura 8.51Biopsia cerebral que muestra un quiste de Toxoplasma gondii (flecha). (Tomado de Procop GW, Pritt BS: Pathology of Infectious Diseases, Philadelphia, Elsevier, 2015; por cortesía de la Dra. Bobbi S. Pritt, Department of Laboratory Medicine and Pathology, Mayo Clinic, Rochester, Minn.) Infecciones por metazoo"
+    },
+    {
+      "number": "8.52",
+      "page": 396,
+      "caption": "eden Figura 8.52 Hiperinfección por Strongyloides en un paciente tratado con dosis elevadas de cortisona. En las criptas duodenales se observan una hembra, sus huevos y larvas rabditoides; las larvas filariformes están penetrando en los vasos sanguíneos y en la lámina muscular de la mucosa. (Por cortesía del Dr. Franz C. Vo"
+    },
+    {
+      "number": "8.53",
+      "page": 397,
+      "caption": "Figura 8.53 Porción de un cisticerco enquistado en la piel. en los capilares e inducen una respuesta inflamatoria en la que intervienen principalmente leucocitos mononucleares y eosinófilos. Muchas de las larvas son destruidas, pero otras se enquistan. Los quistes son al principio microscópicos, pero van aumentando de"
+    },
+    {
+      "number": "8.54",
+      "page": 398,
+      "caption": "398 Figura 8.54Múltiples larvas helicoidales de Trichinella spiralis en el interior de células de músculo esquelético. a hematuria, uropatia obstructiva y carcinoma. Las duelas de los esquistosomas tienen que alojarse temporalmente en los caracoles de agua dulce que habitan en las aguas de movimiento lento de ríos, lagos y"
+    },
+    {
+      "number": "8.55",
+      "page": 398,
+      "caption": "as a Figura 8.55 Infección de la vejiga urinaria por Schistosoma haematobium (A) en la que se aprecian una intensa fibrosis, granulomas dispersos y una sección transversal de gusanos adultos en el interior de un vaso (flecha). En una imagen de mayor aumento (B) se observan huevos con miracidios en su interior (flecha) y abu"
+    },
+    {
+      "number": "8.56",
+      "page": 399,
+      "caption": "Figura 8.56 Fibrosis hepática en cañería debida a una infección por Schistosoma japonicum. granulomas y a cicatrices, trombos intraluminales organizados y lesiones angiomatoides parecidas a las de la hipertensión pulmonar idiopática (v. capitulo 15). Los pacientes con esquistosomiasis hepatoesplénica también presentan"
+    },
+    {
+      "number": "8.57",
+      "page": 400,
+      "caption": "400 Figura 8.57 Edema masivo y elefantiasis debidos a filariasis en la pierna. (Por cortesía del Dr. Willy Piessens, Harvard School of Public Health, Boston, Mass.) Oncocercosis Onchocerca volvulus es un nematodo de tipo filaria que es la causa principal de ceguera prevenible en el África subsahariana. Es transmitida por l"
+    },
+    {
+      "number": "8.58",
+      "page": 400,
+      "caption": "ción Figura 8.58 Hembra grávida de Onchocerca volvulus cargada de microfilarias en un nódulo fibroso subcutáneo. de las microfilarias, que originan un infiltrado eosinófilo. A esto sigue una queratitis esclerosante que torna la córnea opaca, y que comienza en el limbo esclerocorneal. La queratitis se ve en ocasiones agravad"
+    }
+  ],
+  "missing": [
+    11
+  ],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

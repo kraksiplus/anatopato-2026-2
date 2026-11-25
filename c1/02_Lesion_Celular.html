@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 2. Lesión celular, muerte celular y adaptaciones</h1>
-    <p class="lede">Guía 02 de 10. Resumen completo del capítulo 2 con 26 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>02 de 10</strong></div><div><span>Capítulo</span><strong>2</strong></div><div><span>Páginas</span><strong>33-70</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>26</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 02 de 10. Resumen completo del capítulo 2 con 26 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>02 de 10</strong></div><div><span>Capítulo</span><strong>2</strong></div><div><span>Páginas</span><strong>33-70</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>26</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -477,6 +533,7 @@
         <li><a href="#sec-09-acumulaciones-intracelulares">Acumulaciones intracelulares</a></li>
         <li><a href="#sec-10-envejecimiento-celular">Envejecimiento celular</a></li>
         <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -519,6 +576,15 @@
 <h2>Revisión de las respuestas celulares al estrés</h2>
 <p>La célula reacciona a los estímulos fisiológicos y nocivos de varias formas. La respuesta adaptativa puede consistir en un aumento del tamaño y de la actividad (<strong>hipertrofia</strong>), un aumento del número de células (<strong>hiperplasia</strong>), una reducción del tamaño y la actividad metabólica (<strong>atrofia</strong>) o un cambio del fenotipo (<strong>metaplasia</strong>). Si se elimina el estrés, la célula puede recuperar su estado original sin sufrir consecuencias perniciosas; si se superan los límites de las respuestas adaptativas, o si las células se exponen a agresiones dañinas, son privadas de nutrientes esenciales o resultan alteradas por mutaciones, se produce una secuencia de procesos llamada <strong>lesión celular</strong>. La lesión celular es reversible hasta cierto punto, pero, si el estímulo lesional persiste o es intenso, la célula sufre una lesión irreversible y, finalmente, muere.</p>
 <p>Ejemplo secuencial: ante un aumento de la carga hemodinámica, el músculo cardiaco se agranda (adaptación más vulnerable a la lesión por la mayor demanda metabólica); si el aporte de sangre es insuficiente, el músculo sufre primero una lesión reversible (cambios citoplásmicos) y, a menos que el flujo se restablezca rápidamente, las células sufren una lesión irreversible y mueren. La muerte celular es un proceso normal y esencial en la embriogénesis, el desarrollo de los órganos y la homeostasis del adulto; contrariamente, la muerte celular excesiva por lesión progresiva es uno de los procesos más cruciales en la evolución de cualquier enfermedad.</p>
+<figure class="fig" id="fig-2-3">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-3.webp" data-caption="Figura 2.3. Desarrollo secuencial de los cambios bioquímicos y morfológicos de la lesión celular: la célula puede estar no funcional y aun ser viable; si el estímulo persiste, la lesión se hace irreversible y sobreviene la muerte celular." data-alt="Figura 2.3. Desarrollo secuencial de los cambios bioquímicos y morfológicos de la lesión celular: la célula puede estar no funcional y aun ser viable; si el estímulo persiste, la lesión se hace irreversible y sobreviene la muerte celular. Robbins y Cotran, 10ª ed., p. 37.">
+    <img src="../assets/fig/cap02/fig-2-3.webp" width="655" height="611" loading="lazy" decoding="async" alt="Figura 2.3. Desarrollo secuencial de los cambios bioquímicos y morfológicos de la lesión celular: la célula puede estar no funcional y aun ser viable; si el estímulo persiste, la lesión se hace irreversible y sobreviene la muerte celular. Robbins y Cotran, 10ª ed., p. 37.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.3.</strong> Desarrollo secuencial de los cambios bioquímicos y morfológicos de la lesión celular: la célula puede estar no funcional y aun ser viable; si el estímulo persiste, la lesión se hace irreversible y sobreviene la muerte celular.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 37. <a href="../creditos.html#fig-2-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-04-causas-de-lesion-celular" class="card">
 <div class="section-kicker"><span class="n">04</span> Sección</div>
@@ -600,6 +666,15 @@
 </table></div>
 <h3 id="apoptosis">Apoptosis</h3>
 <p>La <strong>apoptosis</strong> es una muerte celular inducida por un programa de suicidio estrictamente regulado, en el que la célula destinada a morir activa enzimas intrínsecas que degradan su ADN genómico y sus proteínas nucleares y citoplásmicas. Es una muerte "regulada" (controlada genéticamente) mediada por vías moleculares definidas, que mata con precisión, sin inflamación ni daño colateral. La distinción con la necrosis no siempre es absoluta: algunos tipos de necrosis están controlados genéticamente por una vía molecular definida (<strong>necroptosis</strong>), y en algunas situaciones la muerte celular muestra características de ambas o progresa de una a otra; aun así, sus mecanismos, características morfológicas y consecuencias funcionales suelen ser distintos.</p>
+<figure class="fig" id="fig-2-7">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-7.webp" data-caption="Figura 2.7. Necrosis coagulativa: A, infarto renal amarillo en cuña; B, microscopía con riñón normal y células necróticas que conservan el contorno, con pérdida de núcleos e infiltrado inflamatorio." data-alt="Figura 2.7. Necrosis coagulativa: A, infarto renal amarillo en cuña; B, microscopía con riñón normal y células necróticas que conservan el contorno, con pérdida de núcleos e infiltrado inflamatorio. Robbins y Cotran, 10ª ed., p. 40.">
+    <img src="../assets/fig/cap02/fig-2-7.webp" width="1474" height="541" loading="lazy" decoding="async" alt="Figura 2.7. Necrosis coagulativa: A, infarto renal amarillo en cuña; B, microscopía con riñón normal y células necróticas que conservan el contorno, con pérdida de núcleos e infiltrado inflamatorio. Robbins y Cotran, 10ª ed., p. 40.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.7.</strong> Necrosis coagulativa: A, infarto renal amarillo en cuña; B, microscopía con riñón normal y células necróticas que conservan el contorno, con pérdida de núcleos e infiltrado inflamatorio.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 40. <a href="../creditos.html#fig-2-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="causas-de-la-apoptosis">Causas de la apoptosis</h4>
 <p><strong>Situaciones fisiológicas</strong> (los humanos recambian casi un millón de células por segundo; la apoptosis ocurre porque se priva a las células de las señales de supervivencia necesarias, como factores de crecimiento e interacciones con la matriz extracelular, o porque reciben señales proapoptósicas):</p>
 <ul>
@@ -625,6 +700,15 @@
 </ul>
 <h4 id="mecanismos-de-la-apoptosis">Mecanismos de la apoptosis</h4>
 <p>La apoptosis se produce por la activación de unas enzimas llamadas <strong>caspasas</strong>, proteasas que contienen cisteína en su lugar activo y escinden las proteínas en los residuos de ácido aspártico; las caspasas están presentes como proenzimas inactivas, y su activación se produce por escisión enzimática. La presencia de caspasas activas es un marcador de células en apoptosis. El proceso se divide en una <strong>fase de iniciación</strong> (algunas caspasas se activan catalíticamente y desatan la cascada de otras caspasas) y una <strong>fase de ejecución</strong> (las caspasas terminales activan la fragmentación celular). Dos vías distintas convergen en la activación de las caspasas: la vía mitocondrial y la vía del receptor de muerte; aunque se cruzan, por lo general se inducen en circunstancias diferentes, implican moléculas iniciadoras distintas y cumplen funciones diferentes.</p>
+<figure class="fig" id="fig-2-13">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-13.webp" data-caption="Figura 2.13. Mecanismos de la apoptosis: las vías mitocondrial (intrínseca) y del receptor de muerte (extrínseca) difieren en su inducción, pero ambas culminan en la activación de caspasas." data-alt="Figura 2.13. Mecanismos de la apoptosis: las vías mitocondrial (intrínseca) y del receptor de muerte (extrínseca) difieren en su inducción, pero ambas culminan en la activación de caspasas. Robbins y Cotran, 10ª ed., p. 44.">
+    <img src="../assets/fig/cap02/fig-2-13.webp" width="1474" height="955" loading="lazy" decoding="async" alt="Figura 2.13. Mecanismos de la apoptosis: las vías mitocondrial (intrínseca) y del receptor de muerte (extrínseca) difieren en su inducción, pero ambas culminan en la activación de caspasas. Robbins y Cotran, 10ª ed., p. 44.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.13.</strong> Mecanismos de la apoptosis: las vías mitocondrial (intrínseca) y del receptor de muerte (extrínseca) difieren en su inducción, pero ambas culminan en la activación de caspasas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 44. <a href="../creditos.html#fig-2-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Vía mitocondrial (intrínseca)</strong>: responsable de la apoptosis en la mayoría de las situaciones fisiológicas y patológicas. Consiste en el aumento de la permeabilidad de la membrana mitocondrial externa, con la liberación al citoplasma de moléculas proapoptóticas (como el <strong>citocromo c</strong>) del espacio intermembrana mitocondrial. La permeabilidad está regulada estrictamente por la familia BCL2 (más de 20 miembros, llamados así porque el gen BCL2 se sobreexpresa a menudo en ciertos linfomas B):</p>
 <ul>
 <li><strong>Miembros antiapoptósicos</strong>: BCL2, BCL-XL, MCL1 (contienen cuatro dominios BH, BH1-4); están en la membrana externa mitocondrial (también en el citosol y las membranas del RE) y mantienen impermeable la membrana externa, impidiendo la fuga de citocromo c y otras proteínas inductoras de muerte al citosol.</li>
@@ -709,6 +793,15 @@
 <div class="section-kicker"><span class="n">06</span> Sección</div>
 <h2>Mecanismos de la lesión celular</h2>
 <p>Principios generales: la respuesta celular depende de la naturaleza de la lesión (duración, gravedad), del tipo, estado y capacidad de adaptación de la célula dañada (el estado nutricional y hormonal, las demandas metabólicas y las funciones de la célula; los polimorfismos genéticos, como los enzimas hepáticos que metabolizan el CCl4, condicionan la respuesta individual) y de la capacidad de la célula de reponerse (p. ej., la fibra de músculo esquelético de la pierna entra en reposo ante el riego de una arteria, mientras que el miocito no puede evitarlo). Además, un mismo estímulo nocivo puede activar simultáneamente varios mecanismos interconectados que lesionan las células; por eso es difícil atribuir una lesión concreta a una sola alteración bioquímica. Las dianas principales de los estímulos nocivos son las <strong>mitocondrias</strong>, las <strong>membranas celulares</strong>, la <strong>maquinaria de síntesis y secreción de proteínas</strong> y el <strong>ADN</strong>.</p>
+<figure class="fig" id="fig-2-18">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-18.webp" data-caption="Figura 2.18. Formas y lugares principales de daño en la lesión celular, con las dianas intracelulares: ATP, mitocondrias, membranas, ADN y ERO." data-alt="Figura 2.18. Formas y lugares principales de daño en la lesión celular, con las dianas intracelulares: ATP, mitocondrias, membranas, ADN y ERO. Robbins y Cotran, 10ª ed., p. 50.">
+    <img src="../assets/fig/cap02/fig-2-18.webp" width="1474" height="642" loading="lazy" decoding="async" alt="Figura 2.18. Formas y lugares principales de daño en la lesión celular, con las dianas intracelulares: ATP, mitocondrias, membranas, ADN y ERO. Robbins y Cotran, 10ª ed., p. 50.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.18.</strong> Formas y lugares principales de daño en la lesión celular, con las dianas intracelulares: ATP, mitocondrias, membranas, ADN y ERO.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 50. <a href="../creditos.html#fig-2-18">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="daño-mitocondrial-y-agotamiento-de-atp">Daño mitocondrial y agotamiento de ATP</h3>
 <p>Las mitocondrias son esenciales en todas las vías que conducen a la lesión y muerte celular: aportan la energía (ATP) para la vida, pero también son dianas de muchos estímulos nocivos (aumento del Ca2+ citosólico, ERO, privación de oxígeno; son sensibles a casi todo tipo de agresión, incluidos hipoxia y tóxicos); además, las mutaciones de los genes mitocondriales son causa de algunas enfermedades hereditarias. Consecuencias del daño mitocondrial:</p>
 <ul>
@@ -872,6 +965,15 @@
 <li><strong>Pérdida de la estimulación endocrina</strong>: mayoría de los tejidos que responden a hormonas dependen de la estimulación endocrina para su metabolismo y su función; la pérdida de estimulación estrogénica tras la menopausia produce atrofia del endometrio, de la vagina y de la mama; la próstata se atrofia tras la castración química o quirúrgica (p. ej., como tratamiento del cáncer de próstata).</li>
 <li><strong>Presión</strong>: la compresión tisular durante un periodo de tiempo causa atrofia; un tumor benigno que crece produce atrofia en los tejidos circundantes, que se debe probablemente a alteraciones isquémicas por el deterioro de la vascularización.</li>
 </ul>
+<figure class="fig" id="fig-2-27">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-27.webp" data-caption="Figura 2.27. Atrofia: A, cerebro normal de un adulto joven; B, atrofia cerebral por enfermedad cerebrovascular ateroesclerótica, con circunvoluciones estrechadas y surcos ensanchados." data-alt="Figura 2.27. Atrofia: A, cerebro normal de un adulto joven; B, atrofia cerebral por enfermedad cerebrovascular ateroesclerótica, con circunvoluciones estrechadas y surcos ensanchados. Robbins y Cotran, 10ª ed., p. 60.">
+    <img src="../assets/fig/cap02/fig-2-27.webp" width="1474" height="721" loading="lazy" decoding="async" alt="Figura 2.27. Atrofia: A, cerebro normal de un adulto joven; B, atrofia cerebral por enfermedad cerebrovascular ateroesclerótica, con circunvoluciones estrechadas y surcos ensanchados. Robbins y Cotran, 10ª ed., p. 60.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.27.</strong> Atrofia: A, cerebro normal de un adulto joven; B, atrofia cerebral por enfermedad cerebrovascular ateroesclerótica, con circunvoluciones estrechadas y surcos ensanchados.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 60. <a href="../creditos.html#fig-2-27">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Mecanismos</strong>: la atrofia se debe a una <strong>disminución de la síntesis proteica por señales tróficas reducidas</strong>, y a una <strong>mayor degradación proteica</strong>, especialmente por la vía <strong>ubiquitina-proteosoma</strong> (la deficiencia de nutrientes y el desuso activan ubiquitina ligasas, que añaden ubiquitina a las proteínas celulares y las marcan para su degradación en proteosomas); es responsable de la proteólisis acelerada de estados catabólicos como la caquexia del cáncer. Además, la atrofia se acompaña de un aumento de la <strong>autofagia</strong> (aparecen vacuolas autofágicas) que contribuye a la degradación de orgánulos; una parte de los restos de las vacuolas autofáficas puede resistir la digestión y persistir en el citoplasma en forma de <strong>cuerpos residuales</strong>; los gránulos de lipofuscina son un ejemplo de cuerpos residuales, y, en cantidad suficiente, confieren al tejido un color parduzco (<strong>atrofia parda</strong>).</p>
 <h3 id="metaplasia">Metaplasia</h3>
 <p>La <strong>metaplasia</strong> es un cambio reversible en el cual un tipo celular diferenciado (epitelial o mesenquimatoso) es reemplazado por otro tipo celular. A menudo es una respuesta adaptativa: un tipo celular sensible a un estrés se sustituye por otro que puede soportar mejor el ambiente adverso. La metaplasia se observa en varios contextos:</p>
@@ -880,6 +982,15 @@
 <li>También es posible la metaplasia inversa: de tipo escamoso a cilíndrico, como sucede en el <strong>esófago de Barrett</strong>, en el cual el epitelio pavimentoso esofágico es sustituido por células cilíndricas type intestinal bajo la influencia del ácido gástrico refluido; los cánceres que allí aparecen son normalmente adenocarcinomas.</li>
 <li><strong>Metaplasia mesenquimatosa</strong>: formación de cartílago, hueso o células adiposas (tejidos mesenquimatosos) en tejidos que no contienen estos elementos habitualmente; por ejemplo, surge formación de hueso en el músculo (<strong>miositis osificante</strong>) tras un traumatismo (hemorragia intramuscular). No se considera verdadera respuesta adaptativa, sino resultado de lesión celular o del tejido; a diferencia de la metaplasia epitelial, no se asocia a mayor riesgo de cáncer.</li>
 </ul>
+<figure class="fig" id="fig-2-28">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-28.webp" data-caption="Figura 2.28. Metaplasia de epitelio cilíndrico a escamoso: A, diagrama esquemático; B, metaplasia escamosa en un bronquio de fumador." data-alt="Figura 2.28. Metaplasia de epitelio cilíndrico a escamoso: A, diagrama esquemático; B, metaplasia escamosa en un bronquio de fumador. Robbins y Cotran, 10ª ed., p. 61.">
+    <img src="../assets/fig/cap02/fig-2-28.webp" width="710" height="855" loading="lazy" decoding="async" alt="Figura 2.28. Metaplasia de epitelio cilíndrico a escamoso: A, diagrama esquemático; B, metaplasia escamosa en un bronquio de fumador. Robbins y Cotran, 10ª ed., p. 61.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.28.</strong> Metaplasia de epitelio cilíndrico a escamoso: A, diagrama esquemático; B, metaplasia escamosa en un bronquio de fumador.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 61. <a href="../creditos.html#fig-2-28">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Mecanismos</strong>: la metaplasia no se produce por cambio del fenotipo de una célula ya diferenciada, sino por <strong>reprogramación de células madre</strong> pluripotentes tisulares o por la colonización por células diferenciadas de epitelios adyacentes (fenómeno general en la metaplasia epitelial); el cambio metaplásico es estimulado por <strong>señales generadas por citocinas, factores de crecimiento y componentes de la matriz extracelular</strong> del ambiente de las células; la desregulación de los factores de transcripción (p. ej., por carencia o exceso de vitamina A, que regula la transcripción de genes mediante receptores nucleares de retinoides) es una vía que (junto con las vías descritas) parece influir en la diferenciación de los progenitores derivados de las células madre tisulares.</p>
 <h3 id="resumen-de-las-adaptaciones">Resumen de las adaptaciones</h3>
 <div class="table-wrap" role="region" aria-label="Tabla: Adaptaciones del crecimiento y la diferenciación celular" tabindex="0"><table>
@@ -939,7 +1050,16 @@
 <li><strong>Xantomas</strong>: acumulación de colesterol en los macrófagos, en estados hiperlipidémicos adquiridos y hereditarios, formando masas tumorales en el tejido conjuntivo subepidérmico de la piel y en los tendones.</li>
 <li><strong>Colesterolosis</strong>: focos de macrófagos cargados de colesterol en la lámina propia de la vesícula biliar (mecanismo desconocido).</li>
 <li><strong>Enfermedad de Niemann-Pick tipo C</strong>: enfermedad por depósito lisosómico por mutación de una enzima implicada en el transporte del colesterol, con acumulación en múltiples órganos.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-2-30">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-30.webp" data-caption="Figura 2.30. Hígado graso (esteatosis): a gran aumento, el núcleo preservado queda comprimido en el ribete periférico de citoplasma alrededor de la vacuola de grasa." data-alt="Figura 2.30. Hígado graso (esteatosis): a gran aumento, el núcleo preservado queda comprimido en el ribete periférico de citoplasma alrededor de la vacuola de grasa. Robbins y Cotran, 10ª ed., p. 63.">
+    <img src="../assets/fig/cap02/fig-2-30.webp" width="710" height="605" loading="lazy" decoding="async" alt="Figura 2.30. Hígado graso (esteatosis): a gran aumento, el núcleo preservado queda comprimido en el ribete periférico de citoplasma alrededor de la vacuola de grasa. Robbins y Cotran, 10ª ed., p. 63.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.30.</strong> Hígado graso (esteatosis): a gran aumento, el núcleo preservado queda comprimido en el ribete periférico de citoplasma alrededor de la vacuola de grasa.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 63. <a href="../creditos.html#fig-2-30">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 </ul>
 <p><strong>Proteínas, glucógeno y cambio hialino.</strong> Se acumulan proteínas intracelulares (en el citoplasma: gotículas, vacuolas o agregados redondeados eosinófilos), por ejemplo:</p>
 <ul>
@@ -997,6 +1117,15 @@
 <li><strong>Homeostasis defectuosa de las proteínas</strong>: normal plegamiento y degradación de las proteínas mal plegadas (mediados por chaperonas, autofagia-lisosomas y sistema ubiquitina-proteosoma); en el envejecimiento, el plegamiento correcto y la degradación de las proteínas mal plegadas están alterados. En ratones mutantes con deficiencia de chaperonas del shock térmico, el envejecimiento es prematuro, mientras que los ratones que sobreexpresan esas chaperonas viven más tiempo; hay datos similares para la autofagia y la degradación proteosómica. La administración de <strong>rapamicina</strong> (inhibidor de la vía mTOR, la diana molecular de la rapamicina) aumenta la vida de los ratones de mediana edad, con múltiples efectos, entre ellos la promoción de la autofagia. La homeostasis anómala de las proteínas afecta a la supervivencia, a la replicación y a las funciones celulares, y puede provocar la acumulación de proteínas mal plegadas (que desencadenan apoptosis).</li>
 <li><strong>Desregulación de la detección de nutrientes</strong>: paradójicamente, comer menos aumenta la longevidad; la <strong>restricción calórica</strong> alarga la vida en todas las especies de eucariotas en las que se ha evaluado, con resultados alentadores incluso en primates no humanos. Hay dos circuitos neurohormonales fundamentales que regulan el metabolismo: la vía de señales de la <strong>insulina y del IGF-1</strong> (factor de crecimiento similar a la insulina 1) y las <strong>sirtuinas</strong>. El IGF-1 (producido por muchos tipos celulares en respuesta a la hormona de crecimiento hipofisaria) imita la señalización intracelular de la insulina, informa a las células de la disponibilidad de glucosa y promueve un estado anabólico, así como el crecimiento y la diferenciación; sus dianas anterógradas más relevantes (para este tema) son las cinasas <strong>AKT</strong> y <strong>mTOR</strong> (inhibida por la rapamicina). Las <strong>sirtuinas</strong> (una familia de proteínas desacetilasas dependientes de NAD, al menos siete tipos en mamíferos, distribuidas en distintos compartimentos con funciones no redundantes) promueven la expresión de varios genes cuyos productos favorecen la longevidad; incluyen proteínas que inhiben la actividad metabólica, reducen la apoptosis, estimulan el plegamiento correcto de las proteínas y contrarrestan el daño por radicales de oxígeno; las sirtuinas también aumentan la sensibilidad a la insulina y el metabolismo glucídico, y podrían ser objetivos terapéuticos en la diabetes. La restricción calórica aumenta la longevidad reduciendo la intensidad de la señalización por los IGF-1 y aumentando las sirtuinas; el efecto del IGF-1 se mimetiza por la rapamicina; un incremento de las sirtuinas (especialmente la sirtuina 6) cumple una función doble: contribuye a las adaptaciones metabólicas de la restricción calórica y promueve la integridad genómica activando enzimas de reparación del ADN mediante la desacetilación. Un componente del vino tinto quizá active las sirtuinas y aumente el tiempo de vida (aunque queda mucho por conocer antes de contar con pastillas activadoras de sirtuinas para la longevidad).</li>
 </ul>
+<figure class="fig" id="fig-2-36">
+  <a class="fig-open" href="../assets/fig/cap02/fig-2-36.webp" data-caption="Figura 2.36. Telómeros y telomerasa en la senectud replicativa: la longitud del telómero disminuye con las divisiones celulares; en las células somáticas sin telomerasa, el acortamiento progresivo detiene el ciclo." data-alt="Figura 2.36. Telómeros y telomerasa en la senectud replicativa: la longitud del telómero disminuye con las divisiones celulares; en las células somáticas sin telomerasa, el acortamiento progresivo detiene el ciclo. Robbins y Cotran, 10ª ed., p. 68.">
+    <img src="../assets/fig/cap02/fig-2-36.webp" width="609" height="508" loading="lazy" decoding="async" alt="Figura 2.36. Telómeros y telomerasa en la senectud replicativa: la longitud del telómero disminuye con las divisiones celulares; en las células somáticas sin telomerasa, el acortamiento progresivo detiene el ciclo. Robbins y Cotran, 10ª ed., p. 68.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.36.</strong> Telómeros y telomerasa en la senectud replicativa: la longitud del telómero disminuye con las divisiones celulares; en las células somáticas sin telomerasa, el acortamiento progresivo detiene el ciclo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 68. <a href="../creditos.html#fig-2-36">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-11-puntos-de-examen" class="card">
 <div class="section-kicker"><span class="n">11</span> Sección</div>
@@ -1019,6 +1148,11 @@
 <li>El envejecimiento celular se debe al daño acumulado del ADN (Werner, Bloom, ataxia-telangiectasia), al acortamiento de telómeros (senectud replicativa, telomerasa), a la homeostasis proteica defectuosa y a la desregulación de la detección de nutrientes (sirtuinas, restricción calórica, IGF-1).</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-2-3" aria-label="Figura 2.3"><img src="../assets/fig/cap02/fig-2-3.webp" loading="lazy" decoding="async" alt="Figura 2.3"><span>Figura 2.3</span></a><a class="fig-thumb" href="#fig-2-7" aria-label="Figura 2.7"><img src="../assets/fig/cap02/fig-2-7.webp" loading="lazy" decoding="async" alt="Figura 2.7"><span>Figura 2.7</span></a><a class="fig-thumb" href="#fig-2-13" aria-label="Figura 2.13"><img src="../assets/fig/cap02/fig-2-13.webp" loading="lazy" decoding="async" alt="Figura 2.13"><span>Figura 2.13</span></a><a class="fig-thumb" href="#fig-2-18" aria-label="Figura 2.18"><img src="../assets/fig/cap02/fig-2-18.webp" loading="lazy" decoding="async" alt="Figura 2.18"><span>Figura 2.18</span></a><a class="fig-thumb" href="#fig-2-27" aria-label="Figura 2.27"><img src="../assets/fig/cap02/fig-2-27.webp" loading="lazy" decoding="async" alt="Figura 2.27"><span>Figura 2.27</span></a><a class="fig-thumb" href="#fig-2-28" aria-label="Figura 2.28"><img src="../assets/fig/cap02/fig-2-28.webp" loading="lazy" decoding="async" alt="Figura 2.28"><span>Figura 2.28</span></a><a class="fig-thumb" href="#fig-2-30" aria-label="Figura 2.30"><img src="../assets/fig/cap02/fig-2-30.webp" loading="lazy" decoding="async" alt="Figura 2.30"><span>Figura 2.30</span></a><a class="fig-thumb" href="#fig-2-36" aria-label="Figura 2.36"><img src="../assets/fig/cap02/fig-2-36.webp" loading="lazy" decoding="async" alt="Figura 2.36"><span>Figura 2.36</span></a></div>
 </section>
   </main>
 </div>
@@ -1026,7 +1160,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1044,8 +1185,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1065,6 +1206,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

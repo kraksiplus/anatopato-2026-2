@@ -1,0 +1,44 @@
+{
+  "chapter": 5,
+  "printed_start": 141,
+  "figures": [
+    {
+      "number": "5.2",
+      "page": 143,
+      "bbox": [
+        90,
+        60,
+        790,
+        345
+      ]
+    },
+    {
+      "number": "5.7",
+      "page": 152
+    },
+    {
+      "number": "5.10",
+      "page": 155
+    },
+    {
+      "number": "5.13",
+      "page": 159
+    },
+    {
+      "number": "5.16",
+      "page": 163
+    },
+    {
+      "number": "5.20",
+      "page": 168
+    },
+    {
+      "number": "5.25",
+      "page": 176
+    },
+    {
+      "number": "5.33",
+      "page": 186
+    }
+  ]
+}

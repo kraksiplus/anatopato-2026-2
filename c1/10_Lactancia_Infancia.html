@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 10. Enfermedades de la lactancia y la infancia</h1>
-    <p class="lede">Guía 10 de 10. Resumen completo del capítulo 10 con 45 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>10 de 10</strong></div><div><span>Capítulo</span><strong>10</strong></div><div><span>Páginas</span><strong>453-483</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>45</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 10 de 10. Resumen completo del capítulo 10 con 45 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>10 de 10</strong></div><div><span>Capítulo</span><strong>10</strong></div><div><span>Páginas</span><strong>453-483</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>45</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -478,6 +534,7 @@
         <li><a href="#sec-10-sindrome-de-muerte-subita-del-lactante-smsl">Síndrome de muerte súbita del lactante (SMSL)</a></li>
         <li><a href="#sec-11-tumores-y-lesiones-seudotumorales-en-lactantes-y-ninos">Tumores y lesiones seudotumorales en lactantes y niños</a></li>
         <li><a href="#sec-12-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -600,7 +657,16 @@
 <li><strong>Ciclopamina</strong> (lirio de maíz blanco): inhibe la vía <strong>Hedgehog</strong> y produce <strong>holoprosencefalia y ciclopía</strong> en corderos; las mutaciones de Hedgehog causan holoprosencefalia familiar.</li>
 <li><strong>Ácido valproico</strong>: altera la expresión de genes <strong>HOX</strong>; las mutaciones de HOX producen malformaciones similares (miembros, vértebras, estructuras craneofaciales).</li>
 <li><strong>Ácido retinoico</strong> (exceso o déficit): embriopatía con malformaciones del SNC, cardiacas y craneofaciales (labio leporino, paladar hendido); el paladar hendido de los ratones deficientes en <em>Tgfb3</em> señala la vía <strong>TGF-β</strong>.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-10-5">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-5.webp" data-caption="Figura 10.5. Periodos críticos del desarrollo de los distintos sistemas orgánicos y malformaciones asociadas según el momento de exposición al teratógeno." data-alt="Figura 10.5. Periodos críticos del desarrollo de los distintos sistemas orgánicos y malformaciones asociadas según el momento de exposición al teratógeno. Robbins y Cotran, 10ª ed., p. 457.">
+    <img src="../assets/fig/cap10/fig-10-5.webp" width="1460" height="935" loading="lazy" decoding="async" alt="Figura 10.5. Periodos críticos del desarrollo de los distintos sistemas orgánicos y malformaciones asociadas según el momento de exposición al teratógeno. Robbins y Cotran, 10ª ed., p. 457.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.5.</strong> Periodos críticos del desarrollo de los distintos sistemas orgánicos y malformaciones asociadas según el momento de exposición al teratógeno.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 457. <a href="../creditos.html#fig-10-5">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 </ol>
 
 </section><section id="sec-04-prematuridad-y-retraso-del-crecimiento-fetal" class="card">
@@ -656,9 +722,27 @@
 <li><strong>SP-B y SP-C</strong>: hidrófobas, reducen la tensión superficial en la interfase aire-líquido. Su déficit congénito (mutaciones de <em>SFTPB</em> o <em>SFTPC</em>) causa fracaso respiratorio grave.</li>
 </ul>
 <p>La producción se acelera tras la semana 35. Con surfactante normal, el pulmón retiene hasta un 40% del volumen residual tras la primera respiración; sin él, los alvéolos se colapsan en cada respiración y la pared torácica blanda se deprime con el diafragma. La <strong>atelectasia progresiva</strong> y la menor distensibilidad desencadenan hipoxemia, retención de CO₂, acidosis y vasoconstricción pulmonar, con exudación de proteínas y fibrina que forma las <strong>membranas hialinas</strong>; la hipoxemia agrava el déficit de surfactante (círculo vicioso).</p>
+<figure class="fig" id="fig-10-6">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-6.webp" data-caption="Figura 10.6. Patogenia del síndrome de dificultad respiratoria neonatal: el déficit de surfactante produce atelectasia, hipoxemia y exudación de fibrina que forma las membranas hialinas." data-alt="Figura 10.6. Patogenia del síndrome de dificultad respiratoria neonatal: el déficit de surfactante produce atelectasia, hipoxemia y exudación de fibrina que forma las membranas hialinas. Robbins y Cotran, 10ª ed., p. 459.">
+    <img src="../assets/fig/cap10/fig-10-6.webp" width="752" height="984" loading="lazy" decoding="async" alt="Figura 10.6. Patogenia del síndrome de dificultad respiratoria neonatal: el déficit de surfactante produce atelectasia, hipoxemia y exudación de fibrina que forma las membranas hialinas. Robbins y Cotran, 10ª ed., p. 459.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.6.</strong> Patogenia del síndrome de dificultad respiratoria neonatal: el déficit de surfactante produce atelectasia, hipoxemia y exudación de fibrina que forma las membranas hialinas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 459. <a href="../creditos.html#fig-10-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>Los <strong>glucocorticoides</strong> aumentan el surfactante y reducen el riesgo de SDR (por eso el estrés intrauterino y el FGR protegen relativamente). La <strong>insulina</strong> suprime su síntesis, lo que explica el mayor riesgo en hijos de madres diabéticas; el parto aumenta la síntesis, por lo que la cesárea antes del inicio del trabajo de parto eleva el riesgo.</p>
 <h3 id="morfología">Morfología</h3>
 <p>Pulmones de tamaño normal pero <strong>sólidos, sin aire, rojo-purpúreos</strong> (como el hígado) y que <strong>se hunden en el agua</strong>. Al microscopio: alvéolos poco desarrollados y colapsados; restos necróticos en bronquiolos terminales y conductos alveolares que se incorporan a <strong>membranas hialinas eosinófilas</strong> de fibrina con restos de neumocitos tipo II. La reacción inflamatoria neutrófila es escasa. Las lesiones <strong>nunca</strong> se ven en mortinatos. Si el lactante sobrevive &gt;48 h aparecen cambios reparativos: proliferación del epitelio alveolar bajo la membrana, descamación, fibroblastos y membrana incorporada a la pared alveolar.</p>
+<figure class="fig" id="fig-10-7">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-7.webp" data-caption="Figura 10.7. Enfermedad por membrana hialina: membranas eosinófilas que revisten alvéolos dilatados y epitelio cúbico que delata inmadurez pulmonar." data-alt="Figura 10.7. Enfermedad por membrana hialina: membranas eosinófilas que revisten alvéolos dilatados y epitelio cúbico que delata inmadurez pulmonar. Robbins y Cotran, 10ª ed., p. 460.">
+    <img src="../assets/fig/cap10/fig-10-7.webp" width="715" height="555" loading="lazy" decoding="async" alt="Figura 10.7. Enfermedad por membrana hialina: membranas eosinófilas que revisten alvéolos dilatados y epitelio cúbico que delata inmadurez pulmonar. Robbins y Cotran, 10ª ed., p. 460.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.7.</strong> Enfermedad por membrana hialina: membranas eosinófilas que revisten alvéolos dilatados y epitelio cúbico que delata inmadurez pulmonar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 460. <a href="../creditos.html#fig-10-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="características-clínicas-y-complicaciones">Características clínicas y complicaciones</h3>
 <p>El lactante casi siempre es <strong>prematuro con peso apropiado para la edad gestacional</strong>; asociaciones con sexo masculino, diabetes materna y cesárea. Tras una reanimación inicial y unos minutos de respiración rítmica, antes de 30 minutos aparece dificultad respiratoria progresiva, <strong>cianosis</strong>, estertores finos y en la radiografía <strong>opacidades reticulogranulares uniformes ("vidrio esmerilado")</strong>. El oxígeno al 80% no mejora la situación. Si se superan los 3-4 días, el pronóstico es excelente.</p>
 <p>Prevención: retrasar el parto, <strong>esteroides antenatales</strong> y valoración de la madurez pulmonar por fosfolípidos en líquido amniótico. La <strong>administración profiláctica de surfactante</strong> a los &lt;28 semanas y la ventilación moderna han mejorado mucho la mortalidad.</p>
@@ -677,6 +761,15 @@
 <p>La patogenia es incierta y multifactorial: la prematuridad y la <strong>alimentación enteral</strong> son los factores asociados; no se ha implicado un patógeno bacteriano único (posible papel de la alteración del microbioma). El <strong>factor activador de plaquetas (PAF)</strong> aumenta la permeabilidad mucosa por apoptosis de enterocitos y alteración de uniones estrechas. La pérdida de la barrera permite translocación bacteriana, con un círculo vicioso de inflamación, necrosis y sepsis.</p>
 <p>Clínica: <strong>heces sanguinolentas, distensión abdominal y colapso circulatorio</strong>; la radiografía muestra <strong>neumatosis intestinal</strong> (gas en la pared). Tratamiento conservador si se detecta pronto; <strong>20-60%</strong> requieren resección de los segmentos necróticos. Alta mortalidad perinatal; los supervivientes desarrollan <strong>estenosis post-ECN</strong> por fibrosis. Se evalúan probióticos para la prevención.</p>
 <p>Morfología: afecta sobre todo <strong>íleon terminal, ciego y colon derecho</strong>. Segmento distendido, friable, congestivo o francamente gangrenado, con perforación y peritonitis. Microscópicamente, necrosis coagulativa mucosa o transmural, ulceración, colonización bacteriana y <strong>burbujas de gas submucosas</strong>.</p>
+<figure class="fig" id="fig-10-8">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-8.webp" data-caption="Figura 10.8. Enterocolitis necrosante: intestino delgado distendido con pared delgada en riesgo de perforación y zonas de infarto hemorrágico en el íleon." data-alt="Figura 10.8. Enterocolitis necrosante: intestino delgado distendido con pared delgada en riesgo de perforación y zonas de infarto hemorrágico en el íleon. Robbins y Cotran, 10ª ed., p. 461.">
+    <img src="../assets/fig/cap10/fig-10-8.webp" width="1410" height="638" loading="lazy" decoding="async" alt="Figura 10.8. Enterocolitis necrosante: intestino delgado distendido con pared delgada en riesgo de perforación y zonas de infarto hemorrágico en el íleon. Robbins y Cotran, 10ª ed., p. 461.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.8.</strong> Enterocolitis necrosante: intestino delgado distendido con pared delgada en riesgo de perforación y zonas de infarto hemorrágico en el íleon.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 461. <a href="../creditos.html#fig-10-8">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-07-infecciones-perinatales" class="card">
 <div class="section-kicker"><span class="n">07</span> Sección</div>
@@ -707,6 +800,15 @@
 <li>Factores que condicionan la respuesta: el grupo ABO materno (los anticuerpos IgM anti-A/B eliminan rápido los eritrocitos fetales y protegen de la inmunización Rh) y la <strong>dosis de antígeno</strong> (se requiere hemorragia transplacentaria &gt;1 ml de eritrocitos Rh+).</li>
 <li>La <strong>inmunoglobulina anti-D (RhIg)</strong> a las 28 semanas y a las 72 h del parto (y tras abortos) reduce drásticamente la isoinmunización.</li>
 </ol>
+<figure class="fig" id="fig-10-10">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-10.webp" data-caption="Figura 10.10. Patogenia de la hidropesía fetal inmunitaria: sensibilización materna frente a antígenos eritrocitarios fetales, respuesta IgG en embarazos posteriores y hemólisis fetal." data-alt="Figura 10.10. Patogenia de la hidropesía fetal inmunitaria: sensibilización materna frente a antígenos eritrocitarios fetales, respuesta IgG en embarazos posteriores y hemólisis fetal. Robbins y Cotran, 10ª ed., p. 463.">
+    <img src="../assets/fig/cap10/fig-10-10.webp" width="703" height="960" loading="lazy" decoding="async" alt="Figura 10.10. Patogenia de la hidropesía fetal inmunitaria: sensibilización materna frente a antígenos eritrocitarios fetales, respuesta IgG en embarazos posteriores y hemólisis fetal. Robbins y Cotran, 10ª ed., p. 463.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.10.</strong> Patogenia de la hidropesía fetal inmunitaria: sensibilización materna frente a antígenos eritrocitarios fetales, respuesta IgG en embarazos posteriores y hemólisis fetal.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 463. <a href="../creditos.html#fig-10-10">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>La <strong>incompatibilidad ABO</strong> ocurre en el 20-25% de los embarazos, pero solo 1 de cada 10 tiene hemólisis de laboratorio y 1 de cada 200 requiere tratamiento: la mayoría de los anticuerpos anti-A/B son IgM, los eritrocitos neonatales expresan poco los antígenos y otras células absorben anticuerpos. Se da casi exclusivamente en hijos <strong>A o B de madres O</strong> (algunas mujeres O tienen IgG anti-A/B sin sensibilización previa, por lo que puede afectarse el primer hijo).</p>
 <p>Consecuencias de la hemólisis excesiva:</p>
 <ul>
@@ -795,6 +897,15 @@
 <li>En epitelios <strong>respiratorio e intestinal</strong> secreta cloruro hacia la luz; su pérdida, junto al aumento de la reabsorción de sodio por falta de inhibición de ENaC, reabsorbe agua y <strong>deshidrata la capa de moco</strong>, con alteración mucociliar y tapones.</li>
 <li>Regula el transporte de <strong>bicarbonato</strong> (canal permeable y por intercambiadores SLC26). Las secreciones ácidas precipitan la mucina, favorecen tapones y la unión bacteriana; la insuficiencia pancreática aparece casi siempre con mutaciones que alteran la conductancia del bicarbonato.</li>
 </ul>
+<figure class="fig" id="fig-10-16">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-16.webp" data-caption="Figura 10.16. Defecto del canal de cloro CFTR: sudor hipertónico en los conductos sudoríparos y moco deshidratado con tapones en la vía respiratoria." data-alt="Figura 10.16. Defecto del canal de cloro CFTR: sudor hipertónico en los conductos sudoríparos y moco deshidratado con tapones en la vía respiratoria. Robbins y Cotran, 10ª ed., p. 468.">
+    <img src="../assets/fig/cap10/fig-10-16.webp" width="1474" height="1060" loading="lazy" decoding="async" alt="Figura 10.16. Defecto del canal de cloro CFTR: sudor hipertónico en los conductos sudoríparos y moco deshidratado con tapones en la vía respiratoria. Robbins y Cotran, 10ª ed., p. 468.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.16.</strong> Defecto del canal de cloro CFTR: sudor hipertónico en los conductos sudoríparos y moco deshidratado con tapones en la vía respiratoria.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 468. <a href="../creditos.html#fig-10-16">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="clases-de-mutaciones">Clases de mutaciones</h4>
 <p>Se han descrito más de <strong>2.000</strong> mutaciones; solo cinco tienen frecuencia relativa ≥1%. Las clases <strong>I-III</strong> dejan &lt;10% de actividad residual ("graves"); las <strong>IV-VI</strong>, ≥20% ("leves").</p>
 <div class="table-wrap" role="region" aria-label="Tabla: Errores congénitos del metabolismo y otros trastornos genéticos" tabindex="0"><table>
@@ -969,6 +1080,15 @@
 <li>Maduración: células ganglionares grandes mezcladas con neuroblastos (<strong>ganglioneuroblastoma</strong>) y lesiones con predominio de células ganglionares maduras y pocos o ningún neuroblasto (<strong>ganglioneuroma</strong>), con aparición de <strong>células de Schwann</strong>. El estroma schwanniano puede albergar alteraciones genéticas del tumor (parte del clon) y su presencia se asocia a <strong>pronóstico favorable</strong> (se requieren ≥50% para clasificar como ganglioneuroblastoma/ganglioneuroma).</li>
 <li>Metástasis precoces y extensas: infiltración local y ganglionar, diseminación hematógena a <strong>hígado, pulmones, médula ósea y huesos</strong>.</li>
 </ul>
+<figure class="fig" id="fig-10-23">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-23.webp" data-caption="Figura 10.23. Neuroblastoma suprarrenal: células pequeñas primitivas en matriz fibrilar (neurópilo) con seudorrosetas de Homer-Wright." data-alt="Figura 10.23. Neuroblastoma suprarrenal: células pequeñas primitivas en matriz fibrilar (neurópilo) con seudorrosetas de Homer-Wright. Robbins y Cotran, 10ª ed., p. 478.">
+    <img src="../assets/fig/cap10/fig-10-23.webp" width="703" height="603" loading="lazy" decoding="async" alt="Figura 10.23. Neuroblastoma suprarrenal: células pequeñas primitivas en matriz fibrilar (neurópilo) con seudorrosetas de Homer-Wright. Robbins y Cotran, 10ª ed., p. 478.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.23.</strong> Neuroblastoma suprarrenal: células pequeñas primitivas en matriz fibrilar (neurópilo) con seudorrosetas de Homer-Wright.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 478. <a href="../creditos.html#fig-10-23">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Estadificación (INSS)</strong>: 1 (localizado resecado), 2A (resección incompleta, ganglios homolaterales negativos), 2B (ganglios homolaterales positivos, contralaterales negativos), 3 (irresecable que cruza la línea media o ganglios contralaterales), 4 (diseminación a ganglios distantes, hueso, médula, hígado, piel u otros órganos) y <strong>4S</strong> (tumor localizado con metástasis limitadas a piel, hígado y/o médula &lt;10%, solo en lactantes &lt;1 año). El <strong>60-80%</strong> se diagnostica en estadio 3 o 4.</p>
 <p><strong>Clínica</strong>: en menores de 2 años, gran masa abdominal, fiebre y adelgazamiento; en mayores, síntomas de metástasis (dolor óseo, respiratorio, digestivo). Puede haber <strong>proptosis y equimosis</strong> por metástasis periorbitarias y, en neonatos, metástasis cutáneas con decoloración azul ("bebé en magdalena de arándanos"). El <strong>90%</strong> produce <strong>catecolaminas</strong>, con aumento de <strong>ácido vainillilmandélico (AVM)</strong> y <strong>homovanílico (AHV)</strong> urinarios; la hipertensión es mucho menos frecuente que en el feocromocitoma. Los ganglioneuromas suelen ser masas asintomáticas o compresivas.</p>
 <p><strong>Factores pronósticos</strong> (tabla 10.7):</p>
@@ -1072,6 +1192,15 @@
 <li><strong>Anaplasia</strong> en ~5%: núcleos hipercromáticos, grandes y pleomorfos con mitosis anormales; se correlaciona con <em>TP53</em> y <strong>resistencia a la quimioterapia</strong>.</li>
 <li><strong>Restos nefrógenos</strong>: lesión precursora en el <strong>25-40%</strong> de los unilaterales y casi el <strong>100%</strong> de los bilaterales; comparten alteraciones genéticas con el tumor adyacente. Van de masas hiperplásicas a restos escleróticos con túbulos o glomérulos inmaduros. Su presencia implica riesgo de tumor contralateral y controles prolongados.</li>
 </ul>
+<figure class="fig" id="fig-10-27">
+  <a class="fig-open" href="../assets/fig/cap10/fig-10-27.webp" data-caption="Figura 10.27. Tumor de Wilms: componente blastomatoso de células azules con túbulos primitivos (patrón trifásico) y un foco de anaplasia con núcleos grandes y atípicos." data-alt="Figura 10.27. Tumor de Wilms: componente blastomatoso de células azules con túbulos primitivos (patrón trifásico) y un foco de anaplasia con núcleos grandes y atípicos. Robbins y Cotran, 10ª ed., p. 482.">
+    <img src="../assets/fig/cap10/fig-10-27.webp" width="1474" height="633" loading="lazy" decoding="async" alt="Figura 10.27. Tumor de Wilms: componente blastomatoso de células azules con túbulos primitivos (patrón trifásico) y un foco de anaplasia con núcleos grandes y atípicos. Robbins y Cotran, 10ª ed., p. 482.">
+  </a>
+  <figcaption>
+    <strong>Figura 10.27.</strong> Tumor de Wilms: componente blastomatoso de células azules con túbulos primitivos (patrón trifásico) y un foco de anaplasia con núcleos grandes y atípicos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 482. <a href="../creditos.html#fig-10-27">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Clínica y pronóstico</strong>: gran masa abdominal (puede cruzar la línea media hacia la pelvis), hematuria, dolor tras traumatismo, obstrucción intestinal e hipertensión; con frecuencia hay <strong>metástasis pulmonares</strong> al diagnóstico. La mayoría se cura.</p>
 <ul>
 <li>La <strong>histología anaplásica</strong> es el determinante más importante de mal pronóstico; incluso la anaplasia limitada al riñón aumenta recaídas y muerte.</li>
@@ -1104,6 +1233,11 @@
 <li><strong>Tumor de Wilms</strong>: 1/10.000, 2-5 años; <strong>WAGR</strong> (11p13, <em>WT1</em>/<em>PAX6</em>, 33%), <strong>Denys-Drash</strong> (<em>WT1</em> dominante negativa, 90%), <strong>Beckwith-Wiedemann</strong> (11p15.5, <em>IGF2</em>/impronta); histología <strong>trifásica</strong> (blastema, epitelio, estroma); <strong>restos nefrógenos</strong> como precursor; <strong>anaplasia</strong> (<em>TP53</em>) y pérdida de <strong>1p/16q</strong> = mal pronóstico; curación ~90%.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-10-5" aria-label="Figura 10.5"><img src="../assets/fig/cap10/fig-10-5.webp" loading="lazy" decoding="async" alt="Figura 10.5"><span>Figura 10.5</span></a><a class="fig-thumb" href="#fig-10-6" aria-label="Figura 10.6"><img src="../assets/fig/cap10/fig-10-6.webp" loading="lazy" decoding="async" alt="Figura 10.6"><span>Figura 10.6</span></a><a class="fig-thumb" href="#fig-10-7" aria-label="Figura 10.7"><img src="../assets/fig/cap10/fig-10-7.webp" loading="lazy" decoding="async" alt="Figura 10.7"><span>Figura 10.7</span></a><a class="fig-thumb" href="#fig-10-8" aria-label="Figura 10.8"><img src="../assets/fig/cap10/fig-10-8.webp" loading="lazy" decoding="async" alt="Figura 10.8"><span>Figura 10.8</span></a><a class="fig-thumb" href="#fig-10-10" aria-label="Figura 10.10"><img src="../assets/fig/cap10/fig-10-10.webp" loading="lazy" decoding="async" alt="Figura 10.10"><span>Figura 10.10</span></a><a class="fig-thumb" href="#fig-10-16" aria-label="Figura 10.16"><img src="../assets/fig/cap10/fig-10-16.webp" loading="lazy" decoding="async" alt="Figura 10.16"><span>Figura 10.16</span></a><a class="fig-thumb" href="#fig-10-23" aria-label="Figura 10.23"><img src="../assets/fig/cap10/fig-10-23.webp" loading="lazy" decoding="async" alt="Figura 10.23"><span>Figura 10.23</span></a><a class="fig-thumb" href="#fig-10-27" aria-label="Figura 10.27"><img src="../assets/fig/cap10/fig-10-27.webp" loading="lazy" decoding="async" alt="Figura 10.27"><span>Figura 10.27</span></a></div>
 </section>
   </main>
 </div>
@@ -1111,7 +1245,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1129,8 +1270,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1150,6 +1291,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 8. Enfermedades infecciosas</h1>
-    <p class="lede">Guía 08 de 10. Resumen completo del capítulo 8 con 30 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>08 de 10</strong></div><div><span>Capítulo</span><strong>8</strong></div><div><span>Páginas</span><strong>339-404</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>30</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 08 de 10. Resumen completo del capítulo 8 con 30 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>08 de 10</strong></div><div><span>Capítulo</span><strong>8</strong></div><div><span>Páginas</span><strong>339-404</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>30</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -477,6 +533,7 @@
         <li><a href="#sec-09-enfermedades-infecciosas-emergentes-y-bioterrorismo">Enfermedades infecciosas emergentes y bioterrorismo</a></li>
         <li><a href="#sec-10-tecnicas-especiales-para-el-diagnostico">Técnicas especiales para el diagnóstico</a></li>
         <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -518,6 +575,15 @@
 <li>La diseminación sanguínea puede causar <strong>sepsis</strong> (fiebre, hipotensión, coagulopatía) y siembras focales (absceso o tuberculoma), múltiples (tuberculosis miliar) o infecciones de corazón y vasos (endocarditis, aneurisma micótico).</li>
 <li>Liberación y transmisión: respiratoria (gotas grandes de corto alcance, como la gripe; partículas finas de mayor alcance, como <em>M. tuberculosis</em> y varicela-zóster), <strong>fecal-oral</strong> (VHA, VHE, poliovirus, rotavirus, <em>V. cholerae</em>, <em>Shigella</em>), <strong>sexual</strong> (VHS, VIH, VPH, <em>T. pallidum</em>, <em>N. gonorrhoeae</em>), por saliva (VEB), por vectores artrópodos (paludismo) y zoonótica.</li>
 </ul>
+<figure class="fig" id="fig-8-1">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-1.webp" data-caption="Figura 8.1. Vías de entrada y diseminación de los microbios: los patógenos atraviesan la barrera epitelial o mucosa y la infección puede quedar localizada o diseminarse por linfa, sangre o nervios." data-alt="Figura 8.1. Vías de entrada y diseminación de los microbios: los patógenos atraviesan la barrera epitelial o mucosa y la infección puede quedar localizada o diseminarse por linfa, sangre o nervios. Robbins y Cotran, 10ª ed., p. 342.">
+    <img src="../assets/fig/cap08/fig-8-1.webp" width="765" height="912" loading="lazy" decoding="async" alt="Figura 8.1. Vías de entrada y diseminación de los microbios: los patógenos atraviesan la barrera epitelial o mucosa y la infección puede quedar localizada o diseminarse por linfa, sangre o nervios. Robbins y Cotran, 10ª ed., p. 342.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.1.</strong> Vías de entrada y diseminación de los microbios: los patógenos atraviesan la barrera epitelial o mucosa y la infección puede quedar localizada o diseminarse por linfa, sangre o nervios.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 342. <a href="../creditos.html#fig-8-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="interacciones-huésped-patógeno">Interacciones huésped-patógeno</h3>
 <p>El resultado de una infección depende de la virulencia del microbio y de la respuesta inmunitaria del huésped. Estrategias de <strong>evasión</strong>:</p>
 <div class="table-wrap" role="region" aria-label="Tabla: Principios generales de patogenia microbiana" tabindex="0"><table>
@@ -570,6 +636,15 @@
 <li><strong>Efectos citopáticos directos</strong>: bloqueo de macromoléculas (poliovirus inactivan la proteína fijadora de la caperuza), muerte por receptores de muerte/apoptosis, estrés del retículo endoplásmico y proteínas proapoptósicas virales (Vpr del VIH).</li>
 <li><strong>Respuestas inmunitarias antiviricas</strong> (los CTL también lesionan tejidos) y <strong>transformación</strong> de células infectadas (oncogenes virales, inhibición de supresores, mutagénesis insercional).</li>
 </ul>
+<figure class="fig" id="fig-8-3">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-3.webp" data-caption="Figura 8.3. Mecanismos por los que los virus dañan las células: tropismo por receptores, efectos citopáticos directos, respuesta inmunitaria del huésped y transformación celular." data-alt="Figura 8.3. Mecanismos por los que los virus dañan las células: tropismo por receptores, efectos citopáticos directos, respuesta inmunitaria del huésped y transformación celular. Robbins y Cotran, 10ª ed., p. 345.">
+    <img src="../assets/fig/cap08/fig-8-3.webp" width="718" height="989" loading="lazy" decoding="async" alt="Figura 8.3. Mecanismos por los que los virus dañan las células: tropismo por receptores, efectos citopáticos directos, respuesta inmunitaria del huésped y transformación celular. Robbins y Cotran, 10ª ed., p. 345.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.3.</strong> Mecanismos por los que los virus dañan las células: tropismo por receptores, efectos citopáticos directos, respuesta inmunitaria del huésped y transformación celular.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 345. <a href="../creditos.html#fig-8-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Bacterianos</strong>:</p>
 <ul>
 <li>La <strong>virulencia</strong> depende de adhesión, invasión y producción de toxinas; los genes de virulencia se agrupan en <strong>islas de patogenicidad</strong> y pueden transmitirse por plásmidos y bacteriófagos (toxinas del cólera, difteria y botulismo; resistencia a antibióticos como la vancomicina).</li>
@@ -668,6 +743,15 @@
 <li><strong>VZV</strong>: varicela (primoinfección, exantema centrífugo en oleadas) y <strong>herpes zóster</strong> (reactivación dermatómica, dolorosa). Se vacuna a los mayores de 50 años. La reactivación grave causa neumonía, encefalitis y vasculopatía.</li>
 <li><strong>CMV</strong>: latencia en monocitos; transmisión transplacentaria, perinatal, salival, genital e yatrógena. Infección congénita (enfermedad de inclusiones citomegálicas: microcefalia, calcificaciones, sordera), mononucleosis por CMV y enfermedad grave en inmunodeprimidos (neumonitis, colitis). Morfología: células gigantes con inclusiones <strong>"ojo de búho"</strong>.</li>
 </ul>
+<figure class="fig" id="fig-8-12">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-12.webp" data-caption="Figura 8.12. Citomegalovirus: inclusiones nucleares bien definidas y citoplásmicas mal definidas en pulmón; imagen típica de las células en ojo de búho." data-alt="Figura 8.12. Citomegalovirus: inclusiones nucleares bien definidas y citoplásmicas mal definidas en pulmón; imagen típica de las células en ojo de búho. Robbins y Cotran, 10ª ed., p. 357.">
+    <img src="../assets/fig/cap08/fig-8-12.webp" width="701" height="479" loading="lazy" decoding="async" alt="Figura 8.12. Citomegalovirus: inclusiones nucleares bien definidas y citoplásmicas mal definidas en pulmón; imagen típica de las células en ojo de búho. Robbins y Cotran, 10ª ed., p. 357.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.12.</strong> Citomegalovirus: inclusiones nucleares bien definidas y citoplásmicas mal definidas en pulmón; imagen típica de las células en ojo de búho.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 357. <a href="../creditos.html#fig-8-12">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="infecciones-productivas-crónicas-y-transformantes">Infecciones productivas crónicas y transformantes</h3>
 <ul>
 <li><strong>VIH</strong> (sida) y <strong>VHB</strong>: replicación persistente con viremia (se ven en los capítulos 6 y 18).</li>
@@ -702,7 +786,25 @@
 <li><strong>Secundaria</strong>: en pacientes ya sensibilizados, afecta los vértices con <strong>cavitación</strong>; el paciente se vuelve contagioso.</li>
 <li>Diseminación: <strong>tuberculosis miliar</strong> (hematógena) y enfermedad de órganos (meningitis, renal, suprarrenal, ósea: <strong>enfermedad de Pott</strong>, linfadenitis cervical o "escrófula").</li>
 <li>Diagnóstico: tinción acidorresistente, cultivo, <strong>PCR</strong> y pruebas de inmunidad (IGRA, tuberculina). Falsos negativos en inmunodepresión.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-8-23">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-23.webp" data-caption="Figura 8.23. Secuencia de la tuberculosis pulmonar primaria: desde la inhalación de M. tuberculosis hasta el desarrollo de inmunidad mediada por células." data-alt="Figura 8.23. Secuencia de la tuberculosis pulmonar primaria: desde la inhalación de M. tuberculosis hasta el desarrollo de inmunidad mediada por células. Robbins y Cotran, 10ª ed., p. 369.">
+    <img src="../assets/fig/cap08/fig-8-23.webp" width="1410" height="1035" loading="lazy" decoding="async" alt="Figura 8.23. Secuencia de la tuberculosis pulmonar primaria: desde la inhalación de M. tuberculosis hasta el desarrollo de inmunidad mediada por células. Robbins y Cotran, 10ª ed., p. 369.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.23.</strong> Secuencia de la tuberculosis pulmonar primaria: desde la inhalación de M. tuberculosis hasta el desarrollo de inmunidad mediada por células.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 369. <a href="../creditos.html#fig-8-23">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-8-26">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-26.webp" data-caption="Figura 8.26. Espectro morfológico de la tuberculosis: tubérculo con caseificación central rodeada de células epitelioides y gigantes multinucleadas." data-alt="Figura 8.26. Espectro morfológico de la tuberculosis: tubérculo con caseificación central rodeada de células epitelioides y gigantes multinucleadas. Robbins y Cotran, 10ª ed., p. 373.">
+    <img src="../assets/fig/cap08/fig-8-26.webp" width="1467" height="1024" loading="lazy" decoding="async" alt="Figura 8.26. Espectro morfológico de la tuberculosis: tubérculo con caseificación central rodeada de células epitelioides y gigantes multinucleadas. Robbins y Cotran, 10ª ed., p. 373.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.26.</strong> Espectro morfológico de la tuberculosis: tubérculo con caseificación central rodeada de células epitelioides y gigantes multinucleadas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 373. <a href="../creditos.html#fig-8-26">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li><strong>Micobacterias no tuberculosas</strong>: <strong>complejo <em>M. avium</em></strong> (CMA) en VIH avanzado (macrófagos repletos de bacilos, pocos granulomas); riesgo en daño pulmonar estructural.</li>
 <li><strong>Lepra</strong> (<em>M. leprae</em>): afecta piel y nervios periféricos. Formas según la respuesta T: <strong>tuberculoide</strong> (Th1 fuerte, paucibacilar, con granulomas y afectación nerviosa) y <strong>lepromatosa</strong> (Th1 débil, multibacilar, con <strong>células de la lepra</strong> llenas de lípidos, facies leonina y testículos afectados).</li>
 </ul>
@@ -739,6 +841,15 @@
 <li><strong>Aspergilosis</strong> (<em>A. fumigatus</em>): conidios inhalados; aspergiloma, aspergilosis broncopulmonar alérgica e <strong>invasiva</strong> (en neutropénicos). Hifas <strong>con septos y ramificación en ángulo agudo (~40°)</strong>; invade vasos (hemorragia e infarto); la <strong>aflatoxina</strong> es hepatotóxica y carcinógena.</li>
 <li><strong>Mucormicosis</strong> (<em>Mucor, Rhizopus</em>): en diabéticos, neutropénicos y con sobrecarga de hierro; forma <strong>rinocerebral</strong>. Hifas <strong>sin septos, anchas y con ramificación en ángulo recto</strong>; angioinvasoras.</li>
 </ul>
+<figure class="fig" id="fig-8-44">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-44.webp" data-caption="Figura 8.44. Aspergilosis pulmonar invasiva en un paciente trasplantado; la tinción de metenamina-plata muestra hifas con septos y ramificación en ángulo agudo." data-alt="Figura 8.44. Aspergilosis pulmonar invasiva en un paciente trasplantado; la tinción de metenamina-plata muestra hifas con septos y ramificación en ángulo agudo. Robbins y Cotran, 10ª ed., p. 388.">
+    <img src="../assets/fig/cap08/fig-8-44.webp" width="1474" height="513" loading="lazy" decoding="async" alt="Figura 8.44. Aspergilosis pulmonar invasiva en un paciente trasplantado; la tinción de metenamina-plata muestra hifas con septos y ramificación en ángulo agudo. Robbins y Cotran, 10ª ed., p. 388.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.44.</strong> Aspergilosis pulmonar invasiva en un paciente trasplantado; la tinción de metenamina-plata muestra hifas con septos y ramificación en ángulo agudo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 388. <a href="../creditos.html#fig-8-44">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Aspergillus vs Mucor en la tinción</span>Aspergillus: hifas septadas con ramificación en ángulo agudo (~40°), angioinvasor. Mucor: hifas anchas sin septos con ramificación en ángulo recto, forma rinocerebral en diabéticos y neutropénicos.</div>
 </section><section id="sec-07-infecciones-parasitarias" class="card">
@@ -753,6 +864,24 @@
 <li><strong>Enfermedad de Chagas</strong> (<em>T. cruzi</em>, chinche triatomino): afecta corazón (miocardiopatía dilatada, arritmias) y plexos (megacolon, megaesófago); mecanismo inmunitario y autoinmunitario.</li>
 <li><strong>Toxoplasmosis</strong> (<em>T. gondii</em>): del gato; quistes en músculo, encéfalo y ojo. Grave en inmunodeprimidos (encefalitis) y en la infección congénita (hidrocefalia, calcificaciones, coriorretinitis).</li>
 </ul>
+<figure class="fig" id="fig-8-46">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-46.webp" data-caption="Figura 8.46. Ciclo vital de Plasmodium falciparum, con las fases exoeritrocítica y eritrocítica." data-alt="Figura 8.46. Ciclo vital de Plasmodium falciparum, con las fases exoeritrocítica y eritrocítica. Robbins y Cotran, 10ª ed., p. 390.">
+    <img src="../assets/fig/cap08/fig-8-46.webp" width="733" height="971" loading="lazy" decoding="async" alt="Figura 8.46. Ciclo vital de Plasmodium falciparum, con las fases exoeritrocítica y eritrocítica. Robbins y Cotran, 10ª ed., p. 390.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.46.</strong> Ciclo vital de Plasmodium falciparum, con las fases exoeritrocítica y eritrocítica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 390. <a href="../creditos.html#fig-8-46">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-8-48">
+  <a class="fig-open" href="../assets/fig/cap08/fig-8-48.webp" data-caption="Figura 8.48. Eritrocitos parasitados por Babesia con la típica forma en cruz de Malta en la tinción." data-alt="Figura 8.48. Eritrocitos parasitados por Babesia con la típica forma en cruz de Malta en la tinción. Robbins y Cotran, 10ª ed., p. 391.">
+    <img src="../assets/fig/cap08/fig-8-48.webp" width="665" height="398" loading="lazy" decoding="async" alt="Figura 8.48. Eritrocitos parasitados por Babesia con la típica forma en cruz de Malta en la tinción. Robbins y Cotran, 10ª ed., p. 391.">
+  </a>
+  <figcaption>
+    <strong>Figura 8.48.</strong> Eritrocitos parasitados por Babesia con la típica forma en cruz de Malta en la tinción.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 391. <a href="../creditos.html#fig-8-48">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="metazoos">Metazoos</h3>
 <ul>
 <li><strong>Estrongiloidosis</strong> (<em>Strongyloides</em>): larvas penetran la piel; <strong>autoinfección</strong>; en inmunodeprimidos causa <strong>hiperinfección</strong> con sepsis.</li>
@@ -844,6 +973,11 @@
 <li>Diagnóstico: cultivo, serología y PCR; tinciones de Gram, acidorresistente, plata, PAS, mucicarmín y Giemsa.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-8-1" aria-label="Figura 8.1"><img src="../assets/fig/cap08/fig-8-1.webp" loading="lazy" decoding="async" alt="Figura 8.1"><span>Figura 8.1</span></a><a class="fig-thumb" href="#fig-8-3" aria-label="Figura 8.3"><img src="../assets/fig/cap08/fig-8-3.webp" loading="lazy" decoding="async" alt="Figura 8.3"><span>Figura 8.3</span></a><a class="fig-thumb" href="#fig-8-12" aria-label="Figura 8.12"><img src="../assets/fig/cap08/fig-8-12.webp" loading="lazy" decoding="async" alt="Figura 8.12"><span>Figura 8.12</span></a><a class="fig-thumb" href="#fig-8-23" aria-label="Figura 8.23"><img src="../assets/fig/cap08/fig-8-23.webp" loading="lazy" decoding="async" alt="Figura 8.23"><span>Figura 8.23</span></a><a class="fig-thumb" href="#fig-8-26" aria-label="Figura 8.26"><img src="../assets/fig/cap08/fig-8-26.webp" loading="lazy" decoding="async" alt="Figura 8.26"><span>Figura 8.26</span></a><a class="fig-thumb" href="#fig-8-44" aria-label="Figura 8.44"><img src="../assets/fig/cap08/fig-8-44.webp" loading="lazy" decoding="async" alt="Figura 8.44"><span>Figura 8.44</span></a><a class="fig-thumb" href="#fig-8-46" aria-label="Figura 8.46"><img src="../assets/fig/cap08/fig-8-46.webp" loading="lazy" decoding="async" alt="Figura 8.46"><span>Figura 8.46</span></a><a class="fig-thumb" href="#fig-8-48" aria-label="Figura 8.48"><img src="../assets/fig/cap08/fig-8-48.webp" loading="lazy" decoding="async" alt="Figura 8.48"><span>Figura 8.48</span></a></div>
 </section>
   </main>
 </div>
@@ -851,7 +985,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -869,8 +1010,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -890,6 +1031,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

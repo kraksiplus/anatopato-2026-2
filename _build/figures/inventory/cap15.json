@@ -1,0 +1,290 @@
+{
+  "chapter": 15,
+  "headings": [
+    "Ideas clave",
+    "Anomalías congénitas",
+    "Atelectasia (colapso)",
+    "Edema de pulmón",
+    "Lesión pulmonar aguda y SDRA (daño alveolar difuso)",
+    "Enfermedades pulmonares obstructivas y restrictivas",
+    "Enfermedad pulmonar obstructiva crónica (EPOC)",
+    "Enfisema",
+    "Bronquitis crónica",
+    "Asma",
+    "Bronquiectasias",
+    "Enfermedades intersticiales difusas crónicas (restrictivas)",
+    "Neumoconiosis",
+    "Complicaciones de los tratamientos",
+    "Enfermedades granulomatosas",
+    "Enfermedades intersticiales relacionadas con el tabaquismo",
+    "Enfermedades de origen vascular",
+    "Infecciones pulmonares",
+    "Trasplante de pulmón",
+    "Tumores",
+    "Pleura"
+  ],
+  "figures": [
+    {
+      "number": "15.1",
+      "page": 674,
+      "caption": "elio Figura 15.1 Estructura microscópica de la pared alveolar. Obsérvese que la membrana basal (amarilla) es fina en un lado y se ensancha en las zonas en que es continuación del espacio intersticial. Se muestran partes de células intersticiales. fibras elásticas finas, haces pequeños de colágeno, algunas células interstici"
+    },
+    {
+      "number": "15.2",
+      "page": 675,
+      "caption": "ción Figura 15.2 Varias formas de atelectasias adquiridas. Las lineas discontinuas indican el volumen pulmonar normal. Atelectasias por reabsorción, que se deben a la obstrucción de una vía respiratoria. Con el tiempo, el aire se reabsorbe desde los alvéolos distales, que se colapsarán. Al disminuir el volumen pulmonar, el"
+    },
+    {
+      "number": "15.3",
+      "page": 677,
+      "caption": "adas Figura 15.3 Alvéolo normal (izquierda) comparado con el alvéolo de la fase temprana de la lesión pulmonar aguda y del síndrome de dificultad respiratoria aguda. ERO, especie reactiva del oxigeno; IL-1, interleucina I; TNF, factor de necrosis tumoral. (Modificado con autorización a partir de Matthay MA, Ware LB, Zimmerm"
+    },
+    {
+      "number": "15.4",
+      "page": 677,
+      "caption": "ía). Figura 15.4 Daño alveolar difuso (síndrome de dificultad respiratoria aguda). Algunos alvéolos están colapsados, mientras que otros están distendidos. Muchos están tapizados por membranas hialinas (flechas)"
+    },
+    {
+      "number": "15.5",
+      "page": 679,
+      "caption": "etc. Figura 15.5 Representación esquemática de la superposición entre las enfermedades pulmonares obstructivas crónicas. Enfermedad pulmonar obstructiva crónica La EPOC, un importante problema de salud pública, es definida por la Organización Mundial de la Salud (OMS) como <una enfermedad frecuente, evitable y tratable, que"
+    },
+    {
+      "number": "15.6",
+      "page": 679,
+      "caption": "inar Figura 15.6 Patrones de enfisema clínicamente significativos. A. Estructura del ácino normal. B. Enfisema centroacinar con dilatación que afecta inicialmente a los bronquiolos respiratorios. C. Enfisema panacinar con distensión inicial del alvéolo y del conducto alveolar."
+    },
+    {
+      "number": "15.7",
+      "page": 680,
+      "caption": "680 Figura 15.7 A. Enfisema centroacinar. Las zonas centrales muestran un intenso daño enfisematoso (E) rodeado por espacios alveolares relativamente conservados. B. Enfisema panacinar que afecta a todo el lobulillo pulmonar. aéreos continuos y aumentados de tamaño, que miden desde menos de 0,5 cm a mas de 2,0 cm de diámet"
+    },
+    {
+      "number": "15.8",
+      "page": 680,
+      "caption": "olar Figura 15.8 Patogenia del enfisema. Consúltense los detalles en el texto. la acumulación de linfocitos T y B en las partes afectadas del pulmón, si bien el papel de la inmunidad adaptativa en el enfisema es actualmente incierto. Desequilibrio proteasa-antiproteasa. Desde las células inflamatorias y las células epitelia"
+    },
+    {
+      "number": "15.9",
+      "page": 683,
+      "caption": "Figura 15.9 Enfisema bulloso. Obsérvense las grandes bullas subpleurales (parte superior izquierda). . Enfisema bulloso. Se trata de un término descriptivo para las grandes burbujas o bullas (espacios mayores de 1 cm de diámetro en estado distendido) subpleurales que pueden presentarse en cualquier forma de enfisema (f"
+    },
+    {
+      "number": "15.10",
+      "page": 685,
+      "caption": "RAS) Figura 15.10 A y B. Comparación entre una vía respiratoria normal y una afectada por asma. Las vías respiratorias del asma se caracterizan por acumulación un delito. de moco en la luz bronquial, secundaria al aumento del número de células caliciformes secretoras de moco en la mucosa y la hipertrofia de las glándulas es"
+    },
+    {
+      "number": "15.11",
+      "page": 686,
+      "caption": "686 Figura 15.11Bronquio de un paciente asmático que muestra hiperplasia de las células caliciformes (flecha verde), fibrosis de la membrana subbasal (flecha negra), inflamación eosinófila (flecha amarilla) e hipertrofia muscular (flecha azul). Factores ambientales. El asma es una enfermedad de las sociedades industrializa"
+    },
+    {
+      "number": "15.12",
+      "page": 688,
+      "caption": "688 Figura 15.12 Bronquiectasias en un paciente con fibrosis quistica que se sometió a un trasplante de pulmón. La superficie de corte del pulmón muestra bronquios periféricos muy dilatados llenos de secreciones mucopurulentas. de esputo de pacientes con bronquiectasias, o con otros cuatro tipos de bacterias (incluidas las"
+    },
+    {
+      "number": "15.13",
+      "page": 689,
+      "caption": "osis Figura 15.13 Mecanismos patógenos propuestos en la fibrosis pulmonar idiopática. Los factores ambientales que son potencialmente nocivos para el epitelio alveolar interactúan con los factores genéticos o relacionados sin iar persistente. Los factores segregados desde el epitelio lesionado/activado o activan los fibrobl"
+    },
+    {
+      "number": "15.14",
+      "page": 690,
+      "caption": "690 Figura 15.14 Neumonía intersticial normal. La fibrosis es más pronunciada en la región subpleural. (Por cortesía de la Dra. Nicole Cipriani, Department of Pathology, University of Chicago, Chicago,III) cas y menos celulares. Es bastante típica la existencia simultánea de lesiones precoces y tardías (fig. 1 5.15). La fi"
+    },
+    {
+      "number": "15.15",
+      "page": 690,
+      "caption": "lgu- Figura 15.15 Neumonía intersticial normal. Foco de fibroblastos con fibras que discurren paralelas a la superficie y a la matriz extracelular mixoide azulada. A la izquierda puede verse una imagen en panal de abeja. nos casos, se registran reagudizaciones seguidas de un rápido deterioro clínico. La mediana de supervive"
+    },
+    {
+      "number": "15.16",
+      "page": 691,
+      "caption": "vas) Figura 15.16 Neumonía en organización criptógena. Algunos espacios alveolares están Ilenos de aglomerados de fibroblastos (cuerpos de Masson), mientras que las paredes alveolares son relativamente normales. A. Pequeño aumento. B. Gran aumento. gresiva (esclerodermia) y la dermatomiositis-polimiositis. La afectación pul"
+    },
+    {
+      "number": "15.17",
+      "page": 693,
+      "caption": "Figura 15.17 Fibrosis masiva progresiva en un trabajador del carbón. Una gran cantidad de pigmento negro se asocia a una fibrosis intersticial densa. (Tomado de Klatt EC: Robbins and Cotran Atlas of Pathology, ed 2, Philadelphia, 2010, Saunders, p 121.) de I cm o mayores, en ocasiones de hasta 10 cm de diámetro máximo."
+    },
+    {
+      "number": "15.18",
+      "page": 693,
+      "caption": "18). Figura 15.18 Silicosis avanzada. La cicatrización ha contraído el lóbulo superior hasta formar una masa pequeña y oscura (flecha). Obsérvese el denso engrosamiento pleural. (Por cortesía del Dr. John Godleski, Brigham and Women's Hospital, Boston, Mass.)"
+    },
+    {
+      "number": "15.19",
+      "page": 694,
+      "caption": "694 Figura 15.19 Varios nódulos de sílice y colágeno coalescentes. (Por cortesía del Dr. John Godleski, Brigham and Women's Hospital, Boston, Mass.) Algunos nódulos pueden sufrir ablandamiento central y cavitación debido a tuberculosis sobreañadida o a isquemia. Las lesiones fibró ticas también pueden aparecer en los gangl"
+    },
+    {
+      "number": "15.20",
+      "page": 695,
+      "caption": "ier. Figura 15.20 Detalle a gran aumento de un cuerpo de amianto que demuestra el aspecto arrosariado típico y los extremos con protuberancias (flecha). Enfermedades intersticiales difusas crónicas (restrictivas) 695 Figura 15.21Placas pleurales relacionadas con el amianto. Se ven grandes placas fibrocálcicas definidas en l"
+    },
+    {
+      "number": "15.21",
+      "page": 695,
+      "caption": "695 Figura 15.21Placas pleurales relacionadas con el amianto. Se ven grandes placas fibrocálcicas definidas en la superficie pleural del diafragma. (Por cortesía del Dr. John Godleski, Brigham and Women's Hospital, Boston, Mass.) puede producirse una fibrosis pleural visceral difusa, que, en casos avanzados, conduce a la a"
+    },
+    {
+      "number": "15.22",
+      "page": 697,
+      "caption": "Figura 15.22 Bronquio con granulomas no necrosantes característicos de la sarcoidosis (asteriscos), con muchas células gigantes multinucleadas (puntas de flecha). Obsérvese la localización subepitelial de los granulomas. central es poco frecuente. Si la enfermedad se cronifica, los granulomas pueden quedar rodeados por"
+    },
+    {
+      "number": "15.23",
+      "page": 698,
+      "caption": "eden Figura 15.23 Neumonitis por hipersensibilidad. Los granulomas intersticiales de estructura laxa y la inflamación crónica son característicos. verse infiltrados intersticiales micronodulares, y las pruebas de función pulmonar muestran un trastorno restrictivo agudo. Los síntomas aparecen entre 4 y 6 h después de la expo"
+    },
+    {
+      "number": "15.24",
+      "page": 699,
+      "caption": "sin Figura 15.24 Neumonía intersticial descamativa. Detalle a mediano Isevier. aumento del pulmón que muestra la acumulación de una gran cantidad de macrófagos dentro de los espacios alveolares y un engrosamiento fibroso H solo ligero de las paredes alveolares. Enfermedades intersticiales difusas crónicas (restrictivas) 69"
+    },
+    {
+      "number": "15.25",
+      "page": 700,
+      "caption": "ón). Figura 15.25 Proteinosis alveolar primaria. Los alvéolos están llenos de un precipitado granular amorfo y denso con proteínas y lípidos, mientras que las paredes alveolares son normales. Características clínicas La mayoría de los pacientes adultos acuden con tos y esputo abundante, que, con frecuencia, contiene materia"
+    },
+    {
+      "number": "15.26",
+      "page": 701,
+      "caption": "Figura 15.26 Proteinosis alveolar pulmonar asociada a la mutación del gen ABCA3. Microfotografia electrónica que muestra neumocitos de tipo Il que contienen pequeñas laminillas de surfactante con núcleos electrodensos, un aspecto que es característico de los casos asociados a mutaciones ABCA3. Los coágulos de sangre qu"
+    },
+    {
+      "number": "15.27",
+      "page": 701,
+      "caption": "sen- Figura 15.27Gran émbolo en silla de montar procedente de la vena femoral, que se encuentra entre las arterias pulmonares derecha e izquierda. (Tomado de la colección docente del Department of Pathology, University of Texas Southwestern Medical School, Dallas, Tex.)"
+    },
+    {
+      "number": "15.28",
+      "page": 702,
+      "caption": "702 Figura 15.28 Infarto pulmonar agudo hemorrágico tado una disociación electromecánica, en la cual el electrocarentra sangre en la circulación arterial pulmonar. Sin embargo, el síndrome clínico puede simular un infarto de miocardio si el paciente sobrevive después de una embolia pulmonar mensurable, con dolor torácico i"
+    },
+    {
+      "number": "15.29",
+      "page": 703,
+      "caption": "ARIA Figura 15.29 Patogenia de la hipertensión pulmonar primaria (idiopática). Consúltense los detalles en el texto. de manera prominente, con hipertrofia de la media y fibrosis de la intima muy llamativas que, en ocasiones, estrechan la luz de los canales identificados. En un extremo del espectro de modificaciones anatomop"
+    },
+    {
+      "number": "15.30",
+      "page": 704,
+      "caption": "704 Figura 15.30 Modificaciones vasculares en la hipertensión arterial pulmonar. A. Cambios similares a los del ateroma, un hallazgo limitado habitualmente a los vasos grandes. B. Hipertrofia importante de la media. C. Lesión plexiforme de arterias pequeñas que es característica de la hipertensión pulmonar avanzada. de hem"
+    },
+    {
+      "number": "15.31",
+      "page": 704,
+      "caption": "anto Figura 15.31 Síndrome de hemorragia pulmonar difusa. Se aprecian una hemorragia intraalveolar aguda y macrófagos cargados de hemosiderina, lo que refleja una hemorragia previa (tinción del hierro con azul de Prusia)."
+    },
+    {
+      "number": "15.32",
+      "page": 707,
+      "caption": "onia Figura 15.32 Comparación entre la bronconeumonia y la neumonía lobular. epidemias locales en comunidades cerradas (colegios, acuartelamientos y presidios). Morfología La neumonía bacteriana sigue dos patrones de distribución anatómica: bronconeumonia lobulillar y neumonía lobular (fig. 15.32). La consolidación parchead"
+    },
+    {
+      "number": "15.33",
+      "page": 707,
+      "caption": "e la Figura 1 5.33 Bronconeumonia. Corte del pulmón que muestra parches de consolidación (flechas)."
+    },
+    {
+      "number": "15.34",
+      "page": 708,
+      "caption": "708 Figura 15.34 Neumonía lobular: hepatización gris. La consolidación es uniforme en el lóbulo inferior. susceptibilidad del paciente. Desde el punto de vista clínico, lo más importante es identificar el agente causante y determinar la extensión de la enfermedad. En la neumonía lobular se han descrito clásicamente cuatro"
+    },
+    {
+      "number": "15.35",
+      "page": 708,
+      "caption": "ción Figura 15.35 Estadios de la neumonía bacteriana. A. Neumonía aguda Los capilares congestionados del tabique y la abundancia de neutrófilos intraalveolares son característicos de la hepatización roja precoz. Aún no se han formado las redes de fibrina. B. Organización temprana del exudado intraalveolar; se aprecia cómo s"
+    },
+    {
+      "number": "15.36",
+      "page": 712,
+      "caption": "lmón Figura 15.36 Superficie de corte del pulmón que muestra dos abscesos. (Por cortesía del Dr. M. Kamran Mirza, University of Chicago, Chicago, III) MORFOLOGÍA El diámetro de los abscesos varia desde algunos milímetros hasta cavidades grandes de 5-6 cm (fig. 15.36). Afectan a cualquier zona del pulmón y pueden ser únicos"
+    },
+    {
+      "number": "15.37",
+      "page": 713,
+      "caption": "ares Figura 1 5.37Histoplasmosis. A. Granuloma pulmonar laminado por Histoplasma. B. La levadura Histoplasma capsulatum Ilena los fagocitos en el pulmón de un paciente con histoplasmosis diseminada; el recuadro muestra un detalle a gran aumento de las levaduras en gemación con una base fina en forma de pera (tinción con pla"
+    },
+    {
+      "number": "15.38",
+      "page": 713,
+      "caption": "s. B Figura 15.38Blastomicosis. A. Se aprecian levaduras redondeadas en gemación, mayores que los neutrófilos. Obsérvense la pared gruesa y los núcleos característicos (que no se ven en otros hongos). B. Tinción con plata."
+    },
+    {
+      "number": "15.39",
+      "page": 714,
+      "caption": "714 Figura 15.39 Coccidioidomicosis. Se aprecian esférulas intactas y rotas. Neumonía en el huésped inmunodeprimido La aparición de un infiltrado pulmonar, con o sin signos de infección (p. ej., fiebre), es una de las complicaciones mas graves y frecuentes en pacientes cuyas defensas inmunitarias están suprimidas por la en"
+    },
+    {
+      "number": "15.40",
+      "page": 715,
+      "caption": "715 Figura 15.40 Rechazo crónico del aloinjerto de pulmón asociado al bronquiolo (bronquiolitis obliterante). La arteria pulmonar adyacente es normal. (Por cortesía del Dr. Thomas Krausz, Department of Pathology, The University of Chicago, Pritzker School of Medicine, Chicago, III.) TUMORES De la gran variedad de tumores b"
+    },
+    {
+      "number": "15.41",
+      "page": 718,
+      "caption": "718 Figura 15.41 Hiperplasia adenomatosa atípica. El epitelio es cúbico y hay una ligera fibrosis intersticial. MORFOLOGÍA Los carcinomas de pulmón pueden surgir en toda la zona periférica del pulmón (más a menudo, adenocarcinomas) o en la zona central/hiliar (más a menudo, carcinomas epidermoides), en ocasiones asociados"
+    },
+    {
+      "number": "15.42",
+      "page": 718,
+      "caption": "stas Figura 15.42 Adenocarcinoma in situ, subtipo mucinoso. Es evidente el crecimiento característico siguiendo los tabiques alveolares preexistentes, sin invasión. lesiones son más periféricas y tienden a ser pequeñas. Histológicamente, van desde tumores bien diferenciados con elementos glandulares evidentes (fig. 15.43A)"
+    },
+    {
+      "number": "15.43",
+      "page": 719,
+      "caption": "719 Figura I 5.43 Variantes histológicas del carcinoma de pulmón. A. Adenocarcinoma con formación de glándulas; en el recuadro se muestra la expresión del factor I de transcripción tiroideo (TTF-I), detectado mediante inmunohistoquimica. B. Carcinoma epidermoide bien diferenciado que muestra queratinización (flechas). C. C"
+    },
+    {
+      "number": "15.44",
+      "page": 720,
+      "caption": "720 Figura 15.44 Lesiones precursoras de los carcinomas epidermoides. Algunas de las modificaciones más tempranas (<ligeras>) del epitelio dañado por el tabaquismo son la hiperplasia de las células caliciformes (A), la hiperplasia de las células basales (o células de reserva) (B) y la metaplasia escamosa (C). Entre las mod"
+    },
+    {
+      "number": "15.45",
+      "page": 720,
+      "caption": "er.) Figura 1 5.45 Diagnóstico citológico del cáncer de pulmón. Una muestra de esputo presenta un carcinoma epidermoide queratinizado tenido de naranja con un núcleo hipercromático prominente (flecha grande). Obsérvese el tamaño de las células tumorales en comparación con los neutrófilos normales (flecha pequera). Figura 15"
+    },
+    {
+      "number": "15.46",
+      "page": 720,
+      "caption": "ra). Figura 15.46 Carcinoma de pulmón. El tumor de color blanco-grisáceo infiltra el parénquima pulmonar. Los cortes histológicos identificaron este tumor como un carcinoma epidermoide."
+    },
+    {
+      "number": "15.47",
+      "page": 723,
+      "caption": ". 86 Figura 15.47 Carcinoide bronquial. A. Tumor carcinoide a modo de masa esférica (flecha) que protruye en la luz del bronquio. B. Las células tumorales Isevier. presentan núleos uniformes redondeados y pequeños, así como cantidades moderadas de citoplasma. (Por cortesía del Dr. Thomas Krausz, Department H of Pathology, T"
+    },
+    {
+      "number": "15.48",
+      "page": 724,
+      "caption": "das. Figura 15.48 Hamartoma pulmonar. Hay islotes de cartílago, grasa, músculo liso y epitelio respiratorio atrapado. Tabla 15.12 Tumores mediastinicos y otras masas Mediastino anterior Timoma Teratoma Linfoma Lesiones tiroideas Tumores paratiroideos Carcinoma metastásico Mediastino posterior Tumores neurógenos (schwannoma,"
+    },
+    {
+      "number": "15.49",
+      "page": 725,
+      "caption": "Figura 15.49 Metástasis numerosas en pulmón de un carcinoma de células renales. (Por cortesía de la Dra. Michelle Mantel, Brigham and Women's Hospital, Boston, Mass.) PLEURA La mayoría de las veces, los trastornos pleurales son complicaciones de una enfermedad desarrollada en otra parte del cuerpo. Las infecciones secu"
+    },
+    {
+      "number": "15.50",
+      "page": 726,
+      "caption": "cm). Figura 15.50 Tumor fibroso solitario. Superficie de corte de aspecto sólido arremolinado. (Por cortesía de la Dra. Justine A. Barletta, Department of Pathology, Brigham and Women's Hospital, Boston, Mass. En la inmunotinción, las células tumorales son positivas para CD34 y STAT6 y negativas para queratina, lo que ayuda"
+    },
+    {
+      "number": "15.51",
+      "page": 727,
+      "caption": "ito. Figura 15.51 Mesotelioma maligno. Obsérvese el tejido tumoral pleural blanco, firme y grueso que envuelve el pulmón. Lecturas recomendadas 727 Figura 15.52 Variaciones histológicas del mesotelioma maligno A. Tipo epitelioide. B. Tipo mixto, tenido para calretinina (método de la inmunoperoxidasa). El componente epitelia"
+    },
+    {
+      "number": "15.52",
+      "page": 727,
+      "caption": "727 Figura 15.52 Variaciones histológicas del mesotelioma maligno A. Tipo epitelioide. B. Tipo mixto, tenido para calretinina (método de la inmunoperoxidasa). El componente epitelial es intensamente positivo (marrón oscuro), mientras que el componente sarcomatoide no lo es tanto. (Por cortesía del Dr. Thomas Krausz, Depart"
+    }
+  ],
+  "missing": [],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

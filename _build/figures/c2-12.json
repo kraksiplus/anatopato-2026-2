@@ -1,0 +1,103 @@
+{
+  "chapter": 12,
+  "page_id": "c2-12",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "12.2",
+      "page": 531,
+      "caption": "Mecanismos de la hipertrofia e insuficiencia cardiaca: la hipertrofia por presión dispone los sarcómeros en paralelo y la de volumen en serie; ambas culminan en insuficiencia cardiaca.",
+      "section": "Insuficiencia cardiaca e hipertrofia",
+      "after_text": "factor de riesgo independiente de muerte súbita",
+      "kind": "mechanism",
+      "why": "Secuencia central del capítulo; concéntrica vs excéntrica es un punto de examen explícito",
+      "image": "assets/fig/cap12/fig-12-2.webp",
+      "width": 1465,
+      "height": 1045
+    },
+    {
+      "number": "12.3",
+      "page": 537,
+      "caption": "Cortocircuitos izquierda-derecha congénitos: comunicación interauricular y comunicación interventricular, con dirección del flujo y consecuencias hemodinámicas de cada uno.",
+      "section": "Cardiopatías congénitas",
+      "after_text": "Cortocircuitos y Eisenmenger",
+      "kind": "diagnostic",
+      "why": "Base para entender CIA, CIV y el síndrome de Eisenmenger, tema de examen seguro",
+      "image": "assets/fig/cap12/fig-12-3.webp",
+      "width": 701,
+      "height": 925
+    },
+    {
+      "number": "12.5",
+      "page": 539,
+      "caption": "Esquema de la tetralogía de Fallot y de la dextrotransposición de las grandes arterias, las cardiopatías cianóticas de referencia.",
+      "section": "Cardiopatías congénitas",
+      "after_text": "corazón normalmente aumentado de tamaño, clásicamente en",
+      "kind": "diagnostic",
+      "why": "TF es la CPC cianótica más frecuente y la TGA exige septostomía; anatomía funcional clave",
+      "image": "assets/fig/cap12/fig-12-5.webp",
+      "width": 720,
+      "height": 1085
+    },
+    {
+      "number": "12.9",
+      "page": 544,
+      "caption": "Secuencia temporal de los cambios bioquímicos y de la necrosis de miocardiocitos tras una isquemia grave: pérdida de ATP, pérdida de contractilidad y evolución a lesión irreversible.",
+      "section": "Cardiopatía isquémica",
+      "after_text": "subendocárdica (última zona en recibir sangre y sometida",
+      "kind": "mechanism",
+      "why": "La cronología del IAM (20-30 min, subendocárdica primero, 3-6 h) es punto de examen directo",
+      "image": "assets/fig/cap12/fig-12-9.webp",
+      "width": 1421,
+      "height": 528
+    },
+    {
+      "number": "12.17",
+      "page": 552,
+      "caption": "Complicaciones del infarto agudo de miocardio: rotura de pared libre, rotura del tabique, rotura de músculo papilar y pericarditis fibrinosa.",
+      "section": "Cardiopatía isquémica",
+      "after_text": "pared libre → hemopericardio y taponamiento",
+      "kind": "diagnostic",
+      "why": "Complicaciones por localización y días 3-7 de rotura son preguntas frecuentes",
+      "image": "assets/fig/cap12/fig-12-17.webp",
+      "width": 1474,
+      "height": 939
+    },
+    {
+      "number": "12.20",
+      "page": 558,
+      "caption": "Degeneración valvular calcificada: estenosis aórtica calcificada sobre válvula previamente normal, con masas nodulares de calcio y sin fusión de comisuras.",
+      "section": "Cardiopatía valvular",
+      "after_text": "masas calcificadas en las cúspides sin fusión de comisuras",
+      "kind": "diagnostic",
+      "why": "La ausencia de fusión de comisuras diferencia la estenosis degenerativa de la reumática; valvulopatía más frecuente",
+      "image": "assets/fig/cap12/fig-12-20.webp",
+      "width": 1474,
+      "height": 407
+    },
+    {
+      "number": "12.23",
+      "page": 562,
+      "caption": "Comparación de los cuatro tipos de endocarditis verrugosa: cardiopatía reumática, endocarditis infecciosa, endocarditis trombótica no bacteriana y Libman-Sacks.",
+      "section": "Endocarditis y endocarditis verrugosas no infecciosas",
+      "after_text": "trombos estériles de 1-5 mm, no destructivos",
+      "kind": "diagnostic",
+      "why": "El diagnóstico diferencial de las cuatro endocarditis está señalado explícitamente en Puntos de examen",
+      "image": "assets/fig/cap12/fig-12-23.webp",
+      "width": 1474,
+      "height": 431
+    },
+    {
+      "number": "12.28",
+      "page": 568,
+      "caption": "Los tres patrones morfológicos de las miocardiopatías: dilatada con disfunción sistólica, hipertrófica y restrictiva con disfunción diastólica.",
+      "section": "Miocardiopatías",
+      "after_text": "La más frecuente (90% de las miocardiopatías)",
+      "kind": "mechanism",
+      "why": "Marco clasificatorio de todo el bloque de miocardiopatías y de la tabla de FE de Puntos de examen",
+      "image": "assets/fig/cap12/fig-12-28.webp",
+      "width": 723,
+      "height": 956
+    }
+  ]
+}

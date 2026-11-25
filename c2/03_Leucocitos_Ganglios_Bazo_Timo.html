@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
     <h1>Capítulo 13. Enfermedades de los leucocitos, ganglios linfáticos, bazo y timo</h1>
-    <p class="lede">Guía 03 de 08. Resumen completo del capítulo 13 con 260 citas por página y 47 filas de tabla.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>03 de 08</strong></div><div><span>Capítulo</span><strong>13</strong></div><div><span>Páginas</span><strong>583-634</strong></div><div><span>Citas</span><strong>260</strong></div><div><span>Tablas</span><strong>47</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 03 de 08. Resumen completo del capítulo 13 con 260 citas por página y 47 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>03 de 08</strong></div><div><span>Capítulo</span><strong>13</strong></div><div><span>Páginas</span><strong>583-634</strong></div><div><span>Citas</span><strong>260</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>47</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -477,6 +533,7 @@
         <li><a href="#sec-09-bazo">Bazo</a></li>
         <li><a href="#sec-10-timo">Timo</a></li>
         <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C2">Índice C2</a>
@@ -517,6 +574,15 @@
 <li><strong>Morfología medular</strong>: los megacariocitos se sitúan junto a los sinusoides y geman plaquetas al torrente; los precursores eritroides rodean macrófagos que eliminan los restos nucleares. La distorsión de la arquitectura medular (metástasis, enfermedad granulomatosa) libera precursores inmaduros a sangre periférica (<strong>leucoeritroblastosis</strong>). <span class="cite">p. 585-586</span></li>
 <li>En el adulto normal la relación adipocitos/elementos hematopoyéticos es <strong>1:1</strong>; aumenta en los estados hipoplásicos y desaparece en hiperplasias compensadoras, leucemias e infiltración tumoral. <span class="cite">p. 586</span></li>
 </ul>
+<figure class="fig" id="fig-13-1">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-1.webp" data-caption="Figura 13.1. Diferenciación de las células sanguíneas desde la célula madre hematopoyética pluripotente hasta las estirpes mieloides y linfoides, con los factores de crecimiento que actúan en cada nivel." data-alt="Figura 13.1. Diferenciación de las células sanguíneas desde la célula madre hematopoyética pluripotente hasta las estirpes mieloides y linfoides, con los factores de crecimiento que actúan en cada nivel. Robbins y Cotran, 10ª ed., p. 585.">
+    <img src="../assets/fig/cap13/fig-13-1.webp" width="1376" height="1398" loading="lazy" decoding="async" alt="Figura 13.1. Diferenciación de las células sanguíneas desde la célula madre hematopoyética pluripotente hasta las estirpes mieloides y linfoides, con los factores de crecimiento que actúan en cada nivel. Robbins y Cotran, 10ª ed., p. 585.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.1.</strong> Diferenciación de las células sanguíneas desde la célula madre hematopoyética pluripotente hasta las estirpes mieloides y linfoides, con los factores de crecimiento que actúan en cada nivel.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 585. <a href="../creditos.html#fig-13-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-03-trastornos-de-los-leucocitos-leucopenia" class="card">
 <div class="section-kicker"><span class="n">03</span> pp. 586-587</div>
@@ -570,6 +636,24 @@
 <li><strong>Virus linfotropos</strong>: <strong>HTLV-1</strong> (leucemia/linfoma de linfocitos T del adulto), <strong>VEB</strong> (subpoblación del linfoma de Burkitt, 30-40% de los linfomas de Hodgkin, linfomas B en inmunodeficiencia de linfocitos T, linfomas NK raros) y <strong>VHH-8</strong> (sarcoma de Kaposi y linfoma primario con derrame). <span class="cite">p. 592</span></li>
 <li><strong>Inflamación crónica</strong>: <em>H. pylori</em> y linfomas gástricos B, enteropatía por gluten y linfomas intestinales T, prótesis mamarias y un linfoma T infrecuente; el VIH causa hiperplasia temprana de centros germinales y, en el sida, inmunodeficiencia que eleva el riesgo de linfomas B asociados a VEB y VHH-8. La radioterapia y la quimioterapia previas aumentan neoplasias mieloides y linfoides yatrógenas; el <strong>tabaquismo</strong> eleva la LMA entre 1,3 y 2 veces (carcinógenos como el benceno). <span class="cite">p. 592</span></li>
 </ul>
+<figure class="fig" id="fig-13-4">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-4.webp" data-caption="Figura 13.4. Patogenia de las neoplasias de la serie blanca: mutaciones que bloquean la maduración, promueven la autorrenovación, activan el crecimiento o impiden la apoptosis." data-alt="Figura 13.4. Patogenia de las neoplasias de la serie blanca: mutaciones que bloquean la maduración, promueven la autorrenovación, activan el crecimiento o impiden la apoptosis. Robbins y Cotran, 10ª ed., p. 591.">
+    <img src="../assets/fig/cap13/fig-13-4.webp" width="698" height="495" loading="lazy" decoding="async" alt="Figura 13.4. Patogenia de las neoplasias de la serie blanca: mutaciones que bloquean la maduración, promueven la autorrenovación, activan el crecimiento o impiden la apoptosis. Robbins y Cotran, 10ª ed., p. 591.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.4.</strong> Patogenia de las neoplasias de la serie blanca: mutaciones que bloquean la maduración, promueven la autorrenovación, activan el crecimiento o impiden la apoptosis.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 591. <a href="../creditos.html#fig-13-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-13-5">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-5.webp" data-caption="Figura 13.5. Origen de las neoplasias linfoides según el estadio de diferenciación de los linfocitos B y T del que surge cada tipo tumoral." data-alt="Figura 13.5. Origen de las neoplasias linfoides según el estadio de diferenciación de los linfocitos B y T del que surge cada tipo tumoral. Robbins y Cotran, 10ª ed., p. 594.">
+    <img src="../assets/fig/cap13/fig-13-5.webp" width="1474" height="1089" loading="lazy" decoding="async" alt="Figura 13.5. Origen de las neoplasias linfoides según el estadio de diferenciación de los linfocitos B y T del que surge cada tipo tumoral. Robbins y Cotran, 10ª ed., p. 594.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.5.</strong> Origen de las neoplasias linfoides según el estadio de diferenciación de los linfocitos B y T del que surge cada tipo tumoral.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 594. <a href="../creditos.html#fig-13-5">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-06-neoplasias-linfoides" class="card">
 <div class="section-kicker"><span class="n">06</span> pp. 592-619</div>
@@ -658,6 +742,15 @@
 <li><strong>Pronóstico</strong>: el 95% de los niños logra remisión completa y el 75-85% se cura; solo 35-40% de los adultos. Mal pronóstico: edad &lt; 2 años (especialmente translocaciones del gen <em>MLL/KMT2A</em>), presentación en adolescencia/adulta, blastos en sangre &gt; 100.000. Buen pronóstico: edad 2-10 años, leucocitos bajos, hiperploidia, trisomías 4, 7 y 10, y <strong>t(12;21)</strong>. La enfermedad residual mínima molecular es el predictor más potente de recaída. <span class="cite">p. 596-597</span></li>
 <li>La <strong>t(9;22)</strong> crea BCR-ABL: en la LLA-B la proteína suele ser de <strong>190 kDa</strong> (más potente que la de 210 kDa de la LMC); el tratamiento con inhibidores de BCR-ABL más quimioterapia mejoró enormemente el pronóstico de este subtipo. Se han logrado respuestas espectaculares con <strong>linfocitos T CAR anti-CD19</strong>, con coste alto y toxicidad ocasionalmente mortal. <span class="cite">p. 597</span></li>
 </ul>
+<figure class="fig" id="fig-13-6">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-6.webp" data-caption="Figura 13.6. Leucemia/linfoma linfoblástico agudo: linfoblastos con cromatina condensada, nucléolos pequeños y citoplasma escaso, con inmunofenotipo por citometría de flujo." data-alt="Figura 13.6. Leucemia/linfoma linfoblástico agudo: linfoblastos con cromatina condensada, nucléolos pequeños y citoplasma escaso, con inmunofenotipo por citometría de flujo. Robbins y Cotran, 10ª ed., p. 596.">
+    <img src="../assets/fig/cap13/fig-13-6.webp" width="743" height="848" loading="lazy" decoding="async" alt="Figura 13.6. Leucemia/linfoma linfoblástico agudo: linfoblastos con cromatina condensada, nucléolos pequeños y citoplasma escaso, con inmunofenotipo por citometría de flujo. Robbins y Cotran, 10ª ed., p. 596.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.6.</strong> Leucemia/linfoma linfoblástico agudo: linfoblastos con cromatina condensada, nucléolos pequeños y citoplasma escaso, con inmunofenotipo por citometría de flujo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 596. <a href="../creditos.html#fig-13-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Neoplasias linfoides" tabindex="0"><table>
 <thead>
 <tr>
@@ -724,6 +817,15 @@
 <li><strong>Inmunofenotipo</strong>: CD19, CD20, CD10, Ig de superficie y <strong>BCL6</strong> positivos; <strong>CD5 negativo</strong> (difiere de LLC y células del manto); BCL2 positivo en &gt; 90%. <span class="cite">p. 600</span></li>
 <li><strong>Clínica</strong>: linfoadenopatías generalizadas indoloras; afectación extraganglionar infrecuente. Incurable, con recrudecimientos; mediana de supervivencia <strong>7-9 años</strong>; tratamiento paliativo (quimioterapia de dosis bajas, anti-CD20; también inhibidores de BTK y BCL2). <strong>Transformación a LBDCG en 30-50%</strong> (aberraciones de <em>MYC</em>), con mediana de supervivencia &lt; 1 año tras la transformación. <span class="cite">p. 600</span></li>
 </ul>
+<figure class="fig" id="fig-13-10">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-10.webp" data-caption="Figura 13.10. Linfoma folicular ganglionar: agregados nodulares de células tumorales en todo el ganglio, con centrocitos hendidos y centroblastos." data-alt="Figura 13.10. Linfoma folicular ganglionar: agregados nodulares de células tumorales en todo el ganglio, con centrocitos hendidos y centroblastos. Robbins y Cotran, 10ª ed., p. 599.">
+    <img src="../assets/fig/cap13/fig-13-10.webp" width="713" height="930" loading="lazy" decoding="async" alt="Figura 13.10. Linfoma folicular ganglionar: agregados nodulares de células tumorales en todo el ganglio, con centrocitos hendidos y centroblastos. Robbins y Cotran, 10ª ed., p. 599.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.10.</strong> Linfoma folicular ganglionar: agregados nodulares de células tumorales en todo el ganglio, con centrocitos hendidos y centroblastos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 599. <a href="../creditos.html#fig-13-10">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="linfoma-b-difuso-de-células-grandes-lbdcg">Linfoma B difuso de células grandes (LBDCG)</h4>
 <ul>
 <li>El <strong>LNH más frecuente</strong> (~25.000 casos nuevos/año en EE. UU.), leve predominio en hombres, mediana de edad 60 años. <span class="cite">p. 600</span></li>
@@ -895,6 +997,15 @@
 <li><strong>Diagnóstico</strong>: células plasmáticas clonales medulares + criterios <strong>CRAB</strong> (hipercalcemia, disfunción renal, anemia, lesiones óseas). <span class="cite">p. 609</span></li>
 <li><strong>Pronóstico</strong>: mediana de supervivencia <strong>4-7 años</strong>, sin curaciones; con múltiples lesiones óseas sin tratamiento sobreviven &lt; 6-12 meses. Mejor evolución con translocaciones de ciclina D1; peor con deleciones <strong>13q y 17p</strong> y <strong>t(4;14)</strong>. Tratamiento: <strong>inhibidores del proteosoma</strong> (aprovechan la carga de Ig mal plegada para inducir apoptosis), <strong>talidomida/lenalidomida</strong> (redirigen ubicuitina ligasas), <strong>bisfosfonatos</strong> (reducen fracturas e hipercalcemia) y trasplante de CMH (prolonga vida pero no cura). <span class="cite">p. 609-610</span></li>
 </ul>
+<figure class="fig" id="fig-13-20">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-20.webp" data-caption="Figura 13.20. Mieloma múltiple del cráneo en radiografía lateral: lesiones óseas líticas bien delimitadas en sacabocados en la bóveda craneal." data-alt="Figura 13.20. Mieloma múltiple del cráneo en radiografía lateral: lesiones óseas líticas bien delimitadas en sacabocados en la bóveda craneal. Robbins y Cotran, 10ª ed., p. 608.">
+    <img src="../assets/fig/cap13/fig-13-20.webp" width="742" height="699" loading="lazy" decoding="async" alt="Figura 13.20. Mieloma múltiple del cráneo en radiografía lateral: lesiones óseas líticas bien delimitadas en sacabocados en la bóveda craneal. Robbins y Cotran, 10ª ed., p. 608.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.20.</strong> Mieloma múltiple del cráneo en radiografía lateral: lesiones óseas líticas bien delimitadas en sacabocados en la bóveda craneal.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 608. <a href="../creditos.html#fig-13-20">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="otras-neoplasias-de-células-plasmáticas">Otras neoplasias de células plasmáticas</h4>
 <ul>
 <li><strong>Mieloma quiescente</strong>: células plasmáticas 10-30% medulares y proteína M <strong>&gt; 3 g/dl</strong> sin síntomas; <strong>~75% evoluciona a mieloma múltiple en 15 años</strong>. <span class="cite">p. 610</span></li>
@@ -916,6 +1027,15 @@
 <li><strong>Patogenia del linfoma de Hodgkin clásico</strong>: las células de Reed-Sternberg <strong>no expresan</strong> la mayoría de los genes de linfocito B, incluidas las Ig (posible rescate epigenético de linfocitos B del centro germinal "tullidos"). La activación de <strong>NF-κB</strong> es central: vía <strong>LMP-1 del VEB</strong> en tumores VEB+ o por pérdida de función de <strong>IκB</strong> y de la proteína 3 inducida por TNF-α en tumores VEB−. Son frecuentes las ganancias de copias de <strong>PD-L1 y PD-L2 (9p)</strong>. Las células reactivas (eosinófilos, linfocitos T con ligandos de <strong>CD30 y CD40</strong>) a su vez estimulan NF-κB en la célula tumoral. <span class="cite">p. 611-612</span></li>
 <li><strong>Morfología</strong>: células de Reed-Sternberg diagnósticas de <strong>~45 μm</strong>, multinucleadas o multilobuladas, con nucléolos "a modo de inclusión" del tamaño de un linfocito pequeño (~5-7 μm) y citoplasma abundante. Variantes: <strong>mononuclear</strong>, <strong>lagunar</strong> (esclerosis nodular), <strong>momificación</strong> (muerte peculiar) y <strong>linfohistiocítica (L-H, "palomita de maíz")</strong> del subtipo de predominio linfocítico. Debe distinguirse de la mononucleosis infecciosa, carcinomas y LNH de células grandes. <span class="cite">p. 612</span></li>
 </ul>
+<figure class="fig" id="fig-13-24">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-24.webp" data-caption="Figura 13.24. Célula de Reed-Sternberg diagnóstica y sus variantes: núcleos multilobulados, grandes nucléolos a modo de inclusión y abundante citoplasma." data-alt="Figura 13.24. Célula de Reed-Sternberg diagnóstica y sus variantes: núcleos multilobulados, grandes nucléolos a modo de inclusión y abundante citoplasma. Robbins y Cotran, 10ª ed., p. 613.">
+    <img src="../assets/fig/cap13/fig-13-24.webp" width="1476" height="916" loading="lazy" decoding="async" alt="Figura 13.24. Célula de Reed-Sternberg diagnóstica y sus variantes: núcleos multilobulados, grandes nucléolos a modo de inclusión y abundante citoplasma. Robbins y Cotran, 10ª ed., p. 613.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.24.</strong> Célula de Reed-Sternberg diagnóstica y sus variantes: núcleos multilobulados, grandes nucléolos a modo de inclusión y abundante citoplasma.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 613. <a href="../creditos.html#fig-13-24">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Neoplasias linfoides" tabindex="0"><table>
 <thead>
 <tr>
@@ -1107,6 +1227,15 @@
 <li><strong>Progresión</strong>: tras una media de 3 años, el 50% entra en <strong>fase acelerada</strong> (anemia y trombocitopenia crecientes, basofilia en sangre, anomalías citogenéticas nuevas como trisomía 8, isocromosoma 17q o duplicación del Ph) que termina en <strong>crisis blástica</strong> en 6-12 meses; el otro 50% hace crisis blástica brusca. La crisis es <strong>mieloide en ~70%</strong> y <strong>linfoide (pre-B)</strong> en la mayoría del resto, apoyo del origen pluripotente. Las crisis linfoides se asocian a mutaciones de <strong>IKZF1/Ikaros</strong> en el 85% (mismas que en la LLA-B BCR-ABL positiva). <span class="cite">p. 623-624</span></li>
 <li><strong>Tratamiento</strong>: los <strong>inhibidores de BCR-ABL</strong> logran remisiones hematológicas mantenidas en <strong>&gt; 90%</strong>, sin erradicar la célula madre leucémica; reducen el riesgo de fase acelerada y crisis. La resistencia de primera generación se debe a mutaciones de BCR-ABL en ~50% de los casos; se supera parcialmente con inhibidores de 2ª y 3ª generación. El trasplante de CMH en fase estable cura en <strong>~75%</strong> de pacientes jóvenes; en fase acelerada o crisis blástica, el trasplante y los inhibidores son menos eficaces. <span class="cite">p. 624</span></li>
 </ul>
+<figure class="fig" id="fig-13-33">
+  <a class="fig-open" href="../assets/fig/cap13/fig-13-33.webp" data-caption="Figura 13.33. Patogenia de la leucemia mieloide crónica: la fusión BCR-ABL genera una tirosina cinasa constitutivamente activa que impulsa la proliferación de los progenitores medulares." data-alt="Figura 13.33. Patogenia de la leucemia mieloide crónica: la fusión BCR-ABL genera una tirosina cinasa constitutivamente activa que impulsa la proliferación de los progenitores medulares. Robbins y Cotran, 10ª ed., p. 623.">
+    <img src="../assets/fig/cap13/fig-13-33.webp" width="699" height="435" loading="lazy" decoding="async" alt="Figura 13.33. Patogenia de la leucemia mieloide crónica: la fusión BCR-ABL genera una tirosina cinasa constitutivamente activa que impulsa la proliferación de los progenitores medulares. Robbins y Cotran, 10ª ed., p. 623.">
+  </a>
+  <figcaption>
+    <strong>Figura 13.33.</strong> Patogenia de la leucemia mieloide crónica: la fusión BCR-ABL genera una tirosina cinasa constitutivamente activa que impulsa la proliferación de los progenitores medulares.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 623. <a href="../creditos.html#fig-13-33">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="policitemia-vera-pcv">Policitemia vera (PCV)</h4>
 <ul>
 <li>Aumento de la producción de <strong>eritrocitos, granulocitos y plaquetas (panmielosis)</strong>; debe distinguirse de la <strong>policitemia relativa</strong> (hemoconcentración) y de otras policitemias absolutas. <span class="cite">p. 624</span></li>
@@ -1212,6 +1341,11 @@
 <li>Timoma: &gt; 40 años, mediastino <strong>anterosuperior</strong>; <strong>miastenia grave</strong> en 30-45% de los casos de presentación; también aplasia eritrocítica pura e hipogammaglobulinemia; el carcinoma tímico linfoepitelioma es <strong>VEB+</strong> en 50%. <span class="cite">p. 633</span></li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-13-1" aria-label="Figura 13.1"><img src="../assets/fig/cap13/fig-13-1.webp" loading="lazy" decoding="async" alt="Figura 13.1"><span>Figura 13.1</span></a><a class="fig-thumb" href="#fig-13-4" aria-label="Figura 13.4"><img src="../assets/fig/cap13/fig-13-4.webp" loading="lazy" decoding="async" alt="Figura 13.4"><span>Figura 13.4</span></a><a class="fig-thumb" href="#fig-13-5" aria-label="Figura 13.5"><img src="../assets/fig/cap13/fig-13-5.webp" loading="lazy" decoding="async" alt="Figura 13.5"><span>Figura 13.5</span></a><a class="fig-thumb" href="#fig-13-6" aria-label="Figura 13.6"><img src="../assets/fig/cap13/fig-13-6.webp" loading="lazy" decoding="async" alt="Figura 13.6"><span>Figura 13.6</span></a><a class="fig-thumb" href="#fig-13-10" aria-label="Figura 13.10"><img src="../assets/fig/cap13/fig-13-10.webp" loading="lazy" decoding="async" alt="Figura 13.10"><span>Figura 13.10</span></a><a class="fig-thumb" href="#fig-13-20" aria-label="Figura 13.20"><img src="../assets/fig/cap13/fig-13-20.webp" loading="lazy" decoding="async" alt="Figura 13.20"><span>Figura 13.20</span></a><a class="fig-thumb" href="#fig-13-24" aria-label="Figura 13.24"><img src="../assets/fig/cap13/fig-13-24.webp" loading="lazy" decoding="async" alt="Figura 13.24"><span>Figura 13.24</span></a><a class="fig-thumb" href="#fig-13-33" aria-label="Figura 13.33"><img src="../assets/fig/cap13/fig-13-33.webp" loading="lazy" decoding="async" alt="Figura 13.33"><span>Figura 13.33</span></a></div>
 </section>
   </main>
 </div>
@@ -1219,7 +1353,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1237,8 +1378,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1258,6 +1399,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+{
+  "chapter": 15,
+  "page_id": "c2-15",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "15.3",
+      "page": 677,
+      "caption": "Alvéolo normal comparado con el alvéolo en la fase temprana de la lesión pulmonar aguda y del SDRA, con los mediadores implicados (ERO, IL-1, TNF).",
+      "section": "Lesión pulmonar aguda y SDRA (daño alveolar difuso)",
+      "after_text": "el líquido rico en proteínas y detritos se organiza",
+      "kind": "mechanism",
+      "why": "Esquema de patogenia del SDRA, mecanismo central del capítulo y tema de examen frecuente.",
+      "image": "assets/fig/cap15/fig-15-3.webp",
+      "width": 1454,
+      "height": 1026
+    },
+    {
+      "number": "15.4",
+      "page": 677,
+      "caption": "Daño alveolar difuso en el SDRA: alvéolos colapsados y distendidos, muchos tapizados por membranas hialinas (flechas).",
+      "section": "Lesión pulmonar aguda y SDRA (daño alveolar difuso)",
+      "after_text": "de fibrina y restos epiteliales necróticos tapizando los alvéolos",
+      "kind": "diagnostic",
+      "why": "Histología clásica del SDRA: las membranas hialinas son el hallazgo patognomónico del DAD.",
+      "image": "assets/fig/cap15/fig-15-4.webp",
+      "width": 757,
+      "height": 469
+    },
+    {
+      "number": "15.8",
+      "page": 680,
+      "caption": "Patogenia del enfisema: lesión por humo, desequilibrio proteasa-antiproteasa, estrés oxidativo e infección que conducen a la destrucción alveolar.",
+      "section": "Enfisema",
+      "after_text": "proteasas de neutrófilos y epitelio sin antiproteasas suficientes",
+      "kind": "mechanism",
+      "why": "Diagrama del desequilibrio proteasa-antiproteasa, mecanismo clave de la EPOC y del papel del déficit de alfa1-antitripsina.",
+      "image": "assets/fig/cap15/fig-15-8.webp",
+      "width": 710,
+      "height": 508
+    },
+    {
+      "number": "15.13",
+      "page": 689,
+      "caption": "Mecanismos patogénicos propuestos de la fibrosis pulmonar idiopática: factores ambientales y genéticos con lesión epitelial persistente y activación de fibroblastos.",
+      "section": "Enfermedades intersticiales difusas crónicas (restrictivas)",
+      "after_text": "reparación aberrante de lesiones repetidas del epitelio alveolar",
+      "kind": "mechanism",
+      "why": "Esquema de la FPI que integra los factores citados en Ideas clave (TERT, MUC5B, TGF-beta).",
+      "image": "assets/fig/cap15/fig-15-13.webp",
+      "width": 700,
+      "height": 788
+    },
+    {
+      "number": "15.20",
+      "page": 695,
+      "caption": "Cuerpo de amianto a gran aumento, con el aspecto arrosariado típico y los extremos con protuberancias (flecha).",
+      "section": "Neumoconiosis",
+      "after_text": "fibras recubiertas de material proteico con hierro",
+      "kind": "diagnostic",
+      "why": "El cuerpo de amianto es la lesión patognomónica de la asbestosis, imprescindible para el diagnóstico diferencial de las neumoconiosis.",
+      "image": "assets/fig/cap15/fig-15-20.webp",
+      "width": 700,
+      "height": 490
+    },
+    {
+      "number": "15.29",
+      "page": 703,
+      "caption": "Patogenia de la hipertensión arterial pulmonar idiopática, con el papel de las mutaciones de BMPR2 y los desencadenantes ambientales.",
+      "section": "Enfermedades de origen vascular",
+      "after_text": "hipertrofia de la media de las arterias pulmonares e hipertrofia ventricular derecha",
+      "kind": "mechanism",
+      "why": "Diagrama de patogenia de la HAP idiopática (BMPR2), mecanismo central de la sección vascular.",
+      "image": "assets/fig/cap15/fig-15-29.webp",
+      "width": 726,
+      "height": 684
+    },
+    {
+      "number": "15.32",
+      "page": 707,
+      "caption": "Comparación entre bronconeumonia (consolidación parcheada) y neumonía lobular (consolidación de un lóbulo completo).",
+      "section": "Infecciones pulmonares",
+      "after_text": "bronconeumonia (lobulillar) con consolidación parcheada y neumonía lobular",
+      "kind": "diagnostic",
+      "why": "Esquema que distingue los dos patrones anatómicos de la neumonía bacteriana y sus cuatro estadios.",
+      "image": "assets/fig/cap15/fig-15-32.webp",
+      "width": 755,
+      "height": 570
+    },
+    {
+      "number": "15.43",
+      "page": 719,
+      "caption": "Variantes histológicas del carcinoma de pulmón: adenocarcinoma con formación de glándulas (con TTF-1), carcinoma epidermoide con queratinización y otros patrones.",
+      "section": "Tumores",
+      "after_text": "patrones acinar, lepidico, papilar, micropapilar y sólido",
+      "kind": "diagnostic",
+      "why": "Panel histológico de los principales subtipos de carcinoma pulmonar, base del diagnóstico diferencial y de la clasificación.",
+      "image": "assets/fig/cap15/fig-15-43.webp",
+      "width": 1457,
+      "height": 999
+    }
+  ]
+}

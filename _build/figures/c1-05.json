@@ -1,0 +1,103 @@
+{
+  "chapter": 5,
+  "page_id": "c1-05",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "5.2",
+      "page": 143,
+      "caption": "Deleción de tres bases en el gen de la fibrosis quística: se pierde fenilalanina, pero la pauta de lectura se conserva porque la deleción es múltiplo de tres.",
+      "section": "Genes y enfermedad humana; mutaciones",
+      "after_text": "la pauta de lectura se conserva y se sintetiza una proteína",
+      "kind": "mechanism",
+      "why": "Ejemplo de examen de deleción en fase frente a desplazamiento de la pauta",
+      "image": "assets/fig/cap05/fig-5-2.webp",
+      "width": 700,
+      "height": 285
+    },
+    {
+      "number": "5.7",
+      "page": 152,
+      "caption": "Vía del receptor de LDL y regulación del metabolismo del colesterol: endocitosis en fositas revestidas, liberación del colesterol e inhibición de la HMG-CoA reductasa.",
+      "section": "Trastornos asociados a defectos en las proteínas receptoras",
+      "after_text": "El 70% del LDL plasmático se elimina en el hígado por endocitosis",
+      "kind": "mechanism",
+      "why": "Mecanismo central de la hipercolesterolemia familiar y base de estatinas y anti-PCSK9",
+      "image": "assets/fig/cap05/fig-5-7.webp",
+      "width": 1474,
+      "height": 1009
+    },
+    {
+      "number": "5.10",
+      "page": 155,
+      "caption": "Patogenia de las enfermedades por depósito lisosómico: el bloqueo de una enzima de la cascada degradativa genera acumulación del sustrato dentro del lisosoma.",
+      "section": "Trastornos asociados a defectos enzimáticos",
+      "after_text": "que crecen e interfieren la función celular",
+      "kind": "mechanism",
+      "why": "Modelo general de todas las EDL, grupo prototipo de los trastornos autosómicos recesivos",
+      "image": "assets/fig/cap05/fig-5-10.webp",
+      "width": 699,
+      "height": 1196
+    },
+    {
+      "number": "5.13",
+      "page": 159,
+      "caption": "Enfermedad de Gaucher en médula ósea: células de Gaucher, macrófagos con citoplasma fibrilar que recuerda a papel arrugado por acumulación de glucocerebrósido.",
+      "section": "Trastornos asociados a defectos enzimáticos",
+      "after_text": "citoplasma fibrilar de papel arrugado por lisosomas elongados",
+      "kind": "diagnostic",
+      "why": "Lesión clásica citada en Puntos de examen; EDL más frecuente",
+      "image": "assets/fig/cap05/fig-5-13.webp",
+      "width": 700,
+      "height": 1086
+    },
+    {
+      "number": "5.16",
+      "page": 163,
+      "caption": "Enfermedad de Pompe: fibras miocárdicas llenas de glucógeno lisosómico que aparecen como espacios claros frente al miocardio normal.",
+      "section": "Enfermedades por depósito de glucógeno (glucogenosis)",
+      "after_text": "cardiomegalia masiva, hipotonía generalizada y fracaso cardiorrespiratorio",
+      "kind": "diagnostic",
+      "why": "Cardiomegalia masiva del lactante es el dato distintivo de la glucogenosis tipo II",
+      "image": "assets/fig/cap05/fig-5-16.webp",
+      "width": 1461,
+      "height": 763
+    },
+    {
+      "number": "5.20",
+      "page": 168,
+      "caption": "Características clínicas y cariotipos de las trisomías autosómicas: Down (21), Edwards (18) y Patau (13).",
+      "section": "Trastornos cromosómicos",
+      "after_text": "las trisomías 18 y 13 presentan malformaciones mucho más graves",
+      "kind": "diagnostic",
+      "why": "Comparativo de las tres trisomías viables, con cariotipos y fenotipos",
+      "image": "assets/fig/cap05/fig-5-20.webp",
+      "width": 765,
+      "height": 689
+    },
+    {
+      "number": "5.25",
+      "page": 176,
+      "caption": "Árbol genealógico del síndrome del cromosoma X frágil: expansión de la premutación a mutación completa durante la ovogenia, con anticipación.",
+      "section": "Trastornos monogénicos de herencia no clásica",
+      "after_text": "empeora con cada generación, por conversión de las premutaciones",
+      "kind": "mechanism",
+      "why": "Ilustra la herencia no clásica y la anticipación del SXF, tema de examen",
+      "image": "assets/fig/cap05/fig-5-25.webp",
+      "width": 1474,
+      "height": 877
+    },
+    {
+      "number": "5.33",
+      "page": 186,
+      "caption": "Principio de la secuenciación de próxima generación: separación espacial de moléculas, amplificación local y secuenciación en paralelo.",
+      "section": "Diagnóstico genético molecular",
+      "after_text": "Tres principios comunes: separación espacial de las moléculas",
+      "kind": "mechanism",
+      "why": "NGS ocupa lugar central en el diagnóstico genético molecular actual",
+      "image": "assets/fig/cap05/fig-5-33.webp",
+      "width": 1474,
+      "height": 706
+    }
+  ]
+}

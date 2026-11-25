@@ -1,0 +1,103 @@
+{
+  "chapter": 8,
+  "page_id": "c1-08",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "8.1",
+      "page": 342,
+      "caption": "Vías de entrada y diseminación de los microbios: los patógenos atraviesan la barrera epitelial o mucosa y la infección puede quedar localizada o diseminarse por linfa, sangre o nervios.",
+      "section": "Principios generales de patogenia microbiana",
+      "after_text": "La diseminación sanguínea puede causar sepsis (fiebre, hipotensión, coagulopatía)",
+      "kind": "mechanism",
+      "why": "Diagrama marco del capítulo: vías de entrada y diseminación, citado en Ideas clave y Puntos de examen",
+      "image": "assets/fig/cap08/fig-8-1.webp",
+      "width": 765,
+      "height": 912
+    },
+    {
+      "number": "8.3",
+      "page": 345,
+      "caption": "Mecanismos por los que los virus dañan las células: tropismo por receptores, efectos citopáticos directos, respuesta inmunitaria del huésped y transformación celular.",
+      "section": "Principios generales de patogenia microbiana",
+      "after_text": "Efectos citopáticos directos: bloqueo de macromoléculas (poliovirus inactivan",
+      "kind": "mechanism",
+      "why": "Esquema central de patogenia vírica, referenciado en el resumen (fig. 8.3) y en Ideas clave",
+      "image": "assets/fig/cap08/fig-8-3.webp",
+      "width": 718,
+      "height": 989
+    },
+    {
+      "number": "8.12",
+      "page": 357,
+      "caption": "Citomegalovirus: inclusiones nucleares bien definidas y citoplásmicas mal definidas en pulmón; imagen típica de las células en ojo de búho.",
+      "section": "Infecciones víricas",
+      "after_text": "enfermedad grave en inmunodeprimidos (neumonitis, colitis)",
+      "kind": "diagnostic",
+      "why": "Inclusiones citomegálicas, hallazgo patognomónico destacado en Puntos de examen",
+      "image": "assets/fig/cap08/fig-8-12.webp",
+      "width": 701,
+      "height": 479
+    },
+    {
+      "number": "8.23",
+      "page": 369,
+      "caption": "Secuencia de la tuberculosis pulmonar primaria: desde la inhalación de M. tuberculosis hasta el desarrollo de inmunidad mediada por células.",
+      "section": "Infecciones bacterianas",
+      "after_text": "Secundaria: en pacientes ya sensibilizados, afecta los vértices con",
+      "kind": "mechanism",
+      "why": "Patogenia de la TB, tema de examen central del capítulo (foco y complejo de Ghon)",
+      "image": "assets/fig/cap08/fig-8-23.webp",
+      "width": 1410,
+      "height": 1035
+    },
+    {
+      "number": "8.26",
+      "page": 373,
+      "caption": "Espectro morfológico de la tuberculosis: tubérculo con caseificación central rodeada de células epitelioides y gigantes multinucleadas.",
+      "section": "Infecciones bacterianas",
+      "after_text": "respuesta Th1 (IFN-gamma, con IL-12) activa los macrófagos",
+      "kind": "diagnostic",
+      "why": "Histología del granuloma caseoso, lesión clave de la respuesta Th1 y diagnóstico diferencial",
+      "image": "assets/fig/cap08/fig-8-26.webp",
+      "width": 1467,
+      "height": 1024
+    },
+    {
+      "number": "8.44",
+      "page": 388,
+      "caption": "Aspergilosis pulmonar invasiva en un paciente trasplantado; la tinción de metenamina-plata muestra hifas con septos y ramificación en ángulo agudo.",
+      "section": "Infecciones fúngicas",
+      "after_text": "Hifas con septos y ramificación en ángulo agudo (~40°)",
+      "kind": "diagnostic",
+      "why": "Clave para diferenciar Aspergillus (angulo agudo) de Mucor (angulo recto), comparación de examen",
+      "image": "assets/fig/cap08/fig-8-44.webp",
+      "width": 1474,
+      "height": 513
+    },
+    {
+      "number": "8.46",
+      "page": 390,
+      "caption": "Ciclo vital de Plasmodium falciparum, con las fases exoeritrocítica y eritrocítica.",
+      "section": "Infecciones parasitarias",
+      "after_text": "los aglutina y adhiere al endotelio (marginación por PfEMP1)",
+      "kind": "mechanism",
+      "why": "Diagrama del ciclo del paludismo, base para entender los paroxismos y el paludismo cerebral",
+      "image": "assets/fig/cap08/fig-8-46.webp",
+      "width": 733,
+      "height": 971
+    },
+    {
+      "number": "8.48",
+      "page": 391,
+      "caption": "Eritrocitos parasitados por Babesia con la típica forma en cruz de Malta en la tinción.",
+      "section": "Infecciones parasitarias",
+      "after_text": "forma en cruz de Malta; grave en esplenectomizados",
+      "kind": "diagnostic",
+      "why": "Hallazgo patognomónico en frotis, mencionado en Puntos de examen",
+      "image": "assets/fig/cap08/fig-8-48.webp",
+      "width": 665,
+      "height": 398
+    }
+  ]
+}

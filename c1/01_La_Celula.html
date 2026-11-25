@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 1. La célula como unidad de salud y enfermedad</h1>
-    <p class="lede">Guía 01 de 10. Resumen completo del capítulo 1 con 70 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>01 de 10</strong></div><div><span>Capítulo</span><strong>1</strong></div><div><span>Páginas</span><strong>1-32</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>70</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 01 de 10. Resumen completo del capítulo 1 con 70 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>01 de 10</strong></div><div><span>Capítulo</span><strong>1</strong></div><div><span>Páginas</span><strong>1-32</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>70</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -482,6 +538,7 @@
         <li><a href="#sec-14-celulas-madre">Células madre</a></li>
         <li><a href="#sec-15-medicina-regenerativa">Medicina regenerativa</a></li>
         <li><a href="#sec-16-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -572,6 +629,24 @@
 <li>El grado de apertura o cierre de la cromatina se regula mediante marcas dinámicas sobre las histonas: <strong>acetilación</strong> (abre la cromatina), <strong>metilación</strong> de ciertos residuos (condensa el ADN y silencia genes) y fosforilación. El propio ADN también puede <strong>metilarse</strong>, inactivando la transcripción.</li>
 <li>La desregulación del <strong>epigenoma</strong> participa en neoplasias malignas y en muchas otras enfermedades. A diferencia de los cambios genéticos, muchas alteraciones epigenéticas son <strong>reversibles</strong>: los inhibidores de HDAC y de la metilación del ADN ya se prueban en distintos cánceres.</li>
 </ul>
+<figure class="fig" id="fig-1-1">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-1.webp" data-caption="Figura 1.1. Organización del ADN nuclear: eucromatina dispersa y transcripcionalmente activa, y heterocromatina compacta e inactiva, observables al microscopio óptico." data-alt="Figura 1.1. Organización del ADN nuclear: eucromatina dispersa y transcripcionalmente activa, y heterocromatina compacta e inactiva, observables al microscopio óptico. Robbins y Cotran, 10ª ed., p. 2.">
+    <img src="../assets/fig/cap01/fig-1-1.webp" width="1485" height="595" loading="lazy" decoding="async" alt="Figura 1.1. Organización del ADN nuclear: eucromatina dispersa y transcripcionalmente activa, y heterocromatina compacta e inactiva, observables al microscopio óptico. Robbins y Cotran, 10ª ed., p. 2.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.1.</strong> Organización del ADN nuclear: eucromatina dispersa y transcripcionalmente activa, y heterocromatina compacta e inactiva, observables al microscopio óptico.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 2. <a href="../creditos.html#fig-1-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-1-2">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-2.webp" data-caption="Figura 1.2. Organización de las histonas: nucleosomas con octámeros (H2A, H2B, H3, H4) rodeados por 1,8 vueltas de 147 pb de ADN, unidos por ADN de enlace con histona H1." data-alt="Figura 1.2. Organización de las histonas: nucleosomas con octámeros (H2A, H2B, H3, H4) rodeados por 1,8 vueltas de 147 pb de ADN, unidos por ADN de enlace con histona H1. Robbins y Cotran, 10ª ed., p. 4.">
+    <img src="../assets/fig/cap01/fig-1-2.webp" width="1414" height="962" loading="lazy" decoding="async" alt="Figura 1.2. Organización de las histonas: nucleosomas con octámeros (H2A, H2B, H3, H4) rodeados por 1,8 vueltas de 147 pb de ADN, unidos por ADN de enlace con histona H1. Robbins y Cotran, 10ª ed., p. 4.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.2.</strong> Organización de las histonas: nucleosomas con octámeros (H2A, H2B, H3, H4) rodeados por 1,8 vueltas de 147 pb de ADN, unidos por ADN de enlace con histona H1.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 4. <a href="../creditos.html#fig-1-2">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-04-micro-arn-y-arn-largo-no-codificante" class="card">
 <div class="section-kicker"><span class="n">04</span> Sección</div>
@@ -588,7 +663,16 @@
 <ul>
 <li>Emparejamiento perfecto: <strong>escisión del ARNm</strong>.</li>
 <li>Emparejamiento imperfecto: <strong>represión de la traducción</strong>.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-1-3">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-3.webp" data-caption="Figura 1.3. Generación de miARN y su modo de acción: PRI-miARN, pre-miARN en horquilla, corte por Dicer y silenciamiento génico vía el complejo RISC." data-alt="Figura 1.3. Generación de miARN y su modo de acción: PRI-miARN, pre-miARN en horquilla, corte por Dicer y silenciamiento génico vía el complejo RISC. Robbins y Cotran, 10ª ed., p. 5.">
+    <img src="../assets/fig/cap01/fig-1-3.webp" width="678" height="1480" loading="lazy" decoding="async" alt="Figura 1.3. Generación de miARN y su modo de acción: PRI-miARN, pre-miARN en horquilla, corte por Dicer y silenciamiento génico vía el complejo RISC. Robbins y Cotran, 10ª ed., p. 5.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.3.</strong> Generación de miARN y su modo de acción: PRI-miARN, pre-miARN en horquilla, corte por Dicer y silenciamiento génico vía el complejo RISC.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 5. <a href="../creditos.html#fig-1-3">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 </ol>
 <p>El resultado en ambos casos es el silenciamiento del gen tras la transcripción. Los ARN de interferencia (ARNpi) sintéticos interactúan con el RISC, reproducen la función endógena de los miARN y se estudian como herramientas de laboratorio (inactivación génica) y agentes terapéuticos frente a genes patógenos, como los oncogenes impulsores de transformación neoplásica.</p>
 <h3 id="arn-largo-no-codificante-arnlnc">ARN largo no codificante (ARNlnc)</h3>
@@ -609,7 +693,16 @@
 <ul>
 <li>Mutaciones disruptivas aleatorias por <strong>unión de extremos no homólogos</strong>.</li>
 <li>Introducción precisa de material genético por <strong>recombinación homóloga</strong>.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-1-5">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-5.webp" data-caption="Figura 1.5. Edición génica con CRISPR y la nucleasa Cas9: el ARN guía de unas 20 bases dirige la Cas9 para escindir el ADN objetivo." data-alt="Figura 1.5. Edición génica con CRISPR y la nucleasa Cas9: el ARN guía de unas 20 bases dirige la Cas9 para escindir el ADN objetivo. Robbins y Cotran, 10ª ed., p. 6.">
+    <img src="../assets/fig/cap01/fig-1-5.webp" width="741" height="1009" loading="lazy" decoding="async" alt="Figura 1.5. Edición génica con CRISPR y la nucleasa Cas9: el ARN guía de unas 20 bases dirige la Cas9 para escindir el ADN objetivo. Robbins y Cotran, 10ª ed., p. 6.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.5.</strong> Edición génica con CRISPR y la nucleasa Cas9: el ARN guía de unas 20 bases dirige la Cas9 para escindir el ADN objetivo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 6. <a href="../creditos.html#fig-1-5">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li>Los componentes (ARNg y Cas, como ADNc o como proteína) pueden introducirse fácilmente en células; su especificidad abre enormes expectativas para la ingeniería genética y el tratamiento de enfermedades.</li>
 </ul>
 
@@ -685,6 +778,15 @@
 <li>Las proteínas se asocian a la bicapa por cuatro mecanismos; las <strong>proteínas integrales o transmembrana</strong>, con segmentos hidrófobos helicoidales, suelen ser poros o transportadores, mientras que las fijadas mediante uniones lábiles suelen mediar señalización.</li>
 <li>La organización intracelular depende del <strong>citoesqueleto</strong>: filamentos de actina (microfilamentos), queratinas (filamentos intermedios) y microtúbulos. Sostiene la forma y la <strong>polaridad celular</strong>, clave en epitelios (diferencias entre dominio apical y dominios basolaterales); su pérdida altera, por ejemplo, el transporte transcelular vectorial en el intestino o el túbulo renal.</li>
 </ul>
+<figure class="fig" id="fig-1-6">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-6.webp" data-caption="Figura 1.6. Componentes subcelulares de la célula: número y volumen de los orgánulos de un hepatocito típico y sus relaciones espaciales." data-alt="Figura 1.6. Componentes subcelulares de la célula: número y volumen de los orgánulos de un hepatocito típico y sus relaciones espaciales. Robbins y Cotran, 10ª ed., p. 7.">
+    <img src="../assets/fig/cap01/fig-1-6.webp" width="1476" height="808" loading="lazy" decoding="async" alt="Figura 1.6. Componentes subcelulares de la célula: número y volumen de los orgánulos de un hepatocito típico y sus relaciones espaciales. Robbins y Cotran, 10ª ed., p. 7.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.6.</strong> Componentes subcelulares de la célula: número y volumen de los orgánulos de un hepatocito típico y sus relaciones espaciales.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 7. <a href="../creditos.html#fig-1-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="transporte-a-través-de-membranas">Transporte a través de membranas</h3>
 <div class="table-wrap" role="region" aria-label="Tabla: Mantenimiento celular: membrana plasmática y transporte" tabindex="0"><table>
 <thead>
@@ -825,7 +927,16 @@
 <ol type="1">
 <li>Lesión isquémica o tóxica induce un <strong>poro de transición de permeabilidad</strong> en la membrana interna que disipa el gradiente protónico intermembranoso: la célula no puede generar ATP y muere por <strong>necrosis</strong>.</li>
 <li>Las señales apoptóticas oligomerizan las proteínas <strong>Bax/Bak</strong> y provocan <strong>permeabilización de la membrana externa mitocondrial (MOMP)</strong>; se libera el <strong>citocromo C</strong>, que estabiliza el <strong>apoptosoma</strong> y activa la cascada de <strong>caspasas</strong>, con muerte por <strong>apoptosis</strong>.</li>
-</ol></li>
+</ol>
+<figure class="fig" id="fig-1-11">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-11.webp" data-caption="Figura 1.11. Funciones de las mitocondrias: generación de ATP, metabolismo intermediario y papel en la muerte celular por necrosis (poro de transición de permeabilidad) o apoptosis (liberación de citocromo C)." data-alt="Figura 1.11. Funciones de las mitocondrias: generación de ATP, metabolismo intermediario y papel en la muerte celular por necrosis (poro de transición de permeabilidad) o apoptosis (liberación de citocromo C). Robbins y Cotran, 10ª ed., p. 16.">
+    <img src="../assets/fig/cap01/fig-1-11.webp" width="1474" height="782" loading="lazy" decoding="async" alt="Figura 1.11. Funciones de las mitocondrias: generación de ATP, metabolismo intermediario y papel en la muerte celular por necrosis (poro de transición de permeabilidad) o apoptosis (liberación de citocromo C). Robbins y Cotran, 10ª ed., p. 16.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.11.</strong> Funciones de las mitocondrias: generación de ATP, metabolismo intermediario y papel en la muerte celular por necrosis (poro de transición de permeabilidad) o apoptosis (liberación de citocromo C).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 16. <a href="../creditos.html#fig-1-11">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 </ul>
 
 <div class="warnbox"><span class="box-title">La mitocondria decide necrosis o apoptosis</span>Lesión isquémica o tóxica abre el poro de transición de permeabilidad, disipa el gradiente protónico y la célula muere por necrosis. Las señales apoptóticas oligomerizan Bax/Bak (MOMP), liberan citocromo C, forman el apoptosoma y activan caspasas: apoptosis.</div>
@@ -1063,6 +1174,15 @@
 </tbody>
 </table></div>
 <p>La progresión clave hacia S depende de la fosforilación de la proteína <strong>Rb</strong> por los complejos de ciclina D con CDK4 y CDK6, y por ciclina E-CDK2.</p>
+<figure class="fig" id="fig-1-19">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-19.webp" data-caption="Figura 1.19. Regulación del ciclo celular por ciclinas, CDK e inhibidores de CDK: complejos ciclina-CDK activos en cada fase del ciclo." data-alt="Figura 1.19. Regulación del ciclo celular por ciclinas, CDK e inhibidores de CDK: complejos ciclina-CDK activos en cada fase del ciclo. Robbins y Cotran, 10ª ed., p. 27.">
+    <img src="../assets/fig/cap01/fig-1-19.webp" width="1453" height="1056" loading="lazy" decoding="async" alt="Figura 1.19. Regulación del ciclo celular por ciclinas, CDK e inhibidores de CDK: complejos ciclina-CDK activos en cada fase del ciclo. Robbins y Cotran, 10ª ed., p. 27.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.19.</strong> Regulación del ciclo celular por ciclinas, CDK e inhibidores de CDK: complejos ciclina-CDK activos en cada fase del ciclo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 27. <a href="../creditos.html#fig-1-19">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Motor del ciclo: ciclinas, CDK e inhibidores</span>G1 con ciclina D-CDK4/6 y transición G1/S con ciclina E-CDK2, ambas fosforilando Rb; fase S con ciclina A-CDK2/CDK1 y G2/M con ciclina B-CDK1. Inhibidores INK4 (p15, p16, p18, p19) son específicos de CDK4/6; p21, p27 y p57 inhiben todas las CDK.</div>
 </section><section id="sec-14-celulas-madre" class="card">
@@ -1094,6 +1214,15 @@
 </tbody>
 </table></div>
 <p>El ejemplo fisiológico más claro es el epitelio de la piel: las células madre de la capa basal se dividen, y las hijas se diferencian de forma progresiva a medida que migran hacia las capas superiores, hasta morir y descamarse. En la homeostasis existe un equilibrio entre replicación/autorrenovación/diferenciación de las células madre y muerte de las células terminales diferenciadas.</p>
+<figure class="fig" id="fig-1-22">
+  <a class="fig-open" href="../assets/fig/cap01/fig-1-22.webp" data-caption="Figura 1.22. Nichos de células madre en varios tejidos: células madre cutáneas en el folículo piloso y la capa basal, y células madre de la base de las criptas del intestino delgado." data-alt="Figura 1.22. Nichos de células madre en varios tejidos: células madre cutáneas en el folículo piloso y la capa basal, y células madre de la base de las criptas del intestino delgado. Robbins y Cotran, 10ª ed., p. 29.">
+    <img src="../assets/fig/cap01/fig-1-22.webp" width="1454" height="524" loading="lazy" decoding="async" alt="Figura 1.22. Nichos de células madre en varios tejidos: células madre cutáneas en el folículo piloso y la capa basal, y células madre de la base de las criptas del intestino delgado. Robbins y Cotran, 10ª ed., p. 29.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.22.</strong> Nichos de células madre en varios tejidos: células madre cutáneas en el folículo piloso y la capa basal, y células madre de la base de las criptas del intestino delgado.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 29. <a href="../creditos.html#fig-1-22">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-15-medicina-regenerativa" class="card">
 <div class="section-kicker"><span class="n">15</span> Sección</div>
@@ -1125,6 +1254,11 @@
 <li><strong>iPS</strong>: reprogramación de células somáticas (p. ej., fibroblastos) del paciente mediante genes de troncalidad, que evita el rechazo inmunológico; ejemplo potencial: células beta secretoras de insulina para la diabetes.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-1-1" aria-label="Figura 1.1"><img src="../assets/fig/cap01/fig-1-1.webp" loading="lazy" decoding="async" alt="Figura 1.1"><span>Figura 1.1</span></a><a class="fig-thumb" href="#fig-1-2" aria-label="Figura 1.2"><img src="../assets/fig/cap01/fig-1-2.webp" loading="lazy" decoding="async" alt="Figura 1.2"><span>Figura 1.2</span></a><a class="fig-thumb" href="#fig-1-3" aria-label="Figura 1.3"><img src="../assets/fig/cap01/fig-1-3.webp" loading="lazy" decoding="async" alt="Figura 1.3"><span>Figura 1.3</span></a><a class="fig-thumb" href="#fig-1-5" aria-label="Figura 1.5"><img src="../assets/fig/cap01/fig-1-5.webp" loading="lazy" decoding="async" alt="Figura 1.5"><span>Figura 1.5</span></a><a class="fig-thumb" href="#fig-1-6" aria-label="Figura 1.6"><img src="../assets/fig/cap01/fig-1-6.webp" loading="lazy" decoding="async" alt="Figura 1.6"><span>Figura 1.6</span></a><a class="fig-thumb" href="#fig-1-11" aria-label="Figura 1.11"><img src="../assets/fig/cap01/fig-1-11.webp" loading="lazy" decoding="async" alt="Figura 1.11"><span>Figura 1.11</span></a><a class="fig-thumb" href="#fig-1-19" aria-label="Figura 1.19"><img src="../assets/fig/cap01/fig-1-19.webp" loading="lazy" decoding="async" alt="Figura 1.19"><span>Figura 1.19</span></a><a class="fig-thumb" href="#fig-1-22" aria-label="Figura 1.22"><img src="../assets/fig/cap01/fig-1-22.webp" loading="lazy" decoding="async" alt="Figura 1.22"><span>Figura 1.22</span></a></div>
 </section>
   </main>
 </div>
@@ -1132,7 +1266,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1150,8 +1291,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1171,6 +1312,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

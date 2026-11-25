@@ -1,0 +1,78 @@
+{
+  "chapter": 18,
+  "page_id": "c2-18",
+  "figures": [
+    {
+      "number": "18.4",
+      "page": 827,
+      "caption": "Necrosis hepática masiva: hígado pequeño, blando y congestivo. La necrosis por sobredosis de paracetamol es confluente, perivenular (zona 3), con parénquima residual conservado.",
+      "section": "Insuficiencia hepática",
+      "after_text": "produce necrosis confluente zonal (zona 3) en horas",
+      "kind": "diagnostic",
+      "why": "Prototipo de insuficiencia aguda y necrosis zonal por paracetamol, señalado en Puntos de examen"
+    },
+    {
+      "number": "18.7",
+      "page": 830,
+      "caption": "Consecuencias de la hipertensión portal: ascitis, derivaciones portosistémicas (varices esofagogástricas, cabeza de medusa) y esplenomegalia congestiva.",
+      "section": "Hipertensión portal",
+      "after_text": "Neutrófilos sugieren infección; eritrocitos, tumor",
+      "kind": "mechanism",
+      "why": "Sintetiza las cuatro consecuencias de la hipertensión portal, idea clave del capítulo"
+    },
+    {
+      "number": "18.9",
+      "page": 832,
+      "caption": "Evolución de la infección por hepatitis B en adultos: infección subclínica, hepatitis aguda, fulminante o crónica, con frecuencias aproximadas de cada curso.",
+      "section": "Trastornos infecciosos",
+      "after_text": "lesión hepatocitaria es por linfocitos T citotóxicos",
+      "kind": "mechanism",
+      "why": "Historia natural completa del VHB con frecuencias, base de preguntas de examen"
+    },
+    {
+      "number": "18.14",
+      "page": 838,
+      "caption": "Hepatocitos en vidrio deslustrado en la hepatitis B crónica: inclusiones citoplásmicas rosa pálido por acumulación de HBsAg en el retículo endoplásmico, confirmadas con inmunotinción.",
+      "section": "Trastornos infecciosos",
+      "after_text": "por HBsAg en retículo endoplásmico hinchado",
+      "kind": "diagnostic",
+      "why": "Lesión patognomónica de la hepatitis B crónica, citada en Puntos de examen"
+    },
+    {
+      "number": "18.19",
+      "page": 845,
+      "caption": "Hepatitis alcohólica: hepatocitos balonizados, hialina de Mallory intracitoplásmica y neutrófilos agrupados alrededor de hepatocitos necróticos.",
+      "section": "Enfermedad del hígado graso",
+      "after_text": "hepatocitos balonizados con hialina de Mallory",
+      "kind": "diagnostic",
+      "why": "Tríada clásica (balonización, Mallory, neutrófilos), núcleo de la hepatopatía alcohólica"
+    },
+    {
+      "number": "18.23",
+      "page": 849,
+      "caption": "Metabolismo del hierro en la hemocromatosis hereditaria: la vía HFE, HJV y TFR2 regula la síntesis hepática de hepcidina, que inhibe la ferroportina de los enterocitos y macrófagos.",
+      "section": "Hepatopatía hereditaria",
+      "after_text": "la hepcidina une la ferroportina y la internaliza",
+      "kind": "mechanism",
+      "why": "Eje hepcidina-ferroportina, mecanismo central de la hepatopatía hereditaria más examinada"
+    },
+    {
+      "number": "18.26",
+      "page": 852,
+      "caption": "Metabolismo y eliminación de la bilirrubina: degradación del hemo, transporte unido a albúmina, captación y conjugación hepática, excreción biliar y ciclo de los urobilinógenos.",
+      "section": "Enfermedad colestásica",
+      "after_text": "bilirrubina no conjugada unida a albúmina",
+      "kind": "mechanism",
+      "why": "Esquema base para clasificar ictericias conjugadas y no conjugadas en todo el capítulo"
+    },
+    {
+      "number": "18.35",
+      "page": 859,
+      "caption": "Colangitis esclerosante primaria: conducto biliar en degeneración atrapado en una cicatriz concéntrica densa en capas de cebolla, patrón histológico característico.",
+      "section": "Enfermedad colestásica",
+      "after_text": "fibrosis periductal",
+      "kind": "diagnostic",
+      "why": "Lesión sello de la CEP, clave para diferenciarla de la CBP en la tabla comparativa"
+    }
+  ]
+}

@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
     <h1>Capítulo 14. Trastornos de los eritrocitos y trastornos hemorrágicos</h1>
-    <p class="lede">Guía 04 de 08. Resumen completo del capítulo 14 con 180 citas por página y 42 filas de tabla.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>04 de 08</strong></div><div><span>Capítulo</span><strong>14</strong></div><div><span>Páginas</span><strong>635-672</strong></div><div><span>Citas</span><strong>180</strong></div><div><span>Tablas</span><strong>42</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 04 de 08. Resumen completo del capítulo 14 con 180 citas por página y 42 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>04 de 08</strong></div><div><span>Capítulo</span><strong>14</strong></div><div><span>Páginas</span><strong>635-672</strong></div><div><span>Citas</span><strong>180</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>42</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -487,6 +543,7 @@
         <li><a href="#sec-19-trastornos-hemorragicos-diatesis-hemorragicas">Trastornos hemorrágicos: diátesis hemorrágicas</a></li>
         <li><a href="#sec-20-complicaciones-de-las-transfusiones">Complicaciones de las transfusiones</a></li>
         <li><a href="#sec-21-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C2">Índice C2</a>
@@ -581,8 +638,26 @@
 <p>Prevalencia máxima en el norte de Europa (1:5.000); herencia autosómica dominante en el <strong>75%</strong>; el resto son heterocigotos compuestos <span class="cite">p. 638</span>.</p>
 <h3 id="patogenia">Patogenia</h3>
 <p>Mutaciones que dejan sin proteína al esqueleto de la membrana (anquirina, banda 3, espectrina α/β, bandas 4.2/4.1); la vida media cae a <strong>10-20 días</strong> frente a los 120 normales. Los eritrocitos jóvenes son normales; al envejecer pierden fragmentos de membrana y adoptan la forma de esfera (mínima superficie/volumen); el bazo las atrapa en los cordones de Billroth y los macrófagos las fagocitan (eritroestasia, depleción de glucosa, pH bajo agravan) <span class="cite">p. 638-639</span>.</p>
+<figure class="fig" id="fig-14-3">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-3.webp" data-caption="Figura 14.3. Fisiopatología de la esferocitosis hereditaria: el defecto del esqueleto de membrana produce esferocitos rígidos que quedan atrapados y fagocitados en los cordones esplénicos." data-alt="Figura 14.3. Fisiopatología de la esferocitosis hereditaria: el defecto del esqueleto de membrana produce esferocitos rígidos que quedan atrapados y fagocitados en los cordones esplénicos. Robbins y Cotran, 10ª ed., p. 639.">
+    <img src="../assets/fig/cap14/fig-14-3.webp" width="701" height="807" loading="lazy" decoding="async" alt="Figura 14.3. Fisiopatología de la esferocitosis hereditaria: el defecto del esqueleto de membrana produce esferocitos rígidos que quedan atrapados y fagocitados en los cordones esplénicos. Robbins y Cotran, 10ª ed., p. 639.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.3.</strong> Fisiopatología de la esferocitosis hereditaria: el defecto del esqueleto de membrana produce esferocitos rígidos que quedan atrapados y fagocitados en los cordones esplénicos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 639. <a href="../creditos.html#fig-14-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="morfología-y-clínica">Morfología y clínica</h3>
 <p>Esferocitos pequeños, oscuros (<strong>hipercrómicos</strong>), sin palidez central; reticulocitosis, cuerpos de Howell-Jolly si hay asplenia; <strong>colelitiasis en el 40-50%</strong> de los adultos; esplenomegalia moderada (500-1.000 g) <span class="cite">p. 639</span>. Diagnóstico: historia familiar + sensibilidad a la <strong>lisis osmótica</strong> (2/3 de los casos) + CHCM elevada por deshidratación <span class="cite">p. 639</span>. Evolución salpicada por <strong>crisis aplásicas</strong> (parvovirus B19, 1-2 semanas) y <strong>crisis hemolíticas</strong> (p. ej., mononucleosis infecciosa). La esplenectomía corrige la anemia pero aumenta el riesgo de sepsis bacteriana <span class="cite">p. 640</span>.</p>
+<figure class="fig" id="fig-14-4">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-4.webp" data-caption="Figura 14.4. Esferocitosis hereditaria en frotis periférico: esferocitos pequeños, oscuros y sin palidez central; cuerpos de Howell-Jolly en un paciente con asplenia." data-alt="Figura 14.4. Esferocitosis hereditaria en frotis periférico: esferocitos pequeños, oscuros y sin palidez central; cuerpos de Howell-Jolly en un paciente con asplenia. Robbins y Cotran, 10ª ed., p. 639.">
+    <img src="../assets/fig/cap14/fig-14-4.webp" width="723" height="488" loading="lazy" decoding="async" alt="Figura 14.4. Esferocitosis hereditaria en frotis periférico: esferocitos pequeños, oscuros y sin palidez central; cuerpos de Howell-Jolly en un paciente con asplenia. Robbins y Cotran, 10ª ed., p. 639.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.4.</strong> Esferocitosis hereditaria en frotis periférico: esferocitos pequeños, oscuros y sin palidez central; cuerpos de Howell-Jolly en un paciente con asplenia.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 639. <a href="../creditos.html#fig-14-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Esferocito hipercrómico y esplenectomía</span>El esferocito es pequeño, oscuro e hipercrómico (CHCM elevada), no hipocrómico; la prueba diagnóstica es la lisis osmótica. La esplenectomía corrige la anemia pero aumenta el riesgo de sepsis bacteriana, y las crisis aplásicas las desencadena el parvovirus B19 <span class="cite">p. 639-640</span>.</div>
 </section><section id="sec-06-deficiencia-de-glucosa-6-fosfato-deshidrogenasa-g6pd" class="card">
@@ -603,8 +678,26 @@
 <li><strong>Tiempo de tránsito microvascular</strong>: los lechos lentos (bazo, médula ósea, tejidos inflamados) son los que se ocluyen.</li>
 </ul>
 <p>Los ciclos repetidos de falciformación dañan la membrana (entrada de Ca²⁺, salida de K⁺ y H₂O), produciendo <strong>células falciformes irreversibles</strong>, cuya proporción se correlaciona con la hemólisis. La hemoglobina libre <strong>consume óxido nítrico</strong>, lo que favorece vasoconstricción y estasis <span class="cite">p. 642</span>.</p>
+<figure class="fig" id="fig-14-7">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-7.webp" data-caption="Figura 14.7. Fisiopatología de la drepanocitosis: la HbS desoxigenada polimeriza, deformación falciforme, obstrucción microvascular, hipoxia y más falciformación en un círculo vicioso." data-alt="Figura 14.7. Fisiopatología de la drepanocitosis: la HbS desoxigenada polimeriza, deformación falciforme, obstrucción microvascular, hipoxia y más falciformación en un círculo vicioso. Robbins y Cotran, 10ª ed., p. 642.">
+    <img src="../assets/fig/cap14/fig-14-7.webp" width="756" height="904" loading="lazy" decoding="async" alt="Figura 14.7. Fisiopatología de la drepanocitosis: la HbS desoxigenada polimeriza, deformación falciforme, obstrucción microvascular, hipoxia y más falciformación en un círculo vicioso. Robbins y Cotran, 10ª ed., p. 642.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.7.</strong> Fisiopatología de la drepanocitosis: la HbS desoxigenada polimeriza, deformación falciforme, obstrucción microvascular, hipoxia y más falciformación en un círculo vicioso.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 642. <a href="../creditos.html#fig-14-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="morfología">Morfología</h3>
 <p>Frotis: falciformes irreversibles, reticulocitosis, <strong>dianocitos</strong> y cuerpos de Howell-Jolly por asplenia. Médula hiperplásica con reabsorción ósea y aspecto radiológico de <strong>"corte de pelo militar"</strong>. En la primera infancia el bazo crece hasta ~500 g por congestión; después la eritroestasia produce infarto, fibrosis y <strong>autoesplenectomia</strong> (masa fibrosa atrófica en la adolescencia/adultez). Infartos en huesos, cerebro, riñón, hígado, retina y pulmón (corazón pulmonar); úlceras de pierna en adultos <span class="cite">p. 642-643</span>.</p>
+<figure class="fig" id="fig-14-8">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-8.webp" data-caption="Figura 14.8. Drepanocitosis en frotis de sangre periférica: células falciformes irreversibles, anisocitosis, poiquilocitosis y células diana." data-alt="Figura 14.8. Drepanocitosis en frotis de sangre periférica: células falciformes irreversibles, anisocitosis, poiquilocitosis y células diana. Robbins y Cotran, 10ª ed., p. 643.">
+    <img src="../assets/fig/cap14/fig-14-8.webp" width="725" height="1055" loading="lazy" decoding="async" alt="Figura 14.8. Drepanocitosis en frotis de sangre periférica: células falciformes irreversibles, anisocitosis, poiquilocitosis y células diana. Robbins y Cotran, 10ª ed., p. 643.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.8.</strong> Drepanocitosis en frotis de sangre periférica: células falciformes irreversibles, anisocitosis, poiquilocitosis y células diana.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 643. <a href="../creditos.html#fig-14-8">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="clínica-y-pronóstico">Clínica y pronóstico</h3>
 <p>Anemia hemolítica moderada (<strong>hematocrito 18-30%</strong>) con reticulocitosis e hiperbilirrubinemia <span class="cite">p. 643</span>. Crisis:</p>
 <div class="table-wrap" role="region" aria-label="Tabla: Enfermedad de células falciformes (drepanocitosis)" tabindex="0"><table>
@@ -652,6 +745,15 @@
 <li><strong>Mutaciones de terminación de cadena</strong> (sin sentido, corrimientos del marco): causa más frecuente de β⁰.</li>
 </ul>
 <p>El exceso de cadenas α sin pareja precipita en inclusiones insolubles que dañan la membrana: en la β-talasemia grave, el <strong>70-85% de los precursores</strong> muere por apoptosis (<strong>eritropoyesis ineficaz</strong>), y los eritrocitos que salen se hemolizan en el bazo <span class="cite">p. 645</span>. La eritropoyesis ineficaz libera <strong>eritroferrona</strong>, que suprime la hepcidina → <strong>absorción aumentada de hierro</strong> + transfusiones → <strong>hemocromatosis secundaria</strong> (corazón, hígado, páncreas) <span class="cite">p. 646</span>.</p>
+<figure class="fig" id="fig-14-11">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-11.webp" data-caption="Figura 14.11. Patogenia de la beta-talasemia mayor: las cadenas alfa sin emparejar precipitan, dañan la membrana y producen eritropoyesis ineficaz y hemólisis." data-alt="Figura 14.11. Patogenia de la beta-talasemia mayor: las cadenas alfa sin emparejar precipitan, dañan la membrana y producen eritropoyesis ineficaz y hemólisis. Robbins y Cotran, 10ª ed., p. 645.">
+    <img src="../assets/fig/cap14/fig-14-11.webp" width="1462" height="1189" loading="lazy" decoding="async" alt="Figura 14.11. Patogenia de la beta-talasemia mayor: las cadenas alfa sin emparejar precipitan, dañan la membrana y producen eritropoyesis ineficaz y hemólisis. Robbins y Cotran, 10ª ed., p. 645.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.11.</strong> Patogenia de la beta-talasemia mayor: las cadenas alfa sin emparejar precipitan, dañan la membrana y producen eritropoyesis ineficaz y hemólisis.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 645. <a href="../creditos.html#fig-14-11">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Talasemias" tabindex="0"><table>
 <thead>
 <tr>
@@ -766,6 +868,15 @@
 <p>Denominador común: alteración de la síntesis de ADN → <strong>eritropoyesis ineficaz</strong> y precursores gigantes. Causas: déficit de B12 (anemia perniciosa, gastrectomía, resección ileal, <em>Diphyllobothrium</em>, sobrecrecimiento bacteriano, vegetarianismo estricto) y de folato (ingesta baja, alcoholismo, embarazo, infancia, cáncer diseminado, esprúe, fenitoína y anticonceptivos orales, metotrexato) <span class="cite">p. 651</span>.</p>
 <h3 id="morfología-1">Morfología</h3>
 <p>Sangre: <strong>macroovalocitos</strong>, anisocitosis y poiquilocitosis, reticulocitopenia, <strong>neutrófilos hipersegmentados (≥5 lóbulos)</strong>. Médula hipercelular con <strong>megaloblastos</strong>: cromatina nuclear inmadura y abierta con citoplasma ya hemoglobinizado (<strong>asincronía núcleo-citoplasma</strong>); cayados y metamielocitos gigantes; megacariocitos aberrantes. La mayoría de los precursores apoptosan → <strong>pancitopenia</strong> <span class="cite">p. 651-652</span>.</p>
+<figure class="fig" id="fig-14-16">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-16.webp" data-caption="Figura 14.16. Anemia megaloblástica en frotis periférico: neutrófilo hipersegmentado con un núcleo de seis lóbulos." data-alt="Figura 14.16. Anemia megaloblástica en frotis periférico: neutrófilo hipersegmentado con un núcleo de seis lóbulos. Robbins y Cotran, 10ª ed., p. 651.">
+    <img src="../assets/fig/cap14/fig-14-16.webp" width="744" height="478" loading="lazy" decoding="async" alt="Figura 14.16. Anemia megaloblástica en frotis periférico: neutrófilo hipersegmentado con un núcleo de seis lóbulos. Robbins y Cotran, 10ª ed., p. 651.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.16.</strong> Anemia megaloblástica en frotis periférico: neutrófilo hipersegmentado con un núcleo de seis lóbulos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 651. <a href="../creditos.html#fig-14-16">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="anemia-perniciosa-déficit-de-b12">Anemia perniciosa (déficit de B12)</h3>
 <p>Gastritis autoinmunitaria del fondo con pérdida de células parietales → falta de <strong>factor intrínseco</strong>. Metabolismo: la B12 se libera de las proteínas alimentarias por pepsina, se une a la <strong>haptocorrina</strong> salival, se libera por proteasas pancreáticas en el duodeno, se une al factor intrínseco y se absorbe en el <strong>íleon</strong> por el receptor <strong>cubilina</strong>; viaja en plasma con la <strong>transcobalamina II</strong> <span class="cite">p. 652-653</span>. Funciones bioquímicas (solo dos): (1) <strong>metilcobalamina</strong> como cofactor de la metionina sintasa (homocisteína→metionina, regenera FH4 desde N5-metil-FH4, imprescindible para dUMP→dTMP); (2) <strong>adenosilcobalamina</strong> en la metilmalonil-CoA mutasa (metilmalonil-CoA→succinil-CoA); su bloqueo eleva el <strong>ácido metilmalónico</strong>, posible sustrato de la degeneración mielínica <span class="cite">p. 653</span>.</p>
 <p>Enfermedad de adultos mayores (mediana <strong>60 años</strong>). Tres autoanticuerpos: <strong>tipo I</strong> (75% de los casos; bloquean la unión B12-factor intrínseco), <strong>tipo II</strong> (impiden la unión del complejo) y <strong>tipo III</strong> (85-90%; anti-bomba de protones de la célula parietal, inespecífico, presente hasta en 50% de ancianos con gastritis idiopática) <span class="cite">p. 653</span>. La lesión mucosa la inician linfocitos T autorreactivos; asociada a <strong>tiroiditis y suprarrenalitis autoinmunitarias</strong> <span class="cite">p. 654</span>. Morfología gástrica: gastritis atrófica del fondo, aclorhidria, <strong>metaplasia intestinal</strong>, glositis atrófica ("lengua de ternera"); <strong>degeneración combinada subaguda</strong> de la médula (tractos dorsal y lateral: paraparesia espástica, ataxia sensorial, parestesias) <span class="cite">p. 654</span>. Diagnóstico: megaloblastosis + leucopenia con granulocitos hipersegmentados + B12 baja + <strong>homocisteína y metilmalónico elevados</strong>; anticuerpos anti-factor intrínseco muy específicos; respuesta reticulocitaria a los <strong>5 días</strong> de B12 parenteral. Mayor <strong>riesgo de carcinoma gástrico</strong> (no revierte con B12) <span class="cite">p. 654</span>.</p>
@@ -819,6 +930,15 @@
 </ol>
 <h3 id="patogenia-morfología-y-clínica">Patogenia, morfología y clínica</h3>
 <p>Secuencia: se agotan las reservas → cae el hierro sérico y la saturación → aparece la anemia solo cuando las reservas están completamente agotadas <span class="cite">p. 658</span>. Frotis: microcitosis, hipocromia (palidez central mayor de un tercio del diámetro) y <strong>células lápiz</strong>; en la médula, <strong>ausencia de hierro teñible</strong> (azul de Prusia) <span class="cite">p. 658</span>. Clínica: ferropenia grave de larga evolución → <strong>coiloniquia</strong>, alopecia, atrofia de lengua y mucosa gástrica, malabsorción, <strong>pica</strong> y movimientos periódicos de las extremidades durante el sueño; <strong>síndrome de Plummer-Vinson</strong> (membranas esofágicas + anemia microcítica-hipocrómica + glositis atrófica) <span class="cite">p. 658</span>. Laboratorio: hierro y ferritina bajos, <strong>TBC alta, saturación de transferrina &lt;15%</strong>, hepcidina baja. Con hierro oral, reticulocitosis a los <strong>5-7 días</strong> <span class="cite">p. 658</span>.</p>
+<figure class="fig" id="fig-14-23">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-23.webp" data-caption="Figura 14.23. Deficiencia de hierro en frotis periférico: eritrocitos hipocrómicos y microcíticos con un borde estrecho de hemoglobina periférica." data-alt="Figura 14.23. Deficiencia de hierro en frotis periférico: eritrocitos hipocrómicos y microcíticos con un borde estrecho de hemoglobina periférica. Robbins y Cotran, 10ª ed., p. 658.">
+    <img src="../assets/fig/cap14/fig-14-23.webp" width="744" height="383" loading="lazy" decoding="async" alt="Figura 14.23. Deficiencia de hierro en frotis periférico: eritrocitos hipocrómicos y microcíticos con un borde estrecho de hemoglobina periférica. Robbins y Cotran, 10ª ed., p. 658.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.23.</strong> Deficiencia de hierro en frotis periférico: eritrocitos hipocrómicos y microcíticos con un borde estrecho de hemoglobina periférica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 658. <a href="../creditos.html#fig-14-23">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Hemorragia oculta en adultos</span>Ferritina &lt;12 µg/l, saturación de transferrina &lt;15% y TBC aumentada la definen. En hombres adultos y posmenopáusicas debe asumirse hemorragia digestiva oculta (cáncer) hasta demostrar lo contrario <span class="cite">p. 655-658</span>.</div>
 </section><section id="sec-14-anemia-de-la-inflamacion-cronica" class="card">
@@ -980,6 +1100,15 @@
 <p>Clínicamente <strong>indistinguible</strong> de la hemofilia A (los factores VIII y IX activan juntos el X); ligada al X; en el <strong>15%</strong> el factor IX existe pero es disfuncionante; TTPa prolongado, TP normal; diagnóstico solo por dosificación del factor; tratamiento con factor IX recombinante <span class="cite">p. 669</span>.</p>
 <h3 id="coagulación-intravascular-diseminada-cid">Coagulación intravascular diseminada (CID)</h3>
 <p>Trastorno <strong>trombohemorrágico</strong> agudo, subagudo o crónico, <strong>siempre secundario</strong>: activación excesiva de la coagulación con trombosis microvascular generalizada → consumo de plaquetas, fibrinógeno y factores + activación secundaria de la fibrinólisis <span class="cite">p. 669</span>. Desencadenantes: liberación de <strong>factor tisular</strong> (complicaciones obstétricas: placenta, feto muerto retenido, líquido amniótico; traumatismos y quemaduras; moco de adenocarcinomas que activa directamente el factor X) y <strong>lesión endotelial extensa</strong> (el <strong>TNF</strong> de la sepsis induce factor tisular y reduce trombomodulina; meningococos, rickettsias, golpe de calor, LES) <span class="cite">p. 669-670</span>. Cánceres más asociados: <strong>leucemia promielocítica aguda</strong> y adenocarcinomas de pulmón, páncreas, colon y estómago <span class="cite">p. 670</span>. Consecuencias: microtrombos de fibrina → isquemia y <strong>anemia hemolítica microangiopática</strong> (esquistocitos); consumo + <strong>plasmina</strong> (que digiere además los factores V y VIII) + productos de degradación de la fibrina (inhiben la trombina, la agregación plaquetaria y la polimerización de fibrina) → <strong>hemorragia</strong> <span class="cite">p. 670</span>.</p>
+<figure class="fig" id="fig-14-27">
+  <a class="fig-open" href="../assets/fig/cap14/fig-14-27.webp" data-caption="Figura 14.27. Fisiopatología de la coagulación intravascular diseminada: liberación de factor tisular y lesión endotelial desencadenan trombosis microvascular con consumo de plaquetas y factores." data-alt="Figura 14.27. Fisiopatología de la coagulación intravascular diseminada: liberación de factor tisular y lesión endotelial desencadenan trombosis microvascular con consumo de plaquetas y factores. Robbins y Cotran, 10ª ed., p. 670.">
+    <img src="../assets/fig/cap14/fig-14-27.webp" width="765" height="783" loading="lazy" decoding="async" alt="Figura 14.27. Fisiopatología de la coagulación intravascular diseminada: liberación de factor tisular y lesión endotelial desencadenan trombosis microvascular con consumo de plaquetas y factores. Robbins y Cotran, 10ª ed., p. 670.">
+  </a>
+  <figcaption>
+    <strong>Figura 14.27.</strong> Fisiopatología de la coagulación intravascular diseminada: liberación de factor tisular y lesión endotelial desencadenan trombosis microvascular con consumo de plaquetas y factores.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 670. <a href="../creditos.html#fig-14-27">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>Morfología: trombos de fibrina más frecuentes en <strong>cerebro, corazón, pulmones, riñones, suprarrenales, bazo e hígado</strong>; glomérulos con microinfartos o <strong>necrosis cortical renal bilateral</strong>; membranas hialinas alveolares (SDRA); microinfartos y hemorragia del SNC; en la meningococemia, las hemorragias suprarrenales masivas (<strong>síndrome de Waterhouse-Friderichsen</strong>) <span class="cite">p. 670</span>. Clínica: CID <strong>aguda</strong> (sepsis, embolia de líquido amniótico) dominada por la hemorragia; <strong>crónica</strong> (carcinomatosis, feto muerto retenido) dominada por trombosis <span class="cite">p. 670-671</span>. Diagnóstico: fibrinógeno bajo, plaquetas bajas, TP y TTPa prolongados, <strong>dímeros D</strong> elevados. Tratamiento: eliminar la causa; equilibrio difícil entre trombosis y hemorragia <span class="cite">p. 671</span>. Forma localizada: hemangiomas gigantes (<strong>síndrome de Kasabach-Merritt</strong>) <span class="cite">p. 670</span>.</p>
 
 <div class="warnbox"><span class="box-title">Patrón mucocutáneo vs profundo</span>Trombocitopenia y vWF dan petequias y hemorragia de mucosas con TP y TTPa normales; el déficit de factores da hematomas, hemartrosis y hemorragia profunda. La CID consume a la vez plaquetas, factores y fibrinógeno, con dímeros D elevados <span class="cite">p. 662-663, 671</span>.</div>
@@ -1035,6 +1164,11 @@
 <li>Transfusiones: reacción más frecuente = <strong>febril no hemolítica</strong>; anafilaxia en <strong>déficit de IgA</strong> (1:20.000-50.000); hemólisis aguda = incompatibilidad <strong>ABO</strong> por IgM; <strong>TRALI</strong> con infiltrados no respondientes a diuréticos, mortalidad hasta 67% <span class="cite">p. 671-672</span>.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-14-3" aria-label="Figura 14.3"><img src="../assets/fig/cap14/fig-14-3.webp" loading="lazy" decoding="async" alt="Figura 14.3"><span>Figura 14.3</span></a><a class="fig-thumb" href="#fig-14-4" aria-label="Figura 14.4"><img src="../assets/fig/cap14/fig-14-4.webp" loading="lazy" decoding="async" alt="Figura 14.4"><span>Figura 14.4</span></a><a class="fig-thumb" href="#fig-14-7" aria-label="Figura 14.7"><img src="../assets/fig/cap14/fig-14-7.webp" loading="lazy" decoding="async" alt="Figura 14.7"><span>Figura 14.7</span></a><a class="fig-thumb" href="#fig-14-8" aria-label="Figura 14.8"><img src="../assets/fig/cap14/fig-14-8.webp" loading="lazy" decoding="async" alt="Figura 14.8"><span>Figura 14.8</span></a><a class="fig-thumb" href="#fig-14-11" aria-label="Figura 14.11"><img src="../assets/fig/cap14/fig-14-11.webp" loading="lazy" decoding="async" alt="Figura 14.11"><span>Figura 14.11</span></a><a class="fig-thumb" href="#fig-14-16" aria-label="Figura 14.16"><img src="../assets/fig/cap14/fig-14-16.webp" loading="lazy" decoding="async" alt="Figura 14.16"><span>Figura 14.16</span></a><a class="fig-thumb" href="#fig-14-23" aria-label="Figura 14.23"><img src="../assets/fig/cap14/fig-14-23.webp" loading="lazy" decoding="async" alt="Figura 14.23"><span>Figura 14.23</span></a><a class="fig-thumb" href="#fig-14-27" aria-label="Figura 14.27"><img src="../assets/fig/cap14/fig-14-27.webp" loading="lazy" decoding="async" alt="Figura 14.27"><span>Figura 14.27</span></a></div>
 </section>
   </main>
 </div>
@@ -1042,7 +1176,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1060,8 +1201,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1081,6 +1222,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

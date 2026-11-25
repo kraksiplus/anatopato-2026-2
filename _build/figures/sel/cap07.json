@@ -1,0 +1,78 @@
+{
+  "chapter": 7,
+  "page_id": "c1-07",
+  "figures": [
+    {
+      "number": "7.22",
+      "page": 287,
+      "caption": "Vías de señalización por factores de crecimiento en tumores malignos: receptores tirosina cinasa, RAS, PI3K, MYC y ciclina D como oncoproteinas activadas por mutaciones.",
+      "section": "Autosuficiencia respecto de las señales de crecimiento: oncogenes",
+      "after_text": "La señalización fisiológica por factores de crecimiento sigue estos pasos",
+      "kind": "mechanism",
+      "why": "Diagrama central de la señalización tumoral; integra oncogenes de toda la sección"
+    },
+    {
+      "number": "7.26",
+      "page": 294,
+      "caption": "Función de RB en el punto de control G1/S: el RB hipofosforilado bloquea a E2F; su fosforilación por complejos ciclina-CDK libera E2F y permite la progresión del ciclo.",
+      "section": "Insensibilidad a la inhibición del crecimiento: genes supresores de tumores",
+      "after_text": "se une a los factores de transcripción E2F que regulan",
+      "kind": "mechanism",
+      "why": "Mecanismo clave del supresor RB, citado en Ideas clave; base de la via VPH E7 y CDK4"
+    },
+    {
+      "number": "7.27",
+      "page": 296,
+      "caption": "Función de p53 en el mantenimiento de la integridad del genoma: ante daño del ADN o hipoxia induce detención en G1, reparación, senescencia o apoptosis.",
+      "section": "Insensibilidad a la inhibición del crecimiento: genes supresores de tumores",
+      "after_text": "es el punto focal de una red que detecta estrés celular",
+      "kind": "mechanism",
+      "why": "TP53 es el gen más mutado en cáncer; el diagrama resume sus tres efectos secuenciales"
+    },
+    {
+      "number": "7.25",
+      "page": 293,
+      "caption": "Patogenia del retinoblastoma: dos mutaciones del locus RB (13q14) según el modelo de dos golpes de Knudson, en la forma esporádica y en la familiar.",
+      "section": "Insensibilidad a la inhibición del crecimiento: genes supresores de tumores",
+      "after_text": "cerca del 40% de los retinoblastomas son",
+      "kind": "mechanism",
+      "why": "Ilustra la hipótesis del segundo golpe de Knudson, concepto clásico de examen"
+    },
+    {
+      "number": "7.9",
+      "page": 272,
+      "caption": "Rabdomiosarcoma (tumor pleomorfo del músculo esquelético): marcado pleomorfismo celular y nuclear, núcleos hipercromáticos y células gigantes tumorales.",
+      "section": "Características de las neoplasias benignas y malignas",
+      "after_text": "variación del tamaño y la forma de células y núcleos",
+      "kind": "diagnostic",
+      "why": "Imagen clásica de anaplasia y pleomorfismo, rasgos citológicos de malignidad"
+    },
+    {
+      "number": "7.10",
+      "page": 273,
+      "caption": "Carcinoma in situ: el epitelio está completamente reemplazado por células displásicas atípicas, sin maduración ordenada, con membrana basal intacta y estroma libre de tumor.",
+      "section": "Características de las neoplasias benignas y malignas",
+      "after_text": "cuando la displasia es grave y afecta a todo el espesor",
+      "kind": "diagnostic",
+      "why": "Lesión preinvasiva patognomónica; distingue displasia grave de carcinoma invasivo"
+    },
+    {
+      "number": "7.15",
+      "page": 275,
+      "caption": "Metástasis: hígado salpicado de nódulos metastásicos y nódulo pulmonar de un adenocarcinoma de colon.",
+      "section": "Características de las neoplasias benignas y malignas",
+      "after_text": "La diseminación metastásica reduce notablemente la posibilidad de curación",
+      "kind": "diagnostic",
+      "why": "Macro e histología de metástasis en hígado y pulmón, los dos lechos más afectados"
+    },
+    {
+      "number": "7.44",
+      "page": 332,
+      "caption": "Citología cervicovaginal (Pap): comparación entre el frotis normal y el frotis con células malignas pleomorfas e hipercromáticas.",
+      "section": "Aspectos clínicos de las neoplasias",
+      "after_text": "el ejemplo más significativo es el de Papanicolaou (Pap)",
+      "kind": "diagnostic",
+      "why": "Ejemplo clásico de tamizaje citológico que redujo la mortalidad por cáncer cervicouterino"
+    }
+  ]
+}

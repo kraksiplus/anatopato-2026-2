@@ -1,0 +1,103 @@
+{
+  "chapter": 9,
+  "page_id": "c1-09",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "9.3",
+      "page": 408,
+      "caption": "Metabolismo de los xenobióticos en dos fases: la fase I (citocromo P-450) puede detoxificarlos o generar metabolitos reactivos tóxicos para la célula.",
+      "section": "Toxicidad de los agentes químicos y físicos",
+      "after_text": "Metabolismo en dos fases (fig. 9.3): fase I",
+      "kind": "mechanism",
+      "why": "Mecanismo central del capítulo (P-450, activación tóxica), citado en el resumen",
+      "image": "assets/fig/cap09/fig-9-3.webp",
+      "width": 1474,
+      "height": 654
+    },
+    {
+      "number": "9.6",
+      "page": 412,
+      "caption": "Intoxicación por plomo: radiografía de muñeca con bandas de radiodensidad aumentada en las epífisis por alteración de la remodelación del cartílago calcificado.",
+      "section": "Contaminación ambiental",
+      "after_text": "Causa encefalopatía y déficit cognitivo",
+      "kind": "diagnostic",
+      "why": "Imagen clásica y patognomónica del plomo en niños, metal clave del capítulo",
+      "image": "assets/fig/cap09/fig-9-6.webp",
+      "width": 740,
+      "height": 710
+    },
+    {
+      "number": "9.11",
+      "page": 419,
+      "caption": "Metabolismo del etanol: oxidación a acetaldehído por la alcohol deshidrogenasa, el sistema CYP2E1 y la catalasa, y paso posterior a acetato.",
+      "section": "Efectos del alcohol",
+      "after_text": "el etanol se oxida a acetaldehído por la alcohol deshidrogenasa",
+      "kind": "mechanism",
+      "why": "Vía metabólica del etanol, base de los efectos agudos y crónicos, muy preguntada",
+      "image": "assets/fig/cap09/fig-9-11.webp",
+      "width": 1454,
+      "height": 717
+    },
+    {
+      "number": "9.13",
+      "page": 423,
+      "caption": "Metabolismo y toxicidad del paracetamol: la vía de las CYP genera NAPQI, que agota el glutatión y produce necrosis centrolobulillar.",
+      "section": "Lesiones por fármacos terapéuticos y drogas de abuso",
+      "after_text": "produce necrosis centrolobulillar: el metabolito NAPQI (vía CYP2E1)",
+      "kind": "mechanism",
+      "why": "Sobredosis de paracetamol y NAPQI son puntos de examen explícitos",
+      "image": "assets/fig/cap09/fig-9-13.webp",
+      "width": 711,
+      "height": 743
+    },
+    {
+      "number": "9.15",
+      "page": 429,
+      "caption": "Efectos de la radiación ionizante sobre el ADN: daño directo e indirecto por radicales libres, con las consecuencias celulares derivadas.",
+      "section": "Daños por agentes físicos",
+      "after_text": "genera una cascada de ionización, con radicales libres",
+      "kind": "mechanism",
+      "why": "Mecanismo central de la radiación ionizante (daño del ADN), resaltado en el resumen",
+      "image": "assets/fig/cap09/fig-9-15.webp",
+      "width": 735,
+      "height": 678
+    },
+    {
+      "number": "9.21",
+      "page": 434,
+      "caption": "Malnutrición infantil: marasmo con emaciación y pérdida de grasa subcutánea frente a kwashiorkor con edema generalizado, ascitis e hinchazón facial.",
+      "section": "Enfermedades nutricionales",
+      "after_text": "Sus dos extremos son el marasmo y el kwashiorkor",
+      "kind": "diagnostic",
+      "why": "Contraste visual marasmo versus kwashiorkor, comparación de examen obligada",
+      "image": "assets/fig/cap09/fig-9-21.webp",
+      "width": 1474,
+      "height": 704
+    },
+    {
+      "number": "9.22",
+      "page": 436,
+      "caption": "Anorexia nerviosa: transformación gelatinosa de la médula ósea, con aumento de grasa y depósito de material mucinoso, hallazgo prácticamente patognomónico.",
+      "section": "Enfermedades nutricionales",
+      "after_text": "La transformación gelatinosa de la médula ósea (aumento de grasa",
+      "kind": "diagnostic",
+      "why": "Lesión patognomónica señalada en Ideas clave y Puntos de examen",
+      "image": "assets/fig/cap09/fig-9-22.webp",
+      "width": 708,
+      "height": 550
+    },
+    {
+      "number": "9.26",
+      "page": 441,
+      "caption": "Raquitismo: unión costocondral con pérdida de las empalizadas de cartílago y transición desordenada de cartílago a hueso, frente a la unión normal.",
+      "section": "Enfermedades nutricionales",
+      "after_text": "raquitismo (niños: sobrecrecimiento de cartílago epifisario, rosario raquítico",
+      "kind": "diagnostic",
+      "why": "Histología clásica del raquitismo por deficiencia de vitamina D, muy preguntada",
+      "image": "assets/fig/cap09/fig-9-26.webp",
+      "width": 1461,
+      "height": 676
+    }
+  ]
+}

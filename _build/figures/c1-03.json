@@ -1,0 +1,91 @@
+{
+  "chapter": 3,
+  "page_id": "c1-03",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "3.4",
+      "page": 77,
+      "caption": "Migración de leucocitos a través del vaso en varios pasos: rodamiento por selectinas, activación y adhesión firme por integrinas, transmigración y quimiotaxia hacia el agente causal.",
+      "section": "Reclutamiento de leucocitos",
+      "after_text": "marginación, rodamiento y adhesión al endotelio",
+      "kind": "mechanism",
+      "why": "Mecanismo central del capítulo y punto de examen explícito (selectinas, integrinas, CD31).",
+      "image": "assets/fig/cap03/fig-3-4.webp",
+      "width": 1461,
+      "height": 1165
+    },
+    {
+      "number": "3.8",
+      "page": 82,
+      "caption": "Fagocitosis y destrucción intracelular de microbios: unión al receptor, formación del fagosoma, fusión con lisosomas y destrucción en el fagolisosoma.",
+      "section": "Fagocitosis y eliminación del agente causal",
+      "after_text": "El atrapamiento depende de polimerización de actina",
+      "kind": "mechanism",
+      "why": "Secuencia de fagocitosis y muerte microbiana, base del examen (estallido respiratorio, EGC).",
+      "image": "assets/fig/cap03/fig-3-8.webp",
+      "width": 1474,
+      "height": 1064
+    },
+    {
+      "number": "3.10",
+      "page": 87,
+      "caption": "Producción de metabolitos del ácido araquidónico por las vías de ciclooxigenasas y lipooxigenasas, con sus funciones en la inflamación y los puntos de bloqueo farmacológico.",
+      "section": "Mediadores de la inflamación",
+      "after_text": "Dos vías: ciclooxigenasas (prostaglandinas) y lipooxigenasas",
+      "kind": "mechanism",
+      "why": "Diagrama clave de eicosanoides y dianas de AINE, COX-2 y leucotrienos, muy preguntado.",
+      "image": "assets/fig/cap03/fig-3-10.webp",
+      "width": 1453,
+      "height": 1267
+    },
+    {
+      "number": "3.20",
+      "page": 98,
+      "caption": "Activación de macrófagos por vía clásica (M1, microbicida e inflamatoria) y alternativa (M2, reparadora y antiinflamatoria), con sus estímulos y funciones.",
+      "section": "Inflamación crónica",
+      "after_text": "Activación clásica (M1): por productos microbianos",
+      "kind": "mechanism",
+      "why": "Diferencia M1/M2 citada en Puntos de examen y central en inflamación crónica y reparación.",
+      "image": "assets/fig/cap03/fig-3-20.webp",
+      "width": 1474,
+      "height": 633
+    },
+    {
+      "number": "3.23",
+      "page": 100,
+      "caption": "Granuloma tuberculoso típico: necrosis central rodeada de células gigantes de tipo Langhans, células epitelioides y linfocitos.",
+      "section": "Inflamación crónica",
+      "after_text": "Células epitelioides (citoplasma abundante y rosado)",
+      "kind": "diagnostic",
+      "why": "Imagen patognomónica del granuloma caseoso, hallazgo clásico en fotografías de examen.",
+      "image": "assets/fig/cap03/fig-3-23.webp",
+      "width": 756,
+      "height": 491
+    },
+    {
+      "number": "3.14",
+      "page": 93,
+      "caption": "Pericarditis fibrinosa: depósitos de fibrina en la superficie del pericardio, vista macroscópica e histológica del exudado.",
+      "section": "Patrones morfológicos de la inflamación aguda",
+      "after_text": "salida de fibrinógeno y depósito de fibrina",
+      "kind": "diagnostic",
+      "why": "Ejemplo clásico de inflamación fibrinosa, patrón morfológico de alto rendimiento.",
+      "image": "assets/fig/cap03/fig-3-14.webp",
+      "width": 1443,
+      "height": 537
+    },
+    {
+      "number": "3.29",
+      "page": 109,
+      "caption": "Comparación de la cicatrización por primera y segunda intención, con abundante tejido de granulación y contracción de la herida en esta última.",
+      "section": "Cicatrización de heridas cutáneas",
+      "after_text": "heridas con pérdida extensa de tejido",
+      "kind": "diagnostic",
+      "why": "Contraste primera/segunda intención citado en Puntos de examen; ilustra granulación y contracción.",
+      "image": "assets/fig/cap03/fig-3-29.webp",
+      "width": 1458,
+      "height": 825
+    }
+  ]
+}

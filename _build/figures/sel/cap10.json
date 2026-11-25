@@ -1,0 +1,78 @@
+{
+  "chapter": 10,
+  "page_id": "c1-10",
+  "figures": [
+    {
+      "number": "10.5",
+      "page": 457,
+      "caption": "Periodos críticos del desarrollo de los distintos sistemas orgánicos y malformaciones asociadas según el momento de exposición al teratógeno.",
+      "section": "Malformaciones congénitas",
+      "after_text": "En las 3 primeras semanas, el daño celular produce aborto o recuperación",
+      "kind": "mechanism",
+      "why": "Sintetiza el concepto central de teratogenia: entre las semanas 3 y 9 se produce la organogenia, dato de examen recurrente."
+    },
+    {
+      "number": "10.6",
+      "page": 459,
+      "caption": "Patogenia del síndrome de dificultad respiratoria neonatal: el déficit de surfactante produce atelectasia, hipoxemia y exudación de fibrina que forma las membranas hialinas.",
+      "section": "Síndrome de dificultad respiratoria neonatal",
+      "after_text": "los alvéolos se colapsan en cada respiración y la pared torácica",
+      "kind": "mechanism",
+      "why": "Diagrama del círculo vicioso de la enfermedad de la membrana hialina, mecanismo central del capítulo de prematuridad."
+    },
+    {
+      "number": "10.7",
+      "page": 460,
+      "caption": "Enfermedad por membrana hialina: membranas eosinófilas que revisten alvéolos dilatados y epitelio cúbico que delata inmadurez pulmonar.",
+      "section": "Síndrome de dificultad respiratoria neonatal",
+      "after_text": "membranas hialinas eosinófilas de fibrina con restos de",
+      "kind": "diagnostic",
+      "why": "Imagen histológica clásica y diagnóstica del SDR, sinónimo de enfermedad de la membrana hialina."
+    },
+    {
+      "number": "10.8",
+      "page": 461,
+      "caption": "Enterocolitis necrosante: intestino delgado distendido con pared delgada en riesgo de perforación y zonas de infarto hemorrágico en el íleon.",
+      "section": "Enterocolitis necrosante",
+      "after_text": "Segmento distendido, friable, congestivo o francamente gangrenado, con perforación",
+      "kind": "diagnostic",
+      "why": "Macroscopía característica de la ECN, complicación típica del prematuro con alta mortalidad."
+    },
+    {
+      "number": "10.10",
+      "page": 463,
+      "caption": "Patogenia de la hidropesía fetal inmunitaria: sensibilización materna frente a antígenos eritrocitarios fetales, respuesta IgG en embarazos posteriores y hemólisis fetal.",
+      "section": "Hidropesía fetal",
+      "after_text": "Una gestación posterior provoca una respuesta rápida de IgG",
+      "kind": "mechanism",
+      "why": "Explica por qué la enfermedad Rh es rara en el primer embarazo y la utilidad de la inmunoglobulina anti-D, punto de examen clave."
+    },
+    {
+      "number": "10.16",
+      "page": 468,
+      "caption": "Defecto del canal de cloro CFTR: sudor hipertónico en los conductos sudoríparos y moco deshidratado con tapones en la vía respiratoria.",
+      "section": "Errores congénitos del metabolismo y otros trastornos genéticos",
+      "after_text": "reabsorbe agua y deshidrata la capa de moco, con alteración",
+      "kind": "mechanism",
+      "why": "Resume la fisiopatología de la fibrosis quística en ambos epitelios, base del diagnóstico por sudor y de las manifestaciones clínicas."
+    },
+    {
+      "number": "10.23",
+      "page": 478,
+      "caption": "Neuroblastoma suprarrenal: células pequeñas primitivas en matriz fibrilar (neurópilo) con seudorrosetas de Homer-Wright.",
+      "section": "Tumores y lesiones seudotumorales en lactantes y niños",
+      "after_text": "Fondo de material eosinófilo fibrilar (neurópilo, prolongaciones neuríticas) y",
+      "kind": "diagnostic",
+      "why": "Histología patognomónica del neuroblastoma, tumor de células azules redondas y pequeñas con seudorrosetas citadas en Puntos de examen."
+    },
+    {
+      "number": "10.27",
+      "page": 482,
+      "caption": "Tumor de Wilms: componente blastomatoso de células azules con túbulos primitivos (patrón trifásico) y un foco de anaplasia con núcleos grandes y atípicos.",
+      "section": "Tumores y lesiones seudotumorales en lactantes y niños",
+      "after_text": "imita los estadios de la nefrogenia, con la clásica combinación",
+      "kind": "diagnostic",
+      "why": "Muestra la histología trifásica clásica y la anaplasia, el principal determinante de mal pronóstico."
+    }
+  ]
+}

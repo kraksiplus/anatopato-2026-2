@@ -1,0 +1,189 @@
+{
+  "chapter": 10,
+  "figures": [
+    {
+      "number": "10.5",
+      "page": 457,
+      "pdf_page": 5,
+      "image": "assets/fig/cap10/fig-10-5.webp",
+      "width": 1460,
+      "height": 935,
+      "caption_bbox": [
+        107,
+        1051,
+        1417,
+        1079
+      ],
+      "bbox": [
+        97,
+        110,
+        1557,
+        1045
+      ],
+      "col": "full",
+      "side_by_side": false,
+      "full_width": true
+    },
+    {
+      "number": "10.6",
+      "page": 459,
+      "pdf_page": 7,
+      "image": "assets/fig/cap10/fig-10-6.webp",
+      "width": 752,
+      "height": 984,
+      "caption_bbox": [
+        845,
+        1111,
+        1534,
+        1142
+      ],
+      "bbox": [
+        813,
+        121,
+        1565,
+        1105
+      ],
+      "col": "right",
+      "side_by_side": false,
+      "full_width": false
+    },
+    {
+      "number": "10.7",
+      "page": 460,
+      "pdf_page": 8,
+      "image": "assets/fig/cap10/fig-10-7.webp",
+      "width": 715,
+      "height": 555,
+      "caption_bbox": [
+        100,
+        686,
+        736,
+        711
+      ],
+      "bbox": [
+        73,
+        125,
+        788,
+        680
+      ],
+      "col": "left",
+      "side_by_side": false,
+      "full_width": false
+    },
+    {
+      "number": "10.8",
+      "page": 461,
+      "pdf_page": 9,
+      "image": "assets/fig/cap10/fig-10-8.webp",
+      "width": 1410,
+      "height": 638,
+      "caption_bbox": [
+        109,
+        1958,
+        1528,
+        1990
+      ],
+      "bbox": [
+        100,
+        1360,
+        1510,
+        1998
+      ],
+      "col": "full",
+      "side_by_side": false,
+      "full_width": true
+    },
+    {
+      "number": "10.10",
+      "page": 463,
+      "pdf_page": 11,
+      "image": "assets/fig/cap10/fig-10-10.webp",
+      "width": 703,
+      "height": 960,
+      "caption_bbox": [
+        108,
+        1083,
+        717,
+        1116
+      ],
+      "bbox": [
+        92,
+        118,
+        795,
+        1078
+      ],
+      "col": "left",
+      "side_by_side": false,
+      "full_width": false
+    },
+    {
+      "number": "10.16",
+      "page": 468,
+      "pdf_page": 16,
+      "image": "assets/fig/cap10/fig-10-16.webp",
+      "width": 1474,
+      "height": 1060,
+      "caption_bbox": [
+        97,
+        1178,
+        1498,
+        1211
+      ],
+      "bbox": [
+        81,
+        112,
+        1555,
+        1172
+      ],
+      "col": "full",
+      "side_by_side": false,
+      "full_width": true
+    },
+    {
+      "number": "10.23",
+      "page": 478,
+      "pdf_page": 26,
+      "image": "assets/fig/cap10/fig-10-23.webp",
+      "width": 703,
+      "height": 603,
+      "caption_bbox": [
+        88,
+        1997,
+        768,
+        2025
+      ],
+      "bbox": [
+        73,
+        1388,
+        776,
+        1991
+      ],
+      "col": "left",
+      "side_by_side": false,
+      "full_width": false
+    },
+    {
+      "number": "10.27",
+      "page": 482,
+      "pdf_page": 30,
+      "image": "assets/fig/cap10/fig-10-27.webp",
+      "width": 1474,
+      "height": 633,
+      "caption_bbox": [
+        89,
+        1989,
+        1438,
+        2020
+      ],
+      "bbox": [
+        81,
+        1351,
+        1555,
+        1984
+      ],
+      "col": "full",
+      "side_by_side": false,
+      "full_width": true
+    }
+  ]
+}

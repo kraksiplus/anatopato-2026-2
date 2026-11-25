@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
     <h1>Capítulo 15. Pulmón</h1>
-    <p class="lede">Guía 05 de 08. Resumen completo del capítulo 15 con 257 citas por página y 51 filas de tabla.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>05 de 08</strong></div><div><span>Capítulo</span><strong>15</strong></div><div><span>Páginas</span><strong>673-730</strong></div><div><span>Citas</span><strong>257</strong></div><div><span>Tablas</span><strong>51</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 05 de 08. Resumen completo del capítulo 15 con 257 citas por página y 51 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>05 de 08</strong></div><div><span>Capítulo</span><strong>15</strong></div><div><span>Páginas</span><strong>673-730</strong></div><div><span>Citas</span><strong>257</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>51</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -487,6 +543,7 @@
         <li><a href="#sec-19-trasplante-de-pulmon">Trasplante de pulmón</a></li>
         <li><a href="#sec-20-tumores">Tumores</a></li>
         <li><a href="#sec-21-pleura">Pleura</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C2">Índice C2</a>
@@ -580,11 +637,29 @@
 <li>La lesión no es uniforme: hay áreas rígidas mal aireadas pero perfundidas → desequilibrio ventilación-perfusión que agrava hipoxemia y cianosis <span class="cite">p. 677</span>.</li>
 <li>Más frecuente y de peor pronóstico en <strong>alcohólicos crónicos y fumadores</strong>; variantes genéticas de genes de inflamación y coagulación aumentan el riesgo <span class="cite">p. 677</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-3">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-3.webp" data-caption="Figura 15.3. Alvéolo normal comparado con el alvéolo en la fase temprana de la lesión pulmonar aguda y del SDRA, con los mediadores implicados (ERO, IL-1, TNF)." data-alt="Figura 15.3. Alvéolo normal comparado con el alvéolo en la fase temprana de la lesión pulmonar aguda y del SDRA, con los mediadores implicados (ERO, IL-1, TNF). Robbins y Cotran, 10ª ed., p. 677.">
+    <img src="../assets/fig/cap15/fig-15-3.webp" width="1454" height="1026" loading="lazy" decoding="async" alt="Figura 15.3. Alvéolo normal comparado con el alvéolo en la fase temprana de la lesión pulmonar aguda y del SDRA, con los mediadores implicados (ERO, IL-1, TNF). Robbins y Cotran, 10ª ed., p. 677.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.3.</strong> Alvéolo normal comparado con el alvéolo en la fase temprana de la lesión pulmonar aguda y del SDRA, con los mediadores implicados (ERO, IL-1, TNF).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 677. <a href="../creditos.html#fig-15-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="morfología">Morfología</h3>
 <ul>
 <li><strong>Fase exudativa aguda</strong>: pulmones densos, firmes, rojos y empastados; congestión, edema, inflamación, fibrina y DAD; <strong>membranas hialinas céreas</strong> de fibrina y restos epiteliales necróticos tapizando los alvéolos (morfología similar a la de la enfermedad de membrana hialina del recién nacido) <span class="cite">p. 677</span>.</li>
 <li><strong>Fase proliferativa u organizada</strong>: proliferación de neumocitos de tipo II y tejido de granulación; puede resolverse con deterioro mínimo o evolucionar a fibrosis cicatricial de los tabiques (fase fibrótica tardía) <span class="cite">p. 677</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-4">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-4.webp" data-caption="Figura 15.4. Daño alveolar difuso en el SDRA: alvéolos colapsados y distendidos, muchos tapizados por membranas hialinas (flechas)." data-alt="Figura 15.4. Daño alveolar difuso en el SDRA: alvéolos colapsados y distendidos, muchos tapizados por membranas hialinas (flechas). Robbins y Cotran, 10ª ed., p. 677.">
+    <img src="../assets/fig/cap15/fig-15-4.webp" width="757" height="469" loading="lazy" decoding="async" alt="Figura 15.4. Daño alveolar difuso en el SDRA: alvéolos colapsados y distendidos, muchos tapizados por membranas hialinas (flechas). Robbins y Cotran, 10ª ed., p. 677.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.4.</strong> Daño alveolar difuso en el SDRA: alvéolos colapsados y distendidos, muchos tapizados por membranas hialinas (flechas).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 677. <a href="../creditos.html#fig-15-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="clínica">Clínica</h3>
 <p>Disnea y taquipnea intensas, hipoxemia resistente a oxigenoterapia, cianosis, infiltrados bilaterales difusos y pulmones rígidos que exigen presiones ventilatorias elevadas <span class="cite">p. 678</span>. En un estudio de 2016 en UCI de 50 países: incidencia de SDRA del 10,4%, con mortalidad del 35% (leve), 40% (moderado) y 46% (grave); la mayoría de las muertes se atribuye a sepsis, fallo multiorgánico o lesión pulmonar grave <span class="cite">p. 678</span>. No hay tratamiento específico demostrado; la mayoría de los supervivientes recupera la función pulmonar, pero una minoría queda con fibrosis intersticial <span class="cite">p. 678</span>.</p>
 
@@ -696,6 +771,15 @@
 <li>Mecánica: la pérdida de tejido elástico reduce la <strong>tracción radial</strong> sobre los bronquiolos respiratorios, que colapsan en la espiración → obstrucción funcional sin obstrucción mecánica <span class="cite">p. 681</span>.</li>
 <li>Otras variantes genéticas: receptor nicotínico de acetilcolina (influye en la adicción y también en el riesgo de cáncer de pulmón) <span class="cite">p. 681</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-8">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-8.webp" data-caption="Figura 15.8. Patogenia del enfisema: lesión por humo, desequilibrio proteasa-antiproteasa, estrés oxidativo e infección que conducen a la destrucción alveolar." data-alt="Figura 15.8. Patogenia del enfisema: lesión por humo, desequilibrio proteasa-antiproteasa, estrés oxidativo e infección que conducen a la destrucción alveolar. Robbins y Cotran, 10ª ed., p. 680.">
+    <img src="../assets/fig/cap15/fig-15-8.webp" width="710" height="508" loading="lazy" decoding="async" alt="Figura 15.8. Patogenia del enfisema: lesión por humo, desequilibrio proteasa-antiproteasa, estrés oxidativo e infección que conducen a la destrucción alveolar. Robbins y Cotran, 10ª ed., p. 680.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.8.</strong> Patogenia del enfisema: lesión por humo, desequilibrio proteasa-antiproteasa, estrés oxidativo e infección que conducen a la destrucción alveolar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 680. <a href="../creditos.html#fig-15-8">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="morfología-1">Morfología</h3>
 <p>Pulmones voluminosos que solapan el corazón; en la enfermedad tabáquica predominan los <strong>dos tercios superiores</strong>. Alvéolos grandes visibles en superficie de corte, tabiques finos con fibrosis centroacinar focal, pérdida de las inserciones alvéolo-vía aérea, y vasos capilares con <strong>células endoteliales flotantes o protruyentes en forma de palillo de tambor</strong>; con la enfermedad avanzada, <strong>bullas</strong> que comprimen bronquiolos y vasos <span class="cite">p. 681</span>.</p>
 <h3 id="otras-formas-de-enfisema">Otras formas de enfisema</h3>
@@ -833,6 +917,15 @@
 <li><strong>Morfología</strong>: pleura con aspecto <strong>en empedrado</strong>; fibrosis blanca y gomosa en <strong>lóbulos inferiores, subpleural y a lo largo de tabiques interlobulillares</strong>. Fibrosis intersticial parcheada con <strong>focos fibroblásticos</strong> precoces junto a cicatrices antiguas, <strong>panal de abeja</strong> con espacios tapizados por neumocitos de tipo II hiperplásicos o epitelio bronquiolar; inflamación leve linfocitaria; puede superponerse DAD en las exacerbaciones agudas <span class="cite">p. 689-690</span>.</li>
 <li><strong>Clínica</strong>: inicio insidioso con disnea de esfuerzo y tos seca; mayoría entre <strong>55 y 75 años</strong>; hipoxemia, cianosis y dedos en palillos de tambor en fases avanzadas. <strong>Mediana de supervivencia de 3,8 años</strong>; el trasplante es el único tratamiento definitivo; un inhibidor de la tirosina cinasa y un antagonista del TGF-β ralentizan la progresión <span class="cite">p. 690</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-13">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-13.webp" data-caption="Figura 15.13. Mecanismos patogénicos propuestos de la fibrosis pulmonar idiopática: factores ambientales y genéticos con lesión epitelial persistente y activación de fibroblastos." data-alt="Figura 15.13. Mecanismos patogénicos propuestos de la fibrosis pulmonar idiopática: factores ambientales y genéticos con lesión epitelial persistente y activación de fibroblastos. Robbins y Cotran, 10ª ed., p. 689.">
+    <img src="../assets/fig/cap15/fig-15-13.webp" width="700" height="788" loading="lazy" decoding="async" alt="Figura 15.13. Mecanismos patogénicos propuestos de la fibrosis pulmonar idiopática: factores ambientales y genéticos con lesión epitelial persistente y activación de fibroblastos. Robbins y Cotran, 10ª ed., p. 689.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.13.</strong> Mecanismos patogénicos propuestos de la fibrosis pulmonar idiopática: factores ambientales y genéticos con lesión epitelial persistente y activación de fibroblastos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 689. <a href="../creditos.html#fig-15-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="neumonía-intersticial-inespecífica-nii">Neumonía intersticial inespecífica (NII)</h3>
 <p>Se diagnostica por su pronóstico; en la mayoría se asocia a enfermedad del tejido conjuntivo, pero puede ser idiopática <span class="cite">p. 690</span>. Patrones <strong>celular</strong> (inflamación intersticial linfocitaria y plasmocitaria, uniforme o parcheada) y <strong>fibrosante</strong> (lesiones todas del mismo estadio, a diferencia de la NIH); <strong>sin focos fibroblásticos, panal de abeja, membranas hialinas ni granulomas</strong>. Mujeres no fumadoras en su sexta década; opacidades reticulares bilaterales simétricas en bases; el patrón celular tiene mejor pronóstico <span class="cite">p. 690</span>.</p>
 <h3 id="neumonía-en-organización-criptógena-noc">Neumonía en organización criptógena (NOC)</h3>
@@ -904,6 +997,15 @@
 <li><strong>Morfología</strong>: <strong>asbestosis</strong> = fibrosis intersticial difusa con <strong>cuerpos de amianto</strong> (bastones fusiformes o arrosariados marrón dorado con centro translúcido: fibras recubiertas de material proteico con hierro de la ferritina fagocitaria; otras partículas hierro-proteína se llaman <strong>cuerpos ferruginosos</strong>). Empieza alrededor de bronquiolos respiratorios y conductos alveolares, <strong>comienza en lóbulos inferiores y subpleurales</strong> (a diferencia del carbón y la sílice, que afectan zonas superiores) y evoluciona a panal de abeja; puede estrechar arterias → hipertensión pulmonar y corazón pulmonar. <strong>Placas pleurales</strong>: la manifestación más frecuente de la exposición; placas bien delimitadas de colágeno denso a menudo calcificado, en pleura parietal anterior y posterolateral y cúpulas diafragmáticas; <strong>su tamaño y número no se correlacionan con el nivel de exposición</strong> <span class="cite">p. 695</span>.</li>
 <li><strong>Clínica</strong>: rara vez antes de 10 años de la primera exposición, más frecuente a los 20-30 años; disnea progresiva; radiografía con densidades lineales irregulares en <strong>lóbulos inferiores</strong> y panal de abeja avanzado; placas pleurales asintomáticas <span class="cite">p. 695</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-20">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-20.webp" data-caption="Figura 15.20. Cuerpo de amianto a gran aumento, con el aspecto arrosariado típico y los extremos con protuberancias (flecha)." data-alt="Figura 15.20. Cuerpo de amianto a gran aumento, con el aspecto arrosariado típico y los extremos con protuberancias (flecha). Robbins y Cotran, 10ª ed., p. 695.">
+    <img src="../assets/fig/cap15/fig-15-20.webp" width="700" height="490" loading="lazy" decoding="async" alt="Figura 15.20. Cuerpo de amianto a gran aumento, con el aspecto arrosariado típico y los extremos con protuberancias (flecha). Robbins y Cotran, 10ª ed., p. 695.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.20.</strong> Cuerpo de amianto a gran aumento, con el aspecto arrosariado típico y los extremos con protuberancias (flecha).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 695. <a href="../creditos.html#fig-15-20">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-14-complicaciones-de-los-tratamientos" class="card">
 <div class="section-kicker"><span class="n">14</span> pp. 696</div>
@@ -983,6 +1085,15 @@
 <li><strong>Morfología</strong>: hipertrofia de la media de las arterias pulmonares e <strong>hipertrofia ventricular derecha</strong>; trombos organizados/recanalizados apuntan a embolias de repetición; fibrosis difusa o enfisema indican hipoxia crónica. Lesión característica de arteriolas y arterias pequeñas (40-300 µm): hipertrofia de la media y fibrosis de la íntima; en los casos graves, <strong>lesión plexiforme</strong> (penacho capilar que llena la luz de arterias dilatadas de pared fina), prominente en la hipertensión idiopática y familiar, en cardiopatía congénita con derivación izquierda-derecha y en la asociada a VIH y fármacos <span class="cite">p. 703</span>.</li>
 <li><strong>Clínica</strong>: formas idiopáticas más frecuentes en <strong>mujeres de 20 a 40 años</strong>; síntomas solo en enfermedad avanzada: disnea y cansancio, a veces dolor anginoso; luego disnea grave, cianosis e hipertrofia ventricular derecha, con <strong>muerte por corazón pulmonar descompensado en 2-5 años en el 80%</strong> de los pacientes. Tratamiento: dirigir la causa; vasodilatadores en el grupo 1; trasplante pulmonar definitivo <span class="cite">p. 703</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-29">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-29.webp" data-caption="Figura 15.29. Patogenia de la hipertensión arterial pulmonar idiopática, con el papel de las mutaciones de BMPR2 y los desencadenantes ambientales." data-alt="Figura 15.29. Patogenia de la hipertensión arterial pulmonar idiopática, con el papel de las mutaciones de BMPR2 y los desencadenantes ambientales. Robbins y Cotran, 10ª ed., p. 703.">
+    <img src="../assets/fig/cap15/fig-15-29.webp" width="726" height="684" loading="lazy" decoding="async" alt="Figura 15.29. Patogenia de la hipertensión arterial pulmonar idiopática, con el papel de las mutaciones de BMPR2 y los desencadenantes ambientales. Robbins y Cotran, 10ª ed., p. 703.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.29.</strong> Patogenia de la hipertensión arterial pulmonar idiopática, con el papel de las mutaciones de BMPR2 y los desencadenantes ambientales.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 703. <a href="../creditos.html#fig-15-29">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="síndromes-de-hemorragia-pulmonar-difusa">Síndromes de hemorragia pulmonar difusa</h3>
 <p>Incluyen <strong>síndrome de Goodpasture</strong>, <strong>hemosiderosis pulmonar idiopática</strong> y <strong>hemorragia asociada a vasculitis</strong> (vasculitis por hipersensibilidad, granulomatosis con poliangitis, LES). Histología: hemorragia intraalveolar aguda y <strong>macrófagos cargados de hemosiderina</strong> (azul de Prusia positivo) <span class="cite">p. 703-704</span>.</p>
 <h4 id="hemosiderosis-pulmonar-idiopática">Hemosiderosis pulmonar idiopática</h4>
@@ -1055,6 +1166,15 @@
 </ul>
 <h3 id="morfología-de-la-neumonía-bacteriana">Morfología de la neumonía bacteriana</h3>
 <p>Dos patrones: <strong>bronconeumonia (lobulillar)</strong> con consolidación parcheada y <strong>neumonía lobular</strong> con consolidación de un lóbulo; los patrones se superponen y el mismo microorganismo puede producir ambos <span class="cite">p. 707</span>. En la neumonía lobular se describen clásicamente <strong>cuatro estadios</strong>: (1) <strong>congestión</strong> (pulmón pesado, pastoso, rojo; exudado con escasos neutrófilos y bacterias); (2) <strong>hepatización roja</strong> (exudado masivo confluente de neutrófilos, eritrocitos y fibrina; lóbulo rojo, firme, sin aire, de consistencia hepática); (3) <strong>hepatización gris</strong> (desintegración progresiva de eritrocitos con exudado fibrinoso supurativo, color gris-pardo), y (4) <strong>resolución</strong> (exudado degradado y reabsorbido, ingerido por macrófagos, expectorado u organizado por fibroblastos) <span class="cite">p. 708</span>. La bronconeumonia es multilobular, bilateral y <strong>basal</strong> por descenso por gravedad de las secreciones <span class="cite">p. 708</span>.</p>
+<figure class="fig" id="fig-15-32">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-32.webp" data-caption="Figura 15.32. Comparación entre bronconeumonia (consolidación parcheada) y neumonía lobular (consolidación de un lóbulo completo)." data-alt="Figura 15.32. Comparación entre bronconeumonia (consolidación parcheada) y neumonía lobular (consolidación de un lóbulo completo). Robbins y Cotran, 10ª ed., p. 707.">
+    <img src="../assets/fig/cap15/fig-15-32.webp" width="755" height="570" loading="lazy" decoding="async" alt="Figura 15.32. Comparación entre bronconeumonia (consolidación parcheada) y neumonía lobular (consolidación de un lóbulo completo). Robbins y Cotran, 10ª ed., p. 707.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.32.</strong> Comparación entre bronconeumonia (consolidación parcheada) y neumonía lobular (consolidación de un lóbulo completo).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 707. <a href="../creditos.html#fig-15-32">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p><strong>Complicaciones</strong>: absceso pulmonar (particularmente con neumococo y <em>Klebsiella</em>), <strong>empiema</strong> (diseminación a la cavidad pleural) y diseminación bacteriémica con abscesos, endocarditis, meningitis o artritis supurativa <span class="cite">p. 708-709</span>. Clínica: fiebre de inicio brusco, escalofríos con temblores y tos con esputo mucopurulento, a veces hemoptisis; dolor pleurítico con roce; con antibióticos, mejoría en <strong>48-72 h</strong>. Mueren &lt;<strong>10%</strong> de los hospitalizados, casi siempre por complicaciones o alcoholismo crónico <span class="cite">p. 709</span>.</p>
 <h3 id="neumonía-vírica-extrahospitalaria">Neumonía vírica extrahospitalaria</h3>
 <p>Virus más frecuentes: gripe A y B, VSR, metapneumovirus humano, adenovirus, rinovirus, rubéola y varicela; favorecen la diseminación las edades extremas, la malnutrición, el alcoholismo y las enfermedades debilitantes; el daño mucociliar predispone a <strong>sobreinfecciones bacterianas, a menudo más graves que la infección vírica</strong> <span class="cite">p. 709</span>.</p>
@@ -1172,6 +1292,15 @@
 <li><strong>Carcinoma de células pequeñas</strong>: muy agresivo, casi siempre tabáquico (<strong>solo 1% en no fumadores</strong>); sin fase preinvasiva conocida; metástasis extensas y desenlace letal prácticamente en todos los casos. Células pequeñas (&lt;3 veces el diámetro de un linfocito, ~25 µm), citoplasma escaso, <strong>amoldamiento nuclear</strong>, alta actividad mitótica y necrosis extensa; <strong>efecto de Azzopardi</strong> (tinción basófila de paredes vasculares por ADN de células necróticas). Diferenciación neuroendocrina (gránulos densos de ~100 nm; cromogranina, sinaptofisina, CD56). Inactivación casi universal de <strong><em>TP53</em> y <em>RB</em></strong>, pérdida del 3p y amplificación de <em><strong>MYC</strong></em> <span class="cite">p. 718-719</span>.</li>
 <li><strong>Carcinoma de células grandes</strong>: diagnóstico <strong>de exclusión</strong>; sin expresión de TTF-1 ni napsina A (adenocarcinoma) ni p40/p63 (epidermoide); variante neuroendocrina de células grandes con biología similar al microcítico pero células mayores <span class="cite">p. 719</span>.</li>
 </ul>
+<figure class="fig" id="fig-15-43">
+  <a class="fig-open" href="../assets/fig/cap15/fig-15-43.webp" data-caption="Figura 15.43. Variantes histológicas del carcinoma de pulmón: adenocarcinoma con formación de glándulas (con TTF-1), carcinoma epidermoide con queratinización y otros patrones." data-alt="Figura 15.43. Variantes histológicas del carcinoma de pulmón: adenocarcinoma con formación de glándulas (con TTF-1), carcinoma epidermoide con queratinización y otros patrones. Robbins y Cotran, 10ª ed., p. 719.">
+    <img src="../assets/fig/cap15/fig-15-43.webp" width="1457" height="999" loading="lazy" decoding="async" alt="Figura 15.43. Variantes histológicas del carcinoma de pulmón: adenocarcinoma con formación de glándulas (con TTF-1), carcinoma epidermoide con queratinización y otros patrones. Robbins y Cotran, 10ª ed., p. 719.">
+  </a>
+  <figcaption>
+    <strong>Figura 15.43.</strong> Variantes histológicas del carcinoma de pulmón: adenocarcinoma con formación de glándulas (con TTF-1), carcinoma epidermoide con queratinización y otros patrones.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 719. <a href="../creditos.html#fig-15-43">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="genética-por-subtipo">Genética por subtipo</h3>
 <ul>
 <li><strong>Adenocarcinoma</strong>: ~1/3 con mutaciones activadoras de vías de factores de crecimiento: <em><strong>EGFR</strong></em> (10-15% en blancos, mayor en mujeres asiáticas no fumadoras), <em><strong>ALK</strong></em> (3-5%), <em><strong>ROS1</strong></em> (1%), <em><strong>MET</strong></em> (2-5%), <em><strong>RET</strong></em> (1-2%), <em><strong>BRAF</strong></em> (2%), <em><strong>PI3K</strong></em> (2%) y <em><strong>KRAS</strong></em> (~30%). Todas dianas o pronósticas <span class="cite">p. 717</span>.</li>
@@ -1236,6 +1365,11 @@
 <li><strong>Clínica</strong>: dolor torácico, disnea y <strong>derrames pleurales de repetición</strong>; solo el <strong>20%</strong> tiene asbestosis pulmonar concurrente; metástasis a ganglios hiliares, hígado y otros órganos. <strong>El 50% de los pacientes muere en los 12 meses siguientes al diagnóstico y pocos sobreviven más de 2 años</strong>. Los mesoteliomas peritoneales (relacionados con exposición intensa en el 60% de los hombres) mueren por obstrucción intestinal o inanición <span class="cite">p. 727</span>.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-15-3" aria-label="Figura 15.3"><img src="../assets/fig/cap15/fig-15-3.webp" loading="lazy" decoding="async" alt="Figura 15.3"><span>Figura 15.3</span></a><a class="fig-thumb" href="#fig-15-4" aria-label="Figura 15.4"><img src="../assets/fig/cap15/fig-15-4.webp" loading="lazy" decoding="async" alt="Figura 15.4"><span>Figura 15.4</span></a><a class="fig-thumb" href="#fig-15-8" aria-label="Figura 15.8"><img src="../assets/fig/cap15/fig-15-8.webp" loading="lazy" decoding="async" alt="Figura 15.8"><span>Figura 15.8</span></a><a class="fig-thumb" href="#fig-15-13" aria-label="Figura 15.13"><img src="../assets/fig/cap15/fig-15-13.webp" loading="lazy" decoding="async" alt="Figura 15.13"><span>Figura 15.13</span></a><a class="fig-thumb" href="#fig-15-20" aria-label="Figura 15.20"><img src="../assets/fig/cap15/fig-15-20.webp" loading="lazy" decoding="async" alt="Figura 15.20"><span>Figura 15.20</span></a><a class="fig-thumb" href="#fig-15-29" aria-label="Figura 15.29"><img src="../assets/fig/cap15/fig-15-29.webp" loading="lazy" decoding="async" alt="Figura 15.29"><span>Figura 15.29</span></a><a class="fig-thumb" href="#fig-15-32" aria-label="Figura 15.32"><img src="../assets/fig/cap15/fig-15-32.webp" loading="lazy" decoding="async" alt="Figura 15.32"><span>Figura 15.32</span></a><a class="fig-thumb" href="#fig-15-43" aria-label="Figura 15.43"><img src="../assets/fig/cap15/fig-15-43.webp" loading="lazy" decoding="async" alt="Figura 15.43"><span>Figura 15.43</span></a></div>
 </section>
   </main>
 </div>
@@ -1243,7 +1377,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1261,8 +1402,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1282,6 +1423,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

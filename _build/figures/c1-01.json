@@ -1,0 +1,103 @@
+{
+  "chapter": 1,
+  "page_id": "c1-01",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "1.1",
+      "page": 2,
+      "caption": "Organización del ADN nuclear: eucromatina dispersa y transcripcionalmente activa, y heterocromatina compacta e inactiva, observables al microscopio óptico.",
+      "section": "Organización de las histonas y epigenoma",
+      "after_text": "El grado de apertura o cierre de la cromatina se regula",
+      "kind": "diagnostic",
+      "why": "Única imagen microscópica de eucromatina vs heterocromatina; base del control epigenético",
+      "image": "assets/fig/cap01/fig-1-1.webp",
+      "width": 1485,
+      "height": 595
+    },
+    {
+      "number": "1.2",
+      "page": 4,
+      "caption": "Organización de las histonas: nucleosomas con octámeros (H2A, H2B, H3, H4) rodeados por 1,8 vueltas de 147 pb de ADN, unidos por ADN de enlace con histona H1.",
+      "section": "Organización de las histonas y epigenoma",
+      "after_text": "son octámeros de histonas, con dos subunidades",
+      "kind": "mechanism",
+      "why": "Datos de nucleosoma (147 pb, 1,8 vueltas, H1) aparecen en Puntos de examen",
+      "image": "assets/fig/cap01/fig-1-2.webp",
+      "width": 1414,
+      "height": 962
+    },
+    {
+      "number": "1.3",
+      "page": 5,
+      "caption": "Generación de miARN y su modo de acción: PRI-miARN, pre-miARN en horquilla, corte por Dicer y silenciamiento génico vía el complejo RISC.",
+      "section": "Micro-ARN y ARN largo no codificante",
+      "after_text": "genera miARN maduros bicatenarios de",
+      "kind": "mechanism",
+      "why": "Vía completa de miARN citada en Ideas clave y Puntos de examen",
+      "image": "assets/fig/cap01/fig-1-3.webp",
+      "width": 678,
+      "height": 1480
+    },
+    {
+      "number": "1.5",
+      "page": 6,
+      "caption": "Edición génica con CRISPR y la nucleasa Cas9: el ARN guía de unas 20 bases dirige la Cas9 para escindir el ADN objetivo.",
+      "section": "Edición génica",
+      "after_text": "se unen a la Cas9; la Cas9 induce roturas",
+      "kind": "mechanism",
+      "why": "Mecanismo central de CRISPR-Cas9, destacado en Ideas clave y Puntos de examen",
+      "image": "assets/fig/cap01/fig-1-5.webp",
+      "width": 741,
+      "height": 1009
+    },
+    {
+      "number": "1.6",
+      "page": 7,
+      "caption": "Componentes subcelulares de la célula: número y volumen de los orgánulos de un hepatocito típico y sus relaciones espaciales.",
+      "section": "Mantenimiento celular: membrana plasmática y transporte",
+      "after_text": "Bicapa lipídica con fluidez lateral considerable",
+      "kind": "diagnostic",
+      "why": "Datos cuantitativos del hepatocito (citosol 54%, mitocondrias 22%, 1.700) en Puntos de examen",
+      "image": "assets/fig/cap01/fig-1-6.webp",
+      "width": 1476,
+      "height": 808
+    },
+    {
+      "number": "1.11",
+      "page": 16,
+      "caption": "Funciones de las mitocondrias: generación de ATP, metabolismo intermediario y papel en la muerte celular por necrosis (poro de transición de permeabilidad) o apoptosis (liberación de citocromo C).",
+      "section": "Metabolismo celular y función mitocondrial",
+      "after_text": "la célula no puede generar ATP y muere por",
+      "kind": "mechanism",
+      "why": "Decisión necrosis vs apoptosis mitocondrial, citada en Ideas clave y Puntos de examen",
+      "image": "assets/fig/cap01/fig-1-11.webp",
+      "width": 1474,
+      "height": 782
+    },
+    {
+      "number": "1.19",
+      "page": 27,
+      "caption": "Regulación del ciclo celular por ciclinas, CDK e inhibidores de CDK: complejos ciclina-CDK activos en cada fase del ciclo.",
+      "section": "Mantenimiento de las poblaciones celulares: proliferación y ciclo celular",
+      "after_text": "La progresión clave hacia S depende de la fosforilación",
+      "kind": "mechanism",
+      "why": "Tabla ciclina-CDK por fase es contenido directo de Puntos de examen",
+      "image": "assets/fig/cap01/fig-1-19.webp",
+      "width": 1453,
+      "height": 1056
+    },
+    {
+      "number": "1.22",
+      "page": 29,
+      "caption": "Nichos de células madre en varios tejidos: células madre cutáneas en el folículo piloso y la capa basal, y células madre de la base de las criptas del intestino delgado.",
+      "section": "Células madre",
+      "after_text": "El ejemplo fisiológico más claro es el epitelio de la piel",
+      "kind": "diagnostic",
+      "why": "Localización anatómica de nichos de células madre; apoya el ejemplo fisiológico de la piel",
+      "image": "assets/fig/cap01/fig-1-22.webp",
+      "width": 1454,
+      "height": 524
+    }
+  ]
+}

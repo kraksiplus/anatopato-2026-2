@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 7. Neoplasias</h1>
-    <p class="lede">Guía 07 de 10. Resumen completo del capítulo 7 con 84 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>07 de 10</strong></div><div><span>Capítulo</span><strong>7</strong></div><div><span>Páginas</span><strong>267-338</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>84</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 07 de 10. Resumen completo del capítulo 7 con 84 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>07 de 10</strong></div><div><span>Capítulo</span><strong>7</strong></div><div><span>Páginas</span><strong>267-338</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>84</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -487,6 +543,7 @@
         <li><a href="#sec-19-carcinogenia-por-radiacion">Carcinogenia por radiación</a></li>
         <li><a href="#sec-20-carcinogenia-microbiana-virus-oncogenos">Carcinogenia microbiana: virus oncógenos</a></li>
         <li><a href="#sec-21-aspectos-clinicos-de-las-neoplasias">Aspectos clínicos de las neoplasias</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -586,7 +643,16 @@
 <li><strong>Mitosis</strong>: los tumores indiferenciados contienen muchas mitosis (alta tasa proliferativa). La presencia de mitosis no equivale a malignidad (epitelio intestinal en recambio rápido, hiperplasias). Más importantes son las figuras mitóticas anómalas y atípicas.</li>
 <li><strong>Pérdida de polaridad</strong>: orientación anormal entre las células anaplásicas y respecto de estructuras de soporte como las membranas basales; crecimiento desorganizado en capas o masas.</li>
 <li>Otros: estroma vascular a menudo insuficiente; muchos tumores malignos de crecimiento rápido desarrollan áreas de <strong>necrosis isquémica</strong>.</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-7-9">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-9.webp" data-caption="Figura 7.9. Rabdomiosarcoma (tumor pleomorfo del músculo esquelético): marcado pleomorfismo celular y nuclear, núcleos hipercromáticos y células gigantes tumorales." data-alt="Figura 7.9. Rabdomiosarcoma (tumor pleomorfo del músculo esquelético): marcado pleomorfismo celular y nuclear, núcleos hipercromáticos y células gigantes tumorales. Robbins y Cotran, 10ª ed., p. 272.">
+    <img src="../assets/fig/cap07/fig-7-9.webp" width="701" height="460" loading="lazy" decoding="async" alt="Figura 7.9. Rabdomiosarcoma (tumor pleomorfo del músculo esquelético): marcado pleomorfismo celular y nuclear, núcleos hipercromáticos y células gigantes tumorales. Robbins y Cotran, 10ª ed., p. 272.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.9.</strong> Rabdomiosarcoma (tumor pleomorfo del músculo esquelético): marcado pleomorfismo celular y nuclear, núcleos hipercromáticos y células gigantes tumorales.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 272. <a href="../creditos.html#fig-7-9">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li>Función: los tumores bien diferenciados suelen conservar funciones normales (tumores endocrinos que secretan hormonas detectables en sangre; carcinoma epidermoide que sintetiza queratina; carcinoma hepatocelular que sintetiza bilis). Los tumores anaplásicos suelen perder las funciones del tejido de origen, pero a veces adquieren funciones nuevas: algunos carcinomas broncógenos sintetizan corticotropina, hormona paratiroidea, insulina o glucagón, dando lugar a síndromes paraneoplásicos.</li>
 </ul>
 <h3 id="metaplasia-displasia-y-carcinoma-in-situ">Metaplasia, displasia y carcinoma in situ</h3>
@@ -596,6 +662,15 @@
 <li><strong>Carcinoma in situ</strong>: cuando la displasia es grave y afecta a todo el espesor del epitelio sin atravesar la membrana basal. Se observa en piel, mama, vejiga y cérvix. Presenta todas las características citológicas de malignidad y, sin tratamiento, tiene alta probabilidad de progresión a tumor invasivo; puede persistir años antes de infiltrar.</li>
 <li>La displasia es reversible si se elimina la causa desencadenante (al menos las moderadas); no siempre progresa. Algunas mutaciones tumorales pueden estar presentes en displasias leves. En un campo con epitelio metaplásico, no todo el epitelio metaplásico es displásico.</li>
 </ul>
+<figure class="fig" id="fig-7-10">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-10.webp" data-caption="Figura 7.10. Carcinoma in situ: el epitelio está completamente reemplazado por células displásicas atípicas, sin maduración ordenada, con membrana basal intacta y estroma libre de tumor." data-alt="Figura 7.10. Carcinoma in situ: el epitelio está completamente reemplazado por células displásicas atípicas, sin maduración ordenada, con membrana basal intacta y estroma libre de tumor. Robbins y Cotran, 10ª ed., p. 273.">
+    <img src="../assets/fig/cap07/fig-7-10.webp" width="1462" height="483" loading="lazy" decoding="async" alt="Figura 7.10. Carcinoma in situ: el epitelio está completamente reemplazado por células displásicas atípicas, sin maduración ordenada, con membrana basal intacta y estroma libre de tumor. Robbins y Cotran, 10ª ed., p. 273.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.10.</strong> Carcinoma in situ: el epitelio está completamente reemplazado por células displásicas atípicas, sin maduración ordenada, con membrana basal intacta y estroma libre de tumor.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 273. <a href="../creditos.html#fig-7-10">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="invasión-local">Invasión local</h3>
 <ul>
 <li>Los tumores benignos, que crecen y se expanden lentamente, desarrollan una <strong>cápsula</strong> de tejido fibroso: matriz extracelular (MEC) depositada por células del estroma como fibroblastos, activados por el daño hipóxico de la presión del tumor en expansión. Crea un plano tisular que hace el tumor palpable, móvil y fácilmente extirpable por enucleación. Excepción: los <strong>hemangiomas</strong> a menudo no están encapsulados, infiltran el sitio (dermis, hígado) y pueden ser irresecables si son extensos.</li>
@@ -610,6 +685,15 @@
 <li>Aproximadamente el 30% de los tumores sólidos (excluidos los cutáneos no melanomatosos) se presentan como enfermedad metastásica. La probabilidad de metástasis se correlaciona con la falta de diferenciación, la invasión agresiva, el crecimiento rápido y el gran tamaño, con innumerables excepciones.</li>
 <li>La diseminación metastásica reduce notablemente la posibilidad de curación; además, muchos tumores ya se han diseminado en el momento del diagnóstico inicial.</li>
 </ul>
+<figure class="fig" id="fig-7-15">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-15.webp" data-caption="Figura 7.15. Metástasis: hígado salpicado de nódulos metastásicos y nódulo pulmonar de un adenocarcinoma de colon." data-alt="Figura 7.15. Metástasis: hígado salpicado de nódulos metastásicos y nódulo pulmonar de un adenocarcinoma de colon. Robbins y Cotran, 10ª ed., p. 275.">
+    <img src="../assets/fig/cap07/fig-7-15.webp" width="1449" height="543" loading="lazy" decoding="async" alt="Figura 7.15. Metástasis: hígado salpicado de nódulos metastásicos y nódulo pulmonar de un adenocarcinoma de colon. Robbins y Cotran, 10ª ed., p. 275.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.15.</strong> Metástasis: hígado salpicado de nódulos metastásicos y nódulo pulmonar de un adenocarcinoma de colon.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 275. <a href="../creditos.html#fig-7-15">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="vías-de-propagación">Vías de propagación</h3>
 <p>Las tres vías: siembra directa en cavidades o superficies corporales, diseminación linfática y diseminación hematógena. La diseminación yatrógena por instrumental quirúrgico es poco común (por eso nunca se biopsian masas testiculares).</p>
 <ol type="1">
@@ -723,6 +807,15 @@
 <li>La señalización fisiológica por factores de crecimiento sigue estos pasos: unión del factor a su receptor específico; activación transitoria del receptor; transmisión de la señal por transductores citoplásmicos y segundos mensajeros; activación de factores de transcripción y cambios epigenéticos; expresión de genes del ciclo celular y de genes de supervivencia y de cambios metabólicos.</li>
 <li>Vías de señalización implicadas en tumores: receptor tirosina cinasa, receptor acoplado a proteína G, JAK/STAT, WNT, Notch, Hedgehog, TGF-β/SMAD y NF-κB.</li>
 </ul>
+<figure class="fig" id="fig-7-22">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-22.webp" data-caption="Figura 7.22. Vías de señalización por factores de crecimiento en tumores malignos: receptores tirosina cinasa, RAS, PI3K, MYC y ciclina D como oncoproteinas activadas por mutaciones." data-alt="Figura 7.22. Vías de señalización por factores de crecimiento en tumores malignos: receptores tirosina cinasa, RAS, PI3K, MYC y ciclina D como oncoproteinas activadas por mutaciones. Robbins y Cotran, 10ª ed., p. 287.">
+    <img src="../assets/fig/cap07/fig-7-22.webp" width="726" height="1045" loading="lazy" decoding="async" alt="Figura 7.22. Vías de señalización por factores de crecimiento en tumores malignos: receptores tirosina cinasa, RAS, PI3K, MYC y ciclina D como oncoproteinas activadas por mutaciones. Robbins y Cotran, 10ª ed., p. 287.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.22.</strong> Vías de señalización por factores de crecimiento en tumores malignos: receptores tirosina cinasa, RAS, PI3K, MYC y ciclina D como oncoproteinas activadas por mutaciones.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 287. <a href="../creditos.html#fig-7-22">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="oncoproteinas-y-crecimiento-celular">Oncoproteinas y crecimiento celular</h3>
 <ul>
 <li><strong>Factores de crecimiento</strong>: acción normalmente <strong>paracrina</strong>. Algunas células tumorales sintetizan el factor al que responden (<strong>bucle autocrino</strong>): los glioblastomas expresan frecuentemente PDGF y su receptor PDGFR, y muchos sarcomas sobreexpresan TGF y su receptor (el receptor del factor de crecimiento epidérmico, EGFR).</li>
@@ -763,11 +856,29 @@
 <li>Los productos de estos genes frenan la proliferación celular; su fallo es otra de las bases de la carcinogenia. Participan en la red que responde al estrés genotóxico y también en la regulación de la diferenciación, y pueden actuar como factores de transcripción, inhibidores del ciclo, transductores de señal, receptores de superficie y reguladores de la respuesta al daño del ADN (tabla 7.7). Los conceptos surgieron del estudio del <strong>retinoblastoma</strong>: cerca del 40% de los retinoblastomas son <strong>familiares</strong> (transmisión como rasgo autosómico dominante; riesgo 10.000 veces mayor, a menudo bilateral, con mayor riesgo de osteosarcoma y otros sarcomas); el 60% restante es <strong>esporádico</strong> (casi siempre unilateral).</li>
 <li><strong>Hipótesis del segundo golpe de Knudson</strong>: se necesitan dos mutaciones en ambos alelos de RB. En la forma familiar se hereda una copia defectuosa (primer golpe) y el alelo normal sufre una mutación somática (segundo golpe), prácticamente inevitable en algún retinoblasto; por eso la enfermedad se hereda como rasgo dominante. En los casos esporádicos ambos golpes deben ocurrir en la misma célula y por eso son poco frecuentes.</li>
 </ul>
+<figure class="fig" id="fig-7-25">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-25.webp" data-caption="Figura 7.25. Patogenia del retinoblastoma: dos mutaciones del locus RB (13q14) según el modelo de dos golpes de Knudson, en la forma esporádica y en la familiar." data-alt="Figura 7.25. Patogenia del retinoblastoma: dos mutaciones del locus RB (13q14) según el modelo de dos golpes de Knudson, en la forma esporádica y en la familiar. Robbins y Cotran, 10ª ed., p. 293.">
+    <img src="../assets/fig/cap07/fig-7-25.webp" width="1398" height="1112" loading="lazy" decoding="async" alt="Figura 7.25. Patogenia del retinoblastoma: dos mutaciones del locus RB (13q14) según el modelo de dos golpes de Knudson, en la forma esporádica y en la familiar. Robbins y Cotran, 10ª ed., p. 293.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.25.</strong> Patogenia del retinoblastoma: dos mutaciones del locus RB (13q14) según el modelo de dos golpes de Knudson, en la forma esporádica y en la familiar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 293. <a href="../creditos.html#fig-7-25">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="rb-gobernador-del-ciclo-celular">RB, gobernador del ciclo celular</h3>
 <ul>
 <li>RB es el regulador negativo clave de la transición G1/S y esta inactivado directa o indirectamente en la mayoría de los tumores malignos. En células en reposo se encuentra <strong>hipofosforilado (activo)</strong> y se une a los factores de transcripción <strong>E2F</strong> que regulan los genes de fase S; al fosforilarse por los complejos ciclina D-CDK4/CDK6 y ciclina E-CDK2 se <strong>hiperfosforila (inactivo)</strong> y libera E2F, permitiendo la progresión del ciclo. Los inhibidores del crecimiento (TGF-β, p53) actúan regular al alza los inhibidores de CDK y mantienen RB activo; RB es el punto de integración de las señales opuestas.</li>
 <li>El efecto antiproliferativo de RB se anula en los tumores por: mutaciones de RB con pérdida de función (retinoblastoma, osteosarcoma, y subconjuntos de glioblastoma y carcinomas de pulmón, mama y vejiga); amplificación de CDK4 y de ciclina D; inactivación de los inhibidores de CDK como p16/INK4a; y oncoproteinas virales que se unen a RB (antígenos T de poliomavirus; proteinas E7 de VPH de alto riesgo, como VPH-16). Al menos uno de los cuatro genes del eje (p16/INK4a, ciclina D, CDK4, RB) esta desregulado en la gran mayoría de los tumores humanos.</li>
 </ul>
+<figure class="fig" id="fig-7-26">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-26.webp" data-caption="Figura 7.26. Función de RB en el punto de control G1/S: el RB hipofosforilado bloquea a E2F; su fosforilación por complejos ciclina-CDK libera E2F y permite la progresión del ciclo." data-alt="Figura 7.26. Función de RB en el punto de control G1/S: el RB hipofosforilado bloquea a E2F; su fosforilación por complejos ciclina-CDK libera E2F y permite la progresión del ciclo. Robbins y Cotran, 10ª ed., p. 294.">
+    <img src="../assets/fig/cap07/fig-7-26.webp" width="720" height="1103" loading="lazy" decoding="async" alt="Figura 7.26. Función de RB en el punto de control G1/S: el RB hipofosforilado bloquea a E2F; su fosforilación por complejos ciclina-CDK libera E2F y permite la progresión del ciclo. Robbins y Cotran, 10ª ed., p. 294.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.26.</strong> Función de RB en el punto de control G1/S: el RB hipofosforilado bloquea a E2F; su fosforilación por complejos ciclina-CDK libera E2F y permite la progresión del ciclo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 294. <a href="../creditos.html#fig-7-26">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="tp53-guardián-del-genoma">TP53, guardián del genoma</h3>
 <ul>
 <li><strong>TP53</strong> (cromosoma 17p13.1), el gen mutado con más frecuencia en los tumores malignos humanos: mutaciones con pérdida de función de ambos alelos en más del 50% de los tumores, en prácticamente todos los tipos (pulmón, colon y mama son las tres causas principales de muerte por tumores). Con menos frecuencia se hereda una copia mutada: el <strong>síndrome de Li-Fraumeni</strong>, con una probabilidad 25 veces mayor de tumor maligno a los 50 años; sarcomas, cánceres de mama, leucemias, tumores cerebrales y carcinomas de la corteza suprarrenal, a menudo tempranos y múltiples.</li>
@@ -778,7 +889,16 @@
 <li><strong>Detención transitoria del ciclo celular</strong> en G1: por inducción del inhibidor de CDK <strong>p21</strong> (CDKN1A), que bloquea la progresión de G1 a S, y de proteínas como <strong>GADD45</strong> que mejoran la reparación del ADN. Si el daño se repara, p53 desciende y el ciclo se libera.</li>
 <li><strong>Senescencia</strong>: detención permanente del ciclo celular con cambios específicos; se atribuye a cambios epigenéticos que forman heterocromatina en los loci clave de la progresión del ciclo.</li>
 <li><strong>Apoptosis</strong>: transcripción de genes proapoptósicos como <strong>BAX</strong> y <strong>PUMA</strong>, que inclinan la balanza hacia la vía intrínseca (mitocondrial).</li>
-</ol></li>
+</ol>
+<figure class="fig" id="fig-7-27">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-27.webp" data-caption="Figura 7.27. Función de p53 en el mantenimiento de la integridad del genoma: ante daño del ADN o hipoxia induce detención en G1, reparación, senescencia o apoptosis." data-alt="Figura 7.27. Función de p53 en el mantenimiento de la integridad del genoma: ante daño del ADN o hipoxia induce detención en G1, reparación, senescencia o apoptosis. Robbins y Cotran, 10ª ed., p. 296.">
+    <img src="../assets/fig/cap07/fig-7-27.webp" width="1474" height="1208" loading="lazy" decoding="async" alt="Figura 7.27. Función de p53 en el mantenimiento de la integridad del genoma: ante daño del ADN o hipoxia induce detención en G1, reparación, senescencia o apoptosis. Robbins y Cotran, 10ª ed., p. 296.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.27.</strong> Función de p53 en el mantenimiento de la integridad del genoma: ante daño del ADN o hipoxia induce detención en G1, reparación, senescencia o apoptosis.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 296. <a href="../creditos.html#fig-7-27">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li>La vía final depende de la duración y el grado de la activación: la afinidad de p53 por los genes de reparación es mayor que la de los genes proapoptósicos, por lo que la reparación se activa primero; con p53 persistente se silencian epigenéticamente los genes del ciclo (senescencia); con suficiente acumulación se activan los genes proapoptósicos y la célula muere.</li>
 <li>Repercusión terapéutica: la radiación y la quimioterapia medían sus efectos induciendo daño del ADN y apoptosis, por lo que los tumores con TP53 de tipo silvestre (tumores testiculares germinativos, leucemias linfoblásticas agudas infantiles) responden mejor que los que portan mutaciones de TP53 (cáncer de pulmón, colorrectal). Con p53 defectuoso surge además un fenotipo mutador y subclones resistentes a cualquier tratamiento.</li>
 </ul>
@@ -1352,7 +1472,16 @@
 <li>Clasificar tumores malignos indiferenciados: la <strong>citoqueratina</strong> identifica los carcinomas, la <strong>desmina</strong> los sarcomas, y marcadores como <strong>CD3</strong> y <strong>CD20</strong> identifican los tumores hematopoyéticos.</li>
 <li>Determinar el origen de tumores metastáticos por marcadores específicos de órgano (<strong>PSA</strong> para la próstata; <strong>tiroglobulina</strong> para la tiroides).</li>
 <li>Detectar factores de pronóstico o <strong>dianas terapéuticas</strong> (receptores hormonales ER/PR en mama; <strong>HER2</strong>; <strong>ALK</strong> en carcinoma de pulmón).</li>
-</ul></li>
+</ul>
+<figure class="fig" id="fig-7-44">
+  <a class="fig-open" href="../assets/fig/cap07/fig-7-44.webp" data-caption="Figura 7.44. Citología cervicovaginal (Pap): comparación entre el frotis normal y el frotis con células malignas pleomorfas e hipercromáticas." data-alt="Figura 7.44. Citología cervicovaginal (Pap): comparación entre el frotis normal y el frotis con células malignas pleomorfas e hipercromáticas. Robbins y Cotran, 10ª ed., p. 332.">
+    <img src="../assets/fig/cap07/fig-7-44.webp" width="711" height="948" loading="lazy" decoding="async" alt="Figura 7.44. Citología cervicovaginal (Pap): comparación entre el frotis normal y el frotis con células malignas pleomorfas e hipercromáticas. Robbins y Cotran, 10ª ed., p. 332.">
+  </a>
+  <figcaption>
+    <strong>Figura 7.44.</strong> Citología cervicovaginal (Pap): comparación entre el frotis normal y el frotis con células malignas pleomorfas e hipercromáticas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 332. <a href="../creditos.html#fig-7-44">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
 <li><strong>Citometría de flujo</strong>: evalúa múltiples antígenos en células suspendidas (médula, sangre y otros líquidos); es útil en linfomas y leucemias (p. ej., CD20 y CD3) y en la detección de células tumorales circulantes.</li>
 <li><strong>Diagnóstico molecular y molecular genética</strong>:
 <ul>
@@ -1414,6 +1543,11 @@
 <li>En la sangre pueden analizarse distintas fuentes: <strong>ADN libre de células</strong>, microARN y células tumorales circulantes. Además de los marcadores clásicos, los perfiles genómicos (p. ej., los atlas de tumores como TCGA) permiten afinar el diagnóstico y el tratamiento.</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-7-22" aria-label="Figura 7.22"><img src="../assets/fig/cap07/fig-7-22.webp" loading="lazy" decoding="async" alt="Figura 7.22"><span>Figura 7.22</span></a><a class="fig-thumb" href="#fig-7-26" aria-label="Figura 7.26"><img src="../assets/fig/cap07/fig-7-26.webp" loading="lazy" decoding="async" alt="Figura 7.26"><span>Figura 7.26</span></a><a class="fig-thumb" href="#fig-7-27" aria-label="Figura 7.27"><img src="../assets/fig/cap07/fig-7-27.webp" loading="lazy" decoding="async" alt="Figura 7.27"><span>Figura 7.27</span></a><a class="fig-thumb" href="#fig-7-25" aria-label="Figura 7.25"><img src="../assets/fig/cap07/fig-7-25.webp" loading="lazy" decoding="async" alt="Figura 7.25"><span>Figura 7.25</span></a><a class="fig-thumb" href="#fig-7-9" aria-label="Figura 7.9"><img src="../assets/fig/cap07/fig-7-9.webp" loading="lazy" decoding="async" alt="Figura 7.9"><span>Figura 7.9</span></a><a class="fig-thumb" href="#fig-7-10" aria-label="Figura 7.10"><img src="../assets/fig/cap07/fig-7-10.webp" loading="lazy" decoding="async" alt="Figura 7.10"><span>Figura 7.10</span></a><a class="fig-thumb" href="#fig-7-15" aria-label="Figura 7.15"><img src="../assets/fig/cap07/fig-7-15.webp" loading="lazy" decoding="async" alt="Figura 7.15"><span>Figura 7.15</span></a><a class="fig-thumb" href="#fig-7-44" aria-label="Figura 7.44"><img src="../assets/fig/cap07/fig-7-44.webp" loading="lazy" decoding="async" alt="Figura 7.44"><span>Figura 7.44</span></a></div>
 </section>
   </main>
 </div>
@@ -1421,7 +1555,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1439,8 +1580,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1460,6 +1601,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

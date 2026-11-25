@@ -1,0 +1,250 @@
+{
+  "chapter": 6,
+  "headings": [
+    "Ideas clave",
+    "Respuesta inmunitaria normal",
+    "Hipersensibilidad: lesión tisular mediada por el sistema inmunitario",
+    "Enfermedades autoinmunitarias",
+    "Rechazo de trasplantes de tejidos",
+    "Enfermedades por inmunodeficiencia",
+    "Síndrome de inmunodeficiencia adquirida (sida)",
+    "Amiloidosis",
+    "Puntos de examen"
+  ],
+  "figures": [
+    {
+      "number": "6.1",
+      "page": 202,
+      "caption": "ias) Figura 6.1 1 Subgrupos de linfocitos T colaboradores (Th). En respuesta a los estímulos (principalmente citocinas) presentes en el momento del reconocimiento del antígeno, los linfocitos T CD4+ vírgenes pueden diferenciarse en poblaciones de células efectoras que producen diferentes grupos de citocinas y realizan disti"
+    },
+    {
+      "number": "6.2",
+      "page": 191,
+      "caption": "mica Figura 6.2 Receptores celulares para los microbios y los productos de la lesión celular. Los fagocitos, las células dendríticas y muchos tipos de células epiteliales expresan diferentes clases de receptores que perciben la presencia de microbios y células muertas. Los receptores de tipo Toll (TLR), localizados en difer"
+    },
+    {
+      "number": "6.3",
+      "page": 192,
+      "caption": "guda Figura 6.3 Inflamasoma. El inflamasoma es un complejo proteínico que reconoce productos de células muertas y algunos microbios e induce la secreción de la interleucina I, con actividad biológica. El inflamasoma consta de una proteína detectora (una proteína rica en leucina, Ilamada NLRP-3), un adaptador y la enzima cas"
+    },
+    {
+      "number": "6.4",
+      "page": 193,
+      "caption": "e I) Figura 6.4 Receptores activadores e inhibidores de los linfocitos citoliticos naturales (NK). A. Las células sanas expresan moléculas de su complejo principal de histocompatibilidad de clase I, que son reconocidas por los receptores inhibidores, asegurando así que los linfocitos NK no ataquen a las células normales. Ca"
+    },
+    {
+      "number": "6.5",
+      "page": 193,
+      "caption": "n la figura 6.5. Los linfocitos y otras células implicadas en las respuestas inmunitarias no están fijos en tejidos particulares (como las células de la mayoría de los 6rganos del cuerpo), sino que circulan constantemente entre los tejidos linfoides y otros tejidos a través de la sangre y el sistema linfático. Esta caracter"
+    },
+    {
+      "number": "6.6",
+      "page": 195,
+      "caption": "ñal2 Figura 6.6 El complejo receptor del linfocito T (TCR) y otras moléculas implicadas en la activación del linfocito T. EI heterodimero TCR, que consta de una cadena y una β, reconoce al antígeno (en forma de complejos y el complejo asociado CD3 y las cadenas $ inician las señales activadoras. Elsevier. EI CD4 y el CD28 t"
+    },
+    {
+      "number": "6.7",
+      "page": 196,
+      "caption": "CH3 Figura 6.7 Estructura de los anticuerpos y del receptor del linfocito B para el antígeno. A. El complejo receptor del linfocito B para el antígeno está compuesto de inmunoglobulina M de membrana (IgM; o IgD, no se muestra), que reconoce a los antígenos, y las proteínas señal asociadas Ig e IgB. El CD21 es un receptor p"
+    },
+    {
+      "number": "6.8",
+      "page": 197,
+      "caption": "os T Figura 6.8Morfología de un ganglio linfático. A. Aspecto histológico de un ganglio linfático, con una corteza externa que contiene folículos y una médula interna. B. Segregación de los linfocitos B y los linfocitos T en diferentes regiones del ganglio linfático, ilustrada de forma esquemática. C. Localización de los li"
+    },
+    {
+      "number": "6.9",
+      "page": 198,
+      "caption": "COOH Figura 6.9EI complejo antígeno leucocitico humano (HLA) y la estructura de las moléculas de HLA. A. Localización de los genes en el complejo HLA. Las localizaciones, tamaños y distancias relativas entre los genes no están a escala. Los genes que codifican varias proteínas implicadas en el procesamiento del antígeno (el"
+    },
+    {
+      "number": "6.10",
+      "page": 201,
+      "caption": "ADAS Figura 6.10 Inmunidad celular. Las células dendríticas capturan antígenos microbianos de los epitelios y los tejidos y los transportan a los ganglios linfáticos. Durante este proceso, las células dendríticas maduran y expresan cantidades altas de moléculas del CPH y coestimuladores. Los linfocitos T vírgenes reconocen"
+    },
+    {
+      "number": "6.12",
+      "page": 202,
+      "caption": "ción Figura 6.12 Inmunidad humoral. Los linfocitos B vírgenes reconocen antígenos y, bajo la influencia de los linfocitos T colaboradores y otros estímulos (no se muestra), los linfocitos B se activan para proliferar y diferenciarse en células plasmáticas secretoras de anticuerpos. Algunos de los linfocitos B activados sufr"
+    },
+    {
+      "number": "6.13",
+      "page": 205,
+      "caption": "ular Figura 6.13 Fases de las reacciones de hipersensibilidad inmediata. A. Cinética de las reacciones inmediatas y de fase tardía. La reacción inmediata vascular y del músculo liso frente al alérgeno se produce unos minutos después de la provocación (exposición al alérgeno en un sujeto previamente sensibilizado), y la reac"
+    },
+    {
+      "number": "6.14",
+      "page": 206,
+      "caption": "eno) Figura 6.14 Secuencia de acontecimientos en la hipersensibilidad inmediata (tipo I). Las reacciones de hipersensibilidad inmediata comienzan con la introducción de un alérgeno, que estimula respuestas Th2 y la producción de IgE en los sujetos con predisposición genética. La IgE se une a los receptores para el Fc (FceRI"
+    },
+    {
+      "number": "6.15",
+      "page": 207,
+      "caption": "liso Figura 6.15 Mediadores del mastocito. Tras su activación, los mastocitos liberan varias clases de mediadores que son responsables de las reacciones inmediata y de fase tardía. PAF, factor activador de las plaquetas. los gránulos, y la síntesis nueva y liberación de mediadores adicionales, como productos lipídicos y cit"
+    },
+    {
+      "number": "6.16",
+      "page": 209,
+      "caption": "n la figura 6.16 y se describirán a continuación. Estas reacciones son la causa de varias enfermedades importantes (tabla 6.3). Opsonización y fagocitosis La fagocitosis es, en gran medida, responsable de la pérdida de células revestidas por anticuerpos. Las células opsonizadas por anticuerpos IgG son reconocidas por los re"
+    },
+    {
+      "number": "6.17",
+      "page": 211,
+      "caption": "filo Figura 6.17 Enfermedad por inmunocomplejos. Secuencia de fases en la (hipersensibilidad de tipo II)."
+    },
+    {
+      "number": "6.18",
+      "page": 213,
+      "caption": "ular Figura 6.18 Mecanismos de las reacciones de hipersensibilidad mediadas por el linfocito T (tipo IV). A. Los linfocitos Thl CD4+ (y a veces los linfocitos T CD8+, no se muestra) responden a los antígenos tisulares secretando citocinas que estimulan la inflamación y activan a los fagocitos, lo que conduce a la lesión tis"
+    },
+    {
+      "number": "6.19",
+      "page": 214,
+      "caption": "cas. Figura 6.19 Reacción de hipersensibilidad retardada en la piel. A. Acumulación perivascular (<manguito>) de células inflamatorias mononucleares (linfocitos y macrófagos), con edema dérmico y depósito de fibrina asociados. B. La tinción con inmunoperoxidasa revela un infiltrado predominantemente perivascular que se tiñe"
+    },
+    {
+      "number": "6.20",
+      "page": 214,
+      "caption": "ex.) Figura 6.20 Inflamación granulomatosa. Sección de un ganglio linfático que muestra varios granulomas, cada uno formado por un agregado de células epitelioides y rodeado de linfocitos. El granuloma en el centro muestra varias células gigantes multinucleadas. (Por cortesía del Dr. Trace Worrell, Department of Pathology,"
+    },
+    {
+      "number": "6.21",
+      "page": 216,
+      "caption": "ción Figura 6.21 Mecanismos de la tolerancia inmunitaria frente a los antígenos propios. Se ilustran los principales mecanismos de la autotolerancia central Y periférica en los linfocitos T y B. APC, célula presentadora de antígenos."
+    },
+    {
+      "number": "6.22",
+      "page": 218,
+      "caption": "aria Figura 6.22 Patogenia de la autoinmunidad. La autoinmunidad se debe a múltiples factores, incluidos los genes de predisposición que pueden interferir en la autotolerancia y los desencadenantes ambientales (como infecciones, lesión tisular e inflamación) que promueven la entrada del linfocito en los tejidos, la activaci"
+    },
+    {
+      "number": "6.23",
+      "page": 220,
+      "caption": "idad Figura 6.23 Función propuesta de las infecciones en la autoinmunidad. Las infecciones pueden promover la activación de los linfocitos autorreactivos mediante la inducción de la expresión de coestimuladores (A), o los antígenos microbianos pueden imitar a los antígenos propios y activar a los linfocitos autorreactivos c"
+    },
+    {
+      "number": "6.24",
+      "page": 223,
+      "caption": "as B Figura 6.24 Patrones de tinción de los anticuerpos antinucleares. A. La tinción homogénea o difusa de los núcleos es típica de los anticuerpos reactivos ADNbc, los nucleosomas y las histonas, y es frecuente en el lupus eritematoso sistémico. B. El patrón moteado se observa con anticuerpos contra varios antígenos nuclea"
+    },
+    {
+      "number": "6.25",
+      "page": 225,
+      "caption": "ares Figura 6.25 Modelo de la patogenia del lupus eritematoso sistémico. En este modelo hipotético, los genes de predisposición interfieren en el mantenimiento de la autotolerancia, y los desencadenantes externos llevan a la persistencia de antígenos nucleares. El resultado es una respuesta de la acción de los ácidos nuclei"
+    },
+    {
+      "number": "6.26",
+      "page": 227,
+      "caption": "U Er Figura 6.26 Nefritis lúpica. A. Glomerulonefritis proliferativa focal, con dos lesiones necrosantes focales en las posiciones de las I I y las 2 del reloj (tinción con hematoxilina y eosina). La proliferación extracapilar no es destacada en este caso. B. Glomerulonefritis proliferativa difusa. Obsérvese el acentuado es"
+    },
+    {
+      "number": "6.27",
+      "page": 228,
+      "caption": "28 B Figura 6.27 Lupus eritematoso sistémico que afecta a la piel. A. Sección tenida con hematoxilina y eosina que muestra degeneración licuefactiva de la capa basal de la epidermis y edema en la unión dermoepidérmica. B. Microfotografia de inmunofluorescencia tenida en busca de IgG que revela depósitos de Ig a lo largo de"
+    },
+    {
+      "number": "6.28",
+      "page": 228,
+      "caption": "una Figura 6.28 Endocarditis de Libman-Sacks de la válvula mitral en el lupus eritematoso. Las vegetaciones unidas al borde de la valva engrosada están indicadas por flechas. (Por cortesía del Dr. Fred Schoen, Department of Pathology, Brigham and Women's Hospital, Boston, Mass.)"
+    },
+    {
+      "number": "6.29",
+      "page": 230,
+      "caption": "230 Figura 6.29 Síndrome de Sjógren. A. Aumento de tamaño de la glándula salival. B. Intensa infiltración linfocitica y de células plasmáticas con hiperplasia epitelial ductal en una glándula salival. (A, por cortesía del Dr. Richard Sontheimer, Department of Dermatology, University of Texas Southwestern Medical School. Da"
+    },
+    {
+      "number": "6.30",
+      "page": 231,
+      "caption": "onar Figura 6.30 Modelo de la patogenia de la esclerosis sistémica. Algunos estímulos externos desconocidos producen anomalías vasculares y una activación"
+    },
+    {
+      "number": "6.31",
+      "page": 233,
+      "caption": "rias Figura 6.31 Esclerosis sistémica. A. Piel normal. B. Biopsia cutánea de un paciente con esclerosis sistémica. Obsérvese el depósito extenso de colágeno denso en la dermis con práctica ausencia de anejos cutáneos (p. ej., folículos pilosos) y focos de inflamación (flecha). C. La fibrosis subcutánea extensa ha inmoviliza"
+    },
+    {
+      "number": "6.32",
+      "page": 235,
+      "caption": "235 Figura 6.32 Enfermedad relacionada con la IgG4: lesiones representativas. A. Conducto biliar con colangitis esclerosante. B. Área esclerótica del conducto biliar con fibrosis estoriforme. C. Glándula submandibular con infiltrados de linfocitos y células plasmáticas y áreas de fibrosis arremolinada. D. Corte de una glán"
+    },
+    {
+      "number": "6.33",
+      "page": 236,
+      "caption": "A B Figura 6.33 Rechazo hiperagudo.A. El depósito de anticuerpos en el endotelio y la activación del complemento causan trombosis. B. Rechazo hiperagudo de un aloinjerto renal que muestra trombos de plaquetas, fibrina y lesión isquémica grave en un glomérulo. anticuerpos IgM naturales específicos o pueden ser moléculas del"
+    },
+    {
+      "number": "6.34",
+      "page": 237,
+      "caption": "237 Figura 6.34 Rechazo celular agudo. A. Destrucción de células del injerto por los linfocitos T. El rechazo agudo mediado por los linfocitos T implica muerte directa de células del injerto por acción de los CTL CD8+ e inflamación causada por citocinas producidas por los linfocitos T CD4+. B. Rechazo celular agudo de un i"
+    },
+    {
+      "number": "6.35",
+      "page": 238,
+      "caption": "itis Figura 6.35 Rechazo agudo mediado por anticuerpos (humoral). A. Daño del injerto causado por el depósito de anticuerpos en los vasos. B. Microfotografia óptica que muestra una inflamación (capilaritis) en los capilares peritubulares (flechas) en el injerto renal. C. Tinción con inmunoperoxidasa que muestra el depósito"
+    },
+    {
+      "number": "6.36",
+      "page": 239,
+      "caption": "ular Figura 6.36 Rechazo crónico. A. Arterioesclerosis del injerto causada por citocinas de linfocitos T y depósito de anticuerpos. B. Arterioesclerosis del injerto en un trasplante cardiaco. C. Glomerulopatia por trasplante, la manifestación característica del rechazo crónico mediado por anticuerpos en el riñón. El gloméru"
+    },
+    {
+      "number": "6.37",
+      "page": 240,
+      "caption": "240 Figura 6.37 Enfermedad del injerto contra el huésped (EICH) que afecta a la piel. A. EICH aguda en la que se observan muerte parcheada de células epiteliales e infiltrados dérmicos de células mononucleares (linfocitos y macrófagos). B. ElCH crónica que muestra infiltrado linfocitico disperso en la unión dermoepidérmica"
+    },
+    {
+      "number": "6.38",
+      "page": 243,
+      "caption": "E aR Figura 6.38 Enfermedades por inmunodeficiencia primaria. Se muestran las principales vías de desarrollo del linfocito y los bloqueos de estas vías en algunas enfermedades por inmunodeficiencia primaria. Los genes afectados en algunos de estos trastornos se indican entre paréntesis. ADA, adenosina desaminasa; CD40L, lig"
+    },
+    {
+      "number": "6.39",
+      "page": 248,
+      "caption": "ersa Figura 6.39 Estructura del virión del virus de la inmunodeficiencia humana (VIH) I. La partícula del virus está cubierta con una bicapa lipídica derivada de la célula del huésped y tachonada con las glucoproteinas víricas gp41 y gp120. al sida en EE. UU., Europa y África central, mientras que el VIH-2 causa una enferme"
+    },
+    {
+      "number": "6.40",
+      "page": 248,
+      "caption": "n la figura 6.40. Patogenia de la infección por e/VIH y el sida Aunque el VIH puede infectar numerosos tejidos, el principal objetivo del virus es el sistema inmunitario. El sistema nervioso central (SNC) también se ve afectado."
+    },
+    {
+      "number": "6.41",
+      "page": 250,
+      "caption": "VIH Figura 6.41 El ciclo vital del VIH, que muestra los pasos desde la entrada del virus a la producción de viriones infecciosos. (Modificado con autorización (*pa!w!7 sau!ze8oW ue!iooW`966I 3y8!uXdoO`9661 Z11:n8 aunoN 0M soaa auo uo auO IH :s uosq0H-u!M ap u!uod e primer paso en la infección es la unión de la glucoprotein"
+    },
+    {
+      "number": "6.42",
+      "page": 253,
+      "caption": "CD4+ Figura 6.42 Patogenia de la infección por el VIH-1. La infección empieza en los tejidos mucosos, afectando principalmente a los linfocitos T CD4+ de memoria y a las células dendríticas, y se propaga a los ganglios linfáticos. La replicación vírica conduce a la viremia y a una siembra generalizada del tejido linfoide. E"
+    },
+    {
+      "number": "6.43",
+      "page": 254,
+      "caption": "as B Figura 6.43 Evolución clínica de la infección por el VIH. A. Durante el periodo temprano después de la infección primaria se produce una diseminación del virus, el desarrollo de una respuesta inmunitaria frente al VIH y, a menudo, un síndrome vírico agudo. Durante el periodo de latencia clínica, la replicación vírica c"
+    },
+    {
+      "number": "6.44",
+      "page": 257,
+      "caption": "gkin Figura 6.44 Modelo de la patogenia de los linfomas de linfocitos B en la infección por el VIH. La infección por el VIH da lugar a varios cambios que pueden Elsevier. cooperar para producir linfomas de linfocitos B. Se ha planteado que en la fase inicial de la enfermedad aumentan los linfocitos T colaboradores, aunque s"
+    },
+    {
+      "number": "6.45",
+      "page": 260,
+      "caption": "ongo Figura 6.45 Estructura del amiloide. A. Esquema de una fibra de amiloide entre si con la unión regularmente espaciada del pigmento rojo Congo. luz polarizada, una característica diagnóstica del amiloide. C. Microfotografia electrónica de fibrillas de amiloide de 7,5 a 10 nm. (Tomado de Merlini G, Bellotti V: Molecular"
+    },
+    {
+      "number": "6.46",
+      "page": 261,
+      "caption": "ATTR Figura 6.46 Esquema de la patogenia de la amiloidosis que muestra los mecanismos propuestos de depósito subyacente de las principales formas de fibrillas de amiloide. Dado que una forma bioquímica de amiloide (p. ej., AA) puede asociarse al depósito de amiloide en diversos marcos clínicos, seguiremos una clasificación"
+    },
+    {
+      "number": "6.47",
+      "page": 263,
+      "caption": "7C). Figura 6.47 Amiloidosis. A. Sección del hígado tenida con rojo Congo que revela depósitos rojizos de amiloide en las paredes de los vasos sanguíneos y a lo largo de los sinusoides. B. Obsérvese la birrefringencia verde manzana de los depósitos cuando se observan con un microscopio con luz polarizada Elsevier. C. Amiloi"
+    }
+  ],
+  "missing": [
+    11
+  ],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

@@ -1,0 +1,263 @@
+{
+  "chapter": 7,
+  "headings": [
+    "Ideas clave",
+    "Nomenclatura",
+    "Características de las neoplasias benignas y malignas",
+    "Epidemiología de los tumores malignos",
+    "Bases moleculares de los tumores malignos: alteraciones genéticas y epigenéticas",
+    "Autosuficiencia respecto de las señales de crecimiento: oncogenes",
+    "Insensibilidad a la inhibición del crecimiento: genes supresores de tumores",
+    "Alteraciones metabólicas: efecto Warburg, autofagia y oncometabolitos",
+    "Evasión de la muerte celular",
+    "Potencial de replicación ilimitado",
+    "Angiogenia",
+    "Invasión y metástasis: fases moleculares",
+    "Evasión de la vigilancia inmunitaria",
+    "Inestabilidad genómica y sistemas de reparación del ADN",
+    "Inflamación promovida por el tumor",
+    "Cambios cromosómicos y oncogenes activados",
+    "Cambios epigenéticos y ARN no codificantes",
+    "Carcinogenia química y en múltiples etapas",
+    "Carcinogenia por radiación",
+    "Carcinogenia microbiana: virus oncógenos",
+    "Aspectos clínicos de las neoplasias"
+  ],
+  "figures": [
+    {
+      "number": "7.1",
+      "page": 268,
+      "caption": "que Figura 7.1 Pólipo cólico. A. Pólipo adenomatoso (glandular) que se proyecta hacia la luz del colon y está unido a la mucosa por un tallo distinto. B. Aspecto macroscópico de varios pólipos cólicos."
+    },
+    {
+      "number": "7.2",
+      "page": 269,
+      "caption": "269 Figura 7.2 Tumor mixto de la glándula parótida. En este campo se observan pequeños nidos de células epiteliales y estroma mixoide que forman cartílago y hueso (una característica inusual). (Por cortesía de la Dra. Vicky Jo, Department of Pathology, Brigham and Women's Hospital, Boston, Mass. se encuentran en restos emb"
+    },
+    {
+      "number": "7.3",
+      "page": 269,
+      "caption": "tica Figura 7.3 A. Aspecto macroscópico de un teratoma quistico del ovario abierto. Obsérvese la presencia de pelo, material sebáceo y un diente. B. Vista microscópica de un tumor similar que muestra piel, glándulas sebáceas, células grasas y un foco de tejido neural (flecha)."
+    },
+    {
+      "number": "7.4",
+      "page": 270,
+      "caption": "o al Figura 7.4 Leiomioma de útero. Este tumor benigno y bien diferenciado contiene haces entrelazados de células musculares lisas neoplásicas que son prácticamente idénticas en apariencia a las células musculares lisas normales del miometrio."
+    },
+    {
+      "number": "7.5",
+      "page": 271,
+      "caption": "Figura 7.5 Tumor benigno (adenoma) de tiroides. Obsérvense los folículos tiroideos de apariencia normal (bien diferenciados) llenos de coloides. (Por cortesía del Dr. Trace Worrell, University of Texas Southwestern Medical School, Dallas, Tex.) árbol que pierde de vista el bosque. En los tumores benignos bien diferenci"
+    },
+    {
+      "number": "7.6",
+      "page": 271,
+      "caption": "271 Figura 7.6 Carcinoma epidermoide bien diferenciado cutáneo. Las células tumorales son sorprendentemente similares a las células epiteliales escamosas normales, con puentes intercelulares y perlas córneas (flecha). (Por cortesía del Dr. Trace Worrell, University of Texas Southwestern Medical School, Dallas, Tex.) desde"
+    },
+    {
+      "number": "7.7",
+      "page": 271,
+      "caption": "ier. Figura 7.7 Tumor anaplásico que muestra variación de tamaño y forma celulares y nucleares. La célula prominente en el campo central tiene un huso tripolar anormal. O Características de las neoplasias benignas y malignas 271 Figura 7.6 Carcinoma epidermoide bien diferenciado cutáneo. Las células tumorales son sorprenden"
+    },
+    {
+      "number": "7.8",
+      "page": 271,
+      "caption": "des. Figura 7.8 Tumor maligno (adenocarcinoma) del colon. Obsérvese que, en comparación con las glándulas bien formadas y de aspecto normal características de un tumor benigno, las glándulas tumorales son de forma y tamaño irregulares y no se parecen a las glándulas cólicas normales. Este tumor se considera moderadamente bi"
+    },
+    {
+      "number": "7.9",
+      "page": 272,
+      "caption": "2.1A Figura 7.9 Tumor pleomorfo del músculo esquelético (rabdomiosarcoma). Obsérvense el marcado pleomorfismo celular y nuclear, los núcleos hipercromáticos y las células gigantes tumorales. (Por cortesía del Dr. Trace Worrell, University of Texas Southwestern Medical School, Dallas, Tex.) Mitosis. A diferencia de los tumor"
+    },
+    {
+      "number": "7.10",
+      "page": 273,
+      "caption": "gnas Figura 7.10 A. Carcinoma in situ. Esta imagen de pequeño aumento muestra que el epitelio está completamente reemplazado por células displásicas atípicas. No hay una diferenciación ordenada de células escamosas. La membrana basal está intacta, y no hay tumor en el estroma subepitelial. B. Imagen de gran aumento de otra"
+    },
+    {
+      "number": "7.13",
+      "page": 274,
+      "caption": "9010 Figura 7.13 Afectación del epiplón por un carcinoma de ovario metastásico. Son evidentes los innumerables nódulos y un <aspecto brillante> más sutil debido a la siembra de células de carcinoma a través de la cavidad peritoneal. (Por cortesía de la Dra. Sarah Hill, Brigham and Women's Hospital, Boston, Mass.)"
+    },
+    {
+      "number": "7.14",
+      "page": 275,
+      "caption": "Figura 7.14 Ganglio linfático axilar con carcinoma de mama metastásico. Obsérvense los agregados de células tumorales dentro de la sustancia del ganglio y el conducto linfático dilatado. (Por cortesía de la Dra. Susan Lester, Brigham and Women's Hospital, Boston, Mass.) de ovario llenan la cavidad peritoneal con una ma"
+    },
+    {
+      "number": "7.15",
+      "page": 275,
+      "caption": "muy Figura 7.15 Metástasis de un tumor. A. Hígado salpicado por un tumor metastásico. B. Vista microscópica de una metástasis pulmonar. Un adenocarcinoma de colon ha formado un nódulo metastásico en el pulmón. (B, por cortesía del Dr. Shuji Ogino, Daña Farber Cáncer Institute, Boston, Mass.)"
+    },
+    {
+      "number": "7.16",
+      "page": 276,
+      "caption": "n la figura 7.16. Una vez Endometrio Trompa de Falopio Ovario BENIGNO (Leiomioma) Pequeño No infiltrante Bien Sin metástasis Bien diferenciado delimitado Crecimiento lento pueden ser engañosamente cohesivos y expansivos Frecuentes; más probables en tumores primarios grandes indiferenciados terminada la descripción general d"
+    },
+    {
+      "number": "7.17",
+      "page": 277,
+      "caption": "n la figura 7.17 se muestran los principales 6rganos afectados y la frecuencia estimada de muerte por tumores malignos en EE. UU. Los tumores mas comunes en los hombres son los originados en la próstata, los pulmones y el colon/recto. En las mujeres, los canceres de mama, pulmón y colon/ recto son los más frecuentes. Los ca"
+    },
+    {
+      "number": "7.18",
+      "page": 279,
+      "caption": "arch Figura 7.18 Tumores malignos diagnosticados con mayor frecuencia en todo el mundo según el sexo, 2018."
+    },
+    {
+      "number": "7.19",
+      "page": 282,
+      "caption": "onal Figura 7.19 Desarrollo de un tumor maligno mediante la adquisición gradual de mutaciones complementarias. El orden en el que se producen diversas mutaciones conductoras en las células precursoras iniciadas no se conoce, y puede variar de un tumor a otro. Véase el texto para más detalles."
+    },
+    {
+      "number": "7.20",
+      "page": 283,
+      "caption": "R11 Figura 7.20 Evolución tumoral. Evolución de un carcinoma de células renales (panel izquierdo) y pinzones de Darwin (panel derecho). El árbol evolutivo del carcinoma de células renales se basa en comparaciones genéticas extraídas de la secuenciación del ADN obtenido de diferentes sitios tumorales; Darwin dedujo Elsevier"
+    },
+    {
+      "number": "7.21",
+      "page": 284,
+      "caption": "n la figura 7.21 y comprenden: Autosuficiencia respecto de las seriales de crecimiento. Los tumores tienen la capacidad de proliferar sin estímulos externos, generalmente como consecuencia de la activación de oncogenes. Insensibilidad a las seniales inhibidoras del crecimiento. Puede que los tumores no respondan a moléculas"
+    },
+    {
+      "number": "7.22",
+      "page": 287,
+      "caption": "ULAR Figura 7.22 Vías de señalización mediante factores de crecimiento en tumores malignos. Los receptores de factores de crecimiento RAS, PI3K, MYC y ciclinas D son oncoproteinas que se activan por mutaciones en varios tumores malignos. Las proteínas activadoras de la GTPasa (GAP) aplican frenos a la activación de RAS, y e"
+    },
+    {
+      "number": "7.23",
+      "page": 288,
+      "caption": "ento Figura 7.23 Translocaciones cromosómicas y oncogenes asociados al linfoma de Burkitt y la leucemia mieloide crónica."
+    },
+    {
+      "number": "7.24",
+      "page": 290,
+      "caption": "bles Figura 7.24 Amplificación del gen NMYC en neuroblastomas humanos. El gen NMYC, normalmente presente en el cromosoma 2p, está amplificado y se observa como diminutos dobles extracromosómicos o como una región de tinción homogénea integrada en el cromosoma (HSR). La integración afecta a otros autosomas, como 4, 9 o 13. ("
+    },
+    {
+      "number": "7.25",
+      "page": 293,
+      "caption": "ción Figura 7.25 Patogenia del retinoblastoma. Dos mutaciones del locus RB en el cromosoma 1 3q14 conducen a la proliferación neoplásica de las células retinianas. En la forma esporádica, ambas mutaciones de RB son adquiridas en la célula retiniana que constituye el tumor. En la forma familiar, todas las células somáticas h"
+    },
+    {
+      "number": "7.26",
+      "page": 294,
+      "caption": "onal Figura 7.26Función de RB en la regulación del punto de control G,-S del ciclo celular. El RB hipofosforilado forma complejos con los factores de transcripción E2F y se une al ADN, recluta factores modificadores de la cromatina (histona desacetilasas e histona metiltransferasas) e inhibe la celular. Cuando RB es fosfori"
+    },
+    {
+      "number": "7.27",
+      "page": 296,
+      "caption": "osis Figura 7.27 Función de p53 en el mantenimiento de la integridad del genoma. La activación de p53 normal por agentes que dañan el ADN o por hipoxia conduce a la detención del ciclo celular en G, y a la inducción de la reparación del ADN por regulación al alza de la transcripción del inhibidor de la cinasa Nai lap ua!doa"
+    },
+    {
+      "number": "7.28",
+      "page": 298,
+      "caption": "ción Figura 7.28 Función de la poliposis adenomatosa del colon (APC) en la regulación de la estabilidad y función de la β-catenina. La APC y la β-catenina son componentes de la vía de señalización WNT. A. En las células epiteliales cólicas en reposo (no expuestas a WNT), la β-catenina forma un complejo macromolecular que co"
+    },
+    {
+      "number": "7.29",
+      "page": 300,
+      "caption": "n la figura 7.29, y entre ellos están los siguientes: Serialización del receptor tirosina cinasa/PI3K/AKT. La señalización de PI3K/AKT regula positivamente la actividad de los transportadores de glucosa y múltiples enzimas glucoliticas, aumentando así la glucólisis; promueve la derivación de intermediarios mitocondriales a"
+    },
+    {
+      "number": "7.30",
+      "page": 301,
+      "caption": "ular Figura 7.30 Acción propuesta del oncometabolito 2-hidroxiglutarato en células tumorales con isocitrato deshidrogenasa mutada (mlDH). IDH, isocitrato deshidrogenasa."
+    },
+    {
+      "number": "7.31",
+      "page": 302,
+      "caption": "osis Figura 7.31 Vía intrínseca de la apoptosis y principales mecanismos utilizados por las células tumorales para eludir la muerte celular. Los mecanismos más importantes involucran la pérdida de la función de p53, ya sea por mutación o por antagonismo de MDM2, y la reducción de la salida del citocromo c de las mitocondria"
+    },
+    {
+      "number": "7.32",
+      "page": 304,
+      "caption": "IGNO Figura 7.32 Evasión por parte de las células de la senescencia y la catástrofe mitótica causada por el acortamiento de los telómeros. La replicación de células somáticas, que no expresan telomerasa, conduce a un acortamiento de los telómeros. Cuando existen puntos de control competentes, las células se detienen y entra"
+    },
+    {
+      "number": "7.33",
+      "page": 305,
+      "caption": "oral Figura 7.33 Orígenes de células con capacidad de autorrenovación en los tumores. Las células madre tumorales pueden surgir de células madre tisulares transformadas (p. ej., células madre hematopoyéticas en la leucemia mieloide crónica [MC]) con una <totipotencialidad> intrínseca o de células en proliferación que adquie"
+    },
+    {
+      "number": "7.34",
+      "page": 306,
+      "caption": "ento Figura 7.34 Cascada metastásica. Pasos secuenciales involucrados en la diseminación hematógena de un tumor."
+    },
+    {
+      "number": "7.35",
+      "page": 307,
+      "caption": "tina Figura 7.35 Secuencia de acontecimientos en la invasión de membranas basales epiteliales por células tumorales. Las células tumorales se desprenden unas de otras debido a la reducción de la adhesividad y atraen a células inflamatorias. Las proteasas secretadas por las células tumorales y las células inflamatorias degra"
+    },
+    {
+      "number": "7.36",
+      "page": 310,
+      "caption": "icos Figura 7.36 Antígenos tumorales reconocidos por los linfocitos T CD8+. CPH, complejo principal de histocompatibilidad; VEB, virus de Epstein-Barr. (Modificado de Abbas AK, Lichtman AH: Cellular and Molecular Immunology, ed 5, Philadelphia, 2003, WB Saunders.) Antígenos tumorales Los tumores malignos expresan varios tip"
+    },
+    {
+      "number": "7.37",
+      "page": 311,
+      "caption": "tico Figura 7.37 Presentación cruzada de antígenos tumorales e inducción de la respuesta antitumoral por los linfocitos T citotóxicos CD8+. (Modificado de Abbas AK, Lichtman AH: Cellular and Molecular Immunology, ed 8, Philadelphia, 2017, Elsevier.) linfocitos T debido a la pérdida de expresión de las moléculas del CPH de c"
+    },
+    {
+      "number": "7.38",
+      "page": 312,
+      "caption": "oras Figura 7.38 Mecanismos por los cuales los tumores evaden el sistema inmunitario. Los tumores pueden evadirse de las respuestas inmunitarias al perder la expresión de antígenos o moléculas del complejo principal de histocompatibilidad (CPH) o al sintetizar citocinas inmunodepresoras o ligandos como PD-LI para receptores"
+    },
+    {
+      "number": "7.39",
+      "page": 313,
+      "caption": "oral Figura 7.39 Activación de la inmunidad antitumoral del huésped mediante inhibidores de puntos de control. A. El bloqueo de la molécula de superficie CTLA4 con un inhibidor de anticuerpos permite que los linfocitos T CD8+ (CTL) se unan con los correceptores de la familia B7, lo que Ileva a la activación de los linfocito"
+    },
+    {
+      "number": "7.40",
+      "page": 318,
+      "caption": "gica Figura 7.40 Patogenia molecular de la leucemia promielocitica (LPM) aguda y base para la respuesta al ácido retinoico todo-trans (ATRA). AR, ácido retinoico; PMN, neutrófilos polimorfonucleares; RXR, socio de unión para la proteína de fusión normal RAR y PML-RAR codificada por un gen quimérico creado por la translocaci"
+    },
+    {
+      "number": "7.41",
+      "page": 321,
+      "caption": "IGNA Figura 7.41 Esquema general de acontecimientos en la carcinogenia química. Obsérvese que los promotores provocan la expansión clonal de la célula iniciada, produciendo así un clon preneoplásico. Una mayor proliferación inducida por el promotor u otros factores provoca la acumulación de mutaciones adicionales y la apari"
+    },
+    {
+      "number": "7.42",
+      "page": 324,
+      "caption": "e RB Figura 7.42 Efectos transformadores de las proteínas E6 y E7 del virus del papiloma humano (VPH). EI efecto neto de las proteínas E6 y E7 del VPH es inmortalizar las células y eliminar las restricciones sobre la proliferación celular (v. fig. 7.26). TERT, transcriptasa inversa de la telomerasa. (Modificado de Múnger K,"
+    },
+    {
+      "number": "7.43",
+      "page": 325,
+      "caption": "n la figura 7.43"
+    },
+    {
+      "number": "7.44",
+      "page": 332,
+      "caption": "32 A Figura 7.44 Citologia cervicovaginal. A. La citologia cervicovaginal normal muestra células escamosas aplanadas grandes y grupos de células metaplásicas; hay neutrófilos entremezclados. No hay células malignas. B. La citologia anormal muestra numerosas células malignas con núcleos pleomorfos e hipercromáticos; hay leuc"
+    },
+    {
+      "number": "7.45",
+      "page": 332,
+      "caption": "gre. Figura 7.45 Tinción de inmunoperoxidasa frente a la citoqueratina de un University of Washington, Seattle, Wash.)"
+    },
+    {
+      "number": "7.46",
+      "page": 334,
+      "caption": "15 9 Figura 7.46 Gráfico de círculos que muestra alteraciones genéticas en un solo cáncer de pulmón de un paciente masculino. Cada uno de los 24 cromosomas del cáncer se muestra en un circulo. Las posiciones de diversas aberraciones especificas de tumores se cartografían en estos cromosomas de la siguiente manera: a, reorde"
+    },
+    {
+      "number": "7.47",
+      "page": 335,
+      "caption": "ebro Figura 7.47 Cambio de paradigma: clasificación de los tumores malignos en función de los objetivos terapéuticos en lugar de por la célula de origen y su morfología. (Por cortesía del Dr. Levi Garraway, Daña Farber Cáncer Institute, Boston, Mass.) de inhibidores de puntos de control en pacientes con tumores recidivantes"
+    },
+    {
+      "number": "7.48",
+      "page": 335,
+      "caption": "udas Figura 7.48 Diversos tipos de tumores con una patogenia molecular común."
+    }
+  ],
+  "missing": [
+    11,
+    12
+  ],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

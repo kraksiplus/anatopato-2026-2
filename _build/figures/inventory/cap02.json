@@ -1,0 +1,200 @@
+{
+  "chapter": 2,
+  "headings": [
+    "Ideas clave",
+    "Introducción a la anatomía patológica",
+    "Revisión de las respuestas celulares al estrés",
+    "Causas de lesión celular",
+    "Progresión de la lesión y muerte celular",
+    "Mecanismos de la lesión celular",
+    "Correlación clínico-patológica: ejemplos de lesión y muerte celular",
+    "Adaptaciones del crecimiento y la diferenciación celular",
+    "Acumulaciones intracelulares",
+    "Envejecimiento celular",
+    "Puntos de examen"
+  ],
+  "figures": [
+    {
+      "number": "2.1",
+      "page": 34,
+      "caption": "ULAR Figura 2.1 Fases de la respuesta celular en respuesta al estrés y los estímulos nocivos."
+    },
+    {
+      "number": "2.2",
+      "page": 35,
+      "caption": "ular Figura 2.2 Relación entre las células miocárdicas normales, adaptadas, con lesión reversible y muertas. Los tres cortes transversales del corazón han sido tenidos con cloruro de trifeniltetrazolio, un sustrato enzimático que tiñe el miocardio viable de color magenta. La adaptación celular mostrada en la imagen es la hi"
+    },
+    {
+      "number": "2.3",
+      "page": 37,
+      "caption": "sión Figura 2.3 Desarrollo secuencial de los cambios bioquímicos y morfológicos en la lesión celular. Las células pueden convertirse en no funcionales poco después del inicio de la lesión, aunque es posible que sigan siendo viables, con daño potencialmente reversible; una duración mayor de la lesión tiene el potencial de pr"
+    },
+    {
+      "number": "2.4",
+      "page": 36,
+      "caption": "n la figura 2.4 y se describen más adelante. Con ciertos limites, la célula es capaz de reparar las alteraciones observadas en la lesión rever-"
+    },
+    {
+      "number": "2.5",
+      "page": 38,
+      "caption": "sis. Figura 2.5 Cambios morfológicos en la lesión celular reversible y necrosis. A. Túbulos renales normales con células epiteliales viables. B. Lesión isquémica inicial (reversible) que muestra vesículas de la superficie, mayor eosinofilia del citoplasma y tumefacción de algunas células. C. Necrosis (lesión irreversible) d"
+    },
+    {
+      "number": "2.6",
+      "page": 38,
+      "caption": "n la figura 2.6. (Por cortesía de los Dres. Neal Pinckard y M. A. Venkatachalam, University of Texas Health Sciences Center, San Antonio, Tex.)"
+    },
+    {
+      "number": "2.7",
+      "page": 40,
+      "caption": "con Figura 2.7 Necrosis coagulativa. A. Infarto renal en forma de cuna (amarillo). B. Imagen microscópica del infarto, con riñón normal (N) y células necróticas del infarto (l) que conservan el contorno celular con pérdida de núcleos e infiltrado inflamatorio (que se identifica por la presencia de los núcleos de las célula"
+    },
+    {
+      "number": "2.8",
+      "page": 41,
+      "caption": "Figura 2.8 Necrosis licuefactiva. Infarto en el cerebro que muestra disolución del tejido. frecuencia, de color amarillo cremoso por la presencia de leucocitos y se denomina pus. Por razones desconocidas, la muerte de células en el sistema nervioso central suele manifestarse como necrosis licuefactiva (fig. 2.8). La ne"
+    },
+    {
+      "number": "2.9",
+      "page": 41,
+      "caption": "3). Figura 2.9 Necrosis caseosa. Tuberculosis pulmonar con una gran área de necrosis caseosa que contiene restos amarillos blanquecinos similares al queso. Muerte celular 41 Figura 2.10 Necrosis grasa. Las áreas de depósitos blancos calcáreos representan focos de necrosis grasa con formación de jabón de calcio (saponificac"
+    },
+    {
+      "number": "2.10",
+      "page": 41,
+      "caption": "r 41 Figura 2.10 Necrosis grasa. Las áreas de depósitos blancos calcáreos representan focos de necrosis grasa con formación de jabón de calcio (saponificación) en las zonas de degradación de los lípidos en el mesenterio. El término necrosis grasa hace referencia a áreas focales de destrucción grasa, debida normalmente a la"
+    },
+    {
+      "number": "2.11",
+      "page": 41,
+      "caption": "lar. Figura 2.11 Necrosis fibrinoide en una arteria. La pared de la arteria muestra un área de color rosa vivo circunferencial de necrosis con inflamación (neutrófilos con núcleos oscuros)."
+    },
+    {
+      "number": "2.12",
+      "page": 43,
+      "caption": "ico. Figura 2.12 Características morfológicas de la apoptosis. A. Apoptosis de una célula epidérmica en una reacción inmunitaria. La célula tiene un tamaño reducido y contiene un citoplasma eosinófilo intenso y un núcleo condensado. B. Esta microfotografia electrónica de células cultivadas que están sufriendo apoptosis mues"
+    },
+    {
+      "number": "2.13",
+      "page": 44,
+      "caption": "icas Figura 2.13 Mecanismos de la apoptosis. Aunque las dos vías de la apoptosis se diferencian en su inducción y regulación, ambas culminan en la activación de caspasas. En la vía mitocondrial, las proteínas de la familia BCL2, que regulan la permeabilidad mitocondrial, se desequilibran de tal modo que la proporción de pro"
+    },
+    {
+      "number": "2.14",
+      "page": 45,
+      "caption": "OSIS Figura 2.14 Vía intrínseca (mitocondrial) de la apoptosis. A. La viabilidad de la célula se mantiene por la inducción de proteínas antiapoptósicas, como BCL2, por las señales de supervivencia. Estas proteínas mantienen la integridad de las membranas mitocondriales e impiden la fuga de las proteínas mitocondriales. B. L"
+    },
+    {
+      "number": "2.15",
+      "page": 46,
+      "caption": "OSIS Figura 2.15 Vía extrinseca (iniciada por el receptor de muerte) de la apoptosis, ilustrada por los procesos siguientes a la ocupación de Fas. FADD, dominio de muerte asociado a Fas; FasL, ligando de Fas. por una proteína llamada FLIP, que se une a la procaspasa 8, bloqueando así la unión del FADD, pero no es capaz de a"
+    },
+    {
+      "number": "2.16",
+      "page": 47,
+      "caption": "a la figura 2.16, la unión a TNFR1 recluta estas cinasas a un complejo multiproteinico, y la RIPK3 fosforila una proteína citoplásmica llamada MLKL. En respuesta a esta fosforilación, los monómeros de MLKL se reúnen en oligómeros, pasan del citosol a la membrana plasmática y provocan la rotura de la membrana plasmática cara"
+    },
+    {
+      "number": "2.17",
+      "page": 48,
+      "caption": "SOMA Figura 2.17 Autofagia. Estresores celulares como la privación de nutrientes activan una vía de autofagia que procede a lo largo de varias fases (iniciación, nucleación y alargamiento de la membrana de aislamiento) y al final crea vacuolas rodeadas por una membrana doble (autofagosomas) en las que se secuestran material"
+    },
+    {
+      "number": "2.18",
+      "page": 50,
+      "caption": "OSIS Figura 2.18 Formas y lugares principales de daño en la lesión celular. ATP, trifosfato de adenosina; ERO, especies reactivas del oxigeno. de adenosina en una reacción que tiene como resultado la reducción de oxigeno por parte del sistema de transporte de electrones de la mitocondria. La segunda es la vía glucolitica, c"
+    },
+    {
+      "number": "2.19",
+      "page": 50,
+      "caption": "OSIS Figura 2.19 Participación de las mitocondrias en la lesión y muerte celular. Las mitocondrias resultan afectadas por distintos estímulos nocivos, y sus anomalías llevan a la necrosis o a la apoptosis. ATP, trifosfato de adenosina; ERO, especies reactivas del oxigeno. canal de conductancia determina la pérdida del poten"
+    },
+    {
+      "number": "2.20",
+      "page": 51,
+      "caption": "RANA Figura 2.20 Mecanismos de daño de la membrana en la lesión celular. En la isquemia se observa normalmente una disminución del O y aumento del Ca2* citosólico, pero pueden acompañar a otros tipos de lesión celular. Las especies reactivas del oxigeno, producidas a menudo en la reperfusión de los tejidos isquémicos, tambi"
+    },
+    {
+      "number": "2.21",
+      "page": 53,
+      "caption": "ADN Figura 2.21 Producción, eliminación y participación de las especies reactivas del oxigeno (ERO) en la lesión celular. Muchos estímulos nocivos aumentan la producción de ERO. Estos radicales libres son eliminados por descomposición espontánea y mediante sistemas enzimáticos especializados. Una producción excesiva o elim"
+    },
+    {
+      "number": "2.22",
+      "page": 54,
+      "caption": "LEAR Figura 2.22 Aumento del calcio citosólico y lesión celular. RE, retículo endoplásmico. Estrés del retículo endoplásmico: respuesta a las proteínas no plegadas La acumulación de proteínas mal plegadas en el RE puede superar los mecanismos adaptativos y desencadenar la apoptosis. Las chaperonas controlan en el RE el pleg"
+    },
+    {
+      "number": "2.23",
+      "page": 55,
+      "caption": "adas Figura 2.23 Respuesta a proteínas no plegadas y estrés del retículo endoplásmico (RE). A. En las células sanas, las proteínas recién sintetizadas son plegadas en el RE con la ayuda de las chaperonas, y a continuación se incorporan a la célula o se secretan. B. Varios estresores externos o mutaciones inducen un estado d"
+    },
+    {
+      "number": "2.24",
+      "page": 55,
+      "caption": "n la figura 2.24 y mostradas anteriormente en las figuras 2.5 y 2.6. Cuando disminuye"
+    },
+    {
+      "number": "2.25",
+      "page": 58,
+      "caption": "58 A Figura 2.25 Hipertrofia fisiológica del útero durante la gestación. A. Imagen macroscópica de un útero normal (derecha) y un útero grávido (extirpado por una hemorragia posparto) (izquierda). B. Células de músculo liso, pequeñas y en forma de huso, de un útero normal, comparadas con (C) grandes células rechonchas del ú"
+    },
+    {
+      "number": "2.26",
+      "page": 58,
+      "caption": "bajo Figura 2.26 Mecanismos bioquímicos de la hipertrofia del miocardio. Se muestran las principales vías de señalización conocidas y sus efectos funcionales Los sensores mecánicos parecen ser desencadenantes fundamentales de la hipertrofia fisiológica, y es posible que los agonistas y factores de crecimiento sean más impor"
+    },
+    {
+      "number": "2.27",
+      "page": 60,
+      "caption": "nte. Figura 2.27 Atrofia. A. Cerebro normal de un adulto joven. B. Atrofia cerebral en un hombre de 82 anos con enfermedad cerebrovascular ateroesclerótica causante de un flujo sanguíneo reducido. Obsérvese que la pérdida de sustancia encefálica estrecha las circunvoluciones y ensancha los surcos. Se han retirado las mening"
+    },
+    {
+      "number": "2.28",
+      "page": 61,
+      "caption": "ier. Figura 2.28 Metaplasia de epitelio cilíndrico a escamoso. A. Diagrama esquemático. B. Metaplasia de epitelio cilíndrico (izquierda) a epitelio escamoso (derecha) en un bronquio (como sucede a menudo por fumar). Adaptaciones del crecimiento y la diferenciación celular 61 También es posible la metaplasia de tipo escamoso"
+    },
+    {
+      "number": "2.29",
+      "page": 62,
+      "caption": "enos Figura 2.29 Mecanismos de las acumulaciones intracelulares expuestas en el texto."
+    },
+    {
+      "number": "2.30",
+      "page": 63,
+      "caption": "Figura 2.30 Hígado graso. Detalle de gran aumento del cambio graso del hígado. En la mayoría de las células, el núcleo bien preservado queda comprimido en el ribete desplazado de citoplasma alrededor de la vacuola de grasa. (Por cortesía del Dr. James Crawford, Department of Pathology. Hofstra Northwell School of Medic"
+    },
+    {
+      "number": "2.31",
+      "page": 63,
+      "caption": "s 63 Figura 2.31 Colesterolosis. Macrófagos cargados de colesterol (células espumosas, flecha) en un foco de colesterolosis de la vesícula biliar. (Por cortesía del Dr. Matthew Yeh, Department of Pathology, University of Washington, Seattle, Wash.) son amorfos, fibrilares o cristalinos. En algunos trastornos, como ciertos t"
+    },
+    {
+      "number": "2.32",
+      "page": 63,
+      "caption": "nas. Figura 2.32 Goticulas de reabsorción de proteínas en el epitelio tubular renal. (Por cortesía del Dr. Helmut Rennke, Department of Pathology, Brigham and Women's Hospital, Boston, Mass."
+    },
+    {
+      "number": "2.33",
+      "page": 65,
+      "caption": "s 65 Figura 2.33 Gránulos de lipofuscina en miocardiocitos identificados mediante (A) microscopia óptica (depósitos indicados por la flecha) y (B) microscopia electrónica (obsérvese la localización perinuclear intralisosómica). rencia a los lípidos parduzcos. En los cortes tisulares aparece como un pigmento citoplásmico y a"
+    },
+    {
+      "number": "2.34",
+      "page": 66,
+      "caption": "s 66 Figura 2.34 Calcificaciones distróficas de la válvula aórtica. Imagen de la válvula aórtica cerrada en un corazón con estenosis aórtica calcificada Está notablemente estrechada (estenosis). Las valvas semilunares están engrosadas y fibróticas, y detrás de cada valva hay masas irregulares de calcificaciones distróficas"
+    },
+    {
+      "number": "2.35",
+      "page": 67,
+      "caption": "ínas Figura 2.35 Mecanismos que causan y contrarrestan el envejecimiento celular. El dao del ADN, la senectud replicativa y la reducción de las proteínas y proteínas mal plegadas son algunos de los mecanismos de envejecimiento celular mejor descritos. La detección de nutrientes, ejemplificada por la restricción Isevier. cal"
+    },
+    {
+      "number": "2.36",
+      "page": 68,
+      "caption": "ares Figura 2.36 Implicación de los telómeros y la telomerasa en la senectud replicativa de las células. El gráfico muestra la longitud del telómero respecto al número de divisiones celulares. En la mayoría de las células somáticas no hay actividad de la telomerasa, y los telómeros se acortan progresivamente con las divisio"
+    }
+  ],
+  "missing": [],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}

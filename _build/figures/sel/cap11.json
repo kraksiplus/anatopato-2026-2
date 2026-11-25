@@ -1,0 +1,70 @@
+{
+  "chapter": 11,
+  "page_id": "c2-11",
+  "figures": [
+    {
+      "number": "11.1",
+      "page": 486,
+      "caption": "Especializaciones regionales de la vasculatura. El grosor y la composición de las capas varían según las fuerzas hemodinámicas y los requerimientos tisulares.",
+      "section": "Estructura y función vasculares",
+      "after_text": "Constituyentes básicos: células endoteliales",
+      "kind": "mechanism"
+    },
+    {
+      "number": "11.2",
+      "page": 488,
+      "caption": "Estados basal y activado de las células endoteliales. El flujo laminar y los factores de crecimiento mantienen un estado basal; la lesión o los mediadores inflamatorios inducen activación endotelial.",
+      "section": "Estructura y función vasculares",
+      "after_text": "La disfunción endotelial es un fenotipo proinflamatorio",
+      "kind": "mechanism"
+    },
+    {
+      "number": "11.6",
+      "page": 493,
+      "caption": "Patología vascular en la hipertensión. A. Arterioloesclerosis hialina, con pared engrosada y luz estrecha. B. Arterioloesclerosis hiperplásica en piel de cebolla.",
+      "section": "Enfermedad vascular hipertensiva",
+      "after_text": "La hipertensión también acelera la aterogenia",
+      "kind": "diagnostic"
+    },
+    {
+      "number": "11.7",
+      "page": 494,
+      "caption": "Estructura básica de una placa ateroesclerótica. La lesión se centra en la íntima, con interacciones entre células, lípidos y matriz extracelular.",
+      "section": "Ateroesclerosis",
+      "after_text": "lesión intimal elevada",
+      "kind": "mechanism"
+    },
+    {
+      "number": "11.10",
+      "page": 497,
+      "caption": "Evolución de la placa arterial según la hipótesis de la respuesta a la lesión: desde la lesión endotelial hasta la placa desarrollada.",
+      "section": "Ateroesclerosis",
+      "after_text": "La ateroesclerosis es una respuesta inflamatoria y de cicatrización crónica",
+      "kind": "mechanism"
+    },
+    {
+      "number": "11.14",
+      "page": 501,
+      "caption": "Ateroesclerosis macroscópica de la aorta. A. Placas fibrosas leves. B. Lesiones difusas complicadas, con placa ulcerada y trombo.",
+      "section": "Ateroesclerosis",
+      "after_text": "Placa ateroesclerótica: amarillo-pardusca",
+      "kind": "diagnostic"
+    },
+    {
+      "number": "11.15",
+      "page": 501,
+      "caption": "Histología de una placa ateromatosa coronaria. A. Cubierta fibrosa y núcleo necrótico. B. Detalle de la placa. C. Células inflamatorias y neovascularización.",
+      "section": "Ateroesclerosis",
+      "after_text": "Las placas fibrosas son casi solo CML",
+      "kind": "diagnostic"
+    },
+    {
+      "number": "11.19",
+      "page": 504,
+      "caption": "Tipos de aneurisma y disección. A. Vaso normal. B. Aneurisma sacular. C. Aneurisma fusiforme. D. Falso aneurisma. E. Disección.",
+      "section": "Aneurismas y disección",
+      "after_text": "Un aneurisma es una dilatación localizada anómala",
+      "kind": "diagnostic"
+    }
+  ]
+}

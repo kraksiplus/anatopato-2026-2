@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
     <h1>Capítulo 18. Hígado y vesícula biliar</h1>
-    <p class="lede">Guía 08 de 08. Resumen completo del capítulo 18 con 217 citas por página y 16 filas de tabla.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>08 de 08</strong></div><div><span>Capítulo</span><strong>18</strong></div><div><span>Páginas</span><strong>823-880</strong></div><div><span>Citas</span><strong>217</strong></div><div><span>Tablas</span><strong>16</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 08 de 08. Resumen completo del capítulo 18 con 217 citas por página y 16 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>08 de 08</strong></div><div><span>Capítulo</span><strong>18</strong></div><div><span>Páginas</span><strong>823-880</strong></div><div><span>Citas</span><strong>217</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>16</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -481,6 +537,7 @@
         <li><a href="#sec-13-nodulos-y-tumores-hepaticos">Nódulos y tumores hepáticos</a></li>
         <li><a href="#sec-14-vesicula-biliar">Vesícula biliar</a></li>
         <li><a href="#sec-15-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C2">Índice C2</a>
@@ -544,6 +601,15 @@
 <li>La esteatosis microvesicular difusa (hígado graso del embarazo, valproato, tetraciclina) causa insuficiencia por <strong>disfunción mitocondrial sin muerte celular evidente</strong> <span class="cite">p. 826</span>.</li>
 <li>Virus no hepatótropos (CMV, VHS, adenovirus) causan insuficiencia aguda en inmunodeficiencia (VIH no tratado, postrasplante, neoplasias linfoideas) <span class="cite">p. 826</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-4">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-4.webp" data-caption="Figura 18.4. Necrosis hepática masiva: hígado pequeño, blando y congestivo. La necrosis por sobredosis de paracetamol es confluente, perivenular (zona 3), con parénquima residual conservado." data-alt="Figura 18.4. Necrosis hepática masiva: hígado pequeño, blando y congestivo. La necrosis por sobredosis de paracetamol es confluente, perivenular (zona 3), con parénquima residual conservado. Robbins y Cotran, 10ª ed., p. 827.">
+    <img src="../assets/fig/cap18/fig-18-4.webp" width="702" height="963" loading="lazy" decoding="async" alt="Figura 18.4. Necrosis hepática masiva: hígado pequeño, blando y congestivo. La necrosis por sobredosis de paracetamol es confluente, perivenular (zona 3), con parénquima residual conservado. Robbins y Cotran, 10ª ed., p. 827.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.4.</strong> Necrosis hepática masiva: hígado pequeño, blando y congestivo. La necrosis por sobredosis de paracetamol es confluente, perivenular (zona 3), con parénquima residual conservado.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 827. <a href="../creditos.html#fig-18-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="características-clínicas-de-la-insuficiencia-hepática">Características clínicas de la insuficiencia hepática</h3>
 <ul>
 <li>Náuseas, vómitos, ictericia, luego encefalopatía y coagulopatía. El descenso de transaminasas con empeoramiento de ictericia/coagulopatía indica hepatocitos residuales escasos <span class="cite">p. 827</span>.</li>
@@ -592,6 +658,15 @@
 <li><strong>Síndrome hepatopulmonar</strong>: hasta 30% de los ciróticos; dilatación de vasos capilares/precapilares intrapulmonares hasta 500 μm, derivación derecha-izquierda, hipoxemia con disnea peor en posición erguida <span class="cite">p. 830</span>.</li>
 <li><strong>Hipertensión portopulmonar</strong>: hipertensión arterial pulmonar asociada a hepatopatía, con disnea de esfuerzo y dedos en palillo de tambor <span class="cite">p. 830</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-7">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-7.webp" data-caption="Figura 18.7. Consecuencias de la hipertensión portal: ascitis, derivaciones portosistémicas (varices esofagogástricas, cabeza de medusa) y esplenomegalia congestiva." data-alt="Figura 18.7. Consecuencias de la hipertensión portal: ascitis, derivaciones portosistémicas (varices esofagogástricas, cabeza de medusa) y esplenomegalia congestiva. Robbins y Cotran, 10ª ed., p. 830.">
+    <img src="../assets/fig/cap18/fig-18-7.webp" width="720" height="1105" loading="lazy" decoding="async" alt="Figura 18.7. Consecuencias de la hipertensión portal: ascitis, derivaciones portosistémicas (varices esofagogástricas, cabeza de medusa) y esplenomegalia congestiva. Robbins y Cotran, 10ª ed., p. 830.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.7.</strong> Consecuencias de la hipertensión portal: ascitis, derivaciones portosistémicas (varices esofagogástricas, cabeza de medusa) y esplenomegalia congestiva.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 830. <a href="../creditos.html#fig-18-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="insuficiencia-hepática-aguda-sobre-crónica">Insuficiencia hepática aguda sobre crónica</h3>
 <ul>
 <li>Cirrosis establecida con derivación vascular extensa: parénquima con aporte vascular límite muy vulnerable. Mortalidad a corto plazo ~50% <span class="cite">p. 830</span>.</li>
@@ -673,6 +748,15 @@
 <li>Evolución en adultos: infección subclínica 65%, hepatitis aguda 25%, hepatitis fulminante &lt;1%, hepatitis crónica 5-10% (de estos, 20-30% → cirrosis, y de ellos 2-3%/año de CHC). Cronificación ~90% en lactantes infectados perinatalmente <span class="cite">p. 832-833</span>.</li>
 <li>Tratamiento: interferón y análogos (entecavir, tenofovir) frenan la progresión, pero la curación es difícil. Vacuna eficaz en 95% de lactantes, niños y adolescentes <span class="cite">p. 833</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-9">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-9.webp" data-caption="Figura 18.9. Evolución de la infección por hepatitis B en adultos: infección subclínica, hepatitis aguda, fulminante o crónica, con frecuencias aproximadas de cada curso." data-alt="Figura 18.9. Evolución de la infección por hepatitis B en adultos: infección subclínica, hepatitis aguda, fulminante o crónica, con frecuencias aproximadas de cada curso. Robbins y Cotran, 10ª ed., p. 832.">
+    <img src="../assets/fig/cap18/fig-18-9.webp" width="1476" height="609" loading="lazy" decoding="async" alt="Figura 18.9. Evolución de la infección por hepatitis B en adultos: infección subclínica, hepatitis aguda, fulminante o crónica, con frecuencias aproximadas de cada curso. Robbins y Cotran, 10ª ed., p. 832.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.9.</strong> Evolución de la infección por hepatitis B en adultos: infección subclínica, hepatitis aguda, fulminante o crónica, con frecuencias aproximadas de cada curso.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 832. <a href="../creditos.html#fig-18-9">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h4 id="virus-de-la-hepatitis-c">Virus de la hepatitis C</h4>
 <ul>
 <li><em>Flaviviridae</em>; ARN+ con envoltura; proteínas E1/E2, p7, <strong>NS3/4A</strong> (proteasa), <strong>NS5A</strong> (replicación) y <strong>NS5B</strong> (ARN polimerasa). La baja fidelidad de la polimerasa genera <strong>cuasiespecies</strong> (7 genotipos) que escapan a los anti-E2; NS3/4A anula la respuesta al interferón <span class="cite">p. 834</span>.</li>
@@ -708,6 +792,15 @@
 <li><strong>VHC crónica</strong>: <strong>agregados o folículos linfoides</strong> portales, esteatosis (marcada en genotipo 3) y lesión ductal focal <span class="cite">p. 837</span>.</li>
 <li>La biopsia evalúa <strong>grado</strong> (inflamación) y <strong>estadio</strong> (fibrosis), y el estadio orienta la terapia <span class="cite">p. 838</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-14">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-14.webp" data-caption="Figura 18.14. Hepatocitos en vidrio deslustrado en la hepatitis B crónica: inclusiones citoplásmicas rosa pálido por acumulación de HBsAg en el retículo endoplásmico, confirmadas con inmunotinción." data-alt="Figura 18.14. Hepatocitos en vidrio deslustrado en la hepatitis B crónica: inclusiones citoplásmicas rosa pálido por acumulación de HBsAg en el retículo endoplásmico, confirmadas con inmunotinción. Robbins y Cotran, 10ª ed., p. 838.">
+    <img src="../assets/fig/cap18/fig-18-14.webp" width="740" height="438" loading="lazy" decoding="async" alt="Figura 18.14. Hepatocitos en vidrio deslustrado en la hepatitis B crónica: inclusiones citoplásmicas rosa pálido por acumulación de HBsAg en el retículo endoplásmico, confirmadas con inmunotinción. Robbins y Cotran, 10ª ed., p. 838.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.14.</strong> Hepatocitos en vidrio deslustrado en la hepatitis B crónica: inclusiones citoplásmicas rosa pálido por acumulación de HBsAg en el retículo endoplásmico, confirmadas con inmunotinción.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 838. <a href="../creditos.html#fig-18-14">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="infecciones-bacterianas-micóticas-y-parasitarias">Infecciones bacterianas, micóticas y parasitarias</h3>
 <ul>
 <li>Bacterias: <em>Staphylococcus aureus</em> (shock tóxico), <em>Salmonella typhi</em>, <em>Treponema pallidum</em>, <em>Bartonella henselae</em>. La <strong>colangitis ascendente</strong> complicada puede formar <strong>abscesos hepáticos</strong> (fiebre, dolor en hipocondrio derecho, hepatomegalia dolorosa) <span class="cite">p. 839</span>.</li>
@@ -751,6 +844,15 @@
 <li>Clínica: esteatosis = hepatomegalia y leve elevación de bilirrubina/FA, reversible con abstinencia. Hepatitis alcohólica: debut agudo tras atracones, hepatomegalia dolorosa, hiperbilirrubinemia, leucocitosis neutrofílica. <strong>GOT/GPT ≥2:1</strong> (pista de alcoholismo oculto). Cada episodio tiene 10-20% de riesgo de muerte; ~un tercio progresa a cirrosis en pocos años <span class="cite">p. 844-845</span>.</li>
 <li>Pronóstico: supervivencia a 5 años ~90% en abstemios sin ictericia/ascitis/hematemesis, 50-60% si sigue bebiendo. Riesgo de CHC en la cirrosis alcohólica: <strong>1-6% anual</strong> <span class="cite">p. 845</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-19">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-19.webp" data-caption="Figura 18.19. Hepatitis alcohólica: hepatocitos balonizados, hialina de Mallory intracitoplásmica y neutrófilos agrupados alrededor de hepatocitos necróticos." data-alt="Figura 18.19. Hepatitis alcohólica: hepatocitos balonizados, hialina de Mallory intracitoplásmica y neutrófilos agrupados alrededor de hepatocitos necróticos. Robbins y Cotran, 10ª ed., p. 845.">
+    <img src="../assets/fig/cap18/fig-18-19.webp" width="1460" height="591" loading="lazy" decoding="async" alt="Figura 18.19. Hepatitis alcohólica: hepatocitos balonizados, hialina de Mallory intracitoplásmica y neutrófilos agrupados alrededor de hepatocitos necróticos. Robbins y Cotran, 10ª ed., p. 845.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.19.</strong> Hepatitis alcohólica: hepatocitos balonizados, hialina de Mallory intracitoplásmica y neutrófilos agrupados alrededor de hepatocitos necróticos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 845. <a href="../creditos.html#fig-18-19">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="esteatosis-no-alcohólica">Esteatosis no alcohólica</h3>
 <ul>
 <li><strong>ENA</strong>: esteatosis sin consumo relevante de alcohol ni otra causa (VHC, Wilson, fármacos); asociada a <strong>síndrome metabólico</strong> (obesidad, DM2, hiperlipidemia). Causa más frecuente de hepatopatía crónica en EE. UU.; se prevé &gt;30% de prevalencia adulta en 2030 <span class="cite">p. 846</span>.</li>
@@ -771,6 +873,15 @@
 <li><strong>Morfología</strong>: depósito de hemosiderina primero en hepatocitos periportales (azul de Prusia), luego difuso, en epitelio biliar y células de Kupffer; <strong>ausencia de inflamación</strong>; cirrosis micronodular. Órganos afectados (orden decreciente): hígado, páncreas, miocardio, hipófisis, suprarrenal, tiroides/paratiroides, articulaciones y piel <span class="cite">p. 849</span>.</li>
 <li><strong>Clínica</strong>: síntomas en la 4ª-5ª década en hombres (mujeres más tarde por la menstruación; proporción 5-7:1). Tetada clásica: cirrosis, diabetes (75-80%), pigmentación cutánea gris pizarra (75-80%), disfunción cardiaca; también hipogonadismo, artritis/seudogota. <strong>Riesgo de CHC 200 veces</strong> mayor; el tratamiento (flebotomía) no lo elimina. Con flebotomías regulares, esperanza de vida normal <span class="cite">p. 849-850</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-23">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-23.webp" data-caption="Figura 18.23. Metabolismo del hierro en la hemocromatosis hereditaria: la vía HFE, HJV y TFR2 regula la síntesis hepática de hepcidina, que inhibe la ferroportina de los enterocitos y macrófagos." data-alt="Figura 18.23. Metabolismo del hierro en la hemocromatosis hereditaria: la vía HFE, HJV y TFR2 regula la síntesis hepática de hepcidina, que inhibe la ferroportina de los enterocitos y macrófagos. Robbins y Cotran, 10ª ed., p. 849.">
+    <img src="../assets/fig/cap18/fig-18-23.webp" width="699" height="363" loading="lazy" decoding="async" alt="Figura 18.23. Metabolismo del hierro en la hemocromatosis hereditaria: la vía HFE, HJV y TFR2 regula la síntesis hepática de hepcidina, que inhibe la ferroportina de los enterocitos y macrófagos. Robbins y Cotran, 10ª ed., p. 849.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.23.</strong> Metabolismo del hierro en la hemocromatosis hereditaria: la vía HFE, HJV y TFR2 regula la síntesis hepática de hepcidina, que inhibe la ferroportina de los enterocitos y macrófagos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 849. <a href="../creditos.html#fig-18-23">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="enfermedad-de-wilson">Enfermedad de Wilson</h3>
 <ul>
 <li>Autosómica recesiva por pérdida de función de <em><strong>ATP7B</strong></em> (ATPasa transportadora de cobre canalicular): ↓excreción biliar de cobre y ↓incorporación a la ceruloplasmina. Prevalencia 1:30.000-1:50.000; mayoría heterocigotos compuestos (&gt;300 variantes) <span class="cite">p. 850</span>.</li>
@@ -796,6 +907,15 @@
 <li>Transportadores canalículares: <strong>MRP2</strong> (bilirrubina conjugada), <strong>BSEP</strong> (sales biliares), <strong>MDR3</strong> (fosfatidilcolina), esterolinas 1 y 2 (colesterol) <span class="cite">p. 853</span>.</li>
 <li>Bilirrubina sérica normal 0,3-1,2 mg/dl; ictericia evidente &gt;2-2,5 mg/dl. La no conjugada es insoluble y produce <strong>kernicterus</strong> en lactantes; la conjugada es hidrosoluble y se excreta en orina <span class="cite">p. 853</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-26">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-26.webp" data-caption="Figura 18.26. Metabolismo y eliminación de la bilirrubina: degradación del hemo, transporte unido a albúmina, captación y conjugación hepática, excreción biliar y ciclo de los urobilinógenos." data-alt="Figura 18.26. Metabolismo y eliminación de la bilirrubina: degradación del hemo, transporte unido a albúmina, captación y conjugación hepática, excreción biliar y ciclo de los urobilinógenos. Robbins y Cotran, 10ª ed., p. 852.">
+    <img src="../assets/fig/cap18/fig-18-26.webp" width="747" height="1286" loading="lazy" decoding="async" alt="Figura 18.26. Metabolismo y eliminación de la bilirrubina: degradación del hemo, transporte unido a albúmina, captación y conjugación hepática, excreción biliar y ciclo de los urobilinógenos. Robbins y Cotran, 10ª ed., p. 852.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.26.</strong> Metabolismo y eliminación de la bilirrubina: degradación del hemo, transporte unido a albúmina, captación y conjugación hepática, excreción biliar y ciclo de los urobilinógenos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 852. <a href="../creditos.html#fig-18-26">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="ictericia-fisiológica-del-recién-nacido">Ictericia fisiológica del recién nacido</h3>
 <ul>
 <li><strong>UGT1A1</strong> baja al nacer (valores adultos a los 3-4 meses); hiperbilirrubinemia no conjugada leve casi universal en la primera semana; la leche materna puede exacerbarla; fototerapia con luz azul <span class="cite">p. 853</span>.</li>
@@ -867,6 +987,15 @@
 <li><strong>CBP</strong>: destrucción inmunomediada de conductos interlobulillares pequeños y medianos; los AMA se dirigen contra <strong>PDC-E2</strong> (componente E2 del complejo piruvato deshidrogenasa). Diagnóstico con 2 de 3: FA elevada &gt;6 meses, AMA+, histología típica. Progresión a hepatopatía terminal en 20-25% a 15-20 años; ácido ursodesoxicólico (respuesta inadecuada hasta en 40%; alternativa ácido obeticólico); trasplante con supervivencia &gt;70% a 7 años. <strong>Estasis de colato</strong> periportal (degeneración plumosa, Mallory); nódulos alargados "en guirnalda"; puede causar <strong>hiperplasia nodular regenerativa</strong> sin fibrosis <span class="cite">p. 857-858</span>.</li>
 <li><strong>CEP</strong>: inflamación y <strong>fibrosis obliterativa</strong> de conductos grandes, con fibrosis periductal <strong>"en capas de cebolla"</strong> y cicatriz "en lápida". Asociación con <strong>colitis ulcerosa</strong> (70% de los CEP; 8% de los EII desarrollan CEP). Diagnóstico por CPRE/CPRM ("aspecto arrosariado"). Cirrosis en 10-15 años; <strong>riesgo vital de colangiocarcinoma 20%</strong>. No hay tratamiento médico establecido; distinguir de la <strong>enfermedad esclerosante por IgG4</strong> (responde a esteroides) <span class="cite">p. 858-859</span>.</li>
 </ul>
+<figure class="fig" id="fig-18-35">
+  <a class="fig-open" href="../assets/fig/cap18/fig-18-35.webp" data-caption="Figura 18.35. Colangitis esclerosante primaria: conducto biliar en degeneración atrapado en una cicatriz concéntrica densa en capas de cebolla, patrón histológico característico." data-alt="Figura 18.35. Colangitis esclerosante primaria: conducto biliar en degeneración atrapado en una cicatriz concéntrica densa en capas de cebolla, patrón histológico característico. Robbins y Cotran, 10ª ed., p. 859.">
+    <img src="../assets/fig/cap18/fig-18-35.webp" width="720" height="515" loading="lazy" decoding="async" alt="Figura 18.35. Colangitis esclerosante primaria: conducto biliar en degeneración atrapado en una cicatriz concéntrica densa en capas de cebolla, patrón histológico característico. Robbins y Cotran, 10ª ed., p. 859.">
+  </a>
+  <figcaption>
+    <strong>Figura 18.35.</strong> Colangitis esclerosante primaria: conducto biliar en degeneración atrapado en una cicatriz concéntrica densa en capas de cebolla, patrón histológico característico.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 859. <a href="../creditos.html#fig-18-35">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="anomalías-estructurales-del-árbol-biliar">Anomalías estructurales del árbol biliar</h3>
 <ul>
 <li><strong>Quiste de colédoco</strong>: dilatación congénita del colédoco, mujer:hombre 3-4:1, antes de los 10 años (20% solo en adultos); riesgo de cálculos, pancreatitis y <strong>carcinoma de vías biliares</strong> <span class="cite">p. 859-860</span>.</li>
@@ -1024,6 +1153,11 @@
 </ul>
 
 <div class="warnbox"><span class="box-title">Trampas de diferencial clásicas</span>Cuerpos acidófilos en cualquier hepatitis vs cuerpos de Councilman solo en fiebre amarilla. Síndrome de obstrucción sinusoidal (endotelio, post-trasplante de células madre) vs Budd-Chiari (trombosis de venas hepáticas mayores). Síndrome hepatopulmonar (vasodilatación, hipoxemia peor de pie) vs hipertensión portopulmonar (vasoconstricción) <span class="cite">p. 825, 830, 862-863</span>.</div>
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-18-4" aria-label="Figura 18.4"><img src="../assets/fig/cap18/fig-18-4.webp" loading="lazy" decoding="async" alt="Figura 18.4"><span>Figura 18.4</span></a><a class="fig-thumb" href="#fig-18-7" aria-label="Figura 18.7"><img src="../assets/fig/cap18/fig-18-7.webp" loading="lazy" decoding="async" alt="Figura 18.7"><span>Figura 18.7</span></a><a class="fig-thumb" href="#fig-18-9" aria-label="Figura 18.9"><img src="../assets/fig/cap18/fig-18-9.webp" loading="lazy" decoding="async" alt="Figura 18.9"><span>Figura 18.9</span></a><a class="fig-thumb" href="#fig-18-14" aria-label="Figura 18.14"><img src="../assets/fig/cap18/fig-18-14.webp" loading="lazy" decoding="async" alt="Figura 18.14"><span>Figura 18.14</span></a><a class="fig-thumb" href="#fig-18-19" aria-label="Figura 18.19"><img src="../assets/fig/cap18/fig-18-19.webp" loading="lazy" decoding="async" alt="Figura 18.19"><span>Figura 18.19</span></a><a class="fig-thumb" href="#fig-18-23" aria-label="Figura 18.23"><img src="../assets/fig/cap18/fig-18-23.webp" loading="lazy" decoding="async" alt="Figura 18.23"><span>Figura 18.23</span></a><a class="fig-thumb" href="#fig-18-26" aria-label="Figura 18.26"><img src="../assets/fig/cap18/fig-18-26.webp" loading="lazy" decoding="async" alt="Figura 18.26"><span>Figura 18.26</span></a><a class="fig-thumb" href="#fig-18-35" aria-label="Figura 18.35"><img src="../assets/fig/cap18/fig-18-35.webp" loading="lazy" decoding="async" alt="Figura 18.35"><span>Figura 18.35</span></a></div>
 </section>
   </main>
 </div>
@@ -1031,7 +1165,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -1049,8 +1190,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -1070,6 +1211,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

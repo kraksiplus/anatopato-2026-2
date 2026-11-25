@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -455,6 +511,7 @@
       <div><span>Páginas del libro</span><strong>483</strong></div>
       <div><span>Manual</span><strong>Sí</strong></div>
       <div><span>Citas por página</span><strong>No</strong></div>
+      <div><span>Figuras</span><strong>78</strong></div>
       <div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div>
     </div>
     <div class="hero-actions">
@@ -574,8 +631,8 @@
   <h2>Cobertura</h2>
   <div class="table-wrap" role="region" aria-label="Cobertura por capítulo" tabindex="0">
     <table>
-      <thead><tr><th>#</th><th>Capítulo</th><th>Páginas impresas</th><th>Páginas</th><th>Citas</th></tr></thead>
-      <tbody><tr><td>1</td><td><a href="01_La_Celula.html">La célula como unidad de salud y enfermedad</a></td><td>1-32</td><td>32</td><td>No</td></tr><tr><td>2</td><td><a href="02_Lesion_Celular.html">Lesión celular, muerte celular y adaptaciones</a></td><td>33-70</td><td>38</td><td>No</td></tr><tr><td>3</td><td><a href="03_Inflamacion_Reparacion.html">Inflamación y reparación</a></td><td>71-114</td><td>44</td><td>No</td></tr><tr><td>4</td><td><a href="04_Hemodinamia_Shock.html">Trastornos hemodinámicos, enfermedad tromboembólica y shock</a></td><td>115-140</td><td>26</td><td>No</td></tr><tr><td>5</td><td><a href="05_Trastornos_Geneticos.html">Trastornos genéticos</a></td><td>141-188</td><td>48</td><td>No</td></tr><tr><td>6</td><td><a href="06_Sistema_Inmunitario.html">Enfermedades del sistema inmunitario</a></td><td>189-266</td><td>78</td><td>No</td></tr><tr><td>7</td><td><a href="07_Neoplasias.html">Neoplasias</a></td><td>267-338</td><td>72</td><td>No</td></tr><tr><td>8</td><td><a href="08_Enfermedades_Infecciosas.html">Enfermedades infecciosas</a></td><td>339-404</td><td>66</td><td>No</td></tr><tr><td>9</td><td><a href="09_Ambientales_Nutricionales.html">Enfermedades ambientales y nutricionales</a></td><td>405-452</td><td>48</td><td>No</td></tr><tr><td>10</td><td><a href="10_Lactancia_Infancia.html">Enfermedades de la lactancia y la infancia</a></td><td>453-483</td><td>31</td><td>No</td></tr></tbody>
+      <thead><tr><th>#</th><th>Capítulo</th><th>Páginas impresas</th><th>Páginas</th><th>Figuras</th><th>Citas</th></tr></thead>
+      <tbody><tr><td>1</td><td><a href="01_La_Celula.html">La célula como unidad de salud y enfermedad</a></td><td>1-32</td><td>32</td><td>8</td><td>No</td></tr><tr><td>2</td><td><a href="02_Lesion_Celular.html">Lesión celular, muerte celular y adaptaciones</a></td><td>33-70</td><td>38</td><td>8</td><td>No</td></tr><tr><td>3</td><td><a href="03_Inflamacion_Reparacion.html">Inflamación y reparación</a></td><td>71-114</td><td>44</td><td>7</td><td>No</td></tr><tr><td>4</td><td><a href="04_Hemodinamia_Shock.html">Trastornos hemodinámicos, enfermedad tromboembólica y shock</a></td><td>115-140</td><td>26</td><td>8</td><td>No</td></tr><tr><td>5</td><td><a href="05_Trastornos_Geneticos.html">Trastornos genéticos</a></td><td>141-188</td><td>48</td><td>8</td><td>No</td></tr><tr><td>6</td><td><a href="06_Sistema_Inmunitario.html">Enfermedades del sistema inmunitario</a></td><td>189-266</td><td>78</td><td>7</td><td>No</td></tr><tr><td>7</td><td><a href="07_Neoplasias.html">Neoplasias</a></td><td>267-338</td><td>72</td><td>8</td><td>No</td></tr><tr><td>8</td><td><a href="08_Enfermedades_Infecciosas.html">Enfermedades infecciosas</a></td><td>339-404</td><td>66</td><td>8</td><td>No</td></tr><tr><td>9</td><td><a href="09_Ambientales_Nutricionales.html">Enfermedades ambientales y nutricionales</a></td><td>405-452</td><td>48</td><td>8</td><td>No</td></tr><tr><td>10</td><td><a href="10_Lactancia_Infancia.html">Enfermedades de la lactancia y la infancia</a></td><td>453-483</td><td>31</td><td>8</td><td>No</td></tr></tbody>
     </table>
   </div>
 </section>
@@ -585,6 +642,7 @@
   <h2>Notas de fuente</h2>
   <ul>
     <li>Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª edición.</li>
+    <li>Las figuras provienen de Robbins y Cotran, 10ª ed. (Elsevier España, 2021) y pertenecen a Elsevier y a los autores. Se usan con fines educativos y sin fines comerciales. <a href="../creditos.html">Créditos de las figuras</a>.</li>
     <li>Los PDF originales y el OCR crudo no se publican; solo el HTML de estudio.</li>
     <li>Material docente, no una recomendación clínica.</li>
   </ul>
@@ -595,7 +653,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -613,8 +678,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -634,6 +699,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

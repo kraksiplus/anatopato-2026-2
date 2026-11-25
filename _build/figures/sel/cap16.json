@@ -1,0 +1,78 @@
+{
+  "chapter": 16,
+  "page_id": "c2-16",
+  "figures": [
+    {
+      "number": "16.4",
+      "page": 735,
+      "caption": "Eritroplasia: decoloración roja de la encía maxilar y de la cresta alveolar mandibular; la biopsia de ambas lesiones reveló carcinoma in situ.",
+      "section": "Cavidad oral",
+      "after_text": "área roja aterciopelada, deprimida; mucho más ominosa",
+      "kind": "diagnostic",
+      "why": "La eritroplasia es la lesión premaligna más ominosa (~90% displasia grave o carcinoma in situ), punto de examen directo"
+    },
+    {
+      "number": "16.6",
+      "page": 737,
+      "caption": "Carcinoma epidermoide queratinizante: ulceración e induración de la mucosa oral, con nidos de queratinocitos malignos y remolinos escamosos que infiltran el estroma y el músculo.",
+      "section": "Cavidad oral",
+      "after_text": "se presenta como masa ulcerada e indurada",
+      "kind": "diagnostic",
+      "why": "El CE clásico (VPH negativo) es el tumor maligno más frecuente de cabeza y cuello; muestra la morfología clínica e histológica típica"
+    },
+    {
+      "number": "16.7",
+      "page": 738,
+      "caption": "Carcinoma epidermoide no queratinizante (VPH positivo): células basaloides en nidos y cordones, con fuerte tinción nuclear y citoplásmica de p16 y expresión de ARN de E6 y E7 del VPH.",
+      "section": "Cavidad oral",
+      "after_text": "CE VPH+ no queratinizante, basaloide, en criptas amigdalinas",
+      "kind": "diagnostic",
+      "why": "El CE VPH+ con p16 y E6/E7 es un punto de examen central y contrasta con el CE queratinizante"
+    },
+    {
+      "number": "16.13",
+      "page": 743,
+      "caption": "Comparación esquemática de un nódulo del cantante, un papiloma benigno y un carcinoma exofítico de laringe, que resalta las diferencias en su aspecto clínico.",
+      "section": "Vías respiratorias superiores",
+      "after_text": "Por convención, nódulos = bilaterales; pólipos = unilaterales",
+      "kind": "mechanism",
+      "why": "Diagrama esquemático que diferencia lesiones laríngeas benignas de malignas, con el punto de examen nódulos bilaterales vs pólipos unilaterales"
+    },
+    {
+      "number": "16.15",
+      "page": 746,
+      "caption": "Tumor del cuerpo carotideo: nidos de células tumorales (zellballen) separados por tabiques con capilares, y positividad para cromogranina por inmunohistoquímica.",
+      "section": "Cuello",
+      "after_text": "nidos zellballen de células principales neuroendocrinas",
+      "kind": "diagnostic",
+      "why": "El patrón zellballen es el hallazgo patognomónico del paraganglioma y aparece en Puntos de examen"
+    },
+    {
+      "number": "16.18",
+      "page": 749,
+      "caption": "Adenoma pleomorfo: tumor bien delimitado con células epiteliales y mioepiteliales formando conductos en una matriz condromixoide.",
+      "section": "Glándulas salivales",
+      "after_text": "células ductales, mioepiteliales y mesenquimatosas",
+      "kind": "diagnostic",
+      "why": "Tumor salival más frecuente; la matriz condromixoide explica el recidivar por siembra y es clave de examen"
+    },
+    {
+      "number": "16.20",
+      "page": 750,
+      "caption": "Carcinoma mucoepidermoide: sábanas y microquistes con células de morfología variable, de mucinosas a intermedias y escamosas.",
+      "section": "Glándulas salivales",
+      "after_text": "células escamosas, mucosas e intermedias",
+      "kind": "diagnostic",
+      "why": "Maligno salival más frecuente, con la tríada celular característica y asociación a t(11;19) CRTC1-MAML2"
+    },
+    {
+      "number": "16.21",
+      "page": 751,
+      "caption": "Carcinoma adenoideo quístico: patrones de crecimiento cribiforme, tubular y sólido, además de infiltración perineural característica.",
+      "section": "Glándulas salivales",
+      "after_text": "patrón cribiforme \"queso suizo\" con material hialino",
+      "kind": "diagnostic",
+      "why": "El patrón cribiforme y la infiltración perineural son los datos clave del carcinoma adenoideo quístico en Puntos de examen"
+    }
+  ]
+}

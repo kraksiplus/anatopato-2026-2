@@ -1,0 +1,44 @@
+{
+  "chapter": 9,
+  "printed_start": 405,
+  "figures": [
+    {
+      "number": "9.3",
+      "page": 408
+    },
+    {
+      "number": "9.6",
+      "page": 412
+    },
+    {
+      "number": "9.11",
+      "page": 419
+    },
+    {
+      "number": "9.13",
+      "page": 423
+    },
+    {
+      "number": "9.15",
+      "page": 429,
+      "bbox": [
+        820,
+        1370,
+        1555,
+        2048
+      ]
+    },
+    {
+      "number": "9.21",
+      "page": 434
+    },
+    {
+      "number": "9.22",
+      "page": 436
+    },
+    {
+      "number": "9.26",
+      "page": 441
+    }
+  ]
+}

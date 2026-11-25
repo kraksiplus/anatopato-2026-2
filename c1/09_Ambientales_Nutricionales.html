@@ -440,6 +440,62 @@
 .cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
 .cert-card p{color:var(--muted);margin:.4rem 0 1rem}
 .cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:relative;background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;max-width:min(96vw,1500px);
+  width:auto;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
 </style>
 </head>
 <body>
@@ -449,8 +505,8 @@
   <div class="hero-inner">
     <p class="eyebrow">Certamen 1 · Anatomía Patológica</p>
     <h1>Capítulo 9. Enfermedades ambientales y nutricionales</h1>
-    <p class="lede">Guía 09 de 10. Resumen completo del capítulo 9 con 20 filas de tabla. Sin citas por página: material del Certamen 1.</p>
-    <div class="meta-grid"><div><span>Guía</span><strong>09 de 10</strong></div><div><span>Capítulo</span><strong>9</strong></div><div><span>Páginas</span><strong>405-452</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Tablas</span><strong>20</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <p class="lede">Guía 09 de 10. Resumen completo del capítulo 9 con 20 filas de tabla. Sin citas por página: material del Certamen 1. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>09 de 10</strong></div><div><span>Capítulo</span><strong>9</strong></div><div><span>Páginas</span><strong>405-452</strong></div><div><span>Citas</span><strong>sin cita por página</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>20</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
     <div class="hero-actions">
       <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
       <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
@@ -477,6 +533,7 @@
         <li><a href="#sec-09-danos-por-agentes-fisicos">Daños por agentes físicos</a></li>
         <li><a href="#sec-10-enfermedades-nutricionales">Enfermedades nutricionales</a></li>
         <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
       </ul>
       <div class="figs">
 <a href="index.html" title="Índice C1">Índice C1</a>
@@ -524,6 +581,15 @@
 <li>Ejemplos de activación tóxica: el tetracloruro de carbono (radical triclorometilo en el hígado) y el benzo[a]pireno del humo del tabaco (aductos de ADN en el pulmón).</li>
 <li>La actividad del P-450 varía por <strong>polimorfismos</strong> y por <strong>inducción/inhibición</strong> (el alcohol y el tabaco inducen; el ayuno disminuye), lo que altera la susceptibilidad individual.</li>
 </ul>
+<figure class="fig" id="fig-9-3">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-3.webp" data-caption="Figura 9.3. Metabolismo de los xenobióticos en dos fases: la fase I (citocromo P-450) puede detoxificarlos o generar metabolitos reactivos tóxicos para la célula." data-alt="Figura 9.3. Metabolismo de los xenobióticos en dos fases: la fase I (citocromo P-450) puede detoxificarlos o generar metabolitos reactivos tóxicos para la célula. Robbins y Cotran, 10ª ed., p. 408.">
+    <img src="../assets/fig/cap09/fig-9-3.webp" width="1474" height="654" loading="lazy" decoding="async" alt="Figura 9.3. Metabolismo de los xenobióticos en dos fases: la fase I (citocromo P-450) puede detoxificarlos o generar metabolitos reactivos tóxicos para la célula. Robbins y Cotran, 10ª ed., p. 408.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.3.</strong> Metabolismo de los xenobióticos en dos fases: la fase I (citocromo P-450) puede detoxificarlos o generar metabolitos reactivos tóxicos para la célula.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 408. <a href="../creditos.html#fig-9-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Fase I no siempre detoxifica</span>El P-450 puede activar xenobióticos: el tetracloruro de carbono genera el radical triclorometilo que necrosa el hígado, y el benzo[a]pireno del tabaco forma aductos de ADN en el pulmón. La inducción por alcohol o tabaco y los polimorfismos explican la susceptibilidad individual.</div>
 </section><section id="sec-04-contaminacion-ambiental" class="card">
@@ -563,7 +629,16 @@
 </tbody>
 </table></div>
 
-</section><section id="sec-05-riesgos-profesionales-para-la-salud" class="card">
+
+<figure class="fig" id="fig-9-6">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-6.webp" data-caption="Figura 9.6. Intoxicación por plomo: radiografía de muñeca con bandas de radiodensidad aumentada en las epífisis por alteración de la remodelación del cartílago calcificado." data-alt="Figura 9.6. Intoxicación por plomo: radiografía de muñeca con bandas de radiodensidad aumentada en las epífisis por alteración de la remodelación del cartílago calcificado. Robbins y Cotran, 10ª ed., p. 412.">
+    <img src="../assets/fig/cap09/fig-9-6.webp" width="740" height="710" loading="lazy" decoding="async" alt="Figura 9.6. Intoxicación por plomo: radiografía de muñeca con bandas de radiodensidad aumentada en las epífisis por alteración de la remodelación del cartílago calcificado. Robbins y Cotran, 10ª ed., p. 412.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.6.</strong> Intoxicación por plomo: radiografía de muñeca con bandas de radiodensidad aumentada en las epífisis por alteración de la remodelación del cartílago calcificado.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 412. <a href="../creditos.html#fig-9-6">Ver créditos</a></span>
+  </figcaption>
+</figure></section><section id="sec-05-riesgos-profesionales-para-la-salud" class="card">
 <div class="section-kicker"><span class="n">05</span> Sección</div>
 <h2>Riesgos profesionales para la salud</h2>
 <ul>
@@ -593,6 +668,15 @@
 <li><strong>Efectos crónicos</strong>: hígado (esteatosis, hepatitis alcohólica y <strong>cirrosis</strong> con hipertensión portal y carcinoma hepatocelular); tubo digestivo (gastritis, úlceras, varices); SNC (déficit de <strong>tiamina</strong>, síndrome de <strong>Wernicke-Kórsakov</strong>, atrofia cerebelosa); corazón (<strong>miocardiopatía alcohólica</strong>, hipertensión, descenso de HDL); <strong>pancreatitis</strong>; <strong>síndrome alcohólico fetal</strong>; <strong>carcinogenia</strong> (cavidad oral, esófago, hígado, mama) y malnutrición.</li>
 <li>El consumo moderado (~20-30 g/día) puede ser protector frente a la cardiopatía coronaria.</li>
 </ul>
+<figure class="fig" id="fig-9-11">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-11.webp" data-caption="Figura 9.11. Metabolismo del etanol: oxidación a acetaldehído por la alcohol deshidrogenasa, el sistema CYP2E1 y la catalasa, y paso posterior a acetato." data-alt="Figura 9.11. Metabolismo del etanol: oxidación a acetaldehído por la alcohol deshidrogenasa, el sistema CYP2E1 y la catalasa, y paso posterior a acetato. Robbins y Cotran, 10ª ed., p. 419.">
+    <img src="../assets/fig/cap09/fig-9-11.webp" width="1454" height="717" loading="lazy" decoding="async" alt="Figura 9.11. Metabolismo del etanol: oxidación a acetaldehído por la alcohol deshidrogenasa, el sistema CYP2E1 y la catalasa, y paso posterior a acetato. Robbins y Cotran, 10ª ed., p. 419.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.11.</strong> Metabolismo del etanol: oxidación a acetaldehído por la alcohol deshidrogenasa, el sistema CYP2E1 y la catalasa, y paso posterior a acetato.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 419. <a href="../creditos.html#fig-9-11">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 <div class="warnbox"><span class="box-title">Del hígado graso a la cirrosis</span>La oxidación por la alcohol deshidrogenasa reduce el NAD y favorece el hígado graso y la acidosis láctica; el CYP2E1 genera especies reactivas del oxígeno y la endotoxina dispara TNF. Cerca del 50% de los asiáticos tiene la ALDH2*2 de baja actividad.</div>
 </section><section id="sec-08-lesiones-por-farmacos-terapeuticos-y-drogas-de-abuso" class="card">
@@ -661,7 +745,16 @@
 </tbody>
 </table></div>
 
-</section><section id="sec-09-danos-por-agentes-fisicos" class="card">
+
+<figure class="fig" id="fig-9-13">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-13.webp" data-caption="Figura 9.13. Metabolismo y toxicidad del paracetamol: la vía de las CYP genera NAPQI, que agota el glutatión y produce necrosis centrolobulillar." data-alt="Figura 9.13. Metabolismo y toxicidad del paracetamol: la vía de las CYP genera NAPQI, que agota el glutatión y produce necrosis centrolobulillar. Robbins y Cotran, 10ª ed., p. 423.">
+    <img src="../assets/fig/cap09/fig-9-13.webp" width="711" height="743" loading="lazy" decoding="async" alt="Figura 9.13. Metabolismo y toxicidad del paracetamol: la vía de las CYP genera NAPQI, que agota el glutatión y produce necrosis centrolobulillar. Robbins y Cotran, 10ª ed., p. 423.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.13.</strong> Metabolismo y toxicidad del paracetamol: la vía de las CYP genera NAPQI, que agota el glutatión y produce necrosis centrolobulillar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 423. <a href="../creditos.html#fig-9-13">Ver créditos</a></span>
+  </figcaption>
+</figure></section><section id="sec-09-danos-por-agentes-fisicos" class="card">
 <div class="section-kicker"><span class="n">09</span> Sección</div>
 <h2>Daños por agentes físicos</h2>
 <h3 id="traumatismos-mecánicos">Traumatismos mecánicos</h3>
@@ -681,6 +774,15 @@
 <li><strong>Radiación corporal total</strong>: por debajo de 1 Sv, síntomas mínimos; con dosis mayores aparecen los <strong>síndromes agudos por radiación</strong>, que afectan sucesivamente a los sistemas hematopoyético, digestivo y nervioso central. La linfopenia aparece en horas; la aplasia medular puede ser transitoria o permanente.</li>
 <li><strong>Carcinogenia</strong>: el daño del ADN (sobre todo las roturas de doble hebra, reparadas por unión de extremos no homólogos) causa mutaciones. Las dosis agudas &gt; 100 mSv aumentan el riesgo de cáncer; hay evidencia significativa desde 50 mSv y "razonable" desde 5 mSv. El riesgo es mayor en niños. El <strong>radón</strong> y sus productos de desintegración (polonio 214 y 218) causan cáncer de pulmón.</li>
 </ul>
+<figure class="fig" id="fig-9-15">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-15.webp" data-caption="Figura 9.15. Efectos de la radiación ionizante sobre el ADN: daño directo e indirecto por radicales libres, con las consecuencias celulares derivadas." data-alt="Figura 9.15. Efectos de la radiación ionizante sobre el ADN: daño directo e indirecto por radicales libres, con las consecuencias celulares derivadas. Robbins y Cotran, 10ª ed., p. 429.">
+    <img src="../assets/fig/cap09/fig-9-15.webp" width="735" height="678" loading="lazy" decoding="async" alt="Figura 9.15. Efectos de la radiación ionizante sobre el ADN: daño directo e indirecto por radicales libres, con las consecuencias celulares derivadas. Robbins y Cotran, 10ª ed., p. 429.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.15.</strong> Efectos de la radiación ionizante sobre el ADN: daño directo e indirecto por radicales libres, con las consecuencias celulares derivadas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 429. <a href="../creditos.html#fig-9-15">Ver créditos</a></span>
+  </figcaption>
+</figure>
 
 </section><section id="sec-10-enfermedades-nutricionales" class="card">
 <div class="section-kicker"><span class="n">10</span> Sección</div>
@@ -689,6 +791,15 @@
 <p>Una dieta adecuada aporta calorías, aminoácidos y ácidos grasos, y vitaminas y minerales. La malnutrición es <strong>primaria</strong> (falta en la dieta) o <strong>secundaria</strong> (por malabsorción, alteración del uso o almacenamiento, pérdida excesiva o mayor necesidad). Causas: pobreza, enfermedades agudas y crónicas (caquexia del cáncer y el sida), alcoholismo crónico, ignorancia, restricción dietética autoimpuesta y otras.</p>
 <h3 id="malnutrición-aguda-grave-mag">Malnutrición aguda grave (MAG)</h3>
 <p>La OMS la define por una proporción peso/talla <strong>tres desviaciones estándar por debajo</strong> de lo normal. Sus dos extremos son el <strong>marasmo</strong> y el <strong>kwashiorkor</strong> (compartimentos proteínicos <strong>somático</strong> y <strong>visceral</strong>, respectivamente).</p>
+<figure class="fig" id="fig-9-21">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-21.webp" data-caption="Figura 9.21. Malnutrición infantil: marasmo con emaciación y pérdida de grasa subcutánea frente a kwashiorkor con edema generalizado, ascitis e hinchazón facial." data-alt="Figura 9.21. Malnutrición infantil: marasmo con emaciación y pérdida de grasa subcutánea frente a kwashiorkor con edema generalizado, ascitis e hinchazón facial. Robbins y Cotran, 10ª ed., p. 434.">
+    <img src="../assets/fig/cap09/fig-9-21.webp" width="1474" height="704" loading="lazy" decoding="async" alt="Figura 9.21. Malnutrición infantil: marasmo con emaciación y pérdida de grasa subcutánea frente a kwashiorkor con edema generalizado, ascitis e hinchazón facial. Robbins y Cotran, 10ª ed., p. 434.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.21.</strong> Malnutrición infantil: marasmo con emaciación y pérdida de grasa subcutánea frente a kwashiorkor con edema generalizado, ascitis e hinchazón facial.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 434. <a href="../creditos.html#fig-9-21">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <div class="table-wrap" role="region" aria-label="Tabla: Enfermedades nutricionales" tabindex="0"><table>
 <thead>
 <tr>
@@ -716,6 +827,15 @@
 <li><strong>Anorexia nerviosa</strong>: inanición autoinducida, la mortalidad más alta entre los trastornos psiquiátricos. Cursa con <strong>amenorrea</strong> (por descenso de GnRH), intolerancia al frío, bradicardia, estreñimiento, deshidratación y osteoporosis. La <strong>transformación gelatinosa de la médula ósea</strong> (aumento de grasa con depósito mucinoso) es prácticamente patognomónica. Complicación grave: arritmias y muerte súbita por <strong>hipopotasemia</strong>.</li>
 <li><strong>Bulimia</strong>: atracones seguidos de vómito inducido; más frecuente y de mejor pronóstico. Complicaciones por el vómito y el uso de laxantes y diuréticos: desequilibrios electrolíticos (hipopotasemia), aspiración pulmonar y rotura esofágica o gástrica.</li>
 </ul>
+<figure class="fig" id="fig-9-22">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-22.webp" data-caption="Figura 9.22. Anorexia nerviosa: transformación gelatinosa de la médula ósea, con aumento de grasa y depósito de material mucinoso, hallazgo prácticamente patognomónico." data-alt="Figura 9.22. Anorexia nerviosa: transformación gelatinosa de la médula ósea, con aumento de grasa y depósito de material mucinoso, hallazgo prácticamente patognomónico. Robbins y Cotran, 10ª ed., p. 436.">
+    <img src="../assets/fig/cap09/fig-9-22.webp" width="708" height="550" loading="lazy" decoding="async" alt="Figura 9.22. Anorexia nerviosa: transformación gelatinosa de la médula ósea, con aumento de grasa y depósito de material mucinoso, hallazgo prácticamente patognomónico. Robbins y Cotran, 10ª ed., p. 436.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.22.</strong> Anorexia nerviosa: transformación gelatinosa de la médula ósea, con aumento de grasa y depósito de material mucinoso, hallazgo prácticamente patognomónico.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 436. <a href="../creditos.html#fig-9-22">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <h3 id="deficiencias-vitamínicas">Deficiencias vitamínicas</h3>
 <p>Trece vitaminas: <strong>liposolubles</strong> (A, D, E, K) e <strong>hidrosolubles</strong> (C y complejo B). La deficiencia puede ser primaria o secundaria (malabsorción de grasas, transporte, almacenamiento o conversión).</p>
 <ul>
@@ -723,6 +843,15 @@
 <li><strong>Vitamina D</strong>: mantiene el calcio y el fosfato. Se sintetiza en la piel a partir del <strong>7-deshidrocolesterol</strong> por radiación UVB (90% de los requerimientos), se convierte en el hígado a <strong>25-OH-D</strong> y en el riñón (por la <strong>1-hidroxilasa</strong>, regulada por PTH y fosfato) a <strong>1,25-(OH)₂-D</strong>. Estimula la absorción intestinal (TRPV6), la reabsorción renal (TRPV5), la expresión de <strong>RANKL</strong> (diferenciación de osteoclastos) y la mineralización ósea (osteocalcina). También tiene efectos inmunomoduladores y antiproliferativos. <strong>Deficiencia</strong>: <strong>raquitismo</strong> (niños: sobrecrecimiento de cartílago epifisario, rosario raquítico, tórax de paloma, arqueamiento de piernas) y <strong>osteomalacia</strong> (adultos: exceso de osteoide no mineralizado, fracturas). <strong>Toxicidad</strong>: hipercalcemia y calcificaciones metastásicas.</li>
 <li><strong>Vitamina C</strong> (ácido ascórbico): necesaria para la <strong>síntesis de colágeno</strong> (hidroxilación de prolina y lisina), la síntesis de neurotransmisores y como antioxidante. Su déficit causa <strong>escorbuto</strong>: mala cicatrización, tendencia hemorrágica (encías, piel, periostio), dolor articular y alteraciones óseas. No sintetizamos vitamina C (dependemos de la dieta). Las megadosis no previenen el resfriado ni el cáncer y pueden causar sobrecarga de hierro, anemia hemolítica (déficit de G6PD) y cálculos de oxalato.</li>
 </ul>
+<figure class="fig" id="fig-9-26">
+  <a class="fig-open" href="../assets/fig/cap09/fig-9-26.webp" data-caption="Figura 9.26. Raquitismo: unión costocondral con pérdida de las empalizadas de cartílago y transición desordenada de cartílago a hueso, frente a la unión normal." data-alt="Figura 9.26. Raquitismo: unión costocondral con pérdida de las empalizadas de cartílago y transición desordenada de cartílago a hueso, frente a la unión normal. Robbins y Cotran, 10ª ed., p. 441.">
+    <img src="../assets/fig/cap09/fig-9-26.webp" width="1461" height="676" loading="lazy" decoding="async" alt="Figura 9.26. Raquitismo: unión costocondral con pérdida de las empalizadas de cartílago y transición desordenada de cartílago a hueso, frente a la unión normal. Robbins y Cotran, 10ª ed., p. 441.">
+  </a>
+  <figcaption>
+    <strong>Figura 9.26.</strong> Raquitismo: unión costocondral con pérdida de las empalizadas de cartílago y transición desordenada de cartílago a hueso, frente a la unión normal.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 441. <a href="../creditos.html#fig-9-26">Ver créditos</a></span>
+  </figcaption>
+</figure>
 <p>Tablas de referencia (9.9 y 9.10): la <strong>vitamina E</strong> es antioxidante; la <strong>vitamina K</strong> participa en la coagulación (déficit: diátesis hemorrágica); las vitaminas del grupo <strong>B</strong> (tiamina, riboflavina, niacina, piridoxina, B₁₂, folato, etc.) son coenzimas, con déficits como <strong>beriberi</strong>, <strong>pelagra</strong>, <strong>anemia perniciosa</strong> y defectos del tubo neural. Oligoelementos: <strong>cinc</strong>, <strong>hierro</strong> (anemia microcítica hipocrómica), <strong>yodo</strong> (bocio), <strong>cobre</strong>, <strong>flúor</strong>, <strong>selenio</strong>.</p>
 <h3 id="obesidad">Obesidad</h3>
 <p>La <strong>obesidad</strong> es una acumulación de tejido adiposo suficiente para afectar a la salud; se mide por el <strong>índice de masa corporal (IMC = kg/m²)</strong>: normal 18,5-25, sobrepeso 25-30 y obesidad &gt; 30. La <strong>obesidad central (visceral)</strong> confiere mayor riesgo que la subcutánea. Es una epidemia (más de 1.900 millones de adultos con sobrepeso u obesidad en 2015) y un problema también creciente en países de ingresos bajos.</p>
@@ -773,6 +902,11 @@
 <li><strong>Obesidad</strong>: regulación por leptina, grelina, insulina, PYY y GLP-1, con circuitos POMC/CART y NPY/AgRP; causa síndrome metabólico y aumenta el riesgo de cáncer (IGF-1, estrógenos, adiponectina, inflamación).</li>
 </ul>
 
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-9-3" aria-label="Figura 9.3"><img src="../assets/fig/cap09/fig-9-3.webp" loading="lazy" decoding="async" alt="Figura 9.3"><span>Figura 9.3</span></a><a class="fig-thumb" href="#fig-9-6" aria-label="Figura 9.6"><img src="../assets/fig/cap09/fig-9-6.webp" loading="lazy" decoding="async" alt="Figura 9.6"><span>Figura 9.6</span></a><a class="fig-thumb" href="#fig-9-11" aria-label="Figura 9.11"><img src="../assets/fig/cap09/fig-9-11.webp" loading="lazy" decoding="async" alt="Figura 9.11"><span>Figura 9.11</span></a><a class="fig-thumb" href="#fig-9-13" aria-label="Figura 9.13"><img src="../assets/fig/cap09/fig-9-13.webp" loading="lazy" decoding="async" alt="Figura 9.13"><span>Figura 9.13</span></a><a class="fig-thumb" href="#fig-9-15" aria-label="Figura 9.15"><img src="../assets/fig/cap09/fig-9-15.webp" loading="lazy" decoding="async" alt="Figura 9.15"><span>Figura 9.15</span></a><a class="fig-thumb" href="#fig-9-21" aria-label="Figura 9.21"><img src="../assets/fig/cap09/fig-9-21.webp" loading="lazy" decoding="async" alt="Figura 9.21"><span>Figura 9.21</span></a><a class="fig-thumb" href="#fig-9-22" aria-label="Figura 9.22"><img src="../assets/fig/cap09/fig-9-22.webp" loading="lazy" decoding="async" alt="Figura 9.22"><span>Figura 9.22</span></a><a class="fig-thumb" href="#fig-9-26" aria-label="Figura 9.26"><img src="../assets/fig/cap09/fig-9-26.webp" loading="lazy" decoding="async" alt="Figura 9.26"><span>Figura 9.26</span></a></div>
 </section>
   </main>
 </div>
@@ -780,7 +914,14 @@
 <footer class="site-footer">
   <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
   <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
 </footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
 
 <script>
   const root = document.documentElement;
@@ -798,8 +939,8 @@
     const saved = localStorage.getItem('guia-theme');
     if (saved === 'dark' || saved === 'light') setTheme(saved);
   } catch(e) {}
-  themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
-  printBtn.addEventListener('click', () => window.print());
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
 
   const links = [...document.querySelectorAll('.toc a[href^="#"]')];
@@ -819,6 +960,45 @@
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
   document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
     b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) dialog.showModal();
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
 </script>
 </body>
 </html>

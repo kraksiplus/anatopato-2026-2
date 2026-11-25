@@ -1,0 +1,103 @@
+{
+  "chapter": 13,
+  "page_id": "c2-13",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "13.1",
+      "page": 585,
+      "caption": "Diferenciación de las células sanguíneas desde la célula madre hematopoyética pluripotente hasta las estirpes mieloides y linfoides, con los factores de crecimiento que actúan en cada nivel.",
+      "section": "Hematopoyesis normal",
+      "after_text": "los megacariocitos se sitúan junto a los sinusoides y geman plaquetas al torrente",
+      "kind": "mechanism",
+      "why": "Mapa base de la hematopoyesis: organiza todo el capítulo y las citopenias por estirpe",
+      "image": "assets/fig/cap13/fig-13-1.webp",
+      "width": 1376,
+      "height": 1398
+    },
+    {
+      "number": "13.4",
+      "page": 591,
+      "caption": "Patogenia de las neoplasias de la serie blanca: mutaciones que bloquean la maduración, promueven la autorrenovación, activan el crecimiento o impiden la apoptosis.",
+      "section": "Proliferaciones neoplásicas de los leucocitos: perspectiva general",
+      "after_text": "oncoproteínas dominantes negativas sobre factores de transcripción, máximo en las leucemias agudas",
+      "kind": "mechanism",
+      "why": "Esquema unificador de los cuatro mecanismos patogénicos que se repiten en LLA, LMA, SMD y SLP",
+      "image": "assets/fig/cap13/fig-13-4.webp",
+      "width": 698,
+      "height": 495
+    },
+    {
+      "number": "13.5",
+      "page": 594,
+      "caption": "Origen de las neoplasias linfoides según el estadio de diferenciación de los linfocitos B y T del que surge cada tipo tumoral.",
+      "section": "Proliferaciones neoplásicas de los leucocitos: perspectiva general",
+      "after_text": "el fenotipo imita un estadio de maduración, lo que se usa para clasificar",
+      "kind": "mechanism",
+      "why": "Explica el principio de clasificación de las neoplasias linfoides y sus marcadores por estadio",
+      "image": "assets/fig/cap13/fig-13-5.webp",
+      "width": 1474,
+      "height": 1089
+    },
+    {
+      "number": "13.6",
+      "page": 596,
+      "caption": "Leucemia/linfoma linfoblástico agudo: linfoblastos con cromatina condensada, nucléolos pequeños y citoplasma escaso, con inmunofenotipo por citometría de flujo.",
+      "section": "Neoplasias linfoides",
+      "after_text": "médula hipercelular llena de linfoblastos con citoplasma basófilo escaso",
+      "kind": "diagnostic",
+      "why": "Imagen clásica de la LLA, el cáncer infantil más frecuente, y su fenotipo TdT positivo",
+      "image": "assets/fig/cap13/fig-13-6.webp",
+      "width": 743,
+      "height": 848
+    },
+    {
+      "number": "13.10",
+      "page": 599,
+      "caption": "Linfoma folicular ganglionar: agregados nodulares de células tumorales en todo el ganglio, con centrocitos hendidos y centroblastos.",
+      "section": "Neoplasias linfoides",
+      "after_text": "centrocitos (núcleos hendidos, citoplasma escaso) predominan sobre centroblastos",
+      "kind": "diagnostic",
+      "why": "El LNH indolente más frecuente; clave para diferenciarlo de la hiperplasia folicular reactiva",
+      "image": "assets/fig/cap13/fig-13-10.webp",
+      "width": 713,
+      "height": 930
+    },
+    {
+      "number": "13.20",
+      "page": 608,
+      "caption": "Mieloma múltiple del cráneo en radiografía lateral: lesiones óseas líticas bien delimitadas en sacabocados en la bóveda craneal.",
+      "section": "Neoplasias linfoides",
+      "after_text": "lesiones en \"sacabocados\" de 1-4 cm en la radiografía",
+      "kind": "diagnostic",
+      "why": "Lesión en sacabocados es el hallazgo clásico del criterio CRAB y pregunta típica de examen",
+      "image": "assets/fig/cap13/fig-13-20.webp",
+      "width": 742,
+      "height": 699
+    },
+    {
+      "number": "13.24",
+      "page": 613,
+      "caption": "Célula de Reed-Sternberg diagnóstica y sus variantes: núcleos multilobulados, grandes nucléolos a modo de inclusión y abundante citoplasma.",
+      "section": "Neoplasias linfoides",
+      "after_text": "células de Reed-Sternberg diagnósticas de ~45 μm, multinucleadas o multilobuladas",
+      "kind": "diagnostic",
+      "why": "La célula de Reed-Sternberg es la lesión patognomónica del linfoma de Hodgkin",
+      "image": "assets/fig/cap13/fig-13-24.webp",
+      "width": 1476,
+      "height": 916
+    },
+    {
+      "number": "13.33",
+      "page": 623,
+      "caption": "Patogenia de la leucemia mieloide crónica: la fusión BCR-ABL genera una tirosina cinasa constitutivamente activa que impulsa la proliferación de los progenitores medulares.",
+      "section": "Neoplasias mieloides",
+      "after_text": "el dominio de dimerización de BCR activa la cinasa ABL",
+      "kind": "mechanism",
+      "why": "BCR-ABL y cromosoma Philadelphia son el mecanismo central de las mieloproliferativas y base del imatinib",
+      "image": "assets/fig/cap13/fig-13-33.webp",
+      "width": 699,
+      "height": 435
+    }
+  ]
+}

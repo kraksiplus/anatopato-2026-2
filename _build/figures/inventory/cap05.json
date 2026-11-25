@@ -1,0 +1,177 @@
+{
+  "chapter": 5,
+  "headings": [
+    "Ideas clave",
+    "Genes y enfermedad humana; mutaciones",
+    "Trastornos mendelianos: patrones de transmisión",
+    "Bases moleculares y bioquímicas de los trastornos monogénicos",
+    "Trastornos asociados a defectos en las proteínas estructurales",
+    "Trastornos asociados a defectos en las proteínas receptoras",
+    "Trastornos asociados a defectos enzimáticos",
+    "Enfermedades por depósito de glucógeno (glucogenosis)",
+    "Trastornos asociados a defectos en las proteínas que regulan el crecimiento celular",
+    "Trastornos multigénicos complejos",
+    "Trastornos cromosómicos",
+    "Trastornos monogénicos de herencia no clásica",
+    "Diagnóstico genético molecular",
+    "Puntos de examen"
+  ],
+  "figures": [
+    {
+      "number": "5.1",
+      "page": 142,
+      "caption": "a 38 Figura 5.1 Mutación sin sentido causante de terminación de cadena prematura. Secuencia parcial de ARNm de la cadena de β-globina de la hemoglobina que muestra codones para los aminoácidos 38 a 40. Una mutación puntual (C -> U) en el codón 39 sustituye un codón de glutamina (Gln) por un codón de terminación y, a continu"
+    },
+    {
+      "number": "5.2",
+      "page": 143,
+      "caption": "-lle Figura 5.2 La deleción de tres bases en el alelo de la fibrosis quistica (FQ) (fenilalanina). Dado que la deleción es múltiplo de tres, no se trata de una mutación de la pauta de lectura. (Tomado de Thompson MW, et al: Thompson and Thompson Genetics in Medicine, ed 5, Philadelphia, 1991, WB Saunders, p 135.) de bases a"
+    },
+    {
+      "number": "5.3",
+      "page": 143,
+      "caption": "da-> Figura 5.3 Deleción de una sola base en el locus ABO (glucosiltransferasa), que determina una mutación de la pauta de lectura responsable del alelo O. (Tomado de Thompson MW, et al: Thompson and Thompson Genetics in Medicine, ed 5, Philadelphia, 1991, WB Saunders, p 134. Ahora sabemos que un gran número de genes no cod"
+    },
+    {
+      "number": "5.4",
+      "page": 143,
+      "caption": "rada Figura 5.4 Inserción de cuatro bases en el gen de la hexosaminidasa A, que determina una mutación de la pauta de lectura. Esta mutación es la principal causa Elsevier. de la enfermedad de Tay-Sachs entre los judíos askenazies. (Tomado de Nussbaum RL, et al: Thompson and Thompson Genetics in Medicine, ed 6, Philadelphia"
+    },
+    {
+      "number": "5.5",
+      "page": 147,
+      "caption": ". La figura 5.5 muestra un ejemplo de una reacción enzimática en la que las enzimas intracelulares, que se marcan como 1, 2 y 3, convierten el sustrato en un producto final, generando las sustancias intermedias 1 y 2. En este modelo, el producto final 147 Trastornos mendelianos Sustrato Enzima 1 Producto intermedio 1 Enzima"
+    },
+    {
+      "number": "5.6",
+      "page": 151,
+      "caption": "LDL Figura 5.6 Metabolismo de la lipoproteina de baja densidad (LDL) y papel del hígado en su síntesis y eliminación. La lipólisis de la lipoproteina de triglicéridos, que se depositan posteriormente en las células adiposas y se utilizan como fuente energética para los músculos esqueléticos. ApoC, apolipoproteina C; ApoE,"
+    },
+    {
+      "number": "5.7",
+      "page": 152,
+      "caption": "tora Figura 5.7 Vía del receptor para lipoproteina de baja densidad (LDL) y regulación del metabolismo del colesterol. ApoB-100, apolipoproteina B-100 (ApoB); HMG-Coa, 3-hidroxi-3-metilglutaril coenzima A. lipoproteinas de muy baja densidad (VLDL) del hígado a la sangre. Las partículas de VLDL son ricas en triglicéridos, au"
+    },
+    {
+      "number": "5.8",
+      "page": 153,
+      "caption": "X V Figura 5.8 Clasificación de las mutaciones del receptor para lipoproteina de baja densidad (LDL) según la función anormal de la proteína mutante. Estas mutaciones alteran la síntesis del receptor en el retículo endoplásmico, su transporte al complejo de Golgi, la unión de los ligandos de apoproteina, la agregación en l"
+    },
+    {
+      "number": "5.9",
+      "page": 154,
+      "caption": "agia Figura 5.9 Síntesis y transporte intracelular de las enzimas lisosómicas. vesículas de transporte que contienen las enzimas ligadas al receptor del Golgi y se fusionan con los lisosomas. Por tanto, las enzimas están marcadas para llegar a su destino intracelular y las vesículas se recuperan de nuevo hacia el Golgi (fig"
+    },
+    {
+      "number": "5.10",
+      "page": 155,
+      "caption": "bres Figura 5.10 Patogenia de las enfermedades por depósito lisosómico. En el ejemplo mostrado, un sustrato complejo se degrada en condiciones normales mediante una serie de enzimas lisosómicas (A, B y C) hasta llegar a unos productos finales solubles. Si se produce una deficiencia o mala función de alguna de las enzimas (p"
+    },
+    {
+      "number": "5.12",
+      "page": 158,
+      "caption": "os y Figura 5.12 Enfermedad de Niemann-Pick hepática. Los hepatocitos y las células de Kupffer muestran un aspecto espumoso vacuolado por depósito de lípidos. (Por cortesía del Dr. Arthur Weinberg, Department of Pathology, University of Texas Southwestern Medical Center, Dallas, Tex.) la biopsia de médula 6sea. Los individu"
+    },
+    {
+      "number": "5.13",
+      "page": 159,
+      "caption": "ar B Figura 5.13 Enfermedad de Gaucher que afecta a la médula 6sea. A y B. Las células de Gaucher corresponden a macrófagos rechonchos que muestran un aspecto típico del citoplasma que recuerda al papel lsevier. arrugado por la acumulación de glucocerebrósido. A. Tinción de Wright. B. Hematoxilina y eosina. (Por cortesía de"
+    },
+    {
+      "number": "5.15",
+      "page": 163,
+      "caption": "rgía Figura 5.15 A. Metabolismo normal del glucógeno en el hígado y los músculos esqueléticos. B. Efectos de la deficiencia hereditaria de enzimas hepáticas implicadas en el metabolismo del glucógeno. C. Consecuencias de una deficiencia genética de las enzimas implicadas en el metabolismo del glucógeno en los músculos esque"
+    },
+    {
+      "number": "5.16",
+      "page": 163,
+      "caption": "24). Figura 5.16 Enfermedad de Pompe (glucogenosis de tipo l). A. Miocardio normal con abundante citoplasma eosinófilo. B. Paciente con enfermedad de Elsevier. Pompe (mismo aumento), en el que se observan las fibras miocárdicas llenas de glucógeno que determinan espacios claros. (Por cortesía del Dr. Trace Worrell, Departme"
+    },
+    {
+      "number": "5.17",
+      "page": 164,
+      "caption": ". La figura 5.17 muestra un cariotipo de hombre normal con bandas G. Con el bandeo G convencional se pueden detectar unas 400-800 bandas por conjunto haploide. La resolución obtenida mediante este bandeo se puede mejorar de forma notable obteniendo células en profase. Los cromosomas individuales aparecen muy elongados y per"
+    },
+    {
+      "number": "5.18",
+      "page": 166,
+      "caption": "rica Figura 5.18 Tipos de reordenamientos cromosómicos. ción equilibrada reciproca, se producen roturas aisladas en cada uno de los dos cromosomas y se intercambia el material. Una translocación equilibrada reciproca entre el brazo largo del cromosoma 2 y el brazo corto del cromosoma 5 se describiría 46,XX,t(2;5)(q31;p14)."
+    },
+    {
+      "number": "5.19",
+      "page": 167,
+      "caption": "3/21 Figura 5.19 Análisis con técnica de hibridación in situ fluorescente de un núcleo en interfase, empleando sondas especificas para loci frente al cromosoma 13 (verde) y el cromosoma 21 (rojo), en el que se muestran tres señales rojas compatibles con una trisomia 21. (Por cortesía del Dr. Stuart Schwartz, Department of P"
+    },
+    {
+      "number": "5.20",
+      "page": 168,
+      "caption": "dora Figura 5.20 Características clínicas y cariotipos de algunas trisomias autosómicas."
+    },
+    {
+      "number": "5.21",
+      "page": 169,
+      "caption": "car. Figura 5.21 Hibridación in situ fluorescente de cromosomas en metafase y de una célula en interfase de un paciente con síndrome de DiGeorge que muestra deleción de una sonda situada en el cromosoma 22ql 1.2. La sonda en 22q1 1.2 aparece en rojo y la sonda control, localizada en 22q, aparece en verde. La difusión de la"
+    },
+    {
+      "number": "5.22",
+      "page": 172,
+      "caption": "n la figura 5.22. En la pubertad no se desarrollan las características sexuales secundarias normales. Los genitales externos siguen siendo infantiles, el desarrollo mamario resulta inadecuado y el paciente tiene poco vello púbico. La situación mental de los pacientes suele ser normal, pero se han descrito defectos sutiles d"
+    },
+    {
+      "number": "5.23",
+      "page": 175,
+      "caption": "ágil Figura 5.23 Lugares de expansión y secuencia afectada en algunas enfermedades seleccionadas debidas a mutaciones por repetición de nucleótidos. UTR, región no traducida. retraso mental familiar 1 (FMR1). Aunque inicialmente descubiertas como causa del SXF, actualmente se sabe que las mutaciones con expansión que afecta"
+    },
+    {
+      "number": "5.24",
+      "page": 175,
+      "caption": "ier. Figura 5.24 Cromosoma X frágil, que se reconoce como una solución de continuidad en la tinción. (Por cortesía de la Dra. Patricia Howard-Peebles, University of Texas Southwestern Medical Center, Dallas, Tex.) Además de la discapacidad intelectual, en pacientes con SXF se han identificado varias manifestaciones neurológ"
+    },
+    {
+      "number": "5.25",
+      "page": 176,
+      "caption": "leve Figura 5.25 Árbol genealógico de síndrome del cromosoma X frágil. Obsérvese que en la primera generación todos los hijos hombres son normales y todas las mujeres son portadoras. Durante la ovogenia, en la mujer portadora se produce una expansión de la premutación a una mutación completa; por tanto, en la generación sig"
+    },
+    {
+      "number": "5.26",
+      "page": 177,
+      "caption": "axón Figura 5.26 Modelo para la acción de la proteína de retraso mental familiar (FMRP) en las neuronas. (Modificado de Hin P, Warren ST: New insights into fragile X syndrome: from molecules to neurobehavior, Trends Biochem Sci 28:152,2003. - FMRP es un regulador de la traducción. En las uniones sinápticas, FMRP suprime la"
+    },
+    {
+      "number": "5.27",
+      "page": 178,
+      "caption": "icos Figura 5.27 Árbol genealógico de la neuropatia hereditaria óptica de Leber, un trastorno asociado a una mutación del ADN mitocondrial. Obsérvese que todos los descendientes del hombre afectado (cuadrados sombreados) son normales, mientras que todos los hijos (hombres y mujeres) de la mujer afectada (círculos sombreados"
+    },
+    {
+      "number": "5.29",
+      "page": 182,
+      "caption": "ados Figura 5.29 Análisis de extensión de una base de un producto de reacción en cadena de la polimerasa, utilizando un cebador para interrogar sobre la posición de una sola base. Los nucleótidos complementarios a las bases mutantes y de tipo silvestre en la posición estudiada están marcados con diferentes fluoróforos, de f"
+    },
+    {
+      "number": "5.30",
+      "page": 182,
+      "caption": "hern Figura 5.30 Aplicación diagnóstica de los análisis mediante reacción en cadena de la polimerasa (PCR) e inmunotransferencia de Southern para el diagnóstico del síndrome del cromosoma X frágil. Con la PCR, las diferencias en el tamaño de las repeticiones de CGG entre la normalidad y la premutación originan productos de"
+    },
+    {
+      "number": "5.31",
+      "page": 184,
+      "caption": "12.3 Figura 5.31Análisis de la variación del número de copias mediante matriz citogenómica de polimorfismo de un solo nucleótido (SNP). El ADN genómico es marcado e hibridado en una matriz que puede contener miles de manchas de sondas. El número de copias es determinado por la intensidad global, y el genotipo es definido po"
+    },
+    {
+      "number": "5.32",
+      "page": 184,
+      "caption": "a La figura 5.32 ilustra la aplicación del análisis de ligamiento de repeticiones minisatélite al gen PKD1 (históricamente muy difícil de secuenciar) para el diagnóstico familiar de poliquistosis renal del adulto. Se observa que el alelo microsatélite más largo se vincula en la familia al alelo de la enfermedad y puede empl"
+    },
+    {
+      "number": "5.33",
+      "page": 186,
+      "caption": "CCCC Figura 5.33 Principio de secuenciación de próxima generación. Actualmente se dispone de varios abordajes alternativos para la secuenciación de siguiente son inmovilizados sobre una plataforma en fase sólida, como un portaobjetos de vidrio, mediante cebadores de captura universales, complementarios de los adaptadores, p"
+    }
+  ],
+  "missing": [
+    11,
+    14,
+    28
+  ],
+  "note": "caption es un recorte OCR para elegir; la leyenda final se redacta desde la imagen y el texto."
+}
