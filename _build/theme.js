@@ -45,6 +45,18 @@
   const closeBtn = dialog.querySelector('.fig-dialog-close');
   const links = Array.from(document.querySelectorAll('.fig-open'));
   let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
 
   function show(i){
     if (i < 0 || i >= links.length) return;
@@ -53,7 +65,13 @@
     img.src = a.getAttribute('href');
     img.alt = a.getAttribute('data-alt') || '';
     cap.textContent = a.getAttribute('data-caption') || '';
-    if (!dialog.open) dialog.showModal();
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
   }
 
   links.forEach((a, i) => {
@@ -66,6 +84,7 @@
   dialog.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();
   });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
   if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
   document.addEventListener('keydown', event => {
     if (!dialog.open) return;
