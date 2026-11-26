@@ -1,0 +1,78 @@
+{
+  "chapter": 26,
+  "page_id": "c2-26",
+  "figures": [
+    {
+      "number": "26.23",
+      "page": 1189,
+      "caption": "Osteosarcoma del fémur distal con formación de hueso tumoral que se extiende a los tejidos blandos; el periostio elevado deposita hueso reactivo formando el triángulo de Codman.",
+      "section": "Tumores óseos benignos y malignos",
+      "after_text": "la sombra triangular resultante, el triángulo de Codman, indica un tumor agresivo",
+      "kind": "diagnostic",
+      "why": "El triángulo de Codman y la matriz ósea son los hallazgos radiológicos de mayor rendimiento para reconocer el osteosarcoma en el certamen."
+    },
+    {
+      "number": "26.29",
+      "page": 1192,
+      "caption": "Condrosarcoma: nódulos de cartílago hialino y mixoide que infiltran la cavidad medular, atraviesan la corteza y forman una masa de tejido blando circunscrita.",
+      "section": "Tumores óseos benignos y malignos",
+      "after_text": "el cartílago neoplásico infiltra la médula y rodea las trabéculas preexistentes",
+      "kind": "diagnostic",
+      "why": "Ilustra el patrón infiltrante y la matriz cartilaginosa que distinguen al condrosarcoma del encondroma benigno."
+    },
+    {
+      "number": "26.30",
+      "page": 1193,
+      "caption": "Sarcoma de Ewing compuesto por sábanas de células pequeñas redondas y uniformes con escaso citoplasma claro.",
+      "section": "Tumores óseos benignos y malignos",
+      "after_text": "sábanas de células pequeñas redondas uniformes con escaso citoplasma claro por glucógeno",
+      "kind": "diagnostic",
+      "why": "La histología de células pequeñas redondas es el sello diagnóstico del Ewing y diferencia al tumor de la osteomielitis que lo imita clínicamente."
+    },
+    {
+      "number": "26.32",
+      "page": 1193,
+      "caption": "Tumor de células gigantes con abundantes células gigantes multinucleadas tipo osteoclasto sobre un fondo de células estromales mononucleares.",
+      "section": "Tumores óseos benignos y malignos",
+      "after_text": "células mononucleares ovales uniformes con células gigantes tipo osteoclasto",
+      "kind": "diagnostic",
+      "why": "Reconocer las células gigantes reactivas y el estroma mononuclear permite identificar el tumor epifisario más frecuente del adulto joven."
+    },
+    {
+      "number": "26.38",
+      "page": 1198,
+      "caption": "Esquema de la patogenia de la artrosis: lesión biomecánica del cartílago, respuesta reparadora desordenada de los condrocitos y fallo final de la matriz con daño del hueso subcondral.",
+      "section": "Artritis",
+      "after_text": "la degradación supera la síntesis de matriz",
+      "kind": "mechanism",
+      "why": "Explica la secuencia biomecánica y enzimática de la artrosis, base de las preguntas comparativas con la artritis reumatoide."
+    },
+    {
+      "number": "26.46",
+      "page": 1205,
+      "caption": "Patogenia de la artritis gotosa aguda: los macrófagos fagocitan cristales de urato, activan el inflamasoma con secreción de IL-1 y reclutan neutrófilos a la articulación.",
+      "section": "Artritis",
+      "after_text": "los macrófagos y neutrófilos fagocitan los cristales, lo que activa el inflamasoma y libera IL-1",
+      "kind": "mechanism",
+      "why": "La vía del inflamasoma e IL-1 justifica el uso de colchicina y es el mecanismo más preguntado de las artritis por cristales."
+    },
+    {
+      "number": "26.50",
+      "page": 1210,
+      "caption": "Liposarcoma: el subtipo bien diferenciado muestra adipocitos maduros con células fusiformes atípicas; el mixoide presenta matriz basófila con vasos en malla de gallinero y lipoblastos.",
+      "section": "Tumores de tejidos blandos",
+      "after_text": "matriz mixoide, red capilar en malla de gallinero y lipoblastos",
+      "kind": "diagnostic",
+      "why": "Distingue los dos subtipos de liposarcoma, el sarcoma de partes blandas más frecuente del adulto, por localización y morfología."
+    },
+    {
+      "number": "26.53",
+      "page": 1212,
+      "caption": "Rabdomiosarcoma: el subtipo embrionario muestra células primitivas con diferenciación muscular esquelética; el alveolar presenta espacios revestidos por células redondas no cohesionadas.",
+      "section": "Tumores de tejidos blandos",
+      "after_text": "células primitivas redondas y fusiformes en estroma mixoide, con rabdomioblastos a veces estriados",
+      "kind": "diagnostic",
+      "why": "Permite diferenciar los subtipos embrionario y alveolar, cuya edad de presentación y fusiones FOXO1-PAX determinan el pronóstico."
+    }
+  ]
+}

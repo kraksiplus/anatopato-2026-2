@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Páncreas · Anatomía Patológica UBB</title>
+<meta name="description" content="Páncreas. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Páncreas · Anatomía Patológica UBB">
+<meta property="og:description" content="Páncreas. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 19. Páncreas</h1>
+    <p class="lede">Guía 09 de 16. Resumen completo del capítulo 19 con 101 citas por página y 16 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>09 de 16</strong></div><div><span>Capítulo</span><strong>19</strong></div><div><span>Páginas</span><strong>881-894</strong></div><div><span>Citas</span><strong>101</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>16</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-introduccion">Introducción</a></li>
+        <li><a href="#sec-03-anomalias-congenitas">Anomalías congénitas</a></li>
+        <li><a href="#sec-04-pancreatitis-aguda">Pancreatitis aguda</a></li>
+        <li><a href="#sec-05-pancreatitis-cronica">Pancreatitis crónica</a></li>
+        <li><a href="#sec-06-quistes-no-neoplasicos">Quistes no neoplásicos</a></li>
+        <li><a href="#sec-07-neoplasias-quisticas">Neoplasias quísticas</a></li>
+        <li><a href="#sec-08-carcinoma-pancreatico">Carcinoma pancreático</a></li>
+        <li><a href="#sec-09-carcinoma-de-celulas-acinares">Carcinoma de células acinares</a></li>
+        <li><a href="#sec-10-pancreatoblastoma">Pancreatoblastoma</a></li>
+        <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="08_Higado_Vesicula_Biliar.html" title="Hígado y vesícula biliar">08</a>
+        <a href="10_Rinon.html" title="Riñón">10</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 19 del Robbins y Cotran, 10ª edición: páginas impresas 881-894 (14 páginas), contrastadas con el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se contrastó con el OCR del capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>La lipasa sérica es el marcador más específico y sensible de la pancreatitis aguda (persiste 8-14 días); la amilasa se normaliza en 3-5 días <span class="cite">p. 885</span>.</li><li>Pancreatitis hereditaria: PRSS1 (ganancia de función, autosómica dominante), SPINK1 (pérdida de función, recesiva) y CFTR (secreciones espesadas); el rasgo común es la actividad de tripsina aumentada, y PRSS1 eleva el riesgo de cáncer pancreático en 40% <span class="cite">p. 884</span>.</li><li>En la pancreatitis crónica predominan las citocinas fibrógenas TGF-β y PDGF, que activan células estrelladas pancreáticas y producen fibrosis irreversible con pérdida acinar <span class="cite">p. 886</span>.</li><li>Perfiles mutacionales de los quistes: serosa = VHL; mucinosa = KRAS y estroma ovárico (95% mujeres); NMPI = GNAS en dos tercios; sólida-seudopapilar = CTNNB1 exclusivo <span class="cite">p. 889-890</span>.</li><li>Secuencia del carcinoma pancreático: KRAS mutado y telómeros cortos, luego CDKN2A, y en la PanIN de alto grado TP53, SMAD4 y BRCA2; KRAS mutado en más del 90% de los casos <span class="cite">p. 890-891</span>.</li><li>Signos de carcinoma de cabeza: ictericia obstructiva indolora con signo de Courvoisier; el signo de Trousseau (tromboflebitis migratoria) aparece en el 10%; más del 80% es irresecable al diagnóstico y la supervivencia a 5 años es del 10% <span class="cite">p. 893</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 881-892</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>El páncreas exocrino es el <strong>80-85% del órgano</strong> (células acinares con gránulos de cimógenos: tripsinógeno, quimotripsinógeno, procarboxipeptidasa, proelastasa, calicreiógeno, fosfolipasas A y B); el endocrino (1 millón de islotes) es solo el <strong>1-2%</strong> de la masa <span class="cite">p. 881</span>.</li>
+<li>Las enzimas se sintetizan como <strong>proenzimas inactivas</strong> activadas por la tripsina en el duodeno (enteropeptidasa duodenal); las células acinares y ductales secretan inhibidores de tripsina (<strong>SPINK1</strong>). La pancreatitis aparece cuando estos mecanismos protectores se alteran o son superados <span class="cite">p. 882</span>.</li>
+<li>La <strong>pancreatitis aguda</strong> (10-20/100.000/año en países occidentales) es causada en ~80% por enfermedad de vías biliares y alcoholismo; su patogenia tiene tres vías iniciadoras: obstrucción ductal, lesión primaria de células acinares y transporte intracelular defectuoso de proenzimas <span class="cite">p. 882-883</span>.</li>
+<li>La <strong>lipasa sérica</strong> es el marcador más específico y sensible (elevada 8-14 días); la amilasa tiene semivida corta y se normaliza en 3-5 días <span class="cite">p. 885</span>.</li>
+<li>En la pancreatitis necrosante aguda, el <strong>40-60%</strong> de los residuos acelulares se infecta por gramnegativos intestinales; el 5% de los casos graves muere en la primera semana <span class="cite">p. 885</span>.</li>
+<li>La <strong>pancreatitis crónica</strong> es destrucción irreversible del parénquima exocrino con fibrosis y, en fases avanzadas, pérdida endocrina; su causa más común es el alcohol y hasta el <strong>25% de los casos tienen base genética</strong> <span class="cite">p. 886</span>.</li>
+<li>En la pancreatitis crónica predominan las citocinas <strong>fibrógenas</strong> (TGF-β, PDGF), que activan células estrelladas pancreáticas → colágeno y fibrosis, a diferencia de la pancreatitis aguda <span class="cite">p. 886</span>.</li>
+<li><strong>Pancreatitis autoinmunitaria tipo 1</strong>: sistémica relacionada con IgG, células plasmáticas IgG4+, fibrosis estoriforme y flebitis obliterante; <strong>tipo 2</strong>: limitada al páncreas (salvo colitis ulcerosa), con lesiones epiteliales granulocíticas ductales y sin IgG4 abundante. Ambas simulan carcinoma y responden a esteroides <span class="cite">p. 886-887</span>.</li>
+<li>Los <strong>seudoquistes</strong> son el <strong>75% de los quistes pancreáticos</strong> (sin revestimiento epitelial, 2-30 cm, tras pancreatitis aguda o traumatismo); solo el 5-15% de los quistes pancreáticos son neoplásicos <span class="cite">p. 888</span>.</li>
+<li>Neoplasias quísticas: serosa (benigna, <em>VHL</em> en 3p), mucinosa (95% en mujeres, precursora de carcinoma, estroma "ovárico"), NMPI (conductos grandes, hombres, <em>GNAS</em> en dos tercios) y sólida-seudopapilar (mujeres jóvenes, <em>CTNNB1</em>/β-catenina) <span class="cite">p. 888-890</span>.</li>
+<li>El <strong>carcinoma pancreático</strong> es la tercera causa de muerte por cáncer en EE. UU., con supervivencia a 5 años del <strong>10%</strong>; &gt;90% surge de una PanIN; <em>KRAS</em> mutado en &gt;90%, <em>TP53</em> 70-75%, <em>SMAD4</em> 55%, <em>CDKN2A</em> 30% <span class="cite">p. 890-891</span>.</li>
+<li>Toda persona con cáncer pancreático debe estudiarse en línea germinal: ~10% tiene mutación deletérea; <em>BRCA2</em> es la causa más común de cáncer pancreático familiar <span class="cite">p. 892</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-introduccion" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 881</div>
+<h2>Introducción</h2>
+<p>El páncreas del adulto es un órgano retroperitoneal transverso, desde el asa en C del duodeno hasta el hilio del bazo. Se forma por la fusión de las evaginaciones dorsal y ventral del intestino anterior: el primordio dorsal da el cuerpo, la cola, la cara superior/anterior de la cabeza y el conducto accesorio de Santorini; el ventral origina la parte posterior/inferior de la cabeza y drena por el conducto principal de Wirsung a la papila de Váter <span class="cite">p. 881</span>.</p>
+<figure class="fig" id="fig-19-1">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-1.webp" data-caption="Figura 19.1. Anatomía ductal pancreática. A. Anatomía ductal normal, con el conducto de Wirsung y el de Santorini drenando en la papila de Váter y la papila menor. B. Anatomía ductal en el páncreas dividido, donde la mayor parte de la glándula drena por la papila menor." data-alt="Figura 19.1. Anatomía ductal pancreática. A. Anatomía ductal normal, con el conducto de Wirsung y el de Santorini drenando en la papila de Váter y la papila menor. B. Anatomía ductal en el páncreas dividido, donde la mayor parte de la glándula drena por la papila menor. Robbins y Cotran, 10ª ed., p. 882.">
+    <img src="../assets/fig/cap19/fig-19-1.webp" width="715" height="887" loading="lazy" decoding="async" alt="Figura 19.1. Anatomía ductal pancreática. A. Anatomía ductal normal, con el conducto de Wirsung y el de Santorini drenando en la papila de Váter y la papila menor. B. Anatomía ductal en el páncreas dividido, donde la mayor parte de la glándula drena por la papila menor. Robbins y Cotran, 10ª ed., p. 882.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.1.</strong> Anatomía ductal pancreática. A. Anatomía ductal normal, con el conducto de Wirsung y el de Santorini drenando en la papila de Váter y la papila menor. B. Anatomía ductal en el páncreas dividido, donde la mayor parte de la glándula drena por la papila menor.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 882. <a href="../creditos.html#fig-19-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+</section><section id="sec-03-anomalias-congenitas" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 881-882</div>
+<h2>Anomalías congénitas</h2>
+<ul>
+<li><strong>Páncreas dividido</strong>: anomalía congénita más frecuente (3-10%); falta de fusión de los sistemas ductales fetales, de modo que la mayor parte de la glándula (primordio dorsal) drena por una papila menor de pequeño calibre. Se ha planteado que el drenaje inadecuado por la papila menor, en especial con defectos genéticos adicionales, predispone a pancreatitis crónica (dato controvertido) <span class="cite">p. 881</span>.</li>
+<li><strong>Páncreas anular</strong>: banda de tejido pancreático normal que rodea la segunda porción del duodeno; puede causar obstrucción duodenal <span class="cite">p. 881</span>.</li>
+<li><strong>Páncreas ectópico</strong>: ~2% de las autopsias; localizaciones más habituales: estómago y duodeno, seguidos de yeyuno, divertículos de Meckel e íleon. Hallazgo incidental, con acinos, glándulas y a veces islotes normales; ocasionalmente dolor por inflamación local o sangrado mucoso <span class="cite">p. 881-882</span>.</li>
+<li><strong>Agenesia</strong>: muy ocasional; algunos casos por mutaciones homocigóticas en línea germinal de <strong>PDX1</strong>, factor de transcripción de la homeocaja esencial para el desarrollo pancreático <span class="cite">p. 882</span>.</li>
+</ul>
+
+</section><section id="sec-04-pancreatitis-aguda" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 882-885</div>
+<h2>Pancreatitis aguda</h2>
+<p>Lesión e inflamación reversibles del parénquima por tóxicos (alcohol), obstrucción ductal (cálculos), defectos genéticos, lesión vascular o infecciones. Incidencia anual de 10-20/100.000 en países occidentales; vías biliares y alcoholismo causan ~80% de los casos. Relación hombre:mujer 6:1 en alcohólicos y 1:3 en litiasis biliar; cálculos presentes en 35-60% de los pacientes, y ~5% de los litiasicos desarrolla pancreatitis biliar <span class="cite">p. 882</span>.</p>
+<h3 id="patogenia-autodigestión-enzimática">Patogenia: autodigestión enzimática</h3>
+<ul>
+<li>La activación inapropiada de tripsina activa profosfolipasa (degrada células grasas) y proelastasa (daña fibras elásticas vasculares), y activa en sangre coagulación, complemento, calicreína y fibrinólisis; la inflamación y trombosis de pequeños vasos amplifican la activación enzimática <span class="cite">p. 883</span>.</li>
+<li><strong>Tres vías iniciadoras</strong> (fig. 19.2): <span class="cite">p. 883</span>.
+<ol type="1">
+<li><strong>Obstrucción ductal</strong>: cálculos y barro biliar, neoplasias periampulares, coledococeles, parásitos (<em>Ascaris lumbricoides</em>, <em>Clonorchis sinensis</em>) y posiblemente páncreas dividido. Aumenta la presión ductal y acumula líquido rico en enzimas; la lipasa (única secretada en forma activa) produce necrosis grasa; la muerte de adipocitos genera señales de "peligro" detectadas por células estrelladas y leucocitos → mediadores proinflamatorios → fuga microvascular, edema, isquemia acinar <span class="cite">p. 883</span>.</li>
+<li><strong>Lesión primaria de células acinares</strong>: estrés oxidativo y radicales libres → oxidación de lípidos de membrana y activación de AP1 y NF-κB, con quimiocinas que atraen células mononucleares. El <strong>calcio</strong> regula la tripsina: calcio alto favorece su autoactivación; calcio bajo favorece su autodegradación <span class="cite">p. 883</span>.</li>
+<li><strong>Transporte intracelular defectuoso</strong>: proenzimas derivadas anómalamente a lisosomas (catepsinas), con activación y rotura lisosomal; no está claro su papel en la pancreatitis aguda humana <span class="cite">p. 884</span>.</li>
+</ol>
+<figure class="fig" id="fig-19-2">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-2.webp" data-caption="Figura 19.2. Tres vías propuestas para la patogenia de la pancreatitis aguda: obstrucción ductal, lesión de células acinares y transporte intracelular defectuoso de proenzimas, que convergen en la activación de enzimas, necrosis grasa y daño vascular con hemorragia." data-alt="Figura 19.2. Tres vías propuestas para la patogenia de la pancreatitis aguda: obstrucción ductal, lesión de células acinares y transporte intracelular defectuoso de proenzimas, que convergen en la activación de enzimas, necrosis grasa y daño vascular con hemorragia. Robbins y Cotran, 10ª ed., p. 883.">
+    <img src="../assets/fig/cap19/fig-19-2.webp" width="1300" height="1045" loading="lazy" decoding="async" alt="Figura 19.2. Tres vías propuestas para la patogenia de la pancreatitis aguda: obstrucción ductal, lesión de células acinares y transporte intracelular defectuoso de proenzimas, que convergen en la activación de enzimas, necrosis grasa y daño vascular con hemorragia. Robbins y Cotran, 10ª ed., p. 883.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.2.</strong> Tres vías propuestas para la patogenia de la pancreatitis aguda: obstrucción ductal, lesión de células acinares y transporte intracelular defectuoso de proenzimas, que convergen en la activación de enzimas, necrosis grasa y daño vascular con hemorragia.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 883. <a href="../creditos.html#fig-19-2">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
+<li><strong>Alcohol</strong>: obstrucción (contracción transitoria del esfínter de Oddi; secreción rica en proteínas con tapones) más lesión acinar (estrés oxidativo, fusión lisosoma-cimógeno, ↑calcio intracelular). La mayoría de los alcohólicos nunca desarrolla pancreatitis <span class="cite">p. 884</span>.</li>
+<li><strong>Fármacos</strong>: ~50 con asociación definida (de cientos sospechosos): azatioprina, IECA, estatinas, agonistas de GLP-1, inhibidores de DPP-4 <span class="cite">p. 884</span>.</li>
+<li>Otros: hipertrigliceridemia, hipercalcemia (hiperparatiroidismo), traumatismo abdominal cerrado, lesión yatrógena (cirugía, CPRE), isquemia (shock, trombosis, embolia, vasculitis), infecciones (parotiditis, virus de Coxsackie) <span class="cite">p. 884</span>.</li>
+</ul>
+<h3 id="predisposición-genética">Predisposición genética</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Pancreatitis aguda" tabindex="0"><table>
+<thead>
+<tr>
+<th>Gen</th>
+<th>Función / mecanismo</th>
+<th>Herencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PRSS1</strong> (7q34)</td>
+<td>Tripsina catiónica; ganancia de función que impide la autoinactivación</td>
+<td>Autosómica dominante</td>
+</tr>
+<tr>
+<td><strong>SPINK1</strong> (5q32)</td>
+<td>Inhibidor de la tripsina; pérdida de función ↑actividad de tripsina</td>
+<td>Autosómica recesiva</td>
+</tr>
+<tr>
+<td><strong>CFTR</strong> (7q31)</td>
+<td>Canal aniónico; secreciones espesadas, tapones y obstrucción ductal</td>
+<td>Homocigotos e incluso heterocigotos</td>
+</tr>
+<tr>
+<td><strong>CASR</strong> (3q13)</td>
+<td>Sensor de calcio; altera calcio luminal y activa tripsina</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CTRC</strong> (1p36)</td>
+<td>Quimotripsina C; degrada la tripsina, protege de la lesión</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CPA1</strong> (7q32)</td>
+<td>Carboxipeptidasa A1; exopeptidasa en la activación de cimógenos</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 882, 884</span> (tabla 19.2).</p>
+<ul>
+<li>El denominador común de las formas hereditarias es un defecto que <strong>incrementa o mantiene la actividad de la tripsina</strong>; los ataques comienzan a menudo en la infancia y conducen a pancreatitis crónica <span class="cite">p. 884</span>.</li>
+<li>Los portadores de mutación <strong>PRSS1</strong> tienen un riesgo <strong>40% mayor</strong> de cáncer pancreático: ejemplo de la asociación inflamación crónica-neoplasia <span class="cite">p. 884</span>.</li>
+</ul>
+<h3 id="morfología">Morfología</h3>
+<ul>
+<li>Alteraciones básicas: fuga microvascular y edema, necrosis grasa, inflamación aguda y afectación de vasos con hemorragia intersticial <span class="cite">p. 885</span>.</li>
+<li><strong>Pancreatitis intersticial aguda</strong>: inflamación leve, edema intersticial y necrosis grasa focal. La lipasa produce <strong>saponificación</strong> (jabones cálcicos insolubles, aspecto azulado granular) <span class="cite">p. 885</span>.</li>
+<li><strong>Pancreatitis necrosante aguda</strong>: necrosis de ácinos, conductos e incluso islotes. <strong>Pancreatitis hemorrágica</strong> (forma más grave): color rojizo-negra con focos blanquecino-amarillentos de necrosis grasa "de tiza" <span class="cite">p. 885</span>.</li>
+<li>La necrosis grasa alcanza epiplón, mesenterio, otras localizaciones abdominales y la grasa subcutánea por lipasa sistémica; la cavidad peritoneal contiene líquido pardo turbio con glóbulos grasos <span class="cite">p. 885</span>.</li>
+</ul>
+<figure class="fig" id="fig-19-4">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-4.webp" data-caption="Figura 19.4. Pancreatitis aguda hemorrágica, corte macroscópico: áreas oscuras de hemorragia en la cabeza del páncreas y foco claro de necrosis grasa en la grasa peripancreática." data-alt="Figura 19.4. Pancreatitis aguda hemorrágica, corte macroscópico: áreas oscuras de hemorragia en la cabeza del páncreas y foco claro de necrosis grasa en la grasa peripancreática. Robbins y Cotran, 10ª ed., p. 885.">
+    <img src="../assets/fig/cap19/fig-19-4.webp" width="752" height="416" loading="lazy" decoding="async" alt="Figura 19.4. Pancreatitis aguda hemorrágica, corte macroscópico: áreas oscuras de hemorragia en la cabeza del páncreas y foco claro de necrosis grasa en la grasa peripancreática. Robbins y Cotran, 10ª ed., p. 885.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.4.</strong> Pancreatitis aguda hemorrágica, corte macroscópico: áreas oscuras de hemorragia en la cabeza del páncreas y foco claro de necrosis grasa en la grasa peripancreática.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 885. <a href="../creditos.html#fig-19-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="características-clínicas">Características clínicas</h3>
+<ul>
+<li>Dolor abdominal constante e intenso, irradiado a espalda alta/media y a veces hombro izquierdo; anorexia, náuseas y vómitos frecuentes. Amilasa y lipasa séricas elevadas desde las <strong>4-12 h</strong>; la lipasa persiste 8-14 días <span class="cite">p. 885</span>.</li>
+<li>Forma grave: abdomen agudo, síndrome de respuesta inflamatoria sistémica con leucocitosis, CID, edema y síndrome de dificultad respiratoria aguda; shock y necrosis tubular renal aguda <span class="cite">p. 885</span>.</li>
+<li>Glucosuria en el 10%; <strong>hipocalcemia</strong> por saponificación. TC útil para visualizar el páncreas inflamado; tratamiento: reposo pancreático (ayuno), líquidos IV y analgesia <span class="cite">p. 885</span>.</li>
+<li>Mortalidad del <strong>5% en la primera semana</strong> en casos graves; SDRA e insuficiencia renal aguda son de mal pronóstico; secuelas: abscesos pancreáticos estériles y seudoquistes; infección de residuos necróticos en 40-60% de las necrosantes <span class="cite">p. 885</span>.</li>
+</ul>
+
+</section><section id="sec-05-pancreatitis-cronica" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 886-887</div>
+<h2>Pancreatitis crónica</h2>
+<p>Inflamación prolongada con <strong>destrucción irreversible</strong> del parénquima exocrino, fibrosis y, en fases avanzadas, pérdida endocrina. Prevalencia 0,04-5%; hombres de mediana edad; causa más común: alcohol a largo plazo. Otras: obstrucción ductal prolongada (cálculos, neoplasias), lesión autoinmunitaria y factores hereditarios (hasta 25% con base genética) <span class="cite">p. 886</span>.</p>
+<h3 id="patogenia">Patogenia</h3>
+<ul>
+<li>Suele desarrollarse tras episodios repetidos de pancreatitis aguda: fibrosis perilobulillar → distorsión ductal → secreciones alteradas → pérdida acinar y fibrosis por lesión repetida <span class="cite">p. 886</span>.</li>
+<li>Predominan las citocinas <strong>fibrógenas</strong> (TGF-β, PDGF), que activan y proliferan las <strong>células estrelladas pancreáticas</strong> (miofibroblastos periacinares) con depósito de colágeno y fibrosis (fig. 19.5) <span class="cite">p. 886</span>.</li>
+<li><strong>Pancreatitis autoinmunitaria</strong>: manifestación diferenciada de pancreatitis crónica con dos formas que pueden simular carcinoma como "lesión de masa" en la cabeza pancreática <span class="cite">p. 886</span>.</li>
+</ul>
+<figure class="fig" id="fig-19-5">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-5.webp" data-caption="Figura 19.5. Comparación de los mediadores en las pancreatitis aguda y crónica: en la aguda, la liberación de enzimas digestivas con activación de las cascadas inflamatoria y de la coagulación y posible resolución; en la crónica, citocinas fibrógenas (TGF-β, PDGF) que activan células estrelladas, colágeno y fibrosis irreversible." data-alt="Figura 19.5. Comparación de los mediadores en las pancreatitis aguda y crónica: en la aguda, la liberación de enzimas digestivas con activación de las cascadas inflamatoria y de la coagulación y posible resolución; en la crónica, citocinas fibrógenas (TGF-β, PDGF) que activan células estrelladas, colágeno y fibrosis irreversible. Robbins y Cotran, 10ª ed., p. 886.">
+    <img src="../assets/fig/cap19/fig-19-5.webp" width="930" height="885" loading="lazy" decoding="async" alt="Figura 19.5. Comparación de los mediadores en las pancreatitis aguda y crónica: en la aguda, la liberación de enzimas digestivas con activación de las cascadas inflamatoria y de la coagulación y posible resolución; en la crónica, citocinas fibrógenas (TGF-β, PDGF) que activan células estrelladas, colágeno y fibrosis irreversible. Robbins y Cotran, 10ª ed., p. 886.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.5.</strong> Comparación de los mediadores en las pancreatitis aguda y crónica: en la aguda, la liberación de enzimas digestivas con activación de las cascadas inflamatoria y de la coagulación y posible resolución; en la crónica, citocinas fibrógenas (TGF-β, PDGF) que activan células estrelladas, colágeno y fibrosis irreversible.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 886. <a href="../creditos.html#fig-19-5">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="pancreatitis-autoinmunitaria">Pancreatitis autoinmunitaria</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Pancreatitis crónica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rasgo</th>
+<th>Tipo 1</th>
+<th>Tipo 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alcance</td>
+<td>Enfermedad sistémica relacionada con IgG</td>
+<td>Limitada al páncreas (subgrupo con colitis ulcerosa)</td>
+</tr>
+<tr>
+<td>Histología</td>
+<td>Fibrosis estoriforme, flebitis obliterante, inflamación linfoplasmocítica densa con células plasmáticas IgG4+</td>
+<td>Lesiones epiteliales granulocíticas (neutrófilos en epitelio y luz de conductos medianos)</td>
+</tr>
+<tr>
+<td>IgG4</td>
+<td>Abundante, también en otros órganos</td>
+<td>Ausente o escasa</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 886-887</span>.</p>
+<h3 id="morfología-1">Morfología</h3>
+<ul>
+<li>Fibrosis parenquimatosa, atrofia y pérdida acinar, dilatación ductal variable; glándula dura con conductos dilatados y concreciones calcificadas; infiltrado crónico alrededor de lobulillos y conductos <span class="cite">p. 886</span>.</li>
+<li>Los <strong>islotes se conservan</strong> relativamente, inmersos en el tejido esclerótico, y pueden fusionarse e hipertrofiarse; epitelio ductal atrófico, hiperplásico o metaplásico escamoso <span class="cite">p. 886</span>.</li>
+<li>Forma alcohólica: dilatación ductal, <strong>tapones de proteínas y calcificaciones intraluminales</strong> <span class="cite">p. 886-887</span>.</li>
+</ul>
+<figure class="fig" id="fig-19-6">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-6.webp" data-caption="Figura 19.6. Pancreatitis crónica. A. Fibrosis y atrofia extensas con islotes y conductos residuales e inflamación crónica dispersa. B. Conductos dilatados con concreciones eosinófilas espesas en pancreatitis crónica alcohólica. C. Pancreatitis autoinmunitaria con infiltrado linfoplasmocítico, estroma estoriforme y células plasmáticas IgG4+." data-alt="Figura 19.6. Pancreatitis crónica. A. Fibrosis y atrofia extensas con islotes y conductos residuales e inflamación crónica dispersa. B. Conductos dilatados con concreciones eosinófilas espesas en pancreatitis crónica alcohólica. C. Pancreatitis autoinmunitaria con infiltrado linfoplasmocítico, estroma estoriforme y células plasmáticas IgG4+. Robbins y Cotran, 10ª ed., p. 887.">
+    <img src="../assets/fig/cap19/fig-19-6.webp" width="1469" height="689" loading="lazy" decoding="async" alt="Figura 19.6. Pancreatitis crónica. A. Fibrosis y atrofia extensas con islotes y conductos residuales e inflamación crónica dispersa. B. Conductos dilatados con concreciones eosinófilas espesas en pancreatitis crónica alcohólica. C. Pancreatitis autoinmunitaria con infiltrado linfoplasmocítico, estroma estoriforme y células plasmáticas IgG4+. Robbins y Cotran, 10ª ed., p. 887.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.6.</strong> Pancreatitis crónica. A. Fibrosis y atrofia extensas con islotes y conductos residuales e inflamación crónica dispersa. B. Conductos dilatados con concreciones eosinófilas espesas en pancreatitis crónica alcohólica. C. Pancreatitis autoinmunitaria con infiltrado linfoplasmocítico, estroma estoriforme y células plasmáticas IgG4+.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 887. <a href="../creditos.html#fig-19-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="características-clínicas-1">Características clínicas</h3>
+<ul>
+<li>Ataques repetidos de dolor abdominal leve a moderado o dolor abdominal y de espalda persistente; precipitados por alcohol, comida abundante u opiáceos (tono del esfínter de Oddi). Puede ser silente hasta la insuficiencia exocrina y <strong>diabetes</strong> por destrucción de ambos parénquimas <span class="cite">p. 887</span>.</li>
+<li>Diagnóstico de alta sospecha: febrícula y amilasa levemente elevada en ataques, pero con pérdida acinar avanzada puede estar normal; calcificaciones pancreáticas en TC/ecografía muy útiles; pérdida de peso (insuficiencia exocrina, malabsorción) y edema por hipoalbuminemia <span class="cite">p. 887</span>.</li>
+<li>Pronóstico: mortalidad del <strong>50% a 20-25 años</strong>; seudoquistes en ~10%; el riesgo de cáncer pancreático está muy aumentado en la pancreatitis hereditaria por <em>PRSS1</em> (+40% de riesgo vital) y solo moderadamente en otras formas <span class="cite">p. 887</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Pancreatitis autoinmunitaria: simulador de cáncer que responde a esteroides</span>Ambas variantes pueden presentarse como lesión de masa en la cabeza pancreática y simular un carcinoma; distinguirlas es crítico porque la pancreatitis autoinmunitaria responde a esteroides. El tipo 1 muestra células plasmáticas IgG4+, fibrosis estoriforme y flebitis obliterante; el tipo 2 muestra lesiones epiteliales granulocíticas sin IgG4 abundante <span class="cite">p. 886-887</span>.</div>
+</section><section id="sec-06-quistes-no-neoplasicos" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 888</div>
+<h2>Quistes no neoplásicos</h2>
+<h3 id="quistes-congénitos">Quistes congénitos</h3>
+<ul>
+<li>Uniloculares, de pared delgada, por desarrollo anómalo de los conductos; de microscópicos a <strong>5 cm</strong>, revestidos por epitelio cúbico uniforme (o aplanado si hay alta presión) con cápsula fibrosa delgada y líquido seroso transparente <span class="cite">p. 888</span>.</li>
+<li>Pueden ser esporádicos o formar parte de la <strong>enfermedad renal poliquística autosómica dominante</strong> (quistes de riñón, hígado y páncreas coexisten) y la <strong>enfermedad de von Hippel-Lindau</strong> (hemangioblastomas de retina y cerebelo/tronco con quistes y neoplasias pancreáticas, hepáticas y renales) <span class="cite">p. 888</span>.</li>
+</ul>
+<h3 id="seudoquistes">Seudoquistes</h3>
+<ul>
+<li>Se forman cuando áreas de necrosis grasa intra o peripancreática quedan tabicadas por fibrosis y tejido de granulación; son el <strong>75% de los quistes pancreáticos</strong> y carecen de revestimiento epitelial <span class="cite">p. 888</span>.</li>
+<li>Habitualmente tras pancreatitis aguda (especialmente sobre pancreatitis crónica alcohólica) o traumatismo; muchos resuelven espontáneamente, otros se infectan, comprimen o perforan <span class="cite">p. 888</span>.</li>
+<li>Morfología: solitarios, en el páncreas o más a menudo en la transcavidad de los epiplones, retroperitoneo (entre estómago y colon transverso o hígado) y subdiafragmáticos; pared de fibrina y tejido de granulación; <strong>2-30 cm</strong> de diámetro <span class="cite">p. 888</span>.</li>
+</ul>
+<figure class="fig" id="fig-19-7">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-7.webp" data-caption="Figura 19.7. Seudoquiste pancreático. A. Corte transversal con un quiste mal definido de pared necrótica pardo-negruzca. B. Ausencia de revestimiento epitelial verdadero: el quiste está revestido por fibrina y tejido de granulación." data-alt="Figura 19.7. Seudoquiste pancreático. A. Corte transversal con un quiste mal definido de pared necrótica pardo-negruzca. B. Ausencia de revestimiento epitelial verdadero: el quiste está revestido por fibrina y tejido de granulación. Robbins y Cotran, 10ª ed., p. 888.">
+    <img src="../assets/fig/cap19/fig-19-7.webp" width="731" height="911" loading="lazy" decoding="async" alt="Figura 19.7. Seudoquiste pancreático. A. Corte transversal con un quiste mal definido de pared necrótica pardo-negruzca. B. Ausencia de revestimiento epitelial verdadero: el quiste está revestido por fibrina y tejido de granulación. Robbins y Cotran, 10ª ed., p. 888.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.7.</strong> Seudoquiste pancreático. A. Corte transversal con un quiste mal definido de pared necrótica pardo-negruzca. B. Ausencia de revestimiento epitelial verdadero: el quiste está revestido por fibrina y tejido de granulación.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 888. <a href="../creditos.html#fig-19-7">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+</section><section id="sec-07-neoplasias-quisticas" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 888-889</div>
+<h2>Neoplasias quísticas</h2>
+<p>Solo el 5-15% de los quistes pancreáticos son neoplásicos y menos del 5% de las neoplasias pancreáticas son quísticas. Las serosas son casi siempre benignas; las mucinosas y las NMPI son precancerosas; cada tipo tiene un perfil mutacional propio <span class="cite">p. 888</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Neoplasias quísticas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Neoplasia</th>
+<th>Epidemiología / localización</th>
+<th>Morfología</th>
+<th>Genética</th>
+<th>Riesgo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Serosa</strong> (cistoadenoma seroso)</td>
+<td>Cola; 15-25% de las quísticas; 2× mujeres; 6ª-7ª década</td>
+<td>Quistes de 1-3 mm, microquística "en panal de abejas"; epitelio cúbico rico en glucógeno; líquido acuoso amarillo pajizo</td>
+<td>Inactivación de <em><strong>VHL</strong></em> (3p)</td>
+<td>Casi siempre benigna; resección curativa</td>
+</tr>
+<tr>
+<td><strong>Quística mucinosa</strong></td>
+<td>Cola; <strong>95% en mujeres</strong>; masa indolora de crecimiento lento</td>
+<td>Quistes grandes llenos de mucina densa y firme; epitelio cilíndrico mucinoso con estroma denso "ovárico" (receptores de estrógenos/progesterona, inhibina)</td>
+<td><em>KRAS</em> ~50%; <em>TP53</em> y <em>SMAD4</em> solo en los infiltrantes; <em>RNF43</em> hasta 1/3</td>
+<td>Precursora: hasta 1/3 alberga carcinoma infiltrante; 50% de mortalidad a 5 años si hay cáncer</td>
+</tr>
+<tr>
+<td><strong>NMPI</strong></td>
+<td>Conductos grandes; hombres; cabeza; hasta 20% multifocales</td>
+<td>Proliferación papilar mucinosa intraductal con dilatación del conducto principal; sin estroma "ovárico"</td>
+<td><em>KRAS</em> ~80%; <em>RNF43</em> hasta 50%; <em><strong>GNAS</strong></em> en dos tercios (exclusivo de NMPI); <em>TP53</em>/<em>SMAD4</em> solo en el infiltrante</td>
+<td>Precursora: puede evolucionar a cáncer invasivo</td>
+</tr>
+<tr>
+<td><strong>Sólida-seudopapilar</strong></td>
+<td>Mujeres jóvenes; masa grande con molestias abdominales</td>
+<td>Bien circunscrita, componentes sólidos y quísticos hemorrágicos; células escasamente cohesivas en sábanas y seudopapilas</td>
+<td><em><strong>CTNNB1</strong></em> (β-catenina) en casi todos; sin <em>KRAS</em>, <em>RNF43</em>, <em>GNAS</em> ni <em>VHL</em></td>
+<td>Resección curativa en la mayoría</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 888-890</span>.</p>
+<ul>
+<li>Distinción NMPI vs neoplasia quística mucinosa: ausencia de estroma "ovárico" y afectación de un conducto pancreático <span class="cite">p. 889</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">El perfil mutacional identifica el tipo de quiste</span>Cada neoplasia quística tiene mutaciones distintivas: VHL en la serosa, KRAS en la mucinosa, GNAS (exclusiva) en la NMPI y CTNNB1 en la sólida-seudopapilar, que carece de KRAS, RNF43, GNAS y VHL <span class="cite">p. 889-890</span>.</div>
+</section><section id="sec-08-carcinoma-pancreatico" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 890-893</div>
+<h2>Carcinoma pancreático</h2>
+<p>El adenocarcinoma ductal infiltrante es la tercera causa de muerte por cáncer en EE. UU. tras pulmón y colon; en 2020 afectaría a ~57.600 estadounidenses, casi todos fallecidos por la enfermedad; supervivencia a 5 años del <strong>10%</strong> <span class="cite">p. 890</span>.</p>
+<h3 id="precursores-panin">Precursores: PanIN</h3>
+<ul>
+<li>Más del <strong>90% de los cánceres pancreáticos</strong> se desarrollan a partir de <strong>neoplasia intraepitelial pancreática (PanIN)</strong> en conductos pequeños, a menudo microscópicas; el resto surge de lesiones quísticas <span class="cite">p. 890</span>.</li>
+<li>Evidencias: alteraciones genéticas y epigenéticas de la PanIN similares a las del carcinoma infiltrante; PanIN frecuente en el parénquima adyacente al carcinoma; la PanIN de alto grado (carcinoma in situ) casi nunca se observa sin carcinoma infiltrante; precede al cáncer en modelos murinos; casos publicados de PanIN que luego desarrolló carcinoma <span class="cite">p. 890</span>.</li>
+<li>Las células de la PanIN muestran <strong>acortamiento drástico de los telómeros</strong>, lo que facilita anomalías cromosómicas y la progresión <span class="cite">p. 890</span>.</li>
+<li>Secuencia genética (fig. 19.12): telómeros cortos y <strong>KRAS</strong> mutado primero; luego inactivación de <strong>CDKN2A</strong> (p16); la inactivación de <strong>TP53, SMAD4 y BRCA2</strong> ocurre en la PanIN de alto grado que precede al carcinoma infiltrante <span class="cite">p. 891</span>.</li>
+</ul>
+<figure class="fig" id="fig-19-12">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-12.webp" data-caption="Figura 19.12. Modelo de progresión de los conductos normales a neoplasia intraepitelial pancreática (PanIN) de bajo y alto grado y carcinoma infiltrante: telómeros cortos y mutaciones de KRAS iniciales, luego inactivación de CDKN2A y, en el alto grado, de TP53, SMAD4 y BRCA2." data-alt="Figura 19.12. Modelo de progresión de los conductos normales a neoplasia intraepitelial pancreática (PanIN) de bajo y alto grado y carcinoma infiltrante: telómeros cortos y mutaciones de KRAS iniciales, luego inactivación de CDKN2A y, en el alto grado, de TP53, SMAD4 y BRCA2. Robbins y Cotran, 10ª ed., p. 891.">
+    <img src="../assets/fig/cap19/fig-19-12.webp" width="1460" height="464" loading="lazy" decoding="async" alt="Figura 19.12. Modelo de progresión de los conductos normales a neoplasia intraepitelial pancreática (PanIN) de bajo y alto grado y carcinoma infiltrante: telómeros cortos y mutaciones de KRAS iniciales, luego inactivación de CDKN2A y, en el alto grado, de TP53, SMAD4 y BRCA2. Robbins y Cotran, 10ª ed., p. 891.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.12.</strong> Modelo de progresión de los conductos normales a neoplasia intraepitelial pancreática (PanIN) de bajo y alto grado y carcinoma infiltrante: telómeros cortos y mutaciones de KRAS iniciales, luego inactivación de CDKN2A y, en el alto grado, de TP53, SMAD4 y BRCA2.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 891. <a href="../creditos.html#fig-19-12">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="patogenia-molecular">Patogenia molecular</h3>
+<ul>
+<li><em><strong>KRAS</strong></em> (12p): mutaciones activadoras en <strong>&gt;90%</strong>; Ras activa constitutivamente las vías <strong>MAPK</strong> y <strong>PI3K/AKT</strong> <span class="cite">p. 891</span>.</li>
+<li><em><strong>CDKN2A</strong></em> (9p): inactivado en 30% por el texto principal (p16/INK4a y ARF, potenciador de p53); la tabla 19.3 registra 30% por mutación puntual (con deleciones homocigóticas la frecuencia total es mayor) <span class="cite">p. 891-892</span>.</li>
+<li><em><strong>SMAD4</strong></em> (18q): inactivado en <strong>55%</strong>, excepcional en otros cánceres; transducción de señales de TGF-β <span class="cite">p. 891</span>.</li>
+<li><em><strong>TP53</strong></em> (17p): inactivado en <strong>70-75%</strong>; respuesta al daño del ADN <span class="cite">p. 891</span>.</li>
+<li>Alteraciones menos frecuentes: <em>AKT2</em> (6%), <em>MYC</em> (5%), <em>GATA6</em> (9%), <em>FGFR1</em> (5%), <em>BRAF</em> (3%), <em>BRCA2</em> (4%), <em>ATM</em> (5%), <em>ARID1A</em> (6%), <em>MLL3/KMT2C</em> (4%), <em>KDM6A</em> (3%) <span class="cite">p. 892</span>.</li>
+<li><strong>Epigenética</strong>: hipermetilación del promotor silencia supresores (CDKN2A); la hipometilación sobreexpresa oncogenes (GATA6, BRD4). Subtipos transcriptómicos: <strong>basal</strong> (muy agresivo) y <strong>clásico</strong> (pronóstico algo mejor) <span class="cite">p. 891</span>.</li>
+</ul>
+<h3 id="epidemiología-y-herencia">Epidemiología y herencia</h3>
+<ul>
+<li>80% de los casos después de los 60 años; mayor incidencia en afroamericanos, estadounidenses de origen japonés, nativos de Hawái y judíos sefardíes <span class="cite">p. 891</span>.</li>
+<li><strong>Tabaco</strong> duplica el riesgo; pancreatitis, obesidad visceral e IMC alto y diabetes mellitus son factores de riesgo adicionales. La <strong>diabetes de nuevo inicio</strong> puede revelar un cáncer oculto: intolerancia a la glucosa o diabetes hasta en la mitad de los pacientes, hasta <strong>3 años antes</strong> de los signos clínicos <span class="cite">p. 891</span>.</li>
+<li>~10% tiene mutación en línea germinal o familiares de primer grado afectados; <em><strong>BRCA2</strong></em> es la causa conocida más común de cáncer pancreático familiar; <em>BRCA1</em>, <em>PALB2</em> y <em>ATM</em> aumentan el riesgo 4-10 veces. Se recomienda estudio de línea germinal en todos los pacientes por la disponibilidad de agentes dirigidos a defectos de reparación del ADN <span class="cite">p. 892</span>.</li>
+<li>Síndromes hereditarios: Peutz-Jeghers (<em>STK11</em>, riesgo 30-60% hacia los 70 años), pancreatitis hereditaria (<em>PRSS1</em>, <em>SPINK1</em>; 25-40%), melanoma familiar (<em>CDKN2A</em>; 10-17%), cáncer de mama/ovario hereditario (<em>BRCA1/2</em>, <em>PALB2</em>, <em>ATM</em>; 4-10%), HNPCC (<em>MLH1</em>, <em>MSH2</em>, <em>PMS2</em>; ~4%) <span class="cite">p. 892</span> (tabla 19.4).</li>
+<li>La <strong>inestabilidad de microsatélites</strong> orienta a inmunoterapia (inhibidores de puntos de control) <span class="cite">p. 892</span>.</li>
+</ul>
+<h3 id="morfología-2">Morfología</h3>
+<ul>
+<li>Localización: <strong>cabeza 60%, cuerpo 15%, cola 5%</strong>, todo el páncreas 20% <span class="cite">p. 892</span>.</li>
+<li>Adenocarcinomas que forman glándulas y secretan mucina; dos rasgos característicos: alta invasividad a tejidos peripancreáticos e intensa <strong>respuesta desmoplásica</strong> (colágeno denso); masas duras, estrelladas, gris-blanquecinas y poco definidas <span class="cite">p. 892</span>.</li>
+<li>Los de cabeza obstruyen el colédoco distal con dilatación del árbol biliar en ~50%; los de cuerpo y cola no afectan la vía biliar y pueden ser grandes y diseminados al diagnóstico <span class="cite">p. 892</span>.</li>
+<li>Crecimiento perineural, invasión vascular y del retroperitoneo; infiltración directa de bazo, suprarrenales, colon transverso y estómago; ganglios peripancreáticos, gástricos, mesentéricos, epiploicos y portohepáticos; metástasis a hígado y pulmones <span class="cite">p. 892</span>.</li>
+<li>Histología: estructuras tubulares abortivas infiltrantes con glándulas poco definidas revestidas de células pleomorfas cúbicas a cilíndricas; puede ser difícil separar el carcinoma bien diferenciado de las glándulas benignas atípicas de la pancreatitis crónica, y la desmoplasia dificulta las biopsias con aguja <span class="cite">p. 893</span>.</li>
+<li>Variantes menos frecuentes: adenoescamoso, coloide, hepatoide, medular, células en anillo de sello, indiferenciado y con células gigantes tipo osteoclástico <span class="cite">p. 893</span>.</li>
+</ul>
+<figure class="fig" id="fig-19-13">
+  <a class="fig-open" href="../assets/fig/cap19/fig-19-13.webp" data-caption="Figura 19.13. Carcinoma de páncreas. A. Corte transversal de la cola con parénquima normal y una masa pálida centrada en el conducto. B. Glándulas poco definidas de células epiteliales malignas en un estroma densamente fibrótico (desmoplasia) con células inflamatorias." data-alt="Figura 19.13. Carcinoma de páncreas. A. Corte transversal de la cola con parénquima normal y una masa pálida centrada en el conducto. B. Glándulas poco definidas de células epiteliales malignas en un estroma densamente fibrótico (desmoplasia) con células inflamatorias. Robbins y Cotran, 10ª ed., p. 893.">
+    <img src="../assets/fig/cap19/fig-19-13.webp" width="701" height="932" loading="lazy" decoding="async" alt="Figura 19.13. Carcinoma de páncreas. A. Corte transversal de la cola con parénquima normal y una masa pálida centrada en el conducto. B. Glándulas poco definidas de células epiteliales malignas en un estroma densamente fibrótico (desmoplasia) con células inflamatorias. Robbins y Cotran, 10ª ed., p. 893.">
+  </a>
+  <figcaption>
+    <strong>Figura 19.13.</strong> Carcinoma de páncreas. A. Corte transversal de la cola con parénquima normal y una masa pálida centrada en el conducto. B. Glándulas poco definidas de células epiteliales malignas en un estroma densamente fibrótico (desmoplasia) con células inflamatorias.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 893. <a href="../creditos.html#fig-19-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="características-clínicas-2">Características clínicas</h3>
+<ul>
+<li>Silente hasta obstrucción o invasión; el dolor suele ser el primer síntoma y ya indica incurabilidad. <strong>Ictericia obstructiva indolora</strong> en la mayoría de los tumores de cabeza (obstrucción del colédoco); <strong>signo de Courvoisier</strong>: vesícula biliar palpable, agrandada e indolora <span class="cite">p. 893</span>.</li>
+<li>Pérdida de peso, anorexia y debilidad como signos de enfermedad avanzada; <strong>signo de Trousseau</strong> (tromboflebitis migratoria) en ~10%, por factores activadores de plaquetas y procoagulantes del tumor <span class="cite">p. 893</span>.</li>
+<li><strong>&gt;80% irresecable</strong> al diagnóstico; los resecados sobreviven cada vez más tiempo (algunos &gt;5 años): la detección precoz es clave. CEA y <strong>CA19-9</strong> sirven solo para seguir la respuesta al tratamiento, sin especificidad ni sensibilidad para cribado; la USPSTF no recomienda el cribado poblacional, sí en portadores de mutaciones de línea germinal de alto riesgo <span class="cite">p. 893</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Diabetes de nuevo inicio como pista de cáncer oculto</span>La intolerancia a la glucosa o la diabetes manifiesta están presentes hasta en la mitad de los pacientes con cáncer de páncreas hasta 3 años antes de los signos clínicos, y su aparición en personas de edad avanzada puede ser una oportunidad de diagnóstico precoz <span class="cite">p. 891</span>.</div>
+</section><section id="sec-09-carcinoma-de-celulas-acinares" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 894</div>
+<h2>Carcinoma de células acinares</h2>
+<ul>
+<li>Forman gránulos de cimógeno y producen enzimas exocrinas (tripsina, lipasa); hasta el <strong>15%</strong> desarrolla <strong>síndrome de necrosis grasa metastásico</strong> por lipasa circulante <span class="cite">p. 894</span>.</li>
+<li>Activación aberrante de la vía <strong>Wnt</strong>, por pérdida del gen supresor tumoral o mutaciones activadoras de <em>CTNNB1</em> (β-catenina) <span class="cite">p. 894</span>.</li>
+</ul>
+
+</section><section id="sec-10-pancreatoblastoma" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 894</div>
+<h2>Pancreatoblastoma</h2>
+<ul>
+<li>Neoplasia infrecuente de niños de <strong>1 a 15 años</strong>; microscopía con islotes escamosos mezclados con células acinares <span class="cite">p. 894</span>.</li>
+<li>Maligno, pero con supervivencia mayor que el adenocarcinoma ductal; a menudo con mutaciones que activan la vía <strong>Wnt</strong> <span class="cite">p. 894</span>.</li>
+</ul>
+
+</section><section id="sec-11-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 881-894</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Páncreas dividido: anomalía congénita más frecuente (3-10%); drenaje de casi toda la glándula por la papila menor; predispone (dato controvertido) a pancreatitis crónica. Páncreas anular: obstrucción duodenal; ectopia en ~2% de autopsias (estómago, duodeno) <span class="cite">p. 881-882</span>.</li>
+<li>Pancreatitis hereditaria: <strong>PRSS1</strong> (ganancia de función, autosómica dominante) vs <strong>SPINK1</strong> (pérdida de función, recesiva) vs <strong>CFTR</strong> (tapones proteicos); rasgo común: actividad de tripsina aumentada o mantenida; riesgo +40% de cáncer pancreático <span class="cite">p. 882, 884</span>.</li>
+<li>Lipasa sérica &gt; amilasa: más específica y sensible, persiste 8-14 días; la amilasa se normaliza en 3-5 días. Hipocalcemia por saponificación; glucosuria en 10% <span class="cite">p. 885</span>.</li>
+<li>Pancreatitis necrosante: infección de residuos en 40-60% (gramnegativos intestinales); mortalidad del 5% en la primera semana en casos graves; SDRA e insuficiencia renal = mal pronóstico <span class="cite">p. 885</span>.</li>
+<li>Aguda vs crónica en mediadores: aguda, enzimas activadas e inflamación aguda con posible resolución completa; crónica, citocinas fibrógenas (<strong>TGF-β, PDGF</strong>) con activación de células estrelladas y fibrosis irreversible <span class="cite">p. 886</span>.</li>
+<li>Pancreatitis autoinmunitaria: tipo 1 = IgG4+, sistémica, fibrosis estoriforme y flebitis; tipo 2 = lesiones epiteliales granulocíticas, limitada al páncreas, sin IgG4 abundante. Ambas simulan carcinoma ("lesión de masa") y responden a esteroides <span class="cite">p. 886-887</span>.</li>
+<li>Seudoquiste (75% de los quistes pancreáticos, sin epitelio, 2-30 cm, post-pancreatitis) vs quiste congénito (epitelio cúbico, asociado a ERPK-AD y vHL) <span class="cite">p. 888</span>.</li>
+<li>Quistes neoplásicos por perfil mutacional: serosa = <em>VHL</em>; mucinosa = <em>KRAS</em> + estroma "ovárico" (95% mujeres, cola); NMPI = <em><strong>GNAS</strong></em> (dos tercios, exclusiva) y conducto grande; sólida-seudopapilar = <em><strong>CTNNB1</strong></em> exclusivo <span class="cite">p. 888-890</span>.</li>
+<li>Secuencia PanIN: KRAS y telómeros → CDKN2A → TP53/SMAD4/BRCA2 en alto grado; &gt;90% de los cánceres nacen de PanIN <span class="cite">p. 890-891</span>.</li>
+<li>Cifras del carcinoma pancreático: KRAS &gt;90%, TP53 70-75%, SMAD4 55% (rara vez inactivado en otros cánceres), cabeza 60%, irresecable &gt;80%, supervivencia a 5 años 10%, tabaco ×2 riesgo <span class="cite">p. 890-892</span>.</li>
+<li>Diabetes de nuevo inicio hasta 3 años antes del cáncer en la mitad de los pacientes: oportunidad de diagnóstico precoz; CA19-9 y CEA solo para seguimiento, no cribado <span class="cite">p. 891, 893</span>.</li>
+<li>No confundir signo de <strong>Courvoisier</strong> (vesícula palpable indolora + ictericia por carcinoma de cabeza) con signo de <strong>Trousseau</strong> (tromboflebitis migratoria, ~10%, mediada por procoagulantes tumorales) <span class="cite">p. 893</span>.</li>
+<li>Carcinoma de células acinares: necrosis grasa metastásica por lipasa circulante (15%) y vía Wnt; pancreatoblastoma: niños 1-15 años, islotes escamosos + acinares, también vía Wnt, mejor pronóstico que el ductal <span class="cite">p. 894</span>.</li>
+</ul>
+
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-19-1" aria-label="Figura 19.1"><img src="../assets/fig/cap19/fig-19-1.webp" loading="lazy" decoding="async" alt="Figura 19.1"><span>Figura 19.1</span></a><a class="fig-thumb" href="#fig-19-2" aria-label="Figura 19.2"><img src="../assets/fig/cap19/fig-19-2.webp" loading="lazy" decoding="async" alt="Figura 19.2"><span>Figura 19.2</span></a><a class="fig-thumb" href="#fig-19-4" aria-label="Figura 19.4"><img src="../assets/fig/cap19/fig-19-4.webp" loading="lazy" decoding="async" alt="Figura 19.4"><span>Figura 19.4</span></a><a class="fig-thumb" href="#fig-19-5" aria-label="Figura 19.5"><img src="../assets/fig/cap19/fig-19-5.webp" loading="lazy" decoding="async" alt="Figura 19.5"><span>Figura 19.5</span></a><a class="fig-thumb" href="#fig-19-6" aria-label="Figura 19.6"><img src="../assets/fig/cap19/fig-19-6.webp" loading="lazy" decoding="async" alt="Figura 19.6"><span>Figura 19.6</span></a><a class="fig-thumb" href="#fig-19-7" aria-label="Figura 19.7"><img src="../assets/fig/cap19/fig-19-7.webp" loading="lazy" decoding="async" alt="Figura 19.7"><span>Figura 19.7</span></a><a class="fig-thumb" href="#fig-19-12" aria-label="Figura 19.12"><img src="../assets/fig/cap19/fig-19-12.webp" loading="lazy" decoding="async" alt="Figura 19.12"><span>Figura 19.12</span></a><a class="fig-thumb" href="#fig-19-13" aria-label="Figura 19.13"><img src="../assets/fig/cap19/fig-19-13.webp" loading="lazy" decoding="async" alt="Figura 19.13"><span>Figura 19.13</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "page_id": "c2-21",
+  "chapter": 21,
+  "essentials": [
+    "El cáncer de vejiga tiene dos vías moleculares: papilar con FGFR3/RAS/PI3K (invasión muscular solo en ~20%) y plana desde CIS con p53/RB tempranos [p. 958].",
+    "La mortalidad del tumor urotelial salta con la invasión de la muscular propia: 30% a 5 años; el CIS aislado mata en 7% frente a 45% del CIS asociado a carcinoma infiltrante [p. 958, 961].",
+    "El tabaquismo aumenta el riesgo de cáncer vesical 3-7 veces y explica el 50-80% de los casos masculinos; Schistosoma haematobium produce carcinoma epidermoide en el 70% [p. 958].",
+    "Criptorquidia: 1% de los lactantes, riesgo de cáncer 3-5 veces; orquiopexia entre 6 y 12 meses reduce pero no elimina el riesgo [p. 967].",
+    "Los TCG derivan de la GCNIS (OCT3/4 y NANOG) con isocromosoma 12p; marcadores AFP (saco vitelino), hCG (sincitiotrofoblasto) y LDH (carga) [p. 970, 973].",
+    "HBP: zona de transición y DHT estromal por 5-reductasa tipo 2, no premaligna; el carcinoma de próstata surge en la zona periférica con fusión TMPRSS2-ETS y Gleason como factor pronóstico [p. 975-976, 979, 981]."
+  ],
+  "topics": [
+    "Cistitis: formas especiales y lesiones metaplásicas vesicales",
+    "Neoplasias uroteliales: gradación, patogenia y tratamiento con BCG",
+    "Pene: condiloma, PeIN y carcinoma epidermoide",
+    "Tumores testiculares de células germinales y marcadores séricos",
+    "Epididimitis, orquitis y torsión testicular",
+    "Próstata: prostatitis, HBP y adenocarcinoma con gradación de Gleason"
+  ],
+  "callouts": [
+    {
+      "section": "Vejiga y uréteres",
+      "title": "Dosis de examen del tumor urotelial",
+      "text": "La variable pronóstica decisiva es la invasión de la muscular propia (mortalidad 30% a 5 años) [p. 958]; el CIS aislado mata en 7% frente a 45% del CIS acompañado de carcinoma infiltrante [p. 961]; las recidivas alcanzan el 70% y se siguen con cistoscopia y citología de por vida [p. 961]."
+    },
+    {
+      "section": "Testículo y epidídimo",
+      "title": "Orquiectomía, no biopsia",
+      "text": "Toda masa testicular sólida se considera neoplásica y se trata con orquiectomía radical, porque la biopsia disemina el tumor [p. 973]; la primera estación ganglionar son los paraaórticos retroperitoneales y los no seminomatosos metastatizan antes por vía hematógena [p. 973]."
+    },
+    {
+      "section": "Próstata",
+      "title": "PSA: órgano sí, cáncer no",
+      "text": "El PSA es específico del órgano pero no del cáncer: se eleva en HBP, prostatitis, infarto prostático, sondaje y eyaculación [p. 982]; sirve con claridad para vigilar la recidiva tras el tratamiento, y el carcinoma de células pequeñas neuroendocrino surge como recidiva tras los antiandrógenos [p. 982-983]."
+    }
+  ]
+}

@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mama · Anatomía Patológica UBB</title>
+<meta name="description" content="Mama. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Mama · Anatomía Patológica UBB">
+<meta property="og:description" content="Mama. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 23. Mama</h1>
+    <p class="lede">Guía 13 de 16. Resumen completo del capítulo 23 con 124 citas por página y 48 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>13 de 16</strong></div><div><span>Capítulo</span><strong>23</strong></div><div><span>Páginas</span><strong>1037-1064</strong></div><div><span>Citas</span><strong>124</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>48</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-anatomia-desarrollo-y-presentacion-clinica-de-la-mastopatia">Anatomía, desarrollo y presentación clínica de la mastopatía</a></li>
+        <li><a href="#sec-03-trastornos-inflamatorios">Trastornos inflamatorios</a></li>
+        <li><a href="#sec-04-lesiones-epiteliales-benignas">Lesiones epiteliales benignas</a></li>
+        <li><a href="#sec-05-carcinoma-de-mama-incidencia-factores-de-riesgo-y-clasificacion-">Carcinoma de mama: incidencia, factores de riesgo y clasificación molecular</a></li>
+        <li><a href="#sec-06-carcinoma-in-situ">Carcinoma in situ</a></li>
+        <li><a href="#sec-07-carcinoma-infiltrante-invasivo">Carcinoma infiltrante (invasivo)</a></li>
+        <li><a href="#sec-08-mama-masculina">Mama masculina</a></li>
+        <li><a href="#sec-09-tumores-estromales">Tumores estromales</a></li>
+        <li><a href="#sec-10-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="12_Genital_Femenino.html" title="Aparato genital femenino">12</a>
+        <a href="14_Endocrino.html" title="Sistema endocrino">14</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 23 del Robbins y Cotran, 10ª edición: páginas impresas 1037-1064 (28 páginas), contrastadas con el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se contrastó con el OCR del capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Las lesiones epiteliales benignas se escalonan por riesgo de carcinoma infiltrante posterior: no proliferativas 1,0, proliferativas sin atipia 1,5-2, con atipia 4-5 y carcinoma in situ 8-10 <span class="cite">p. 1045</span>.</li><li>El CDIS se detecta por calcificaciones mamográficas y progresa a carcinoma infiltrante en el mismo cuadrante a ~1% anual; el CLIS es un hallazgo casual bilateral por pérdida de cadherina E sin calcificaciones <span class="cite">p. 1053-1055</span>.</li><li>Tres grupos moleculares: luminal (RE+/HER2-, 40-55%, PIK3CA, metástasis óseas y recidiva tardía), HER2 (20%, amplificación 17q, responde a anticuerpos anti-HER2) y TNBC (~15%, TP53, BRCA1, recidiva &lt;8 años con metástasis viscerales y encefálicas) <span class="cite">p. 1050-1052</span>.</li><li>El estado de los ganglios axilares es el principal factor pronóstico: supervivencia libre de enfermedad a 10 años de 70-80% si son negativos, 35-40% con 1-3 positivos y 10-15% con más de 10 <span class="cite">p. 1059</span>.</li><li>La biopsia de ganglio centinela evita el vaciamiento axilar cuando es negativa, y la 8.ª edición del AJCC integra grado, RE, RP y HER2 en la estadificación pronóstica <span class="cite">p. 1059-1060</span>.</li><li>El carcinoma inflamatorio (taponamiento linfovascular dérmico, piel de naranja) imita una infección mamaria y tiene supervivencia a 3 años de solo 3-10% <span class="cite">p. 1058, 1060</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 1038-1062</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La mama está formada por <strong>unidades lobulillares del conducto terminal</strong> (células luminales + mioepiteliales sobre membrana basal) rodeadas de estroma intralobulillar e interlobulillar; casi todas las neoplasias malignas son adenocarcinomas que surgen de la unidad lobulillar del conducto terminal, y los términos "ductal" y "lobulillar" reflejan biología tumoral, no la célula de origen <span class="cite">p. 1038, 1053</span>.</li>
+<li>Las presentaciones clínicas de la mastopatía (dolor, inflamación, secreción, masa) se asocian a cáncer en menos del 10% de los casos; en cambio, la secreción del pezón es malignantizante con la edad (7% si &lt;60 años, 30% si ≥60) y una masa palpable es maligna en 10% de menores de 40 años pero 60% de mayores de 50 <span class="cite">p. 1039</span>.</li>
+<li>Los trastornos inflamatorios son &lt;1% de los síntomas mamarios; siempre debe descartarse el <strong>carcinoma inflamatorio</strong>, que imita la inflamación por émbolos tumorales en la vasculatura dérmica <span class="cite">p. 1040</span>.</li>
+<li>Las lesiones epiteliales benignas se clasifican por riesgo relativo de carcinoma infiltrante posterior: no proliferativas (1,0), proliferativas sin atipia (1,5-2) y proliferativas con atipia (4-5); el carcinoma in situ eleva el riesgo a 8-10 <span class="cite">p. 1045</span>.</li>
+<li>El CDIS es una proliferación clonal limitada por membrana basal, detectada casi siempre por calcificaciones mamográficas; sin tratamiento progresa a carcinoma infiltrante a ~1% anual y su riesgo de recidiva depende de grado nuclear alto con necrosis, extensión y márgenes afectados <span class="cite">p. 1053-1055</span>.</li>
+<li>El carcinoma de mama es la neoplasia maligna más frecuente y mortal de la mujer en el mundo (1,7 millones de casos/año); riesgo vital de 1 en 8 en EE. UU.; los factores de riesgo mayores son sexo femenino, edad, exposición estrogénica acumulada y mutaciones germinales de alta penetrancia <span class="cite">p. 1046-1047</span>.</li>
+<li>Se reconocen tres grupos moleculares: <strong>luminal</strong> (RE+/HER2-, 40-55%), <strong>HER2</strong> (20%, amplificación de HER2 en 17q en &gt;95%) y <strong>triple negativo</strong> (TNBC, ~15%, genómica inestable, TP53 mutado en 70-80%, asociado a BRCA1) <span class="cite">p. 1050-1051</span>.</li>
+<li>Los cánceres HER2 tienen mal pronóstico espontáneo pero excelente respuesta a anticuerpos anti-HER2 (remisión completa en &gt;50%); el TNBC recidiva casi siempre en los primeros 8 años y metastatiza a vísceras y encéfalo <span class="cite">p. 1052-1053</span>.</li>
+<li>El factor pronóstico más importante del carcinoma infiltrante sin metástasis a distancia es la <strong>afectación ganglionar axilar</strong> (supervivencia libre de enfermedad a 10 años: 70-80% con ganglios negativos, 35-40% con 1-3 positivos, 10-15% con &gt;10); sigue el tamaño tumoral, el grado histológico de Nottingham y la invasión linfovascular <span class="cite">p. 1059-1060</span>.</li>
+<li>La biopsia de <strong>ganglio centinela</strong> (localizado con radiotrazadores o colorantes) evita el vaciamiento axilar completo cuando es negativa <span class="cite">p. 1059</span>.</li>
+<li>La 8.ª edición del AJCC incorpora la <strong>estadificación pronóstica</strong> que combina T, N, M con grado, RE, RP y HER2, además de la anatómica clásica <span class="cite">p. 1060</span>.</li>
+<li>Los tumores estromales bifásicos (fibroadenoma y tumor filodes) nacen del estroma intralobulillar y comparten mutaciones somáticas de <strong>MED12</strong>; solo el componente estromal del filodes metastatiza, por vía hematógena <span class="cite">p. 1062-1063</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-anatomia-desarrollo-y-presentacion-clinica-de-la-mastopatia" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 1038-1040</div>
+<h2>Anatomía, desarrollo y presentación clínica de la mastopatía</h2>
+<h3 id="estructura-y-cambios-vitales">Estructura y cambios vitales</h3>
+<p>La mama se compone de grandes conductos que drenan los lobulillos formados por unidades lobulillares del conducto terminal, con doble capa celular (luminal y mioepitelial) y estroma especializado intralobulillar; cada estructura puede originar tumores benignos o malignos específicos (papiloma, hiperplasia, CDIS, fibroadenoma, tumor filodes, carcinoma invasivo, hemangioma/angiosarcoma) <span class="cite">p. 1038</span>. Tras la menarquia se expande el sistema lobulillar; el embarazo produce cambios permanentes que explican la reducción del riesgo de cáncer en la maternidad temprana. Después de la tercera década los lobulillos y su estroma involucionan y el estroma interlobulillar pasa de fibroso radiodenso a adiposo radiotransparente; las hormonas endógenas (obesidad) o exógenas (terapia de reemplazo hormonal) retrasan esta involución <span class="cite">p. 1038</span>.</p>
+<figure class="fig" id="fig-23-1">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-1.webp" data-caption="Figura 23.1. Estructuras normales de la mama (células luminales, mioepiteliales, estroma intra e interlobulillar) y las neoplasias que cada una puede originar, benignas y malignas." data-alt="Figura 23.1. Estructuras normales de la mama (células luminales, mioepiteliales, estroma intra e interlobulillar) y las neoplasias que cada una puede originar, benignas y malignas. Robbins y Cotran, 10ª ed., p. 1038.">
+    <img src="../assets/fig/cap23/fig-23-1.webp" width="1476" height="828" loading="lazy" decoding="async" alt="Figura 23.1. Estructuras normales de la mama (células luminales, mioepiteliales, estroma intra e interlobulillar) y las neoplasias que cada una puede originar, benignas y malignas. Robbins y Cotran, 10ª ed., p. 1038.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.1.</strong> Estructuras normales de la mama (células luminales, mioepiteliales, estroma intra e interlobulillar) y las neoplasias que cada una puede originar, benignas y malignas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1038. <a href="../creditos.html#fig-23-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="trastornos-del-desarrollo">Trastornos del desarrollo</h3>
+<ul>
+<li><strong>Restos de la línea de leche</strong>: pezones o mamas supernumerarios por persistencia de engrosamientos epidérmicos desde la axila al periné; rara vez originan patología y suelen manifestarse como tumefacción dolorosa premenstrual <span class="cite">p. 1038</span>.</li>
+<li><strong>Tejido mamario axilar accesorio</strong> (cola axilar de Spence): extensión del sistema ductal al tejido subcutáneo axilar, que puede no ser extirpado en la mastectomía <span class="cite">p. 1038</span>.</li>
+<li><strong>Inversión congénita del pezón</strong>: anomalía benigna del desarrollo <span class="cite">p. 1038</span>.</li>
+</ul>
+<h3 id="presentaciones-clínicas-de-la-mastopatía">Presentaciones clínicas de la mastopatía</h3>
+<ul>
+<li><strong>Dolor</strong>: el cíclico difuso se debe al edema premenstrual; el no cíclico es focal (quistes rotos, traumatismo, infección o ninguna lesión). ~5% de las masas dolorosas son cánceres <span class="cite">p. 1039</span>.</li>
+<li><strong>Inflamación</strong>: eritema y edema de toda o parte de la mama, habitualmente infecciosa durante la lactancia; el imitador clave es el carcinoma inflamatorio <span class="cite">p. 1039</span>.</li>
+<li><strong>Secreción del pezón</strong>: la lechosa (galactorrea) se asocia a hiperprolactinemia (adenoma hipofisario), hipotiroidismo, síndromes anovulatorios o fármacos (anticonceptivos, tricíclicos, metildopa, fenotiacinas); no es un rasgo de malignidad. Las secreciones hemorrágicas o serosas se deben sobre todo a quistes y papilomas de grandes conductos; la asociada a cáncer lo es por CDIS, con origen maligno en 7% de las &lt;60 años y 30% de las ≥60. La secreción espontánea, unilateral y hemorrágica en mujeres mayores es sospechosa de malignidad <span class="cite">p. 1039</span>.</li>
+<li><strong>Masa palpable</strong>: ~95% benignas (redondeadas, elásticas, móviles, delimitadas; fibroadenomas y quistes); las malignas invaden planos tisulares, son duras (escirrosas) y de bordes irregulares. ~50% de los cánceres se ubican en el cuadrante superoexterno y ~20% en la región central/subareolar <span class="cite">p. 1039</span>.</li>
+</ul>
+<h3 id="detección-mamográfica">Detección mamográfica</h3>
+<p>Los signos mamográficos del carcinoma son <strong>densidades</strong> (masas irregulares; el carcinoma detectado por mamografía mide ~1 cm y solo 15% tiene ganglios positivos) y <strong>calcificaciones</strong> (benignas si asociadas a quistes apocrinos, fibroadenomas hialinizados o adenosis esclerosante; sospechosas si son pequeñas, irregulares, numerosas y agrupadas, rasgo típico del CDIS) <span class="cite">p. 1039-1040</span>. ~10% de los carcinomas invasivos no se ven en mamografía bidimensional (tejido denso, tumor pequeño, crecimiento difuso sin respuesta tisular, cercanía a la pared torácica); complementan la tomosíntesis digital, la ecografía (sólido vs quístico) y la RM (realce por hipervascularización, útil en mamas densas) <span class="cite">p. 1040</span>. El beneficio de la detección selectiva es menor del previsto: al diagnóstico 70-80% ya son invasivos, los cánceres más letales (jóvenes, crecimiento rápido entre mamografías) escapan a la detección, y 10-30% de los invasivos detectados son sobrediagnósticos <span class="cite">p. 1040</span>.</p>
+
+</section><section id="sec-03-trastornos-inflamatorios" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 1040-1041</div>
+<h2>Trastornos inflamatorios</h2>
+<p>Las enfermedades inflamatorias de la mama son infrecuentes (&lt;1% de los síntomas mamarios) y causadas por infección, autoinmunidad o reacciones a cuerpo extraño (queratina, secreciones extravasadas); siempre debe descartarse carcinoma inflamatorio en una mama tumefacta y eritematosa <span class="cite">p. 1040</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Trastornos inflamatorios" tabindex="0"><table>
+<thead>
+<tr>
+<th>Trastorno</th>
+<th>Clave clínica</th>
+<th>Rasgo histológico</th>
+<th>Tratamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mastitis aguda</td>
+<td>Primer mes de lactancia; grietas del pezón; S. aureus (abscesos) o estreptococos (celulitis)</td>
+<td>Inflamación aguda segmentaria o difusa</td>
+<td>Antibióticos + extracción continua de leche; drenaje quirúrgico excepcional <span class="cite">p. 1040</span></td>
+</tr>
+<tr>
+<td>Metaplasia escamosa de los conductos galactóforos (absceso subareolar recurrente, mastitis periductal, enfermedad de Zuska)</td>
+<td>Masa subareolar dolorosa recidivante con fístula; &gt;90% fumadores</td>
+<td>Metaplasia escamosa queratinizante profunda del conducto; obstrucción por queratina, rotura e inflamación granulomatosa frente a la queratina</td>
+<td>Extirpación en bloque del conducto y el trayecto fistuloso; antibióticos si sobreinfección (anaerobios) <span class="cite">p. 1040-1041</span></td>
+</tr>
+<tr>
+<td>Ectasia ductal</td>
+<td>Masa periareolar con secreción espesa blanquecina y a veces retracción; 5.ª-6.ª década, multíparas; no ligada al tabaco</td>
+<td>Conductos dilatados con secreción espesa y macrófagos espumosos; rotura con inflamación crónica periductal, granulomas y fibrosis que retrae piel y pezón</td>
+<td>Clínico; el problema es diferenciarse del carcinoma infiltrante en palpación y mamografía <span class="cite">p. 1041</span></td>
+</tr>
+<tr>
+<td>Esteatonecrosis</td>
+<td>Masa indolora, engrosamiento o retracción cutánea; ~50% con antecedente de traumatismo o cirugía</td>
+<td>Necrosis licuefactiva con neutrófilos y macrófagos, luego células gigantes, calcificaciones, hemosiderina y cicatriz</td>
+<td>Clínico; imita al cáncer <span class="cite">p. 1041</span></td>
+</tr>
+<tr>
+<td>Mastopatía linfocítica (lobulitis linfocítica esclerosante)</td>
+<td>Masas duras únicas o múltiples; frecuente en diabetes tipo 1 y tiroiditis autoinmunitaria</td>
+<td>Estroma densamente colagenizado con lobulillos atróficos de membranas basales engrosadas y infiltrado linfocítico</td>
+<td>Diferenciación del cáncer <span class="cite">p. 1041</span></td>
+</tr>
+<tr>
+<td>Mastitis granulomatosa</td>
+<td>Manifestación de enfermedades sistémicas (granulomatosis con poliangeitis, sarcoidosis, tuberculosis) o mastitis lobulillar granulomatosa/mastitis granulomatosa neutrofílica quística (corinebacterias lipófilas) en mujeres que han tenido hijos</td>
+<td>Granulomas asociados a lobulillos con vacuolas lipídicas y neutrófilos</td>
+<td>Antibióticos y a veces esteroides <span class="cite">p. 1041</span></td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1040-1041</span>.</p>
+<figure class="fig" id="fig-23-3">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-3.webp" data-caption="Figura 23.3. Metaplasia escamosa de los conductos galactóforos: la queratina obstruye el conducto, provoca absceso y fístula que se abre al borde de la areola." data-alt="Figura 23.3. Metaplasia escamosa de los conductos galactóforos: la queratina obstruye el conducto, provoca absceso y fístula que se abre al borde de la areola. Robbins y Cotran, 10ª ed., p. 1040.">
+    <img src="../assets/fig/cap23/fig-23-3.webp" width="758" height="654" loading="lazy" decoding="async" alt="Figura 23.3. Metaplasia escamosa de los conductos galactóforos: la queratina obstruye el conducto, provoca absceso y fístula que se abre al borde de la areola. Robbins y Cotran, 10ª ed., p. 1040.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.3.</strong> Metaplasia escamosa de los conductos galactóforos: la queratina obstruye el conducto, provoca absceso y fístula que se abre al borde de la areola.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1040. <a href="../creditos.html#fig-23-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-23-4">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-4.webp" data-caption="Figura 23.4. Ectasia ductal: conducto ectásico lleno de restos espesos rodeado de inflamación crónica y fibrosis que forma una masa dura que imita al carcinoma." data-alt="Figura 23.4. Ectasia ductal: conducto ectásico lleno de restos espesos rodeado de inflamación crónica y fibrosis que forma una masa dura que imita al carcinoma. Robbins y Cotran, 10ª ed., p. 1041.">
+    <img src="../assets/fig/cap23/fig-23-4.webp" width="698" height="679" loading="lazy" decoding="async" alt="Figura 23.4. Ectasia ductal: conducto ectásico lleno de restos espesos rodeado de inflamación crónica y fibrosis que forma una masa dura que imita al carcinoma. Robbins y Cotran, 10ª ed., p. 1041.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.4.</strong> Ectasia ductal: conducto ectásico lleno de restos espesos rodeado de inflamación crónica y fibrosis que forma una masa dura que imita al carcinoma.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1041. <a href="../creditos.html#fig-23-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+<div class="warnbox"><span class="box-title">Mama roja: infección o carcinoma inflamatorio</span>Toda mama tumefacta y eritematosa obliga a descartar carcinoma inflamatorio, que imita la inflamación por émbolos tumorales en la vasculatura dérmica; el retraso diagnóstico es la trampa clínica clásica <span class="cite">p. 1040, 1058</span>.</div>
+</section><section id="sec-04-lesiones-epiteliales-benignas" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 1042-1045</div>
+<h2>Lesiones epiteliales benignas</h2>
+<p>Se clasifican en tres grupos con riesgo creciente de carcinoma posterior en cualquiera de las mamas <span class="cite">p. 1042</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Lesiones epiteliales benignas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Grupo</th>
+<th>Lesiones</th>
+<th>Riesgo relativo (riesgo vital)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No proliferativas (cambios fibroquísticos)</td>
+<td>Hiperplasia leve, ectasia ductal, quistes, metaplasia apocrina, adenosis, fibroadenoma sin características complejas</td>
+<td>1,0 (3%)</td>
+</tr>
+<tr>
+<td>Proliferativa sin atipia</td>
+<td>Hiperplasia moderada o florida, adenosis esclerosante, lesión esclerosante compleja, fibroadenoma complejo</td>
+<td>1,5-2 (5-7%)</td>
+</tr>
+<tr>
+<td>Proliferativa con atipia</td>
+<td>Hiperplasia ductal atípica, hiperplasia lobulillar atípica</td>
+<td>4-5 (13-17%)</td>
+</tr>
+<tr>
+<td>Carcinoma in situ</td>
+<td>CLIS, CDIS</td>
+<td>8-10 (25-30%)</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1045</span> (tabla 23.1).</p>
+<h3 id="cambios-no-proliferativos-cambios-fibroquísticos">Cambios no proliferativos (cambios fibroquísticos)</h3>
+<p>No se asocian a mayor riesgo de cáncer. Tres patrones: <span class="cite">p. 1042</span>.</p>
+<ul>
+<li><strong>Quistes</strong>: dilatación y fusión de lobulillos; contenido turbio marrón-azulado (quistes de cúpula azul); revestimiento <strong>metaplásico apocrino</strong> (citoplasma eosinófilo granular) con calcificaciones frecuentes. Si un quiste solitario y duro desaparece tras aspiración con aguja fina, el diagnóstico queda confirmado <span class="cite">p. 1042</span>.</li>
+<li><strong>Fibrosis</strong>: los quistes se rompen y liberan secreción al estroma, con inflamación crónica y fibrosis que producen nodularidad palpable <span class="cite">p. 1042</span>.</li>
+<li><strong>Adenosis</strong>: aumento del número de ácinos por lobulillo; normal en el embarazo, focal en no embarazadas <span class="cite">p. 1042</span>.</li>
+</ul>
+<p>Otros cambios no proliferativos: el <strong>adenoma de la lactancia</strong> (masa en embarazadas/lactantes que remite al cesar la lactancia; posiblemente hiperplasia reactiva y no neoplasia) y la <strong>atipia epitelial plana</strong> (proceso clonal de ácinos dilatados con atipia leve, delección de 16q, lesión clonal más temprana reconocible; no demostrado que aumente el riesgo de forma aislada) <span class="cite">p. 1042</span>.</p>
+<h3 id="mastopatía-proliferativa-sin-atipia">Mastopatía proliferativa sin atipia</h3>
+<p>Pequeño aumento de riesgo en ambas mamas; se comportan como marcadores de riesgo, no precursores directos: <span class="cite">p. 1042-1043</span>.</p>
+<ul>
+<li><strong>Hiperplasia epitelial</strong>: células luminales y mioepiteliales llenan y distienden conductos y lobulillos, con luces irregulares periféricas; hallazgo casual <span class="cite">p. 1043</span>.</li>
+<li><strong>Adenosis esclerosante</strong>: ácinos comprimidos y distorsionados por fibrosis, con cordones sólidos que imitan al carcinoma infiltrante; los ácinos giran en remolino y el margen es bien delimitado, lo que la diferencia del carcinoma; puede presentarse como masa, densidad o calcificaciones <span class="cite">p. 1043</span>.</li>
+<li><strong>Lesión esclerosante compleja</strong>: adenosis esclerosante + papiloma + hiperplasia. La <strong>cicatriz radial</strong> (lesión esclerosante radial) imita al carcinoma infiltrante en imagen, macroscopía e histología: nido central de túbulos atrapados en estroma hialinizado con proyecciones radiadas <span class="cite">p. 1043-1044</span>.</li>
+<li><strong>Papiloma</strong>: ejes fibrovasculares ramificados dentro de un conducto dilatado, con células luminales y mioepiteliales. Los de grandes conductos (solitarios, senos galactóforos) producen secreción por el pezón en &gt;80%, a veces hemorrágica por torsión e infarto del eje; los de conductos pequeños son múltiples, profundos y se manifiestan como masa, densidad o calcificaciones <span class="cite">p. 1043</span>.</li>
+</ul>
+<figure class="fig" id="fig-23-6">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-6.webp" data-caption="Figura 23.6. Comparación del ácino normal (doble capa luminal y mioepitelial) con la hiperplasia epitelial, que llena la luz con población mixta y luces irregulares periféricas." data-alt="Figura 23.6. Comparación del ácino normal (doble capa luminal y mioepitelial) con la hiperplasia epitelial, que llena la luz con población mixta y luces irregulares periféricas. Robbins y Cotran, 10ª ed., p. 1043.">
+    <img src="../assets/fig/cap23/fig-23-6.webp" width="1450" height="553" loading="lazy" decoding="async" alt="Figura 23.6. Comparación del ácino normal (doble capa luminal y mioepitelial) con la hiperplasia epitelial, que llena la luz con población mixta y luces irregulares periféricas. Robbins y Cotran, 10ª ed., p. 1043.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.6.</strong> Comparación del ácino normal (doble capa luminal y mioepitelial) con la hiperplasia epitelial, que llena la luz con población mixta y luces irregulares periféricas.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1043. <a href="../creditos.html#fig-23-6">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="mastopatía-proliferativa-con-atipia">Mastopatía proliferativa con atipia</h3>
+<p>La <strong>hiperplasia atípica</strong> es una proliferación clonal con algunas pero no todas las características del carcinoma in situ; riesgo moderadamente aumentado <span class="cite">p. 1044</span>.</p>
+<ul>
+<li><strong>Hiperplasia ductal atípica</strong>: histología parecida al CDIS (proliferación monomorfa con espacios cribiformes) pero que solo llena parcialmente los conductos; presente en 5-17% de las biopsias por calcificaciones <span class="cite">p. 1044-1045</span>.</li>
+<li><strong>Hiperplasia lobulillar atípica</strong>: células idénticas al CLIS que no llenan ni distienden más del 50% de los ácinos de un lobulillo; hallazgo casual, &lt;5% de las biopsias <span class="cite">p. 1044-1045</span>.</li>
+<li>Ambas expresan alto RE, tienen baja proliferación y comparten anomalías con el carcinoma luminal bien diferenciado (pérdidas de 16q y 17p, ganancia de 1q); la hiperplasia lobulillar atípica además pierde <strong>cadherina E</strong>, como el CLIS <span class="cite">p. 1045</span>.</li>
+<li>Menos del 20% de las mujeres con hiperplasia atípica llega a tener cáncer: la mayoría opta por vigilancia clínica y radiológica en vez de cirugía o tamoxifeno <span class="cite">p. 1045</span>.</li>
+</ul>
+
+</section><section id="sec-05-carcinoma-de-mama-incidencia-factores-de-riesgo-y-clasificacion-" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 1046-1052</div>
+<h2>Carcinoma de mama: incidencia, factores de riesgo y clasificación molecular</h2>
+<h3 id="incidencia-y-epidemiología">Incidencia y epidemiología</h3>
+<p>Neoplasia maligna más frecuente y mortal de la mujer en el mundo: 1,7 millones de casos/año y una de cada tres pacientes muere; el riesgo vital es de 1 en 8 en EE. UU. (más de 260.000 casos infiltrantes y más de 40.000 muertes en 2019, solo superado por el cáncer de pulmón) <span class="cite">p. 1046</span>. La incidencia de TNBC y HER2 se estabiliza en la mediana edad, mientras la del cáncer luminal sigue subiendo; por eso TNBC y HER2 son casi la mitad de los cánceres en mujeres jóvenes y &lt;20% en mayores <span class="cite">p. 1046</span>. Por etnia: ascendencia europea tiene la mayor incidencia (edad media de diagnóstico 63 años; solo 20% antes de los 50), mientras que en ascendencia africana la edad media es 59 años (35% antes de los 50) con más cánceres de gran malignidad (TNBC) y la mortalidad más alta <span class="cite">p. 1046</span>. La mortalidad ha bajado 1-2% anual y hoy es ~20%, atribuido a la detección mamográfica y a mejores tratamientos <span class="cite">p. 1046</span>.</p>
+<h3 id="factores-de-riesgo">Factores de riesgo</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Carcinoma de mama: incidencia, factores de riesgo y clasificación molecular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Riesgo relativo</th>
+<th>Factores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;4</td>
+<td>Sexo femenino, aumento de la edad, mutaciones germinales de elevada penetrancia, claros antecedentes familiares (&gt;1 pariente de primer grado, edad joven, múltiples cánceres), antecedente personal de cáncer de mama, alta densidad mamaria</td>
+</tr>
+<tr>
+<td>2,1-4</td>
+<td>Mutaciones germinales de moderada penetrancia, radiación torácica de dosis alta a edad temprana, antecedente de 1 pariente de primer grado</td>
+</tr>
+<tr>
+<td>1,1-2</td>
+<td>Menarquia &lt;12 años, menopausia &gt;55 años, primer embarazo &gt;35 años, nuliparidad, ausencia de lactancia materna, tratamiento hormonal exógeno, obesidad posmenopáusica, inactividad física, alcohol</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1047</span> (tabla 23.2).</p>
+<p>Protegen el embarazo temprano (&lt;20 años) y la lactancia prolongada; la mastectomía profiláctica bilateral reduce el riesgo ~90% y los antagonistas de RE reducen los cánceres RE+ <span class="cite">p. 1047</span>.</p>
+<h3 id="clasificación-molecular">Clasificación molecular</h3>
+<p>Tres grupos principales, definidos clínicamente por RE y HER2, con buena correlación con el perfil de expresión génica: <span class="cite">p. 1046-1048</span>.</p>
+<figure class="fig" id="fig-23-13">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-13.webp" data-caption="Figura 23.13. Clasificación molecular del cáncer de mama invasivo: grupos luminal, HER2 y triple negativo comparados por ADN, ARNm, proteínas y morfología." data-alt="Figura 23.13. Clasificación molecular del cáncer de mama invasivo: grupos luminal, HER2 y triple negativo comparados por ADN, ARNm, proteínas y morfología. Robbins y Cotran, 10ª ed., p. 1048.">
+    <img src="../assets/fig/cap23/fig-23-13.webp" width="1476" height="1504" loading="lazy" decoding="async" alt="Figura 23.13. Clasificación molecular del cáncer de mama invasivo: grupos luminal, HER2 y triple negativo comparados por ADN, ARNm, proteínas y morfología. Robbins y Cotran, 10ª ed., p. 1048.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.13.</strong> Clasificación molecular del cáncer de mama invasivo: grupos luminal, HER2 y triple negativo comparados por ADN, ARNm, proteínas y morfología.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1048. <a href="../creditos.html#fig-23-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<div class="table-wrap" role="region" aria-label="Tabla: Carcinoma de mama: incidencia, factores de riesgo y clasificación molecular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Luminal (RE+/HER2-)</th>
+<th>HER2 (sobreexpresa HER2)</th>
+<th>TNBC (RE-/HER2-)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>% de cánceres</td>
+<td>40-55% (proliferación baja a moderada)</td>
+<td>20%</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Perfil de ARNm</td>
+<td>Luminal A y luminal B</td>
+<td>Enriquecido con HER2</td>
+<td>Basaloide (si RE-), luminal B (si RE+)</td>
+</tr>
+<tr>
+<td>Genética</td>
+<td>PIK3CA 45%, TP53 12%; pérdidas de 16q, ganancias de 1q</td>
+<td>PIK3CA 29%, TP53 29%; amplificación de HER2</td>
+<td>PIK3CA 9%, TP53 70-80%; inestabilidad genómica</td>
+</tr>
+<tr>
+<td>Tipos histológicos especiales</td>
+<td>Tubular, lobulillar grado 1-2, mucinoso, papilar</td>
+<td>Algunos apocrinos y micropapilares</td>
+<td>Medulares, metaplásicos</td>
+</tr>
+<tr>
+<td>Pacientes típicas</td>
+<td>Mujeres mayores, hombres, portadoras de BRCA2, detectados por cribado</td>
+<td>Jóvenes, portadoras de TP53 germinales</td>
+<td>Jóvenes, de origen africano, portadoras de BRCA1</td>
+</tr>
+<tr>
+<td>Respuesta completa a quimioterapia</td>
+<td>10%</td>
+<td>30%</td>
+<td>&lt;10%</td>
+</tr>
+<tr>
+<td>Metástasis</td>
+<td>Hueso (70-80%) &gt; vísceras &gt; encéfalo</td>
+<td>Hueso (40%), vísceras (45%), encéfalo (30%)</td>
+<td>Hueso (70%), vísceras (25-35%), encéfalo (10-30%)</td>
+</tr>
+<tr>
+<td>Recidiva</td>
+<td>Baja por muchos años, recidiva tardía posible</td>
+<td>Bimodal, picos temprano y tardío (~10 años)</td>
+<td>Máximo a &lt;8 años; tras 10 años el paciente probablemente está curado</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1050</span> (tabla 23.4).</p>
+<h3 id="patogenia-hereditaria">Patogenia hereditaria</h3>
+<p>Entre un cuarto y un tercio de los cánceres son familiares; las mutaciones monogénicas de penetrancia moderada a alta explican 8-17% de los carcinomas <span class="cite">p. 1047</span>.</p>
+<ul>
+<li><strong>BRCA1</strong> (17q21) y <strong>BRCA2</strong> (13q12.3): 80-90% de los cánceres familiares monogénicos y 3-6% de todos; herencia autosómica dominante; reparan roturas de doble cadena del ADN por <strong>recombinación homóloga</strong>. BRCA1: cáncer mamario 40-90% hasta los 70 años, ovárico 20-40%, mayoría TNBC. BRCA2: mamario 30-60%, ovárico 10-20%, mayor asociación con cáncer de mama masculino; mayoría RE+ <span class="cite">p. 1047</span>.</li>
+<li>Otros genes de alta penetrancia: <strong>TP53</strong> (Li-Fraumeni, más frecuente en cánceres HER2), <strong>PTEN</strong> (Cowden), <strong>STK11</strong> (Peutz-Jeghers), <strong>CDH1</strong> (carcinoma gástrico difuso hereditario + carcinoma lobulillar), <strong>PALB2</strong> <span class="cite">p. 1049</span>.</li>
+<li>Moderada penetrancia (riesgo 2-4 veces): <strong>ATM</strong> y <strong>CHEK2</strong>, también implicados en la reparación del ADN <span class="cite">p. 1049</span>.</li>
+</ul>
+<h3 id="patogenia-esporádica-y-vías-de-carcinogénesis">Patogenia esporádica y vías de carcinogénesis</h3>
+<p>Tres vías principales (fig. 23.14): <span class="cite">p. 1050</span>.</p>
+<ul>
+<li><strong>Vía luminal</strong> (la más frecuente): atipia epitelial plana e hiperplasia ductal/lobulillar atípica como precursores no obligados, con ganancias de 1q, pérdidas de 16q y mutaciones activadoras de <strong>PIK3CA</strong>; pocos casos progresan <span class="cite">p. 1051</span>.</li>
+<li><strong>Vía HER2</strong>: asociada a amplificación de HER2 en 17q; sin lesión precursora definitiva identificada <span class="cite">p. 1050</span>.</li>
+<li><strong>Vía triple negativa</strong>: posible precursor de células lobulillares RE-/p53+ (semejante al carcinoma intraepitelial seroso tubárico de portadoras de BRCA1); TP53 es el único gen mutado en la mayoría; BRCA1 silenciado epigenéticamente en los esporádicos <span class="cite">p. 1052</span>.</li>
+</ul>
+
+</section><section id="sec-06-carcinoma-in-situ" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 1053-1055</div>
+<h2>Carcinoma in situ</h2>
+<p>Células cancerosas encerradas por la membrana basal dentro de conductos y lobulillos, sin acceso a vasos sanguíneos ni linfáticos; comparte casi todos los cambios moleculares del carcinoma infiltrante <span class="cite">p. 1053</span>.</p>
+<h3 id="carcinoma-ductal-in-situ-cdis">Carcinoma ductal in situ (CDIS)</h3>
+<ul>
+<li>Proliferación clonal limitada por membrana basal, con células mioepiteliales conservadas aunque reducidas; puede extenderse por todo el sistema ductal en un sector de la mama <span class="cite">p. 1053</span>.</li>
+<li>Detectado casi siempre por mamografía (calcificaciones por secreción o necrosis); sin cribado, &lt;5% de los carcinomas son in situ, cifra que sube a 15-30% en poblaciones cribadas <span class="cite">p. 1053</span>.</li>
+<li><strong>Patrones arquitecturales</strong> (frecuentemente mezclados): <span class="cite">p. 1053</span>.
+<ul>
+<li><strong>Comedoniano</strong>: núcleos polimorfos de gran malignidad y necrosis central; calcificaciones lineales y ramificadas en la radiografía de la pieza <span class="cite">p. 1053-1054</span>.</li>
+<li><strong>Cribiforme</strong>: espacios redondeados regulares "en molde" con material secretor calcificado <span class="cite">p. 1054</span>.</li>
+<li><strong>Micropapilar</strong>: proyecciones bulbosas sin ejes fibrovasculares <span class="cite">p. 1054</span>.</li>
+<li><strong>Papilar</strong>: papilas verdaderas con eje fibrovascular sin capa mioepitelial <span class="cite">p. 1054</span>.</li>
+</ul>
+<figure class="fig" id="fig-23-17">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-17.webp" data-caption="Figura 23.17. CDIS en sus patrones comedoniano (calcificaciones lineales y necrosis central), cribiforme y micropapilar." data-alt="Figura 23.17. CDIS en sus patrones comedoniano (calcificaciones lineales y necrosis central), cribiforme y micropapilar. Robbins y Cotran, 10ª ed., p. 1054.">
+    <img src="../assets/fig/cap23/fig-23-17.webp" width="1476" height="1244" loading="lazy" decoding="async" alt="Figura 23.17. CDIS en sus patrones comedoniano (calcificaciones lineales y necrosis central), cribiforme y micropapilar. Robbins y Cotran, 10ª ed., p. 1054.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.17.</strong> CDIS en sus patrones comedoniano (calcificaciones lineales y necrosis central), cribiforme y micropapilar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1054. <a href="../creditos.html#fig-23-17">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
+<li><strong>Enfermedad de Paget del pezón</strong> (1-4% de los cánceres): erupción eritematosa unilateral con costra descamativa y prurito, a menudo confundida con eccema; las células de Paget migran desde el CDIS por los senos galactóforos hasta la epidermis sin romper la membrana basal. Con masa palpable (50-60% de los casos), casi siempre hay carcinoma infiltrante, generalmente RE-/HER2+; sin masa, solo CDIS. El pronóstico depende del carcinoma subyacente <span class="cite">p. 1054</span>.</li>
+<li><strong>Historia natural y tratamiento</strong>: sin tratamiento, progresión a carcinoma infiltrante en el mismo cuadrante a ~1% anual con perfil RE/HER2 semejante. La mastectomía cura en &gt;95%; la cirugía conservadora con radiación es adecuada para la mayoría, con leve aumento de recidiva (mitad CDIS, mitad infiltrante). Factores de recidiva: alto grado nuclear con necrosis, extensión de la enfermedad y márgenes afectados; la radioterapia y el tamoxifeno la reducen. La muerte por cáncer metastásico ocurre en 1-3% <span class="cite">p. 1054-1055</span>.</li>
+</ul>
+<h3 id="carcinoma-lobulillar-in-situ-clis">Carcinoma lobulillar in situ (CLIS)</h3>
+<ul>
+<li>Proliferación clonal de células <strong>poco cohesivas</strong> por disfunción de <strong>cadherina E</strong> (CDH1), proteína supresora tumoral de la cohesión epitelial; hallazgo casual (1-6% de los carcinomas in situ) porque no produce calcificaciones ni densidades <span class="cite">p. 1055</span>.</li>
+<li>Bilateral en 20-40% cuando se biopsian ambas mamas (CDIS 10-20%) <span class="cite">p. 1055</span>.</li>
+<li>Morfología: células monomorfas pequeñas y redondas que llenan y expanden los ácinos conservando la arquitectura lobulillar, con células en anillo de sello mucinosas, <strong>diseminación pagetoide</strong> por los conductos y sin necrosis; expresan RE y RP, HER2 negativo, y son negativos para cadherina E por inmunoperoxidasa <span class="cite">p. 1055-1056</span>.</li>
+<li>Factor de riesgo bilateral (~1% anual de carcinoma infiltrante, mayor en la mama homolateral); no está claro que su extirpación reduzca el riesgo. Tratamiento: mastectomía profiláctica bilateral, tamoxifeno o vigilancia estrecha. Los carcinomas posteriores tienen 3 veces más probabilidad de ser lobulillares, aunque la mayoría son de otra morfología <span class="cite">p. 1055</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Hiperplasia atípica: frontera con el carcinoma in situ</span>La hiperplasia ductal atípica se parece al CDIS pero llena solo parcialmente los conductos, y la lobulillar atípica tiene células de CLIS que ocupan menos del 50% de los ácinos; comparten anomalías genómicas (16q-, 1q+, PIK3CA) con el carcinoma luminal <span class="cite">p. 1045</span>.</div>
+</section><section id="sec-07-carcinoma-infiltrante-invasivo" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 1055-1061</div>
+<h2>Carcinoma infiltrante (invasivo)</h2>
+<h3 id="carcinoma-ductal-infiltrante-no-especificado-de-otro-modo">Carcinoma ductal infiltrante no especificado de otro modo</h3>
+<ul>
+<li>La mayoría son adenocarcinomas ductales sin tipo especial; sin cribado se presentan como masa de ≥2-3 cm, radiodensa, irregular y dura por <strong>reacción desmoplásica</strong> (el corte produce un sonido chirriante por el estroma blanco calcáreo). Puede fijarse a la pared torácica, retraer la piel (hoyuelos) o el pezón <span class="cite">p. 1055-1056</span>.</li>
+<li>Pueden debutar como metástasis axilar o a distancia con primario oculto (detectable por ecografía o RM), sobre todo si no generan desmoplasia <span class="cite">p. 1056</span>.</li>
+<li><strong>Gradación de Nottingham</strong>: puntuación por formación de túbulos, pleomorfismo nuclear y tasa mitótica. Grado I: patrón tubular/cribiforme, núcleos uniformes, mitosis escasas; grado 2: agrupaciones sólidas, mayor pleomorfismo y mitosis ocasionales; grado 3: sábanas sólidas irregulares, núcleos pleomórficos grandes, alta proliferación y necrosis <span class="cite">p. 1056</span>.</li>
+</ul>
+<figure class="fig" id="fig-23-20">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-20.webp" data-caption="Figura 23.20. Carcinoma infiltrante no especificado de otro modo: masa espiculada, respuesta desmoplásica y variantes con escasa o nula reacción estromal difíciles de detectar." data-alt="Figura 23.20. Carcinoma infiltrante no especificado de otro modo: masa espiculada, respuesta desmoplásica y variantes con escasa o nula reacción estromal difíciles de detectar. Robbins y Cotran, 10ª ed., p. 1057.">
+    <img src="../assets/fig/cap23/fig-23-20.webp" width="1452" height="1422" loading="lazy" decoding="async" alt="Figura 23.20. Carcinoma infiltrante no especificado de otro modo: masa espiculada, respuesta desmoplásica y variantes con escasa o nula reacción estromal difíciles de detectar. Robbins y Cotran, 10ª ed., p. 1057.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.20.</strong> Carcinoma infiltrante no especificado de otro modo: masa espiculada, respuesta desmoplásica y variantes con escasa o nula reacción estromal difíciles de detectar.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1057. <a href="../creditos.html#fig-23-20">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="tipos-histológicos-especiales">Tipos histológicos especiales</h3>
+<p>Los tipos histológicos especiales a menudo albergan anomalías genéticas peculiares y comportamientos que rompen las reglas de los carcinomas ductales no clasificados de otro modo <span class="cite">p. 1056</span>.</p>
+<figure class="fig" id="fig-23-22">
+  <a class="fig-open" href="../assets/fig/cap23/fig-23-22.webp" data-caption="Figura 23.22. Galería de tipos histológicos especiales de carcinoma infiltrante: lobulillar, mucinoso, tubular, papilar, apocrino, micropapilar, medular y secretor." data-alt="Figura 23.22. Galería de tipos histológicos especiales de carcinoma infiltrante: lobulillar, mucinoso, tubular, papilar, apocrino, micropapilar, medular y secretor. Robbins y Cotran, 10ª ed., p. 1059.">
+    <img src="../assets/fig/cap23/fig-23-22.webp" width="1454" height="728" loading="lazy" decoding="async" alt="Figura 23.22. Galería de tipos histológicos especiales de carcinoma infiltrante: lobulillar, mucinoso, tubular, papilar, apocrino, micropapilar, medular y secretor. Robbins y Cotran, 10ª ed., p. 1059.">
+  </a>
+  <figcaption>
+    <strong>Figura 23.22.</strong> Galería de tipos histológicos especiales de carcinoma infiltrante: lobulillar, mucinoso, tubular, papilar, apocrino, micropapilar, medular y secretor.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1059. <a href="../creditos.html#fig-23-22">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<div class="table-wrap" role="region" aria-label="Tabla: Carcinoma infiltrante (invasivo)" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Morfología</th>
+<th>Grupo molecular / comentarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lobulillar</td>
+<td>Células infiltrantes no cohesivas, a menudo en anillo de sello con mucina intracitoplásmica, sin túbulos, con mínima desmoplasia</td>
+<td>Luminal; pérdida bialélica de CDH1; metastatiza a peritoneo, retroperitoneo, leptomeninges, tubo digestivo y ovario/útero; mutaciones germinales de CDH1 elevan además el riesgo de carcinoma gástrico en anillo de sello <span class="cite">p. 1056-1057</span></td>
+</tr>
+<tr>
+<td>Mucinoso (coloide)</td>
+<td>Grupos celulares en lagos de mucina; masa blanda gelatinosa</td>
+<td>Luminal; favorable <span class="cite">p. 1057</span></td>
+</tr>
+<tr>
+<td>Tubular</td>
+<td>Solo túbulos bien formados; se confunde con lesión esclerosante benigna</td>
+<td>Luminal; muy favorable <span class="cite">p. 1057, 1059</span></td>
+</tr>
+<tr>
+<td>Papilar</td>
+<td>Papilas verdaderas con eje fibrovascular revestido de células tumorales</td>
+<td>Luminal <span class="cite">p. 1057-1058</span></td>
+</tr>
+<tr>
+<td>Apocrino</td>
+<td>Células grandes con núcleo redondo, nucléolo prominente y citoplasma eosinófilo granular</td>
+<td>Algunos HER2 <span class="cite">p. 1058</span></td>
+</tr>
+<tr>
+<td>Micropapilar</td>
+<td>Bolas huecas de células flotando en espacios "a sello"</td>
+<td>Agresivo <span class="cite">p. 1058</span></td>
+</tr>
+<tr>
+<td>Patrón medular</td>
+<td>Láminas sólidas de células grandes con infiltrado linfoplasmocítico y borde compresivo; CDIS mínimo</td>
+<td>TNBC; &gt;50% de los cánceres BRCA1 tienen este aspecto; hipermetilación del promotor de BRCA1 en 67%; mejor pronóstico, con muchos linfocitos T infiltrantes <span class="cite">p. 1056, 1058</span></td>
+</tr>
+<tr>
+<td>Metaplásico</td>
+<td>Células fusiformes y productoras de matriz; perfil mioepitelial</td>
+<td>TNBC <span class="cite">p. 1058</span></td>
+</tr>
+<tr>
+<td>Secretor, adenoescamoso bien diferenciado, adenoideo quístico</td>
+<td>Espacios dilatados con material eosinófilo (secretor)</td>
+<td>TNBC infrecuentes con pronóstico favorable; el secretor rara vez metastatiza <span class="cite">p. 1058</span></td>
+</tr>
+<tr>
+<td>Inflamatorio</td>
+<td>Taponamiento de los espacios linfovasculares dérmicos; eritema, tumefacción y piel de naranja por los ligamentos de Cooper; sin masa definida</td>
+<td>No molecular definido; supervivencia a 3 años de 3-10%; 1-5% de los cánceres, más frecuente en mujeres jóvenes y de origen africano <span class="cite">p. 1058, 1060</span></td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1058-1059</span> (texto y tabla 23.5).</p>
+<h3 id="factores-pronósticos-y-predictivos">Factores pronósticos y predictivos</h3>
+<p>El pronóstico depende de la biología tumoral y del estadio; las metástasis a distancia (5% al diagnóstico) y el carcinoma inflamatorio (1-5%) tienen el peor pronóstico <span class="cite">p. 1058</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Carcinoma infiltrante (invasivo)" tabindex="0"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metástasis a distancia (M)</td>
+<td>El factor pronóstico más importante</td>
+</tr>
+<tr>
+<td>Ganglios linfáticos regionales (N)</td>
+<td>Segundo factor más importante; supervivencia libre de enfermedad a 10 años: 70-80% (N0), 35-40% (1-3 positivos), 10-15% (&gt;10 positivos)</td>
+</tr>
+<tr>
+<td>Tamaño (T)</td>
+<td>&lt;1 cm: supervivencia a 10 años &gt;90%; &gt;2 cm: 77%</td>
+</tr>
+<tr>
+<td>Enfermedad localmente avanzada</td>
+<td>Invasión cutánea o del músculo esquelético; control local difícil</td>
+</tr>
+<tr>
+<td>Invasión linfovascular</td>
+<td>Células tumorales en espacios vasculares en ~50% de los carcinomas; mal pronóstico y recidiva local</td>
+</tr>
+<tr>
+<td>Carcinoma inflamatorio</td>
+<td>Supervivencia a 3 años 3-10%</td>
+</tr>
+<tr>
+<td>Grado histológico</td>
+<td>Nottingham; la supervivencia cae con el grado</td>
+</tr>
+<tr>
+<td>RE, RP y HER2</td>
+<td>Mejor combinación: RE+/RP+/HER2-; peor: triple negativo</td>
+</tr>
+<tr>
+<td>Tipos histológicos especiales</td>
+<td>Tubular y adenoideo quístico: supervivencia muy favorable</td>
+</tr>
+<tr>
+<td>Respuesta a quimioterapia prequirúrgica</td>
+<td>Respuesta patológica completa en &gt;un tercio de TNBC y HER2 (mejor pronóstico); rara en luminales</td>
+</tr>
+<tr>
+<td>Perfil de expresión génica</td>
+<td>Su mayor valor es evitar quimioterapia en luminales de crecimiento lento sensibles a antiestrógenos</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1059-1060</span> (tabla 23.5 y texto).</p>
+<ul>
+<li>La biopsia ganglionar es imprescindible: la evaluación clínica falla por falsos positivos (ganglios reactivos) y falsos negativos (micrometástasis). La extirpación de ganglios afectados no reduce el riesgo metastásico futuro; es marcador, no causa <span class="cite">p. 1059</span>.</li>
+<li><strong>Ganglio centinela</strong>: uno o dos primeros ganglios de drenaje, localizados con radiotrazadores o colorantes; biopsia negativa evita el vaciamiento axilar completo <span class="cite">p. 1059</span>.</li>
+<li>El 10-20% de las mujeres N0 recidiva a distancia (drenaje a ganglios mamarios internos o vía hematógena) <span class="cite">p. 1059</span>.</li>
+<li><strong>Estadificación AJCC 8.ª edición</strong>: estadio 0 (CDIS) supervivencia a 10 años 97%; estadio I (invasivo ≤2 cm, N0) 87%; estadio II (&gt;2 cm o 1-3 ganglios positivos) 65%; estadio III (&gt;5 cm, ≥4 ganglios positivos o afectación cutánea/pared torácica/carcinoma inflamatorio) 40%; estadio IV (metástasis a distancia) 5%. La estadificación pronóstica integra grado, RE, RP y HER2 con T, N, M (el TNBC se "aumenta de estadio") <span class="cite">p. 1060</span>.</li>
+<li><strong>Tratamiento dirigido</strong> (tabla 23.7): RE (ovariectomía/inhibidores de la aromatasa, tamoxifeno, fulvestrant), cinasas dependientes de ciclina CDK4/6 (palbociclib, abemaciclib, ribociclib), HER2 (anticuerpos, conjugado anticuerpo-fármaco, inhibidores de tirosina cinasa, vacunas), anomalías en reparación por recombinación homóloga (sustancias de platino, inhibidores de PARP en BRCA1/2), vía PI3K/AKT/mTOR (&gt;80% de los cánceres con alteraciones en la vía) y puntos de control inmunitarios (anti-PD-1/PD-L1; en investigación en TNBC) <span class="cite">p. 1061</span>.</li>
+</ul>
+
+</section><section id="sec-08-mama-masculina" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 1044-1061</div>
+<h2>Mama masculina</h2>
+<ul>
+<li><strong>Ginecomastia</strong>: la única lesión benigna frecuente de la mama masculina; hipertrofia subareolar en botón, unilateral o bilateral, con aumento de conductos y estroma colágeno denso <strong>sin formación de lobulillos</strong>. Causa: desequilibrio estrógenos/andrógenos; la causa más importante es la <strong>cirrosis hepática</strong> (menor metabolismo de estrógenos); también edad avanzada, fármacos (alcohol, marihuana, heroína, antirretrovirales, esteroides anabolizantes), síndrome de Klinefelter (XXY) y tumores testiculares funcionantes (Leydig, Sertoli) <span class="cite">p. 1044</span>.</li>
+<li><strong>Cáncer de mama masculino</strong>: 1% de la incidencia femenina (riesgo vital 0,11%); factores de riesgo similares a las mujeres, con <strong>BRCA2</strong> como factor familiar principal (6% de portadores masculinos; 4-40% de los pacientes). <strong>Más del 90% son luminales</strong>; TNBC y HER2 son &lt;5% <span class="cite">p. 1061</span>.</li>
+<li>Se presenta como masa subareolar palpable de 2-3 cm y/o secreción; por la escasez de tejido, invade tempranamente piel y pared torácica; afectación ganglionar axilar en ~50% al diagnóstico y metástasis a pulmón, encéfalo, huesos e hígado. El pronóstico emparejado por estadio es similar al de la mujer; tratamiento con mastectomía y linfoadenectomía axilar y las mismas pautas sistémicas <span class="cite">p. 1061</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Ginecomastia sin lobulillos</span>En la ginecomastia no se forman lobulillos, solo conductos con estroma denso; la causa más importante es la cirrosis hepática, y en el cáncer de mama masculino domina BRCA2 y más del 90% de los tumores son luminales <span class="cite">p. 1044, 1061</span>.</div>
+</section><section id="sec-09-tumores-estromales" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 1062-1063</div>
+<h2>Tumores estromales</h2>
+<ul>
+<li><strong>Bifásicos</strong> (estroma intralobulillar neoplásico + componente epitelial reactivo estimulado por factores de crecimiento estromales): fibroadenoma y tumor filodes; ambos con mutaciones somáticas de <strong>MED12</strong> (dos tercios de los fibroadenomas), el mismo gen del leiomioma uterino <span class="cite">p. 1062</span>.</li>
+<li>El estroma interlobulillar origina lipomas, angiosarcomas, miofibroblastoma y tumores fibrosos, sin componente epitelial <span class="cite">p. 1062</span>.</li>
+</ul>
+<h3 id="fibroadenoma">Fibroadenoma</h3>
+<ul>
+<li>Tumor benigno más frecuente de la mama femenina; mujeres de 20-30 años, a menudo múltiples y bilaterales <span class="cite">p. 1062</span>.</li>
+<li>Morfología: masa elástica, blanquecina, bien delimitada (radiodensa por ausencia de grasa) con hendiduras revestidas por epitelio; estroma mixoide semejante al intralobulillar con patrones <strong>pericanalicular</strong> (rodea) o <strong>intracanalicular</strong> (comprime y distorsiona); en mayores, estroma hialinizado y epitelio atrófico <span class="cite">p. 1062</span>.</li>
+<li>Hormonosensible: crece en el embarazo (con infarto que puede simular carcinoma) e involuciona tras la menopausia; la ciclosporina A postrasplante renal produce fibroadenomas múltiples bilaterales reversibles <span class="cite">p. 1062</span>.</li>
+<li>Riesgo levemente mayor de carcinoma, sobre todo si es "complejo" (quistes &gt;0,3 cm, adenosis esclerosante, calcificaciones epiteliales o cambio apocrino papilar), aunque el riesgo real puede deberse a lesiones asociadas del tejido circundante (p. ej., hiperplasia atípica) <span class="cite">p. 1062</span>.</li>
+</ul>
+<h3 id="tumor-filodes">Tumor filodes</h3>
+<ul>
+<li>Mucho menos frecuente; se origina también del estroma intralobulillar; mayoría con mutaciones de MED12; las formas malignas suman mutaciones de <strong>TERT</strong> y otros genes <span class="cite">p. 1062</span>.</li>
+<li>Morfología: masas de pocos centímetros hasta sustituir toda la mama, con protuberancias bulbosas ("filodes" = en forma de hoja) que pueden protruir en espacios quísticos; se distingue del fibroadenoma por mayor celularidad, tasa mitótica, pleomorfismo, proliferación estromal y <strong>bordes infiltrantes</strong> <span class="cite">p. 1063</span>.</li>
+<li>Clínica: pico en la sexta década (10-20 años después del fibroadenoma). Las lesiones benignas recidivan localmente sin metastatizar; las de bajo grado y malignas recidivan salvo extirpación amplia o mastectomía; la diseminación linfática es infrecuente y el vaciamiento axilar está contraindicado. Un tercio de las anaplásicas da metástasis hematógenas y <strong>solo metastatiza el componente estromal</strong> <span class="cite">p. 1063</span>.</li>
+</ul>
+
+</section><section id="sec-10-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 1041-1062</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Priorizar la distinción CDIS vs CLIS: CDIS con calcificaciones mamográficas, patrones comedoniano/cribiforme/micropapilar/papilar, riesgo ipsilateral; CLIS hallazgo casual, poco cohesivo por pérdida de cadherina E, bilateral, sin calcificaciones <span class="cite">p. 1053-1055</span>.</li>
+<li>Memorizar la tabla 23.1 de riesgo: no proliferativas 1,0; proliferativas sin atipia 1,5-2; con atipia 4-5; carcinoma in situ 8-10 <span class="cite">p. 1045</span>.</li>
+<li>Los tres grupos moleculares con sus porcentajes (luminal 40-55%, HER2 20%, TNBC 15%), su genética (PIK3CA, amplificación de HER2, TP53) y patrones de recidiva (luminal tardía sostenida; TNBC &lt;8 años; HER2 bimodal) <span class="cite">p. 1050-1051</span>.</li>
+<li>HER2: amplificación en 17q en &gt;95% de los positivos; diagnóstico por IHQ o hibridación in situ; anticuerpos anti-HER2 logran remisión completa en más de la mitad <span class="cite">p. 1052</span>.</li>
+<li>Orden de factores pronósticos: metástasis a distancia, ganglios axilares, tamaño; los números de supervivencia a 10 años por estadio ganglionar y por estadio AJCC (97/87/65/40/5) <span class="cite">p. 1059-1060</span>.</li>
+<li>Imitadores benignos de carcinoma: adenosis esclerosante, cicatriz radial, ectasia ductal, esteatonecrosis, tumor filodes; y el carcinoma inflamatorio como imitador maligno de una infección mamaria <span class="cite">p. 1041, 1043, 1058</span>.</li>
+<li>Genética hereditaria: BRCA1→TNBC y cáncer ovárico; BRCA2→RE+ y cáncer de mama masculino; CDH1→lobulillar y gástrico difuso; TP53→HER2; moderada penetrancia ATM y CHEK2 <span class="cite">p. 1047, 1049</span>.</li>
+<li>MED12 como mutación compartida por fibroadenoma, tumor filodes y leiomioma uterino <span class="cite">p. 1062</span>.</li>
+</ul>
+
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-23-1" aria-label="Figura 23.1"><img src="../assets/fig/cap23/fig-23-1.webp" loading="lazy" decoding="async" alt="Figura 23.1"><span>Figura 23.1</span></a><a class="fig-thumb" href="#fig-23-3" aria-label="Figura 23.3"><img src="../assets/fig/cap23/fig-23-3.webp" loading="lazy" decoding="async" alt="Figura 23.3"><span>Figura 23.3</span></a><a class="fig-thumb" href="#fig-23-4" aria-label="Figura 23.4"><img src="../assets/fig/cap23/fig-23-4.webp" loading="lazy" decoding="async" alt="Figura 23.4"><span>Figura 23.4</span></a><a class="fig-thumb" href="#fig-23-6" aria-label="Figura 23.6"><img src="../assets/fig/cap23/fig-23-6.webp" loading="lazy" decoding="async" alt="Figura 23.6"><span>Figura 23.6</span></a><a class="fig-thumb" href="#fig-23-13" aria-label="Figura 23.13"><img src="../assets/fig/cap23/fig-23-13.webp" loading="lazy" decoding="async" alt="Figura 23.13"><span>Figura 23.13</span></a><a class="fig-thumb" href="#fig-23-17" aria-label="Figura 23.17"><img src="../assets/fig/cap23/fig-23-17.webp" loading="lazy" decoding="async" alt="Figura 23.17"><span>Figura 23.17</span></a><a class="fig-thumb" href="#fig-23-20" aria-label="Figura 23.20"><img src="../assets/fig/cap23/fig-23-20.webp" loading="lazy" decoding="async" alt="Figura 23.20"><span>Figura 23.20</span></a><a class="fig-thumb" href="#fig-23-22" aria-label="Figura 23.22"><img src="../assets/fig/cap23/fig-23-22.webp" loading="lazy" decoding="async" alt="Figura 23.22"><span>Figura 23.22</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

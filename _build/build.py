@@ -537,11 +537,25 @@ def index_page(cert: int) -> str:
         eyebrow = "Anatomía Patológica · Certamen 1"
     else:
         h1 = "Certamen 2<br>Patología sistémica"
-        lede = "Ocho capítulos del Robbins, con citas por página, tablas comparativas y puntos de examen."
+        lede = f"{len(chapters)} capítulos del Robbins, con citas por página, tablas comparativas y puntos de examen."
         eyebrow = "Anatomía Patológica · Certamen 2"
 
     order = [manual] + chapters if manual else chapters
     cards = "\n".join(card(p) for p in order)
+    if cert == 1:
+        steps = (
+            "<li><strong>Manual:</strong> empieza por el mapa y las cifras. "
+            "Fija qué entra y qué no.</li>"
+            "<li><strong>Capítulos en orden:</strong> cada guía cubre un capítulo "
+            "completo del Robbins.</li>"
+        )
+    else:
+        steps = (
+            "<li><strong>Capítulos en orden:</strong> sigue la secuencia del Robbins, "
+            "de vasos sanguíneos a huesos y partes blandas.</li>"
+            "<li><strong>Puntos de examen:</strong> cierra cada guía con esa lista "
+            "para repasar sin releer.</li>"
+        )
     rows = "".join(
         f"<tr><td>{i + 1}</td><td><a href=\"{Path(p['file']).name}\">{html.escape(p['title'])}</a></td>"
         f"<td>{p['printed']}</td><td>{p['pages']}</td>"
@@ -581,9 +595,7 @@ def index_page(cert: int) -> str:
   <div class="section-kicker"><span class="n">02</span> Método</div>
   <h2>Orden de estudio sugerido</h2>
   <ol>
-    <li><strong>Manual:</strong> empieza por el mapa y las cifras. Fija qué entra y qué no.</li>
-    <li><strong>Capítulos en orden:</strong> cada guía cubre un capítulo completo del Robbins.</li>
-    <li><strong>Puntos de examen:</strong> al final de cada guía, para repasar sin releer.</li>
+    {steps}
   </ol>
   <div class="keybox"><span class="box-title">Cómo citar</span>
     En el Certamen 1 y en el Certamen 2 cada afirmación lleva <span class="cite">p. N</span>, la página impresa del Robbins.
@@ -644,6 +656,13 @@ def root_page() -> str:
     c1_figs = sum(len(load_figures(p["id"]).get("figures", [])) for p in c1)
     c2_figs = sum(len(load_figures(p["id"]).get("figures", [])) for p in c2)
     total_figs = c1_figs + c2_figs
+    total_chapters = len(c1) + len(c2)
+    total_guides = total_chapters + sum(1 for p in PAGES if p["kind"] == "manual")
+    c2_cites = sum(
+        len(re.findall(r"\[p\.\s*\d", (ROOT / p["source"]).resolve().read_text(encoding="utf-8")))
+        for p in c2 if p.get("cites")
+    )
+    c2_cites_fmt = f"{c2_cites:,}".replace(",", ".")
     hero = f"""<header class="hero">
   <div class="hero-inner">
     <p class="eyebrow">Medicina UBB · 2026-2</p>
@@ -651,8 +670,8 @@ def root_page() -> str:
     <p class="lede">Todo el material de estudio en un solo lugar: patología general y patología sistémica, capítulo por capítulo.</p>
     <div class="meta-grid">
       <div><span>Certámenes</span><strong>2</strong></div>
-      <div><span>Capítulos</span><strong>18</strong></div>
-      <div><span>Guías</span><strong>19</strong></div>
+      <div><span>Capítulos</span><strong>{total_chapters}</strong></div>
+      <div><span>Guías</span><strong>{total_guides}</strong></div>
       <div><span>Figuras</span><strong>{total_figs}</strong></div>
       <div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div>
       <div><span>Ramo</span><strong>Anatomía Patológica · UBB 2026-2</strong></div>
@@ -674,8 +693,8 @@ def root_page() -> str:
       <p class="eyebrow">Certamen 2</p>
       <div class="big">02</div>
       <h3>Patología sistémica</h3>
-      <p>8 capítulos del Robbins con citas por página: vasos, corazón, leucocitos, eritrocitos, pulmón, cabeza y cuello, tubo digestivo, hígado y vía biliar.</p>
-      <div class="badges"><span>8 capítulos</span><span>con citas</span><span>1.847 citas</span><span>{c2_figs} figuras</span></div>
+      <p>{len(c2)} capítulos del Robbins con citas por página: de vasos sanguíneos a huesos, articulaciones y partes blandas.</p>
+      <div class="badges"><span>{len(c2)} capítulos</span><span>con citas</span><span>{c2_cites_fmt} citas</span><span>{c2_figs} figuras</span></div>
     </a>
   </div>
 </section>
@@ -685,7 +704,7 @@ def root_page() -> str:
   <h2>Cómo usar el sitio</h2>
   <ol>
     <li><strong>Si vas por el C1:</strong> abre el Manual primero, luego los capítulos que el manual marque como prioritarios.</li>
-    <li><strong>Si vas por el C2:</strong> estudia los 8 capítulos en orden y cierra con los Puntos de examen de cada guía.</li>
+    <li><strong>Si vas por el C2:</strong> estudia los {len(c2)} capítulos en orden y cierra con los Puntos de examen de cada guía.</li>
     <li><strong>Repaso:</strong> usa "Lo esencial en 60 segundos" al inicio de cada página.</li>
   </ol>
   <div class="keybox"><span class="box-title">Offline</span>
@@ -699,7 +718,7 @@ def root_page() -> str:
   <ul>
     <li>Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª edición.</li>
     <li>Las figuras provienen de Robbins y Cotran, 10ª ed. (Elsevier España, 2021) y pertenecen a Elsevier y a los autores. Se usan con fines educativos y sin fines comerciales. <a href="creditos.html">Créditos de las figuras</a>.</li>
-    <li>Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 18, con cita de la página impresa.</li>
+    <li>Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 26, con cita de la página impresa.</li>
     <li>Certamen 1: capítulos 1 a 10 y Manual integrado de las clases, con citas por página en los capítulos.</li>
     <li>No se publican PDFs ni OCR crudo. Material docente, no una recomendación clínica.</li>
   </ul>

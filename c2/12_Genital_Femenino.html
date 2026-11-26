@@ -1,0 +1,1600 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aparato genital femenino · Anatomía Patológica UBB</title>
+<meta name="description" content="Aparato genital femenino. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Aparato genital femenino · Anatomía Patológica UBB">
+<meta property="og:description" content="Aparato genital femenino. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 22. Aparato genital femenino</h1>
+    <p class="lede">Guía 12 de 16. Resumen completo del capítulo 22 con 193 citas por página y 85 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>12 de 16</strong></div><div><span>Capítulo</span><strong>22</strong></div><div><span>Páginas</span><strong>985-1036</strong></div><div><span>Citas</span><strong>193</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>85</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-infecciones-del-aparato-genital-femenino">Infecciones del aparato genital femenino</a></li>
+        <li><a href="#sec-03-vulva">Vulva</a></li>
+        <li><a href="#sec-04-vagina">Vagina</a></li>
+        <li><a href="#sec-05-cuello-uterino">Cuello uterino</a></li>
+        <li><a href="#sec-06-cuerpo-del-utero-y-endometrio">Cuerpo del útero y endometrio</a></li>
+        <li><a href="#sec-07-trompas-de-falopio">Trompas de Falopio</a></li>
+        <li><a href="#sec-08-ovario">Ovario</a></li>
+        <li><a href="#sec-09-placenta-y-gestacion">Placenta y gestación</a></li>
+        <li><a href="#sec-10-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="11_Vias_Urinarias_Genital_Masculino.html" title="Vías urinarias inferiores y aparato genital masculino">11</a>
+        <a href="13_Mama.html" title="Mama">13</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 22 del Robbins y Cotran, 10ª edición: páginas impresas 985-1036 (52 páginas), contrastadas con el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se contrastó con el OCR del capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>El VPH de alto riesgo (VPH-16 ~60%, VPH-18 ~10%) causa casi todas las lesiones precursoras y cánceres cervicales; E6 degrada p53 y E7 degrada RB, y la integración del ADN vírico aumenta la expresión de E6/E7 <span class="cite">p. 996-997</span>.</li><li>Las SIL cervicales se clasifican en LSIL (CIN I, infección productiva; regresa en 60% a 2 años) y HSIL (CIN II/III, atipia en los dos tercios superiores; progresa a carcinoma en 10% a 2-10 años) <span class="cite">p. 997-999</span>.</li><li>El carcinoma de endometrio es el cáncer más frecuente del aparato genital femenino: tipo I endometrioide (80-85%, estrogenodependiente, PTEN) vs tipo II seroso (~15%, atrofia, TP53 en &gt;90%, recidiva en 80%) <span class="cite">p. 1008, 1011-1012</span>.</li><li>La endometriosis (glándulas y estroma endometrial extrauterinos, ~10% de las mujeres) causa dismenorrea e infertilidad; produce estrógenos por aromatasa y puede preceder al carcinoma ovárico endometrioide y de células claras <span class="cite">p. 1004-1006</span>.</li><li>Los carcinomas serosos ováricos de alto grado (tipo II) nacen del epitelio tubárico (CITS) o de quistes de inclusión, con TP53 mutado; de ahí la ovariosalpingectomía profiláctica en portadoras de BRCA1/2 <span class="cite">p. 1018</span>.</li><li>La preeclampsia (3-5% de las gestantes) se debe a la falla de remodelación de las arterias espirales y al exceso de sFlt1 y endoglina soluble; puede cursar con eclampsia y síndrome HELLP, y el parto es el tratamiento definitivo <span class="cite">p. 1031-1033</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 986-1033</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>El aparato genital femenino comparte un origen epitelial común (epitelio celómico/mesotelio) en su revestimiento y la superficie ovárica, lo que explica por qué aparecen lesiones benignas y malignas morfológicamente similares en distintas zonas del aparato genital y las superficies peritoneales adyacentes <span class="cite">p. 986</span>.</li>
+<li>La <strong>enfermedad inflamatoria pélvica (EIP)</strong>, causada sobre todo por <em>Neisseria gonorrhoeae</em> y <em>Chlamydia</em>, puede afectar a todas las estructuras del sistema genital; sus secuelas crónicas son infertilidad, obstrucción tubárica, embarazo ectópico y dolor pélvico <span class="cite">p. 988-989</span>.</li>
+<li>El <strong>VPH de alto riesgo</strong> es el factor más importante del cáncer cervical (VPH-16 ~60% de los casos, VPH-18 ~10%); sus proteínas E6 y E7 degradan p53 y RB respectivamente, y la integración del ADN vírico al genoma del huésped aumenta la expresión de E6/E7 <span class="cite">p. 996-997</span>.</li>
+<li>Las lesiones precursoras cervicales se clasifican hoy en <strong>LSIL</strong> (CIN I, infección productiva por VPH, la mayoría regresa) y <strong>HSIL</strong> (CIN II/III, alto riesgo de progresión); la progresión a carcinoma invasivo, de producirse, tarda en promedio varias décadas, lo que hace viable el cribado citológico <span class="cite">p. 997-998</span>.</li>
+<li>El carcinoma cervical es el cuarto cáncer más frecuente en mujeres en el mundo; la citología cervicovaginal redujo su mortalidad en un <strong>75%</strong> en EE. UU. en 50 años <span class="cite">p. 996</span>.</li>
+<li>La <strong>endometriosis</strong> (glándulas y estroma endometrial fuera del útero) afecta ~10% de las mujeres en edad fértil, causa infertilidad en el 30-40% de las consultas, y la endometriosis peritoneal y ovárica puede preceder a carcinomas ováricos endometrioide y de células claras <span class="cite">p. 1004-1006</span>.</li>
+<li>La <strong>hiperplasia endometrial</strong> resulta de estimulación estrogénica sin oposición; la forma <strong>atípica</strong> (neoplasia intraepitelial endometrial) conduce a carcinoma en hasta el 50% de las histerectomías, y comparte con el carcinoma endometrioide la pérdida de <strong>PTEN</strong> <span class="cite">p. 1006-1008</span>.</li>
+<li>El <strong>carcinoma de endometrio</strong> es el cáncer invasivo más frecuente del aparato genital femenino; el tipo I (endometrioide, 80-85%) es estrogenodependiente y de buen pronóstico, y el tipo II (seroso, ~15%) surge en endometrio atrófico con mutaciones de <strong>TP53</strong> en &gt;90% y disemina precozmente <span class="cite">p. 1008, 1011-1012</span>.</li>
+<li>El <strong>leiomioma</strong> es el tumor más frecuente en las mujeres; mutaciones de <strong>MED12</strong> en ~70%; la transformación maligna a leiomiosarcoma es excepcional y el leiomiosarcoma surge de novo, no de leiomiomas <span class="cite">p. 1014-1015</span>.</li>
+<li>Los tumores ováricos se clasifican según su origen en <strong>epiteliales</strong> (más del 80% de las neoplasias malignas), de <strong>células germinales</strong> (15-20% de los tumores, mayoría teratomas benignos) y de <strong>cordones sexuales-estroma</strong> (frecuentemente funcionantes) <span class="cite">p. 1016-1017, 1023</span>.</li>
+<li>Los carcinomas serosos ováricos de <strong>alto grado</strong> (tipo II) se originan en el epitelio de la trompa de Falopio (carcinoma intraepitelial tubárico seroso, CITS) o en quistes de inclusión, no en el epitelio ovárico superficial; esto cambió la cirugía profiláctica a <strong>ovariosalpingectomía</strong> en portadoras de BRCA1/2 <span class="cite">p. 1018</span>.</li>
+<li>La <strong>preeclampsia</strong> (3-5% de las gestantes) se debe a falla de la remodelación de las arterias espirales por el trofoblasto y a un desequilibrio de factores antiangiogénicos (<strong>sFlt1</strong> y <strong>endoglina soluble</strong>) que causa disfunción endotelial materna sistémica <span class="cite">p. 1031-1032</span>.</li>
+<li>La <strong>enfermedad trofoblástica gestacional</strong> comprende mola hidatidiforme completa (diploide androgenética 46,XX, riesgo de coriocarcinoma 2,5%) y parcial (triploide, sin riesgo de coriocarcinoma), mola invasiva, coriocarcinoma y TTLP; la <strong>hCG</strong> es la clave diagnóstica y de seguimiento <span class="cite">p. 1033-1035</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-infecciones-del-aparato-genital-femenino" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 986-989</div>
+<h2>Infecciones del aparato genital femenino</h2>
+<p>Los patógenos frecuentes como <em>Cándida</em>, <em>Trichomonas</em> y <em>Gardnerella</em> causan molestias sin secuelas graves; <em>Neisseria gonorrhoeae</em> y <em>Chlamydia</em> son causas importantes de infertilidad; los estreptococos del grupo B se asocian a parto pretérmino, mortinatalidad e infección neonatal; el VHS causa úlceras genitales dolorosas y el VPH participa en la patogenia de los cánceres cervical, vaginal y vulvar <span class="cite">p. 986</span>.</p>
+<h3 id="vhs-genital">VHS genital</h3>
+<ul>
+<li>VHS-1 y VHS-2 son virus de ADN; antes de los 40 años ~30% de las mujeres es seropositiva para VHS-2; ~un tercio de las infecciones nuevas es asintomática; las lesiones aparecen a los 3-7 días de la transmisión como pápulas → vesículas → úlceras fusionadas dolorosas, con fiebre y adenopatías inguinales dolorosas <span class="cite">p. 987</span>.</li>
+<li>Las lesiones curan en 1-3 semanas, pero el virus migra a los ganglios lumbosacros y establece latencia indefinida, con reactivación por estrés, traumatismo, infección concurrente, cambios hormonales o inmunodepresión <span class="cite">p. 987</span>.</li>
+<li>Morfología: células escamosas multinucleadas con inclusiones víricas intranucleares con imagen de "vidrio esmerilado" en el frotis (fig. 22.2) <span class="cite">p. 987</span>.</li>
+<li>Consecuencias: transmisión al neonato en el parto (riesgo máximo con primoinfección activa; cesárea justificada) y mayor riesgo de contagio y transmisión de VIH-1. Diagnóstico: cultivo (efecto citopático a las 48-72 h), PCR, ELISA e inmunofluorescencia. Aciclovir o famciclovir acortan las fases sintomáticas; no hay tratamiento para la latencia <span class="cite">p. 987</span>.</li>
+</ul>
+<h3 id="otras-infecciones-del-aparato-genital-inferior">Otras infecciones del aparato genital inferior</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Infecciones del aparato genital femenino" tabindex="0"><table>
+<thead>
+<tr>
+<th>Agente</th>
+<th>Clave clínica</th>
+<th>Diagnóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Molusco contagioso (poxvirus)</td>
+<td>Pápulas perladas en cúpula con centro hundido, 1-5 mm; en adultos de transmisión sexual</td>
+<td>Aspecto clínico; inclusiones citoplásmicas en biopsia</td>
+</tr>
+<tr>
+<td><em>Cándida</em></td>
+<td>Prurito vulvovaginal intenso, eritema, secreción cremosa; riesgo: diabetes, antibióticos, embarazo, defectos de neutrófilos o Th17</td>
+<td>Seudoesporas o hifas en KOH, Pap o citología; no se considera ETS</td>
+</tr>
+<tr>
+<td><em>Trichomonas vaginalis</em></td>
+<td>Secreción amarillenta espumosa, disuria, dispareunia; cuello "en fresa"</td>
+<td>Examen directo/cultivo</td>
+</tr>
+<tr>
+<td><em>Gardnerella vaginalis</em></td>
+<td>Vaginosis bacteriana: secreción fluida verdugrisácea maloliente (olor a pescado)</td>
+<td>Triple toma: células clave ("clue cells"); se implica en parto prematuro</td>
+</tr>
+<tr>
+<td><em>Ureaplasma</em> y <em>M. hominis</em></td>
+<td>Vaginitis, cervicitis; corioamnionitis y parto prematuro</td>
+<td>Cultivo</td>
+</tr>
+<tr>
+<td><em>Chlamydia trachomatis</em></td>
+<td>Cervicitis; puede ascender a endometritis y salpingitis (EIP)</td>
+<td>Amplificación de ácidos nucleicos</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 988</span>.</p>
+<h3 id="enfermedad-inflamatoria-pélvica-eip">Enfermedad inflamatoria pélvica (EIP)</h3>
+<ul>
+<li>Infección que comienza en vulva o vagina y asciende a las estructuras del sistema genital, con dolor pélvico y anexial, fiebre y secreción vaginal. Causas frecuentes: gonococo y <em>Chlamydia</em>; tras abortos y partos suelen ser polimicrobianas (estafilococos, estreptococos, coliformes, <em>Clostridium perfringens</em>) y se diseminan por vías linfáticas o venosas, con más inflamación de las capas profundas <span class="cite">p. 988</span>.</li>
+<li>La infección gonocócica comienza 2-7 días tras la inoculación en la mucosa endocervical o glándulas de Bartholin; el endometrio suele quedar indemne, pero la trompa desarrolla <strong>salpingitis supurativa aguda</strong> con luz llena de pus (piosalpinx), <strong>absceso tuboovárico</strong> y ovariosalpingitis <span class="cite">p. 989</span>.</li>
+<li>La cicatrización de pliegues tubáricos con espacios seudoglandulares (salpingitis crónica) impide la captación del ovocito → <strong>infertilidad o embarazo ectópico</strong>; la fusión de fimbrias produce <strong>hidrosálpinx</strong> (fig. 22.4) <span class="cite">p. 989</span>.</li>
+<li>Complicaciones agudas: peritonitis y bacteriemia (endocarditis, meningitis, artritis supurativa). Secuelas crónicas: infertilidad, obstrucción tubárica, embarazo ectópico, dolor pélvico y obstrucción intestinal por adherencias. Los abscesos tuboováricos encapsulados son difíciles de erradicar con antibióticos y pueden requerir cirugía <span class="cite">p. 989</span>.</li>
+</ul>
+
+</section><section id="sec-03-vulva" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 990-993</div>
+<h2>Vulva</h2>
+<h3 id="quiste-de-bartholin">Quiste de Bartholin</h3>
+<p>La infección de la glándula de Bartholin produce adenitis y a veces absceso; el quiste del conducto, por obstrucción inflamatoria, se reviste de epitelio transicional o escamoso, alcanza 3-5 cm y se trata con extirpación o <strong>marsupialización</strong> <span class="cite">p. 990</span>.</p>
+<h3 id="trastornos-epiteliales-no-neoplásicos">Trastornos epiteliales no neoplásicos</h3>
+<p>La <strong>leucoplasia</strong> es un término clínico (placas opacas blanquecinas con prurito) causado por dermatosis inflamatorias, líquen escleroso, hiperplasia de células escamosas, VIN, enfermedad de Paget o carcinoma invasivo <span class="cite">p. 990</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Vulva" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Líquen escleroso</th>
+<th>Hiperplasia de células escamosas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Epónimo antiguo</td>
+<td>No aplica</td>
+<td>Distrofia hiperplásica / líquen simple crónico</td>
+</tr>
+<tr>
+<td>Causa</td>
+<td>Probable autoinmunidad (linfocitos T activados, asociación con trastornos autoinmunitarios)</td>
+<td>Roce o rascado por prurito</td>
+</tr>
+<tr>
+<td>Morfología</td>
+<td>Epidermis muy adelgazada, degeneración de células basales, hiperqueratosis, esclerosis de dermis superficial, infiltrado en banda</td>
+<td>Acantosis e hiperqueratosis, sin atipia; infiltrado linfocítico ocasional</td>
+</tr>
+<tr>
+<td>Edad</td>
+<td>Más frecuente en posmenopáusicas</td>
+<td>Variable</td>
+</tr>
+<tr>
+<td>Riesgo de carcinoma epidermoide vulvar</td>
+<td>Levemente aumentado (no es premaligna en sí)</td>
+<td>No premaligna, pero aparece en bordes de cánceres vulvares</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 990</span>.</p>
+<h3 id="condiloma-acuminado">Condiloma acuminado</h3>
+<p>Verrugas genitales benignas por VPH de bajo riesgo, principalmente tipos <strong>6 y 11</strong>; múltiples, en región vulvar, perineal, perianal y vagina. Histología: eje papilar estromal ramificado revestido por epitelio escamoso engrosado con <strong>atipia coilocítica</strong> (núcleos agrandados, hipercromáticos, halo perinuclear). No son lesiones precancerosas; la vacuna anti-VPH protege contra las verrugas genitales <span class="cite">p. 991</span>.</p>
+<h3 id="neoplasia-intraepitelial-vulvar-y-carcinoma-de-vulva">Neoplasia intraepitelial vulvar y carcinoma de vulva</h3>
+<ul>
+<li>El carcinoma de vulva es ~8 veces menos frecuente que el cervical (~3% de los cánceres genitales femeninos); ~2/3 en mayores de 60 años; el carcinoma epidermoide es el tipo más frecuente <span class="cite">p. 991</span>.</li>
+<li>Dos vías de carcinogénesis vulvar: <span class="cite">p. 991</span>.
+<ul>
+<li><strong>VPH-dependiente</strong> (30%): carcinomas basaloides y verrugosos por VPH-16, en mujeres más jóvenes (promedio 60 años), sobre <strong>VIN clásica</strong> (antes carcinoma in situ/enfermedad de Bowen); multicéntrica, con 10-30% de lesiones vaginales o cervicales concomitantes; puede regresar espontáneamente en jóvenes; mayor riesgo de invasión en mayores de 45 años e inmunodeprimidas <span class="cite">p. 991</span>.</li>
+<li><strong>VPH-independiente</strong> (70%): carcinoma epidermoide queratinizante en mujeres mayores (promedio 75 años) sobre líquen escleroso o hiperplasia escamosa de larga evolución, con precursor <strong>VIN diferenciada</strong> y mutaciones de <em>TP53</em> descritas en la VIN diferenciada <span class="cite">p. 991</span>.</li>
+</ul></li>
+<li>Morfología: la VIN clásica muestra atipia nuclear, mitosis y ausencia de maduración en todo el espesor epitelial, análoga a las SIL cervicales; el carcinoma basaloide son nidos de células pequeñas inmaduras sin maduración; la VIN diferenciada tiene atipia de la capa basal con maduración superficial conservada; el carcinoma queratinizante presenta nidos invasores con <strong>perlas de queratina</strong> (figs. 22.7 y 22.8) <span class="cite">p. 992</span>.</li>
+<li>Pronóstico: depende del tamaño, profundidad de invasión e invasión linfática; diseminación inicial a ganglios inguinales, pélvicos, iliacos y periaórticos. Tumores &lt;2 cm: supervivencia a 5 años del 90% con vulvectomía y linfoadenectomía; tumores mayores con ganglios positivos tienen mal pronóstico <span class="cite">p. 993</span>.</li>
+</ul>
+<h3 id="lesiones-glandulares-hidroadenoma-papilar-y-enfermedad-de-paget">Lesiones glandulares: hidroadenoma papilar y enfermedad de Paget</h3>
+<ul>
+<li><strong>Hidroadenoma papilar</strong>: nódulo bien delimitado en labios mayores o pliegues interlabiales, confundible con carcinoma; histología idéntica al papiloma intraductal de mama, con proyecciones papilares de doble capa (células secretoras cilíndricas y mioepiteliales subyacentes) (fig. 22.9) <span class="cite">p. 993</span>.</li>
+<li><strong>Enfermedad de Paget extramamaria</strong>: área pruriginosa, roja, costrosa y geográfica en labios mayores; células de Paget grandes, de citoplasma claro PAS+, una a una o en cúmulos dentro de la epidermis, que expresan <strong>citoqueratina 7</strong> (fig. 22.10) <span class="cite">p. 993-994</span>.</li>
+<li>A diferencia del Paget del pezón (100% con carcinoma ductal subyacente), el Paget vulvar normalmente <strong>no se asocia con cáncer</strong> y se limita a la epidermis; el tratamiento es la resección local amplia porque las células se extienden más allá del borde visible; puede persistir décadas sin invadir; con invasión el pronóstico es malo <span class="cite">p. 993-994</span>.</li>
+</ul>
+
+</section><section id="sec-04-vagina" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 994-995</div>
+<h2>Vagina</h2>
+<ul>
+<li>Anomalías del desarrollo: vagina tabicada o doble por falla de fusión de un conducto de Múller con útero didelfo; puede manifestar síndromes genéticos o exposición intrauterina a <strong>dietilestilbestrol (DES)</strong> <span class="cite">p. 994</span>.</li>
+<li><strong>Adenosis vaginal</strong>: lagunas de epitelio glandular residual (cilíndrico mucinoso endocervical) en la vagina adulta; se describió en 35-90% de las expuestas a DES in útero; entre los años setenta y ochenta se documentaron carcinomas de células claros sobre adenosis relacionada con DES, lo que llevó a su suspensión <span class="cite">p. 994</span>.</li>
+<li><strong>Quistes del conducto de Gartner</strong>: quistes submucosos de 1-2 cm en paredes laterales vaginales, de restos mesonéfricos (Wolff) <span class="cite">p. 994</span>.</li>
+<li>Neoplasias: el tumor maligno más frecuente es el carcinoma que se extiende desde el cérvix, seguido del carcinoma epidermoide primario; en lactantes, el rabdomiosarcoma embrionario (sarcoma botrioideo) <span class="cite">p. 994</span>.</li>
+</ul>
+<h3 id="neoplasia-intraepitelial-vaginal-y-carcinoma-epidermoide">Neoplasia intraepitelial vaginal y carcinoma epidermoide</h3>
+<ul>
+<li>Casi todos los carcinomas primarios vaginales son epidermoides asociados a VPH de alto riesgo; incidencia ~0,6/100.000 mujeres/año, ~1% de las neoplasias malignas del aparato genital femenino. El mayor factor de riesgo es un carcinoma previo de cérvix o vulva (1-2% de las mujeres con carcinoma cervical invasivo desarrolla carcinoma vaginal) <span class="cite">p. 994</span>.</li>
+<li>Surge sobre neoplasia intraepitelial vaginal, análoga a las SIL cervicales; afecta con más frecuencia la parte superior de la vagina, pared posterior, cerca del ectocérvix. Los 2/3 inferiores metastatizan a ganglios inguinales; la parte superior, a ganglios iliacos <span class="cite">p. 994</span>.</li>
+</ul>
+<h3 id="rabdomiosarcoma-embrionario-sarcoma-botrioideo">Rabdomiosarcoma embrionario (sarcoma botrioideo)</h3>
+<ul>
+<li>Tumor vaginal de lactantes y niñas menores de 5 años; masas polipoideas redondeadas "en racimo de uvas" (fig. 22.11); células pequeñas con citoplasma en "raqueta de tenis", rara vez con estriaciones; capa subepitelial <strong>cambial</strong> celular y estroma fibromixoide profundo <span class="cite">p. 995</span>.</li>
+<li>Invade localmente y causa muerte por penetración peritoneal u obstrucción de vías urinarias; cirugía conservadora más quimioterapia ofrece los mejores resultados en diagnóstico precoz <span class="cite">p. 995</span>.</li>
+</ul>
+
+</section><section id="sec-05-cuello-uterino" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 995-1001</div>
+<h2>Cuello uterino</h2>
+<p>Anatomía: el <strong>ectocérvix</strong> está revestido por epitelio escamoso maduro y el <strong>endocérvix</strong> por epitelio cilíndrico secretor de moco; la unión de ambos es la <strong>unión escamocolumnar</strong>, que con la edad y las hormonas se desplaza hacia el conducto endocervical mediante <strong>metaplasia escamosa</strong>; la zona donde coexisten ambos epitelios es la <strong>zona de transformación</strong>. Las células escamosas inmaduras de la zona de transformación son las más susceptibles a la infección por VPH y ahí surgen la mayoría de las lesiones precursoras y cánceres cervicales (fig. 22.12) <span class="cite">p. 995</span>.</p>
+<h3 id="cervicitis-y-pólipos">Cervicitis y pólipos</h3>
+<ul>
+<li>En la menarquia, los estrógenos inducen vacuolas de glucógeno; los <strong>lactobacilos</strong> lo fermentan a ácido láctico manteniendo el pH &lt;4,5 y producen peróxido de hidrógeno, suprimiendo otros microorganismos. Si el pH se alcaliniza (hemorragia, coito, duchas, antibióticos que suprimen lactobacilos) crecen otros microorganismos que causan cervicitis o vaginitis <span class="cite">p. 995</span>.</li>
+<li>Cierta inflamación cervical es universal y sin consecuencias; gonococos, clamidias, micoplasmas y VHS producen cervicitis significativa, importante de identificar por su asociación con enfermedad del aparato genital alto, complicaciones gestacionales y transmisión sexual. La inflamación puede causar citologías anómalas por cambios reactivos <span class="cite">p. 996</span>.</li>
+<li><strong>Pólipo endocervical</strong>: lesión exofítica benigna frecuente del conducto endocervical, estroma fibroso revestido por glándulas endocervicales mucosecretoras con inflamación (fig. 22.13); su importancia es causar manchado o hemorragia irregular que hace sospechar lesiones más graves; el legrado o la resección son curativos <span class="cite">p. 996</span>.</li>
+</ul>
+<h3 id="patogenia-de-la-infección-por-vph">Patogenia de la infección por VPH</h3>
+<ul>
+<li>Epidemiología: el carcinoma cervical es el cuarto cáncer en mujeres en el mundo, con 570.000 casos nuevos en 2018 y más de la mitad mortales; en EE. UU. 13.179 casos y 4.250 muertes en 2019. La mortalidad cayó 75% en 50 años gracias al cribado citológico <span class="cite">p. 996</span>.</li>
+<li>Hay 15 VPH de alto riesgo; <strong>VPH-16 ~60%</strong> de los cánceres cervicales y <strong>VPH-18 ~10%</strong>; los demás &lt;5% cada uno. Las infecciones genitales son muy frecuentes y mayormente transitorias: 50% se resuelve en 8 meses y 90% en 2 años; la infección por VPH de alto riesgo dura más (13 vs 8 meses del bajo riesgo). La infección <strong>persistente</strong> aumenta el riesgo de lesión precursora y carcinoma <span class="cite">p. 996</span>.</li>
+<li>El VPH productivo requiere infectar <strong>células basales escamosas inmaduras</strong>, expuestas en zonas de traumatismo y reparación del epitelio y en células metaplásicas de la unión escamocolumnar; localizaciones análogas: unión escamocolumnar anal y criptas amigdalinas orofaríngeas <span class="cite">p. 996</span>.</li>
+<li>Las proteínas <strong>E7</strong> se unen a la forma activa hipofosforilada de <strong>RB</strong>, promueven su degradación proteosómica e inhiben p21 y p27; <strong>E6</strong> se une a <strong>p53</strong> y promueve su degradación y regula al alza la <strong>telomerasa</strong> (inmortalidad celular). El efecto neto es proliferación de células con tendencia a adquirir mutaciones adicionales. En los VPH de bajo riesgo, E7 une RB con menor afinidad y E6 interfiere la vía Notch en vez de p53 <span class="cite">p. 996-997</span>.</li>
+<li><strong>Estado físico del virus</strong>: en la mayoría de los cánceres el ADN vírico se <strong>integra</strong> al genoma del huésped, aumentando la expresión de E6/E7 y quizá oncogenes cercanos como <strong>MYC</strong>; en las lesiones precursoras y condilomas el ADN es <strong>episómico</strong>. Solo unas pocas mujeres infectadas desarrollan cáncer: cocarcinógenos y estado inmunitario influyen <span class="cite">p. 997</span>.</li>
+</ul>
+<h3 id="lesiones-intraepiteliales-escamosas-sil">Lesiones intraepiteliales escamosas (SIL)</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuello uterino" tabindex="0"><table>
+<thead>
+<tr>
+<th>Sistema</th>
+<th>Displasia</th>
+<th>CIN actual</th>
+<th>SIL actual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clásico</td>
+<td>Displasia leve</td>
+<td>CIN I</td>
+<td>LSIL</td>
+</tr>
+<tr>
+<td>Clásico</td>
+<td>Displasia moderada</td>
+<td>CIN II</td>
+<td>HSIL</td>
+</tr>
+<tr>
+<td>Clásico</td>
+<td>Displasia grave/carcinoma in situ</td>
+<td>CIN III</td>
+<td>HSIL</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 997</span> (tabla 22.1).</p>
+<ul>
+<li><strong>LSIL</strong>: infección productiva por VPH con elevada replicación vírica y alteraciones leves del crecimiento; no se tratan como premalignas; son 10 veces más frecuentes que las HSIL; no progresan directamente a carcinoma <span class="cite">p. 997</span>.</li>
+<li><strong>HSIL</strong>: falta de regulación progresiva del ciclo celular, proliferación epitelial, reducción o detención de la maduración y menor replicación vírica; alto riesgo de progresión a carcinoma <span class="cite">p. 997</span>.</li>
+<li>Morfología: atipia nuclear (agrandamiento, hipercromasia, cromatina grosera, pleomorfismo) con halos perinucleares (<strong>atipia coilocítica</strong>; los halos son vacuolas perinucleares creadas en parte por la proteína vírica E5). Si las células inmaduras se confinan al tercio inferior del epitelio es LSIL; si ocupan los dos tercios superiores es HSIL (fig. 22.14) <span class="cite">p. 997</span>.</li>
+<li>Inmunotinciones útiles en SIL dudosa: <strong>Ki-67</strong> (expansión de la proliferación desde la capa basal a las capas superficiales) y <strong>p16</strong> (sobreexpresado en infección por VPH de alto riesgo); la hibridación in situ muestra ADN de VPH abundante en los coilocitos superficiales de la LSIL (fig. 22.15) <span class="cite">p. 997</span>.</li>
+<li><blockquote>
+<p>80% de las LSIL y 100% de las HSIL se asocian a VPH de alto riesgo, con VPH-16 el subtipo más frecuente. ~20% de las HSIL aparecen de novo sin LSIL previa. Evolución a 2 años (tabla 22.2): LSIL regresa 60%, persiste 30%, progresa a HSIL 10%; HSIL regresa 30%, persiste 60%, progresa a carcinoma 10% (en 2-10 años). La progresión a carcinoma invasivo tarda en promedio varias décadas <span class="cite">p. 997-999</span> (tabla 22.2 <span class="cite">p. 999</span>).</p>
+</blockquote></li>
+</ul>
+<figure class="fig" id="fig-22-14">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-14.webp" data-caption="Figura 22.14. Espectro de la neoplasia intraepitelial cervical: epitelio escamoso normal, CIN I con atipia coilocítica, CIN II con expansión de células basales inmaduras sobre el tercio inferior y CIN III con atipia difusa hasta la superficie." data-alt="Figura 22.14. Espectro de la neoplasia intraepitelial cervical: epitelio escamoso normal, CIN I con atipia coilocítica, CIN II con expansión de células basales inmaduras sobre el tercio inferior y CIN III con atipia difusa hasta la superficie. Robbins y Cotran, 10ª ed., p. 998.">
+    <img src="../assets/fig/cap22/fig-22-14.webp" width="1476" height="553" loading="lazy" decoding="async" alt="Figura 22.14. Espectro de la neoplasia intraepitelial cervical: epitelio escamoso normal, CIN I con atipia coilocítica, CIN II con expansión de células basales inmaduras sobre el tercio inferior y CIN III con atipia difusa hasta la superficie. Robbins y Cotran, 10ª ed., p. 998.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.14.</strong> Espectro de la neoplasia intraepitelial cervical: epitelio escamoso normal, CIN I con atipia coilocítica, CIN II con expansión de células basales inmaduras sobre el tercio inferior y CIN III con atipia difusa hasta la superficie.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 998. <a href="../creditos.html#fig-22-14">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="carcinoma-cervical">Carcinoma cervical</h3>
+<ul>
+<li>Edad promedio 45-50 años. Subtipos: carcinoma epidermoide ~80%; adenocarcinoma ~15% (precursor: adenocarcinoma in situ); adenoescamosos y neuroendocrinos ~5%. Todos causados por VPH de alto riesgo; los adenoescamosos y neuroendocrinos progresan más rápido y suelen diagnosticarse avanzados con peor pronóstico <span class="cite">p. 998</span>.</li>
+<li>Morfología: masas fungosas (exofíticas) o infiltrantes. El epidermoide son nidos y lengüetas de epitelio escamoso maligno que invaden el estroma; el adenocarcinoma son glándulas de células relativamente vacías de mucina con coloración oscura; el adenoescamoso mezcla ambos epitelios; el neuroendocrino imita al carcinoma de células pequeñas del pulmón pero es VPH positivo (figs. 22.16 y 22.17) <span class="cite">p. 999</span>.</li>
+<li>Diseminación: extensión directa a tejidos blandos paracervicales, vejiga, uréteres (hidronefrosis), recto y vagina; invasión linfovascular con metástasis ganglionares locales y alejadas; metástasis a distancia en hígado, pulmones y médula ósea <span class="cite">p. 999</span>.</li>
+<li>Estadificación: <span class="cite">p. 999-1000</span>.</li>
+</ul>
+<figure class="fig" id="fig-22-16">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-16.webp" data-caption="Figura 22.16. Carcinoma epidermoide de cérvix: A. invasión precoz con un nido infiltrante que atraviesa la membrana basal de una lesión escamosa intraepitelial de alto grado; B. carcinoma epidermoide invasivo." data-alt="Figura 22.16. Carcinoma epidermoide de cérvix: A. invasión precoz con un nido infiltrante que atraviesa la membrana basal de una lesión escamosa intraepitelial de alto grado; B. carcinoma epidermoide invasivo. Robbins y Cotran, 10ª ed., p. 999.">
+    <img src="../assets/fig/cap22/fig-22-16.webp" width="699" height="712" loading="lazy" decoding="async" alt="Figura 22.16. Carcinoma epidermoide de cérvix: A. invasión precoz con un nido infiltrante que atraviesa la membrana basal de una lesión escamosa intraepitelial de alto grado; B. carcinoma epidermoide invasivo. Robbins y Cotran, 10ª ed., p. 999.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.16.</strong> Carcinoma epidermoide de cérvix: A. invasión precoz con un nido infiltrante que atraviesa la membrana basal de una lesión escamosa intraepitelial de alto grado; B. carcinoma epidermoide invasivo.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 999. <a href="../creditos.html#fig-22-16">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuello uterino" tabindex="0"><table>
+<thead>
+<tr>
+<th>Estadio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Carcinoma in situ (CIN III, HSIL)</td>
+</tr>
+<tr>
+<td>Ia1</td>
+<td>Microinfiltrante: invasión estromal ≤3 mm de profundidad y ≤7 mm de extensión</td>
+</tr>
+<tr>
+<td>Ia2</td>
+<td>Invasión &gt;3 y &lt;5 mm de profundidad, extensión horizontal ≤7 mm</td>
+</tr>
+<tr>
+<td>Ib</td>
+<td>Invasivo limitado al cérvix, mayor que Ia2</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Más allá del cérvix, sin llegar a la pared pélvica; afecta vagina pero no su tercio inferior</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Extensión a pared pélvica o al tercio inferior de la vagina</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Más allá de la pelvis verdadera o afecta mucosa de vejiga o recto; incluye metástasis</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 999-1000</span>.</p>
+<ul>
+<li>Clínica: &gt;50% de los cánceres invasivos se detectan en mujeres que no participaron del cribado. El microinfiltrante se trata con conización; el invasivo con histerectomía más linfadenectomía y, en lesiones avanzadas, radioterapia y quimioterapia. Supervivencia a 5 años: 100% en microinfiltrantes y &lt;20% en tumores que se extienden más allá de la pelvis. La mayoría de las muertes se deben a invasión local (obstrucción ureteral, pielonefritis, uremia) más que a metástasis <span class="cite">p. 1000</span>.</li>
+</ul>
+<h3 id="detección-y-prevención">Detección y prevención</h3>
+<ul>
+<li>Cribado citológico: se raspa la zona de transformación con espátula o cepillo; la citología detecta células anómalas de las lesiones precursoras y cánceres tempranos curables (fig. 22.18) <span class="cite">p. 1000</span>.</li>
+<li>Prueba de ADN-VPH: más sensible pero menos específica; se agrega a la citología a partir de los 30 años; no se recomienda bajo 30 por la elevada incidencia de infección transitoria. Primera citología a los 21 años o dentro de los 3 años del inicio de la actividad sexual, luego cada 3 años; citología normal/VPH negativa permite espaciar; citología normal/VPH positiva obliga a repetir cada 6-12 meses <span class="cite">p. 1001</span>.</li>
+<li>Ante citología anómala: colposcopia con ácido acético (áreas acetoblancas) y biopsias dirigidas. LSIL confirmada: vigilancia conservadora (o ablación). HSIL: conización cervical <span class="cite">p. 1001</span>.</li>
+<li><strong>Vacuna anti-VPH</strong>: recomendada a niñas y niños de 11-12 años y jóvenes hasta los 26; dos vacunas aprobadas por la FDA con protección casi completa frente a los tipos 16 y 18 (~70% de los cánceres cervicales), otros cinco de alto riesgo y los tipos 6 y 11 (verrugas). Protección demostrada hasta 10 años; como no cubre todos los tipos, se mantiene el cribado <span class="cite">p. 1001</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">VPH: de la infección al carcinoma</span>Solo la infección persistente en células basales inmaduras de la zona de transformación conduce a lesión; las LSIL regresa en 60% y las HSIL progresan a carcinoma en 10% a los 2 años, con progresión a invasor que tarda varias décadas, base de la eficacia del cribado citológico <span class="cite">p. 996-999</span>.</div>
+</section><section id="sec-06-cuerpo-del-utero-y-endometrio" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 1001-1014</div>
+<h2>Cuerpo del útero y endometrio</h2>
+<p>El útero tiene <strong>miometrio</strong> (haces de músculo liso entrelazados) y <strong>endometrio</strong> (glándulas inmersas en estroma celular); sus trastornos más frecuentes derivan de desequilibrios endocrinos, complicaciones de la gestación y neoplasias <span class="cite">p. 1001</span>.</p>
+<h3 id="histología-endometrial-en-el-ciclo-menstrual">Histología endometrial en el ciclo menstrual</h3>
+<ul>
+<li>La apariencia histológica evalúa el estado hormonal, documenta la ovulación y determina causas de hemorragia e infertilidad (fig. 22.19) <span class="cite">p. 1001</span>.</li>
+<li><strong>Fase proliferativa</strong>: crecimiento rápido de glándulas y estroma desde la capa basal; glándulas rectas, tubulares, cilíndricas altas seudoestratificadas, numerosas mitosis, sin secreción. Estroma de células fusiformes en proliferación activa <span class="cite">p. 1001</span>.</li>
+<li><strong>Fase secretora</strong> (postovulatoria, por progesterona del cuerpo lúteo): vacuolas secretoras subnucleares, que migran a la superficie apical en la tercera semana; en la cuarta semana glándulas tortuosas "en hoja de sierra" con agotamiento secretor; arteriolas espirales prominentes, edema estromal, <strong>predecidualización</strong> (hipertrofia y eosinofilia de las células estromales) con mitosis estromales; infiltrado escaso de neutrófilos y linfocitos, considerado normal <span class="cite">p. 1001-1002</span>.</li>
+<li>Con la disolución del cuerpo lúteo y el descenso de progesterona, la capa funcional degenera con hemorragia y descomposición del estroma: menstruación <span class="cite">p. 1002</span>.</li>
+<li>Mecanismo hormonal: los estrógenos actúan vía receptores nucleares; gran parte del efecto estrogénico sobre las glándulas es indirecto, mediante factores de crecimiento estromales (IGF-1, EGF). La progesterona regula a la baja el receptor de estrógenos, suprime la proliferación y promueve la diferenciación glandular y los cambios estromales. Existen células madre endometriales, esenciales para la regeneración postmenstrual y posiblemente implicadas en endometriosis y cáncer de endometrio <span class="cite">p. 1002</span>.</li>
+</ul>
+<h3 id="hemorragia-uterina-disfuncional-y-ciclo-anovulatorio">Hemorragia uterina disfuncional y ciclo anovulatorio</h3>
+<ul>
+<li>La hemorragia uterina anómala se debe con más frecuencia a alteraciones hormonales <strong>sin anomalía estructural</strong> (hemorragia uterina disfuncional), aunque deben excluirse endometritis crónica, pólipos, leiomiomas submucosos y neoplasias (fig. 22.20) <span class="cite">p. 1002-1003</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuerpo del útero y endometrio" tabindex="0"><table>
+<thead>
+<tr>
+<th>Grupo de edad</th>
+<th>Causas principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prepubertad</td>
+<td>Pubertad precoz (hipotalámica, hipofisaria u ovárica)</td>
+</tr>
+<tr>
+<td>Adolescencia</td>
+<td>Ciclo anovulatorio; trastornos de la coagulación</td>
+</tr>
+<tr>
+<td>Edad fértil</td>
+<td>Complicaciones de la gestación (aborto, enfermedad trofoblástica, embarazo ectópico); lesiones anatómicas (leiomioma, adenomiosis, pólipos, hiperplasia, carcinoma); hemorragia disfuncional; ciclo anovulatorio; fase lútea inadecuada</td>
+</tr>
+<tr>
+<td>Perimenopausia</td>
+<td>Hemorragia disfuncional; ciclo anovulatorio; lesiones anatómicas (carcinoma, hiperplasia, pólipos)</td>
+</tr>
+<tr>
+<td>Posmenopausia</td>
+<td>Atrofia endometrial; lesiones anatómicas (carcinoma, hiperplasia, pólipos)</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1003</span> (tabla 22.3).</p>
+<ul>
+<li>El <strong>ciclo anovulatorio</strong> es la causa más frecuente de hemorragia disfuncional, típico de la menarquia y la perimenopausia; causas menos frecuentes: enfermedad tiroidea o suprarrenal, tumores hipofisarios, tumores ováricos funcionantes (células granulosas), ovarios poliquísticos, obesidad y malnutrición. La anovulación genera estimulación estrogénica sin oposición (sin progesterona, sin cambios secretores ni predecidualización): glándulas seudoestratificadas con dilatación quística y mitosis dispersas, con descomposición estromal. La anovulación crónica predispone a hiperplasia endometrial <span class="cite">p. 1003-1004</span>.</li>
+</ul>
+<h3 id="endometritis">Endometritis</h3>
+<ul>
+<li><strong>Aguda</strong>: infrecuente, tras partos o abortos con productos de la concepción retenidos; gérmenes: estreptococos hemolíticos del grupo A, estafilococos y otros; inflamación inespecífica del estroma; el legrado más antibióticos la resuelven rápido <span class="cite">p. 1004</span>.</li>
+<li><strong>Crónica</strong>: asociada a EIP crónica, tejido gestacional retenido, DIU y tuberculosis (diseminación miliar o salpingitis tuberculosa). El diagnóstico requiere <strong>células plasmáticas</strong> en el estroma, ausentes en el endometrio normal. ~15% no tiene causa aparente ("inespecífica"), posiblemente por <em>Chlamydia</em>, con síntomas de hemorragia anómala, dolor, secreción o infertilidad; si hay sospecha clínica, los antibióticos se indican aun con cultivos negativos <span class="cite">p. 1004</span>.</li>
+</ul>
+<h3 id="endometriosis-y-adenomiosis">Endometriosis y adenomiosis</h3>
+<ul>
+<li><strong>Endometriosis</strong>: tejido endometrial ectópico (glándulas y estroma, a veces solo estroma) fuera del útero, en orden decreciente de frecuencia: ovarios, ligamentos uterinos, tabique rectovaginal, fondo de saco, peritoneo pélvico, serosa intestinal y apéndice, mucosa de cérvix, vagina y trompas, y cicatrices de laparotomía. Afecta ~10% de las mujeres, sobre todo en la 3ª-4ª décadas; causa infertilidad, dismenorrea y dolor pélvico <span class="cite">p. 1004</span>.</li>
+<li>Tres tipos: endometriosis peritoneal superficial, ovárica e infiltrante profunda; las formas superficial y ovárica rara vez se asocian a neoplasia maligna, y la transformación es extremadamente rara en la infiltrante profunda <span class="cite">p. 1004</span>.</li>
+<li><strong>Patogenia</strong>, teorías: <span class="cite">p. 1005</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuerpo del útero y endometrio" tabindex="0"><table>
+<thead>
+<tr>
+<th>Teoría</th>
+<th>Postulado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regurgitación</td>
+<td>Implantación de endometrio menstrual por flujo retrógrado tubárico; explica la mayoría de los casos</td>
+</tr>
+<tr>
+<td>Metástasis benignas</td>
+<td>Diseminación linfohematógica a zonas distantes (hueso, pulmón, encéfalo)</td>
+</tr>
+<tr>
+<td>Metaplásica</td>
+<td>Origen directo del epitelio celómico o de restos mesonéfricos</td>
+</tr>
+<tr>
+<td>Células madre extrauterinas</td>
+<td>Células progenitoras de la médula ósea se diferencian a tejido endometrial</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1005</span>.</p>
+<ul>
+<li>Argumentos contra la teoría de la regurgitación como causa única: endometriosis en amenorrea (disgenesia gonadal), en el urogenital de hombres tratados con estrógenos, en sitios distantes, y baja incidencia relativa pese a menstruación retrógrada en hasta 90% de las mujeres <span class="cite">p. 1005</span>.</li>
+<li>Biología de los implantes (fig. 22.22): liberan factores proinflamatorios y angiogénicos (PGE2, IL-1β, TNF, IL-6, IL-8, NGF, VEGF, MCP-1, MMP, TIMP), con macrófagos reclutados; dependen de angiogenia (VEGF) y remodelación de la matriz (MMP); producen <strong>estrógenos y ácido retinoico</strong> por <strong>aromatasa</strong>, enzima ausente en el estroma endometrial normal (los inhibidores de la aromatasa son útiles en el tratamiento); hay alteraciones epigenéticas que aumentan la respuesta a estrógenos y reducen la respuesta a progesterona, presentes también en el endometrio eutópico, lo que indica un defecto fundamental del endometrio <span class="cite">p. 1005</span>.</li>
+<li>Mutaciones de <em>KRAS</em>, <em>PIK3CA</em>, <em>PPP2R1A</em> y <em>ARID1A</em> se han hallado en la endometriosis infiltrante profunda; la asociación epidemiológica entre endometriosis y cáncer ovárico endometrioide y de células claras muestra un incremento cercano al triple, y en algunos casos el carcinoma comparte las mismas mutaciones que la endometriosis asociada <span class="cite">p. 1005</span>.</li>
+<li>Morfología: lesiones que sangran cíclicamente, nódulos rojo-azulados a amarillo-marrones; hemorragia organizada con adherencias fibrosas entre trompas, ovarios y otras estructuras y obliteración del fondo de saco de Douglas; los ovarios pueden distorsionarse con quistes de 3-5 cm con líquido marrón (<strong>quistes de chocolate o endometriomas</strong>) <span class="cite">p. 1005-1006</span>.</li>
+<li>Diagnóstico histológico: glándulas y estroma endometrial juntos, con o sin hemosiderina (fig. 22.21); si solo hay estroma basta; si solo hay glándulas, considerar endosalpingiosis. La <strong>endometriosis atípica</strong>, probable precursor del carcinoma ovárico relacionado, muestra atipia citológica del revestimiento quístico o agrupamiento glandular similar a la hiperplasia atípica compleja <span class="cite">p. 1006</span>.</li>
+<li>Clínica: dismenorrea intensa, dispareunia, dolor pélvico, irregularidades menstruales; infertilidad como motivo de consulta en 30-40%; pueden desarrollarse neoplasias malignas en los endometriomas <span class="cite">p. 1006</span>.</li>
+<li><strong>Adenomiosis</strong>: tejido endometrial dentro del miometrio, en continuidad con el endometrio, presente en 20% de los úteros; nidos irregulares de estroma endometrial con o sin glándulas entre fascículos de músculo liso; síntomas de menometrorragia y dismenorrea; puede coexistir con endometriosis <span class="cite">p. 1006</span>.</li>
+</ul>
+<figure class="fig" id="fig-22-22">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-22.webp" data-caption="Figura 22.22. Patogenia de la endometriosis: interacción entre los factores expresados en los implantes endometriósicos (PGE2, IL-1β, IL-6, IL-8, VEGF, MMP, aromatasa) y los macrófagos activados." data-alt="Figura 22.22. Patogenia de la endometriosis: interacción entre los factores expresados en los implantes endometriósicos (PGE2, IL-1β, IL-6, IL-8, VEGF, MMP, aromatasa) y los macrófagos activados. Robbins y Cotran, 10ª ed., p. 1005.">
+    <img src="../assets/fig/cap22/fig-22-22.webp" width="752" height="689" loading="lazy" decoding="async" alt="Figura 22.22. Patogenia de la endometriosis: interacción entre los factores expresados en los implantes endometriósicos (PGE2, IL-1β, IL-6, IL-8, VEGF, MMP, aromatasa) y los macrófagos activados. Robbins y Cotran, 10ª ed., p. 1005.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.22.</strong> Patogenia de la endometriosis: interacción entre los factores expresados en los implantes endometriósicos (PGE2, IL-1β, IL-6, IL-8, VEGF, MMP, aromatasa) y los macrófagos activados.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1005. <a href="../creditos.html#fig-22-22">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="pólipos-endometriales">Pólipos endometriales</h3>
+<ul>
+<li>Masas exofíticas en la cavidad endometrial, únicas o múltiples, sésiles de 0,5-3 cm o pediculadas; asintomáticos o con hemorragia anómala e infertilidad <span class="cite">p. 1006</span>.</li>
+<li>Los reordenamientos cromosómicos de sus células estromales indican que son neoplasias; responden a estrógenos con respuesta escasa o nula a progesterona; se asocian a <strong>tamoxifeno</strong> (efecto proestrogénico débil en el endometrio); los pólipos atróficos son restos posmenopáusicos; rara vez surge adenocarcinoma en ellos <span class="cite">p. 1006</span>.</li>
+</ul>
+<h3 id="hiperplasia-endometrial">Hiperplasia endometrial</h3>
+<ul>
+<li>Proliferación anómala de glándulas respecto al estroma (aumento de la relación glándulas/estroma); causa importante de hemorragia anómala y precursora habitual del carcinoma endometrial más frecuente; comparte con él mutaciones conductoras <span class="cite">p. 1006</span>.</li>
+<li>Asociada a estimulación estrogénica prolongada: obesidad (conversión periférica de andrógenos), menopausia, síndrome del ovario poliquístico, tumor de células granulosas funcionante, hiperplasia estromal cortical y terapia de reemplazo estrogénica <span class="cite">p. 1006</span>.</li>
+<li><strong>PTEN</strong>: inactivación común a la hiperplasia y al carcinoma endometrioide; mutaciones de PTEN en &gt;20% de las hiperplasias (con y sin atipia) y en 30-80% de los carcinomas endometrioides, indicando un evento precoz (aunque no predictivo de progresión). Las pacientes con <strong>síndrome de Cowden</strong> (PTEN en línea germinal) tienen incidencia elevada de carcinoma de endometrio y mama; la pérdida de PTEN potencia la señalización PI3K/AKT y amplifica la expresión génica dependiente de estrógenos <span class="cite">p. 1006-1007</span>.</li>
+<li>Clasificación OMS: <span class="cite">p. 1007-1008</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuerpo del útero y endometrio" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Hiperplasia típica</th>
+<th>Hiperplasia atípica (neoplasia intraepitelial endometrial)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arquitectura</td>
+<td>Glándulas de tamaño y forma variables, a veces quísticas, estroma interpuesto</td>
+<td>Glándulas adosadas, ramificadas, complejas</td>
+</tr>
+<tr>
+<td>Citología</td>
+<td>Similar al endometrio proliferativo</td>
+<td>Núcleos redondeados, vesiculosos, nucléolos prominentes; pérdida de polaridad</td>
+</tr>
+<tr>
+<td>Riesgo de carcinoma</td>
+<td>Rara vez (1-3%)</td>
+<td>Hasta 50% de carcinoma en la histerectomía</td>
+</tr>
+<tr>
+<td>Manejo</td>
+<td>Vigilancia; puede evolucionar a atrofia quística</td>
+<td>Histerectomía o progestágenos más seguimiento estrecho en mujeres que desean gestación</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1007-1008</span>.</p>
+<ul>
+<li>La hiperplasia atípica se solapa con el adenocarcinoma endometrial bien diferenciado y a veces no es distinguible sin histerectomía (fig. 22.23) <span class="cite">p. 1007-1008</span>.</li>
+</ul>
+<h3 id="carcinoma-de-endometrio">Carcinoma de endometrio</h3>
+<ul>
+<li>Cáncer invasivo más frecuente del aparato genital femenino; 7% de los cánceres invasivos en mujeres; en EE. UU. se previeron 61.880 casos y 12.160 muertes en 2019; &gt;380.000 casos nuevos en el mundo en 2018 <span class="cite">p. 1008</span>.</li>
+<li>Dos categorías (tabla 22.4): <span class="cite">p. 1008</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuerpo del útero y endometrio" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Tipo I</th>
+<th>Tipo II</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edad</td>
+<td>55-65 años</td>
+<td>65-75 años</td>
+</tr>
+<tr>
+<td>Trasfondo clínico</td>
+<td>Estimulación estrogénica sin oposición; obesidad, hipertensión, diabetes</td>
+<td>Atrofia; hábito delgado</td>
+</tr>
+<tr>
+<td>Morfología</td>
+<td>Endometrioide (también células claras, tumor múlleriano mixto)</td>
+<td>Seroso; células claras; tumor múlleriano mixto</td>
+</tr>
+<tr>
+<td>Precursor</td>
+<td>Hiperplasia</td>
+<td>Carcinoma intraepitelial endometrial seroso</td>
+</tr>
+<tr>
+<td>Genes</td>
+<td>PTEN, ARID1A, PIK3CA, FBXW7, KRAS, CTNNB1, POLE, IMS</td>
+<td>TP53, aneuploidía, CCNE1, FGF2, PPP2R1A</td>
+</tr>
+<tr>
+<td>Comportamiento</td>
+<td>Crecimiento lento; diseminación linfática</td>
+<td>Agresivo; diseminación intraperitoneal y linfática</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1008</span> (tabla 22.4).</p>
+<ul>
+<li>Cuatro subtipos moleculares de los carcinomas endometrioides y serosos: <span class="cite">p. 1008</span>. <strong>ultramutados/POLE</strong> (mutaciones de la polimerasa con carga mutacional excepcionalmente alta); <strong>hipermutados/IMS</strong> (defectos de reparación de errores de emparejamiento); <strong>bajo número de copias/EMS</strong> (endometrioide frecuente, vía PI3K/AKT regulada al alza); <strong>alto número de copias/seroso</strong> (agresivos, TP53 mutado, alteraciones del número de copias).</li>
+</ul>
+<h4 id="carcinoma-endometrioide-tipo-i">Carcinoma endometrioide (tipo I)</h4>
+<ul>
+<li>80-85% de los carcinomas de endometrio; bien diferenciado, similar a glándulas proliferativas; surge en contexto de hiperplasia con estimulación estrogénica sin oposición; el factor más destacado es la <strong>obesidad</strong>, con hipertensión y diabetes tipo 2 concomitantes <span class="cite">p. 1008-1009</span>.</li>
+<li>Las mutaciones idénticas de PTEN en la hiperplasia atípica y el carcinoma en piezas de histerectomía apoyan la progresión precursor → carcinoma (fig. 22.24) <span class="cite">p. 1009</span>.</li>
+<li>La señal distintiva es la vía <strong>PI3K/AKT</strong>: mutaciones de PTEN en 30-80%; <strong>PIK3CA</strong> (subunidad catalítica de PI3K) activadora en ~40% (casi nunca en hiperplasia atípica, sugiriendo rol en la transformación maligna); <strong>KRAS</strong> activador en ~25%; <strong>ARID1A</strong> con pérdida de función en ~un tercio (también mutado en carcinomas endometrioides y de células claras ováricos derivados de endometriosis). El 20% de los tumores esporádicos tiene defectos de los genes de reparación de errores de replicación, habitualmente por hipermetilación del promotor (p. ej., <strong>MLH1</strong>); 3-5% corresponde al <strong>síndrome de Lynch</strong>. Las mutaciones de <strong>TP53</strong> (~50% de los mal diferenciados) son eventos tardíos de progresión; <strong>POLE</strong> mutado en &lt;10% con la mayor carga mutacional de los cánceres humanos <span class="cite">p. 1009-1010</span>.</li>
+<li>Morfología: masa polipoidea localizada o compromiso difuso del revestimiento; diseminación por invasión miometrial, luego extensión directa, ganglios regionales y metástasis a pulmón, hígado y hueso. Gradación histológica: grado 1 (&lt;5% de patrón sólido), grado 2 (5-50% sólido) y grado 3 (&gt;50% sólido). Hasta 20% contiene focos de diferenciación escamosa, que no se gradúan; los tumores POLE o con defectos de reparación tienen infiltrado linfocitario T abundante (fig. 22.25) <span class="cite">p. 1010</span>.</li>
+</ul>
+<figure class="fig" id="fig-22-24">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-24.webp" data-caption="Figura 22.24. Desarrollo esquemático del carcinoma endometrial de tipo I (hiperplasia atípica con PTEN, MLH1, PIK3CA, KRAS) y de tipo II (endometrio atrófico con TP53, FBXW7, CCNE1)." data-alt="Figura 22.24. Desarrollo esquemático del carcinoma endometrial de tipo I (hiperplasia atípica con PTEN, MLH1, PIK3CA, KRAS) y de tipo II (endometrio atrófico con TP53, FBXW7, CCNE1). Robbins y Cotran, 10ª ed., p. 1009.">
+    <img src="../assets/fig/cap22/fig-22-24.webp" width="1460" height="875" loading="lazy" decoding="async" alt="Figura 22.24. Desarrollo esquemático del carcinoma endometrial de tipo I (hiperplasia atípica con PTEN, MLH1, PIK3CA, KRAS) y de tipo II (endometrio atrófico con TP53, FBXW7, CCNE1). Robbins y Cotran, 10ª ed., p. 1009.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.24.</strong> Desarrollo esquemático del carcinoma endometrial de tipo I (hiperplasia atípica con PTEN, MLH1, PIK3CA, KRAS) y de tipo II (endometrio atrófico con TP53, FBXW7, CCNE1).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1009. <a href="../creditos.html#fig-22-24">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h4 id="carcinoma-seroso-endometrial-tipo-ii">Carcinoma seroso endometrial (tipo II)</h4>
+<ul>
+<li>Afecta a mujeres ~10 años mayores, en contexto de <strong>atrofia endometrial</strong>; por definición grado 3; ~15% de los carcinomas de endometrio; solapa con el carcinoma seroso ovárico <span class="cite">p. 1011</span>.</li>
+<li><strong>TP53</strong> mutado en &gt;90% de los tumores (mutaciones de sentido erróneo con acumulación de p53 detectable por inmunohistoquímica) y en ~75% del <strong>carcinoma intraepitelial endometrial seroso</strong> (precursor in situ), indicando un evento temprano. Se acompañan de inestabilidad cromosómica y alteraciones del número de copias (categoría molecular de alto número de copias/seroso) (fig. 22.26) <span class="cite">p. 1011</span>.</li>
+<li>Se cree que se extiende por regurgitación tubárica a superficies peritoneales como su equivalente ovárico, por lo que con frecuencia hay extensión extrauterina al diagnóstico; puede asociar enfermedad peritoneal extensa con afectación endometrial superficial <span class="cite">p. 1011-1012</span>.</li>
+<li>Clínica y pronóstico: raro antes de los 40 años; pico 55-65 años, posmenopáusicas; no existe cribado; suele debutar con hemorragia posmenopáusica, que permite detección precoz. Estadificación: estadio I limitado al cuerpo uterino, II con cérvix, III fuera del útero sin salir de la pelvis, IV fuera de la pelvis o con mucosa vesical/rectal. ~80% de los tumores son endometrioides bien/moderadamente diferenciados en estadio I; supervivencia a 5 años ~90% (estadio I grado 1-2), ~75% (estadio I grado 3) y ≤50% (estadios II-III). El carcinoma seroso recidiva en 80% incluso limitado al útero y su supervivencia global a 5 años es 18-27%. Las pacientes con carcinoma endometrial deben estudiarse por defectos de reparación, porque el 3-5% tiene síndrome de Lynch y alto riesgo de carcinoma de colon <span class="cite">p. 1012</span>.</li>
+</ul>
+<h4 id="carcinosarcoma-tumor-múlleriano-mixto-maligno">Carcinosarcoma (tumor múlleriano mixto maligno)</h4>
+<ul>
+<li>Tumor mixto epitelial y mesenquimatoso; el componente epitelial imita a un carcinoma endometrioide o seroso poco diferenciado; el mesenquimatoso puede ser homólogo (sarcoma de estroma, leiomiosarcoma) o heterólogo (rabdomiosarcoma, condrosarcoma). Las mutaciones compartidas (PTEN, TP53, PIK3CA) muestran que ambos componentes derivan de una misma célula fundadora: son <strong>carcinomas con diferenciación mesenquimatosa</strong> <span class="cite">p. 1012</span>.</li>
+<li>Voluminosos y polipoideos, pueden protruir por el orificio cervical; las metástasis suelen contener solo el componente epitelial (fig. 22.27). Aparecen en posmenopáusicas con hemorragia; el pronóstico depende de la invasión y el estadio; los componentes heterólogos empeoran el pronóstico; supervivencia global a 5 años de 25-30% en estadio avanzado <span class="cite">p. 1012</span>.</li>
+</ul>
+<h3 id="tumores-del-estroma-endometrial">Tumores del estroma endometrial</h3>
+<ul>
+<li>&lt;5% de los cánceres endometriales. <strong>Adenosarcoma</strong>: gran masa polipoidea de base ancha con estroma maligno y glándulas benignas de formas anómalas; mujeres de la 4ª-5ª décadas; neoplasia de bajo grado con recidivas en un cuarto de los casos, casi siempre pelvianas; principal diagnóstico diferencial: pólipo benigno grande <span class="cite">p. 1013</span>.</li>
+<li><strong>Nódulos estromales</strong>: benignos, bien delimitados. <strong>Sarcoma del estroma endometrial de bajo grado</strong>: se parece al nódulo pero infiltra el miometrio; translocación que fusiona <strong>JAZF1</strong> con genes polycomb (habitualmente <strong>SUZ12</strong>), presumiblemente alterando la represión de oncogenes. <strong>Sarcoma de alto grado</strong>: atipia marcada y otras fusiones. La mitad recidiva (36 a &gt;80% según estadio I a III/IV); no es posible predecir recidivas por índice mitótico ni atipia; metástasis tardías de décadas en ~15%; supervivencia a 5 años ~50% en bajo grado, menor en alto grado <span class="cite">p. 1013-1014</span>.</li>
+</ul>
+<h3 id="leiomioma-y-leiomiosarcoma">Leiomioma y leiomiosarcoma</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuerpo del útero y endometrio" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Leiomioma</th>
+<th>Leiomiosarcoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frecuencia</td>
+<td>Tumor más frecuente en las mujeres</td>
+<td>Infrecuente</td>
+</tr>
+<tr>
+<td>Origen</td>
+<td>Músculo liso, a menudo múltiple</td>
+<td>De novo, desde precursores de miometrio o estroma, no de leiomiomas</td>
+</tr>
+<tr>
+<td>Genética</td>
+<td>Cariotipo normal o anomalía simple (12q14, 6p); <strong>MED12</strong> mutado en ~70%</td>
+<td>Cariotipos complejos con deleciones; MED12 en un subgrupo</td>
+</tr>
+<tr>
+<td>Morfología</td>
+<td>Bien delimitado, redondo, firme, gris blanquecino, patrón espiral de haces; intramural, submucoso o subseroso; mitosis escasas</td>
+<td>Masas carnosas invasoras o polipoideas; atipia variable</td>
+</tr>
+<tr>
+<td>Criterio de malignidad</td>
+<td>No aplica</td>
+<td>≥10 mitosis/10 CGA (400x), o ≥5 con atipia o células epitelioides; necrosis tumoral</td>
+</tr>
+<tr>
+<td>Clínica</td>
+<td>Asintomático o hemorragia anómala, polaquiuria, dolor por infarto, menor fertilidad; en gestación: aborto, mala presentación, inercia uterina, hemorragia posparto</td>
+<td>Recidiva frecuente; metástasis hematógenas a pulmón, hueso, encéfalo; supervivencia a 5 años ~40% (10-15% los anaplásicos)</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1014-1015</span>.</p>
+<figure class="fig" id="fig-22-28">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-28.webp" data-caption="Figura 22.28. Leiomiomas del miometrio uterino: útero abierto con múltiples tumores de localización submucosa e intramural, bien delimitados y de patrón espiral al corte." data-alt="Figura 22.28. Leiomiomas del miometrio uterino: útero abierto con múltiples tumores de localización submucosa e intramural, bien delimitados y de patrón espiral al corte. Robbins y Cotran, 10ª ed., p. 1014.">
+    <img src="../assets/fig/cap22/fig-22-28.webp" width="1417" height="528" loading="lazy" decoding="async" alt="Figura 22.28. Leiomiomas del miometrio uterino: útero abierto con múltiples tumores de localización submucosa e intramural, bien delimitados y de patrón espiral al corte. Robbins y Cotran, 10ª ed., p. 1014.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.28.</strong> Leiomiomas del miometrio uterino: útero abierto con múltiples tumores de localización submucosa e intramural, bien delimitados y de patrón espiral al corte.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1014. <a href="../creditos.html#fig-22-28">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<ul>
+<li>Variantes benignas inusuales: <strong>leiomiomatosis intravenosa</strong> (se extiende a vasos y puede alcanzar vena cava y aurícula derecha) y <strong>leiomiomatosis peritoneal diseminada</strong>; ambas benignas. La transformación maligna del leiomioma es excepcional <span class="cite">p. 1014</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Duelo de cánceres: tipo I contra tipo II</span>El carcinoma endometrioide (tipo I) surge de hiperplasia atípica con estimulación estrogénica, PTEN y vía PI3K/AKT; el seroso (tipo II) surge en endometrio atrófico con TP53 mutado ya en su precursor in situ, disemina por la trompa al peritoneo y recidiva en 80% incluso limitado al útero <span class="cite">p. 1008, 1011-1012</span>.</div>
+</section><section id="sec-07-trompas-de-falopio" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 1015-1016</div>
+<h2>Trompas de Falopio</h2>
+<ul>
+<li>Los trastornos más frecuentes son infecciones e inflamación (salpingitis supurativa, parte de la EIP; gonococo &gt;60% de los casos y <em>Chlamydia</em> la mayoría del resto); la salpingitis tuberculosa es &lt;1-2% en EE. UU. pero causa importante de infertilidad donde la tuberculosis es prevalente <span class="cite">p. 1015</span>.</li>
+<li>Quistes <strong>paratubáricos</strong>: lesiones primarias más frecuentes, translúcidos de 0,1-2 cm; las variantes mayores junto a las fimbrias son las <strong>hidátides de Morgagni</strong>, de restos müllerianos, sin importancia. Tumor benigno infrecuente: <strong>tumor adenomatoide</strong> (mesotelioma) <span class="cite">p. 1016</span>.</li>
+<li>Cambio de paradigma: al menos un subgrupo de los "cánceres ováricos serosos" deriva del epitelio tubárico, avalado por la frecuencia de carcinoma in situ tubárico (CITS) en mujeres de alto riesgo (mutaciones BRCA1) y por el riesgo residual de cáncer "ovárico" cuando no se extirpan las trompas en la ovariectomía <span class="cite">p. 1016</span>.</li>
+</ul>
+
+</section><section id="sec-08-ovario" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 1016-1028</div>
+<h2>Ovario</h2>
+<h3 id="quistes-no-neoplásicos-y-funcionales">Quistes no neoplásicos y funcionales</h3>
+<ul>
+<li><strong>Quistes foliculares</strong>: de folículos de Graaf que no se rompieron o se resellaron; múltiples, hasta 2 cm, serosos; revestidos por células de la granulosa con luteinización de la teca si la presión no causó atrofia; causan dolor pélvico <span class="cite">p. 1016</span>.</li>
+<li><strong>Quistes lúteos</strong>: recubiertos por tejido amarillo luteinizado, propensos a romperse con reacción peritoneal; la hemorragia antigua y fibrosis pueden confundirlos con quistes endometriósicos <span class="cite">p. 1016</span>.</li>
+<li><strong>Síndrome del ovario poliquístico (SOPQ)</strong>: endocrinopatía compleja con hiperandrogenismo, alteraciones menstruales, ovarios poliquísticos, anovulación crónica y disminución de la fertilidad; 6-10% de las mujeres en edad fértil; asociado a obesidad, diabetes tipo 2 y ateroesclerosis prematura. Patogenia: desregulación de la biosíntesis de andrógenos, resistencia a la insulina y alteración del metabolismo adiposo. Los ovarios poliquísticos se detectan en 20-30% de las mujeres (inespecífico); el aumento de estrona libre predispone a <strong>hiperplasia y carcinoma de endometrio</strong> <span class="cite">p. 1016</span>.</li>
+<li><strong>Hipertecosis estromal</strong>: ovarios aumentados de tamaño, bilaterales (hasta 7 cm), estroma hipercelular con nidos de células luteinizadas; clínica similar al SOPQ con virilización incluso más llamativa <span class="cite">p. 1016</span>.</li>
+</ul>
+<h3 id="clasificación-de-los-tumores-ováricos">Clasificación de los tumores ováricos</h3>
+<ul>
+<li>El cáncer de ovario es el 3% de los cánceres femeninos y la quinta causa de muerte por cáncer en mujeres estadounidenses; la mayoría se diagnostican extendidos fuera del ovario y la trompa, con un número desproporcionado de muertes <span class="cite">p. 1017</span>.</li>
+<li>Clasificación según el origen (tabla 22.5): tumores del <strong>epitelio superficial-estroma</strong> (serosos, mucinosos, endometrioides, células claras, transicionales/Brenner), <strong>cordones sexuales-estroma</strong> (granulosa, fibromas, tecomas, Sertoli-Leydig, células esteroideas), <strong>células germinales</strong> (teratoma, disgerminoma, tumor del saco vitelino, mixtos) y <strong>metástasis</strong> <span class="cite">p. 1017</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Ovario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>% de tumores ováricos</th>
+<th>Bilateralidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seroso (benigno 60%, borderline 15%, maligno 25%)</td>
+<td>25</td>
+<td>20% benigno, 30% borderline, 65% maligno</td>
+</tr>
+<tr>
+<td>Mucinoso (benigno 80%, borderline 10%, maligno 10%)</td>
+<td>5</td>
+<td>~3%, &lt;5%</td>
+</tr>
+<tr>
+<td>Carcinoma endometrioide</td>
+<td>20</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Carcinoma indiferenciado</td>
+<td>10</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Carcinoma de células claras</td>
+<td>6</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>Tumor de células de la granulosa</td>
+<td>5</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>Teratoma (96% benigno)</td>
+<td>15</td>
+<td>1%, infrecuente</td>
+</tr>
+<tr>
+<td>Metastásico</td>
+<td>5</td>
+<td>&gt;50%</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1017</span> (tabla 22.6).</p>
+<ul>
+<li>Los carcinomas ováricos se dividen en <strong>tipo I</strong> (bajo grado, asociados a tumores borderline o endometriosis: serosos, endometrioides y mucinosos de bajo grado) y <strong>tipo II</strong> (alto grado, serosos en su mayoría, que surgen de CITS o quistes de inclusión, con precursores intraepiteliales frecuentemente no identificados) (fig. 22.30) <span class="cite">p. 1018</span>.</li>
+</ul>
+<figure class="fig" id="fig-22-30">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-30.webp" data-caption="Figura 22.30. Patogenia de los tumores epiteliales ováricos: los tumores de tipo I progresan de benignos a borderline y carcinomas de bajo grado; los de tipo II surgen de quistes de inclusión o del epitelio de la trompa (CITS)." data-alt="Figura 22.30. Patogenia de los tumores epiteliales ováricos: los tumores de tipo I progresan de benignos a borderline y carcinomas de bajo grado; los de tipo II surgen de quistes de inclusión o del epitelio de la trompa (CITS). Robbins y Cotran, 10ª ed., p. 1018.">
+    <img src="../assets/fig/cap22/fig-22-30.webp" width="714" height="645" loading="lazy" decoding="async" alt="Figura 22.30. Patogenia de los tumores epiteliales ováricos: los tumores de tipo I progresan de benignos a borderline y carcinomas de bajo grado; los de tipo II surgen de quistes de inclusión o del epitelio de la trompa (CITS). Robbins y Cotran, 10ª ed., p. 1018.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.30.</strong> Patogenia de los tumores epiteliales ováricos: los tumores de tipo I progresan de benignos a borderline y carcinomas de bajo grado; los de tipo II surgen de quistes de inclusión o del epitelio de la trompa (CITS).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1018. <a href="../creditos.html#fig-22-30">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="tumores-serosos">Tumores serosos</h3>
+<ul>
+<li>Tumores ováricos malignos más frecuentes (~40% de los cánceres de ovario); benigno + borderline + maligno suman ~30% de todos los tumores ováricos; ~70% benignos o borderline. Benignos y borderline: 20-45 años; carcinomas más tardíos, salvo casos familiares <span class="cite">p. 1018</span>.</li>
+<li>Factores de riesgo del carcinoma: nuliparidad, antecedentes familiares y mutaciones heredadas; <strong>BRCA1/2</strong> en línea germinal aumentan el riesgo de cáncer de ovario a 20-60% a los 70 años (BRCA1 mutado en ~5% de las pacientes &lt;70 años); anticonceptivos orales y ligadura de trompas reducen el riesgo <span class="cite">p. 1018</span>.</li>
+<li>Carcinoma seroso de <strong>alto grado</strong>: surge de lesiones in situ en las fimbrias tubáricas (<strong>CITS</strong>) o de quistes de inclusión serosos; el concepto nació al encontrar atipia tubárica significativa (CITS) en ovariosalpingectomías profilácticas de portadoras de BRCA1/2. Esto motivó cambiar de ovariectomía a <strong>ovariosalpingectomía</strong> en mujeres de alto riesgo. Alternativa para los quistes de inclusión: implantación de epitelio tubárico desprendido sobre la superficie ovárica postovulatoria (fig. 22.31) <span class="cite">p. 1018</span>.</li>
+<li>Genética: los de bajo grado (desde tumores borderline) tienen mutaciones de <strong>KRAS, BRAF o ERBB2</strong> con TP53 nativo; los de alto grado presentan <strong>TP53</strong> mutado con alta frecuencia, sin KRAS/BRAF, con amplificaciones (PIK3CA) y deleciones (RB). Casi todos los carcinomas de portadoras de BRCA1/2 son serosos de alto grado con TP53 mutado; las mutaciones de BRCA son infrecuentes en los esporádicos <span class="cite">p. 1019</span>.</li>
+<li>Morfología: lesiones multiquísticas con epitelio papilar intraquístico o masas superficiales; los benignos tienen pared lisa con papilas mínimas; los borderline, más papilas; los malignos, áreas sólidas, irregularidad y adherencia capsular. Bilateralidad: 20% de cistoadenomas benignos, 30% de borderline, ~66% de carcinomas. Los borderline muestran estratificación y atipia leve <strong>sin invasión estromal</strong>; el patrón <strong>micropapilar</strong> complejo es precursor del carcinoma seroso de bajo grado; el carcinoma de alto grado invade el estroma con atipia marcada. Los <strong>cuerpos de psamoma</strong> (calcificaciones concéntricas) son frecuentes pero no específicos (figs. 22.32 y 22.33) <span class="cite">p. 1019-1020</span>.</li>
+<li>Diseminación a superficie peritoneal y epiplón con ascitis; el estadio depende de la extensión extraovárica. Supervivencia a 5 años: borderline limitado al ovario 100% vs ~90% con peritoneo; carcinoma limitado 70% vs ~25% con peritoneo. Los borderline pueden recidivar después de muchos años; la supervivencia a 5 años no es sinónimo de curación <span class="cite">p. 1020</span>.</li>
+</ul>
+<h3 id="tumores-mucinosos">Tumores mucinosos</h3>
+<ul>
+<li>20-25% de las neoplasias ováricas; la gran mayoría benignos o borderline; el carcinoma mucinoso primario es ~3% de los cánceres de ovario <span class="cite">p. 1020</span>.</li>
+<li><strong>KRAS</strong> mutado es constante: 58% de los cistoadenomas benignos, 75-86% de los borderline y 85% de los carcinomas, con mutaciones idénticas en las áreas benignas, borderline y carcinomatosas de un mismo tumor <span class="cite">p. 1020</span>.</li>
+<li>Morfología: superficie ovárica casi nunca afectada; solo 5% bilaterales (la bilateralidad obliga a descartar metástasis); masas quísticas multiloculadas muy grandes (algunas &gt;25 kg) con líquido gelatinoso rico en glucoproteínas; revestidas por células cilíndricas altas con mucina apical, sin cilios, con diferenciación gástrica o intestinal (fig. 22.34) <span class="cite">p. 1020-1021</span>.</li>
+<li>Invasión "por expansión" con glándulas confluyentes define el carcinoma; los "carcinomas intraepiteliales" no invasivos y los estadio I tienen supervivencia a 10 años &gt;95% y &gt;90% respectivamente; los diseminados suelen ser mortales <span class="cite">p. 1021</span>.</li>
+<li><strong>Seudomixoma peritoneal</strong>: ascitis mucinosa, implantes quísticos peritoneales, adherencias y afectación ovárica frecuente; puede causar obstrucción intestinal y muerte; su origen es casi siempre <strong>extraovárico, habitualmente apendicular</strong> (fig. 22.35) <span class="cite">p. 1021</span>.</li>
+</ul>
+<h3 id="tumores-endometrioides-y-de-células-claras">Tumores endometrioides y de células claras</h3>
+<ul>
+<li>El carcinoma endometrioide ovárico es el 10-15% de los cánceres de ovario; 15-30% se asocian a carcinoma de endometrio sincrónico, que en la mayoría de los casos representa extensión metastásica del tumor endometrial primario <span class="cite">p. 1021</span>.</li>
+<li>15-20% coexisten con endometriosis, y los casos asociados se presentan una década antes, apoyando a la endometriosis como precursora; comparten con el carcinoma endometrioide endometrial las mutaciones de PTEN, PIK3CA, ARID1A y KRAS. El 40% son bilaterales, lo que suele implicar extensión fuera del aparato genital; supervivencia a 5 años en estadio I ~75% <span class="cite">p. 1021</span>.</li>
+<li><strong>Carcinoma de células claras</strong>: infrecuente, células grandes de citoplasma transparente que recuerdan al endometrio gestacional hipersecretor; asociado a endometriosis; mismas aberraciones genéticas que el endometrioide (PIK3CA, ARID1A, KRAS, PTEN, TP53); supervivencia del 90% a 5 años limitado al ovario, peor en estadios avanzados <span class="cite">p. 1021-1022</span>.</li>
+</ul>
+<h3 id="tumores-de-brenner-células-transicionales">Tumores de Brenner (células transicionales)</h3>
+<ul>
+<li>~10% de los tumores epiteliales ováricos; células parecidas al urotelio, habitualmente benignos, unilaterales (~90%), de &lt;1 cm a 20-30 cm; estroma fibroso con nidos bien delimitados de epitelio transicional, a menudo con glándulas mucinosas centrales (fig. 22.36) <span class="cite">p. 1022</span>.</li>
+<li>Tumores de Brenner malignos (nidos benignos más células malignas) se presentan en estadio I y equivalen a carcinomas de bajo grado (tipo I); los carcinomas de células transicionales (&gt;50% de epitelio transición maligno) se equiparan a los de alto grado (tipo II), en estadios avanzados <span class="cite">p. 1022</span>.</li>
+</ul>
+<h3 id="evolución-clínica-y-prevención-de-los-tumores-epiteliales">Evolución clínica y prevención de los tumores epiteliales</h3>
+<ul>
+<li>Síntomas: dolor bajo el abdomen, aumento del perímetro abdominal, síntomas urinarios y digestivos, hemorragia vaginal; con implantación peritoneal, ascitis (a veces masiva) con células tumorales descamadas; siembra peritoneal de nódulos de 0,1-0,5 cm; metástasis contralateral en ~la mitad de los casos durante la cirugía <span class="cite">p. 1022</span>.</li>
+<li>La mayoría se manifiesta en estadio avanzado, causa del mal pronóstico relativo frente al cervical y endometrial; ningún marcador tiene la sensibilidad y especificidad suficientes; el <strong>CA-125</strong> se usa para vigilar recidivas en cáncer ya conocido; la prevención en alto riesgo (BRCA, antecedentes familiares) es la <strong>ovariosalpingectomía reductora del riesgo</strong>, aunque puede persistir un riesgo de 3-4% <span class="cite">p. 1023</span>.</li>
+</ul>
+<h3 id="tumores-de-células-germinales">Tumores de células germinales</h3>
+<ul>
+<li>15-20% de los tumores ováricos; la mayoría teratomas quísticos benignos; los malignos predominan en niñas y mujeres jóvenes; comparten morfología y biología molecular con los tumores de células germinales testiculares. La histogenia (fig. 22.37) deriva de la célula germinal hacia estructuras embrionarias (teratoma, carcinoma embrionario) o extraembrionarias (tumor del saco vitelino, coriocarcinoma) <span class="cite">p. 1023</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Ovario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tumor</th>
+<th>Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Teratoma maduro (quiste dermoide)</td>
+<td>Quiste con pelo y material sebáceo; bilateral 10-15%; malignización ~1% (habitualmente carcinoma epidermoide)</td>
+</tr>
+<tr>
+<td>Teratoma monodérmico</td>
+<td>Estruma ovárico (tejido tiroideo funcional) y carcinoide (síndrome carcinoide sin metástasis hepáticas si &gt;7 cm)</td>
+</tr>
+<tr>
+<td>Teratoma inmaduro</td>
+<td>Adolescente/joven (edad media 18 años); tejido embrionario inmaduro, neuroepitelio primitivo; grado histológico predice diseminación</td>
+</tr>
+<tr>
+<td>Disgerminoma</td>
+<td>Homólogo del seminoma; 2% de los cánceres de ovario; OCT3/4, NANOG, KIT; 30% con mutaciones activadoras de KIT; curación 96% si estadio I</td>
+</tr>
+<tr>
+<td>Tumor del saco vitelino</td>
+<td>Segundo tumor germin maligno; elabora alfa-fetoproteína; cuerpos de Schiller-Duval</td>
+</tr>
+<tr>
+<td>Coriocarcinoma ovárico</td>
+<td>Diferenciación extraembrionaria; hCG elevada; agresivo, resistente a quimioterapia</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1023-1026</span>.</p>
+<ul>
+<li>Teratoma maduro: quiste de una cavidad con pared de epidermis, anejos, pelo, estructuras dentarias y calcificaciones; cartílago, hueso, tiroides y tejido nervioso identificables (figs. 22.38 y 22.39). Cariotipo 46,XX; origen en un óvulo tras (o antes de) la primera división meiótica. Asociado raramente a <strong>encefalitis límbica</strong> paraneoplásica que remite al extirpar el tumor <span class="cite">p. 1023-1024</span>.</li>
+<li>Teratoma inmaduro: voluminoso, sólido, con necrosis y hemorragia; tejidos inmaduros (neuroepitelio, cartílago, hueso, músculo); el <strong>grado histológico (I a III) según la proporción de neuroepitelio inmaduro</strong> es el factor de riesgo de diseminación; los estadio I de bajo grado tienen pronóstico excelente; las recidivas ocurren en los primeros 2 años (fig. 22.40) <span class="cite">p. 1024</span>.</li>
+<li>Disgerminoma: células grandes vesiculosas de citoplasma claro en láminas con estroma infiltrado por linfocitos y granulomas no necrosantes; todos son malignos, pero solo ~un tercio se comporta agresivamente; la ovariosalpingectomía simple cura el 96% de los tumores encapsulados; responden a quimioterapia; supervivencia global &gt;80% (fig. 22.41) <span class="cite">p. 1024-1025</span>.</li>
+<li>Tumor del saco vitelino: produce <strong>alfa-fetoproteína</strong>; su sello es el <strong>cuerpo de Schiller-Duval</strong> (vaso central envuelto por células tumorales dentro de un espacio revestido también por células tumorales) con gotículas hialinas; niñas y jóvenes con masa pélvica de crecimiento rápido; quimioterapia de combinación logra supervivencia &gt;80% en cualquier estadio (fig. 22.42) <span class="cite">p. 1025</span>.</li>
+<li>Coriocarcinoma ovárico: casi siempre junto a otros tumores de células germinales; produce hCG; diseminación hematógena a pulmón, hígado, hueso; no suele responder a quimioterapia y a menudo es mortal, a diferencia del coriocarcinoma placentario <span class="cite">p. 1025</span>.</li>
+</ul>
+<figure class="fig" id="fig-22-38">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-38.webp" data-caption="Figura 22.38. Teratoma quístico maduro (quiste dermoide) de ovario abierto: quiste con pelo y mezcla de tejidos evidente al corte." data-alt="Figura 22.38. Teratoma quístico maduro (quiste dermoide) de ovario abierto: quiste con pelo y mezcla de tejidos evidente al corte. Robbins y Cotran, 10ª ed., p. 1023.">
+    <img src="../assets/fig/cap22/fig-22-38.webp" width="751" height="478" loading="lazy" decoding="async" alt="Figura 22.38. Teratoma quístico maduro (quiste dermoide) de ovario abierto: quiste con pelo y mezcla de tejidos evidente al corte. Robbins y Cotran, 10ª ed., p. 1023.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.38.</strong> Teratoma quístico maduro (quiste dermoide) de ovario abierto: quiste con pelo y mezcla de tejidos evidente al corte.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1023. <a href="../creditos.html#fig-22-38">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="tumores-de-los-cordones-sexuales-estroma">Tumores de los cordones sexuales-estroma</h3>
+<ul>
+<li>Derivan del estroma ovárico de los cordones sexuales; pueden ser feminizantes (teca/granulosa) o masculinizantes (Leydig) <span class="cite">p. 1026</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Ovario" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tumor</th>
+<th>Hormona/clave</th>
+<th>Datos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tumor de células de la granulosa (tipo adulto 95%)</td>
+<td>Estrógenos (a veces andrógenos)</td>
+<td>~5% de los tumores ováricos; 2/3 en posmenopáusicas; cuerpos de Call-Exner; inhibina elevada; FOXL2 mutado en 97% del tipo adulto; hiperestrogenismo → hiperplasia/carcinoma endometrial en 10-15%; malignidad de 5-25%; recidivas hasta 10-20 años después</td>
+</tr>
+<tr>
+<td>Fibroma</td>
+<td>Inactivo</td>
+<td>4% de los tumores ováricos; unilateral 90%; <strong>síndrome de Meigs</strong> (tumor más ascitis más hidrotórax derecho) en 40% de los &gt;6 cm; asociación con síndrome del nevó basocelular</td>
+</tr>
+<tr>
+<td>Tecoma y fibrotecoma</td>
+<td>Hormonalmente activos (tecomas)</td>
+<td>Células con lípidos; casi nunca malignos</td>
+</tr>
+<tr>
+<td>Tumor de Sertoli-Leydig</td>
+<td>Andrógenos (masculinización, desfeminización)</td>
+<td>Máxima incidencia en la 2ª-3ª décadas; <strong>DICER1</strong> mutado en &gt;50%; &lt;5% de recidivas o metástasis</td>
+</tr>
+<tr>
+<td>Tumor de células hiliares (Leydig puro)</td>
+<td>Testosterona</td>
+<td>Cristaloides de Reinke; casi siempre benigno</td>
+</tr>
+<tr>
+<td>Luteoma de la gestación</td>
+<td>Virilización materna y fetal</td>
+<td>Similar al cuerpo lúteo gestacional</td>
+</tr>
+<tr>
+<td>Gonadoblastoma</td>
+<td>Células germinales y de cordones sexuales</td>
+<td>En disgenesia sexual; 50% con disgerminoma asociado</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1026-1028</span>.</p>
+<ul>
+<li>Tumor de células de la granulosa: células cúbicas a poligonales en cordones, láminas o hileras, con estructuras foliculares rellenas de material acidófilo (<strong>cuerpos de Call-Exner</strong>) que facilitan el diagnóstico; la tinción de <strong>inhibina</strong> confirma el diagnóstico y sirve para seguimiento (fig. 22.43) <span class="cite">p. 1026</span>.</li>
+<li>En niñas prepúberes, los tumores granulosos funcionantes causan desarrollo sexual precoz; en mujeres adultas asocian enfermedad mamaria proliferativa e hiperplasia/carcinoma de endometrio; su evolución es lenta y las recidivas pelvianas pueden reoperarse; supervivencia a 10 años ~85% <span class="cite">p. 1026</span>.</li>
+</ul>
+<h3 id="tumores-metastásicos">Tumores metastásicos</h3>
+<ul>
+<li>Más frecuentes de origen múlleriano: útero, trompa, ovario contralateral y peritoneo pélvico; extramúllerianos: mama y tubo digestivo (colon, estómago, vías biliares, páncreas) <span class="cite">p. 1028</span>.</li>
+<li><strong>Tumor de Krukenberg</strong>: metástasis bilaterales de células en "anillo de sello" productoras de mucina, con más frecuencia de origen gástrico <span class="cite">p. 1028</span>.</li>
+</ul>
+
+</section><section id="sec-09-placenta-y-gestacion" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 1028-1035</div>
+<h2>Placenta y gestación</h2>
+<h3 id="anatomía-placentaria-normal">Anatomía placentaria normal</h3>
+<ul>
+<li>La placenta madura está compuesta por vellosidades coriónicas que crean el contacto entre las circulaciones materna y fetal. La sangre materna entra al espacio intervelloso por arterias espirales endometriales y retorna por venas endometriales; la sangre fetal llega por las dos arterias umbilicales, que se ramifican en arterias coriónicas y capilares vellosos; el intercambio ocurre a través del endotelio capilar y el trofoblasto, sin mezcla de sangre, aunque el ADN fetal libre llega a la circulación materna (figs. 22.46 y 22.47) <span class="cite">p. 1028-1030</span>.</li>
+</ul>
+<h3 id="aborto-espontáneo-y-embarazo-ectópico">Aborto espontáneo y embarazo ectópico</h3>
+<ul>
+<li>Aborto espontáneo: finalización de la gestación antes de la semana 20; 10-15% de las gestaciones clínicas; otro 20% de las gestaciones precoces termina espontáneamente. Causas: anomalías cromosómicas fetales (~50% de los abortos precoces), factores endocrinos maternos (fase lútea defectuosa, diabetes mal controlada), defectos físicos del útero (leiomiomas submucosos, pólipos, malformaciones), trastornos vasculares maternos e infecciones (toxoplasma, micoplasma, listeria, virus); la infección ascendente es frecuente en el segundo trimestre <span class="cite">p. 1029</span>.</li>
+<li><strong>Embarazo ectópico</strong>: implantación extrauterina; el 90% tubárico; 2% de las gestaciones confirmadas. El factor predisponente más importante es la <strong>EIP previa con cicatrices tubáricas</strong> (35-50% de las pacientes); también adherencias peritoneales y DIU (duplica el riesgo). La trompa distendida se rompe con hemorragia intraperitoneal masiva potencialmente mortal; diagnóstico con hCG, ecografía pélvica, biopsia endometrial (decidua sin vellosidades) y laparoscopia; responsable del 4-10% de las muertes asociadas a la gestación <span class="cite">p. 1029-1030</span>.</li>
+</ul>
+<h3 id="trastornos-de-la-segunda-mitad-de-la-gestación">Trastornos de la segunda mitad de la gestación</h3>
+<ul>
+<li>Interrupción del flujo del cordón (nudos, compresión) es mortal para el feto; las infecciones ascendentes de las membranas causan rotura prematura y parto prematuro; el desprendimiento prematuro de placenta normoinserta amenaza la vida de madre y feto; la mala perfusión uteroplacentaria causa desde restricción del crecimiento hasta <strong>preeclampsia</strong> <span class="cite">p. 1030</span>.</li>
+<li><strong>Placentas gemelares</strong>: dicigóticas diamnióticas (fusionadas o no) y monocigóticas diamnióticas o monoamnióticas; en las monocigóticas, las anastomosis vasculares pueden producir <strong>síndrome de transfusión gemelo-gemelo</strong>, con un gemelo hipoperfundido y otro sobrecargado, potencialmente mortal (fig. 22.48) <span class="cite">p. 1030-1031</span>.</li>
+<li><strong>Placenta previa</strong>: implantación en el segmento uterino inferior o cuello, con hemorragia grave del tercer trimestre; la completa obliga a cesárea. <strong>Placenta accreta</strong>: ausencia parcial o total de decidua, con vellosidades adheridas directamente al miometrio; imposibilidad de desprendimiento, hemorragia posparto grave; factores: placenta previa (hasta 60%) y cesárea previa <span class="cite">p. 1031</span>.</li>
+<li><strong>Infecciones placentarias</strong>: por vía ascendente (las más frecuentes, bacterianas, con corioamnionitis aguda de neutrófilos, rotura prematura de membranas y respuesta fetal de vasculitis umbilical) o hematógena (vellositis aguda, p. ej. <em>Listeria</em>; grupo TORCH con vellositis crónica) (fig. 22.49) <span class="cite">p. 1031</span>.</li>
+</ul>
+<h3 id="preeclampsia-y-eclampsia">Preeclampsia y eclampsia</h3>
+<ul>
+<li>Síndrome sistémico de disfunción endotelial materna con hipertensión, edemas y proteinuria; 3-5% de las gestantes, tercer trimestre, con más frecuencia primiparas; con convulsiones se denomina <strong>eclampsia</strong>; otras complicaciones: hipercoagulabilidad, insuficiencia renal aguda y edema pulmonar; ~10% desarrolla <strong>síndrome HELLP</strong> (hemólisis, enzimas hepáticas elevadas, plaquetas bajas). Debe diferenciarse de la hipertensión gestacional sin proteinuria <span class="cite">p. 1031</span>.</li>
+<li><strong>Patogenia</strong> (fig. 22.50): <span class="cite">p. 1032</span>.
+<ul>
+<li><strong>Vasculatura placentaria anómala</strong>: falla de la invasión trofoblástica y de la remodelación de las arterias espirales (los trofoblastos extravellosos normales destruyen el músculo liso y sustituyen el endotelio materno, formando vasos fetomaternos híbridos de gran capacidad); en la preeclampsia la remodelación no ocurre y se instaura isquemia placentaria <span class="cite">p. 1032</span>.</li>
+<li><strong>Desequilibrio angiógeno/antiangiogénico</strong>: la placenta isquémica libera <strong>sFlt1</strong> (tirosina cinasa soluble similar a FMS) y <strong>endoglina soluble</strong>, que antagonizan VEGF y TGF-β; ambos elevados varias veces en preeclampsia; la inhibición de TGF-β reduce el óxido nítrico endotelial y contribuye a la vasoconstricción; su sobreexpresión en ratas reproduce proteinuria nefrótica, hipertensión grave, restricción del crecimiento y rasgos del HELLP <span class="cite">p. 1032</span>.</li>
+<li><strong>Hipercoagulabilidad</strong>: menor producción endotelial de PGI2 (antitrombótica, dependiente de VEGF) y mayor liberación de factores procoagulantes; trombos en arteriolas y capilares de hígado, riñón, encéfalo e hipófisis <span class="cite">p. 1032</span>.</li>
+</ul>
+<figure class="fig" id="fig-22-50">
+  <a class="fig-open" href="../assets/fig/cap22/fig-22-50.webp" data-caption="Figura 22.50. Alteraciones fisiológicas en las arterias espirales uterinas y ausencia de remodelación en la preeclampsia: comparación entre la conversión normal de los vasos por el trofoblasto y la persistencia de túnica muscular." data-alt="Figura 22.50. Alteraciones fisiológicas en las arterias espirales uterinas y ausencia de remodelación en la preeclampsia: comparación entre la conversión normal de los vasos por el trofoblasto y la persistencia de túnica muscular. Robbins y Cotran, 10ª ed., p. 1032.">
+    <img src="../assets/fig/cap22/fig-22-50.webp" width="758" height="1123" loading="lazy" decoding="async" alt="Figura 22.50. Alteraciones fisiológicas en las arterias espirales uterinas y ausencia de remodelación en la preeclampsia: comparación entre la conversión normal de los vasos por el trofoblasto y la persistencia de túnica muscular. Robbins y Cotran, 10ª ed., p. 1032.">
+  </a>
+  <figcaption>
+    <strong>Figura 22.50.</strong> Alteraciones fisiológicas en las arterias espirales uterinas y ausencia de remodelación en la preeclampsia: comparación entre la conversión normal de los vasos por el trofoblasto y la persistencia de túnica muscular.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1032. <a href="../creditos.html#fig-22-50">Ver créditos</a></span>
+  </figcaption>
+</figure></li>
+<li>Morfología placentaria: infartos grandes y numerosos, aumento de nudos sincitiales (cambio isquémico), hematomas retroplacentarios y vasos deciduales anómalos con trombos, ausencia de conversión fisiológica, necrosis fibrinoide y <strong>aterosis aguda</strong> (depósito de lípidos intimal) (fig. 22.51). En el riñón: tumefacción endotelial glomerular, depósitos densos amorfos subendoteliales e hiperplasia mesangial con depósitos de fibrina; trombosis generalizada puede causar <strong>necrosis cortical renal bilateral</strong>; también hemorragias hepáticas subcapsulares y focos hemorrágicos encefálicos <span class="cite">p. 1032-1033</span>.</li>
+<li>Clínica: comienza típicamente después de la semana 34 (antes con mola hidatidiforme o enfermedad renal, hipertensión o coagulopatía previas); hipertensión y edemas, luego proteinuria; cefaleas y alteraciones visuales sugieren gravedad. El tratamiento definitivo es el parto; eclampsia, disfunción de órganos, compromiso fetal o HELLP indican parto independiente de la edad gestacional; el tratamiento antihipertensivo no cambia la evolución. ~20% desarrolla hipertensión y microalbuminuria dentro de 7 años, y se duplica el riesgo cardiovascular y cerebrovascular a largo plazo <span class="cite">p. 1033</span>.</li>
+</ul>
+<h3 id="enfermedad-trofoblástica-de-la-gestación">Enfermedad trofoblástica de la gestación</h3>
+<ul>
+<li>Comprende mola hidatidiforme, mola invasiva, coriocarcinoma y <strong>tumores trofoblásticos del lecho placentario (TTLP)</strong>; proliferación del tejido placentario velloso o trofoblástico con riesgo de enfermedad persistente y coriocarcinoma; se diagnostican por ecografía al inicio de la gestación (promedio 9 semanas); riesgo mayor en adolescentes y mujeres de 40-50 años; 1/1.000-2.000 gestaciones en EE. UU., el doble en el sudeste asiático <span class="cite">p. 1033</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Placenta y gestación" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Mola completa</th>
+<th>Mola parcial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cariotipo</td>
+<td>Diploide, 46,XX (90%, androgenia por duplicación espermática) o 46,XX/XY (dispermia, 10%)</td>
+<td>Triploide (69,XXY) o tetraploide</td>
+</tr>
+<tr>
+<td>Tejido fetal</td>
+<td>Ausente</td>
+<td>Presente</td>
+</tr>
+<tr>
+<td>Vellosidades</td>
+<td>Todas hidrópicas, festoneadas con cisternas, proliferación trofoblástica circunferencial difusa</td>
+<td>Solo parte hidrópicas, proliferación trofoblástica focal</td>
+</tr>
+<tr>
+<td>hCG</td>
+<td>Muy elevada, crecimiento acelerado</td>
+<td>Menor elevación</td>
+</tr>
+<tr>
+<td>Riesgo</td>
+<td>Mola persistente/invasiva 15%; coriocarcinoma 2,5%</td>
+<td>Enfermedad molar persistente; sin coriocarcinoma</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1033-1034</span> (fig. 22.52).</p>
+<ul>
+<li>Morfología: masa friable de estructuras quísticas translúcidas "en racimo de uvas" (vellosidades hidrópicas) (figs. 22.53 y 22.54). Tratamiento: legrado, seguido de vigilancia de hCG durante 6 meses a 1 año; su elevación sostenida indica mola persistente o invasiva <span class="cite">p. 1034</span>.</li>
+<li><strong>Mola invasiva</strong>: invade la pared uterina (e incluso la atraviesa) con vellosidades hidrópicas y proliferación trofoblástica; puede embolizar a pulmón y encéfalo sin comportarse como metástasis verdadera y resolviendo sin quimioterapia; hCG persistentemente elevada; responde bien a la quimioterapia, aunque a veces requiere histerectomía <span class="cite">p. 1034</span>.</li>
+<li><strong>Coriocarcinoma gestacional</strong>: 1/20.000-30.000 gestaciones en EE. UU.; antecedentes: mola completa (50%), aborto (25%), gestación normal (22%), embarazo ectópico (resto). Tumor blando, blanco amarillento, con necrosis y hemorragia extensas, compuesto por <strong>citotrofoblasto y sincitiotrofoblasto neoplásicos sin vellosidades coriónicas</strong>; invade miometrio y vasos (fig. 22.55). Metástasis hematógenas tempranas: pulmón (50%), vagina (30-40%), encéfalo, hígado, hueso y riñón. hCG muy elevada. La quimioterapia logra remisión cercana al 100% y una proporción elevada de curaciones, con gestaciones normales posteriores. El coriocarcinoma no gestacional (germinal) se distingue por la ausencia de ADN paterno y es más resistente <span class="cite">p. 1034-1035</span>.</li>
+<li><strong>TTLP</strong>: &lt;2% de las neoplasias trofoblásticas; proliferación del trofoblasto extravelloso (intermedio), que produce lactógeno placentario humano; masa uterina con hemorragia o amenorrea y hCG moderadamente elevada; puede seguir a gestación normal (mitad de los casos), aborto o mola; pronóstico excelente si es localizada, con fallecimiento en 10-15% por enfermedad diseminada <span class="cite">p. 1035</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Mola completa vs parcial y riesgo de coriocarcinoma</span>La mola completa es diploide androgenética (46,XX, 90%), sin tejido fetal, con hCG muy elevada, riesgo de mola invasiva de 15% y coriocarcinoma de 2,5%; la parcial es triploide con tejido fetal y proliferación trofoblástica focal, y no se asocia a coriocarcinoma <span class="cite">p. 1033-1034</span>.</div>
+</section><section id="sec-10-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 996-1031</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li><strong>VPH/CIN</strong>: memorizar VPH-16 (~60%) y VPH-18 (~10%); E6→p53, E7→RB; ADN episómico en precursoras vs integrado en cáncer; tabla de evolución LSIL/HSIL a 2 años (60/30/10 y 30/60/10); definición de LSIL y HSIL por extensión de células inmaduras; Ki-67 y p16 como tinciones de confirmación <span class="cite">p. 996-999</span>.</li>
+<li><strong>Cribado cervical</strong>: primera citología a los 21 años, luego cada 3 años; prueba de VPH solo desde los 30 años; vacuna hasta los 26 años sin reemplazar el cribado; colposcopia con ácido acético; LSIL se vigila, HSIL se coniza <span class="cite">p. 1000-1001</span>.</li>
+<li><strong>Estadificación cervical</strong> (0 a IV) y su correlación pronóstica: microinfiltrante con conización y 100% de supervivencia; muerte por invasión local con hidronefrosis y uremia, no por metástasis <span class="cite">p. 999-1000</span>.</li>
+<li><strong>Endometrio</strong>: distinguir endometrio proliferativo (mitosis, sin secreción) de secretor (vacuolas subnucleares, glándulas en hoja de sierra, predecidualización) y de endometrio anovulatorio (estimulación estrogénica sin cambios de progesterona) <span class="cite">p. 1001-1004</span>.</li>
+<li><strong>Endometriosis</strong>: tres teorías patogénicas, aromatasa como diana terapéutica, quistes de chocolate, endometriosis atípica como precursora de carcinoma ovárico endometrioide y de células claras; adenomiosis en 20% de los úteros <span class="cite">p. 1004-1006</span>.</li>
+<li><strong>Carcinoma de endometrio</strong>: tabla de tipos I vs II (edad, trasfondo, precursor, genes, comportamiento); PTEN precoz en tipo I; TP53 en &gt;90% del seroso y su precursor in situ; cuatro subtipos moleculares (POLE, IMS, EMS, seroso); sospechar síndrome de Lynch en 3-5% de los casos <span class="cite">p. 1008-1012</span>.</li>
+<li><strong>Leiomioma vs leiomiosarcoma</strong>: criterios de malignidad (≥10 mitosis/10 CGA, atipia, necrosis); el sarcoma no surge del leiomioma; MED12 en ambos <span class="cite">p. 1014-1015</span>.</li>
+<li><strong>Ovario</strong>: clasificación OMS por origen celular; tablas de frecuencia y bilateralidad; modelo dual tipo I (KRAS/BRAF, borderline/endometriosis) vs tipo II (TP53, CITS); cambio de paradigma tubárico y ovariosalpingectomía en BRCA; seudomixoma peritoneal de origen apendicular; mucinoso bilateral = pensar metástasis <span class="cite">p. 1017-1022</span>.</li>
+<li><strong>Tumores germinales y de cordones sexuales</strong>: marcadores (AFP en saco vitelino, hCG en coriocarcinoma, inhibina en granulosa); cuerpos de Schiller-Duval, Call-Exner, cristaloides de Reinke; FOXL2, DICER1, KIT; síndrome de Meigs <span class="cite">p. 1023-1028</span>.</li>
+<li><strong>Placenta</strong>: preeclampsia como falla de remodelación de arterias espirales más sFlt1/endoglina; síndrome HELLP; mola completa (androgenética 46,XX, riesgo de coriocarcinoma 2,5%) vs parcial (triploide, sin coriocarcinoma); seguimiento con hCG; coriocarcinoma gestacional con metástasis pulmonares y curación quimioterápica cercana al 100% <span class="cite">p. 1031-1035</span>.</li>
+</ul>
+
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-22-14" aria-label="Figura 22.14"><img src="../assets/fig/cap22/fig-22-14.webp" loading="lazy" decoding="async" alt="Figura 22.14"><span>Figura 22.14</span></a><a class="fig-thumb" href="#fig-22-16" aria-label="Figura 22.16"><img src="../assets/fig/cap22/fig-22-16.webp" loading="lazy" decoding="async" alt="Figura 22.16"><span>Figura 22.16</span></a><a class="fig-thumb" href="#fig-22-22" aria-label="Figura 22.22"><img src="../assets/fig/cap22/fig-22-22.webp" loading="lazy" decoding="async" alt="Figura 22.22"><span>Figura 22.22</span></a><a class="fig-thumb" href="#fig-22-28" aria-label="Figura 22.28"><img src="../assets/fig/cap22/fig-22-28.webp" loading="lazy" decoding="async" alt="Figura 22.28"><span>Figura 22.28</span></a><a class="fig-thumb" href="#fig-22-24" aria-label="Figura 22.24"><img src="../assets/fig/cap22/fig-22-24.webp" loading="lazy" decoding="async" alt="Figura 22.24"><span>Figura 22.24</span></a><a class="fig-thumb" href="#fig-22-30" aria-label="Figura 22.30"><img src="../assets/fig/cap22/fig-22-30.webp" loading="lazy" decoding="async" alt="Figura 22.30"><span>Figura 22.30</span></a><a class="fig-thumb" href="#fig-22-38" aria-label="Figura 22.38"><img src="../assets/fig/cap22/fig-22-38.webp" loading="lazy" decoding="async" alt="Figura 22.38"><span>Figura 22.38</span></a><a class="fig-thumb" href="#fig-22-50" aria-label="Figura 22.50"><img src="../assets/fig/cap22/fig-22-50.webp" loading="lazy" decoding="async" alt="Figura 22.50"><span>Figura 22.50</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

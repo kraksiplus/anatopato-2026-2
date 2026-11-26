@@ -1,0 +1,36 @@
+{
+  "page_id": "c2-24",
+  "essentials": [
+    "Adenoma hipofisario: monomorfismo celular y ausencia de reticulina; GNAS en somatótropos (40%) y USP8 en corticótropos (30-60%); la apoplejía hipofisaria es urgencia neuroquirúrgica [p. 1067, 1068-1070].",
+    "Enfermedad de Graves: TSI contra el receptor de TSH en ~90% de los casos, triada de tirotoxicosis, oftalmopatía infiltrante y dermopatía; captación difusa de radioyodo [p. 1081-1082].",
+    "Carcinoma papilar: diagnóstico por núcleos en vidrio esmerilado, seudoinclusiones y cuerpos de psamoma; BRAF V600E en 50-80%; supervivencia a 10 años >95% [p. 1087-1089].",
+    "Carcinoma medular: calcitonina y CEA con amiloide estromal; 30% familiar por RET en línea germinal; tiroidectomía profiláctica en portadores de MEN-2 [p. 1091-1092, 1130].",
+    "Diabetes: HbA1c ≥6,5% diagnostica y <7% es la meta; DT1 autoinmunitaria con insulitis (HLA-DR3/DR4) y DT2 por resistencia a la insulina más fallo de célula β con amiloide islotal [p. 1098, 1101-1105].",
+    "Hipercalcemia: PTH alta = hiperparatiroidismo primario (adenoma 85-95%); PTH baja = cáncer por PTHrP en 80%; el feocromocitoma solo es maligno si metastatiza [p. 1095, 1128]."
+  ],
+  "topics": [
+    "Adenomas hipofisarios e hiperpituitarismo",
+    "Tiroiditis, enfermedad de Graves y bocios",
+    "Neoplasias foliculares y medulares de la tiroides",
+    "Hiperparatiroidismo e hipercalcemia",
+    "Diabetes mellitus: patogenia y complicaciones crónicas",
+    "Neoplasias endocrinas pancreáticas y síndromes MEN"
+  ],
+  "callouts": [
+    {
+      "section": "Tiroides",
+      "title": "Cápsula como frontera",
+      "text": "En neoplasias foliculares todo depende de la cápsula: intacta es adenoma; la invasión capsular o vascular define carcinoma folicular y exige muestras amplias de la cápsula en la pieza [p. 1085-1086, 1090]."
+    },
+    {
+      "section": "Páncreas endocrino",
+      "title": "Kimmelstiel-Wilson y microalbuminuria",
+      "text": "La glomeruloesclerosis nodular PAS+ con mesangiólisis y microaneurismas capilares aparece en 15-30% de los diabéticos de larga evolución; la microalbuminuria (30-300 mg/día) es el primer marcador y abre la ventana de intervención [p. 1111-1112]."
+    },
+    {
+      "section": "Síndromes poliglandulares",
+      "title": "MEN: precoces, multifocales y precedidos de hiperplasia",
+      "text": "MEN-1 (menina, tres P) frente a MEN-2A y 2B (RET activador, carcinoma medular casi constante); en MEN-2 el tamizaje genético familiar permite la tiroidectomía profiláctica antes del carcinoma medular [p. 1129-1130]."
+    }
+  ]
+}

@@ -1,0 +1,1385 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riñón · Anatomía Patológica UBB</title>
+<meta name="description" content="Riñón. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Riñón · Anatomía Patológica UBB">
+<meta property="og:description" content="Riñón. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 20. Riñón</h1>
+    <p class="lede">Guía 10 de 16. Resumen completo del capítulo 20 con 284 citas por página y 51 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>10 de 16</strong></div><div><span>Capítulo</span><strong>20</strong></div><div><span>Páginas</span><strong>895-952</strong></div><div><span>Citas</span><strong>284</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>51</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-introduccion-y-manifestaciones-clinicas-de-las-nefropatias">Introducción y manifestaciones clínicas de las nefropatías</a></li>
+        <li><a href="#sec-03-glomerulopatias-estructura-respuestas-y-mecanismos">Glomerulopatías: estructura, respuestas y mecanismos</a></li>
+        <li><a href="#sec-04-sindromes-glomerulares">Síndromes glomerulares</a></li>
+        <li><a href="#sec-05-sindrome-nefritico-y-glomerulonefritis-proliferativas">Síndrome nefrítico y glomerulonefritis proliferativas</a></li>
+        <li><a href="#sec-06-sindrome-nefrotico">Síndrome nefrótico</a></li>
+        <li><a href="#sec-07-glomerulopatias-con-hematuria-aislada-y-enfermedades-sistemicas">Glomerulopatías con hematuria aislada y enfermedades sistémicas</a></li>
+        <li><a href="#sec-08-nefropatias-tubulointersticiales">Nefropatías tubulointersticiales</a></li>
+        <li><a href="#sec-09-vasculopatias-renales">Vasculopatías renales</a></li>
+        <li><a href="#sec-10-nefropatias-quisticas">Nefropatías quísticas</a></li>
+        <li><a href="#sec-11-obstruccion-de-vias-urinarias-hidronefrosis-y-urolitiasis">Obstrucción de vías urinarias, hidronefrosis y urolitiasis</a></li>
+        <li><a href="#sec-12-tumores-renales">Tumores renales</a></li>
+        <li><a href="#sec-13-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="09_Pancreas.html" title="Páncreas">09</a>
+        <a href="11_Vias_Urinarias_Genital_Masculino.html" title="Vías urinarias inferiores y aparato genital masculino">11</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 20 del Robbins y Cotran, 10ª edición: páginas impresas 895-952 (58 páginas), contrastadas con el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se contrastó con el OCR del capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>El filtro glomerular (endotelio fenestrado, MBG con lámina densa y podocitos con nefrina-podocina) es la diana de las podocitopatías; su lesión produce proteinuria <span class="cite">p. 898-900</span>.</li><li>La glomerulonefritis postestreptocócica causa síndrome nefrítico con jorobas subepiteliales y C3 bajo 1-4 semanas tras faringitis o impétigo; más del 95% de los niños se recupera <span class="cite">p. 907-909</span>.</li><li>En el síndrome nefrótico, los niños presentan cambios mínimos (75%) y los adultos GEFS (35%) o nefropatía membranosa anti-PLA2R (30%) <span class="cite">p. 912</span>.</li><li>La nefropatía IgA, glomerulonefritis más frecuente del mundo, se diagnostica solo por depósitos mesangiales de IgA y causa hematuria de repetición postinfecciosa <span class="cite">p. 920-921</span>.</li><li>La pielonefritis aguda es supurativa por vía ascendente (E. coli, reflujo vesicoureteral); la crónica deja cicatrices polares con cálices amputados y tiroidización tubular <span class="cite">p. 927-931</span>.</li><li>El carcinoma de células claras (70-80% de los cánceres renales) inactiva el gen VHL con estabilización de HIF-1, invade la vena renal y metastatiza a pulmón y hueso antes de dar síntomas locales <span class="cite">p. 949-951</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 896-949</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>Los riñones filtran más de <strong>1.700 L de sangre/día</strong> en 1 L de orina; son además órgano endocrino (eritropoyetina, renina, prostaglandinas) y regulan el metabolismo de la vitamina D <span class="cite">p. 896</span>.</li>
+<li>La <strong>enfermedad renal crónica</strong> afecta al 11% de los adultos en EE. UU.; sus causas principales son <strong>diabetes e hipertensión</strong>; en la nefropatía terminal el FG es &lt;5% del normal <span class="cite">p. 897</span>.</li>
+<li>El <strong>filtro glomerular</strong> consta de endotelio fenestrado (fenestraciones de 70-100 nm), MBG con lámina densa y podocitos unidos por <strong>hendiduras de filtración de 20-30 nm</strong> con <strong>nefrina y podocina</strong>; las mutaciones de estas proteínas causan síndrome nefrótico hereditario <span class="cite">p. 898-900</span>.</li>
+<li>Las respuestas glomerulares a la lesión son hipercelularidad, engrosamiento de la MBG, hialinosis y esclerosis; la lesión de los <strong>podocitos</strong> es el denominador común de la proteinuria <span class="cite">p. 900, 905</span>.</li>
+<li>La mayor parte de las glomerulonefritis es inmunomediada: por <strong>inmunocomplejos circulantes</strong>, por <strong>formación in situ</strong> (anti-MBG lineal, PLA2R membranosa) o por <strong>desregulación de la vía alternativa del complemento</strong> (enfermedad por depósitos densos, SHU atípico) <span class="cite">p. 901-903, 918-919, 938</span>.</li>
+<li>En el síndrome nefrótico, niños: enfermedad con cambios mínimos (75%); adultos: nefropatía membranosa (30%) y <strong>GEFS</strong> (35%), hoy la primera causa en adultos en EE. UU. <span class="cite">p. 912</span>.</li>
+<li>La <strong>nefropatía IgA</strong> es la glomerulonefritis más frecuente del mundo: depósitos mesangiales de IgA1 con glucosilación aberrante, hematuria de repetición sincronizada con infecciones respiratorias <span class="cite">p. 920-921</span>.</li>
+<li>La <strong>LTA</strong> es la causa más frecuente de lesión renal aguda hospitalaria (50% de los casos), por isquemia o toxinas; reversible si se elimina la causa <span class="cite">p. 924</span>.</li>
+<li>La <strong>pielonefritis</strong> aguda es supurativa, por vía <strong>ascendente</strong> (E. coli, reflujo vesicoureteral) más que hematógena; la crónica deja cicatrices polares con <strong>cálices amputados</strong> <span class="cite">p. 927-930</span>.</li>
+<li>Las <strong>microangiopatías trombóticas</strong> comparten trombos microvasculares con anemia hemolítica microangiopática y trombocitopenia: SHU típico (toxina Shiga de <em>E. coli</em> O157:H7), SHU atípico (desregulación del complemento, factor H) y PTT (deficiencia de ADAMTS13) <span class="cite">p. 937-939</span>.</li>
+<li>La <strong>nefropatía poliquística autosómica dominante</strong> (<em>PKD1</em>, <em>PKD2</em>) es una <strong>ciliopatía</strong>: 1/400-1.000 nacidos vivos y 5-10% de las nefropatías terminales; se asocia a quistes hepáticos y aneurismas del polígono de Willis <span class="cite">p. 941-943</span>.</li>
+<li>El <strong>carcinoma de células renales</strong> (85% de los cánceres renales del adulto) se relaciona con el tabaco y con el gen <strong>VHL</strong> en el subtipo de células claras (70-80%); metastatiza precozmente a pulmón y hueso <span class="cite">p. 949-951</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-introduccion-y-manifestaciones-clinicas-de-las-nefropatias" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 896-897</div>
+<h2>Introducción y manifestaciones clínicas de las nefropatías</h2>
+<p>Los riñones convierten más de 1.700 L de sangre al día en 1 L de orina concentrada; excretan residuos del metabolismo, regulan agua, sal, calcio, fósforo y el balance ácido-básico, y secretan eritropoyetina, renina y prostaglandinas <span class="cite">p. 896</span>. En EE. UU. más de 660.000 personas padecían nefropatía terminal (dos tercios en diálisis, con un coste de ~72.000 dólares por persona al año); la mortalidad a 1 año de la nefropatía terminal supera la de la mayoría de los cánceres de nuevo diagnóstico <span class="cite">p. 896</span>. La enfermedad renal crónica afecta al 11% de los adultos, con predominio en ancianos, y resulta sobre todo de diabetes e hipertensión <span class="cite">p. 897</span>.</p>
+<p>Los trastornos renales se agrupan clínicamente por el componente afectado: <span class="cite">p. 896-897</span>.</p>
+<ul>
+<li><strong>Glomerulares</strong>: síndromes nefrótico, nefrítico, GN rápidamente progresiva y anomalías urinarias aisladas <span class="cite">p. 896-897</span>.</li>
+<li><strong>Tubulares</strong>: poliuria, nicturia y trastornos electrolíticos (acidosis metabólica); de causa hereditaria (diabetes nefrógena, cistinuria, acidosis tubular renal) o adquirida (nefropatía por plomo) <span class="cite">p. 896-897</span>.</li>
+<li><strong>Obstrucción y tumores</strong>: manifestaciones según la localización anatómica.</li>
+<li><strong>Infección urinaria</strong>: bacteriuria y piuria; riñón (pielonefritis) o vejiga (cistitis) <span class="cite">p. 896-897</span>.</li>
+<li><strong>Nefrolitiasis</strong>: cólico renal y hematuria, con recurrencia frecuente.</li>
+</ul>
+<p>La <strong>azoemia</strong> es la manifestación bioquímica de la lesión renal (↑BUN o creatinina) y refleja reducción del FG; la lesión renal aguda es reversible o evoluciona a enfermedad renal crónica, habitualmente irreversible <span class="cite">p. 897</span>. La uremia produce alteraciones sistémicas difusas: edema, hiperpotasemia, acidosis metabólica, hiperfosfatemia con hipocalcemia e hiperparatiroidismo secundario y osteodistrofia renal, anemia y diátesis hemorrágica, hipertensión, insuficiencia cardiaca congestiva, pericarditis urémica, náuseas, vómitos y hemorragia digestiva, miopatía, neuropatía periférica y encefalopatía, y prurito con color cetrino de la piel <span class="cite">p. 897</span> (tabla 20.1).</p>
+
+</section><section id="sec-03-glomerulopatias-estructura-respuestas-y-mecanismos" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 897-906</div>
+<h2>Glomerulopatías: estructura, respuestas y mecanismos</h2>
+<p>Las glomerulopatías son primarias (el riñón es el único o principal órgano afectado) o secundarias a enfermedades sistémicas: LES, hipertensión, diabetes, amiloidosis, enfermedad de Fabry, vasculitis <span class="cite">p. 897</span>. Los glomérulos son redes de capilares con endotelio fenestrado rodeadas por dos capas epiteliales: la visceral (<strong>podocitos</strong>), incorporada a la pared capilar, y la parietal de la cápsula de Bowman, que reviste el espacio urinario <span class="cite">p. 898</span>.</p>
+<h3 id="el-filtro-glomerular">El filtro glomerular</h3>
+<p>La pared del capilar glomerular, la membrana de filtración, está formada por: <span class="cite">p. 898</span>.</p>
+<ul>
+<li><strong>Endotelio fenestrado</strong> con fenestraciones de 70-100 nm.</li>
+<li><strong>MBG</strong> con lámina densa central y láminas raras interna y externa; contiene colágeno de tipo IV (red de triple hélice con cadenas α3-α5, dominios 7S y NC1), laminina, proteoglucanos polianiónicos (sulfato de heparano, perlecano), fibronectina y entactina. El dominio <strong>NC1</strong> es la diana de los anticuerpos anti-MBG; los defectos genéticos de las cadenas α son la base de las nefritis hereditarias; el contenido de proteoglucanos determina la permeabilidad (carga) <span class="cite">p. 898</span>.</li>
+<li><strong>Podocitos</strong>: pedicelos separados por hendiduras de filtración de 20-30 nm, cerradas por un <strong>diafragma</strong> cuyas moléculas de <strong>nefrina</strong> forman dímeros entre podocitos vecinos y se anclan a la <strong>podocina</strong>, la CD2AP y el citoesqueleto de actina <span class="cite">p. 900</span>. Las mutaciones de estas proteínas alteran la permeabilidad y causan síndrome nefrótico <span class="cite">p. 900</span>.</li>
+<li>El ovillo se apoya en el <strong>mesangio</strong>: células mesangiales contráctiles, fagocíticas y capaces de producir matriz, citocinas y derivados del ácido araquidónico <span class="cite">p. 898</span>.</li>
+</ul>
+<figure class="fig" id="fig-20-3">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-3.webp" data-caption="Figura 20.3. Esquema simplificado de las proteínas del diafragma en hendidura glomerular: nefrina, podocina, CD2AP y el anclaje al citoesqueleto de actina de los podocitos." data-alt="Figura 20.3. Esquema simplificado de las proteínas del diafragma en hendidura glomerular: nefrina, podocina, CD2AP y el anclaje al citoesqueleto de actina de los podocitos. Robbins y Cotran, 10ª ed., p. 900.">
+    <img src="../assets/fig/cap20/fig-20-3.webp" width="720" height="492" loading="lazy" decoding="async" alt="Figura 20.3. Esquema simplificado de las proteínas del diafragma en hendidura glomerular: nefrina, podocina, CD2AP y el anclaje al citoesqueleto de actina de los podocitos. Robbins y Cotran, 10ª ed., p. 900.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.3.</strong> Esquema simplificado de las proteínas del diafragma en hendidura glomerular: nefrina, podocina, CD2AP y el anclaje al citoesqueleto de actina de los podocitos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 900. <a href="../creditos.html#fig-20-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="respuestas-patológicas-del-glomérulo-a-la-lesión">Respuestas patológicas del glomérulo a la lesión</h3>
+<ul>
+<li><strong>Hipercelularidad</strong>: proliferación de células mesangiales y endoteliales más aflujo de leucocitos; puede obliterar la luz capilar <span class="cite">p. 900</span>.</li>
+<li><strong>Engrosamiento de la MBG</strong> por depósito de proteínas de matriz o inmunocomplejos subendoteliales o subepiteliales <span class="cite">p. 900</span>.</li>
+<li><strong>Hialinosis y esclerosis</strong>: depósito de proteínas plasmáticas hialinas y acumulación de matriz; término final de muchas lesiones <span class="cite">p. 900</span>.</li>
+<li>Distribución de las lesiones: <strong>difusa</strong> (todos los glomérulos), <strong>global</strong> (todo el glomérulo), <strong>focal</strong> (parte de los glomérulos), <strong>segmentaria</strong> (parte de cada glomérulo) <span class="cite">p. 901</span>.</li>
+</ul>
+<h3 id="patogenia-depósito-de-anticuerpos">Patogenia: depósito de anticuerpos</h3>
+<p>La mayoría de las glomerulopatías primarias y muchas secundarias son inmunomediadas <span class="cite">p. 901</span>. Tres vías principales: <span class="cite">p. 901-904</span>.</p>
+<ul>
+<li><strong>Inmunocomplejos circulantes</strong>: complejos antígeno-anticuerpo atrapados en los glomérulos por sus propiedades fisicoquímicas y factores hemodinámicos; los anticuerpos no son específicos para el glomérulo. Antígenos endógenos (ADN en el LES, IgA) o exógenos (proteínas estreptocócicas, HBsAg, antígenos de VHC, <em>T. pallidum</em>, <em>P. falciparum</em>, antígenos tumorales); muchas veces el antígeno es desconocido <span class="cite">p. 903</span>.</li>
+<li><strong>Formación in situ</strong>: anticuerpos contra componentes normales de la MBG (<strong>enfermedad anti-MBG</strong>, depósitos lineales) o contra antígenos implantados o propios del podocito (<strong>nefritis de Heymann</strong>, PLA2R en la nefropatía membranosa) <span class="cite">p. 901, 903</span>.</li>
+<li><strong>Desregulación de la vía alternativa del complemento</strong> sin anticuerpos: enfermedad por depósitos densos y glomerulopatías por C3, SHU atípico <span class="cite">p. 905, 918, 938</span>.</li>
+</ul>
+<figure class="fig" id="fig-20-5">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-5.webp" data-caption="Figura 20.5. Localización de los depósitos de inmunocomplejos en el glomérulo: subepiteliales (nefropatía membranosa), subendoteliales (nefritis lúpica, GNMP) y mesangiales (nefropatía IgA)." data-alt="Figura 20.5. Localización de los depósitos de inmunocomplejos en el glomérulo: subepiteliales (nefropatía membranosa), subendoteliales (nefritis lúpica, GNMP) y mesangiales (nefropatía IgA). Robbins y Cotran, 10ª ed., p. 903.">
+    <img src="../assets/fig/cap20/fig-20-5.webp" width="726" height="729" loading="lazy" decoding="async" alt="Figura 20.5. Localización de los depósitos de inmunocomplejos en el glomérulo: subepiteliales (nefropatía membranosa), subendoteliales (nefritis lúpica, GNMP) y mesangiales (nefropatía IgA). Robbins y Cotran, 10ª ed., p. 903.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.5.</strong> Localización de los depósitos de inmunocomplejos en el glomérulo: subepiteliales (nefropatía membranosa), subendoteliales (nefritis lúpica, GNMP) y mesangiales (nefropatía IgA).
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 903. <a href="../creditos.html#fig-20-5">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<p>Ambos mecanismos de depósito pueden coexistir, pues los complejos circulantes atrapados inducen formación in situ de más complejos; los virus de la hepatitis B y C pueden producir patrón membranoso (depósito subepitelial in situ) o membranoproliferativo (subendotelial o circulante) <span class="cite">p. 904</span>.</p>
+<h3 id="mediadores-de-la-lesión-glomerular">Mediadores de la lesión glomerular</h3>
+<ul>
+<li><strong>Células</strong>: neutrófilos y monocitos reclutados por C5a y receptores Fc liberan proteasas (degradan la MBG), radicales libres y eicosanoides (↓FG); macrófagos y linfocitos T activados; plaquetas que se agregan y liberan eicosanoides y factores de crecimiento; células mesangiales residentes que producen ERO, citocinas, quimiocinas y factores de crecimiento <span class="cite">p. 904-905</span>.</li>
+<li><strong>Mediadores solubles</strong>: el complemento activado (C5a quimiotáctico; <strong>C5b-C9</strong>, complejo de ataque a membrana) causa lisis y estimula a las células mesangiales; el C5b-C9 puede producir proteinuria sin neutrófilos, como en la glomerulopatía membranosa experimental <span class="cite">p. 905</span>. IL-1 y TNF favorecen la adhesión leucocitaria; quimiocinas reclutan monocitos; PDGF induce proliferación mesangial; <strong>TGF-β</strong> es esencial para el depósito de matriz y la glomeruloesclerosis; VEGF mantiene la integridad endotelial; la trombina estimula la formación de semilunas <span class="cite">p. 905</span>.</li>
+<li><strong>Inmunidad celular</strong>: los linfocitos T sensibilizados participan en algunas formas (semilunas experimentales anti-MBG), pero la lesión humana no es principalmente linfocitaria <span class="cite">p. 904</span>.</li>
+</ul>
+<h3 id="podocitopatías-y-mecanismos-de-progresión">Podocitopatías y mecanismos de progresión</h3>
+<p>La <strong>lesión de los podocitos</strong> (borramiento, vacuolización, retracción, desprendimiento) es común a muchas glomerulopatías y determina la proteinuria; los podocitos tienen escasa capacidad replicativa y su pérdida es típica de la GEFS y la nefropatía diabética <span class="cite">p. 905</span>. Pueden ser causadas por anticuerpos, toxinas, citocinas, infecciones (VIH) o factores circulantes mal definidos (cambios mínimos, GEFS) <span class="cite">p. 905</span>.</p>
+<p>Una vez que cualquier nefropatía reduce el FG al <strong>30-50%</strong> de lo normal, la progresión a la insuficiencia terminal avanza a velocidad constante, independiente de la lesión original; las dos características histológicas del daño progresivo son la <strong>GEFS</strong> y la <strong>fibrosis tubulointersticial</strong> <span class="cite">p. 906</span>. La correlación entre función renal y extensión del daño tubulointersticial es mayor que con la intensidad de la lesión glomerular; la isquemia de túbulos distales de glomérulos escleróticos, la inflamación del capilar peritubular y la proteinuria lesionan directamente el epitelio tubular <span class="cite">p. 906</span>.</p>
+
+</section><section id="sec-04-sindromes-glomerulares" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 897</div>
+<h2>Síndromes glomerulares</h2>
+<p>Los cinco síndromes glomerulares mayores son <span class="cite">p. 897</span> (tabla 20.3):</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Síndromes glomerulares" tabindex="0"><table>
+<thead>
+<tr>
+<th>Síndrome</th>
+<th>Manifestaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Síndrome nefrítico</td>
+<td>Hematuria, azoemia, proteinuria variable, oliguria, edema e hipertensión</td>
+</tr>
+<tr>
+<td>Glomerulonefritis rápidamente progresiva</td>
+<td>Nefritis aguda, proteinuria e insuficiencia renal aguda</td>
+</tr>
+<tr>
+<td>Síndrome nefrótico</td>
+<td>Proteinuria &gt;3,5 g/día, hipoalbuminemia, hiperlipidemia, lipiduria</td>
+</tr>
+<tr>
+<td>Enfermedad renal crónica</td>
+<td>Azoemia y uremia que evoluciona durante meses o años</td>
+</tr>
+<tr>
+<td>Anomalías urinarias aisladas</td>
+<td>Hematuria glomerular o proteinuria subnefrótica</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 897</span> (tabla 20.3).</p>
+
+</section><section id="sec-05-sindrome-nefritico-y-glomerulonefritis-proliferativas" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 907-911</div>
+<h2>Síndrome nefrítico y glomerulonefritis proliferativas</h2>
+<h3 id="glomerulonefritis-postinfecciosa-aguda-proliferativa">Glomerulonefritis postinfecciosa (aguda proliferativa)</h3>
+<p>El prototipo con antígenos exógenos es la <strong>glomerulonefritis postestreptocócica</strong>; la nefritis del LES ejemplifica los antígenos endógenos. Las infecciones más frecuentes son estreptocócicas; aparece entre <strong>1 y 4 semanas</strong> después de una infección faríngea o cutánea (impétigo); es más común en niños de 6-10 años y está disminuyendo en EE. UU. aunque sigue frecuente en el mundo <span class="cite">p. 907</span>.</p>
+<figure class="fig" id="fig-20-8">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-8.webp" data-caption="Figura 20.8. Glomerulonefritis proliferativa aguda: hipercelularidad por leucocitos intracapilares y proliferación endotelial, jorobas subepiteliales electrodensas y depósitos granulares de C3 por inmunofluorescencia." data-alt="Figura 20.8. Glomerulonefritis proliferativa aguda: hipercelularidad por leucocitos intracapilares y proliferación endotelial, jorobas subepiteliales electrodensas y depósitos granulares de C3 por inmunofluorescencia. Robbins y Cotran, 10ª ed., p. 908.">
+    <img src="../assets/fig/cap20/fig-20-8.webp" width="1476" height="1051" loading="lazy" decoding="async" alt="Figura 20.8. Glomerulonefritis proliferativa aguda: hipercelularidad por leucocitos intracapilares y proliferación endotelial, jorobas subepiteliales electrodensas y depósitos granulares de C3 por inmunofluorescencia. Robbins y Cotran, 10ª ed., p. 908.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.8.</strong> Glomerulonefritis proliferativa aguda: hipercelularidad por leucocitos intracapilares y proliferación endotelial, jorobas subepiteliales electrodensas y depósitos granulares de C3 por inmunofluorescencia.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 908. <a href="../creditos.html#fig-20-8">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<ul>
+<li>Solo cepas nefritógenas de estreptococos β-hemolíticos del grupo A causan nefritis; en &gt;90% de los casos se identifican los tipos <strong>12, 4 y 1</strong> por la proteína M <span class="cite">p. 907</span>.</li>
+<li>Evidencias inmunológicas: latencia compatible con la formación de anticuerpos, títulos elevados de anticuerpos ant estreptocócicos, <strong>complemento sérico bajo</strong> por consumo y depósitos granulares de inmunocomplejos <span class="cite">p. 908</span>. El antígeno más probable es la <strong>exotoxina B estreptocócica</strong>, que activa directamente el complemento y se localiza en las "jorobas" <span class="cite">p. 908</span>.</li>
+<li>Los antígenos se implantan primero en localizaciones subendoteliales, forman complejos in situ, y luego estos se disocian, atraviesan la MBG y se reconstituyen en el lado subepitelial; también pueden contribuir inmunocomplejos circulantes <span class="cite">p. 908</span>.</li>
+<li>Formas esporádicas similares se asocian a infecciones bacterianas (endocarditis estafilocócica, neumonía neumocócica, meningococcemia), víricas (hepatitis B y C, parotiditis, VIH, varicela, mononucleosis) y parasitarias (paludismo, toxoplasmosis) <span class="cite">p. 908</span>.</li>
+</ul>
+<p><strong>Morfología</strong>: glomérulos agrandados e hipercelulares por infiltración leucocítica (neutrófilos y monocitos), proliferación endotelial y mesangial y, en casos graves, semilunas; proliferación global y difusa <span class="cite">p. 908</span>. La luz capilar queda obliterada; hay cilindros hemáticos tubulares <span class="cite">p. 909</span>. Inmunofluorescencia: depósitos granulares de IgG y C3 en mesangio y MBG <span class="cite">p. 909</span>. Microscopía electrónica: depósitos electrodensos subepiteliales en "jorobas", con depósitos subendoteliales, mesangiales e intramembranosos precoces <span class="cite">p. 909</span>.</p>
+<p><strong>Clínica</strong>: un niño desarrolla bruscamente malestar, fiebre, náuseas, oliguria y hematuria (orina color hollín o refresco de cola) 1-2 semanas tras un catarro; eritrocitos dismórficos o cilindros hemáticos, proteinuria leve (&lt;1 g/día), edema periorbitario e hipertensión leve-moderada; en adultos el debut es más atípico (hipertensión, edema, BUN elevado) <span class="cite">p. 909</span>. Analítica: títulos antiestreptocócicos altos y <strong>C3 sérico descendido</strong> <span class="cite">p. 909</span>. Más del 95% de los niños recuperan la función con tratamiento conservador; en adultos solo el 60% de los casos esporádicos se recupera con rapidez y puede evolucionar a glomerulonefritis crónica o GNRP <span class="cite">p. 909</span>.</p>
+<h3 id="glomerulonefritis-rápidamente-progresiva-con-semilunas">Glomerulonefritis rápidamente progresiva (con semilunas)</h3>
+<p>Síndrome clínico con <strong>pérdida rápida y progresiva de función renal</strong>, oliguria intensa y signos nefríticos; sin tratamiento, muerte por insuficiencia renal en semanas o meses; histología con <strong>semilunas</strong> en la mayoría de los glomérulos, formadas por proliferación de células epiteliales parietales de la cápsula de Bowman más monocitos y macrófagos <span class="cite">p. 909</span>. Clasificación inmunológica (tabla 20.6): <span class="cite">p. 909</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Síndrome nefrítico y glomerulonefritis proliferativas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Mecanismo</th>
+<th>Entidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo I</td>
+<td>Anticuerpos anti-MBG, IgG lineal en la MBG</td>
+<td>Limitada al riñón; síndrome de Goodpasture</td>
+</tr>
+<tr>
+<td>Tipo II</td>
+<td>Inmunocomplejos, depósitos granulares</td>
+<td>Idiopática, GN postinfecciosa, nefritis lúpica, púrpura de Schönlein-Henoch, nefropatía IgA</td>
+</tr>
+<tr>
+<td>Tipo III</td>
+<td>Pauciinmunitaria, ANCA</td>
+<td>Idiopática, granulomatosis con polivasculitis, polivasculitis microscópica</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 909</span> (tabla 20.6).</p>
+<ul>
+<li><strong>Anti-MBG</strong>: los anticuerpos reaccionan con el dominio NC1 del colágeno IV de la MBG; por reacción cruzada con las membranas basales alveolares producen hemorragia pulmonar más insuficiencia renal (<strong>síndrome de Goodpasture</strong>); desencadenantes posibles: virus, disolventes de hidrocarburos, fármacos, cánceres; asociación con HLA-DRB1. La plasmaféresis forma parte del tratamiento <span class="cite">p. 909</span>.</li>
+<li><strong>Inmunocomplejos</strong>: complicación de cualquier nefritis inmunitaria; la plasmaféresis no es útil y se trata la enfermedad de base <span class="cite">p. 909</span>.</li>
+<li><strong>Pauciinmunitaria</strong>: sin depósitos en inmunofluorescencia ni microscopía electrónica; &gt;90% de los casos idiopáticos tienen <strong>ANCA-c (anti-PR3)</strong> o <strong>ANCA-p (anti-MPO)</strong>; todos los casos pauciinmunitarios se consideran manifestaciones de una vasculitis de pequeños vasos limitada a los capilares glomerulares; los ANCA son marcadores muy sensibles y tienen potencial patógeno demostrado en modelos murinos <span class="cite">p. 910</span>. Alrededor de una quinta parte de los pacientes con GNRP son anti-MBG, una cuarta parte por inmunocomplejos y el resto pauciinmunitarios <span class="cite">p. 910</span>.</li>
+</ul>
+<p><strong>Morfología</strong>: riñones agrandados y pálidos con hemorragias petequiales corticales; necrosis focal y segmentaria y <strong>semilunas</strong> que comprimen el ovillo; fibrina entre las capas celulares <span class="cite">p. 910</span>. La microscopía electrónica muestra roturas de la MBG, lesión más grave que permite que leucocitos, factores de coagulación y complemento alcancen el espacio urinario y activen la formación de semilunas <span class="cite">p. 910</span>. Las semilunas se organizan y la necrosis remite como cicatrices segmentarias, pero el tratamiento precoz permite recuperar la estructura normal <span class="cite">p. 910</span>.</p>
+<p><strong>Clínica</strong>: hematuria con cilindros hemáticos, proteinuria a veces nefrótica, hipertensión y edema; en el Goodpasture, hemoptisis recurrente o hemorragia pulmonar potencialmente mortal <span class="cite">p. 910-911</span>. El diagnóstico de subtipos usa anti-MBG, ANA y ANCA <span class="cite">p. 911</span>. La recuperación puede lograrse con <strong>plasmaféresis más corticoesteroides y citotóxicos</strong> en el Goodpasture; otras formas responden a esteroides y citotóxicos, aunque los casos avanzados llegan a diálisis o trasplante <span class="cite">p. 911</span>.</p>
+
+</section><section id="sec-06-sindrome-nefrotico" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 911-920</div>
+<h2>Síndrome nefrótico</h2>
+<p>Causado por el aumento de la permeabilidad de la pared capilar glomerular a las proteínas <span class="cite">p. 911</span>. Componentes: <strong>proteinuria masiva ≥3,5 g/día</strong>, hipoalbuminemia (&lt;3 g/dl), edema generalizado, <strong>hiperlipidemia y lipiduria</strong>; la hipoalbuminemia estimula la síntesis hepática de lipoproteínas <span class="cite">p. 911</span>. Consecuencias clínicas importantes: inmunodeficiencia por pérdida de IgG y complemento (infecciones por <em>Streptococcus pneumoniae</em>), tendencia trombótica (pérdida de antitrombina III, hiperfibrinogenemia), hipotiroidismo por pérdida de tiroxina y déficit de vitamina D <span class="cite">p. 911-912</span>.</p>
+<p>La frecuencia de las causas depende de la edad: en niños &lt;17 años en Norteamérica casi siempre es una glomerulopatía primaria (cambios mínimos 75%); en adultos predomina la enfermedad sistémica (diabetes, amiloidosis, LES), con nefropatía membranosa (30%) y GEFS (35%) como lesiones primarias mayores <span class="cite">p. 912</span> (tabla 20.7).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Síndrome nefrótico" tabindex="0"><table>
+<thead>
+<tr>
+<th>Causa</th>
+<th>Niños (%)</th>
+<th>Adultos (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nefropatía membranosa</td>
+<td>3</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Enfermedad con cambios mínimos</td>
+<td>75</td>
+<td>8</td>
+</tr>
+<tr>
+<td>GEFS</td>
+<td>10</td>
+<td>35</td>
+</tr>
+<tr>
+<td>GNMP y enfermedad por depósitos densos</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Otras glomerulonefritis proliferativas (incluida IgA)</td>
+<td>2</td>
+<td>17</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 912</span> (tabla 20.7).</p>
+<h3 id="nefropatía-membranosa">Nefropatía membranosa</h3>
+<p>Engrosamiento difuso de la pared capilar por depósitos subepiteliales de inmunoglobulinas; ~75% primaria, el resto secundaria a fármacos (penicilamina, captopril, oro, AINE), tumores malignos (pulmón, colon, melanoma; 5-10% de los adultos con nefropatía membranosa), LES (10-15% de las nefritis lúpicas), infecciones (hepatitis B y C crónicas, sífilis, esquistosomiasis, paludismo) y tiroiditis <span class="cite">p. 912</span>.</p>
+<ul>
+<li><strong>Patogenia</strong>: enfermedad autoinmunitaria por anticuerpos contra <strong>PLA2R</strong>, antígeno del podocito presente en el 60-70% de las formas primarias; con menor frecuencia <strong>THSD7A</strong> o la endopeptidasa neutra (CD10, nefropatía membranosa neonatal por anticuerpos maternos) <span class="cite">p. 912</span>. La lesión no depende de neutrófilos ni plaquetas: el <strong>C5b-C9</strong> activa las células epiteliales y mesangiales, que liberan proteasas y oxidantes; predomina el depósito de <strong>IgG4</strong>, pobre activadora de la vía clásica <span class="cite">p. 912</span>.</li>
+<li><strong>Morfología</strong>: microscopía óptica con engrosamiento difuso de la pared capilar sin hipercelularidad; con tinción de plata se ven <strong>espículas</strong> de MBG que rodean los depósitos y luego los entierran en cúpulas <span class="cite">p. 913</span>. Inmunofluorescencia granular de IgG y C3; microscopía electrónica con depósitos subepiteliales electrodensos y borramiento de podocitos <span class="cite">p. 913</span>.</li>
+<li><strong>Clínica</strong>: debut insidioso con síndrome nefrótico (15% solo proteinuria no nefrótica); hematuria e hipertensión leve en 15-35%; la proteinuria no es selectiva y no responde bien a corticoesteroides <span class="cite">p. 914</span>. Remisiones totales o parciales hasta en 40% (a veces espontáneas); solo 10% fallece o progresa a insuficiencia antes de 10 años; recurrencia hasta en 40% de los trasplantes; los anticuerpos anti-PLA2R y anti-THSD7A son biomarcadores de actividad <span class="cite">p. 914</span>.</li>
+</ul>
+<h3 id="enfermedad-con-cambios-mínimos">Enfermedad con cambios mínimos</h3>
+<p>Causa más frecuente de síndrome nefrótico en niños (pico 2-6 años), a veces tras infección respiratoria o vacunación <span class="cite">p. 914</span>. Patogenia: disfunción inmunitaria con factores circulantes que dañan el podocito (proteína similar a angiopoyetina 4 en modelos); base inmunitaria apoyada por la asociación con infecciones respiratorias, respuesta a inmunodepresores, atopia, haplotipos HLA y <strong>linfoma de Hodgkin</strong>; se ha propuesto además pérdida de polianiones glomerulares <span class="cite">p. 914</span>.</p>
+<ul>
+<li><strong>Morfología</strong>: glomérulos normales al microscopio óptico; único hallazgo: <strong>borramiento difuso de los podocitos</strong> ("fusión", en realidad simplificación y aplanamiento) con pérdida de diafragmas de hendidura, sin depósitos; los túbulos proximales contienen lípidos y proteínas reabsorbidas (antigua "nefrosis lipoidea") <span class="cite">p. 914</span>. El borramiento también aparece en otras podocitopatías, por lo que el diagnóstico exige glomérulos ópticamente normales <span class="cite">p. 914</span>.</li>
+<li><strong>Clínica</strong>: proteinuria muy <strong>selectiva</strong> (albúmina), función renal conservada; respuesta espectacular a corticoesteroides (&gt;90% de los niños); pronóstico excelente a largo plazo <span class="cite">p. 914</span>. Puede ser secundaria a AINE (junto con nefritis intersticial aguda) y a linfomas <span class="cite">p. 914</span>.</li>
+</ul>
+<h3 id="glomeruloesclerosis-focal-y-segmentaria-gefs">Glomeruloesclerosis focal y segmentaria (GEFS)</h3>
+<p>Principal causa de síndrome nefrótico en adultos en EE. UU. (10-35% de los casos según edad); esclerosis de algunos glomérulos (focal) y solo de parte del ovillo (segmentaria) <span class="cite">p. 915</span>. Contextos: primaria idiopática; asociada a VIH, heroína, drepanocitosis y obesidad mórbida; cicatriz de glomerulonefritis focales previas (nefropatía IgA); respuesta adaptativa a la pérdida de tejido renal (ablación, agenesia, nefropatía por reflujo, nefropatía hipertensiva avanzada); formas hereditarias <span class="cite">p. 915</span>.</p>
+<figure class="fig" id="fig-20-14">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-14.webp" data-caption="Figura 20.14. Glomeruloesclerosis focal y segmentaria: esclerosis segmentaria del ovillo con insudación hialina y gotículas lipídicas en la zona esclerótica." data-alt="Figura 20.14. Glomeruloesclerosis focal y segmentaria: esclerosis segmentaria del ovillo con insudación hialina y gotículas lipídicas en la zona esclerótica. Robbins y Cotran, 10ª ed., p. 917.">
+    <img src="../assets/fig/cap20/fig-20-14.webp" width="1449" height="470" loading="lazy" decoding="async" alt="Figura 20.14. Glomeruloesclerosis focal y segmentaria: esclerosis segmentaria del ovillo con insudación hialina y gotículas lipídicas en la zona esclerótica. Robbins y Cotran, 10ª ed., p. 917.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.14.</strong> Glomeruloesclerosis focal y segmentaria: esclerosis segmentaria del ovillo con insudación hialina y gotículas lipídicas en la zona esclerótica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 917. <a href="../creditos.html#fig-20-14">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<ul>
+<li>Rasgos que la diferencian de los cambios mínimos: mayor hematuria, deterioro del FG e hipertensión; proteinuria no selectiva; respuesta insuficiente a corticoesteroides; progresión a nefropatía terminal en al menos <strong>50% antes de 10 años</strong> <span class="cite">p. 915</span>.</li>
+<li>Genética de la barrera de filtración: <strong>NPHS1</strong> (nefrina, síndrome nefrótico congénito tipo finlandés), <strong>NPHS2</strong> (podocina, nefrótico resistente a esteroides de la infancia), <strong>α-actinina 4</strong> (GEFS autosómica dominante progresiva), <strong>TRPC6</strong> (GEFS del adulto por ↑flujo de calcio en podocitos); variantes de riesgo <strong>G1/G2 de APOL1</strong> en personas de origen africano, seleccionadas por resistencia a tripanosomas <span class="cite">p. 915-916</span>.</li>
+<li><strong>GEFS por ablación renal</strong>: la hipertrofia compensadora de los glomérulos restantes produce hipertensión intraglomerular, lesión endotelial y epitelial, proteinuria, proliferación mesangial con depósito de matriz y esclerosis segmentaria que avanza en círculo vicioso; los <strong>inhibidores del sistema renina-angiotensina</strong> interrumpen el proceso <span class="cite">p. 916</span>.</li>
+<li><strong>Morfología</strong>: esclerosis focal y segmentaria con colapso de asas, <strong>hialinosis</strong> y gotículas lipídicas; borramiento difuso de podocitos también en glomérulos no escleróticos; IgM y C3 en las áreas escleróticas <span class="cite">p. 916</span>. Con la progresión, esclerosis global, atrofia tubular y fibrosis intersticial <span class="cite">p. 916</span>. La <strong>glomerulopatía colapsante</strong> (retracción del ovillo con proliferación e hipertrofia de podocitos y microquistes tubulares) puede ser idiopática, por pamidronato o, sobre todo, por <strong>VIH</strong>; pronóstico particularmente malo <span class="cite">p. 916-917</span>.</li>
+<li><strong>Clínica</strong>: sin tendencia a la remisión espontánea; el 20% evoluciona a insuficiencia renal antes de 2 años; la variante colapsante es desfavorable y la de las puntas relativamente buena; recaídas en 25-50% de los aloinjertos <span class="cite">p. 917</span>. La nefropatía asociada a VIH (variante colapsante, 5-10% de los infectados, más en afrodescendientes) muestra además microquistes tubulares e <strong>inclusiones tubulorreticulares</strong> endoteliales (modificaciones del RE por interferón, también en el LES) <span class="cite">p. 917</span>.</li>
+</ul>
+<h3 id="glomerulonefritis-membranoproliferativa-gnmp">Glomerulonefritis membranoproliferativa (GNMP)</h3>
+<p>Histología común: hipercelularidad mesangial y endocapilar, aspecto lobulado acentuado, MBG engrosada con <strong>doble contorno o "vía de tren"</strong> por duplicación de la membrana con <strong>interposición mesangial</strong> <span class="cite">p. 918</span>. Responsable del 10% de los síndromes nefróticos de niños y adultos jóvenes; cuadro combinado nefrótico-nefrítico o solo hematuria/proteinuria <span class="cite">p. 918</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Síndrome nefrótico" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rasgo</th>
+<th>GNMP tipo I</th>
+<th>Enfermedad por depósitos densos (antes tipo II)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patogenia</td>
+<td>Inmunocomplejos; vías clásica y alternativa</td>
+<td>Desregulación de la vía alternativa del complemento</td>
+</tr>
+<tr>
+<td>Depósitos</td>
+<td>Subendoteliales delimitados + mesangiales</td>
+<td>Material denso, homogéneo "en cinta" dentro de la lámina densa</td>
+</tr>
+<tr>
+<td>Inmunofluorescencia</td>
+<td>IgG + C3 granulares, con C1q y C4</td>
+<td>C3 granular o lineal a ambos lados de la MBG y anillos mesangiales; sin IgG, C1q ni C4</td>
+</tr>
+<tr>
+<td>Marcador sérico</td>
+<td>Variable</td>
+<td>C3 bajo; C1 y C4 normales; C3NeF en &gt;70%</td>
+</tr>
+<tr>
+<td>Clínica</td>
+<td>Adolescentes y adultos jóvenes; a menudo secundaria (VHC con crioglobulinemia, VHB, LES, endocarditis)</td>
+<td>Niños y adultos jóvenes; pronóstico malo, &gt;50% a nefropatía terminal; recidiva en 90% de los trasplantes</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 918-920</span>.</p>
+<ul>
+<li>La mayoría de las GNMP tipo I son hoy secundarias: trastornos crónicos por inmunocomplejos (LES, hepatitis B y C, crioglobulinemia, endocarditis, derivaciones infectadas, abscesos, VIH, esquistosomiasis), deficiencia de α1-antitripsina y neoplasias linfoides <span class="cite">p. 918</span>.</li>
+<li>En la enfermedad por depósitos densos, el <strong>factor nefrítico C3 (C3NeF)</strong> estabiliza la convertasa C3bBb de la vía alternativa, manteniendo la activación y el consumo de C3 (hipocomplementemia); también se asocian mutaciones del <strong>factor H</strong> <span class="cite">p. 919-920</span>. El 50% desarrolla insuficiencia renal crónica antes de 10 años <span class="cite">p. 918</span>.</li>
+<li>El curso de ambas es lentamente progresivo sin remisiones espontáneas; puede desarrollarse GNRP con semilunas; no se ha demostrado eficacia de esteroides, inmunodepresores ni antiagregantes <span class="cite">p. 918</span>.</li>
+</ul>
+<h3 id="glomerulonefritis-fibrilar">Glomerulonefritis fibrilar</h3>
+<p>Depósitos fibrilares mesangiales y parietales parecidos al amiloide pero <strong>negativos para rojo Congo</strong>; patrón mesangioproliferativo o membranoproliferativo; inmunofluorescencia con IgG policlonal (a menudo IgG4), C3 y cadenas ligeras κ y λ; síndrome nefrótico, hematuria e insuficiencia progresiva; recidiva en el trasplante. <strong>DNAJB9</strong> es un marcador muy sensible y específico <span class="cite">p. 920</span>.</p>
+
+</section><section id="sec-07-glomerulopatias-con-hematuria-aislada-y-enfermedades-sistemicas" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 920-924</div>
+<h2>Glomerulopatías con hematuria aislada y enfermedades sistémicas</h2>
+<h3 id="nefropatía-iga-enfermedad-de-berger">Nefropatía IgA (enfermedad de Berger)</h3>
+<p>La glomerulonefritis más común del mundo: depósitos mesangiales prominentes de IgA con <strong>hematuria de repetición</strong>; el diagnóstico exige demostrar los depósitos de IgA por inmunofluorescencia <span class="cite">p. 920</span>. Depósitos similares se ven en la púrpura de Schönlein-Henoch; la nefropatía IgA secundaria aparece en hepatopatías y enteropatías <span class="cite">p. 921</span>.</p>
+<figure class="fig" id="fig-20-19">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-19.webp" data-caption="Figura 20.19. Nefropatía IgA: proliferación mesangial al microscopio óptico y depósito mesangial característico de IgA por inmunofluorescencia." data-alt="Figura 20.19. Nefropatía IgA: proliferación mesangial al microscopio óptico y depósito mesangial característico de IgA por inmunofluorescencia. Robbins y Cotran, 10ª ed., p. 921.">
+    <img src="../assets/fig/cap20/fig-20-19.webp" width="707" height="928" loading="lazy" decoding="async" alt="Figura 20.19. Nefropatía IgA: proliferación mesangial al microscopio óptico y depósito mesangial característico de IgA por inmunofluorescencia. Robbins y Cotran, 10ª ed., p. 921.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.19.</strong> Nefropatía IgA: proliferación mesangial al microscopio óptico y depósito mesangial característico de IgA por inmunofluorescencia.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 921. <a href="../creditos.html#fig-20-19">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<ul>
+<li><strong>Patogenia</strong>: defecto hereditario o adquirido en la O-glucosilación de la región bisagra de la <strong>IgA1</strong>, con depósito de IgA glucosilada de forma aberrante o formación de inmunocomplejos con autoanticuerpos IgG; activación del complemento por <strong>vía alternativa</strong> (C3 y properdina presentes, C1q y C4 ausentes); proliferación mesangial con citocinas y factores de crecimiento; predispone la exposición mucosa respiratoria o digestiva y hay agregación familiar y asociación con HLA; frecuente en enfermedad celíaca y hepatopatías (eliminación hepatobiliar deficiente de complejos de IgA) <span class="cite">p. 921</span>.</li>
+<li><strong>Morfología</strong>: espectro desde glomérulos normales a proliferación mesangial y endocapilar, proliferación focal o, raramente, semilunas; inmunofluorescencia con depósito mesangial de IgA (a menudo con C3 y properdina, menor IgG/IgM); depósitos electrodensos mesangiales <span class="cite">p. 921</span>.</li>
+<li><strong>Clínica</strong>: niños mayores y adultos jóvenes; <strong>hematuria macroscópica sincronizada con infecciones respiratorias</strong> (o digestivas); 30-40% solo hematuria microscópica; 5-10% síndrome nefrítico agudo, a veces con GNRP <span class="cite">p. 921-922</span>. Hematuria de varios días que recurre cada pocos meses; progresión a insuficiencia renal crónica en <strong>15-40% a 20 años</strong>; factores de progresión: edad avanzada de inicio, proteinuria intensa, hipertensión y extensión de la glomeruloesclerosis en la biopsia; los depósitos reaparecen en los trasplantes (enfermedad clínica en 15%) <span class="cite">p. 922</span>.</li>
+</ul>
+<h3 id="nefritis-hereditaria">Nefritis hereditaria</h3>
+<h4 id="síndrome-de-alport">Síndrome de Alport</h4>
+<p>Hematuria con progresión a insuficiencia renal crónica, <strong>sordera de conducción</strong> y trastornos oculares (cataratas posteriores, distrofia corneal) por mutaciones del <strong>colágeno de tipo IV</strong> (más de 500 descritas); herencia ligada al X en <strong>85%</strong> de los casos (COL4A5); los hombres expresan el síndrome completo y ~90% llega a nefropatía terminal antes de los 40 años; también formas autosómicas recesivas y dominantes <span class="cite">p. 922</span>. La MBG está formada por redes de cadenas α3, α4 y α5; las mutaciones impiden el ensamblaje de la red, esencial para MBG, cristalino y cóclea; las grandes deleciones de COL4A5 predicen nefropatía terminal precoz <span class="cite">p. 922</span>.</p>
+<ul>
+<li><strong>Morfología</strong>: microscopía electrónica con engrosamiento irregular de la MBG alternando con atenuamiento, <strong>escisión y laminación de la lámina densa</strong>, aspecto "en red de mimbre" <span class="cite">p. 922</span>. La inmunohistoquímica muestra ausencia de tinción de las cadenas α3, α4 y α5 en la MBG y de α5 en la piel en la forma ligada al X <span class="cite">p. 922</span>. Evoluciona a GEFS y daño renal progresivo <span class="cite">p. 922</span>.</li>
+<li><strong>Clínica</strong>: hematuria macro o microscópica con cilindros hemáticos; proteinuria más tardía; síntomas entre los 5-20 años; insuficiencia franca entre los 20-50 años en hombres; los defectos auditivos pueden ser sutiles <span class="cite">p. 922</span>.</li>
+</ul>
+<h4 id="nefropatía-de-la-membrana-basal-delgada-hematuria-familiar-benigna">Nefropatía de la membrana basal delgada (hematuria familiar benigna)</h4>
+<p>Hematuria familiar asintomática hallada en exámenes de orina de rutina, con adelgazamiento difuso de la MBG a <strong>150-225 nm</strong> (normal 300-400 nm); afecta al 1% de la población; pronóstico excelente; herencia generalmente autosómica por mutaciones de las cadenas α3/α4 en heterocigosis. Diferenciar de la nefropatía IgA y del Alport: sin sordera, sin anomalías oculares y sin antecedentes de insuficiencia renal familiar <span class="cite">p. 922-923</span>. Los homocigotos replican el Alport autosómico recesivo: estas entidades forman un continuo de mutaciones del colágeno IV <span class="cite">p. 923</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Glomerulopatías con hematuria aislada y enfermedades sistémicas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rasgo</th>
+<th>Nefropatía IgA</th>
+<th>Síndrome de Alport</th>
+<th>MBG delgada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Presentación</td>
+<td>Hematuria macroscópica postinfecciosa de repetición</td>
+<td>Hematuria persistente desde la infancia</td>
+<td>Hematuria microscópica incidental</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>IgA1 con glucosilación aberrante</td>
+<td>Mutación de colágeno IV (COL4A5, 85% ligada al X)</td>
+<td>Mutación heterocigota de colágeno IV (α3/α4)</td>
+</tr>
+<tr>
+<td>MBG (ME)</td>
+<td>Depósitos mesangiales</td>
+<td>Engrosamiento y laminación "en red de mimbre"</td>
+<td>Adelgazamiento a 150-225 nm</td>
+</tr>
+<tr>
+<td>Extrarrenal</td>
+<td>Púrpura, artralgias (SHH)</td>
+<td>Sordera neurosensorial de conducción, cataratas</td>
+<td>Ninguna</td>
+</tr>
+<tr>
+<td>Pronóstico</td>
+<td>Insuficiencia crónica en 15-40% a 20 años</td>
+<td>Nefropatía terminal en 90% de los hombres antes de 40 años</td>
+<td>Benigno</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 920-923</span>.</p>
+<h3 id="enfermedades-sistémicas-con-lesión-glomerular">Enfermedades sistémicas con lesión glomerular</h3>
+<ul>
+<li><strong>Nefritis lúpica</strong>: el LES produce todo el espectro, desde hematuria asintomática hasta síndrome nefrótico, GNRP e insuficiencia; se detalla en el capítulo 6 <span class="cite">p. 923</span>.</li>
+<li><strong>Púrpura de Schönlein-Henoch</strong>: síndrome de la infancia (pico 3-8 años) con púrpura en superficies extensoras y nalgas, dolor abdominal con hemorragia intestinal y artralgias; manifestaciones renales en un tercio (hematuria, síndrome nefrítico o nefrótico); en adultos son más graves y puede haber GNRP con semilunas <span class="cite">p. 923</span>. La inmunofluorescencia muestra depósito <strong>mesangial de IgA</strong> (a veces con IgG y C3), patognomónico, igual que en la nefropatía IgA; ambos se consideran manifestaciones de la misma enfermedad <span class="cite">p. 923</span>. La mayoría de los niños tiene pronóstico excelente; semilunas, lesiones difusas o síndrome nefrótico lo empeoran <span class="cite">p. 923</span>.</li>
+<li><strong>Nefropatía diabética</strong>: causa principal de insuficiencia renal crónica en EE. UU.; nefropatía avanzada en hasta 40% de los diabéticos tipo 1 o 2 <span class="cite">p. 923</span>.</li>
+<li><strong>Crioglobulinemia mixta esencial</strong>: crioglobulinas IgG-IgM (mayoría asociadas a VHC) que causan vasculitis cutánea, sinovitis y <strong>GNMP tipo I</strong> <span class="cite">p. 924</span>.</li>
+<li>Goodpasture, polivasculitis microscópica y granulomatosis con polivasculitis: necrosis glomerular y semilunas; hematuria con leve ↓FG en formas leves <span class="cite">p. 923</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Nefropatía IgA vs púrpura de Schönlein-Henoch</span>Ambas comparten depósitos mesangiales de IgA y se consideran manifestaciones de la misma enfermedad; la púrpura añade lesión cutánea en superficies extensoras, dolor abdominal y artralgias, y es más grave en adultos <span class="cite">p. 921, 923</span>.</div>
+</section><section id="sec-08-nefropatias-tubulointersticiales" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 924-935</div>
+<h2>Nefropatías tubulointersticiales</h2>
+<p>Las enfermedades tubulares afectan casi siempre al intersticio. Dos grupos mayores: lesión tubular isquémica o tóxica, y nefritis tubulointersticial inflamatoria <span class="cite">p. 924</span>. Rasgos diferenciales frente a las glomerulopatías: ausencia de síndrome nefrítico o nefrótico y defectos de función tubular (poliuria y nicturia por pérdida de la capacidad de concentración, pérdida de sal, acidosis metabólica, defectos aislados de reabsorción) <span class="cite">p. 926</span>.</p>
+<h3 id="lesiónnecrosis-tubular-aguda-lta">Lesión/necrosis tubular aguda (LTA)</h3>
+<p>Insuficiencia renal aguda con frecuencia, pero no invariablemente, con necrosis de células epiteliales tubulares; se prefiere el término LTA al antiguo "necrosis tubular aguda" porque a menudo no hay necrosis; es la <strong>causa más frecuente de lesión renal aguda</strong> y responsable del 50% de las insuficiencias renales agudas hospitalarias <span class="cite">p. 924</span>. Causas: <span class="cite">p. 924</span>.</p>
+<ul>
+<li><strong>Isquemia</strong>: polivasculitis microscópica, microangiopatías (SHU, PTT), shock hipovolémico <span class="cite">p. 924</span>.</li>
+<li><strong>Lesión tóxica directa</strong>: endógena (mioglobina, hemoglobina, cadenas ligeras monoclonales, bilis) o exógena (fármacos como gentamicina, contrastes radiológicos, metales pesados, disolventes orgánicos) <span class="cite">p. 924</span>.</li>
+<li>Formas mixtas: transfusiones incompatibles y rabdomiólisis producen cilindros de hemoglobina o mioglobina; el hierro de las globinas añade toxicidad <span class="cite">p. 924</span>.</li>
+</ul>
+<p><strong>Patogenia</strong>: lesión de la célula tubular (los túbulos proximales son especialmente vulnerables por su superficie de reabsorción, transportes activos, alta tasa metabólica y capacidad de concentrar toxinas) más trastornos del flujo sanguíneo <span class="cite">p. 924-925</span>. La isquemia pierde la polaridad celular (redistribución de la Na-K-ATPasa a la superficie luminal), lo que aumenta el sodio distal y desencadena vasoconstricción por retroalimentación tubuloglomerular; las células dañadas se descaman y obstruyen la luz, aumentando la presión intratubular; el filtrado se escapa al intersticio (edema) <span class="cite">p. 925</span>. La vasoconstricción intrarrenal mediada por renina-angiotensina, endotelina y pérdida de NO y prostaciclina reduce el aporte de oxígeno a la rama ascendente gruesa y el túbulo proximal recto de la médula externa <span class="cite">p. 925</span>.</p>
+<p><strong>Morfología</strong>: lesión epitelial parcheada a lo largo de la nefrona con roturas de la membrana basal (<strong>tubulorrexis</strong>) y cilindros en la forma isquémica (segmentos rectos proximales y rama ascendente gruesa los más vulnerables); en la tóxica, necrosis extensa del túbulo contorneado proximal (mercurio con inclusiones acidófilas; etilenglicol con degeneración vacuolar y <strong>cristales de oxalato cálcico</strong>); señales de regeneración con núcleos hipercromáticos y mitosis <span class="cite">p. 925-926</span>. La intensidad morfológica no siempre se correlaciona con la clínica <span class="cite">p. 925</span>.</p>
+<p><strong>Clínica en tres fases</strong>: <strong>inicio</strong> (~36 h, dominada por el episodio desencadenante, leve descenso de diuresis y ↑BUN); <strong>mantenimiento</strong> (oliguria de 40-400 ml/día, sobrecarga de sal y agua, ↑BUN, hiperpotasemia, acidosis metabólica y uremia); <strong>recuperación</strong> (diuresis hasta 3 L/día con pérdida de agua, sodio y potasio; se vuelve problema la <strong>hipopotasemia</strong>, y aumenta la vulnerabilidad a infecciones) <span class="cite">p. 926</span>. Recuperación en el 95% de los casos no complicados; mortalidad &gt;50% si hay shock séptico, quemaduras extensas o fallo multiorgánico <span class="cite">p. 926</span>.</p>
+<h3 id="nefritis-tubulointersticial">Nefritis tubulointersticial</h3>
+<p>Causas principales (tabla 20.8): infecciones (pielonefritis aguda y crónica, virus, parásitos), toxinas y fármacos (nefritis por hipersensibilidad, analgésicos, plomo, cadmio), enfermedades metabólicas (uratos, nefrocalcinosis, oxalato), obstrucción crónica, neoplasias (mieloma), reacciones inmunitarias (rechazo del trasplante, Sjögren, sarcoidosis), vasculopatías y nefronoptisis <span class="cite">p. 926</span>.</p>
+<h4 id="pielonefritis-e-infección-de-las-vías-urinarias">Pielonefritis e infección de las vías urinarias</h4>
+<p>Inflamación de túbulos, intersticio y pelvis renal; la aguda es bacteriana y asociada a infección urinaria; la crónica añade reflujo y obstrucción <span class="cite">p. 927</span>. Más del <strong>85% de las infecciones urinarias</strong> son por bacilos gramnegativos entéricos; el germen más frecuente es <em><strong>E. coli</strong></em>, seguido por <em>Proteus</em>, <em>Klebsiella</em> y <em>Enterobacter</em>; también <em>S. faecalis</em> y estafilococos; micobacterias y hongos causan granulomas; en inmunodeprimidos, poliomavirus, CMV y adenovirus <span class="cite">p. 927</span>.</p>
+<p><strong>Vías de infección renal</strong>: <span class="cite">p. 927-928</span>.</p>
+<ul>
+<li><strong>Hematógena</strong>, menos frecuente: siembra desde septicemia o endocarditis, favorecida por obstrucción ureteral e inmunodepresión; gérmenes no entéricos (estafilococos, hongos, virus) <span class="cite">p. 927</span>.</li>
+<li><strong>Ascendente</strong>, la más frecuente: colonización del introito y uretra distal por coliformes mediante <strong>adhesinas de las fimbrias P</strong> que se unen a receptores uroteliales; ascenso a la vejiga (sondaje, instrumentación); preferencia femenina por la uretra corta, la ausencia de propiedades antibacterianas del líquido prostático, los cambios hormonales y el traumatismo sexual; a la pelvis renal solo se llega con <strong>obstrucción o estasis</strong> y <strong>reflujo vesicoureteral</strong> <span class="cite">p. 927</span>.</li>
+</ul>
+<figure class="fig" id="fig-20-24">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-24.webp" data-caption="Figura 20.24. Vías de infección renal: diseminación hematógena por bacteriemia y, más frecuentemente, vía ascendente con colonización vesical, reflujo vesicoureteral y reflujo intrarrenal." data-alt="Figura 20.24. Vías de infección renal: diseminación hematógena por bacteriemia y, más frecuentemente, vía ascendente con colonización vesical, reflujo vesicoureteral y reflujo intrarrenal. Robbins y Cotran, 10ª ed., p. 927.">
+    <img src="../assets/fig/cap20/fig-20-24.webp" width="719" height="1000" loading="lazy" decoding="async" alt="Figura 20.24. Vías de infección renal: diseminación hematógena por bacteriemia y, más frecuentemente, vía ascendente con colonización vesical, reflujo vesicoureteral y reflujo intrarrenal. Robbins y Cotran, 10ª ed., p. 927.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.24.</strong> Vías de infección renal: diseminación hematógena por bacteriemia y, más frecuentemente, vía ascendente con colonización vesical, reflujo vesicoureteral y reflujo intrarrenal.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 927. <a href="../creditos.html#fig-20-24">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<p>El <strong>reflujo vesicoureteral</strong> se debe a la ausencia congénita o acortamiento de la porción intravesical del uréter (válvula unidireccional incompetente), puede ser adquirido y afecta al 1-2% de niños sanos; el <strong>reflujo intrarrenal</strong> impulsa la orina infectada por los conductos abiertos de las papilas de los polos superior e inferior, que tienen puntas aplanadas o cóncavas; se demuestra con cistouretrografía miccional y aparece en el 30% de los lactantes y niños con infección urinaria <span class="cite">p. 928</span>.</p>
+<p><strong>Pielonefritis aguda</strong>: inflamación supurativa intersticial parcheada, abscesos, agregados intratubulares de neutrófilos, tubulitis neutrófila y lesión tubular; los glomérulos son relativamente resistentes <span class="cite">p. 928</span>. Complicaciones: <span class="cite">p. 928-929</span>.</p>
+<ul>
+<li><strong>Necrosis papilar</strong>: en diabéticos, drepanocitosis y obstrucción; necrosis coagulativa isquémica de las puntas piramidales, generalmente bilateral <span class="cite">p. 928</span>.</li>
+<li><strong>Pionefrosis</strong>: pus que llena pelvis, cálices y uréter cuando la obstrucción es total o casi completa y alta <span class="cite">p. 928-929</span>.</li>
+<li><strong>Absceso perinéfrico</strong>: extensión a través de la cápsula renal.</li>
+</ul>
+<p>Predisponen: obstrucción urinaria, sondaje e instrumentación, reflujo vesicoureteral, embarazo (4-6% de gestantes con bacteriuria; 20-40% de ellas con infección sintomática si no se trata), sexo femenino hasta los 40 años, lesiones renales preexistentes, diabetes e inmunodepresión <span class="cite">p. 929</span>. Clínica: dolor súbito en el ángulo costovertebral, fiebre, malestar, disuria, polaquiuria y tenesmo; la <strong>piuria no distingue infección alta de baja</strong>; los <strong>cilindros leucocitarios (de pus)</strong> indican afectación renal, pues los cilindros solo se forman en túbulos; diagnóstico por urocultivo cuantitativo <span class="cite">p. 929</span>. La nefropatía por <strong>poliomavirus</strong> del trasplante renal (hasta 5% de los receptores) muestra células tubulares agrandadas con <strong>inclusiones intranucleares</strong> (efecto citopático, viriones en entramado cristalino); el tratamiento es reducir los inmunodepresores <span class="cite">p. 930</span>.</p>
+<p><strong>Pielonefritis crónica y nefropatía por reflujo</strong>: inflamación y cicatrización tubulointersticiales crónicas que afectan a cálices y pelvis; solo la pielonefritis crónica y la nefropatía por analgésicos afectan los cálices, dato diagnóstico clave <span class="cite">p. 930</span>. Macroscopía: <strong>cicatrices corticomedulares gruesas sobre cálices dilatados, amputados o deformados</strong> con aplanamiento papilar, localizadas en los polos; si es bilateral, asimétrica (contrasta con la glomerulonefritis crónica simétrica) <span class="cite">p. 930-931</span>. Microscopía: atrofia e hipertrofia tubulares, túbulos dilatados con cilindros coloides (<strong>tiroidización</strong>), inflamación crónica y fibrosis intersticial; glomérulos con cambios isquémicos; la proteinuria tardía indica <strong>GEFS secundaria</strong> adaptativa y es de mal pronóstico <span class="cite">p. 931</span>. La <strong>pielonefritis xantogranulomatosa</strong> (asociada a <em>Proteus</em> y obstrucción) produce nódulos amarillo-naranjas que pueden confundirse macroscópicamente con un carcinoma de células renales <span class="cite">p. 931</span>. Clínica: insidiosa o con pielonefritis agudas recurrentes; poliuria y nicturia por defecto de concentración; riñones contraídos con cicatrices y cáliz deformado en la imagen <span class="cite">p. 931</span>.</p>
+<h4 id="nefritis-intersticial-aguda-medicamentosa">Nefritis intersticial aguda medicamentosa</h4>
+<p>Más frecuente con penicilinas sintéticas (meticilina, ampicilina), rifampicina, diuréticos tiacídicos, AINE, alopurinol, cimetidina e <strong>inhibidores del punto de control inmunitario</strong>; comienza <strong>2-40 días</strong> tras la exposición <span class="cite">p. 932</span>. Cuadro: fiebre, <strong>eosinofilia</strong> (a veces transitoria), exantema en 25% y anomalías urinarias (hematuria, proteinuria leve, leucocituria con eosinófilos); ↑creatinina o insuficiencia aguda con oliguria en el 50% <span class="cite">p. 932</span>. Patogenia idiosincrásica no dosis-dependiente: fármacos como <strong>haptenos</strong> unidos a componentes celulares tubulares; reacciones tipo I mediadas por IgE o tipo IV diferida por linfocitos T <span class="cite">p. 932</span>. Morfología: edema intersticial con infiltrado de linfocitos, macrófagos y <strong>eosinófilos</strong>; <strong>granulomas intersticiales no necrosantes</strong> con meticilina o tiacidas; <strong>tubulitis</strong> linfocitaria; en los AINE puede acompañarse de enfermedad con cambios mínimos y síndrome nefrótico <span class="cite">p. 932</span>. En 30-40% no se identifica el fármaco agresor; la recuperación puede tardar meses y el daño ser irreversible <span class="cite">p. 932</span>.</p>
+<p><strong>Nefropatía asociada a AINE</strong>: <span class="cite">p. 932</span>. insuficiencia renal aguda por inhibición de prostaglandinas vasodilatadoras (sobre todo con depleción de volumen); nefritis intersticial aguda por hipersensibilidad; y la asociación singular de nefritis intersticial más enfermedad con cambios mínimos o, recientemente descrita, nefropatía membranosa con síndrome nefrótico <span class="cite">p. 932-933</span>.</p>
+<h4 id="necrosis-papilar">Necrosis papilar</h4>
+<p>Comparación de causas (tabla 20.9): <span class="cite">p. 933</span>. nefropatía por analgésicos (h:m 1:3, &gt;5 años de abuso, varias papilas en el mismo estadio), diabetes (1:5, 10 años de evolución, infección en 25%, calcificaciones frecuentes, pocas papilas) y obstrucción (1:6, infección en 80%, calcificaciones raras, casi todas las papilas en distintos estadios); en la drepanocitosis, 90% <span class="cite">p. 933</span>.</p>
+<h4 id="otras-nefropatías-tubulointersticiales">Otras nefropatías tubulointersticiales</h4>
+<ul>
+<li><strong>Nefropatía por uratos</strong>: aguda por precipitación de cristales en túbulos colectores tras quimioterapia de leucemias y linfomas (<strong>síndrome de lisis tumoral</strong>, favorecida por pH ácido); crónica gotosa con cristales aciculares birrefringentes rodeados de reacción mononuclear con células gigantes (<strong>tofos</strong>) y atrofia cortical; nefrolitiasis úrica en el 22% de los gotosos y 42% de las hiperuricemias secundarias <span class="cite">p. 933</span>.</li>
+<li><strong>Hipercalcemia y nefrocalcinosis</strong>: hiperparatiroidismo, mieloma, vitamina D, cáncer metastásico o síndrome de leche y alcalinos; el defecto funcional más precoz es la incapacidad de concentrar la orina; evoluciona a nefropatía crónica con cálculos y pielonefritis secundaria <span class="cite">p. 933</span>.</li>
+<li><strong>Enfermedad renal tubulointersticial autosómica dominante (ERTAD)</strong>, antes enfermedad quística medular: mutaciones de <strong>MUC1, UMOD (uromodulina), REN y HNF1β</strong>; insuficiencia renal progresiva en el adulto, hallazgos inespecíficos <span class="cite">p. 934</span>.</li>
+<li><strong>Nefropatía por cilindros de cadenas ligeras ("riñón del mieloma")</strong>: insuficiencia renal en la mitad de los mielomas; las proteínas de <strong>Bence Jones</strong> son tóxicas para el epitelio tubular y se combinan con la proteína de <strong>Tamm-Horsfall</strong> en medio ácido formando cilindros obstruyentes rodeados de <strong>células gigantes multinucleadas</strong> de origen macrofágico; cilindros angulados, laminados y fracturados; precipitan deshidratación, hipercalcemia, infección y fármacos nefrotóxicos; la proteinuria de Bence Jones está en el 70% de los mielomas, y la albuminuria sugiere amiloidosis AL o enfermedad por depósito de cadenas ligeras <span class="cite">p. 934</span>. Las neoplasias no renales dañan el riñón también por invasión directa, obstrucción ureteral, hipercalcemia, hiperuricemia, amiloidosis AL y glomerulopatías paraneoplásicas (membranosa con carcinomas, cambios mínimos con Hodgkin, GNMP con leucemias y linfomas) <span class="cite">p. 934</span> (tabla 20.10).</li>
+<li><strong>Nefropatía por cilindros biliares (nefrosis colémica)</strong>: en hepatopatías graves con hiperbilirrubinemia, cilindros amarillo-verdosos en la nefrona distal con toxicidad directa y obstrucción; la reversibilidad depende de la gravedad y duración de la lesión hepática <span class="cite">p. 935</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Cilindros de pus</span>La piuria no distingue infección urinaria alta de baja; los cilindros leucocitarios indican afectación renal porque los cilindros solo se forman en los túbulos <span class="cite">p. 929</span>.</div>
+</section><section id="sec-09-vasculopatias-renales" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 935-940</div>
+<h2>Vasculopatías renales</h2>
+<h3 id="nefroesclerosis">Nefroesclerosis</h3>
+<p>Esclerosis de arteriolas y pequeñas arterias renales asociada a hipertensión, que puede ser a la vez causa y consecuencia; se ve con la edad avanzada, es más frecuente en afrodescendientes y puede aparecer sin hipertensión; diabetes agrava las lesiones <span class="cite">p. 935</span>. Dos procesos arteriales: engrosamiento de media e íntima e <strong>hialinización arteriolar</strong> por extravasación de proteínas plasmáticas y aumento de matriz; el estrechamiento luminal produce isquemia focal con glomeruloesclerosis y daño tubulointersticial <span class="cite">p. 935</span>. Macroscopía: riñones de 110-130 g con <strong>superficie granular fina correosa</strong>; microscopía: arterioloesclerosis hialina más <strong>hiperplasia fibroelástica</strong> de las arterias interlobulillares y arciformes (replicación de la elástica interna y tejido miofibroblástico intimal) <span class="cite">p. 935-936</span>. La nefroesclerosis no complicada rara vez causa insuficiencia, pero hay mayor riesgo en afrodescendientes, elevaciones tensionales importantes y diabetes <span class="cite">p. 936</span>.</p>
+<p><strong>Nefroesclerosis maligna</strong>: ~5% de los hipertensos desarrolla hipertensión maligna (sistólica &gt;200, diastólica &gt;120 mmHg) con insuficiencia renal, hemorragias y exudados retinianos, y muerte en 1-2 años sin tratamiento; existe gran solapamiento con las microangiopatías trombóticas (~30% de las hipertensiones malignas tienen anemia hemolítica microangiopática); la lesión endotelial es el factor patógeno común <span class="cite">p. 936</span>.</p>
+<h3 id="estenosis-de-la-arteria-renal">Estenosis de la arteria renal</h3>
+<p>Responsable del <strong>2-5% de las hipertensiones</strong> y potencialmente curable quirúrgicamente <span class="cite">p. 936</span>. Mecanismo: el riñón isquémico secreta <strong>renina</strong> (experimentos de Goldblatt) con producción de angiotensina II; contribuye la retención de sodio <span class="cite">p. 936</span>. Causas: <span class="cite">p. 936</span>.</p>
+<ul>
+<li><strong>Placa ateromatosa</strong> en el origen de la arteria (70%), concéntrica, con trombo superpuesto; hombres, mayor edad, diabetes <span class="cite">p. 936</span>.</li>
+<li><strong>Displasia fibromuscular</strong>: engrosamiento fibroso o fibromuscular de íntima, media o adventicia, con aspecto de "collar de cuentas" en la angiografía; mujeres jóvenes (20-30 años) <span class="cite">p. 936</span>.</li>
+</ul>
+<p>El riñón isquémico es pequeño, con atrofia difusa, glomérulos superpoblados y arterioloesclerosis leve (protegido de la presión elevada); el contralateral no isquémico muestra mayor arterioloesclerosis <span class="cite">p. 937</span>. Clínica: semejante a la hipertensión esencial; soplo abdominal; renina elevada, respuesta a IECA; la <strong>arteriografía</strong> localiza la estenosis; la cirugía cura el 70-80% de los casos bien seleccionados <span class="cite">p. 937</span>.</p>
+<h3 id="microangiopatías-trombóticas">Microangiopatías trombóticas</h3>
+<p>Espectro que incluye SHU y PTT: trombos en capilares y arteriolas que fragmentan eritrocitos (<strong>anemia hemolítica microangiopática</strong>), ocluyen la microvasculatura (isquemia y disfunción) y consumen plaquetas (<strong>trombocitopenia</strong>) <span class="cite">p. 937</span>. Clasificación (tabla 20.11): <span class="cite">p. 937</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Vasculopatías renales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Enfermedad</th>
+<th>Mecanismo</th>
+<th>Forma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SHU típico (epidémico, con diarrea)</td>
+<td>Toxina Shiga de <em>E. coli</em> O157:H7 o <em>S. dysenteriae</em></td>
+<td>Adquirida</td>
+</tr>
+<tr>
+<td>SHU atípico</td>
+<td>Mutaciones de reguladores del complemento (factor H, factor I, CD46) o autoanticuerpos contra ellos</td>
+<td>Hereditaria o adquirida</td>
+</tr>
+<tr>
+<td>PTT</td>
+<td>Deficiencia de ADAMTS13 hereditaria (infrecuente) o por autoanticuerpos (frecuente)</td>
+<td>Hereditaria o adquirida</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 937</span> (tabla 20.11).</p>
+<ul>
+<li><strong>SHU típico</strong>: tras infección intestinal por cepas productoras de toxina Shiga (carne picada contaminada, agua, leche cruda, transmisión persona a persona; mayoría esporádicos); niños y ancianos <span class="cite">p. 938</span>. Tras pródromo gripal o diarreico: hemorragias súbitas (hematemesis, melenas), oliguria, hematuria intensa, anemia hemolítica microangiopática, trombocitopenia y a veces cambios neurológicos; hipertensión en la mitad <span class="cite">p. 938</span>. La toxina activa el endotelio (↑moléculas de adhesión y endotelina, ↓NO), puede inducir apoptosis con TNF, activar plaquetas directamente o inhibir el factor H <span class="cite">p. 938</span>. Con diálisis, la mayoría recupera la función en semanas; a 15-25 años la evolución es más reservada <span class="cite">p. 938</span>.</li>
+<li><strong>SHU atípico</strong>: deficiencia hereditaria de reguladores del complemento (factor H en más de la mitad, factor I, CD46) o autoanticuerpos; también síndrome antifosfolípido, complicaciones del embarazo (insuficiencia renal posparto de pronóstico grave), vasculopatías (esclerosis sistémica, hipertensión maligna), fármacos (mitomicina, ciclosporina, cisplatino, gemcitabina, antagonistas del VEGF) y radiación renal; peor pronóstico que el típico; se distingue de la PTT porque la <strong>ADAMTS13 plasmática es &gt;10%</strong> <span class="cite">p. 938-939</span>.</li>
+<li><strong>PTT</strong>: pentada de fiebre, síntomas neurológicos, anemia hemolítica microangiopática, trombocitopenia e insuficiencia renal; los multímeros ultragrandes de <strong>vWF</strong> no escindidos por deficiencia de <strong>ADAMTS13</strong> (autoanticuerpos en la mayoría, mujeres; o hereditarios) agregan plaquetas espontáneamente; la afectación del <strong>sistema nervioso central es dominante</strong> y la renal aparece solo en el 50%; adultos antes de los 40 años; el intercambio plasmático trata con éxito a más del 80% <span class="cite">p. 939</span>.</li>
+</ul>
+<p>Morfología común: trombos de fibrina en capilares glomerulares y arteriolas con tinción para fibrina; necrosis cortical difusa posible (áreas pálidas isquémicas confinadas a la corteza) <span class="cite">p. 937, 939-940</span>.</p>
+<h3 id="otras-vasculopatías">Otras vasculopatías</h3>
+<ul>
+<li><strong>Nefropatía ateroembólica</strong>: hendiduras de colesterol típicas en arterias interlobulillares tras procedimientos endovasculares <span class="cite">p. 940</span>.</li>
+<li><strong>Nefropatía falciforme</strong>: hematuria e hipostenuria por formación de células falciformes en el medio hipóxico hipertónico medular (también en el rasgo heterocigoto); necrosis papilar parcheada; proteinuria en el 30% de los homocigotos, a veces con síndrome nefrótico y glomeruloesclerosis <span class="cite">p. 940</span>.</li>
+<li><strong>Infartos renales</strong>: frecuentes por el gran flujo renal (cuarta parte del gasto cardiaco) y la mínima circulación colateral extrarrenal; la mayoría son embólicos (trombos murales de aurícula y ventrículo izquierdos, valvulopatías, tromboendocarditis, ateromas ulcerados, embolias paradójicas) <span class="cite">p. 940</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">SHU atípico vs PTT</span>Se distinguen por la ADAMTS13 plasmática: &gt;10% en el SHU atípico por desregulación del complemento y deficiente por autoanticuerpos o herencia en la PTT, donde domina la afectación neurológica y el tratamiento es el intercambio plasmático <span class="cite">p. 938-939</span>.</div>
+</section><section id="sec-10-nefropatias-quisticas" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 941-945</div>
+<h2>Nefropatías quísticas</h2>
+<p>Grupo heterogéneo de trastornos hereditarios, del desarrollo y adquiridos, frecuentes, causa mayor de nefropatía crónica y que puede confundirse con tumores malignos <span class="cite">p. 941</span>.</p>
+<h3 id="nefropatía-poliquística-autosómica-dominante-del-adulto">Nefropatía poliquística autosómica dominante (del adulto)</h3>
+<p>Múltiples quistes bilaterales expansivos que destruyen el parénquima y causan insuficiencia renal; afecta a <strong>1 de cada 400-1.000 nacidos vivos</strong> y produce el <strong>5-10% de las nefropatías terminales</strong>; herencia autosómica dominante con alta penetrancia, aunque la manifestación requiere que ambos alelos del gen estén inactivados (mecanismo de supresor tumoral, "second hit") <span class="cite">p. 941</span>.</p>
+<ul>
+<li><strong>Genética</strong>: el gen <strong>PKD1</strong> (16p13.3) causa ~85% de los casos; su producto, la <strong>policistina 1</strong>, es una proteína integral de membrana enorme implicada en las interacciones célula-matriz y en el desarrollo; la probabilidad de insuficiencia renal es &lt;5% a los 40 años, 35% a los 50, &gt;70% a los 60 y 95% a los 70 <span class="cite">p. 942</span>. El gen <strong>PKD2</strong> (4q21) causa la mayoría del resto; su <strong>policistina 2</strong> es un canal catiónico permeable al Ca2+; enfermedad menos grave (insuficiencia en &lt;5% a los 50, 15% a los 60, 45% a los 70) <span class="cite">p. 942</span>.</li>
+<li><strong>Patogenia</strong>: <strong>ciliopatía</strong>; el cilio primario no móvil (2-3 μm) del epitelio tubular funciona como mecanosensor del flujo de líquido; las policistinas 1 y 2 forman un complejo ciliar que regula el Ca2+ intracelular en respuesta al flujo; la mutación altera el calcio y con ello la proliferación, la secreción de líquido y la interacción con la matriz, culminando en el quiste; el líquido quístico contiene mediadores que potencian la secreción y la inflamación <span class="cite">p. 942</span>.</li>
+<li><strong>Morfología</strong>: riñones bilaterales enormes (hasta 4 kg cada uno), superficie formada enteramente por quistes de hasta 3-4 cm, con nefronas funcionantes dispersas entre ellos; quistes con líquido seroso o turbio hemorrágico y revestimiento epitelial variable, con proyecciones papilares <span class="cite">p. 942</span>.</li>
+<li><strong>Clínica</strong>: muchos pacientes asintomáticos hasta la insuficiencia renal; dolor por hemorragia o dilatación de quistes, cólico renal por coágulos, riñones palpables, hematuria insidiosa, proteinuria raramente &gt;2 g/día, poliuria e hipertensión; progresión acelerada en afrodescendientes (con rasgo falciforme), hombres e hipertensos <span class="cite">p. 942-943</span>. Malformaciones extrarrenales: <strong>quistes hepáticos en el 40%</strong> (derivados del epitelio biliar), aneurismas saculares del <strong>polígono de Willis</strong> con hemorragia subaracnoidea causa de muerte en 4-10%, y prolapso mitral en 20-25% <span class="cite">p. 943</span>. Causas de muerte: cardiopatía coronaria o hipertensiva 40%, infección 25%, rotura de aneurisma o hemorragia intracerebral 15% <span class="cite">p. 943</span>.</li>
+</ul>
+<h3 id="nefropatía-poliquística-autosómica-recesiva-de-la-infancia">Nefropatía poliquística autosómica recesiva (de la infancia)</h3>
+<p>Variantes perinatal, neonatal, del lactante y juvenil según la presentación y la lesión hepática; formas graves al nacimiento con insuficiencia renal rápida <span class="cite">p. 943</span>. Gen <strong>PKHD1</strong> (6p21-p23) que codifica la <strong>fibrocistina</strong>, proteína de 447 kDa también localizada en el cilio primario; mayoría de los casos heterocigotos compuestos <span class="cite">p. 943</span>. Morfología: riñones agrandados de superficie externa normal; al corte, quistes pequeños en corteza y médula con aspecto esponjoso y <strong>canales dilatados en ángulo recto con la superficie cortical</strong>; dilatación cilíndrica de todos los conductos colectores con revestimiento cúbico uniforme <span class="cite">p. 943</span>. El hígado muestra quistes con <strong>fibrosis hepática congénita</strong> (fibrosis periportal con proliferación de conductillos biliares) que en los supervivientes domina el cuadro con hipertensión portal y esplenomegalia <span class="cite">p. 943-944</span>.</p>
+<figure class="fig" id="fig-20-43">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-43.webp" data-caption="Figura 20.43. Nefropatías poliquísticas: riñón agrandado con numerosos quistes en la forma autosómica dominante del adulto; canales dilatados en ángulo recto con la corteza en la forma recesiva infantil; quistes hepáticos asociados." data-alt="Figura 20.43. Nefropatías poliquísticas: riñón agrandado con numerosos quistes en la forma autosómica dominante del adulto; canales dilatados en ángulo recto con la corteza en la forma recesiva infantil; quistes hepáticos asociados. Robbins y Cotran, 10ª ed., p. 943.">
+    <img src="../assets/fig/cap20/fig-20-43.webp" width="1473" height="609" loading="lazy" decoding="async" alt="Figura 20.43. Nefropatías poliquísticas: riñón agrandado con numerosos quistes en la forma autosómica dominante del adulto; canales dilatados en ángulo recto con la corteza en la forma recesiva infantil; quistes hepáticos asociados. Robbins y Cotran, 10ª ed., p. 943.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.43.</strong> Nefropatías poliquísticas: riñón agrandado con numerosos quistes en la forma autosómica dominante del adulto; canales dilatados en ángulo recto con la corteza en la forma recesiva infantil; quistes hepáticos asociados.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 943. <a href="../creditos.html#fig-20-43">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<div class="table-wrap" role="region" aria-label="Tabla: Nefropatías quísticas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rasgo</th>
+<th>NP autosómica dominante (adulto)</th>
+<th>NP autosómica recesiva (infancia)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Genes</td>
+<td>PKD1 (85%), PKD2</td>
+<td>PKHD1 (fibrocistina)</td>
+</tr>
+<tr>
+<td>Herencia</td>
+<td>Autosómica dominante, con "second hit"</td>
+<td>Autosómica recesiva, heterocigotos compuestos</td>
+</tr>
+<tr>
+<td>Riñón</td>
+<td>Quistes grandes de 3-4 cm en toda la nefrona</td>
+<td>Canales dilatados perpendiculares a la corteza, aspecto esponjoso</td>
+</tr>
+<tr>
+<td>Hígado</td>
+<td>Quistes hepáticos en 40%, generalmente asintomáticos</td>
+<td>Fibrosis hepática congénita con hipertensión portal</td>
+</tr>
+<tr>
+<td>Presentación</td>
+<td>Insuficiencia renal progresiva del adulto</td>
+<td>Insuficiencia renal perinatal o neonatal</td>
+</tr>
+<tr>
+<td>Extrarrenal</td>
+<td>Aneurismas de Willis (muerte 4-10%), prolapso mitral 20-25%</td>
+<td>Hipertensión portal, esplenomegalia</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 941-944</span>.</p>
+<h3 id="enfermedades-quísticas-de-la-médula-renal">Enfermedades quísticas de la médula renal</h3>
+<ul>
+<li><strong>Riñón en esponja medular</strong>: dilataciones quísticas múltiples de los conductos colectores medulares, hallazgo radiológico en adultos con función renal normal y sin cicatrices corticales salvo pielonefritis sobreañadida <span class="cite">p. 944</span>.</li>
+<li><strong>Nefronoptisis</strong>: quistes medulares en la unión corticomedular con daño tubulointersticial cortical progresivo; tres variantes (esporádica, juvenil familiar, displasia renal-retiniana 15%); herencia autosómica recesiva en las familiares; hoy la <strong>causa genética más frecuente de nefropatía terminal en niños y adultos jóvenes</strong>; debut con poliuria y polidipsia, pérdida de sal y acidosis tubular; progresión a insuficiencia terminal en <strong>5-10 años</strong>; 16 loci de <strong>nefrocistinas</strong> y proteínas JBTS, todas ciliopatías; síndromes asociados (Senior-Loken, Joubert, Bardet-Biedl) con retinopatía, fibrosis hepática y anomalías cerebelosas <span class="cite">p. 944</span>. Riñones pequeños con superficies granulares y quistes corticomedulares <span class="cite">p. 944</span>.</li>
+</ul>
+<h3 id="displasia-renal-multiquística-y-quistes-adquiridos">Displasia renal multiquística y quistes adquiridos</h3>
+<ul>
+<li><strong>Displasia renal multiquística</strong>: esporádica, unilateral o bilateral, con riñón grande, irregular y quístico; histología con islas de mesénquima indiferenciado con <strong>cartílago</strong> y conductos colectores inmaduros; suele asociarse a obstrucción pieloureteral; unilateral tiene excelente pronóstico tras nefrectomía, pero puede simular neoplasia <span class="cite">p. 944-945</span>.</li>
+<li><strong>Enfermedad quística adquirida</strong> (diálisis prolongada): quistes de 0,1-4 cm con epitelio hiperplásico y cristales de oxalato, formados por obstrucción tubular; riesgo de carcinoma de células renales <strong>hasta 100 veces mayor</strong> (7% de los pacientes dializados a 10 años) <span class="cite">p. 945</span>.</li>
+<li><strong>Quistes simples</strong>: corticales, de 1-5 cm (hasta 10 cm), con líquido claro y membrana lisa; hallazgos frecuentes sin significado clínico; diferenciarse de los tumores por contornos lisos, avascularidad y contenido líquido en la ecografía <span class="cite">p. 945</span>.</li>
+</ul>
+
+</section><section id="sec-11-obstruccion-de-vias-urinarias-hidronefrosis-y-urolitiasis" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 945-948</div>
+<h2>Obstrucción de vías urinarias, hidronefrosis y urolitiasis</h2>
+<h3 id="uropatía-obstructiva">Uropatía obstructiva</h3>
+<p>La obstrucción aumenta la susceptibilidad a infección y cálculos; sin solución, produce atrofia renal permanente (<strong>hidronefrosis</strong>). Causas por nivel (fig. 20.46): pelvis renal (cálculos, tumores, estenosis ureteropélvica); uréter intrínseco (cálculos, tumores, coágulos, papilas desprendidas, inflamación) o extrínseco (embarazo, tumores de cérvix, fibrosis retroperitoneal); vejiga (cálculos, tumores, vejiga neurógena, <strong>hipertrofia prostática</strong>); uretra (carcinoma, válvulas uretrales posteriores, estenosis) <span class="cite">p. 945-946</span>. También malformaciones congénitas y cistocele o prolapso uterino <span class="cite">p. 945</span>.</p>
+<p>Mecanismo: pese a la obstrucción completa, la filtración glomerular persiste y el filtrado difunde retrógradamente al intersticio y espacios perirrenales, por lo que pelvis y cálices se dilatan mucho; la presión retrógrada atrofia los túbulos y comprime la vasculatura medular; los primeros déficits funcionales son <strong>tubulares</strong> (pérdida de la capacidad de concentración) y el FG falla más tarde; se añade fibrosis intersticial <span class="cite">p. 946</span>. Morfología: dilatación de pelvis y cálices con atrofia parenquimatosa; en casos avanzados, riñón quístico de paredes finas de hasta 15-20 cm con obliteración de las pirámides <span class="cite">p. 946</span>. Clínica: dolor por distensión del colector o la cápsula; cólico renal con cálculos ureterales y síntomas vesicales con próstata; la hidronefrosis unilateral puede ser silente; la obstrucción bilateral parcial debut con poliuria y nicturia; puede haber acidosis tubular distal adquirida, pérdida renal de sal, cálculos e hipertensión; la ecografía es la técnica diagnóstica no invasiva de elección <span class="cite">p. 946</span>. La obstrucción bilateral completa produce oliguria o anuria incompatible con la vida sin desobstrucción; tras liberarla aparece <strong>diuresis postobstructiva</strong> masiva con orina rica en NaCl <span class="cite">p. 947</span>.</p>
+<h3 id="urolitiasis-cálculos-renales">Urolitiasis (cálculos renales)</h3>
+<p>Afecta al 5-10% de las personas en EE. UU. a lo largo de la vida; más frecuente en hombres, edad máxima 20-30 años, con predisposición familiar; errores congénitos del metabolismo como la <strong>cistinuria</strong> y la <strong>hiperoxaluria primaria</strong> producen excreción excesiva de las sustancias formadoras de cálculo <span class="cite">p. 947</span>. Tipos principales (tabla 20.13): <span class="cite">p. 947</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Obstrucción de vías urinarias, hidronefrosis y urolitiasis" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>% del total</th>
+<th>Composición / causas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cálcico (oxalato ± fosfato)</td>
+<td>70</td>
+<td>Hipercalciuria idiopática (50%), con hipercalcemia (10%), hiperoxaluria (5%), entérica (4,5%), primaria (0,5%); hiperuricuria (20%), hipocitraturia, sin anomalía metabólica (15-20%)</td>
+</tr>
+<tr>
+<td>Estrovita (fosfato amónico-magnésico, "triple")</td>
+<td>5-10</td>
+<td>Infección urinaria por bacterias ureasa-positivas</td>
+</tr>
+<tr>
+<td>Ácido úrico</td>
+<td>5-10</td>
+<td>Hiperuricemia, pH ácido</td>
+</tr>
+<tr>
+<td>Cistina</td>
+<td>1-2</td>
+<td>Cistinuria hereditaria</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 947</span> (tabla 20.13).</p>
+<p>Todos contienen matriz orgánica de mucoproteína (1-5% del peso) <span class="cite">p. 947</span>. Morfología: unilaterales en el 80%; se forman en cálices y pelvis renales; los pelvianos miden 2-3 mm y pueden coalescer en <strong>cálculos coraliformes</strong> que moldean el sistema pelvicalicial <span class="cite">p. 948</span>. Clínica: asintomáticos o con cólico renal grave, dolor abdominal y hematuria; predisponen a sobreinfección por su naturaleza obstructiva y el traumatismo que producen <span class="cite">p. 948</span>.</p>
+
+</section><section id="sec-12-tumores-renales" class="card">
+<div class="section-kicker"><span class="n">12</span> pp. 948-952</div>
+<h2>Tumores renales</h2>
+<h3 id="neoplasias-benignas">Neoplasias benignas</h3>
+<ul>
+<li><strong>Adenoma papilar renal</strong>: hallazgo autópsico en 7-22%; corticales, &lt;1,5 cm, pálidos amarillentos o grises, papilares, sin atipias; comparten inmunohistoquímica y citogenética (trisomías 7 y 17) con el carcinoma papilar de bajo grado; el umbral de 3 cm separa clásicamente los tumores que metastatizan, pero algunos expertos consideran malignos todos los adenomas <span class="cite">p. 948</span>.</li>
+<li><strong>Angiomiolipoma</strong>: vasos, músculo liso y grasa, de células epitelioides perivasculares; aparece en el <strong>25-50% de los pacientes con esclerosis tuberosa</strong> (mutaciones de TSC1/TSC2); relevante por su tendencia a la hemorragia espontánea <span class="cite">p. 948</span>.</li>
+<li><strong>Oncocitoma</strong>: 5-15% de las neoplasias renales; grandes células eosinófilas con abundantes mitocondrias, derivadas de células intercaladas de los túbulos colectores; marrón claro con cicatriz central en un tercio; puede alcanzar 12 cm y ser multicéntrico en formas familiares <span class="cite">p. 948</span>.</li>
+</ul>
+<figure class="fig" id="fig-20-51">
+  <a class="fig-open" href="../assets/fig/cap20/fig-20-51.webp" data-caption="Figura 20.51. Carcinoma de células renales: células claras con citoplasma rico en lípidos, tipo papilar con macrófagos espumosos en el eje y tipo cromófobo con halo perinuclear." data-alt="Figura 20.51. Carcinoma de células renales: células claras con citoplasma rico en lípidos, tipo papilar con macrófagos espumosos en el eje y tipo cromófobo con halo perinuclear. Robbins y Cotran, 10ª ed., p. 951.">
+    <img src="../assets/fig/cap20/fig-20-51.webp" width="701" height="681" loading="lazy" decoding="async" alt="Figura 20.51. Carcinoma de células renales: células claras con citoplasma rico en lípidos, tipo papilar con macrófagos espumosos en el eje y tipo cromófobo con halo perinuclear. Robbins y Cotran, 10ª ed., p. 951.">
+  </a>
+  <figcaption>
+    <strong>Figura 20.51.</strong> Carcinoma de células renales: células claras con citoplasma rico en lípidos, tipo papilar con macrófagos espumosos en el eje y tipo cromófobo con halo perinuclear.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 951. <a href="../creditos.html#fig-20-51">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="carcinoma-de-células-renales">Carcinoma de células renales</h3>
+<p>Representa el 3% de todos los cánceres de nuevo diagnóstico en EE. UU. y el <strong>85% de los cánceres renales del adulto</strong>; 65.000 casos nuevos y 13.000 muertes al año; pico en la sexta o séptima décadas, predominio masculino 2:1 <span class="cite">p. 948</span>. Factores de riesgo: <strong>tabaco</strong> (incidencia doble), obesidad (mujeres), hipertensión, estrógenos, amianto, derivados del petróleo y metales pesados; incidencia aumentada en nefropatía terminal, nefropatía crónica, enfermedad quística adquirida y esclerosis tuberosa <span class="cite">p. 949</span>.</p>
+<p>Formas familiares (4% de los cánceres renales, autosómicas dominantes, en jóvenes): <span class="cite">p. 949</span>.</p>
+<ul>
+<li><strong>Síndrome de von Hippel-Lindau (VHL)</strong>: mitad a dos tercios desarrollan quistes y carcinomas bilaterales y múltiples de células claras <span class="cite">p. 949</span>.</li>
+<li><strong>Leiomiomatosis hereditaria con carcinoma renal</strong>: mutaciones de <strong>FH</strong> (fumarato hidratasa); carcinoma papilar agresivo <span class="cite">p. 949</span>.</li>
+<li><strong>Carcinoma papilar hereditario</strong>: múltiples y bilaterales, mutaciones del protooncogén <strong>MET</strong> <span class="cite">p. 949</span>.</li>
+<li><strong>Síndrome de Birt-Hogg-Dubé</strong>: mutaciones de <strong>BHD</strong> (foliculina); tumores cutáneos, quistes pulmonares y tumores renales histológicamente variados <span class="cite">p. 949</span>.</li>
+</ul>
+<p>Clasificación por histología, citogenética y genética (fig. 20.49): <span class="cite">p. 949-950</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Tumores renales" tabindex="0"><table>
+<thead>
+<tr>
+<th>Subtipo</th>
+<th>Frecuencia</th>
+<th>Genética</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carcinoma de células claras</td>
+<td>70-80%</td>
+<td>Pérdida de 3p con el gen <strong>VHL</strong> (3p25.3) en 98%; inactivación somática o hipermetilación del segundo alelo en hasta 80%; VHL dirige a la degradación de <strong>HIF-1</strong>, cuya estabilización aumenta VEGF e IGF-1 y reprograma el metabolismo con MYC; además, desregulación epigenómica</td>
+</tr>
+<tr>
+<td>Carcinoma papilar</td>
+<td>10-15%</td>
+<td>Sin deleciones de 3p; trisomías 7 y 17 y pérdida del cromosoma Y (esporádico); mutaciones de <strong>MET</strong> (familial y algunos esporádicos); frecuentemente multifocal</td>
+</tr>
+<tr>
+<td>Carcinoma cromófobo</td>
+<td>5%</td>
+<td>Múltiples pérdidas cromosómicas con hipodiploidía extrema; deriva de células intercaladas, como el oncocitoma; pronóstico excelente</td>
+</tr>
+<tr>
+<td>Carcinoma con translocación de Xp11</td>
+<td>Raro</td>
+<td>Translocaciones de <strong>TFE3</strong> en Xp11.2; pacientes jóvenes</td>
+</tr>
+<tr>
+<td>Carcinoma del conducto colector (Bellini)</td>
+<td>≤1%</td>
+<td>Glándulas en estroma fibroso, localización medular</td>
+</tr>
+<tr>
+<td>Carcinoma medular</td>
+<td>Raro</td>
+<td>Similar al anterior, en portadores de rasgo falciforme</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 949-950</span>.</p>
+<p><strong>Morfología</strong>: los carcinomas de células claras surgen del <strong>túbulo proximal</strong> como masas esféricas solitarias polares de tejido brillante amarillo o blanco grisáceo (por lípidos y glucógeno intracelular) con áreas de necrosis y hemorragia; tendencia característica a <strong>invadir la vena renal</strong> en columna sólida que puede extenderse a la vena cava inferior e incluso al corazón derecho <span class="cite">p. 950</span>. Los carcinomas papilares derivan de los túbulos contorneados distales, pueden ser multifocales y bilaterales, hemorrágicos y quísticos, con papilas y macrófagos espumosos en el eje y cuerpos de psamoma <span class="cite">p. 950</span>. El cromófobo tiene células eosinófilas pálidas con <strong>halo perinuclear</strong> en láminas sólidas <span class="cite">p. 950</span>.</p>
+<p><strong>Clínica</strong>: tríada clásica de dolor costovertebral, masa palpable y hematuria solo en el <strong>10%</strong> de los casos; el signo más fiable es la hematuria, intermitente y microscópica; por ello el tumor suele descubrirse &gt;10 cm <span class="cite">p. 950-951</span>. El carcinoma renal es uno de los <strong>grandes simuladores</strong>: síndromes paraneoplásicos por producción hormonal anómala, como policitemia, hipercalcemia, hipertensión, disfunción hepática, feminización o masculinización, síndrome de Cushing, eosinofilia, reacciones leucemoides y amiloidosis <span class="cite">p. 951</span>. Metastatiza difusamente <strong>antes de dar síntomas locales</strong>; en el 15% hay metástasis radiológicas al diagnóstico: pulmón (&gt;50%), hueso (33%), adenopatías regionales, hígado, suprarrenal y cerebro <span class="cite">p. 951</span>. Supervivencia media a 5 años del <strong>70%</strong> (hasta 100% sin metástasis a distancia; 60% con invasión venosa o extensión a la grasa perirrenal) <span class="cite">p. 951</span>. Tratamiento: nefrectomía radical, cirugía de preservación de nefronas en tumores T1a (&lt;4 cm), e inhibidores del VEGF y de tirosina cinasas en enfermedad metastásica <span class="cite">p. 951</span>.</p>
+<h3 id="carcinoma-urotelial-de-la-pelvis-renal">Carcinoma urotelial de la pelvis renal</h3>
+<p>El 5-10% de los tumores renales primarios surgen del urotelio pelviano; son evidentes temprano por hematuria al fragmentarse; pueden bloquear el flujo urinario con hidronefrosis palpable y dolor en el flanco; homólogos exactos de los tumores vesicales, pueden ser múltiples en pelvis, uréteres y vejiga; en el 50% hay tumor urotelial vesical preexistente o concomitante; la incidencia aumenta en el <strong>síndrome de Lynch</strong> <span class="cite">p. 951-952</span>. El pronóstico depende de la invasión: supervivencia a 5 años del 50-100% en lesiones no invasivas de bajo grado y &lt;10% en los infiltrantes de alto grado <span class="cite">p. 952</span>.</p>
+
+</section><section id="sec-13-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">13</span> pp. 898-951</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Filtro glomerular: endotelio fenestrado (70-100 nm), MBG con lámina densa, hendiduras de filtración de 20-30 nm con <strong>nefrina-podocina-CD2AP</strong>; mutaciones → síndrome nefrótico hereditario <span class="cite">p. 898-900</span>.</li>
+<li>Inmunofluorescencia: <strong>lineal</strong> = anti-MBG; <strong>granular</strong> = inmunocomplejos; <strong>solo C3 sin IgG ni C1q/C4</strong> = enfermedad por depósitos densos y nefropatía IgA (vía alternativa) <span class="cite">p. 902, 909, 920-921</span>.</li>
+<li>GN postestreptocócica: niños, 1-4 semanas tras faringitis o impétigo, cepas nefritógenas tipos 12, 4 y 1, jorobas subepiteliales, C3 bajo, &gt;95% de recuperación en niños, peor en adultos <span class="cite">p. 907-909</span>.</li>
+<li>GNRP: tipos I anti-MBG (Goodpasture, plasmaféresis), II inmunocomplejos, III pauciinmunitaria con ANCA (anti-PR3 o anti-MPO) en &gt;90% de los idiopáticos; semilunas = células parietales + macrófagos sobre roturas de la MBG <span class="cite">p. 909-910</span>.</li>
+<li>Causas del síndrome nefrótico: niños ECCM 75%; adultos GEFS 35% y membranosa 30%; diabetes, amiloidosis y LES las causas sistémicas mayores <span class="cite">p. 912</span>.</li>
+<li>Nefropatía membranosa: anti-<strong>PLA2R</strong> (60-70%), depósitos subepiteliales con espículas, IgG4, C5b-C9; no responde bien a esteroides; recidiva en 40% de los trasplantes <span class="cite">p. 912-914</span>.</li>
+<li>Cambios mínimos: pico 2-6 años, borramiento de podocitos sin depósitos, proteinuria selectiva, esteroides &gt;90% de respuesta; asociado a Hodgkin y AINE <span class="cite">p. 914</span>.</li>
+<li>GEFS: primera causa de nefrótico en adultos de EE. UU.; genes NPHS1, NPHS2, α-actinina 4, TRPC6 y <strong>APOL1 G1/G2</strong>; variante colapsante (VIH) de mal pronóstico y la de las puntas de buen pronóstico <span class="cite">p. 915-917</span>.</li>
+<li>GNMP tipo I (subendotelial, doble contorno, inmunocomplejos, VHC con crioglobulinemia) vs depósitos densos (C3NeF estabiliza C3bBb, &gt;70%, material denso en la lámina densa, recidiva en 90% de los trasplantes) <span class="cite">p. 918-920</span>.</li>
+<li>Nefropatía IgA: la más frecuente del mundo; IgA1 con O-glucosilación aberrante; hematuria macroscópica sincronizada con infecciones respiratorias; progresión en 15-40% a 20 años; mismo espectro que la púrpura de Schönlein-Henoch <span class="cite">p. 920-923</span>.</li>
+<li>Alport: COL4A5 (85% ligado al X), MBG "en red de mimbre", sordera de conducción y cataratas; MBG delgada: hematuria benigna, 150-225 nm, sin sordera <span class="cite">p. 922-923</span>.</li>
+<li>LTA: causa más frecuente de lesión renal aguda; fases de inicio (36 h), mantenimiento (oliguria 40-400 ml/día, hiperpotasemia) y recuperación (hipopotasemia, riesgo de infección); tubulorrexis en la isquémica y cristales de oxalato con etilenglicol <span class="cite">p. 924-926</span>.</li>
+<li>Pielonefritis: vía ascendente con E. coli y adhesinas de fimbrias P; reflujo vesicoureteral en 1-2% de niños; cilindros de pus = afectación renal; crónica con cicatrices polares y cálices amputados; tiroidización tubular; solo pielonefritis crónica y nefropatía por analgésicos deforman los cálices <span class="cite">p. 927-931</span>.</li>
+<li>Nefritis intersticial medicamentosa: 2-40 días tras el fármaco, fiebre, eosinofilia, exantema, leucocituria con eosinófilos; haptenos con reacción IgE o tipo IV; AINE + cambios mínimos <span class="cite">p. 932-933</span>.</li>
+<li>Mieloma: cilindros de Bence Jones con Tamm-Horsfall rodeados de células gigantes; insuficiencia en la mitad de los casos <span class="cite">p. 934</span>.</li>
+<li>Estenosis de la arteria renal: ateromatosa 70% vs displasia fibromuscular (mujeres jóvenes); renina-angiotensina; curación quirúrgica 70-80% <span class="cite">p. 936-937</span>.</li>
+<li>SHU típico: toxina Shiga de E. coli O157:H7, niños; SHU atípico: factor H/factor I/CD46, ADAMTS13 &gt;10%; PTT: ADAMTS13 &lt;10%, dominio neurológico, intercambio plasmático &gt;80% de respuesta <span class="cite">p. 938-939</span>.</li>
+<li>NPAD: PKD1/PKD2, ciliopatía con "second hit"; 5-10% de las nefropatías terminales; quistes hepáticos 40%, aneurismas de Willis; NP recesiva: PKHD1, canales en ángulo recto, fibrosis hepática congénita <span class="cite">p. 941-944</span>.</li>
+<li>Dializados: enfermedad quística adquirida con riesgo de CCR hasta 100 veces mayor <span class="cite">p. 945</span>.</li>
+<li>Cálculos: cálcicos 70% (hipercalciuria idiopática 50%), estruvita 5-10% (infección por ureasa), úricos 5-10%, cistina 1-2%; coraliformes moldean la pelvis <span class="cite">p. 947-948</span>.</li>
+<li>CCR de células claras: VHL en 3p con HIF-1/VEGF; invasión de la vena renal; tríada completa solo en 10%; paraneoplásicos (policitemia, hipercalcemia, Cushing); metástasis pulmonares &gt;50% y óseas 33% al diagnóstico en el 15%; papilar: MET, trisomías 7 y 17; cromófobo: hipodiploidía, buen pronóstico <span class="cite">p. 949-951</span>.</li>
+<li>Carcinoma urotelial pelviano: 5-10% de los tumores renales, asociado a tumor vesical en 50% y síndrome de Lynch; &lt;10% de supervivencia a 5 años si es infiltrante de alto grado <span class="cite">p. 951-952</span>.</li>
+</ul>
+
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-20-3" aria-label="Figura 20.3"><img src="../assets/fig/cap20/fig-20-3.webp" loading="lazy" decoding="async" alt="Figura 20.3"><span>Figura 20.3</span></a><a class="fig-thumb" href="#fig-20-5" aria-label="Figura 20.5"><img src="../assets/fig/cap20/fig-20-5.webp" loading="lazy" decoding="async" alt="Figura 20.5"><span>Figura 20.5</span></a><a class="fig-thumb" href="#fig-20-8" aria-label="Figura 20.8"><img src="../assets/fig/cap20/fig-20-8.webp" loading="lazy" decoding="async" alt="Figura 20.8"><span>Figura 20.8</span></a><a class="fig-thumb" href="#fig-20-14" aria-label="Figura 20.14"><img src="../assets/fig/cap20/fig-20-14.webp" loading="lazy" decoding="async" alt="Figura 20.14"><span>Figura 20.14</span></a><a class="fig-thumb" href="#fig-20-19" aria-label="Figura 20.19"><img src="../assets/fig/cap20/fig-20-19.webp" loading="lazy" decoding="async" alt="Figura 20.19"><span>Figura 20.19</span></a><a class="fig-thumb" href="#fig-20-24" aria-label="Figura 20.24"><img src="../assets/fig/cap20/fig-20-24.webp" loading="lazy" decoding="async" alt="Figura 20.24"><span>Figura 20.24</span></a><a class="fig-thumb" href="#fig-20-43" aria-label="Figura 20.43"><img src="../assets/fig/cap20/fig-20-43.webp" loading="lazy" decoding="async" alt="Figura 20.43"><span>Figura 20.43</span></a><a class="fig-thumb" href="#fig-20-51" aria-label="Figura 20.51"><img src="../assets/fig/cap20/fig-20-51.webp" loading="lazy" decoding="async" alt="Figura 20.51"><span>Figura 20.51</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

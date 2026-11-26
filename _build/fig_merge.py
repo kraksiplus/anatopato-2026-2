@@ -22,18 +22,28 @@ def page_for(cap: int) -> dict | None:
 
 def prepare() -> None:
     IN.mkdir(parents=True, exist_ok=True)
-    for cap in range(1, 19):
+    for cap in range(1, 27):
         sel = SEL / f"cap{cap:02d}.json"
         page = page_for(cap)
         if not sel.exists() or not page:
             continue
         data = json.loads(sel.read_text(encoding="utf-8"))
         start = int(str(page["printed"]).split("-")[0])
-        req = {
-            "chapter": cap,
-            "printed_start": start,
-            "figures": [{"number": f["number"], "page": f["page"]} for f in data["figures"]],
-        }
+        dest = IN / f"cap{cap:02d}.json"
+        previous = {}
+        if dest.exists():
+            try:
+                old = json.loads(dest.read_text(encoding="utf-8"))
+                previous = {f["number"]: f.get("bbox") for f in old.get("figures", [])}
+            except (ValueError, KeyError):
+                previous = {}
+        figures = []
+        for f in data["figures"]:
+            entry = {"number": f["number"], "page": f["page"]}
+            if previous.get(f["number"]):
+                entry["bbox"] = previous[f["number"]]
+            figures.append(entry)
+        req = {"chapter": cap, "printed_start": start, "figures": figures}
         (IN / f"cap{cap:02d}.json").write_text(
             json.dumps(req, ensure_ascii=False, indent=2), encoding="utf-8"
         )
@@ -42,7 +52,7 @@ def prepare() -> None:
 
 def merge() -> None:
     missing = []
-    for cap in range(1, 19):
+    for cap in range(1, 27):
         sel = SEL / f"cap{cap:02d}.json"
         out = OUT / f"cap{cap:02d}.json"
         page = page_for(cap)

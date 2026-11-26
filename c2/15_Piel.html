@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piel · Anatomía Patológica UBB</title>
+<meta name="description" content="Piel. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Piel · Anatomía Patológica UBB">
+<meta property="og:description" content="Piel. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 25. Piel</h1>
+    <p class="lede">Guía 15 de 16. Resumen completo del capítulo 25 con 154 citas por página y 39 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>15 de 16</strong></div><div><span>Capítulo</span><strong>25</strong></div><div><span>Páginas</span><strong>1133-1170</strong></div><div><span>Citas</span><strong>154</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>39</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-la-piel-estructura-y-respuesta-inmunitaria">La piel: estructura y respuesta inmunitaria</a></li>
+        <li><a href="#sec-03-lesiones-melanociticas-benignas">Lesiones melanocíticas benignas</a></li>
+        <li><a href="#sec-04-melanoma">Melanoma</a></li>
+        <li><a href="#sec-05-tumores-benignos">Tumores benignos</a></li>
+        <li><a href="#sec-06-queratosis-actinica-y-carcinoma-epidermoide">Queratosis actínica y carcinoma epidermoide</a></li>
+        <li><a href="#sec-07-carcinoma-basocelular">Carcinoma basocelular</a></li>
+        <li><a href="#sec-08-dermatosis-inflamatorias">Dermatosis inflamatorias</a></li>
+        <li><a href="#sec-09-enfermedades-vesiculoampollosas">Enfermedades vesiculoampollosas</a></li>
+        <li><a href="#sec-10-infecciones">Infecciones</a></li>
+        <li><a href="#sec-11-trastornos-de-los-anejos-dermicos-y-paniculitis">Trastornos de los anejos dérmicos y paniculitis</a></li>
+        <li><a href="#sec-12-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="14_Endocrino.html" title="Sistema endocrino">14</a>
+        <a href="16_Huesos_Articulaciones_Partes_Blandas.html" title="Tumores de huesos, articulaciones y tejidos blandos">16</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 25 del Robbins y Cotran, 10ª edición: páginas impresas 1133-1170 (38 páginas), contrastadas con el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se contrastó con el OCR del capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Las ampollas se clasifican por nivel: pénfigo foliáceo subcórneo (anti-Dsg1), pénfigo vulgar suprabasal (anti-Dsg1 y Dsg3, IgG reticular), penfigoide ampolloso subepidérmico (anti-BPAG2, depósito lineal) y dermatitis herpetiforme con IgA granular papilar <span class="cite">p. 1159-1163</span>.</li><li>Melanoma: promotor de TERT mutado cerca del 70%, BRAF 40-50%, RAS 15-20% y CDKN2A en el 40% de las familias; el espesor de Breslow y el ganglio centinela definen el pronóstico <span class="cite">p. 1139-1142</span>.</li><li>Crecimiento radial (horizontal, sin metástasis; lentigo maligno, extensión superficial, lentiginoso acro/mucoso) vs crecimiento vertical (nódulo, subclón metastásico) <span class="cite">p. 1141</span>.</li><li>CBC: cáncer invasivo más frecuente (~1 millón/año en EE. UU.), vía Hedgehog PTCH-SMO-GLI1, empalizada e hendiduras, casi nunca metastatiza; síndrome de Gorlin por PTCH <span class="cite">p. 1147-1148</span>.</li><li>CEC: segundo tumor solar, surge de queratosis actínica con TP53 temprano, VPH 5 y 8 en inmunodeprimidos, menos del 5% de metástasis <span class="cite">p. 1145-1147</span>.</li><li>Dermatosis por mecanismo: urticaria tipo I (habones de menos de 24 h), eccema tipo IV (espongiosis), eritema multiforme CD8+ en diana, psoriasis Th1/Th17 (Munro, Auspitz), liquen plano con dermatitis de interfase <span class="cite">p. 1153-1159</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 1133-1167</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>La piel no es solo una barrera mecánica: es un <strong>ecosistema inmunitario</strong> con células de Langerhans y dendrocitos que migran a los ganglios regionales para presentar antígeno, y linfocitos T de memoria que reingresan a la dermis mediante el <strong>antígeno del linfocito cutáneo (CLA)</strong> y receptores de quimiocinas (CCR4, CCR10) <span class="cite">p. 1133-1134</span>.</li>
+<li>Los trastornos cutáneos afectan a <strong>cerca de un tercio de la población de EE. UU. cada año</strong>; el aspecto y la <strong>distribución</strong> de las lesiones son esenciales para diagnosticar y entender la patogenia, y la nomenclatura macro y microscópica (escama, habón, mácula, pápula, espongiosis, paraqueratosis, dermatitis de interfase) se resume en la tabla 25.1 <span class="cite">p. 1135</span>.</li>
+<li>Las dermatosis inflamatorias se dividen en <strong>agudas</strong> (días a semanas, linfocitos y macrófagos, edema: urticaria, eccema, eritema multiforme) y <strong>crónicas</strong> (meses a años, cambios de crecimiento epidérmico y fibrosis: psoriasis, dermatitis seborreica, liquen plano) <span class="cite">p. 1153, 1157</span>.</li>
+<li>Las enfermedades ampollosas se clasifican por el <strong>nivel de separación</strong> dentro de la piel: subcórneo (pénfigo foliáceo), suprabasal (pénfigo vulgar) y subepidérmico (penfigoide ampolloso, dermatitis herpetiforme); la evaluación histológica es esencial para el diagnóstico preciso <span class="cite">p. 1159</span>.</li>
+<li>El <strong>pénfigo vulgar</strong> es la variante más frecuente (más del 80% de los casos mundiales) y se debe a autoanticuerpos IgG contra las desmogleinas 1 y 3, con acantólisis suprabasal e inmunofluorescencia en patrón reticular <span class="cite">p. 1159-1161</span>.</li>
+<li>El <strong>carcinoma basocelular</strong> es el cáncer invasivo más frecuente en el ser humano (casi 1 millón de casos al año en EE. UU.); crece lento, casi nunca metastatiza y se asocia a mutaciones que activan la vía <strong>Hedgehog</strong> (PTCH, SMO, GLI1) <span class="cite">p. 1147</span>.</li>
+<li>El <strong>carcinoma epidermoide</strong> cutáneo es el segundo tumor más frecuente en zonas expuestas al sol, surge de queratosis actínicas con mutaciones tempranas de <strong>TP53</strong>, y menos del 5% metastatiza <span class="cite">p. 1145-1146</span>.</li>
+<li>El <strong>melanoma</strong> es el más mortal de los cánceres cutáneos; mutaciones frecuentes: promotor de <strong>TERT</strong> (cerca del 70%), <strong>BRAF</strong> (40-50%), <strong>RAS</strong> (15-20%) y <strong>CDKN2A</strong>; el <strong>espesor de Breslow</strong> es el principal factor pronóstico <span class="cite">p. 1139-1141</span>.</li>
+<li>Los nevos melanocíticos son neoplasias benignas con mutaciones activadoras de <strong>RAS o BRAF</strong>; los nevos displásicos múltiples son mejor vistos como <strong>marcadores de riesgo</strong> de melanoma que como lesiones obligadamente premalignas <span class="cite">p. 1136, 1138</span>.</li>
+<li>Las infecciones cutáneas ilustran mecanismos específicos: el impétigo ampolloso debe a una <strong>toxina bacteriana que escinde la desmogleina 1</strong> (mismo plano que el pénfigo foliáceo, pero por anticuerpo); las verrugas a la acción citopática del VPH con <strong>coilocitosis</strong> <span class="cite">p. 1167-1168</span>.</li>
+<li>La paniculitis puede ser <strong>septal</strong> (eritema nudoso, sin vasculitis) o <strong>lobulillar con vasculitis</strong> (eritema indurado); la biopsia debe ser profunda para incluir tejido subcutáneo <span class="cite">p. 1166</span>.</li>
+<li>Varios tumores benignos "delatan" síndromes hereditarios: triquilemomas múltiples (Cowden, PTEN), adenomas sebáceos (Muir-Torre, reparación de errores de emparejamiento), cilindromas múltiples (CYLD) y carcinomas basocelulares múltiples juveniles (Gorlin, PTCH) <span class="cite">p. 1144, 1147-1148</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-la-piel-estructura-y-respuesta-inmunitaria" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 1134-1135</div>
+<h2>La piel: estructura y respuesta inmunitaria</h2>
+<p>La epidermis madura de abajo hacia arriba: células basales que se transforman en escamosas cornificadas del estrato córneo. En la zona media hay <strong>melanocitos dendríticos con melanina</strong> y, ocasionalmente, células de Merkel con gránulos neurosecretores y células de Langerhans dendríticas. La dermis contiene vasos pequeños, fibroblastos, <strong>mastocitos perivasculares</strong> y dendrocitos; los anejos (folículos pilosos, glándulas sudoríparas y sebáceas) descienden hasta la dermis <span class="cite">p. 1134</span>.</p>
+<ul>
+<li>Las células de Langerhans y los dendrocitos capturan antígenos en la piel y migran a los ganglios linfáticos regionales, donde presentan sus cargas antigénicas a los linfocitos T y estimulan la respuesta adaptativa <span class="cite">p. 1134</span>.</li>
+<li>Los linfocitos T activados expresan <strong>CLA</strong> y receptores para CCR4 y CCR10, abandonan el ganglio y se alojan en la dermis dirigidos por quimiocinas de queratinocitos activados; sus citocinas median los patrones microscópicos y clínicos de las enfermedades inflamatorias e infecciosas <span class="cite">p. 1134</span>.</li>
+<li>La exposición a la luz solar potencia el envejecimiento cutáneo prematuro, amortigua las respuestas inmunitarias a antígenos ambientales y favorece neoplasias cutáneas premalignas y malignas; trastornos sistémicos (diabetes mellitus, amiloidosis, lupus eritematoso) pueden manifestarse en la piel <span class="cite">p. 1135</span>.</li>
+</ul>
+<h3 id="nomenclatura-dermatológica-esencial">Nomenclatura dermatológica esencial</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: La piel: estructura y respuesta inmunitaria" tabindex="0"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escama</td>
+<td>Excrecencia en forma de lámina seca y córnea, habitualmente por cornificación imperfecta</td>
+</tr>
+<tr>
+<td>Habón</td>
+<td>Lesión elevada, transitoria y pruriginosa con edema dérmico</td>
+</tr>
+<tr>
+<td>Mácula / placa</td>
+<td>Lesión plana circunscrita: mácula 5 mm o menos; placa mayor de 5 mm</td>
+</tr>
+<tr>
+<td>Pápula / nódulo</td>
+<td>Lesión elevada: pápula 5 mm o menos; nódulo mayor de 5 mm</td>
+</tr>
+<tr>
+<td>Vesícula / ampolla</td>
+<td>Lesión elevada llena de líquido: vesícula 5 mm o menos; ampolla mayor de 5 mm</td>
+</tr>
+<tr>
+<td>Espongiosis</td>
+<td>Edema intercelular de la epidermis</td>
+</tr>
+<tr>
+<td>Acantosis</td>
+<td>Hiperplasia epidérmica difusa</td>
+</tr>
+<tr>
+<td>Paraqueratosis</td>
+<td>Queratinización con retención de núcleos en el estrato córneo</td>
+</tr>
+<tr>
+<td>Disqueratosis</td>
+<td>Queratinización anómala y prematura debajo del estrato granuloso</td>
+</tr>
+<tr>
+<td>Dermatitis de interfase</td>
+<td>Infiltrado linfocitario en la unión dermoepidérmica asociado a queratinocitos degenerados y necrosados</td>
+</tr>
+<tr>
+<td>Ulcera</td>
+<td>Pérdida completa de la epidermis que revela dermis o tejido subcutáneo</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1135</span> (tabla 25.1).</p>
+
+</section><section id="sec-03-lesiones-melanociticas-benignas" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 1135-1139</div>
+<h2>Lesiones melanocíticas benignas</h2>
+<h3 id="peca-efélide">Peca (efélide)</h3>
+<ul>
+<li>Lesiones pigmentadas más frecuentes de la infancia en piel clara; máculas pequeñas de color marrón que aparecen tras la exposición al sol y se aclaran y oscurecen de forma cíclica con las estaciones <span class="cite">p. 1135-1136</span>.</li>
+<li>La hiperpigmentación se debe a mayor cantidad de <strong>melanina dentro de los queratinocitos basales</strong>; los melanocitos tienen densidad normal y pueden estar levemente aumentados de tamaño <span class="cite">p. 1135</span>.</li>
+<li>Las manchas café con leche de la neurofibromatosis de tipo 1 se parecen histológicamente, pero son mayores, aparecen sin luz solar y contienen <strong>macrosmelanosomas</strong> <span class="cite">p. 1135</span>.</li>
+</ul>
+<h3 id="lentigo">Lentigo</h3>
+<ul>
+<li>Hiperplasia localizada benigna de melanocitos, de causa desconocida; pequeñas máculas o placas ovales marrón oscuro de 5-10 mm que también pueden afectar mucosas <span class="cite">p. 1136</span>.</li>
+<li>Histología esencial: <strong>hiperplasia melanocítica lineal sin formación de nidos</strong>, limitada a la capa inmediatamente sobre la membrana basal, con capa basocelular hiperpigmentada; a diferencia de los lunares, no se oscurecen con el sol <span class="cite">p. 1136</span>.</li>
+</ul>
+<h3 id="nevo-melanocítico-lunar">Nevo melanocítico (lunar)</h3>
+<ul>
+<li>Neoplasias benignas frecuentes causadas por <strong>mutaciones activadoras adquiridas de RAS o BRAF</strong>; los adquiridos son el tipo más frecuente y están presentes en casi todos los sujetos <span class="cite">p. 1136</span>.</li>
+<li>Los nevos de la unión son lesiones pequeñas, planas, simétricas y uniformes, con <strong>nidos redondeados de células névicas en las puntas de las crestas interpapilares</strong> de la unión dermoepidérmica <span class="cite">p. 1137</span>.</li>
+<li>El nevo compuesto es elevado con forma de cúpula y combina nidos intraepidérmicos con células que descienden a la dermis; la secuencia madurativa termina en el nevo intradérmico con neurotización <span class="cite">p. 1137</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-2">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-2.webp" data-caption="Figura 25.2. Nevo melanocítico de la unión: lesión pequeña, plana, simétrica y uniforme, con nidos redondeados de células névicas en las puntas de las crestas interpapilares de la unión dermoepidérmica." data-alt="Figura 25.2. Nevo melanocítico de la unión: lesión pequeña, plana, simétrica y uniforme, con nidos redondeados de células névicas en las puntas de las crestas interpapilares de la unión dermoepidérmica. Robbins y Cotran, 10ª ed., p. 1137.">
+    <img src="../assets/fig/cap25/fig-25-2.webp" width="695" height="305" loading="lazy" decoding="async" alt="Figura 25.2. Nevo melanocítico de la unión: lesión pequeña, plana, simétrica y uniforme, con nidos redondeados de células névicas en las puntas de las crestas interpapilares de la unión dermoepidérmica. Robbins y Cotran, 10ª ed., p. 1137.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.2.</strong> Nevo melanocítico de la unión: lesión pequeña, plana, simétrica y uniforme, con nidos redondeados de células névicas en las puntas de las crestas interpapilares de la unión dermoepidérmica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1137. <a href="../creditos.html#fig-25-2">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="nevo-displásico">Nevo displásico</h3>
+<ul>
+<li>Pueden ser <strong>precursores directos del melanoma</strong> y, cuando son múltiples, marcan mayor riesgo: en el síndrome del nevo displásico (autosómico dominante), la probabilidad de melanoma supera el <strong>50% a los 60 años</strong> <span class="cite">p. 1137</span>.</li>
+<li>En las familias con este síndrome hay mutaciones heredadas con pérdida de función en <strong>CDKN2A</strong>, que codifica p16 (inhibidor de CDK4/CDK6) y p14ARF; los nevos displásicos comparten con los nevos típicos mutaciones activadoras de NRAS y BRAF, pero se suman a una menor capacidad de freno del ciclo celular <span class="cite">p. 1138</span>.</li>
+<li>Morfología: componente compuesto central elevado con anillo periférico plano y asimétrico, <strong>atipia citológica</strong> (núcleos oscuros de forma irregular) y una <strong>fibrosis lineal o laminar</strong> de la dermis subyacente; el diagnóstico se basa en la constelación de hallazgos, no en uno aislado <span class="cite">p. 1139</span>.</li>
+<li>La gran mayoría de los nevos displásicos se mantienen estables y nunca progresan, y no todos los melanomas del síndrome nacen sobre ellos; en formas esporádicas aisladas el riesgo de transformación es muy bajo <span class="cite">p. 1138</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Lesiones melanocíticas benignas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Lesión</th>
+<th>Clave histológica</th>
+<th>Implicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peca</td>
+<td>Melanina aumentada en queratinocitos basales, melanocitos normales</td>
+<td>Sin trascendencia, cíclica con el sol</td>
+</tr>
+<tr>
+<td>Lentigo</td>
+<td>Hiperplasia melanocítica lineal, sin nidos</td>
+<td>Benigna, no oscurece con el sol</td>
+</tr>
+<tr>
+<td>Nevo de la unión</td>
+<td>Nidos névicos en crestas interpapilares</td>
+<td>Benigno, plano</td>
+</tr>
+<tr>
+<td>Nevo compuesto / intradérmico</td>
+<td>Nidos intraepidérmicos y dérmicos con maduración</td>
+<td>Benigno, elevado</td>
+</tr>
+<tr>
+<td>Nevo displásico</td>
+<td>Atipia citológica y fibrosis laminar</td>
+<td>Marcador de riesgo (o precursor raro) de melanoma</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1135-1139</span>.</p>
+
+</section><section id="sec-04-melanoma" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 1139-1142</div>
+<h2>Melanoma</h2>
+<ul>
+<li>Es el <strong>más mortal de los cánceres cutáneos</strong>, fuertemente ligado a mutaciones adquiridas por radiación UV; en EE. UU. se prevían más de 100.000 casos y más de 6.800 muertes en 2020, con incidencia creciente pero mortalidad en descenso por los inhibidores del punto de control inmunitario <span class="cite">p. 1139</span>.</li>
+<li>Además de la piel, surge en mucosas oral y anogenital, esófago, meninges y úvea; la mayoría se cura si se detecta y trata en fases tempranas <span class="cite">p. 1139</span>.</li>
+</ul>
+<h3 id="patogenia">Patogenia</h3>
+<ul>
+<li>El 10-15% de los casos es <strong>hereditario</strong> (autosómico dominante con penetrancia variable), por mutaciones en línea germinal en CDKN2A o en genes de la telomerasa; el resto es esporádico y ligado a la UV solar, con mutaciones que llevan la firma UV en el ADN <span class="cite">p. 1139</span>.</li>
+<li><strong>CDKN2A</strong> está mutado en cerca del 40% de las familias con melanoma familiar; la pérdida de p16 bloquea la inhibición de CDK4/6 (eje RB) y la pérdida de ARF libera a MDM2 para degradar p53; el efecto neto es proliferación melanocítica sin control del ciclo y escape de la senescencia <span class="cite">p. 1139-1140</span>.</li>
+<li><strong>BRAF</strong> mutado en 40-50% de los melanomas y RAS en 15-20% adicional; los tumores con BRAF mutado pierden a menudo <strong>PTEN</strong>, que amplifica la vía PI3K/AKT. Los melanomas en piel no expuesta al sol rara vez mutan BRAF o RAS y con más frecuencia activan <strong>KIT</strong> <span class="cite">p. 1140</span>.</li>
+<li>Mutaciones en el <strong>promotor de TERT</strong> en cerca del 70% de los melanomas esporádicos: es el gen mutado más frecuente en este cáncer y representa el antídoto frente a la senescencia <span class="cite">p. 1140</span>.</li>
+<li>Las quemaduras intensas periódicas al principio de la vida son el factor de riesgo más importante; la relación con el sol es menos marcada que en el carcinoma epidermoide, y hay melanomas en piel oscura y zonas no expuestas <span class="cite">p. 1139</span>.</li>
+</ul>
+<h3 id="morfología-crecimiento-radial-y-vertical">Morfología: crecimiento radial y vertical</h3>
+<ul>
+<li>Macroscopía: variaciones llamativas de color (negro, marrón, rojo, azul oscuro, gris), a veces zonas hipopigmentadas por regresión, y bordes irregulares mellados, en contraste con los nevos de bordes redondeados y uniformes <span class="cite">p. 1140</span>.</li>
+<li><strong>Crecimiento radial</strong>: propagación horizontal dentro de la epidermis y dermis superficial, sin capacidad de metastatizar; incluye el lentigo maligno (cara de hombres mayores, puede permanecer décadas en fase radial), la <strong>extensión superficial</strong> (el tipo más frecuente, en piel expuesta al sol) y el lentiginoso acro/mucoso (sin relación con el sol) <span class="cite">p. 1141</span>.</li>
+<li><strong>Crecimiento vertical</strong>: tras un período impredecible, un subclón con potencial metastásico invade la dermis profunda en forma de masa expansiva; su aparición se correlaciona con un nódulo clínico y la capacidad de diseminarse <span class="cite">p. 1141</span>.</li>
+<li>A diferencia de los nevos, el melanoma <strong>carece de maduración o neurotización</strong> en la porción profunda; las células son grandes, con núcleos irregulares, cromatina periférica y nucléolos eosinófilos prominentes <span class="cite">p. 1141</span>.</li>
+<li>Las lesiones "atípicas" inclasificables se llaman <strong>tumores melanocíticos con potencial maligno incierto</strong> y exigen extirpación completa y seguimiento estrecho <span class="cite">p. 1141</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-8">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-8.webp" data-caption="Figura 25.8. Melanoma: lesión de contorno y pigmentación irregulares, fase de crecimiento radial intraepidérmico, fase de crecimiento vertical nodular y micrometástasis en ganglio centinela teñida con HMB-45." data-alt="Figura 25.8. Melanoma: lesión de contorno y pigmentación irregulares, fase de crecimiento radial intraepidérmico, fase de crecimiento vertical nodular y micrometástasis en ganglio centinela teñida con HMB-45. Robbins y Cotran, 10ª ed., p. 1141.">
+    <img src="../assets/fig/cap25/fig-25-8.webp" width="1463" height="1138" loading="lazy" decoding="async" alt="Figura 25.8. Melanoma: lesión de contorno y pigmentación irregulares, fase de crecimiento radial intraepidérmico, fase de crecimiento vertical nodular y micrometástasis en ganglio centinela teñida con HMB-45. Robbins y Cotran, 10ª ed., p. 1141.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.8.</strong> Melanoma: lesión de contorno y pigmentación irregulares, fase de crecimiento radial intraepidérmico, fase de crecimiento vertical nodular y micrometástasis en ganglio centinela teñida con HMB-45.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1141. <a href="../creditos.html#fig-25-8">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="pronóstico-y-clínica">Pronóstico y clínica</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Melanoma" tabindex="0"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Favorable</th>
+<th>Desfavorable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Espesor de Breslow</td>
+<td>Escasa profundidad</td>
+<td>Mayor profundidad</td>
+</tr>
+<tr>
+<td>Mitosis</td>
+<td>Menos de 1/mm2</td>
+<td>Numerosas</td>
+</tr>
+<tr>
+<td>Linfocitos que infiltran el tumor</td>
+<td>Respuesta importante</td>
+<td>Escasa</td>
+</tr>
+<tr>
+<td>Regresión</td>
+<td>Ausente</td>
+<td>Presente</td>
+</tr>
+<tr>
+<td>Ulceración epidérmica</td>
+<td>Ausente</td>
+<td>Presente</td>
+</tr>
+<tr>
+<td>Ganglio centinela</td>
+<td>Sin afectación</td>
+<td>Micrometástasis (peor pronóstico)</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1141-1142</span>.</p>
+<ul>
+<li>La mayoría metastatiza primero a los <strong>ganglios linfáticos regionales</strong>, por lo que la biopsia del ganglio centinela aporta información pronóstica; incluso un número pequeño de células HMB-45 positivas confiere peor pronóstico <span class="cite">p. 1141-1142</span>.</li>
+<li>Signos de alarma <strong>ABCDE</strong>: asimetría, bordes irregulares, color variado, diámetro aumentado y evolución o cambio en el tiempo, especialmente si es rápido; la mayoría de las lesiones supera 10 mm al diagnóstico <span class="cite">p. 1142</span>.</li>
+<li>Tratamiento dirigido: los tumores con BRAF mutado responden a <strong>inhibidores de BRAF</strong>, mientras que los de otros subtipos moleculares no; el melanoma responde de forma destacada a los inhibidores de los puntos de control <strong>CTLA4 y PD1</strong>, que quitan el freno a la respuesta frente a neoantígenos tumorales <span class="cite">p. 1142</span>.</li>
+</ul>
+
+</section><section id="sec-05-tumores-benignos" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 1142-1151</div>
+<h2>Tumores benignos</h2>
+<h3 id="queratosis-seborreica">Queratosis seborreica</h3>
+<ul>
+<li>Tumor epidérmico frecuente de sujetos de mediana edad o mayores; tronco, extremidades, cabeza y cuello; en personas de color, las múltiples y faciales se llaman <strong>dermatosis papulosa nigra</strong> (hasta el 35% de los adultos afroamericanos) <span class="cite">p. 1142</span>.</li>
+<li>Patogenia: mutaciones activadoras de <strong>FGFR3</strong> en muchas lesiones esporádicas; la aparición brusca de numerosas queratosis forma parte del <strong>signo de Leser-Trélat</strong> paraneoplásico, posiblemente por TGF-α de carcinomas del tubo digestivo <span class="cite">p. 1142</span>.</li>
+<li>Morfología: placas redondas, planas, en forma de moneda, pigmentación parda uniforme, superficie aterciopelada con <strong>orificios porosos con queratina</strong> (pista frente al melanoma); histología exofítica y bien delimitada, de células basaloides con <strong>quistes córneos</strong> llenos de queratina e hiperqueratosis superficial <span class="cite">p. 1142-1143</span>.</li>
+</ul>
+<h3 id="acantosis-nigricans">Acantosis nigricans</h3>
+<ul>
+<li>Piel engrosada e hiperpigmentada en las flexuras; en al menos el <strong>80% de los casos</strong> se asocia a trastornos benignos (rasgo autosómico dominante, obesidad, anomalías endocrinas, sobre todo diabetes), con debut en la infancia o pubertad <span class="cite">p. 1143</span>.</li>
+<li>En el resto se asocia a cánceres, sobre todo <strong>adenocarcinomas digestivos</strong>, como fenómeno paraneoplásico; patogénicamente hay aumento de señales por receptores tirosina cinasa (FGFR3 en la forma familiar, IGFR1 en la hiperinsulinemia, EGFR por TGF-β en la paraneoplásica) <span class="cite">p. 1143</span>.</li>
+<li>Histología común: epidermis y papilas dérmicas onduladas en picos y valles, con hiperqueratosis e hiperpigmentación basocelular leve <strong>sin hiperplasia melanocítica</strong> <span class="cite">p. 1143</span>.</li>
+</ul>
+<h3 id="pólipo-fibroepitelial-y-quiste-de-inclusión">Pólipo fibroepitelial y quiste de inclusión</h3>
+<ul>
+<li>El pólipo fibroepitelial (acrocordón) es un tumor blando de color carne con tallo delgado, centrado en un eje fibrovascular revestido de epitelio escamoso benigno; puede sufrir necrosis isquémica por torsión y a veces se asocia a diabetes, obesidad y poliposis intestinal <span class="cite">p. 1143</span>.</li>
+<li>El quiste de inclusión epitelial o folicular (quiste sebáceo) proviene de la invaginación quística de la epidermis o de un folículo; la rotura extravasa queratina a la dermis y provoca una <strong>respuesta granulomatosa</strong> extensa y dolorosa <span class="cite">p. 1143</span>.</li>
+</ul>
+<h3 id="tumores-de-los-anejos">Tumores de los anejos</h3>
+<ul>
+<li>El <strong>cilindroma</strong> (frente y cuero cabelludo) coalesce formando el "tumor en turbante"; las formas familiares múltiples se deben a mutaciones inactivadoras de <strong>CYLD</strong>, desubicuitinadora que inhibe NF-κB; histológicamente sus islotes basaloides se acoplan como piezas de rompecabezas <span class="cite">p. 1144</span>.</li>
+<li>El <strong>tricoepitelioma</strong> forma yemas basaloides que recuerdan folículos pilosos primitivos; el <strong>siringoma</strong> son pápulas pequeñas en párpados inferiores con diferenciación ecrina; el poroma ecrino se ubica en palmas y plantas <span class="cite">p. 1144</span>.</li>
+<li>El <strong>adenoma sebáceo</strong> (sebocitos con citoplasma espumoso) alerta del síndrome de Muir-Torre y del síndrome de Lynch (defectos de reparación de errores de emparejamiento); los <strong>triquilemomas múltiples</strong> señalan el síndrome de Cowden por PTEN (cáncer endometrial y de mama) <span class="cite">p. 1144</span>.</li>
+<li>El <strong>pilomatrixoma</strong> muestra diferenciación pilosa con "células fantasma" anucleadas y se asocia a mutaciones activadoras de <strong>CTNNB1</strong> (β-catenina), clave en el desarrollo del pelo <span class="cite">p. 1144-1145</span>.</li>
+<li>Variantes malignas: el carcinoma sebáceo nace en las glándulas de Meibomio del párpado y metastatiza; los carcinomas ecrinos y apocrinos pueden confundirse con adenocarcinoma metastásico por formar glándulas <span class="cite">p. 1145</span>.</li>
+</ul>
+<h3 id="fibrohistiocitoma-benigno-dermatofibroma">Fibrohistiocitoma benigno (dermatofibroma)</h3>
+<ul>
+<li>Pápula firme y parda, habitual en las piernas; proliferación dérmica circunscrita de <strong>células fusiformes benignas</strong> con fibroblastos que rodean haces de colágeno individuales <span class="cite">p. 1150</span>.</li>
+<li>La epidermis suprayacente muestra <strong>hiperplasia seudoepiteliomatosa</strong> característica; existen variantes aneurismáticas con sangre extravasada y hemosiderina <span class="cite">p. 1150</span>.</li>
+</ul>
+<h3 id="dermatofibrosarcoma-protuberans">Dermatofibrosarcoma protuberans</h3>
+<ul>
+<li>Fibrosarcoma primario bien diferenciado de la piel: crece lento, es muy invasivo localmente y recurre, pero casi nunca metastatiza; el tratamiento es la <strong>extirpación local amplia</strong> <span class="cite">p. 1150</span>.</li>
+<li>Patogenia molecular: translocación <strong>COL1A1-PDGFβ</strong> que yuxtapone el promotor de COL1A1 con la región codificadora de PDGFβ, generando un asa autocrina; los casos irresecables se tratan con inhibidores de la tirosina cinasa de PDGFβ, que deben mantenerse de por vida <span class="cite">p. 1150-1151</span>.</li>
+<li>Morfología: nódulo "protruyente" en el tronco dentro de placa indurada, fibroblastos en patrón <strong>estoriforme</strong> (remolino) con escasas mitosis, epidermis adelgazada (a diferencia del dermatofibroma) e infiltración de la grasa subcutánea en <strong>panal de abeja</strong> o "queso suizo" <span class="cite">p. 1151</span>.</li>
+</ul>
+
+</section><section id="sec-06-queratosis-actinica-y-carcinoma-epidermoide" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 1145-1147</div>
+<h2>Queratosis actínica y carcinoma epidermoide</h2>
+<h3 id="queratosis-actínica">Queratosis actínica</h3>
+<ul>
+<li>Aparece en piel dañada por el sol de sujetos de piel poco pigmentada; también la inducen radiación ionizante, hidrocarburos industriales y arsenicales; puede progresar de forma gradual al carcinoma epidermoide, análoga a la secuencia precursora del cuello uterino <span class="cite">p. 1145</span>.</li>
+<li>Morfología: lesiones menores de 1 cm, marrones, rojizas o de color piel, rugosas "como papel de lija"; puede formarse un <strong>cuerno cutáneo</strong>; en los labios se llama queilitis actínica <span class="cite">p. 1145</span>.</li>
+<li>Histología: <strong>atipia citológica en las capas más profundas</strong> de la epidermis (displasia basal), disqueratosis con citoplasma rosado, elastosis dérmica azul grisácea y paraqueratosis; a diferencia del carcinoma basocelular, se conservan los puentes intercelulares <span class="cite">p. 1145-1146</span>.</li>
+<li>Pueden remitir o estabilizarse, pero bastantes malignizan, lo que justifica la extirpación local (legrado, congelación, antineoplásicos tópicos); el <strong>imiquimod</strong> tópico, activador de receptores tipo Toll, erradica hasta el 50% de las lesiones frente a un 5% de regresión espontánea <span class="cite">p. 1146</span>.</li>
+</ul>
+<h3 id="carcinoma-epidermoide">Carcinoma epidermoide</h3>
+<ul>
+<li>Segundo tumor más frecuente de zonas expuestas al sol en personas mayores, superado solo por el carcinoma basocelular; se descubre habitualmente pequeño y extirpable, y <strong>menos del 5% metastatiza</strong> a ganglios regionales, por lo general los de invasión profunda <span class="cite">p. 1146</span>.</li>
+<li>Patogenia: el daño del ADN por <strong>UV</strong> es la causa principal, con mutaciones tempranas de <strong>TP53</strong> en las queratosis actínicas (frecuentes en los dímeros de pirimidina, firma de la UV); se agregan señales aumentadas de RAS y señales reducidas de Notch <span class="cite">p. 1146-1147</span>.</li>
+<li>La <strong>inmunodepresión crónica</strong> (trasplante de órganos) es la segunda asociación frecuente, en parte por transformación de queratinocitos por los subtipos <strong>VPH 5 y 8</strong>; también contribuyen la epidermodisplasia verruciforme, alquitranes y aceites, úlceras crónicas y osteomielitis supurativa, cicatrices de quemaduras, arsénico, radiación ionizante, tabaco y areca <span class="cite">p. 1146</span>.</li>
+<li>En la xerodermia pigmentaria, los defectos de la reparación por escisión de nucleótidos obligan a reparar dímeros de pirimidina por vías propensas al error, lo que acelera la carcinogenia <span class="cite">p. 1146-1147</span>.</li>
+<li>Morfología: el carcinoma <strong>in situ</strong> es una placa roja y descamativa bien definida con atipia de espesor completo; el invasivo es nodular, hiperqueratósico y puede ulcerarse, con lóbulos ordenados y queratinización abundante o, en tumores anaplásicos, solo disqueratosis unicelular que exige inmunotinción para queratinas <span class="cite">p. 1147</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-13">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-13.webp" data-caption="Figura 25.13. Carcinoma epidermoide infiltrante: nódulo ulcerado del cuero cabelludo, lóbulos de epitelio escamoso atípico que rompen la membrana basal e invaden la dermis, con núcleos angulados y nucléolos prominentes." data-alt="Figura 25.13. Carcinoma epidermoide infiltrante: nódulo ulcerado del cuero cabelludo, lóbulos de epitelio escamoso atípico que rompen la membrana basal e invaden la dermis, con núcleos angulados y nucléolos prominentes. Robbins y Cotran, 10ª ed., p. 1147.">
+    <img src="../assets/fig/cap25/fig-25-13.webp" width="1456" height="779" loading="lazy" decoding="async" alt="Figura 25.13. Carcinoma epidermoide infiltrante: nódulo ulcerado del cuero cabelludo, lóbulos de epitelio escamoso atípico que rompen la membrana basal e invaden la dermis, con núcleos angulados y nucléolos prominentes. Robbins y Cotran, 10ª ed., p. 1147.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.13.</strong> Carcinoma epidermoide infiltrante: nódulo ulcerado del cuero cabelludo, lóbulos de epitelio escamoso atípico que rompen la membrana basal e invaden la dermis, con núcleos angulados y nucléolos prominentes.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1147. <a href="../creditos.html#fig-25-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+</section><section id="sec-07-carcinoma-basocelular" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 1146-1148</div>
+<h2>Carcinoma basocelular</h2>
+<ul>
+<li>Es el <strong>cáncer invasivo más frecuente en el ser humano</strong> (casi 1 millón de casos al año en EE. UU.); crecimiento lento, casi nunca metastatiza, y solo menos del 0,5% produce desfiguración o metástasis; aparece en piel expuesta al sol de adultos mayores, con mayor incidencia en inmunodepresión y xerodermia pigmentaria <span class="cite">p. 1147</span>.</li>
+<li>Patogenia: mutaciones que descontrolan la vía <strong>Hedgehog</strong>; la proteína PTCH es el receptor de Sonic Hedgehog (SHH) y, en reposo, mantiene reprimida a SMO; la unión de SHH libera SMO, que activa al factor de transcripción GLI1 y a los genes de crecimiento y supervivencia <span class="cite">p. 1148</span>.</li>
+<li>El <strong>síndrome del carcinoma basocelular nevoideo (Gorlin)</strong>, autosómico dominante por pérdida de PTCH, causa carcinomas basocelulares múltiples antes de los 20 años, meduloblastoma, fibromas ováricos, queratoquistes odontógenos y anomalías del desarrollo; en las formas esporádicas son frecuentes mutaciones con pérdida de PTCH, cerca de un tercio con transiciones C&gt;T de firma UV <span class="cite">p. 1147-1148</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Carcinoma basocelular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rasgo</th>
+<th>Carcinoma basocelular</th>
+<th>Carcinoma epidermoide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frecuencia</td>
+<td>Cáncer invasivo más frecuente; ~1 millón/año en EE. UU.</td>
+<td>Segundo tumor solar más frecuente en mayores</td>
+</tr>
+<tr>
+<td>Vía molecular</td>
+<td>Hedgehog (PTCH, SMO, GLI1)</td>
+<td>UV con mutación temprana de TP53, RAS, Notch; VPH 5 y 8</td>
+</tr>
+<tr>
+<td>Metástasis</td>
+<td>Muy infrecuentes (menos del 0,5%)</td>
+<td>Menos del 5%, en lesiones profundas</td>
+</tr>
+<tr>
+<td>Clínica</td>
+<td>Pápula perlada con telangiectasias, ulcera "rodora"</td>
+<td>Placa in situ o nódulo hiperqueratósico ulcerado</td>
+</tr>
+<tr>
+<td>Histología</td>
+<td>Nidos basaloides en empalizada, estroma mucinoso, hendiduras de separación</td>
+<td>Lóbulos de células poligonales con queratinización; in situ de espesor completo</td>
+</tr>
+<tr>
+<td>Precursor</td>
+<td>No aplica</td>
+<td>Queratosis actínica</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1146-1148</span>.</p>
+<ul>
+<li>Morfología: pápulas perladas con <strong>telangiectasias</strong> subepidérmicas; las lesiones avanzadas se ulceran e invaden hueso y senos faciales ("úlceras rodoras"); la variante <strong>superficial multifocal</strong> es una placa eritematosa, a veces pigmentada, que puede simular un melanoma temprano <span class="cite">p. 1148</span>.</li>
+<li>Histología: nidos de células basaloides basófilas en matriz mucinosa, con la <strong>disposición en empalizada</strong> periférica y <strong>hendiduras de retracción del estroma</strong>, artefacto que ayuda a diferenciarlo de tumores de anejos como el tricoepitelioma <span class="cite">p. 1148</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-15">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-15.webp" data-caption="Figura 25.15. Carcinoma basocelular: nódulos perlados telangiectásicos formados por nidos de células basaloides uniformes en la dermis, separados del estroma por hendiduras finas de retracción." data-alt="Figura 25.15. Carcinoma basocelular: nódulos perlados telangiectásicos formados por nidos de células basaloides uniformes en la dermis, separados del estroma por hendiduras finas de retracción. Robbins y Cotran, 10ª ed., p. 1150.">
+    <img src="../assets/fig/cap25/fig-25-15.webp" width="1476" height="739" loading="lazy" decoding="async" alt="Figura 25.15. Carcinoma basocelular: nódulos perlados telangiectásicos formados por nidos de células basaloides uniformes en la dermis, separados del estroma por hendiduras finas de retracción. Robbins y Cotran, 10ª ed., p. 1150.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.15.</strong> Carcinoma basocelular: nódulos perlados telangiectásicos formados por nidos de células basaloides uniformes en la dermis, separados del estroma por hendiduras finas de retracción.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1150. <a href="../creditos.html#fig-25-15">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+<div class="warnbox"><span class="box-title">CBC vs CEC para certamen</span>CBC: más frecuente, pápula perlada telangiectásica, ulcera rodora, Hedgehog con PTCH, hendiduras de retracción, metástasis casi nulas. CEC: segundo, nace de queratosis actínica con TP53 temprano, nódulo hiperqueratósico ulcerado, metástasis en menos del 5% solo si invade en profundidad <span class="cite">p. 1146-1148</span>.</div>
+</section><section id="sec-08-dermatosis-inflamatorias" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 1153-1158</div>
+<h2>Dermatosis inflamatorias</h2>
+<h3 id="urticaria">Urticaria</h3>
+<ul>
+<li>Habones: placas edematosas pruriginosas por <strong>degranulación de mastocitos</strong> con hiperpermeabilidad microvascular dérmica; lesiones que aparecen y desaparecen en horas (habitualmente menos de 24 h) y episodios de días a meses, entre los 20 y los 40 años sobre todo <span class="cite">p. 1153-1154</span>.</li>
+<li>Formas: <strong>dependiente de IgE y del mastocito</strong> (hipersensibilidad tipo I: pólenes, alimentos, fármacos, venenos); <strong>dependiente del mastocito sin IgE</strong> (opiáceos, antibióticos, medios de contraste); e <strong>independiente de ambos</strong> (AAS por inhibición de la ciclooxigenasa, y edema angioneurótico hereditario por deficiencia del inhibidor de C1) <span class="cite">p. 1154</span>.</li>
+<li>Histología: infiltrado perivenular superficial escaso de células mononucleares y algunos neutrófilos, con <strong>edema dérmico</strong> que separa los haces de colágeno, linfáticos dilatados y epidermis normal <span class="cite">p. 1154</span>.</li>
+<li>El <strong>angioedema</strong> se relaciona estrechamente con la urticaria y se caracteriza por un edema de la porción más profunda de la dermis y de la grasa subcutánea <span class="cite">p. 1154</span>.</li>
+</ul>
+<h3 id="dermatitis-eccematosa-aguda">Dermatitis eccematosa aguda</h3>
+<ul>
+<li>Uno de los trastornos más frecuentes de la piel; subtipos: dermatitis de contacto alérgica, atópica, por fármacos, fotosensible e irritante primaria; el tratamiento busca retirar la sustancia causal y usa corticoesteroides tópicos paliativos <span class="cite">p. 1154</span>.</li>
+<li>Patogenia: reacción de <strong>hipersensibilidad tipo IV</strong>; el antígeno de contacto (p. ej., el urusiol de la hiedra) actúa como hapteno sobre proteínas propias, es captado por las células de Langerhans, que migran a los ganglios y presentan a linfocitos T CD4+ vírgenes; la reexposición activa linfocitos T de memoria en unas 24 h, con eritema y prurito de la fase espongiótica aguda <span class="cite">p. 1154-1155</span>.</li>
+<li>Morfología: lesiones papulovesiculares rojas con costra; la <strong>espongiosis</strong> (edema intercelular de la epidermis, sobre todo en el estrato espinoso) separa queratinocitos y forma vesículas intraepidérmicas; la cronicidad añade acantosis e hiperqueratosis descamativa; las lesiones de contacto tienden a la impetiginización con costra amarilla <span class="cite">p. 1155-1156</span>.</li>
+</ul>
+<h3 id="eritema-multiforme">Eritema multiforme</h3>
+<ul>
+<li>Reacción de hipersensibilidad autolimitada frente a infecciones (herpes simple, micoplasmas, histoplasmosis, coccidioidomicosis, tifus, lepra), fármacos (sulfamidas, penicilina, barbitúricos, salicilatos, difenilhidantoina, antipalúdicos), cáncer y enfermedades del colágeno vascular <span class="cite">p. 1156</span>.</li>
+<li>Patogenia: lesión del queratinocito mediada por <strong>linfocitos T CD8+ citotóxicos</strong> alostados en la piel, más abundantes en el centro de la lesión; mecanismo compartido con la enfermedad del injerto contra el huésped aguda, el rechazo de aloinjerto y las erupciones fijas por fármacos <span class="cite">p. 1156</span>.</li>
+<li>Morfología: lesiones <strong>en diana</strong> con ampolla central o necrosis epidérmica rodeada de eritema macular; histología de dermatitis de interfase, con infiltrado perivascular superficial, queratinocitos degenerados y necrosis epidérmica confluente que forma ampollas y erosiones <span class="cite">p. 1156-1157</span>.</li>
+<li>El <strong>síndrome de Stevens-Johnson</strong> es la forma febril con afectación extensa de piel, labios, mucosa oral, conjuntiva, uretra y zonas genitales y perianales; la <strong>necrólisis epidérmica tóxica</strong> añade necrosis difusa y desprendimiento de superficies epiteliales con cuadro semejante a una quemadura extensa, y la pérdida de la barrera puede causar septicemia mortal <span class="cite">p. 1156-1157</span>.</li>
+</ul>
+<h3 id="psoriasis">Psoriasis</h3>
+<ul>
+<li>Dermatosis inflamatoria crónica de base autoinmunitaria que afecta al <strong>1-2%</strong> de las personas en EE. UU.; cerca del 15% de los pacientes tiene <strong>artritis psoriásica</strong> asociada, que puede deformar como la artritis reumatoide; puede asociarse a miopatía, enteropatía y sida <span class="cite">p. 1157</span>.</li>
+<li>Patogenia: factores genéticos (variantes de HLA) y ambientales con antígenos aún desconocidos; linfocitos CD4+ <strong>Th1 y Th17</strong> y CD8+ citotóxicos invaden la epidermis y crean una "sopa" de citocinas dominada por IL-12, interferón-γ, <strong>TNF</strong> e <strong>IL-17</strong>, que estimulan la proliferación de queratinocitos; la eficacia clínica de los inhibidores del TNF subraya esta vía; el trauma local induce lesiones (<strong>fenómeno de Koebner</strong>) <span class="cite">p. 1157</span>.</li>
+<li>Morfología clínica: placas salmón-rosado bien delimitadas con <strong>escamas blanquecinas plateadas</strong> poco adherentes en codos, rodillas, cuero cabelludo, zonas lumbosacras y glande; cambios ungueales en el 30% (mancha de aceite, hoyuelos, onicólisis); puede causar eritrodermia generalizada <span class="cite">p. 1157</span>.</li>
+<li>Histología: <strong>acantosis</strong> con alargamiento regular de las crestas interpapilares ("tubos de ensayo en una rejilla"), mitosis suprabasales, estrato granuloso adelgazado o ausente y <strong>paraqueratosis</strong> extensa; placas suprapapilares delgadas sobre vasos dilatados, responsable del <strong>signo de Auspitz</strong> (puntos hemorrágicos al levantar la escama); neutrófilos en <strong>pústulas espongiformes</strong> y <strong>microabscesos de Munro</strong> en el estrato córneo <span class="cite">p. 1157-1158</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-25">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-25.webp" data-caption="Figura 25.25. Psoriasis: lesiones tempranas pustulosas y placas crónicas con escama blanco plateado, junto a hiperplasia epidérmica, paraqueratosis y neutrófilos intraepidérmicos." data-alt="Figura 25.25. Psoriasis: lesiones tempranas pustulosas y placas crónicas con escama blanco plateado, junto a hiperplasia epidérmica, paraqueratosis y neutrófilos intraepidérmicos. Robbins y Cotran, 10ª ed., p. 1157.">
+    <img src="../assets/fig/cap25/fig-25-25.webp" width="1457" height="568" loading="lazy" decoding="async" alt="Figura 25.25. Psoriasis: lesiones tempranas pustulosas y placas crónicas con escama blanco plateado, junto a hiperplasia epidérmica, paraqueratosis y neutrófilos intraepidérmicos. Robbins y Cotran, 10ª ed., p. 1157.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.25.</strong> Psoriasis: lesiones tempranas pustulosas y placas crónicas con escama blanco plateado, junto a hiperplasia epidérmica, paraqueratosis y neutrófilos intraepidérmicos.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1157. <a href="../creditos.html#fig-25-25">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="dermatitis-seborreica">Dermatitis seborreica</h3>
+<ul>
+<li>Dermatosis crónica más frecuente incluso que la psoriasis (hasta el <strong>5%</strong> de la población); afecta regiones de alta densidad de glándulas sebáceas: cuero cabelludo, entrecejo, conducto auditivo externo, zona retroauricular, pliegues nasolabiales y zona preesternal; es inflamación de la epidermis, no de las glándulas sebáceas <span class="cite">p. 1158</span>.</li>
+<li>Patogenia incierta: el sebo (estimulado por andrógenos) es necesario pero no suficiente; los pacientes con enfermedad de Parkinson tienen sebo aumentado por déficit de dopamina y alta incidencia, que mejora con levodopa; se ha señalado la colonización por <strong>Malassezia</strong> sin prueba de causalidad; la forma grave era frecuente en VIH con CD4 bajos <span class="cite">p. 1158</span>.</li>
+<li>Morfología: máculas y pápulas sobre base eritematosa amarillenta y grasienta con descamación y costras; la caspa es su expresión en el cuero cabelludo; histología mixta espongiótica y acantósica, con <strong>labios foliculares</strong> (paraqueratosis con neutrófilos y suero en los orificios foliculares) <span class="cite">p. 1158</span>.</li>
+</ul>
+<h3 id="liquen-plano">Liquen plano</h3>
+<ul>
+<li>Pápulas "planas, poligonales, purpúreas y pruriginosas" (las seis p), autolimitado y resuelto de forma espontánea en 1-2 años, con hiperpigmentación postinflamatoria residual; sobre el liquen mucoso crónico puede surgir un <strong>carcinoma epidermoide</strong> por carcinogenia inflamatoria; presenta fenómeno de Koebner <span class="cite">p. 1158</span>.</li>
+<li>Patogenia: posiblemente una respuesta de linfocitos T citotóxicos CD8+ frente a antígenos alterados de las células basales o de la unión dermoepidérmica <span class="cite">p. 1158</span>.</li>
+<li>Morfología: <strong>estrías de Wickham</strong> (líneas blancas por hipergranulosis); histología prototípica de <strong>dermatitis de interfase</strong>: infiltrado denso y continuo de linfocitos en la unión, queratinocitos basales necróticos (<strong>cuerpos coloides o de Civatte</strong>), contorno en zigzag "en dientes de sierra" de la interfase y escamatización; lesiones orales reticuladas blancas en el 70% de los casos <span class="cite">p. 1158-1159</span>.</li>
+</ul>
+
+</section><section id="sec-09-enfermedades-vesiculoampollosas" class="card">
+<div class="section-kicker"><span class="n">09</span> pp. 1159-1164</div>
+<h2>Enfermedades vesiculoampollosas</h2>
+<ul>
+<li>Las ampollas de estos trastornos se forman en distintos niveles de la piel y la evaluación histológica es esencial: <strong>subcórneas</strong> (pénfigo foliáceo), <strong>suprabasales</strong> (pénfigo vulgar) y <strong>subepidérmicas</strong> (penfigoide ampolloso, dermatitis herpetiforme); son mortales en casos extremos si no se tratan <span class="cite">p. 1159</span>.</li>
+<li>Entender los <strong>desmosomas</strong> (desmogleinas 1 y 3, desmoplaquina, placoglobina y placofilina) y los <strong>hemidesmosomas</strong> (BPAG1, BPAG2, plectina, integrina α6β4) sobre la membrana basal (lámina lúcida, lámina densa, fibrillas de anclaje) es la clave para ubicar cada ampolla y su autoanticuerpo <span class="cite">p. 1160</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-28">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-28.webp" data-caption="Figura 25.28. Moléculas de adhesión del queratinocito y trastornos ampollosos: desmosomas con desmogleinas 1 y 3 y hemidesmosomas con BPAG1 y BPAG2 sobre la membrana basal, con el blanco de cada enfermedad ampollosa marcado en su nivel." data-alt="Figura 25.28. Moléculas de adhesión del queratinocito y trastornos ampollosos: desmosomas con desmogleinas 1 y 3 y hemidesmosomas con BPAG1 y BPAG2 sobre la membrana basal, con el blanco de cada enfermedad ampollosa marcado en su nivel. Robbins y Cotran, 10ª ed., p. 1160.">
+    <img src="../assets/fig/cap25/fig-25-28.webp" width="1476" height="731" loading="lazy" decoding="async" alt="Figura 25.28. Moléculas de adhesión del queratinocito y trastornos ampollosos: desmosomas con desmogleinas 1 y 3 y hemidesmosomas con BPAG1 y BPAG2 sobre la membrana basal, con el blanco de cada enfermedad ampollosa marcado en su nivel. Robbins y Cotran, 10ª ed., p. 1160.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.28.</strong> Moléculas de adhesión del queratinocito y trastornos ampollosos: desmosomas con desmogleinas 1 y 3 y hemidesmosomas con BPAG1 y BPAG2 sobre la membrana basal, con el blanco de cada enfermedad ampollosa marcado en su nivel.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1160. <a href="../creditos.html#fig-25-28">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="pénfigo">Pénfigo</h3>
+<ul>
+<li>Trastorno ampolloso por autoanticuerpos que disuelven las uniones intercelulares de la epidermis y el epitelio mucinoso; afecta por igual a hombres y mujeres de 40 a 70 años <span class="cite">p. 1159</span>.</li>
+<li>El <strong>pénfigo vulgar</strong> es responsable de más del 80% de los casos mundiales: afecta mucosas y piel (cuero cabelludo, cara, axilas, ingles, tronco, puntos de presión); puede debutar como úlceras orales que persisten meses antes de la afectación cutánea; las ampollas frágiles se rompen y dejan erosiones con costras <span class="cite">p. 1159-1160</span>.</li>
+<li>El <strong>pénfigo foliáceo</strong> es más benigno, endémico en Brasil (fogo selvagem); ampollas tan superficiales que solo se ven eritema, costras y erosiones; el <strong>pénfigo eritematoso</strong> es una forma localizada malar; el <strong>pénfigo paraneoplásico</strong> se asocia sobre todo a linfoma no hodgkiniano <span class="cite">p. 1160-1161</span>.</li>
+<li>Patogenia: autoanticuerpos <strong>IgG contra las desmogleinas</strong>; en inmunofluorescencia directa, patrón <strong>reticular en red de pesca</strong> de depósitos intercelulares de IgG, a todos los niveles del epitelio en el vulgar y más superficial en el foliáceo; los anticuerpos rompen la adherencia del desmosoma y activan proteasas intercelulares <span class="cite">p. 1161</span>.</li>
+<li>Morfología: <strong>acantólisis</strong> con células redondeadas; en el vulgar la separación es inmediatamente sobre la capa de células basales (ampolla suprabasal), cuya base intacta se compara con "una fila de lápidas"; en el foliáceo la ampolla es subcórnea, dentro del estrato granuloso <span class="cite">p. 1161</span>.</li>
+<li>La piedra angular del tratamiento en todas las formas de pénfigo son los <strong>fármacos inmunodepresores</strong>, que reducen los títulos de anticuerpos patógenos <span class="cite">p. 1162</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-29">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-29.webp" data-caption="Figura 25.29. Pénfigo vulgar: placas erosionadas tras la rotura de ampollas de techo fino, acantólisis suprabasal con células acantolíticas y ampollas ulceradas en la mucosa oral del labio." data-alt="Figura 25.29. Pénfigo vulgar: placas erosionadas tras la rotura de ampollas de techo fino, acantólisis suprabasal con células acantolíticas y ampollas ulceradas en la mucosa oral del labio. Robbins y Cotran, 10ª ed., p. 1160.">
+    <img src="../assets/fig/cap25/fig-25-29.webp" width="1476" height="595" loading="lazy" decoding="async" alt="Figura 25.29. Pénfigo vulgar: placas erosionadas tras la rotura de ampollas de techo fino, acantólisis suprabasal con células acantolíticas y ampollas ulceradas en la mucosa oral del labio. Robbins y Cotran, 10ª ed., p. 1160.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.29.</strong> Pénfigo vulgar: placas erosionadas tras la rotura de ampollas de techo fino, acantólisis suprabasal con células acantolíticas y ampollas ulceradas en la mucosa oral del labio.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1160. <a href="../creditos.html#fig-25-29">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="penfigoide-ampolloso">Penfigoide ampolloso</h3>
+<ul>
+<li>Afecta a sujetos mayores; caras internas de los muslos, superficies flexoras de los antebrazos, axilas, ingles e hipogastrio; lesiones orales en el <strong>10-15%</strong>, habitualmente después de las cutáneas; pueden existir placas urticariales y prurito intenso <span class="cite">p. 1162</span>.</li>
+<li>Morfología: <strong>ampollas tensas</strong> de líquido claro, de menos de 2 cm (a veces 4-8 cm), que <strong>no se rompen fácilmente</strong> y curan sin cicatriz, a diferencia de las del pénfigo; histología de ampolla <strong>subepidérmica no acantolítica</strong> con eosinófilos, linfocitos, neutrófilos ocasionales y vacuolización de la capa de células basales <span class="cite">p. 1162</span>.</li>
+<li>Patogenia: autoanticuerpos contra <strong>BPAG2</strong>, componente de los hemidesmosomas que ancla los queratinocitos basales a la membrana basal; depósito <strong>lineal continuo</strong> de complemento en la unión dermoepidérmica; los anticuerpos activan el complemento, reclutan neutrófilos y eosinófilos y rompen las uniones a nivel de la lámina lúcida <span class="cite">p. 1162-1163</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Enfermedades vesiculoampollosas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Rasgo</th>
+<th>Pénfigo vulgar</th>
+<th>Penfigoide ampolloso</th>
+<th>Dermatitis herpetiforme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edad típica</td>
+<td>40-70 años</td>
+<td>Adultos mayores</td>
+<td>Hombres de 3ª-4ª década</td>
+</tr>
+<tr>
+<td>Ampolla</td>
+<td>Suprabasal, frágil, se rompe fácil</td>
+<td>Subepidérmica, tensa y estable</td>
+<td>Subepidérmica, agrupada y muy pruriginosa</td>
+</tr>
+<tr>
+<td>Anticuerpo</td>
+<td>IgG anti desmogleinas 1 y 3</td>
+<td>IgG anti BPAG2 (hemidesmosoma)</td>
+<td>IgA anti reticulina (fibrillas de anclaje)</td>
+</tr>
+<tr>
+<td>Inmunofluorescencia</td>
+<td>Reticular intercelular</td>
+<td>Lineal en la unión dermoepidérmica</td>
+<td>Granular en las puntas de papilas dérmicas</td>
+</tr>
+<tr>
+<td>Acantólisis</td>
+<td>Sí</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Asociación</td>
+<td>Paraneoplásico con linfoma</td>
+<td>Eosinófilos bajo la capa basal</td>
+<td>Enfermedad celiaca; dieta sin gluten</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1159-1163</span>.</p>
+<h3 id="dermatitis-herpetiforme">Dermatitis herpetiforme</h3>
+<ul>
+<li>Trastorno infrecuente de urticaria y <strong>vesículas agrupadas</strong> sumamente pruriginosas; predominantemente hombres de la tercera y cuarta décadas; se asocia a la <strong>enfermedad celiaca</strong> <span class="cite">p. 1163</span>.</li>
+<li>Patogenia: anticuerpos <strong>IgA frente al gluten</strong> (gliadina) que reaccionan de forma cruzada con la <strong>reticulina</strong> de las fibrillas de anclaje que fijan la membrana basal a la dermis, produciendo una ampolla subepidérmica; ambas enfermedades responden a la dieta sin gluten <span class="cite">p. 1163</span>.</li>
+<li>Morfología: lesiones bilaterales, simétricas y agrupadas en superficies extensoras (codos, rodillas, espalda alta, nalgas); <strong>microabscesos de neutrófilos y fibrina en las puntas de las papilas dérmicas</strong> e inmunofluorescencia con depósitos granulares de IgA en esas puntas <span class="cite">p. 1163</span>.</li>
+</ul>
+<figure class="fig" id="fig-25-34">
+  <a class="fig-open" href="../assets/fig/cap25/fig-25-34.webp" data-caption="Figura 25.34. Dermatitis herpetiforme: grupos de ampollas eritematosas en codos y brazos, depósito granular de IgA en las puntas de las papilas dérmicas y microabscesos de neutrófilos papilares." data-alt="Figura 25.34. Dermatitis herpetiforme: grupos de ampollas eritematosas en codos y brazos, depósito granular de IgA en las puntas de las papilas dérmicas y microabscesos de neutrófilos papilares. Robbins y Cotran, 10ª ed., p. 1163.">
+    <img src="../assets/fig/cap25/fig-25-34.webp" width="683" height="1927" loading="lazy" decoding="async" alt="Figura 25.34. Dermatitis herpetiforme: grupos de ampollas eritematosas en codos y brazos, depósito granular de IgA en las puntas de las papilas dérmicas y microabscesos de neutrófilos papilares. Robbins y Cotran, 10ª ed., p. 1163.">
+  </a>
+  <figcaption>
+    <strong>Figura 25.34.</strong> Dermatitis herpetiforme: grupos de ampollas eritematosas en codos y brazos, depósito granular de IgA en las puntas de las papilas dérmicas y microabscesos de neutrófilos papilares.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1163. <a href="../creditos.html#fig-25-34">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="trastornos-ampollosos-no-inflamatorios">Trastornos ampollosos no inflamatorios</h3>
+<ul>
+<li><strong>Epidermólisis ampollosa</strong>: grupo de defectos heredados de proteínas estructurales con ampollas por presión, roce o traumatismo desde el nacimiento; los cambios histológicos son tan sutiles que puede requerirse microscopía electrónica <span class="cite">p. 1163</span>.</li>
+<li>Tipo <strong>simple</strong> (75-85% de los casos, autosómico dominante): mutaciones con actividad negativa dominante en <strong>queratina 14 o queratina 5</strong>, que rompen la fibra de queratina de la capa basal; tipo de la <strong>unión</strong>: ampolla a nivel de la lámina lúcida en piel de aspecto normal, por defectos autosómicos recesivos de la <strong>laminina</strong> o mutaciones en BPAG2; tipo <strong>distrófico cicatricial</strong>: ampolla bajo la lámina densa con fibrillas de anclaje defectuosas por mutaciones en <strong>COL7A1</strong> (colágeno VII) <span class="cite">p. 1164</span>.</li>
+<li><strong>Porfiria</strong>: trastornos innatos o adquiridos del metabolismo de la porfirina (eritropoyética, aguda intermitente, cutánea tardía, mixta, entre otros); urticaria y vesículas subepidérmicas con cicatrices que se exacerban con la luz solar, y vasos dérmicos con paredes engrosadas por depósitos de proteínas séricas; la patogenia es desconocida <span class="cite">p. 1164</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">El diferencial ampolloso en una tabla</span>Pénfigo vulgar: 40-70 años, ampolla frágil suprabasal con fila de lápidas, IgG anti-Dsg1/3 reticular. Penfigoide ampolloso: anciano, ampolla tensa estable, eosinófilos, IgG anti-BPAG2 lineal. Dermatitis herpetiforme: hombre joven, lesiones agrupadas muy pruriginosas, IgA granular en puntas papilares y celiaca <span class="cite">p. 1159-1163</span>.</div>
+</section><section id="sec-10-infecciones" class="card">
+<div class="section-kicker"><span class="n">10</span> pp. 1167-1169</div>
+<h2>Infecciones</h2>
+<h3 id="verrugas">Verrugas</h3>
+<ul>
+<li>Lesiones proliferativas escamosas por el <strong>VPH</strong>; frecuentes en niños y adolescentes, por contacto directo o autoinoculación; autolimitadas, regresan espontáneamente en un plazo de 6 meses a 2 años; se han identificado más de 150 tipos de virus <span class="cite">p. 1167</span>.</li>
+<li>Correlación clínica con el subtipo: verrugas anogenitales por <strong>VPH 6 y 11</strong>; el <strong>VPH 16</strong> se asocia al carcinoma epidermoide in situ genital y a la papulosis bowenoide; los subtipos <strong>5 y 8</strong> causan los carcinomas de la epidermodisplasia verruciforme; los VPH de alto riesgo producen <strong>E6 que anula p53</strong>, mientras que la E6 de los subtipos 5 y 8 no afecta p53 y la de riesgo bajo interfiere las señales de Notch <span class="cite">p. 1167</span>.</li>
+<li>Tipos: verruga vulgar (manos, superficies dorsales y periungueales, pápulas de superficie "en empedrado"), verruga plana (cara y dorso de manos), verruga plantar y palmar (1-2 cm, confundible con callo) y condiloma acuminado (masas pardas "en coliflor" en zona genital) <span class="cite">p. 1167-1168</span>.</li>
+<li>Histología: <strong>hiperplasia epidérmica verrugosa o papilomatosa</strong> y <strong>coilocitosis</strong> (vacuolización citoplásmica de las capas superficiales), con gránulos de queratohialina condensados; la tipificación viral se hace con hibridación in situ o PCR <span class="cite">p. 1167-1168</span>.</li>
+</ul>
+<h3 id="molusco-contagioso">Molusco contagioso</h3>
+<ul>
+<li>Enfermedad vírica autolimitada por un <strong>poxvirus</strong> de 300 nm, uno de los virus patógenos más grandes; propagación por contacto directo, en niños y adultos jóvenes <span class="cite">p. 1168</span>.</li>
+<li>Pápulas umbilicadas firmes, pruriginosas, de 0,2 a 0,4 cm, sobre todo en tronco y zona anogenital; la umbilicación segrega material "como cuajada" cuyo tinte con Giemsa muestra los cuerpos del molusco <span class="cite">p. 1168</span>.</li>
+<li>Histología: hiperplasia epidérmica verrugosa en copa y <strong>cuerpos del molusco</strong>: inclusiones citoplásmicas homogéneas elipsoides de hasta 35 μm, eosinófilas en el estrato granuloso y azul pálidas en el córneo, llenas de viriones <span class="cite">p. 1168</span>.</li>
+</ul>
+<h3 id="impétigo">Impétigo</h3>
+<ul>
+<li>Infección bacteriana superficial muy contagiosa de niños sanos y adultos enfermos, en cara y manos; antes el contagioso era por estreptococos β-hemolíticos del grupo A y el ampolloso por Staphylococcus aureus, pero hoy <strong>ambos suelen deberse a S. aureus</strong> <span class="cite">p. 1168</span>.</li>
+<li>Patogenia: la bacteria induce una respuesta innata con exudado seroso y costra; la ampolla se forma por una <strong>toxina que escinde la desmogleina 1</strong>, el mismo plano de ampolla del pénfigo foliáceo, pero por toxina y no por autoanticuerpo; como no hay afectación dérmica, cura sin cicatriz <span class="cite">p. 1168</span>.</li>
+<li>Morfología: mácula eritematosa con pústulas que al romperse forman costras <strong>de color miel</strong>; histología sello de una <strong>pústula subcórnea</strong> con neutrófilos, proteínas séricas y bacterias teñibles <span class="cite">p. 1168-1169</span>.</li>
+</ul>
+<h3 id="infecciones-micóticas-superficiales">Infecciones micóticas superficiales</h3>
+<ul>
+<li>Limitadas al estrato córneo, por <strong>dermatofitos</strong>; variantes: tiña de la cabeza (niños, placas con alopecia), tiña de la barba, tiña del cuerpo (placa redonda en expansión con borde descamativo elevado), tiña crural (zona inguinal de hombres obesos en época cálida), tiña del pie o pie de atleta (<strong>afecta al 30-40% de la población</strong> en algún momento) y onicomicosis; la tiña versicolor por Malassezia furfur da máculas con descamación fina en el tronco superior <span class="cite">p. 1169</span>.</li>
+<li>Histología: dermatitis eccematosa leve con neutrófilos intraepidérmicos; las hifas se tiñen de rojo brillante con <strong>ácido peryódico de Schiff</strong> dentro del estrato córneo, el pelo o las uñas; el cultivo del raspado identifica la especie <span class="cite">p. 1169</span>.</li>
+</ul>
+
+</section><section id="sec-11-trastornos-de-los-anejos-dermicos-y-paniculitis" class="card">
+<div class="section-kicker"><span class="n">11</span> pp. 1165-1166</div>
+<h2>Trastornos de los anejos dérmicos y paniculitis</h2>
+<h3 id="acné-vulgar">Acné vulgar</h3>
+<ul>
+<li>Prácticamente universal hacia la mitad o el final de la adolescencia, más acentuado en hombres; lo inducen o exacerban fármacos (corticoesteroides, testosterona, anticonceptivos, yoduros y bromuros), exposiciones laborales (aceites de corte, hidrocarburos clorados, alquitranes) y condiciones oclusivas <span class="cite">p. 1165</span>.</li>
+<li>El acné no inflamatorio forma <strong>comedones abiertos</strong> (pápula folicular con tapón negro de melanina oxidada, no suciedad) y <strong>cerrados</strong> (tapón atrapado, fuente de rotura folicular) <span class="cite">p. 1165</span>.</li>
+<li>Patogenia multifactorial de cuatro factores: queratinización del infundíbulo con tapón que bloquea el sebo; <strong>hipertrofia de las glándulas sebáceas</strong> puberal por andrógenos; colonización por <em>Propionibacterium acnés</em>, cuyas lipasas convierten los lípidos del sebo en ácidos grasos proinflamatorios; e inflamación secundaria del folículo; los antibióticos actúan eliminando P. acnés y la <strong>isotretinoina</strong> (13-cis-retinoico) mejora el acné intenso por su acción antisebácea <span class="cite">p. 1165</span>.</li>
+<li>Morfología: pápulas y pústulas eritematosas; las variantes intensas como el acné conglobata forman trayectos fistulosos y cicatrices; la rotura de los abscesos dérmicos desencadena inflamación y fibrosis <span class="cite">p. 1165-1166</span>.</li>
+</ul>
+<h3 id="rosácea">Rosácea</h3>
+<ul>
+<li>Enfermedad de la mediana edad y posterior, hasta el <strong>3%</strong> de la población de EE. UU., más frecuente en mujeres; cuatro estadios: enrojecimiento episódico, eritema persistente con telangiectasias, pápulas y pústulas, y <strong>rinofima</strong> (engrosamiento permanente de la nariz) <span class="cite">p. 1165</span>.</li>
+<li>Patogenia: concentraciones cutáneas altas de la <strong>catelicidina</strong>, con péptidos cualitativamente distintos por procesamiento alternativo por la <strong>calicreína 5</strong>; la inyección de estos péptidos en ratones reproduce inflamación y dilatación vascular; la activación de TLR2 aumenta la calicreína 5; se han propuesto desencadenantes microbianos sin demostración <span class="cite">p. 1165</span>.</li>
+<li>Histología: infiltrado perifolicular linfocitario inespecífico con edema dérmico y telangiectasias; en el estadio pustuloso hay neutrófilos foliculares, rotura folicular con respuesta granulomatosa y, en el rinofima, hipertrofia de glándulas sebáceas <span class="cite">p. 1165</span>.</li>
+</ul>
+<h3 id="paniculitis-eritema-nudoso-y-eritema-indurado">Paniculitis: eritema nudoso y eritema indurado</h3>
+<ul>
+<li>La paniculitis es una inflamación del tejido adiposo subcutáneo, preferentemente de la parte inferior de las piernas, que puede afectar de modo predominante a los tabiques o a los lobulillos <span class="cite">p. 1166</span>.</li>
+<li><strong>Eritema nudoso</strong>: forma más frecuente, con placas y nódulos eritematosos muy dolorosos a la presión, mejor palpados que vistos; se asocia a infecciones (estreptococos β-hemolíticos, tuberculosis, y con menor frecuencia coccidioidomicosis, histoplasmosis y lepra), fármacos (sulfamidas y anticonceptivos orales), sarcoidosis, enfermedad inflamatoria intestinal y neoplasias malignas, aunque muchas veces no se identifica causa; las lesiones se aplanan en semanas como hematomas y no dejan cicatriz <span class="cite">p. 1166</span>.</li>
+<li>Histología del eritema nudoso: paniculitis <strong>septal</strong> con edema, fibrina y neutrófilos en lesiones tempranas, luego linfocitos, histiocitos y células gigantes con fibrosis septal, <strong>sin vasculitis</strong>; requiere biopsia profunda con tejido subcutáneo <span class="cite">p. 1166</span>.</li>
+<li><strong>Eritema indurado</strong>: forma infrecuente de adolescentes y mujeres menopáusicas, considerada una <strong>vasculitis primaria</strong> de los vasos profundos de los lóbulos grasos, con necrosis e inflamación grasa y nódulo que suele ulcerarse; histología de inflamación granulomatosa lobulillar con necrosis caseosa y vasculitis necrosante de pequeños y medianos vasos; nació como respuesta a la tuberculosis, hoy habitualmente sin enfermedad asociada <span class="cite">p. 1166</span>.</li>
+<li>Otras paniculitis: enfermedad de <strong>Weber-Christian</strong> (paniculitis lobular no vasculítica recidivante con macrófagos espumosos), paniculitis <strong>facticia</strong> por traumatismo o inyecciones del propio paciente, linfomas de linfocitos T lobulillares simuladores y paniculitis lúpica del lupus eritematoso sistémico <span class="cite">p. 1166</span>.</li>
+</ul>
+
+</section><section id="sec-12-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">12</span> pp. 1137-1168</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Nivel de la ampolla y su anticuerpo: pénfigo foliáceo subcórneo (anti-Dsg1), pénfigo vulgar suprabasal con "fila de lápidas" (anti-Dsg1 y Dsg3, patrón reticular de IgG), penfigoide ampolloso subepidérmico con ampolla tensa y eosinófilos (anti-BPAG2, depósito lineal), dermatitis herpetiforme subepidérmica con microabscesos papilares (IgA granular anti-reticulina, asociada a celiaca) <span class="cite">p. 1159-1163</span>.</li>
+<li>El impétigo ampolloso replica el plano de ampolla del pénfigo foliáceo (escisión de Dsg1), pero por toxina bacteriana y no por autoanticuerpo: diferencial clásico de pústula subcórnea <span class="cite">p. 1168</span>.</li>
+<li>Melanoma: ABCDE clínica; fases de crecimiento radial (sin metástasis; lentigo maligno, extensión superficial como tipo más frecuente, lentiginoso acro/mucoso) y vertical (nódulo, potencial metastásico); espesor de Breslow como primer factor pronóstico; mutaciones BRAF 40-50%, RAS 15-20%, promotor de TERT cerca del 70% y CDKN2A en el 40% de las familias; respuesta a inhibidores de BRAF y de los puntos de control CTLA4 y PD1 <span class="cite">p. 1139-1142</span>.</li>
+<li>Nevo displásico: síndrome familiar autosómico dominante con más del 50% de riesgo de melanoma a los 60 años y atipia con fibrosis laminar; el nevo esporádico aislado tiene riesgo muy bajo y es mejor marcador que precursor <span class="cite">p. 1137-1138</span>.</li>
+<li>CBC vs CEC: el CBC es el cáncer más frecuente (casi 1 millón/año en EE. UU.), Hedgehog con PTCH/SMO/GLI1, pápula perlada telangiectásica, empalizada, hendiduras de retracción y casi nulas metástasis; el CEC nace de queratosis actínica con TP53 temprano, menos del 5% de metástasis, y comparte VPH 5 y 8 con la epidermodisplasia verruciforme <span class="cite">p. 1146-1148</span>.</li>
+<li>Síndromes cutáneo-cancerosos de tabla: Gorlin (PTCH, CBC múltiples y meduloblastoma), Cowden (PTEN, triquilemomas), Muir-Torre (MSH2/MLH1, adenoma sebáceo y cáncer de colon), melanoma familiar (CDKN2A), xerodermia pigmentaria (reparación por escisión de nucleótidos) <span class="cite">p. 1148</span>.</li>
+<li>Dermatosis inflamatorias por mecanismo: urticaria tipo I con habones de menos de 24 h; eccema tipo IV con espongiosis y células de Langerhanas; eritema multiforme por CD8+ con lesión en diana, dermatitis de interfase y variantes Stevens-Johnson y necrólisis epidérmica tóxica; psoriasis Th1/Th17 con acantosis, paraqueratosis, microabscesos de Munro y signo de Auspitz; liquen plano con dermatitis de interfase en dientes de sierra y estrías de Wickham <span class="cite">p. 1153-1159</span>.</li>
+<li>Paniculitis: eritema nudoso septal sin vasculitis y sin cicatriz vs eritema indurado lobulillar con vasculitis necrosante y ulceración; la biopsia debe ser profunda <span class="cite">p. 1166</span>.</li>
+<li>Signos paraneoplásicos cutáneos: acantosis nigricans con adenocarcinomas digestivos, signo de Leser-Trélat con queratosis seborreicas brotantes y carcinoma apocrino con patrón infiltrante <span class="cite">p. 1142-1143, 1145</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">Impétigo vs pénfigo foliáceo</span>Mismo plano de ampolla subcórnea por pérdida de la desmogleina 1: en el impétigo por una toxina bacteriana que la escinde y cura sin cicatriz; en el pénfigo foliáceo por autoanticuerpos IgG y de curso crónico <span class="cite">p. 1168</span>.</div>
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-25-28" aria-label="Figura 25.28"><img src="../assets/fig/cap25/fig-25-28.webp" loading="lazy" decoding="async" alt="Figura 25.28"><span>Figura 25.28</span></a><a class="fig-thumb" href="#fig-25-29" aria-label="Figura 25.29"><img src="../assets/fig/cap25/fig-25-29.webp" loading="lazy" decoding="async" alt="Figura 25.29"><span>Figura 25.29</span></a><a class="fig-thumb" href="#fig-25-34" aria-label="Figura 25.34"><img src="../assets/fig/cap25/fig-25-34.webp" loading="lazy" decoding="async" alt="Figura 25.34"><span>Figura 25.34</span></a><a class="fig-thumb" href="#fig-25-25" aria-label="Figura 25.25"><img src="../assets/fig/cap25/fig-25-25.webp" loading="lazy" decoding="async" alt="Figura 25.25"><span>Figura 25.25</span></a><a class="fig-thumb" href="#fig-25-13" aria-label="Figura 25.13"><img src="../assets/fig/cap25/fig-25-13.webp" loading="lazy" decoding="async" alt="Figura 25.13"><span>Figura 25.13</span></a><a class="fig-thumb" href="#fig-25-15" aria-label="Figura 25.15"><img src="../assets/fig/cap25/fig-25-15.webp" loading="lazy" decoding="async" alt="Figura 25.15"><span>Figura 25.15</span></a><a class="fig-thumb" href="#fig-25-8" aria-label="Figura 25.8"><img src="../assets/fig/cap25/fig-25-8.webp" loading="lazy" decoding="async" alt="Figura 25.8"><span>Figura 25.8</span></a><a class="fig-thumb" href="#fig-25-2" aria-label="Figura 25.2"><img src="../assets/fig/cap25/fig-25-2.webp" loading="lazy" decoding="async" alt="Figura 25.2"><span>Figura 25.2</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "page_id": "c2-19",
+  "essentials": [
+    "La lipasa sérica es el marcador más específico y sensible de la pancreatitis aguda (persiste 8-14 días); la amilasa se normaliza en 3-5 días [p. 885].",
+    "Pancreatitis hereditaria: PRSS1 (ganancia de función, autosómica dominante), SPINK1 (pérdida de función, recesiva) y CFTR (secreciones espesadas); el rasgo común es la actividad de tripsina aumentada, y PRSS1 eleva el riesgo de cáncer pancreático en 40% [p. 884].",
+    "En la pancreatitis crónica predominan las citocinas fibrógenas TGF-β y PDGF, que activan células estrelladas pancreáticas y producen fibrosis irreversible con pérdida acinar [p. 886].",
+    "Perfiles mutacionales de los quistes: serosa = VHL; mucinosa = KRAS y estroma ovárico (95% mujeres); NMPI = GNAS en dos tercios; sólida-seudopapilar = CTNNB1 exclusivo [p. 889-890].",
+    "Secuencia del carcinoma pancreático: KRAS mutado y telómeros cortos, luego CDKN2A, y en la PanIN de alto grado TP53, SMAD4 y BRCA2; KRAS mutado en más del 90% de los casos [p. 890-891].",
+    "Signos de carcinoma de cabeza: ictericia obstructiva indolora con signo de Courvoisier; el signo de Trousseau (tromboflebitis migratoria) aparece en el 10%; más del 80% es irresecable al diagnóstico y la supervivencia a 5 años es del 10% [p. 893]."
+  ],
+  "topics": [
+    "Anatomía ductal y anomalías congénitas (páncreas dividido, anular, ectópico, agenesia)",
+    "Pancreatitis aguda: tres vías patogénicas, morfología y complicaciones",
+    "Predisposición hereditaria a la pancreatitis: PRSS1, SPINK1, CFTR",
+    "Pancreatitis crónica y pancreatitis autoinmunitaria tipo 1 y 2",
+    "Quistes pancreáticos: seudoquiste versus neoplasias quísticas y sus mutaciones",
+    "Carcinoma pancreático: PanIN, genética, desmoplasia y presentación clínica"
+  ],
+  "callouts": [
+    {
+      "section": "Pancreatitis crónica",
+      "title": "Pancreatitis autoinmunitaria: simulador de cáncer que responde a esteroides",
+      "text": "Ambas variantes pueden presentarse como lesión de masa en la cabeza pancreática y simular un carcinoma; distinguirlas es crítico porque la pancreatitis autoinmunitaria responde a esteroides. El tipo 1 muestra células plasmáticas IgG4+, fibrosis estoriforme y flebitis obliterante; el tipo 2 muestra lesiones epiteliales granulocíticas sin IgG4 abundante [p. 886-887]."
+    },
+    {
+      "section": "Carcinoma pancreático",
+      "title": "Diabetes de nuevo inicio como pista de cáncer oculto",
+      "text": "La intolerancia a la glucosa o la diabetes manifiesta están presentes hasta en la mitad de los pacientes con cáncer de páncreas hasta 3 años antes de los signos clínicos, y su aparición en personas de edad avanzada puede ser una oportunidad de diagnóstico precoz [p. 891]."
+    },
+    {
+      "section": "Neoplasias quísticas",
+      "title": "El perfil mutacional identifica el tipo de quiste",
+      "text": "Cada neoplasia quística tiene mutaciones distintivas: VHL en la serosa, KRAS en la mucinosa, GNAS (exclusiva) en la NMPI y CTNNB1 en la sólida-seudopapilar, que carece de KRAS, RNF43, GNAS y VHL [p. 889-890]."
+    }
+  ]
+}

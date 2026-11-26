@@ -1,0 +1,78 @@
+{
+  "chapter": 25,
+  "page_id": "c2-25",
+  "figures": [
+    {
+      "number": "25.28",
+      "page": 1160,
+      "caption": "Moléculas de adhesión del queratinocito y trastornos ampollosos: desmosomas con desmogleinas 1 y 3 y hemidesmosomas con BPAG1 y BPAG2 sobre la membrana basal, con el blanco de cada enfermedad ampollosa marcado en su nivel.",
+      "section": "Enfermedades vesiculoampollosas",
+      "after_text": "desmosomas (desmogleinas 1 y 3, desmoplaquina, placoglobina y placofilina) y los hemidesmosomas (BPAG1, BPAG2, plectina, integrina α6β4)",
+      "kind": "mechanism",
+      "why": "Esquema que ordena todas las ampollas del capítulo según su autoanticuerpo y nivel de separación, base del diferencial ampolloso"
+    },
+    {
+      "number": "25.29",
+      "page": 1160,
+      "caption": "Pénfigo vulgar: placas erosionadas tras la rotura de ampollas de techo fino, acantólisis suprabasal con células acantolíticas y ampollas ulceradas en la mucosa oral del labio.",
+      "section": "Enfermedades vesiculoampollosas",
+      "after_text": "cuya base intacta se compara con",
+      "kind": "diagnostic",
+      "why": "Forma más frecuente de pénfigo y prototipo de ampolla suprabasal acantolítica, señalado en Puntos de examen"
+    },
+    {
+      "number": "25.34",
+      "page": 1163,
+      "caption": "Dermatitis herpetiforme: grupos de ampollas eritematosas en codos y brazos, depósito granular de IgA en las puntas de las papilas dérmicas y microabscesos de neutrófilos papilares.",
+      "section": "Enfermedades vesiculoampollosas",
+      "after_text": "microabscesos de neutrófilos y fibrina en las puntas de las papilas dérmicas",
+      "kind": "diagnostic",
+      "why": "Patrón de IgA granular papilar y asociación a celiaca, diferencial clásico del penfigoide ampolloso"
+    },
+    {
+      "number": "25.25",
+      "page": 1157,
+      "caption": "Psoriasis: lesiones tempranas pustulosas y placas crónicas con escama blanco plateado, junto a hiperplasia epidérmica, paraqueratosis y neutrófilos intraepidérmicos.",
+      "section": "Dermatosis inflamatorias",
+      "after_text": "placas salmón-rosado bien delimitadas con escamas blanquecinas plateadas poco adherentes",
+      "kind": "diagnostic",
+      "why": "Dermatosis crónica prototípica; histología con Munro, Auspitz y acantosis aparece de forma recurrente en certámenes"
+    },
+    {
+      "number": "25.13",
+      "page": 1147,
+      "caption": "Carcinoma epidermoide infiltrante: nódulo ulcerado del cuero cabelludo, lóbulos de epitelio escamoso atípico que rompen la membrana basal e invaden la dermis, con núcleos angulados y nucléolos prominentes.",
+      "section": "Queratosis actínica y carcinoma epidermoide",
+      "after_text": "es nodular, hiperqueratósico y puede ulcerarse",
+      "kind": "diagnostic",
+      "why": "Progresión in situ a invasor desde la queratosis actínica, con su estadística de metástasis menor del 5%"
+    },
+    {
+      "number": "25.15",
+      "page": 1150,
+      "caption": "Carcinoma basocelular: nódulos perlados telangiectásicos formados por nidos de células basaloides uniformes en la dermis, separados del estroma por hendiduras finas de retracción.",
+      "section": "Carcinoma basocelular",
+      "after_text": "disposición en empalizada periférica y hendiduras de retracción del estroma",
+      "kind": "diagnostic",
+      "why": "Cáncer más frecuente del ser humano; empalizada e hendiduras lo distinguen del CEC y de los tumores de anejos"
+    },
+    {
+      "number": "25.8",
+      "page": 1141,
+      "caption": "Melanoma: lesión de contorno y pigmentación irregulares, fase de crecimiento radial intraepidérmico, fase de crecimiento vertical nodular y micrometástasis en ganglio centinela teñida con HMB-45.",
+      "section": "Melanoma",
+      "after_text": "Crecimiento vertical: tras un período impredecible, un subclón con potencial metastásico invade la dermis profunda",
+      "kind": "diagnostic",
+      "why": "Resume las fases radial y vertical y el papel del ganglio centinela, núcleo del diagnóstico y pronóstico del melanoma"
+    },
+    {
+      "number": "25.2",
+      "page": 1137,
+      "caption": "Nevo melanocítico de la unión: lesión pequeña, plana, simétrica y uniforme, con nidos redondeados de células névicas en las puntas de las crestas interpapilares de la unión dermoepidérmica.",
+      "section": "Lesiones melanocíticas benignas",
+      "after_text": "con nidos redondeados de células névicas en las puntas de las crestas interpapilares",
+      "kind": "diagnostic",
+      "why": "El nevo benigno de referencia frente al cual se definen la atipia del nevo displásico y el melanoma en el diferencial pigmentado"
+    }
+  ]
+}

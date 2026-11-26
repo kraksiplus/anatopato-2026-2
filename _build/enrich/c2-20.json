@@ -1,0 +1,36 @@
+{
+  "chapter": 20,
+  "essentials": [
+    "El filtro glomerular (endotelio fenestrado, MBG con lámina densa y podocitos con nefrina-podocina) es la diana de las podocitopatías; su lesión produce proteinuria [p. 898-900].",
+    "La glomerulonefritis postestreptocócica causa síndrome nefrítico con jorobas subepiteliales y C3 bajo 1-4 semanas tras faringitis o impétigo; más del 95% de los niños se recupera [p. 907-909].",
+    "En el síndrome nefrótico, los niños presentan cambios mínimos (75%) y los adultos GEFS (35%) o nefropatía membranosa anti-PLA2R (30%) [p. 912].",
+    "La nefropatía IgA, glomerulonefritis más frecuente del mundo, se diagnostica solo por depósitos mesangiales de IgA y causa hematuria de repetición postinfecciosa [p. 920-921].",
+    "La pielonefritis aguda es supurativa por vía ascendente (E. coli, reflujo vesicoureteral); la crónica deja cicatrices polares con cálices amputados y tiroidización tubular [p. 927-931].",
+    "El carcinoma de células claras (70-80% de los cánceres renales) inactiva el gen VHL con estabilización de HIF-1, invade la vena renal y metastatiza a pulmón y hueso antes de dar síntomas locales [p. 949-951]."
+  ],
+  "topics": [
+    "Síndromes glomerulares: nefrítico, nefrótico, GN rápidamente progresiva y hematuria aislada",
+    "Mecanismos de lesión glomerular: inmunocomplejos circulantes, formación in situ y vía alternativa del complemento",
+    "Síndrome nefrótico: nefropatía membranosa, cambios mínimos y GEFS",
+    "Nefritis tubulointersticial: lesión tubular aguda, pielonefritis y nefritis medicamentosa",
+    "Microangiopatías trombóticas: SHU típico y atípico, PTT y ADAMTS13",
+    "Nefropatías quísticas (ciliopatías), uropatía obstructiva, urolitiasis y tumores renales"
+  ],
+  "callouts": [
+    {
+      "section": "Glomerulopatías con hematuria aislada y enfermedades sistémicas",
+      "title": "Nefropatía IgA vs púrpura de Schönlein-Henoch",
+      "text": "Ambas comparten depósitos mesangiales de IgA y se consideran manifestaciones de la misma enfermedad; la púrpura añade lesión cutánea en superficies extensoras, dolor abdominal y artralgias, y es más grave en adultos [p. 921, 923]."
+    },
+    {
+      "section": "Nefropatías tubulointersticiales",
+      "title": "Cilindros de pus",
+      "text": "La piuria no distingue infección urinaria alta de baja; los cilindros leucocitarios indican afectación renal porque los cilindros solo se forman en los túbulos [p. 929]."
+    },
+    {
+      "section": "Vasculopatías renales",
+      "title": "SHU atípico vs PTT",
+      "text": "Se distinguen por la ADAMTS13 plasmática: >10% en el SHU atípico por desregulación del complemento y deficiente por autoanticuerpos o herencia en la PTT, donde domina la afectación neurológica y el tratamiento es el intercambio plasmático [p. 938-939]."
+    }
+  ]
+}

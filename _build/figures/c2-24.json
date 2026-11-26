@@ -1,0 +1,103 @@
+{
+  "chapter": 24,
+  "page_id": "c2-24",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "24.3",
+      "page": 1069,
+      "caption": "Señalización a través de proteína G en las neoplasias endocrinas: mutaciones activadoras (GNAS, USP8) elevan AMPc y desencadenan proliferación y secreción hormonal en hipófisis, tiroides y paratiroides.",
+      "section": "Hipófisis",
+      "after_text": "mutaciones somáticas de GNAS anulan la actividad GTPasa de Gs",
+      "kind": "mechanism",
+      "why": "Explica el denominador común de la oncogenia endocrina y por qué GNAS y USP8 se asocian a adenomas concretos.",
+      "image": "assets/fig/cap24/fig-24-3.webp",
+      "width": 680,
+      "height": 760
+    },
+    {
+      "number": "24.4",
+      "page": 1069,
+      "caption": "Adenoma hipofisario masivo no funcionante que rebasa la silla turca y distorsiona el cerebro suprayacente.",
+      "section": "Hipófisis",
+      "after_text": "hemianopsia bitemporal por compresión del quiasma",
+      "kind": "diagnostic",
+      "why": "Ilustra los efectos de masa que definen la presentación de los adenomas silentes y la urgencia de la apoplejía hipofisaria.",
+      "image": "assets/fig/cap24/fig-24-4.webp",
+      "width": 750,
+      "height": 485
+    },
+    {
+      "number": "24.13",
+      "page": 1082,
+      "caption": "Enfermedad de Graves: bocio difuso simétrico con hiperplasia de epitelio folicular alto y coloide festoneado.",
+      "section": "Tiroides",
+      "after_text": "bocio difuso con soplo audible",
+      "kind": "diagnostic",
+      "why": "Es la morfología clásica del hipertiroidismo más frecuente y distingue sus papilas sin eje fibrovascular del carcinoma papilar.",
+      "image": "assets/fig/cap24/fig-24-13.webp",
+      "width": 1476,
+      "height": 440
+    },
+    {
+      "number": "24.19",
+      "page": 1088,
+      "caption": "Carcinoma papilar de tiroides con papilas bien formadas y núcleos con aspecto vaciado y seudoinclusiones en la punción.",
+      "section": "Tiroides",
+      "after_text": "núcleos en vidrio esmerilado",
+      "kind": "diagnostic",
+      "why": "El diagnóstico es nuclear incluso sin papilas; psamoma y rasgos nucleares son claves de examen.",
+      "image": "assets/fig/cap24/fig-24-19.webp",
+      "width": 1480,
+      "height": 940
+    },
+    {
+      "number": "24.22",
+      "page": 1091,
+      "caption": "Carcinoma medular de tiroides con crecimiento sólido y abundante amiloide estromal derivado de la calcitonina.",
+      "section": "Tiroides",
+      "after_text": "depósitos amiloides derivados de calcitonina",
+      "kind": "diagnostic",
+      "why": "El amiloide más calcitonina y CEA identifican al tumor de células C y enlazan con el tamizaje RET de los síndromes MEN-2.",
+      "image": "assets/fig/cap24/fig-24-22.webp",
+      "width": 1490,
+      "height": 1912
+    },
+    {
+      "number": "24.41",
+      "page": 1114,
+      "caption": "Neoplasia endocrina pancreática (insulinoma) con células monótonas y amiloide, en un paciente con hipoglucemia episódica.",
+      "section": "Páncreas endocrino",
+      "after_text": "precipitados por ayuno o ejercicio y corregidos de inmediato con glucosa",
+      "kind": "diagnostic",
+      "why": "Muestra la PanNET más frecuente y su síndrome clínico hipoglucémico en ayunas, tema habitual de certamen.",
+      "image": "assets/fig/cap24/fig-24-41.webp",
+      "width": 705,
+      "height": 480
+    },
+    {
+      "number": "24.50",
+      "page": 1125,
+      "caption": "Adenoma cortical suprarrenal: lesión solitaria y circunscrita cuyo estado funcional no se deduce de su aspecto macro ni microscópico.",
+      "section": "Suprarrenal",
+      "after_text": "El estado funcional no se deduce de la morfología",
+      "kind": "diagnostic",
+      "why": "Distingue adenoma de hiperplasia nodular y refuerza que la funcionalidad exige estudio hormonal, no morfología.",
+      "image": "assets/fig/cap24/fig-24-50.webp",
+      "width": 718,
+      "height": 569
+    },
+    {
+      "number": "24.54",
+      "page": 1128,
+      "caption": "Feocromocitoma rodeado de corteza atenuada, con zonas de hemorragia y restos de la suprarrenal residual.",
+      "section": "Suprarrenal",
+      "after_text": "neoplasia de células cromafines que secreta catecolaminas",
+      "kind": "diagnostic",
+      "why": "Ancla la regla del 10, la crisis hipertensiva por catecolaminas y la necesidad de bloqueo adrenérgico previo a la cirugía.",
+      "image": "assets/fig/cap24/fig-24-54.webp",
+      "width": 620,
+      "height": 675
+    }
+  ]
+}

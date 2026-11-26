@@ -1,0 +1,78 @@
+{
+  "chapter": 19,
+  "page_id": "c2-19",
+  "figures": [
+    {
+      "number": "19.1",
+      "page": 882,
+      "caption": "Anatomía ductal pancreática. A. Anatomía ductal normal, con el conducto de Wirsung y el de Santorini drenando en la papila de Váter y la papila menor. B. Anatomía ductal en el páncreas dividido, donde la mayor parte de la glándula drena por la papila menor.",
+      "section": "Introducción",
+      "after_text": "el primordio dorsal da el cuerpo, la cola, la cara superior/anterior de la cabeza y el conducto accesorio de Santorini",
+      "kind": "diagnostic",
+      "why": "Base anatómica para entender el páncreas dividido, la anomalía congénita más frecuente, y su relación con la pancreatitis."
+    },
+    {
+      "number": "19.2",
+      "page": 883,
+      "caption": "Tres vías propuestas para la patogenia de la pancreatitis aguda: obstrucción ductal, lesión de células acinares y transporte intracelular defectuoso de proenzimas, que convergen en la activación de enzimas, necrosis grasa y daño vascular con hemorragia.",
+      "section": "Pancreatitis aguda",
+      "after_text": "La activación inapropiada de tripsina activa profosfolipasa (degrada células grasas) y proelastasa (daña fibras elásticas vasculares)",
+      "kind": "mechanism",
+      "why": "Es el esquema central de la autodigestión enzimática y sus tres desencadenantes, contenido de examen obligado."
+    },
+    {
+      "number": "19.4",
+      "page": 885,
+      "caption": "Pancreatitis aguda hemorrágica, corte macroscópico: áreas oscuras de hemorragia en la cabeza del páncreas y foco claro de necrosis grasa en la grasa peripancreática.",
+      "section": "Pancreatitis aguda",
+      "after_text": "la cavidad peritoneal contiene líquido pardo turbio con glóbulos grasos",
+      "kind": "diagnostic",
+      "why": "Reconocer el aspecto macroscópico de la pancreatitis hemorrágica con necrosis grasa es clave para el diagnóstico morfológico."
+    },
+    {
+      "number": "19.5",
+      "page": 886,
+      "caption": "Comparación de los mediadores en las pancreatitis aguda y crónica: en la aguda, la liberación de enzimas digestivas con activación de las cascadas inflamatoria y de la coagulación y posible resolución; en la crónica, citocinas fibrógenas (TGF-β, PDGF) que activan células estrelladas, colágeno y fibrosis irreversible.",
+      "section": "Pancreatitis crónica",
+      "after_text": "Suele desarrollarse tras episodios repetidos de pancreatitis aguda",
+      "kind": "mechanism",
+      "why": "Explica por qué la lesión repetida produce fibrosis irreversible, el contraste patogénico agudo versus crónico más preguntado."
+    },
+    {
+      "number": "19.6",
+      "page": 887,
+      "caption": "Pancreatitis crónica. A. Fibrosis y atrofia extensas con islotes y conductos residuales e inflamación crónica dispersa. B. Conductos dilatados con concreciones eosinófilas espesas en pancreatitis crónica alcohólica. C. Pancreatitis autoinmunitaria con infiltrado linfoplasmocítico, estroma estoriforme y células plasmáticas IgG4+.",
+      "section": "Pancreatitis crónica",
+      "after_text": "glándula dura con conductos dilatados y concreciones calcificadas; infiltrado crónico alrededor de lobulillos y conductos",
+      "kind": "diagnostic",
+      "why": "Muestra los hallazgos histológicos distintivos de la pancreatitis crónica alcohólica y autoinmunitaria, incluida la IgG4."
+    },
+    {
+      "number": "19.7",
+      "page": 888,
+      "caption": "Seudoquiste pancreático. A. Corte transversal con un quiste mal definido de pared necrótica pardo-negruzca. B. Ausencia de revestimiento epitelial verdadero: el quiste está revestido por fibrina y tejido de granulación.",
+      "section": "Quistes no neoplásicos",
+      "after_text": "Se forman cuando áreas de necrosis grasa intra o peripancreática quedan tabicadas por fibrosis y tejido de granulación",
+      "kind": "diagnostic",
+      "why": "El seudoquiste es el 75% de los quistes pancreáticos y su ausencia de epitelio lo distingue de las neoplasias quísticas."
+    },
+    {
+      "number": "19.12",
+      "page": 891,
+      "caption": "Modelo de progresión de los conductos normales a neoplasia intraepitelial pancreática (PanIN) de bajo y alto grado y carcinoma infiltrante: telómeros cortos y mutaciones de KRAS iniciales, luego inactivación de CDKN2A y, en el alto grado, de TP53, SMAD4 y BRCA2.",
+      "section": "Carcinoma pancreático",
+      "after_text": "lo que facilita anomalías cromosómicas y la progresión",
+      "kind": "mechanism",
+      "why": "Resume la secuencia génica acumulativa de la carcinogénesis pancreática, el esquema patogenia de mayor rendimiento en el certamen."
+    },
+    {
+      "number": "19.13",
+      "page": 893,
+      "caption": "Carcinoma de páncreas. A. Corte transversal de la cola con parénquima normal y una masa pálida centrada en el conducto. B. Glándulas poco definidas de células epiteliales malignas en un estroma densamente fibrótico (desmoplasia) con células inflamatorias.",
+      "section": "Carcinoma pancreático",
+      "after_text": "masas duras, estrelladas, gris-blanquecinas y poco definidas",
+      "kind": "diagnostic",
+      "why": "Ilustra la morfología macro y microscópica del adenocarcinoma ductal, incluida la desmoplasia que dificulta la biopsia."
+    }
+  ]
+}

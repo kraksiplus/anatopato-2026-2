@@ -9,13 +9,13 @@ Publicado en https://kraksiplus.github.io/anatopato-2026-2/
 | Certamen | Qué incluye |
 |---|---|
 | [Certamen 1](c1/index.html) | 10 capítulos del Robbins con citas por página, el Manual integrado y un atlas visual de 30 figuras |
-| [Certamen 2](c2/index.html) | 8 capítulos del Robbins, con cita de la página impresa |
+| [Certamen 2](c2/index.html) | 16 capítulos del Robbins, con cita de la página impresa |
 
 Cada guía es un HTML autocontenido: funciona sin internet, guarda el tema claro u oscuro y se imprime o exporta a PDF desde el navegador.
 
 ## Figuras
 
-- 141 figuras seleccionadas de los 18 capítulos, entre 6 y 8 por capítulo.
+- 205 figuras seleccionadas de los 26 capítulos, entre 6 y 8 por capítulo.
 - Mezcla de mecanismos (diagramas de patogenia) e imágenes diagnósticas (macroscopía, histología, imágenes clínicas).
 - Recortadas desde el escaneo del libro a 200 DPI y guardadas en WebP.
 - Cada figura lleva su leyenda, la página impresa y un enlace a sus créditos.
@@ -27,7 +27,7 @@ Las figuras provienen de Robbins y Cotran, *Patología estructural y funcional*,
 ## Fuentes
 
 - Robbins y Cotran, *Patología Estructural y Funcional*, 10ª edición.
-- Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 18, con cita `[p. N]` de la página impresa.
+- Certamen 2: resúmenes construidos desde el OCR de los capítulos 11 a 26, con cita `[p. N]` de la página impresa.
 - Certamen 1: capítulos 1 a 10 y Manual integrado de las clases. Los capítulos llevan cita `[p. N]` de la página impresa; el manual declara el rango de páginas por tema y el índice del apéndice B.
 - No se publican los PDF originales ni el OCR crudo.
 
@@ -37,7 +37,7 @@ Las figuras provienen de Robbins y Cotran, *Patología estructural y funcional*,
 index.html          Portada de los dos certámenes
 creditos.html       Fuente y titularidad de cada figura
 c1/                 Certamen 1: índice, manual y 10 capítulos
-c2/                 Certamen 2: índice y 8 capítulos
+c2/                 Certamen 2: índice y 16 capítulos
 assets/fig/         Figuras recortadas en WebP
 _build/             Plantilla, estilos, manifiesto, generador y metadatos de figuras
 ```
@@ -50,6 +50,14 @@ python3 _build/qa.py
 ```
 
 El generador lee los resúmenes Markdown desde `../Anatopato/`, fuera de este repositorio. El repositorio publicado solo contiene el HTML final y las figuras seleccionadas.
+
+Los capítulos nuevos del Certamen 2 se validan con:
+
+```bash
+python3 _build/check_new_chapter.py --chapter 19
+```
+
+El chequeo verifica citas por bloque, páginas dentro del rango, fuentes de tabla, anclas de figuras y textos de repaso.
 
 Las citas por página de los capítulos del Certamen 1 se revisaron contra el OCR con los scripts `_build/cite_*.py`. No se ejecutan al reconstruir el sitio: los resúmenes fuente ya contienen las citas.
 

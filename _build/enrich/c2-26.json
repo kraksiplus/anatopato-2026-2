@@ -1,0 +1,37 @@
+{
+  "chapter": 26,
+  "page_id": "c2-26",
+  "essentials": [
+    "El osteosarcoma es el sarcoma óseo primario más frecuente: adolescentes, metáfisis cerca de la rodilla, osteoide por células malignas y triángulo de Codman; RB y TP53 mutados; supervivencia a 5 años de 70% con quimioterapia neoadyuvante [p. 1188-1189].",
+    "El sarcoma de Ewing (EWSR1-FLI1, >90%) afecta a menores de 20 años en la diáfisis o pelvis, simula osteomielitis con fiebre y leucocitosis, y muestra células pequeñas redondas con reacción perióstica en piel de cebolla [p. 1192-1193].",
+    "El condrosarcoma del adulto mayor en el esqueleto axial se estratifica en grados 1 a 3: el grado 1 casi no metastatiza (80-90% de supervivencia a 5 años) y el grado 3 metastatiza en 70% (43%) [p. 1192].",
+    "El tumor de células gigantes nace en la epífisis del adulto joven; los estromales expresan RANKL y reclutan osteoclastos reactivos; recidiva en 40-60% tras legrado y el denosumab es adyuvante [p. 1193-1194].",
+    "Las metástasis son los tumores malignos más comunes del esqueleto: próstata, mama, riñón y pulmón (>75% en adultos), vía plexo de Batson, esqueleto axial, lesiones líticas o blásticas (WNT) [p. 1196].",
+    "Artrosis (mecánica, osteófitos, hueso ebúrneo, sin anticuerpos) frente a artritis reumatoide (pannus, erosiones periarticulares, anquilosis, ACPA, anti-TNF) y gota (urato en aguja, inflamasoma e IL-1, tofos, colchicina) frente a seudogota (romboide, ANKH, condrocalcinosis) son las cuatro comparaciones obligadas de artritis [p. 1197-1206]."
+  ],
+  "topics": [
+    "Clasificación de tumores óseos por matriz y edad: tabla 26.4",
+    "Osteoma osteoide vs osteoblastoma: tamaño, sitio y respuesta al AINE",
+    "Síndromes de encondromas: enfermedad de Ollier y síndrome de Maffucci (IDH1/2)",
+    "Lesiones seudotumorales: quiste óseo aneurismático (USP6), fibroma no osificante, displasia fibrosa (GNAS1, McCune-Albright)",
+    "Espondiloartropatías seronegativas y artritis reactiva: HLA-B27, entesis, dactilitis",
+    "Translocaciones de sarcomas de partes blandas: tabla 26.7 (liposarcoma mixoide, sarcoma sinovial, rabdomiosarcoma alveolar, fascitis nodular)"
+  ],
+  "callouts": [
+    {
+      "section": "Tumores óseos benignos y malignos",
+      "title": "Triángulo de Codman",
+      "text": "El osteosarcoma levanta el periostio, que deposita hueso reactivo formando una sombra triangular entre la corteza y el periostio elevado; ese signo radiológico indica un tumor agresivo y orienta el diagnóstico frente a lesiones benignas metafisarias [p. 1188-1189]."
+    },
+    {
+      "section": "Artritis",
+      "title": "Pannus reumatoide",
+      "text": "En la artritis reumatoide el pannus, masa de sinovial edematosa con inflamación y tejido de granulación, destruye el cartílago y forma puentes entre los huesos que evolucionan a anquilosis fibrosa y luego ósea; el TNF es central y los antagonistas del TNF revolucionaron el tratamiento [p. 1200-1202]."
+    },
+    {
+      "section": "Tumores de tejidos blandos",
+      "title": "Fibromatosis desmoide sin metástasis",
+      "text": "Las fibromatosis profundas infiltran músculo, nervios y grasa y recidivan con frecuencia tras la resección, pero no metastatizan; portan mutaciones de APC o CTNNB1 con aumento de la señalización de Wnt y se asocian a la poliposis adenomatosa familiar (síndrome de Gardner) [p. 1211-1212]."
+    }
+  ]
+}

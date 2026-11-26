@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema endocrino · Anatomía Patológica UBB</title>
+<meta name="description" content="Sistema endocrino. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237f1d1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23f7e4e4' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Sistema endocrino · Anatomía Patológica UBB">
+<meta property="og:description" content="Sistema endocrino. Resumen con citas por página del Robbins y Cotran, 10ª ed.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#2a0d12 0%,#4a1218 55%,#a33a3a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#e7c4c4;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#e7c4c4;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(2rem,5.4vw,4rem);
+    line-height:1.06;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:15ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d7f1ec;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1000px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a8dfd6;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#0b4a45;border-color:#fff}
+  .btn.primary:hover{background:#e9fbf6}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#7f1d1d;background:#f7e4e4;border:1px solid #b7e4da;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Anatomía Patológica: paleta burdeos sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f7f2ea;
+  --surface:#fffdf8;
+  --surface-2:#f0e7db;
+  --surface-3:#e6d8c7;
+  --ink:#241b1c;
+  --muted:#6d5b5c;
+  --line:#d9c9b8;
+  --brand:#7f1d1d;
+  --brand-2:#a33a3a;
+  --brand-3:#f7e4e4;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(60,20,20,.09);
+}
+[data-theme="dark"]{
+  --bg:#141011;
+  --surface:#1d1617;
+  --surface-2:#261d1e;
+  --surface-3:#322627;
+  --ink:#f0e9e6;
+  --muted:#bda9a6;
+  --line:#3a2c2d;
+  --brand:#fca5a5;
+  --brand-2:#f87171;
+  --brand-3:#3a1414;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(20,16,17,.82)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 2 · Anatomía Patológica</p>
+    <h1>Capítulo 24. Sistema endocrino</h1>
+    <p class="lede">Guía 14 de 16. Resumen completo del capítulo 24 con 171 citas por página y 22 filas de tabla. 8 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>14 de 16</strong></div><div><span>Capítulo</span><strong>24</strong></div><div><span>Páginas</span><strong>1065-1132</strong></div><div><span>Citas</span><strong>171</strong></div><div><span>Figuras</span><strong>8</strong></div><div><span>Tablas</span><strong>22</strong></div><div><span>Fuente</span><strong>Robbins y Cotran, 10ª ed.</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-ideas-clave">Ideas clave</a></li>
+        <li><a href="#sec-02-hipofisis">Hipófisis</a></li>
+        <li><a href="#sec-03-tiroides">Tiroides</a></li>
+        <li><a href="#sec-04-paratiroides">Paratiroides</a></li>
+        <li><a href="#sec-05-pancreas-endocrino">Páncreas endocrino</a></li>
+        <li><a href="#sec-06-suprarrenal">Suprarrenal</a></li>
+        <li><a href="#sec-07-sindromes-poliglandulares">Síndromes poliglandulares</a></li>
+        <li><a href="#sec-08-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#atlas">Atlas de figuras</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice C2">Índice C2</a>
+        <a href="13_Mama.html" title="Mama">13</a>
+        <a href="15_Piel.html" title="Piel">15</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Capítulo 24 del Robbins y Cotran, 10ª edición: páginas impresas 1065-1132 (68 páginas), contrastadas con el OCR del capítulo. Cada afirmación clínica lleva la página de origen.</div><p class="small">Las citas <span class="cite">p. N</span> corresponden a la página impresa del libro. El texto se contrastó con el OCR del capítulo.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul><li>Adenoma hipofisario: monomorfismo celular y ausencia de reticulina; GNAS en somatótropos (40%) y USP8 en corticótropos (30-60%); la apoplejía hipofisaria es urgencia neuroquirúrgica <span class="cite">p. 1067, 1068-1070</span>.</li><li>Enfermedad de Graves: TSI contra el receptor de TSH en ~90% de los casos, triada de tirotoxicosis, oftalmopatía infiltrante y dermopatía; captación difusa de radioyodo <span class="cite">p. 1081-1082</span>.</li><li>Carcinoma papilar: diagnóstico por núcleos en vidrio esmerilado, seudoinclusiones y cuerpos de psamoma; BRAF V600E en 50-80%; supervivencia a 10 años &gt;95% <span class="cite">p. 1087-1089</span>.</li><li>Carcinoma medular: calcitonina y CEA con amiloide estromal; 30% familiar por RET en línea germinal; tiroidectomía profiláctica en portadores de MEN-2 <span class="cite">p. 1091-1092, 1130</span>.</li><li>Diabetes: HbA1c ≥6,5% diagnostica y &lt;7% es la meta; DT1 autoinmunitaria con insulitis (HLA-DR3/DR4) y DT2 por resistencia a la insulina más fallo de célula β con amiloide islotal <span class="cite">p. 1098, 1101-1105</span>.</li><li>Hipercalcemia: PTH alta = hiperparatiroidismo primario (adenoma 85-95%); PTH baja = cáncer por PTHrP en 80%; el feocromocitoma solo es maligno si metastatiza <span class="cite">p. 1095, 1128</span>.</li></ul></div></section><section id="sec-01-ideas-clave" class="card">
+<div class="section-kicker"><span class="n">01</span> pp. 1065-1129</div>
+<h2>Ideas clave</h2>
+<div class="keybox"><span class="box-title">Ideas clave</span><ul>
+<li>El sistema endocrino regula el equilibrio metabólico mediante señalización autocrina, paracrina y endocrina; la producción hormonal suele estar controlada por factores tróficos hipofisarios con <strong>inhibición retrógrada</strong>. Las enfermedades endocrinas se agrupan en: 1) infraproducción o sobreproducción de hormonas y 2) lesiones de tipo masa, silentes o funcionantes; su estudio exige integrar morfología con determinaciones bioquímicas <span class="cite">p. 1065-1066</span>.</li>
+<li>La adenohipófisis (80% de la glándula) tiene seis tipos celulares definidos por hormonas y factores de transcripción: somatótropas, mamosomatótropas y lactótropas (PIT-1), corticótropas (TPIT) y gonadótropas (SF-1, GATA-2); esta clasificación se conserva en los adenomas y los define <span class="cite">p. 1066, 1068</span>.</li>
+<li>El <strong>adenoma hipofisario</strong> es la causa más frecuente de hiperpituitarismo; lactótropo &gt; somatótropo &gt; corticótropo. Rasgos morfológicos distintivos: <strong>monomorfismo celular y ausencia de red de reticulina</strong>. El hiperpituitarismo por déficit aparece al perderse ~75% del parénquima anterior <span class="cite">p. 1067, 1070, 1072</span>.</li>
+<li>Mutaciones oncógenas clave en tumores endocrinos: <strong>GNAS</strong> (Gs, 40% de los somatótropos), <strong>USP8</strong> (30-60% de los corticótropos), <em>MEN1</em>, <em>CDKN1B</em>, <em>PRKAR1A</em>, <em>AIP</em> en línea germinal; la vía común es AMPc aumentado <span class="cite">p. 1068-1069</span>.</li>
+<li><strong>Tiroides</strong>: la TSH activa Gs y AMPc en el folicular; la T3 se une al receptor nuclear con 10 veces más afinidad que T4. La tirotoxicosis puede existir sin hipertiroidismo (tiroiditis, estruma ovárico, tiroxina exógena); la determinación de <strong>TSH es el cribado más útil</strong> de la función tiroidea <span class="cite">p. 1075-1077</span>.</li>
+<li><strong>Enfermedad de Graves</strong>: causa más frecuente de hipertiroidismo endógeno (85% de las tirotoxicosis con hiperfunción); autoanticuerpos estimulantes del receptor de TSH (TSI) en ~90%; triada de tirotoxicosis, oftalmopatía infiltrante y dermopatía (mixedema pretibial) <span class="cite">p. 1081</span>.</li>
+<li><strong>Neoplasias foliculares tiroideas</strong>: CPT convencional con reordenamientos RET/NTRK o <strong>BRAF V600E</strong> (50-80%); neoplasias foliculares con <strong>RAS</strong> y <strong>PAX8-PPARG</strong>; la progresión a poco diferenciado/anaplásico suma TP53, CTNNB1 y TERT. La invasión capsular y/o vascular separa el carcinoma folicular del adenoma <span class="cite">p. 1086-1087, 1090-1091</span>.</li>
+<li><strong>Carcinoma medular</strong>: neuroendocrino de células C (5% de los cánceres tiroideos), secreta <strong>calcitonina</strong> y CEA, con amiloide estromal; 70% esporádico, 30% en MEN-2 con mutación de línea germinal de <em>RET</em>; obliga a tiroidectomía profiláctica en portadores <span class="cite">p. 1091-1092, 1130</span>.</li>
+<li><strong>Hiperparatiroidismo primario</strong>: causa más frecuente de hipercalcemia asintomática (adenoma solitario 85-95%); el cáncer es la causa más frecuente de hipercalcemia sintomática (PTHrP en 80% de los casos); clásica de "huesos dolorosos, cálculos renales, molestias abdominales y alteraciones psíquicas" <span class="cite">p. 1093, 1095-1096</span>.</li>
+<li><strong>Diabetes</strong>: DT1 autoinmunitaria (5-10%) con destrucción de células β y déficit absoluto de insulina (HLA-DR3/DR4, anti-GAD, anti-ICA512, insulitis); DT2 (90-95%) por <strong>resistencia a la insulina más disfunción de célula β</strong>, sin autoinmunidad; criterios diagnósticos de glucemia en ayunas ≥126 mg/dl, al azar ≥200 mg/dl, PTGO ≥200 mg/dl y <strong>HbA1c ≥6,5%</strong> <span class="cite">p. 1098-1099, 1101, 1103</span>.</li>
+<li>Las complicaciones crónicas comparten mecanismos de la hiperglucemia sostenida: <strong>AGE-RAGE, activación de PKC, vía de los polioles (sorbitol) y hexosamina</strong>; macroangiopatía (ateroesclerosis acelerada, primera causa de muerte) y microangiopatía (retinopatía, nefropatía con glomeruloesclerosis nodular de Kimmelstiel-Wilson, neuropatía) <span class="cite">p. 1108-1111</span>.</li>
+<li><strong>Síndromes MEN</strong>: MEN-1 (menina, tres P: paratiroides, páncreas, hipófisis); MEN-2A (Sipple: carcinoma medular, feocromocitoma, hiperplasia paratiroidea) y MEN-2B (sin hiperparatiroidismo, con neuromas y hábito marfanoide), ambos por <em>RET</em> activador; MEN-4 por <em>CDKN1B</em>. Los tumores MEN son más precoces, multifocales y precedidos de hiperplasia <span class="cite">p. 1129-1130</span>.</li>
+</ul></div>
+
+</section><section id="sec-02-hipofisis" class="card">
+<div class="section-kicker"><span class="n">02</span> pp. 1066-1074</div>
+<h2>Hipófisis</h2>
+<p>La hipófisis es una estructura pequeña en la silla turca, conectada al hipotálamo por el tallo hipofisario; se divide en adenohipófisis (80%) y neurohipófisis. La neurohipófisis libera oxitocina y ADH sintetizadas en el hipotálamo; la ADH conserva agua respondiendo a barorreceptores auriculares y carotídeos y a osmorreceptores plasmáticos <span class="cite">p. 1066-1067</span>.</p>
+<h3 id="adenomas-hipofisarios-e-hiperpituitarismo">Adenomas hipofisarios e hiperpituitarismo</h3>
+<ul>
+<li>Clasificación (tabla 24.1): somatótropo (PIT-1, GH; gigantismo/acromegalia), mamosomatótropo, lactótropo (PIT-1, RE, PRL), tirótropo (TSH), corticótropo (TPIT, ACTH; síndrome de Cushing y de Nelson), gonadótropo (FSH/LH) y de células nulas (solo efectos de masa) <span class="cite">p. 1068</span>.</li>
+<li>Microadenoma &lt;1 cm, macroadenoma &gt;1 cm; prevalencia en autopsias ~14%, la mayoría incidentalomas silentes. Los no funcionantes se presentan más tarde y son más grandes <span class="cite">p. 1068</span>.</li>
+<li>Patogenia: mutaciones somáticas de <strong>GNAS</strong> anulan la actividad GTPasa de Gs en ~40% de los somatótropos (AMPc constitutivo); <strong>USP8</strong> activadora en 30-60% de los corticótropos potencia la señalización de EGFR; ~5% son por línea germinal (<em>MEN1</em>, <em>CDKN1B</em>, <em>PRKAR1A</em>, <em>AIP</em>) <span class="cite">p. 1068-1069</span>.</li>
+<li>Morfología: lesión blanda bien delimitada que puede erosionar la silla y comprimir el quiasma; hasta 30% carece de cápsula e infiltra (adenomas agresivos). Histología: células poligonales monomorfas en láminas o cordones, reticulina escasa, Ki-67 bajo; índices altos de proliferación se asocian a agresividad <span class="cite">p. 1069-1070</span>.</li>
+<li>Efectos de masa: hemianopsia bitemporal por compresión del quiasma, cefalea, hipertensión intracraneal, hipopituitarismo; la hemorragia aguda intratumoral produce <strong>apoplejía hipofisaria</strong>, urgencia neuroquirúrgica con riesgo de muerte súbita <span class="cite">p. 1067, 1070, 1073</span>.</li>
+<li>Adenoma lactótropo: el más frecuente (30% de los hiperfuncionantes); amenorrea, galactorrea, disminución de la libido y esterilidad; causa ~25% de las amenorreas; la prolactina sérica correlaciona con el tamaño. La hiperprolactinemia también puede ser fisiológica, por fármacos antidopaminérgicos, masas supraselares, insuficiencia renal o hipotiroidismo. Tratamiento con <strong>bromocriptina</strong> (agonista dopaminérgico) <span class="cite">p. 1070-1071</span>.</li>
+<li>Adenoma somatótropo: segundo en frecuencia; <strong>gigantismo</strong> en niños (antes del cierre epifisario) y <strong>acromegalia</strong> en adultos (prognatismo, dedos "de salchicha", visceromegalia, hiperostosis); por IGF-1 hepático. Se agrega disfunción gonadal, diabetes mellitus, hipertensión, insuficiencia cardiaca y mayor riesgo de cáncer digestivo. Diagnóstico: GH e IGF-1 altos sin supresión de GH tras sobrecarga oral de glucosa; tratamiento con cirugía, análogos de somatostatina y antagonistas del receptor de GH. Los de granulación escasa son más agresivos y responden peor <span class="cite">p. 1071</span>.</li>
+<li>Adenoma corticótropo: microadenoma basófilo PAS+ (POMC), TPIT+; la variante de células de Crooke (citoqueratina anular) es más agresiva. Produce síndrome de Cushing; el hipercortisolismo por ACTH hipofisaria se denomina <strong>enfermedad de Cushing</strong>. Tras suprarrenalectomía puede desarrollarse <strong>síndrome de Nelson</strong>: adenoma destructivo con hiperpigmentación (POMC/MSH) sin hipercortisolismo <span class="cite">p. 1071-1072</span>.</li>
+<li>Otros: gonadótropos (la mayoría silentes, síntomas neurológicos y déficit de LH), tirótropos (1%, hipertiroidismo infrecuente), plurihormonales (agresivos, estirpe PIT-1), células nulas, carcinoma hipofisario (&lt;1%, definido solo por metástasis craneovertebrales o sistémicas, secreta prolactina o ACTH) y blastoma hipofisario (niños &lt;2 años con <em>DICER1</em>, "pequeñas células azules redondas", enfermedad de Cushing y blastoma pleuropulmonar) <span class="cite">p. 1072</span>.</li>
+</ul>
+<figure class="fig" id="fig-24-3">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-3.webp" data-caption="Figura 24.3. Señalización a través de proteína G en las neoplasias endocrinas: mutaciones activadoras (GNAS, USP8) elevan AMPc y desencadenan proliferación y secreción hormonal en hipófisis, tiroides y paratiroides." data-alt="Figura 24.3. Señalización a través de proteína G en las neoplasias endocrinas: mutaciones activadoras (GNAS, USP8) elevan AMPc y desencadenan proliferación y secreción hormonal en hipófisis, tiroides y paratiroides. Robbins y Cotran, 10ª ed., p. 1069.">
+    <img src="../assets/fig/cap24/fig-24-3.webp" width="680" height="760" loading="lazy" decoding="async" alt="Figura 24.3. Señalización a través de proteína G en las neoplasias endocrinas: mutaciones activadoras (GNAS, USP8) elevan AMPc y desencadenan proliferación y secreción hormonal en hipófisis, tiroides y paratiroides. Robbins y Cotran, 10ª ed., p. 1069.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.3.</strong> Señalización a través de proteína G en las neoplasias endocrinas: mutaciones activadoras (GNAS, USP8) elevan AMPc y desencadenan proliferación y secreción hormonal en hipófisis, tiroides y paratiroides.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1069. <a href="../creditos.html#fig-24-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-24-4">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-4.webp" data-caption="Figura 24.4. Adenoma hipofisario masivo no funcionante que rebasa la silla turca y distorsiona el cerebro suprayacente." data-alt="Figura 24.4. Adenoma hipofisario masivo no funcionante que rebasa la silla turca y distorsiona el cerebro suprayacente. Robbins y Cotran, 10ª ed., p. 1069.">
+    <img src="../assets/fig/cap24/fig-24-4.webp" width="750" height="485" loading="lazy" decoding="async" alt="Figura 24.4. Adenoma hipofisario masivo no funcionante que rebasa la silla turca y distorsiona el cerebro suprayacente. Robbins y Cotran, 10ª ed., p. 1069.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.4.</strong> Adenoma hipofisario masivo no funcionante que rebasa la silla turca y distorsiona el cerebro suprayacente.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1069. <a href="../creditos.html#fig-24-4">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="hipopituitarismo">Hipopituitarismo</h3>
+<ul>
+<li>Aparece al perderse ~75% del parénquima anterior; si se acompaña de diabetes insípida, el origen es casi siempre hipotalámico. Causas: tumores con efecto de masa, traumatismo y hemorragia subaracnoidea, cirugía o radiación, apoplejía hipofisaria, necrosis isquémica, quistes, síndrome de silla vacía, lesiones hipotalámicas, inflamatorias y defectos genéticos <span class="cite">p. 1072-1073</span>.</li>
+<li><strong>Síndrome de Sheehan</strong>: necrosis isquémica posparto; la hipófisis duplica su tamaño en el embarazo sin aumento proporcional del flujo venoso de baja presión, y la hemorragia obstétrica o el shock precipitan el infarto; queda una silla vacía fibrosa. La hipófisis posterior, irrigada por ramas arteriales directas, no suele infartarse <span class="cite">p. 1073</span>.</li>
+<li>Síndrome de silla vacía: primario (defecto del diafragma selar, hernia de aracnoides, mujeres obesas multíparas, defectos de campo visual, ocasional hiperprolactinemia) o secundario a cirugía o infarto de una masa previa <span class="cite">p. 1073</span>.</li>
+<li>Clínica: enanismo hipofisario (déficit de GH), amenorrea y esterilidad o pérdida de libido (gonadotropinas), hipotiroidismo e hiposuprarrenalismo (TSH, ACTH), fracaso de la lactancia (prolactina) y <strong>palidez</strong> por pérdida de melanotropinas <span class="cite">p. 1073</span>.</li>
+</ul>
+<h3 id="síndromes-hipofisarios-posteriores">Síndromes hipofisarios posteriores</h3>
+<ul>
+<li><strong>Diabetes insípida central</strong>: déficit de ADH por traumatismo, tumores, inflamación o cirugía; formas genéticas por <em>AVP</em> (autosómica dominante) y <em>AVPR2</em> (ligada al X). Poliuria de orina diluida, hipernatremia, sed y polidipsia; deshidratación mortal en quienes no pueden beber. Se distingue de la diabetes insípida <strong>nefrógena</strong> (insensibilidad tubular a la ADH) <span class="cite">p. 1073-1074</span>.</li>
+<li><strong>SIADH</strong>: exceso de ADH con reabsorción de agua libre e hiponatremia y edema cerebral; volumen sanguíneo normal sin edema periférico. Causas: secreción ectópica (sobre todo carcinoma pulmonar microcítico), fármacos y trastornos del SNC <span class="cite">p. 1074</span>.</li>
+</ul>
+<h3 id="tumores-supraselares-hipotalámicos">Tumores supraselares hipotalámicos</h3>
+<ul>
+<li>Gliomas y <strong>craneofaringiomas</strong> (1-5% de los tumores intracraneales, de vestigios de la bolsa de Rathke); incidencia bifásica: infancia (5-15 años) y adultos &gt;65 años; cefalea, trastornos visuales y retraso del crecimiento por déficit de GH <span class="cite">p. 1074</span>.</li>
+<li>Adamantinomatoso (infantil): queratina "húmeda" laminar, empalizada periférica, calcificaciones radiológicas, quistes con líquido rico en colesterol ("aceite de maquinaria"), mutaciones de <strong>CTNNB1</strong>. Papilar (adulto): sin calcificación, mutaciones activadoras de <strong>BRAF V600E</strong>, con opción de inhibidores de BRAF. Supervivencia excelente si miden &lt;5 cm <span class="cite">p. 1074</span>.</li>
+</ul>
+
+</section><section id="sec-03-tiroides" class="card">
+<div class="section-kicker"><span class="n">03</span> pp. 1075-1092</div>
+<h2>Tiroides</h2>
+<p>La tiroides deriva del epitelio faríngeo que desciende desde el agujero ciego (explica la tiroides lingual ectópica); lóbulos con 20-40 folículos llenos de tiroglobulina PAS+. La TSH se une a su receptor con activación de Gs y AMPc, promoviendo crecimiento y secreción de T4 (y algo de T3); en periferia T4 se desyoda a T3, que se une al receptor nuclear con 10 veces más afinidad. Las células C parafoliculares secretan calcitonina, que inhibe la resorción osteoclástica <span class="cite">p. 1075</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Tiroides" tabindex="0"><table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bociógenas</td>
+<td>Sustancias que suprimen la síntesis de T4/T3, elevan TSH y causan bocio</td>
+</tr>
+<tr>
+<td>Propiltiouracilo</td>
+<td>Inhibe la oxidación del yodo y la desyodación periférica de T4 a T3</td>
+</tr>
+<tr>
+<td>Yodo en dosis altas</td>
+<td>Bloquea la liberación de hormona al inhibir la proteólisis de tiroglobulina</td>
+</tr>
+<tr>
+<td>Efecto T3/T4</td>
+<td>↑catabolismo de hidratos de carbono y lípidos, ↑síntesis proteica, ↑metabolismo basal; papel crítico en el desarrollo cerebral fetal y neonatal</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1075</span>.</p>
+<h3 id="hipertiroidismo-y-tirotoxicosis">Hipertiroidismo y tirotoxicosis</h3>
+<ul>
+<li>La <strong>tirotoxicosis</strong> es el estado hipermetabólico por T4/T3 libre elevada; el hipertiroidismo (hiperfunción glandular) es su causa más frecuente, pero no la única. Causas con hiperfunción: Graves (~85%), bocio multinodular hiperfuncional y adenoma hiperfuncional. Sin hipertiroidismo: tiroiditis granulomatosa (dolorosa), tiroiditis linfocítica subaguda (indolora), estruma ovárico y tirotoxicosis ficticia <span class="cite">p. 1075-1076</span>.</li>
+<li>Clínica: hipermetabolismo con piel caliente, intolerancia al calor, sudoración, pérdida de peso con apetito aumentado; manifestaciones cardíacas precoces (taquicardia, palpitaciones, cardiomegalia, <strong>fibrilación auricular</strong> en mayores, miocardiopatía tirotóxica); hiperactividad simpática (temblor, ansiedad, insomnio, miopatía proximal, hiperdefecación que responde a β-bloqueantes); osteoporosis por resorción ósea <span class="cite">p. 1076</span>.</li>
+<li>Mirada fija con ojos muy abiertos por hiperactividad simpática en cualquier hipertiroidismo, pero la <strong>oftalmopatía con proptosis es solo de Graves</strong> <span class="cite">p. 1076</span>.</li>
+<li><strong>Tormenta tiroidea</strong>: inicio brusco de hipertiroidismo intenso (infección, cirugía, suspensión de antitiroideos), fiebre y taquicardia desproporcionada; urgencia médica con mortalidad por arritmias. <strong>Hipertiroidismo apático</strong>: ancianos con presentación confusa, detectado por laboratorio ante pérdida de peso o deterioro cardiovascular <span class="cite">p. 1076-1077</span>.</li>
+<li>Laboratorio: <strong>TSH baja con T4 libre alta</strong>; la TSH es el cribado más sensible. En la toxicosis T3 predominante la T4 libre puede ser normal. El hipertiroidismo hipofisario (secundario) cursa con TSH normal o alta. La captación de yodo radiactivo diferencia etiología: difusa aumentada (Graves), nódulo solitario caliente (adenoma tóxico) o captación baja (tiroiditis) <span class="cite">p. 1077</span>.</li>
+<li>Tratamiento: β-bloqueante sintomático, tionamidas (metimazol, propiltiouracilo), yodo para bloquear la liberación, y yodo radiactivo que ablaciona la función en 6-18 semanas <span class="cite">p. 1077</span>.</li>
+</ul>
+<h3 id="hipotiroidismo">Hipotiroidismo</h3>
+<ul>
+<li>Prevalencia de hipotiroidismo manifiesto 0,3% y subclínico &gt;4%; 10 veces más frecuente en la mujer y aumenta con la edad. Causas primarias: disgenesia tiroidea, hipotiroidismo autoinmunitario (<strong>Hashimoto</strong>, la causa más frecuente en zonas con yodo suficiente), postablación (cirugía, radioyodo), deficiencia de yodo, fármacos (litio) y bocio dishormonógeno; secundario o central por insuficiencia hipofisaria o hipotalámica <span class="cite">p. 1077-1078</span>.</li>
+<li><strong>Cretinismo</strong>: hipotiroidismo del lactante y primera infancia; discapacidad intelectual grave, talla baja, rasgos faciales toscos, lengua sobresaliente y hernia umbilical. Antes endémico por deficiencia de yodo. La gravedad del daño cerebral depende del momento de la deficiencia: si es materna y precoz (antes de que la tiroides fetal funcione) el deterioro es máximo <span class="cite">p. 1078</span>.</li>
+<li><strong>Mixedema</strong> (adulto y niño mayor): cansancio, apatía, lentitud mental que simula depresión, intolerancia al frío, sobrepeso, estreñimiento, piel fría y pálida; disminución del gasto cardíaco; <strong>hipercolesterolemia y LDL altas</strong> proaterógenas. Por acumulación de glucosaminoglucanos y ácido hialurónico: edema sin fóvea, rasgos faciales toscos, macroglosia y voz grave. Laboratorio: TSH alta en el primario (no en el central) y T4 baja en cualquier causa <span class="cite">p. 1078</span>.</li>
+</ul>
+<h3 id="tiroiditis">Tiroiditis</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Tiroides" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Etiología</th>
+<th>Clínica</th>
+<th>Morfología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hashimoto</strong></td>
+<td>Autoinmunitaria; autoanticuerpos antitiroglobulina y antiperoxidasa; genes CTLA4, PTPN22, IL2RA</td>
+<td>Bocio indoloro con hipotiroidismo gradual; mujer 10-20:1; 45-65 años; puede haber hashitoxicosis previa</td>
+<td>Infiltrado linfocítico denso con centros germinales, células de Húrthle, fibrosis que no sobrepasa la cápsula</td>
+</tr>
+<tr>
+<td><strong>Linfocítica subaguda (indolora)</strong></td>
+<td>Presunta autoinmunitaria; hasta 5% posparto (tiroiditis posparto)</td>
+<td>Hipertiroidismo transitorio leve, a veces sigue hipotiroidismo; 1/3 queda hipotiroideo en 10 años</td>
+<td>Infiltrado linfocítico con centros germinales, sin fibrosis ni células de Húrthle prominentes</td>
+</tr>
+<tr>
+<td><strong>Granulomatosa (De Quervain)</strong></td>
+<td>Postvírica (Coxsackie, parotiditis, sarampión); autolimitada</td>
+<td>Causa más frecuente de <strong>dolor tiroideo</strong>; tirotoxicosis transitoria con captación de yodo baja; remite en 2-6 semanas</td>
+<td>Folículos destruidos con células gigantes multinucleadas englobando coloide; mujer 4:1, 40-50 años</td>
+</tr>
+<tr>
+<td><strong>Riedel</strong></td>
+<td>Enfermedad relacionada con IgG4</td>
+<td>Masa tiroidea dura y fija que simula carcinoma; fibrosis extensa cervical</td>
+<td>Fibrosis que invade estructuras contiguas</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1078-1081</span>.</p>
+<ul>
+<li>Hashimoto: destrucción por linfocitos T citotóxicos CD8+, citocinas de Th1 (IFN-γ) y citotoxicidad dependiente de anticuerpo. Mayor riesgo de otras autoinmunidades (DT1, suprarrenalitis autoinmunitaria, lupus, miastenia, Sjögren) y de <strong>linfoma B de zona marginal</strong> tiroideo; relación controvertida con carcinoma papilar <span class="cite">p. 1078-1080</span>.</li>
+</ul>
+<h3 id="enfermedad-de-graves">Enfermedad de Graves</h3>
+<ul>
+<li>Triada: hipertiroidismo con bocio difuso, oftalmopatía infiltrante con exoftalmos y dermopatía infiltrante (mixedema pretibial, minoría). Máxima incidencia entre 20 y 40 años; mujeres hasta 10:1; presente en 1,5-2% de las mujeres estadounidenses <span class="cite">p. 1081</span>.</li>
+<li>Patogenia: <strong>inmunoglobulinas estimulantes de la tiroides (TSI)</strong> contra el receptor de TSH en ~90%, que activan la adenilato ciclasa; pueden coexistir anticuerpos bloqueantes (minoría con hipotiroidismo). Concordancia 30-40% en monocigóticos vs &lt;5% en dicigóticos; polimorfismos CTLA4, PTPN22, IL2RA y <strong>TSHR</strong>. La oftalmopatía se debe a linfocitos T CD4+ que activan fibroblastos retroorbitarios con síntesis de glucosaminoglucanos (ácido hialurónico, condroitín sulfato), edema de músculos extraoculares e incremento de adipocitos <span class="cite">p. 1081</span>.</li>
+<li>Morfología: glándula simétrica aumentada (&gt;80 g es frecuente), parénquima carnoso; folículos tapizados por epitelio cilíndrico alto con papilas sin eje fibrovascular (difieren del carcinoma papilar) y coloide pálido con bordes festoneados; infiltrados linfoides con centros germinales. El yodo preoperatorio induce involución y el propiltiouracilo aumenta la hiperplasia <span class="cite">p. 1081-1082</span>.</li>
+<li>Clínica: bocio difuso con soplo audible, exoftalmos que puede persistir o progresar pese al tratamiento (riesgo de lesión corneal), mixedema pretibial; mayor riesgo de lupus, anemia perniciosa, DT1 y Addison. Laboratorio: T4 y T3 libres altas, TSH baja, <strong>captación difusa aumentada de radioyodo</strong>. Tratamiento: β-bloqueantes, tionamidas, radioyodo y tiroidectomía en bocios compresivos <span class="cite">p. 1082</span>.</li>
+</ul>
+<figure class="fig" id="fig-24-13">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-13.webp" data-caption="Figura 24.13. Enfermedad de Graves: bocio difuso simétrico con hiperplasia de epitelio folicular alto y coloide festoneado." data-alt="Figura 24.13. Enfermedad de Graves: bocio difuso simétrico con hiperplasia de epitelio folicular alto y coloide festoneado. Robbins y Cotran, 10ª ed., p. 1082.">
+    <img src="../assets/fig/cap24/fig-24-13.webp" width="1476" height="440" loading="lazy" decoding="async" alt="Figura 24.13. Enfermedad de Graves: bocio difuso simétrico con hiperplasia de epitelio folicular alto y coloide festoneado. Robbins y Cotran, 10ª ed., p. 1082.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.13.</strong> Enfermedad de Graves: bocio difuso simétrico con hiperplasia de epitelio folicular alto y coloide festoneado.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1082. <a href="../creditos.html#fig-24-13">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="bocios-difuso-y-multinodular">Bocios difuso y multinodular</h3>
+<ul>
+<li>El bocio se debe a síntesis tiroidea deficiente (habitualmente deficiencia de yodo) con elevación compensadora de TSH; aumenta la masa funcional y suele mantener el eutriroidismo. Dos formas: no tóxico difuso (simple) y multinodular <span class="cite">p. 1082-1083</span>.</li>
+<li>Bocio simple: endémico (&gt;10% de la población; Andes, Himalaya; aún 200 millones en riesgo) o esporádico (mujeres, pubertad); bociógenos dietéticos como las Brassicaceae y la mandioca (tiocianato que bloquea el transporte de yodo). Fase hiperplásica (epitelio cilíndrico apiñado) seguida de involución coloidea (bocio coloideo, epitelio aplanado con coloide abundante); casi siempre eutiroideo, clínica por efecto de masa <span class="cite">p. 1083</span>.</li>
+<li><strong>Bocio multinodular</strong>: casi todos los bocios simples de larga evolución; el mayor aumento de tamaño tiroideo (hasta &gt;2.000 g), confunde con neoplasia más que ningún trastorno tiroideo. Coexisten nódulos policlonales y monoclonales; mutaciones activadoras de la vía de TSH en nódulos autónomos; hemorragia, fibrosis, calcificación y cambios quísticos por sobrecarga física <span class="cite">p. 1083-1084</span>.</li>
+<li>Clínica: compresión traqueal, disfagia, síndrome de la vena cava superior, bocio intratorácico; ~10% desarrolla nódulo autónomo hipertiroideo en 10 años (<strong>bocio multinodular tóxico o síndrome de Plummer</strong>). Incidencia de cáncer baja (&lt;5%); alertar ante cambio brusco de tamaño o ronquera. Gammagrafía con captación irregular; la punción con aguja fina ayuda a diferenciar hiperplasia de neoplasia <span class="cite">p. 1084</span>.</li>
+</ul>
+<h3 id="neoplasias-de-la-tiroides">Neoplasias de la tiroides</h3>
+<ul>
+<li>El nódulo solitario es palpable en 1-10% de los adultos, 4 veces más en la mujer; la proporción benigno/maligno es ~10:1 y solo ~1% de los nódulos son neoplásicos. Nódulos solitarios, en jóvenes y en hombres son más sospechosos; la radiación de cabeza y cuello aumenta el riesgo; los nódulos calientes son más a menudo benignos. La punción con aguja fina y la resección dan el diagnóstico definitivo <span class="cite">p. 1084-1085</span>.</li>
+<li><strong>Adenoma folicular</strong>: masa solitaria encapsulada, bien delimitada, que comprime el parénquima; promedio 3 cm; folículos uniformes con coloide, posible cambio oxifílico (célula de Húrthle); la <strong>cápsula intacta</strong> es esencial frente al carcinoma. Adenomas tóxicos (50-80% con mutaciones de TSHR, GNAS o EZH1) son nódulos calientes con autonomía tiroidea y no son precancerosos; una minoría de adenomas no funcionantes (20-40%) con reordenamientos RAS o PPARγ sí puede preceder a carcinoma folicular. Diagnóstico definitivo solo en la pieza extirpada; pronóstico excelente <span class="cite">p. 1085-1086</span>.</li>
+<li>Cáncer tiroideo: 52.000 casos nuevos en EE. UU. (2019) con ~2.000 muertes; incidencia en aumento (~3% anual) y supervivencia a 5 años &gt;98% ("sobrediagnóstico" de lesiones pequeñas). Subtipos: papilar 80-85%, folicular 10-15%, poco diferenciado y anaplásico &lt;5%, medular 5% <span class="cite">p. 1086</span>.</li>
+<li>Relaciones precursor-tumor: microcarcinoma papilar → CPT convencional; neoplasia folicular no invasiva con características nucleares de tipo papilar → variante folicular encapsulada invasiva; adenoma folicular no funcionante → carcinoma folicular; los poco diferenciados y anaplásicos surgen por desdiferenciación de carcinomas bien diferenciados <span class="cite">p. 1086</span>.</li>
+<li>Patogenia molecular: CPT convencional con fusiones <strong>RET/PTC</strong> o <strong>NTRK</strong> y mutaciones <strong>BRAF V600E</strong> (50-80%; sine qua non en la variante de células altas; asocia menor diferenciación, extensión extratiroidea y recidiva). Neoplasias foliculares con <strong>RAS</strong> (20-40% de adenomas, 30-50% de carcinomas) y <strong>PAX8-PPARG</strong> (t(2;3), 20-50% de carcinomas). Poco diferenciados y anaplásicos agregan <strong>TP53, CTNNB1 y TERT</strong>. Medulares familiares y esporádicos (mitad) con mutaciones activadoras de <strong>RET</strong> sin reordenamientos RET/PTC. Factor ambiental: radiación ionizante en las dos primeras décadas (Chernóbil); deficiencia de yodo favorece lesiones foliculares <span class="cite">p. 1086-1088</span>.</li>
+<li><strong>Carcinoma papilar</strong>: solitario o músculo, a veces quístico, con fibrosis y calcificación; microcarcinoma &lt;1 cm. Histología: papilas ramificadas con tallo fibrovascular y <strong>núcleos en vidrio esmerilado ("ojo de la huérfana Annie"), seudoinclusiones y surcos nucleares</strong> (el diagnóstico es nuclear, incluso sin papilas); <strong>cuerpos de psamoma</strong> en el eje de las papilas, casi exclusivos del CPT y muy fiables en la punción; invasión linfática frecuente con metástasis cervicales en hasta 50%, sin impacto en el pronóstico. Variantes: células altas (mayores, BRAF + RET/PTC, agresiva) y esclerosante difusa (jóvenes, metástasis ganglionares casi constantes, RET/PTC sin BRAF). Pronóstico excelente: supervivencia a 10 años &gt;95%; los microcarcinomas y las neoplasias no invasivas con características nucleares de tipo papilar bastan con lobulectomía, evitando parálisis de cuerdas vocales e hipoparatiroidismo yatrógenos <span class="cite">p. 1088-1089</span>.</li>
+<li><strong>Carcinoma folicular</strong>: 5-15% (25-40% en zonas con deficiencia de yodo); mujeres 3:1, 40-60 años. Nódulo único bien circunscrito o infiltrante; folículos pequeños con coloide similar a la tiroides normal, sin rasgos nucleares papilares ni psamoma; el diagnóstico exige demostrar <strong>invasión capsular y/o vascular</strong> en la cápsula (no cuentan tapones en vasos intratumorales). Diseminación hematógena a hueso, pulmón e hígado; ganglios habitualmente libres. Invasión mínima: supervivencia a 10 años &gt;90%; invasión amplia: hasta la mitad muere en 10 años. Tratamiento: tiroidectomía total con radioyodo y supresión de TSH; seguimiento con <strong>tiroglobulina sérica</strong> <span class="cite">p. 1089-1090</span>.</li>
+<li><strong>Poco diferenciado y anaplásico</strong>: &lt;5% de los tumores, media 65 años, mortalidad casi 100% en el anaplásico. Poco diferenciado: patrón insular o trabecular con necrosis y mitosis. Anaplásico: células gigantes pleomorfas tipo osteoclasto, fusiformes sarcomatosas o mixtas; citoqueratina+ pero pierden tiroglobulina. Masas cervicales de crecimiento rápido con disnea, disfagia, ronquera; muerte en &lt;1 año en la mayoría; el poco diferenciado mejora algo con cirugía radical, radioterapia, yodo radiactivo e inmunoterapia con inhibidores del punto de control <span class="cite">p. 1090-1091</span>.</li>
+<li><strong>Carcinoma medular</strong>: neuroendocrino de células C; secreta calcitonina (útil para diagnóstico y seguimiento) y a veces serotonina, ACTH o VIP; <strong>CEA</strong> como biomarcador adicional. ~70% esporádicos (nódulo solitario) y 30% en MEN-2A o 2B (multifocales y bilaterales, más jóvenes). Histología: células fusiformes o poligonales en nidos, trabéculas o folículos, con <strong>depósitos amiloides derivados de calcitonina</strong> y gránulos electrodensos; la <strong>hiperplasia de células C multicéntrica</strong> adyacente sugiere forma familiar. Pese a la calcitonina alta, la hipocalcemia es rara. Los MEN-2B son más agresivos; tiroidectomía profiláctica precoz en portadores de RET; inhibidores de RET en desarrollo <span class="cite">p. 1091-1092</span>.</li>
+<li>Malformación congénita: <strong>quiste del conducto tirogloso</strong>, línea media del cuello por delante de la tráquea, tapizado por epitelio escamoso (arriba) o tiroideo (abajo) con infiltrado linfocítico; puede infectarse y rara vez transformarse en cáncer <span class="cite">p. 1092</span>.</li>
+</ul>
+<figure class="fig" id="fig-24-19">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-19.webp" data-caption="Figura 24.19. Carcinoma papilar de tiroides con papilas bien formadas y núcleos con aspecto vaciado y seudoinclusiones en la punción." data-alt="Figura 24.19. Carcinoma papilar de tiroides con papilas bien formadas y núcleos con aspecto vaciado y seudoinclusiones en la punción. Robbins y Cotran, 10ª ed., p. 1088.">
+    <img src="../assets/fig/cap24/fig-24-19.webp" width="1480" height="940" loading="lazy" decoding="async" alt="Figura 24.19. Carcinoma papilar de tiroides con papilas bien formadas y núcleos con aspecto vaciado y seudoinclusiones en la punción. Robbins y Cotran, 10ª ed., p. 1088.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.19.</strong> Carcinoma papilar de tiroides con papilas bien formadas y núcleos con aspecto vaciado y seudoinclusiones en la punción.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1088. <a href="../creditos.html#fig-24-19">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-24-22">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-22.webp" data-caption="Figura 24.22. Carcinoma medular de tiroides con crecimiento sólido y abundante amiloide estromal derivado de la calcitonina." data-alt="Figura 24.22. Carcinoma medular de tiroides con crecimiento sólido y abundante amiloide estromal derivado de la calcitonina. Robbins y Cotran, 10ª ed., p. 1091.">
+    <img src="../assets/fig/cap24/fig-24-22.webp" width="1490" height="1912" loading="lazy" decoding="async" alt="Figura 24.22. Carcinoma medular de tiroides con crecimiento sólido y abundante amiloide estromal derivado de la calcitonina. Robbins y Cotran, 10ª ed., p. 1091.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.22.</strong> Carcinoma medular de tiroides con crecimiento sólido y abundante amiloide estromal derivado de la calcitonina.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1091. <a href="../creditos.html#fig-24-22">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+<div class="warnbox"><span class="box-title">Cápsula como frontera</span>En neoplasias foliculares todo depende de la cápsula: intacta es adenoma; la invasión capsular o vascular define carcinoma folicular y exige muestras amplias de la cápsula en la pieza <span class="cite">p. 1085-1086, 1090</span>.</div>
+</section><section id="sec-04-paratiroides" class="card">
+<div class="section-kicker"><span class="n">04</span> pp. 1093-1097</div>
+<h2>Paratiroides</h2>
+<p>Cuatro glándulas de las bolsas faríngeas (pueden ectopiarse a vaina carotídea, timo o mediastino), con células principales (gránulos de PTH) y oxífilas. El calcio ionizado bajo estimula la PTH, que aumenta la reabsorción tubular de calcio, activa la vitamina D renal (↑absorción digestiva de calcio), aumenta la excreción de fosfato y activa los osteoclastos; la hipercalcemia resultante inhibe la PTH por retroalimentación clásica <span class="cite">p. 1093</span>.</p>
+<h3 id="hiperparatiroidismo-primario">Hiperparatiroidismo primario</h3>
+<ul>
+<li>Definición: sobreproducción autónoma de PTH. Lesiones: <strong>adenoma 85-95%, hiperplasia primaria 5-10%, carcinoma 1%</strong>. Mujer:hombre 4:1, mayoría &gt;50 años; hasta 80% se diagnostica fuera del hospital por hipercalcemia incidental <span class="cite">p. 1093</span>.</li>
+<li>Biología molecular: inversiones del gen <strong>CCDN1</strong> (ciclina D1) recolocada junto al promotor del PTH en 10-20% de los adenomas (sobreexpresada en ~40%); mutaciones somáticas de <strong>MEN1</strong> en 30-35%; <strong>CDC73/parafibromina</strong> mutada en ~70% de los carcinomas paratiroideos (síndrome de hiperparatiroidismo-tumor mandibular en línea germinal). Síndromes familiares: MEN-1, MEN-2, MEN-4 e <strong>hipercalcemia hipocalciúrica familiar</strong> (<em>CASR</em>) <span class="cite">p. 1094</span>.</li>
+<li>Morfología: adenoma solitario de 0,5-5 g, rojo-marrón, de células principales, con reborde de paratiroides normal comprimida; las demás glándulas son normales o atróficas. La hiperplasia afecta las cuatro glándulas (aunque puede ser asimétrica), con escasa grasa estromal. En los adenomas puede haber atipia endocrina sin valor de malignidad; el carcinoma solo se diagnostica por invasión de tejidos adyacentes o metástasis (1/3 recidiva, 1/3 disemina) <span class="cite">p. 1094-1095</span>.</li>
+<li>Hueso: osteoporosis con predilección cortical; <strong>osteitis disecante</strong> (osteoclastos tunelando el centro de las trabéculas con aspecto de vías de tren); <strong>tumor pardo</strong> (microfracturas con hemorragia, macrófagos y hemosiderina); la combinación es la <strong>osteitis fibrosa quística generalizada (enfermedad ósea de Recklinghausen)</strong>, hoy infrecuente por diagnóstico precoz. Riñón: nefrolitiasis y nefrocalcinosis; calcificación metastásica en estómago, pulmones, miocardio y vasos <span class="cite">p. 1095</span>.</li>
+<li>Laboratorio: PTH desproporcionadamente alta para el calcio sérico; hipofosfatemia, hipercalciuria e hiperfosfaturia. El cáncer es la causa más frecuente de hipercalcemia sintomática del adulto: 80% por <strong>PTHrP</strong> (pulmón, mama, cabeza y cuello, riñón, mieloma) y 20% por metástasis osteolíticas; en estos casos la PTH está baja o indetectable; existen radioinmunoensayos de PTHrP para diferenciar <span class="cite">p. 1095</span>.</li>
+<li>Clínica sintomática: huesos dolorosos y fracturas, nefrolitiasis en 20% con uropatía obstructiva, digestivos (estreñimiento, úlcera péptica, pancreatitis, litiasis biliar), SNC (depresión, obnubilación, convulsiones), debilidad neuromuscular y calcificación valvular aórtica o mitral <span class="cite">p. 1095-1096</span>.</li>
+</ul>
+<h3 id="hiperparatiroidismo-secundario-y-terciario">Hiperparatiroidismo secundario y terciario</h3>
+<ul>
+<li>Secundario: hipocalcemia crónica compensada; primera causa la <strong>insuficiencia renal crónica</strong> (hiperfosfatemia, déficit de 1α-hidroxilasa y pérdida de la supresión de la PTH por vitamina D); también hipocalcemia por déficit de calcio, esteatorrea y déficit de vitamina D. Glándulas hiperplásicas con células principales o claras; clínica dominada por la nefropatía; lesiones óseas leves (<strong>osteodistrofia renal</strong>); puede haber <strong>calcifilaxia</strong> por calcificación vascular isquémica. Tratamiento con vitamina D y quelantes de fósforo <span class="cite">p. 1096</span>.</li>
+<li>Terciario: actividad paratiroidea autónoma con hipercalcemia tras corregir la causa (por ejemplo tras trasplante renal); puede requerir paratiroidectomía <span class="cite">p. 1096</span>.</li>
+</ul>
+<h3 id="hipoparatiroidismo-y-seudohipoparatiroidismo">Hipoparatiroidismo y seudohipoparatiroidismo</h3>
+<ul>
+<li>Hipoparatiroidismo adquirido casi siempre postquirúrgico (tiroidectomía, disección cervical radical, paratiroidectomía excesiva). Genéticos: <strong>APS-1</strong> (<em>AIRE</em>; con candidiasis mucocutánea e insuficiencia suprarrenal), hipoparatiroidismo autosómico dominante por <strong>CASR</strong> ganador de función (hipocalcemia e hipercalciuria), hipoparatiroidismo aislado familiar (mutaciones del gen PTH o de <strong>GCM2</strong>) y agenesia paratiroidea con aplasia del timo (<strong>DiGeorge, deleción 22q11</strong>) <span class="cite">p. 1096-1097</span>.</li>
+<li>Clínica: <strong>tetania</strong> por hipocalcemia, desde parestesias peribucales y espasmo carpopedio hasta laringoespasmo y convulsiones; signos de <strong>Chvostek</strong> (golpeo del nervio facial) y <strong>Trousseau</strong> (espasmo carpal con el manguito). Cambios mentales, calcificación de ganglios basales con parkinsonismo y hipertensión intracraneal, cataratas, prolongación del QT y anomalías dentales por hipoplasia del esmalte <span class="cite">p. 1097</span>.</li>
+<li>Seudohipoparatiroidismo: resistencia de los órganos diana a la PTH con PTH normal o alta; hipocalcemia, hiperfosfatemia; por defectos de la vía común de la proteína G compartida con TSH y FSH/LH (hipogonadismo hipogonadotrópico en mujeres) <span class="cite">p. 1097</span>.</li>
+</ul>
+
+</section><section id="sec-05-pancreas-endocrino" class="card">
+<div class="section-kicker"><span class="n">05</span> pp. 1097-1114</div>
+<h2>Páncreas endocrino</h2>
+<p>Un millón de islotes de Langerhans con cuatro tipos principales de células: β (insulina), α (glucagón), δ (somatostatina, inhibe insulina y glucagón) y PP (polipéptido pancreático); más células D1 (VIP, glucogenólisis y diarrea secretora) y enterocromafines (serotonina, tumores carcinoideos pancreáticos) <span class="cite">p. 1097</span>.</p>
+<h3 id="diabetes-mellitus">Diabetes mellitus</h3>
+<ul>
+<li>Grupo de trastornos metabólicos con <strong>hiperglucemia</strong> por defecto en la secreción o acción de la insulina o ambos; primera causa de nefropatía terminal, ceguera del adulto y amputaciones no traumáticas en EE. UU.; &gt;30 millones de afectados (9% de la población), 84 millones con prediabetes y coste anual de 327.000 millones de dólares <span class="cite">p. 1098</span>.</li>
+<li>Criterios diagnósticos (ADA/OMS): glucemia en ayunas ≥126 mg/dl; al azar ≥200 mg/dl con signos hiperglucémicos clásicos; PTGO ≥200 mg/dl a las 2 h con 75 g; <strong>HbA1c ≥6,5%</strong>. Deben confirmarse salvo la glucemia al azar sintomática; la hiperglucemia transitoria por estrés agudo (infección, quemadura, traumatismo) no diagnostica diabetes. Prediabetes: ayunas 100-125 mg/dl, PTGO 140-199 mg/dl o HbA1c 5,7-6,4%; un cuarto progresa a DT2 en 5 años <span class="cite">p. 1098-1099</span>.</li>
+<li>Clasificación: DT1 (autoinmunitaria o idiopática, 5-10%, deficiencia absoluta de insulina) y DT2 (90-95%, resistencia a la insulina más disfunción de célula β); formas monogénicas (MODY por HNF4A, GCK, HNF1A, PDX1, HNF1B, NEUROD1; diabetes neonatal por KCNJ11 y ABCC8; MIDD mitocondrial), pancreatopatías (diabetes 3C), endocrinopatías (acromegalia, Cushing, feocromocitoma, glucagonoma), fármacos (glucocorticoides), síndromes genéticos y diabetes gestacional <span class="cite">p. 1099</span>.</li>
+</ul>
+<div class="table-wrap" role="region" aria-label="Tabla: Páncreas endocrino" tabindex="0"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>DT1</th>
+<th>DT2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inicio</td>
+<td>Infancia y adolescencia</td>
+<td>Adulto (creciente en jóvenes); 80% obesos</td>
+</tr>
+<tr>
+<td>Insulina</td>
+<td>Descenso progresivo</td>
+<td>Alta al inicio, descenso moderado tardío</td>
+</tr>
+<tr>
+<td>Autoanticuerpos</td>
+<td>Antiislotes (antiinsulina, anti-GAD, anti-ICA512)</td>
+<td>Ausentes</td>
+</tr>
+<tr>
+<td>Complicación aguda típica</td>
+<td>Cetoacidosis diabética</td>
+<td>Estado hiperglucémico hiperosmolar</td>
+</tr>
+<tr>
+<td>Genética</td>
+<td>HLA clase I y II del CPH; CTLA4, PTPN22, VNTR de insulina</td>
+<td>Sin HLA; TCF7L2, PPARG, FTO</td>
+</tr>
+<tr>
+<td>Patogenia</td>
+<td>Fallo de la autotolerancia de linfocitos T</td>
+<td>Resistencia a la insulina y fallo compensador de la célula β</td>
+</tr>
+<tr>
+<td>Patología</td>
+<td>Insulitis; deplección de células β e islotes atróficos</td>
+<td>Sin insulitis; amiloide en islotes; depleción ligera de células β</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1100</span> (tabla 24.7).</p>
+<ul>
+<li>Homeostasis de la glucosa: producción hepática (ayuno, regulada por insulina baja y glucagón alto) y captación periférica posprandial, sobre todo músculo estriado, guiada por insulina alta y glucagón bajo <span class="cite">p. 1100</span>.</li>
+<li>Secreción de insulina: la glucosa entra por <strong>GLUT-2</strong>, genera ATP, cierra el canal de K+ sensible a ATP, despolariza, entra Ca2+ y libera la insulina almacenada (primera fase); luego síntesis activa (segunda fase). La insulina se secreta equimolar con el <strong>péptido C</strong>, marcador indirecto de función de la célula β (bajo en DT1, alto en hiperinsulinemia por resistencia). Las <strong>incretinas GIP y GLP-1</strong> potencian la secreción de insulina, frenan el glucagón y retrasan el vaciamiento gástrico; son degradadas por DPP-4; su efecto está atenuado en DT2, base de los agonistas del receptor de GLP-1 y los inhibidores de DPP-4 <span class="cite">p. 1100-1101</span>.</li>
+<li>Acción de la insulina: hormona anabólica más potente; receptor tetrámero α2β2 con tirosina cinasa que fosforila IRS y activa la vía <strong>PI3K/Akt</strong>, con translocación de GLUT-4, síntesis de glucógeno y proteínas (mTOR), inhibición de la gluconeogenia (FOXO) y captación de glucosa en músculo y tejido adiposo <span class="cite">p. 1101-1102</span>.</li>
+<li><strong>Patogenia de la DT1</strong>: autoinmunitaria, con concordancia ~50% en monocigóticos; el haplotipo <strong>HLA</strong> aporta hasta el 50% de la predisposición (DR3/DR4 en 90-95% de los blancos afectados; heterocigotos compuestos DR3/DR4 en 40-50% vs 5% de controles); otros loci: VNTR del promotor de insulina, <strong>CTLA4, PTPN22</strong> y <em>AIRE</em>. Factores ambientales enigmáticos (mimetismo molecular vírico propuesto). Tres estadios: 1) autoinmunidad positiva normoglucémica (&lt;50% de riesgo a 5 años), 2) autoinmunidad con disglucemia presintomática (75% a 5 años), 3) diabetes sintomática tras destruir &gt;90% de las células β. El defecto fundamental es la falta de autotolerancia de los linfocitos T (deleción tímica y Treg defectuosas); lesionan las células β Th1 (IFN-γ, TNF) y CTL CD8+; puede aparecer con bloqueantes del punto de control inmunitario <span class="cite">p. 1101-1103</span>.</li>
+<li><strong>Patogenia de la DT2</strong>: concordancia &gt;90% en monocigóticos, riesgo familiar 5-10 veces; ≥30 loci de bajo efecto (función de célula β, tejido adiposo, obesidad: TCF7L2, PPARG, FTO); el peso principal es ambiental. Obesidad central y visceral (más relevante que la subcutánea), sedentarismo, alteración circadiana y apnea del sueño; la combinación de obesidad, hiperglucemia, dislipidemia e hipertensión es el <strong>síndrome metabólico</strong> <span class="cite">p. 1103-1104</span>.</li>
+<li>Resistencia a la insulina: incapacidad hepática de frenar la gluconeogenia (glucemia de ayuno alta), captación muscular posprandial deficiente (glucemia posprandial alta) y lipólisis desinhibida con <strong>ácidos grasos libres (AGL)</strong> altos. Los AGL saturan la oxidación y acumulan DAG, ceramidas y otros lipotoxicos que bloquean la señalización del receptor; las adipocinas pro y antiglucémicas (la <strong>adiponectina baja en la obesidad</strong>) y la inflamación crónica mediada por el inflamasoma con <strong>IL-1β</strong> agravan la resistencia; puede añadirse esteatosis hepática no alcohólica (EHNA) <span class="cite">p. 1104-1105</span>.</li>
+<li>Disfunción de célula β: requisito para la diabetes manifiesta; inicialmente hiperfuncionante, luego agotada (deficiencia relativa). Mecanismos: lipotoxicidad, glucotoxicidad, respuesta anómala a incretinas y <strong>depósito de amiloide en los islotes</strong> (&gt;90% de los islotes en DT2 de larga evolución) <span class="cite">p. 1105</span>.</li>
+<li>Formas monogénicas: 1-2% de los diabéticos; MODY (el subtipo más frecuente por mutaciones de <strong>GCK</strong>, etapa limitante de la secreción de insulina); resistencia a la insulina de tipo A por mutaciones del receptor con <strong>acantosis nigricans</strong>, ovarios poliquísticos e hiperandrogenismo <span class="cite">p. 1105</span>.</li>
+<li>Diabetes y embarazo: pregestacional o gestacional (5-9% de los embarazos); el embarazo es "diabetógeno" (resistencia a la insulina hormonal). Riesgo de muerte fetal, malformaciones y <strong>macrosomia</strong>; la gestacional suele remitir, pero la mayoría desarrolla diabetes en 10-20 años <span class="cite">p. 1105-1106</span>.</li>
+<li>Clínica: DT1 con periodo de "luna de miel" inicial de mínima necesidad de insulina; el debut puede precipitarse por infección. DT2 en mayores de 40 años obesos, a menudo hallada en exámenes de rutina; cribado recomendado desde los 45 años y antes si hay obesidad, antecedentes o síndrome metabólico <span class="cite">p. 1106</span>.</li>
+<li><strong>Triada clásica</strong>: poliuria (glucosuria con diuresis osmótica), polidipsia (hiperosmolaridad y activación de osmorreceptores) y polifagia (catabolismo proteico); con pérdida de peso paradójica que siempre sugiere diabetes <span class="cite">p. 1106</span>.</li>
+<li><strong>Cetoacidosis diabética</strong> (DT1): precipitada por omisión de insulina, infección, traumatismo o fármacos; la deficiencia de insulina con exceso de glucagón eleva la glucemia a 250-600 mg/dl y por lipasa sensible a hormonas aumenta la cetogénesis hepática (acetoacetato, β-hidroxibutirato); cetonemia y cetonuria que evolucionan a acidosis metabólica. Clínica: fatiga, náuseas, vómitos, dolor abdominal, <strong>olor a fruta, respiración de Kussmaul</strong>, coma; requiere insulina, corrección de la acidosis y tratamiento del precipitante <span class="cite">p. 1106-1107</span>.</li>
+<li><strong>Estado hiperglucémico hiperosmolar</strong> (DT2): deshidratación intensa por diuresis osmótica sostenida en ancianos incapacitados para beber; sin cetoacidosis (la insulina portal residual evita la cetogénesis), por lo que se consulta tarde; glucemia de 600 a 1.200 mg/dl. La complicación más frecuente del tratamiento en ambos tipos es la <strong>hipoglucemia</strong> (mareo, confusión, sudoración, taquicardia; corrección urgente con glucosa) <span class="cite">p. 1107</span>.</li>
+<li>Complicaciones crónicas: por hiperglucemia sostenida (glucotoxicidad) sobre arterias grandes y medianas (macrovascular) y pequeñas (microvascular); aparecen 15-20 años tras el inicio y se atenúan con buen control glucémico; <strong>HbA1c objetivo &lt;7%</strong> (refleja 120 días de vida eritrocitaria) y nuevo parámetro de "tiempo en rango" (70-180 mg/dl) <span class="cite">p. 1107-1108</span>.</li>
+<li>Mecanismos de la lesión: 1) <strong>AGE</strong> que se unen a RAGE (citocinas, TGF-β, VEGF, ERO, estado procoagulante, proliferación de músculo liso) y crean enlaces cruzados en colágeno I y IV, rígido y proaterógeno, con atrapamiento de LDL y albúmina; 2) activación de <strong>PKC</strong> vía DAG (VEGF, TGF-β, PAI-1); 3) vía de los polioles: aldosa reductasa consume NADPH, agota el glutatión reducido y genera <strong>sorbitol</strong> (cataratas); 4) vía de la hexosamina <span class="cite">p. 1108</span>.</li>
+<li>Morfología pancreática: DT1 con reducción de islotes, <strong>insulitis</strong> linfocitaria T; DT2 con <strong>amiloide islotal</strong> que puede obliterar el islote; islotes hiperplásicos en recién nacidos de madre diabética <span class="cite">p. 1108-1110</span>.</li>
+<li><strong>Macrovascular</strong>: ateroesclerosis acelerada indistinguible morfológicamente de la no diabética; el <strong>infarto de miocardio es la primera causa de muerte</strong>; gangrena de miembros inferiores 100 veces más frecuente; arterioloesclerosis hialina aferente y eferente más pronunciada que en no diabéticos (la eferente es casi exclusiva de la diabetes) <span class="cite">p. 1109</span>.</li>
+<li><strong>Microangiopatía</strong>: engrosamiento difuso de membranas basales con capilares paradójicamente más permeables; base de la nefropatía, retinopatía y neuropatía <span class="cite">p. 1109-1110</span>.</li>
+<li><strong>Nefropatía diabética</strong>: tres lesiones: glomerulares, vasculares y pielonefritis (con necrosis papilar más frecuente). Glomerulares: engrosamiento de la membrana basal capilar (mejor por microscopía electrónica; +30% a los 5 años de DT1), <strong>esclerosis mesangial difusa</strong> PAS+ y <strong>glomeruloesclerosis nodular (Kimmelstiel-Wilson)</strong>, nódulos PAS+ acelulares en el eje mesangial con mesangiólisis, microaneurismas capilares, "cubiertas de fibrina" y "gotas capsulares"; hialinosis de arteriolas aferente y eferente; riñón reducido con atrofia tubular y fibrosis intersticial. Presente en 15-30% de los diabéticos de larga evolución y asociada a insuficiencia renal. Primera manifestación: <strong>microalbuminuria</strong> (30-300 mg/día); sin intervención, 80% de DT1 y 20-40% de DT2 progresan a macroalbuminuria en 10-15 años con hipertensión; 30-40% de los diabéticos desarrollan nefropatía clínica <span class="cite">p. 1110-1112</span>.</li>
+<li>Ojo: cataratas, glaucoma y <strong>retinopatía</strong> (de base y proliferativa por neovascularización dependiente de VEGF inducido por hipoxia; tratada con antiangiogénicos); primera causa de ceguera del adulto en EE. UU. Neuropatía clínica hasta en 50% (80% si &gt;15 años): polineuropatía simétrica distal "en guante y calcetín", neuropatía autónoma (vejiga, intestino, disfunción eréctil) y mononeuropatías <span class="cite">p. 1111-1112</span>.</li>
+<li>Cardiovascular y riesgo: cardiopatía coronaria 2-4 veces, muerte cardiovascular 4 veces; el infarto es casi tan frecuente en mujeres diabéticas como en hombres; hipertensión en ~75% de la DT2 y dislipidemia diabética (triglicéridos y LDL altos, HDL bajo); el riesgo ya está elevado en prediabéticos. Infecciones (piel, tuberculosis, neumonía, pielonefritis) causan ~5% de las muertes por neutrófilos disfuncionales y vasculopatía <span class="cite">p. 1112</span>.</li>
+</ul>
+<h3 id="neoplasias-endocrinas-pancreáticas">Neoplasias endocrinas pancreáticas</h3>
+<ul>
+<li>Las PanNET (tumores "de células de los islotes") son el 2% de las neoplasias pancreáticas; pueden ser funcionantes o no; el aspecto histológico no predice el comportamiento: un Ki-67 ≥3% sugiere agresividad; los criterios de malignidad son <strong>metástasis, invasión vascular e infiltración local</strong>. ~90% de los insulinomas son benignos, mientras que 60-90% de las demás PanNET funcionantes y no funcionantes son malignas <span class="cite">p. 1113</span>.</li>
+<li>Genómica esporádica: mutaciones de <strong>MEN1</strong>, pérdida de <strong>PTEN/TSC2</strong> (activación de mTOR) e inactivación de <strong>ATRX o DAXX</strong> (mutuamente excluyentes) con "alargamiento alternativo de los telómeros" (ALT) <span class="cite">p. 1113</span>.</li>
+<li><strong>Insulinoma</strong>: PanNET más frecuente; episodios hipoglucémicos con glucemia &lt;50 mg/dl (confusión, estupor, pérdida de conciencia) precipitados por ayuno o ejercicio y corregidos de inmediato con glucosa; mayormente benignos, solitarios, &lt;2 cm, encapsulados; amiloide característico; laboratorio con insulina alta e <strong>índice insulina/glucosa alto</strong>. Diagnóstico diferencial de hipoglucemia: sensibilidad a insulina, hepatopatía, glucogenosis, producción ectópica por fibrosarcomas y autoinyección de insulina <span class="cite">p. 1113</span>.</li>
+<li><strong>Síndrome de Zollinger-Ellison (gastrinoma)</strong>: gastrinomas en el "triángulo del gastrinoma" (duodeno y tejidos peripancreáticos con la misma frecuencia que páncreas); ulceración péptica grave en 90-95% con úlceras múltiples, yeyunales y resistentes al tratamiento; &gt;50% invasivos o metastásicos al diagnóstico; ~25% forman parte de MEN-1 (entonces múltiples). Tratamiento: inhibidores de la H+/K+-ATPasa y resección; metástasis hepáticas limitan la supervivencia a ~10 años <span class="cite">p. 1113-1114</span>.</li>
+<li>Otras PanNET infrecuentes: <strong>glucagonoma</strong> (diabetes leve, eritema migratorio necrolítico, anemia, glucagón plasmático muy alto); <strong>somatostatinoma</strong> (diabetes, colelitiasis, esteatorrea, hipoclorhidria); <strong>VIPoma</strong> (síndrome WDHA: diarrea acuosa, hipopotasemia y aclorhidria); tumores productores de PP silentes y carcinoideos pancreáticos raros; los multihormonales deben distinguirse de los síndromes MEN <span class="cite">p. 1114</span>.</li>
+</ul>
+<figure class="fig" id="fig-24-41">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-41.webp" data-caption="Figura 24.41. Neoplasia endocrina pancreática (insulinoma) con células monótonas y amiloide, en un paciente con hipoglucemia episódica." data-alt="Figura 24.41. Neoplasia endocrina pancreática (insulinoma) con células monótonas y amiloide, en un paciente con hipoglucemia episódica. Robbins y Cotran, 10ª ed., p. 1114.">
+    <img src="../assets/fig/cap24/fig-24-41.webp" width="705" height="480" loading="lazy" decoding="async" alt="Figura 24.41. Neoplasia endocrina pancreática (insulinoma) con células monótonas y amiloide, en un paciente con hipoglucemia episódica. Robbins y Cotran, 10ª ed., p. 1114.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.41.</strong> Neoplasia endocrina pancreática (insulinoma) con células monótonas y amiloide, en un paciente con hipoglucemia episódica.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1114. <a href="../creditos.html#fig-24-41">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+<div class="warnbox"><span class="box-title">Kimmelstiel-Wilson y microalbuminuria</span>La glomeruloesclerosis nodular PAS+ con mesangiólisis y microaneurismas capilares aparece en 15-30% de los diabéticos de larga evolución; la microalbuminuria (30-300 mg/día) es el primer marcador y abre la ventana de intervención <span class="cite">p. 1111-1112</span>.</div>
+</section><section id="sec-06-suprarrenal" class="card">
+<div class="section-kicker"><span class="n">06</span> pp. 1114-1128</div>
+<h2>Suprarrenal</h2>
+<p>Corteza con tres zonas: glomerular (aldosterona, mineralocorticoides), fascicular (75% de la corteza, cortisol) y reticular (andrógenos); médula de células cromafines que secretan catecolaminas, sobre todo adrenalina <span class="cite">p. 1114-1115</span>.</p>
+<h3 id="hipercortisolismo-síndrome-de-cushing">Hipercortisolismo (síndrome de Cushing)</h3>
+<ul>
+<li>La causa más frecuente es la administración exógena de glucocorticoides (Cushing yatrógeno). Endógeno: <strong>ACTH dependiente</strong> (enfermedad de Cushing por microadenoma hipofisario, 60-70%; secreción ectópica de ACTH, 5-10%, sobre todo carcinoma pulmonar microcítico y carcinoides) e <strong>independiente de ACTH</strong> (adenoma suprarrenal 10-20%, carcinoma 5-7%, hiperplasias macronodular y micronodular bilaterales) con cortisol alto y <strong>ACTH baja</strong> <span class="cite">p. 1115</span>.</li>
+<li>Hiperplasias bilaterales independientes de ACTH: macronodular (HSMB, nódulos &gt;10 mm; hasta 50% de los esporádicos con mutaciones de línea germinal de <strong>ARMC5</strong>; receptores ectópicos a GIP, LH o ADH; también en McCune-Albright por GNAS) y micronodular (enfermedad corticosuprarrenal nodular pigmentada primaria y <strong>complejo de Carney</strong>, por mutaciones de <strong>PRKAR1A</strong> que elevan AMPc) <span class="cite">p. 1115</span>.</li>
+<li>Carcinomas corticosuprarrenales: mutaciones activadoras de <strong>CTNNB1</strong> e inactivadoras de <strong>TP53, MEN1 y PRKAR1A</strong>; producen hipercortisolismo más intenso que los adenomas <span class="cite">p. 1115</span>.</li>
+<li>Morfología: <strong>cambio hialino de Crooke</strong> en las células corticótropas hipofisarias (filamentos de queratina). Suprarrenales según la causa: atrofia cortical bilateral (exógeno; la glomerular se conserva por ser ACTH independiente), hiperplasia difusa (ACTH dependiente; glándulas hasta 30 g, zona reticular expandida con nódulos ricos en lípidos amarillos), hiperplasia macronodular (nódulos de 10-30 mm) o micronodular (micronódulos oscuros de 1-3 mm con <strong>lipofuscina</strong>), o adenoma/carcinoma; en las neoplasias funcionantes la corteza adyacente y contralateral está atrófica por supresión de ACTH <span class="cite">p. 1116-1117</span>.</li>
+<li>Clínica: obesidad central con "cara de luna llena" y "joroba de búfalo" (obesidad o aumento de peso 95%); atrofia de fibras rápidas tipo 2 con debilidad proximal; hiperglucemia con glucosuria y polidipsia (diabetes secundaria); piel fina con equimosis, cicatrización deficiente y <strong>estrías abdominales</strong>; osteoporosis con fracturas; infecciones; trastornos psíquicos, hirsutismo y alteraciones menstruales; plétora facial y menor crecimiento lineal en niños <span class="cite">p. 1117-1118</span>.</li>
+<li>Diagnóstico: <strong>cortisol libre urinario de 24 h aumentado</strong> y pérdida del patrón diurno; etiología por ACTH sérica y <strong>prueba de supresión con dexametasona</strong>: hipofisario suprime con dosis alta (no con dosis baja); la ACTH ectópica no se suprime con ninguna dosis; el tumor suprarrenal tiene ACTH baja y no se suprime <span class="cite">p. 1118</span>.</li>
+</ul>
+<h3 id="hiperaldosteronismo-primario">Hiperaldosteronismo primario</h3>
+<ul>
+<li>Producción autónoma de aldosterona con hipertensión, supresión de renina. Causas: <strong>hiperaldosteronismo idiopático bilateral</strong> (hiperplasia nodular bilateral de la zona glomerular, 60%), <strong>adenoma productor de aldosterona o síndrome de Conn</strong> (~35%, mujeres 2:1) e hiperplasia familiar (5%; HF-I aldosteronismo corregible con glucocorticoides por el gen quimérico CYP11B1/CYP11B2 suprimible con dexametasona; HF-III por KCNJ5; HF-IV por CACNA1H) <span class="cite">p. 1118-1119</span>.</li>
+<li>Genómica del adenoma de Conn: hasta 50% con mutaciones somáticas de <strong>KCNJ5</strong> (GIRK4), más CACNA1H y ATP1A1; despolarización crónica activa la aldosterona sintasa <span class="cite">p. 1119</span>.</li>
+<li>Morfología: adenoma &lt;2 cm, amarillo brillante, con células cargadas de lípidos parecidas a las fasciculares y <strong>cuerpos de espironolactona</strong> tras tratar con este fármaco; no suprime la ACTH, por lo que la corteza adyacente no se atrofia. La hiperplasia idiopática es difusa y no visible de forma evidente <span class="cite">p. 1119</span>.</li>
+<li>Clínica: causa más frecuente de <strong>hipertensión secundaria</strong> (5-10% de los hipertensos; hasta 20% en hipertensión resistente); la hipopotasemia ya no es imprescindible; si existe produce debilidad, parestesias y tetania. Diagnóstico: <strong>cociente aldosterona/renina plasmática elevado</strong> y prueba de supresión de aldosterona. Adenoma: cirugía; hiperplasia bilateral: espironolactona. Secundario (renina alta): hipoperfusión renal, hipovolemia, edema, embarazo <span class="cite">p. 1119-1120</span>.</li>
+</ul>
+<h3 id="síndromes-adrenogenitales">Síndromes adrenogenitales</h3>
+<ul>
+<li>La corteza secreta deshidroepiandrosterona y androstenodiona convertidas en testosterona periférica, reguladas por ACTH. Exceso de andrógenos por carcinomas virilizantes (más que adenomas, a menudo síndrome mixto con cortisol) o por <strong>hiperplasia suprarrenal congénita (HSC)</strong>, metabolopatía autosómica recesiva de la esteroidogenia con bloqueo de cortisol, aumento compensador de ACTH, hiperplasia suprarrenal y desvío de precursores hacia andrógenos <span class="cite">p. 1120-1121</span>.</li>
+<li>La <strong>deficiencia de 21-hidroxilasa (CYP21A2)</strong> causa &gt;90% de los casos. Tres síndromes: con <strong>pérdida de sal</strong> clásico (sin mineralocorticoides: hiponatremia, hiperpotasemia, acidosis, shock; virilización evidente en mujeres al nacer, varones diagnosticados a los 5-15 días), <strong>virilizante simple</strong> (~1/3, ambigüedad sexual sin crisis salina) y <strong>no clásico o tardío</strong> (hirsutismo, acné, oligomenorrea, no detectado por cribado neonatal) <span class="cite">p. 1121</span>.</li>
+<li>La HSC también deteriora la médula: se requiere cortisol alto intraSuprarrenal para la síntesis de catecolaminas; la deficiencia grave con pérdida de sal genera <strong>displasia suprarrenomedular</strong> y predisposición al shock. Tratamiento con glucocorticoides (frenan ACTH) y mineralocorticoides si hay pérdida de sal; el cribado neonatal y el diagnóstico prenatal mejoran el pronóstico <span class="cite">p. 1121</span>.</li>
+</ul>
+<h3 id="insuficiencia-corticosuprarrenal">Insuficiencia corticosuprarrenal</h3>
+<div class="table-wrap" role="region" aria-label="Tabla: Suprarrenal" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Causas principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primaria aguda (crisis suprarrenal)</td>
+<td>Retirada rápida de glucocorticoides, estrés en insuficiencia crónica, hemorragia suprarrenal masiva neonatal o con anticoagulantes/CID, <strong>síndrome de Waterhouse-Friderichsen</strong></td>
+</tr>
+<tr>
+<td>Primaria crónica (enfermedad de Addison)</td>
+<td>Suprarrenalitis autoinmunitaria (60-70% en países desarrollados), tuberculosis, sida, metástasis (pulmón y mama); raras: adrenoleucodistrofia (ABCD1), hipoplasia congénita (NR0B1), amiloidosis, sarcoidosis, hemocromatosis</td>
+</tr>
+<tr>
+<td>Secundaria</td>
+<td>Enfermedades hipotalámicas o hipofisarias y supresión por esteroides a largo plazo</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">p. 1122</span> (tabla 24.10).</p>
+<ul>
+<li><strong>Waterhouse-Friderichsen</strong>: infección bacteriana grave (clásicamente septicemia meningocócica; también neumococo, Pseudomonas, Haemophilus), hipotensión rápidamente progresiva con shock, <strong>CID con púrpura generalizada</strong> e insuficiencia suprarrenal brusca por hemorragia bilateral masiva; más frecuente en niños; las suprarrenales se vuelven "sacos de sangre coagulada"; diagnóstico y tratamiento inmediatos o muerte en horas-días <span class="cite">p. 1122-1123</span>.</li>
+<li><strong>Enfermedad de Addison</strong>: destrucción progresiva de la corteza; no hay síntomas hasta perder ≥90%. La suprarrenalitis autoinmunitaria (80-90% de los casos primarios en países de renta alta) tiene anticuerpos contra 21-hidroxilasa y 17-hidroxilasa; aislada en 40% y en 60% dentro de síndromes poliendocrinos autoinmunitarios: <strong>APS-1</strong> (<em>AIRE</em>, 21q22; candidiasis mucocutánea crónica por autoanticuerpos contra IL-17 e IL-22 de los Th17, hipoparatiroidismo, distrofia ectodérmica, suprarrenalitis), <strong>APS-2</strong> (más frecuente; Addison + tiroiditis autoinmunitaria ± DT1, sin candidiasis ni hipoparatiroidismo) y <strong>APS-4</strong> (suprarrenalitis con gastritis, vitíligo, alopecia, anemia perniciosa, sin tiroiditis ni DT1) <span class="cite">p. 1123-1124</span>.</li>
+<li>Clínica de Addison: inicio insidioso con debilidad, fatiga, anorexia, náuseas, vómitos, pérdida de peso y diarrea; <strong>hiperpigmentación</strong> de zonas expuestas y de presión (POMC y MSH elevadas), ausente en la insuficiencia secundaria; hiperpotasemia, hiponatremia, hipotensión e hipoglucemia; el estrés precipita la <strong>crisis suprarrenal</strong> (vómitos, dolor abdominal, shock), mortal sin corticoesteroides inmediatos <span class="cite">p. 1124</span>.</li>
+<li>Insuficiencia secundaria: sin hiperpigmentación (MSH no elevada), con <strong>aldosterona normal</strong> (sin hiponatremia ni hiperpotasemia relevantes); la ACTH exógena eleva el cortisol en la secundaria pero no en la primaria. Suprarrenales pequeñas con corteza reducida a una cinta, de color amarillo conservado; médula normal <span class="cite">p. 1124-1125</span>.</li>
+</ul>
+<h3 id="neoplasias-corticosuprarrenales">Neoplasias corticosuprarrenales</h3>
+<ul>
+<li>Adenoma y carcinoma casi igual de frecuentes en adultos; carcinomas predominan en niños. Síndromes familiares con predisposición a carcinoma: <strong>Li-Fraumeni</strong> (TP53) y <strong>Beckwith-Wiedemann</strong> (IGF-2); ambos genes también se alteran somáticamente en esporádicos. Adenomas funcionantes dan hiperaldosteronismo y Cushing; las neoplasias virilizantes tienen más probabilidad de ser carcinomas <span class="cite">p. 1125</span>.</li>
+<li><strong>Adenoma</strong>: la mayoría inactivo (incidentaloma), nodular bien delimitado hasta 2,5 cm, amarillo por lípidos; células similares a la fascicular con atipia endocrina benigna y Ki-67 &lt;5%; expresan SF-1 e inhibina. El estado funcional no se deduce de la morfología <span class="cite">p. 1125-1126</span>.</li>
+<li><strong>Carcinoma</strong>: distribución bimodal (primera y quinta décadas); funcionante con virilismo o hipersuprarrenalismo; masas grandes de hasta &gt;20 cm y &gt;200-300 g, mal delimitadas, con necrosis y hemorragia; invaden vena suprarrenal y cava; metástasis ganglionares y hematogénicas; mediana de supervivencia ~2 años; Ki-67 alto e IGF-2 elevado. Las metástasis suprarrenales (pulmón, mama) son más frecuentes que el carcinoma primario <span class="cite">p. 1126</span>.</li>
+<li>Otras lesiones: quistes suprarrenales; <strong>mielolipomas</strong> (tejido hematopoyético y grasa maduras, hallazgo casual); <strong>incidentaloma suprarrenal</strong> detectado en ~4% de las imágenes abdominales, en su inmensa mayoría adenomas pequeños no secretores <span class="cite">p. 1126</span>.</li>
+</ul>
+<figure class="fig" id="fig-24-50">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-50.webp" data-caption="Figura 24.50. Adenoma cortical suprarrenal: lesión solitaria y circunscrita cuyo estado funcional no se deduce de su aspecto macro ni microscópico." data-alt="Figura 24.50. Adenoma cortical suprarrenal: lesión solitaria y circunscrita cuyo estado funcional no se deduce de su aspecto macro ni microscópico. Robbins y Cotran, 10ª ed., p. 1125.">
+    <img src="../assets/fig/cap24/fig-24-50.webp" width="718" height="569" loading="lazy" decoding="async" alt="Figura 24.50. Adenoma cortical suprarrenal: lesión solitaria y circunscrita cuyo estado funcional no se deduce de su aspecto macro ni microscópico. Robbins y Cotran, 10ª ed., p. 1125.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.50.</strong> Adenoma cortical suprarrenal: lesión solitaria y circunscrita cuyo estado funcional no se deduce de su aspecto macro ni microscópico.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1125. <a href="../creditos.html#fig-24-50">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<h3 id="médula-suprarrenal-y-feocromocitoma">Médula suprarrenal y feocromocitoma</h3>
+<ul>
+<li>La médula deriva de la cresta neural (células cromafines y sustentaculares) y forma, con los paraganglios extraSuprarrenales (branquioméricos e intravagales parasimpáticos; aorticamentos simpáticos con los órganos de Zuckerkandl), el sistema paraganglionar. Las neoplasias principales son el feocromocitoma y los tumores neuroblásticos (v. capítulo 10) <span class="cite">p. 1126-1127</span>.</li>
+<li><strong>Feocromocitoma</strong>: neoplasia de células cromafines que secreta catecolaminas; causa infrecuente de hipertensión <strong>corregible con cirugía</strong>. "Regla del 10": 10% extrasuprarrenales (paragangliomas), 10% bilaterales (hasta 50% en formas familiares), 10% biológicamente malignos (20-40% en paragangliomas y formas hereditarias), 10% sin hipertensión. Hasta 25% tienen mutación de línea germinal (RET en MEN-2, NF1, <strong>VHL</strong>, <strong>EPAS1/HIF-2</strong>, succinato deshidrogenasa SDHB/SDHC/SDHD con fenotipo de "seudohipoxia" vía HIF); más jóvenes y bilaterales en formas hereditarias <span class="cite">p. 1127</span>.</li>
+<li>Morfología: desde lesiones pequeñas confinadas a masas hemorrágicas de kilogramos (promedio 100 g); con dicromato de potasio se tiñen de marrón oscuro (de ahí "cromafín"); histología con <strong>nidos de células principales (zellballen)</strong> rodeados por células sustentaculares S-100+, cromatina "en sal y pimienta", cromogranina y sinaptofisina positivas, gránulos electrodensos por microscopía electrónica. La <strong>malignidad solo se diagnostica por metástasis</strong>: el pleomorfismo y las mitosis existen en tumores benignos y la monotonía se asocia paradójicamente a agresividad <span class="cite">p. 1128</span>.</li>
+<li>Clínica: hipertensión en 90%, con <strong>episodios paroxísticos</strong> en dos tercios (cefalea, sudoración, palpitaciones, temblor, sensación de temor, precipitados por tensión, ejercicio o palpación del tumor; en paragangliomas vesicales, por la micción); complicaciones: insuficiencia cardiaca congestiva, edema pulmonar, infarto, fibrilación ventricular, ACV, <strong>miocardiopatía por catecolaminas</strong>. Diagnóstico: catecolaminas libres urinarias, <strong>ácido vanilmandélico y metanefrinas</strong>. Tratamiento: bloqueo adrenérgico pre e intraoperatorio más extirpación <span class="cite">p. 1128-1129</span>.</li>
+</ul>
+<figure class="fig" id="fig-24-54">
+  <a class="fig-open" href="../assets/fig/cap24/fig-24-54.webp" data-caption="Figura 24.54. Feocromocitoma rodeado de corteza atenuada, con zonas de hemorragia y restos de la suprarrenal residual." data-alt="Figura 24.54. Feocromocitoma rodeado de corteza atenuada, con zonas de hemorragia y restos de la suprarrenal residual. Robbins y Cotran, 10ª ed., p. 1128.">
+    <img src="../assets/fig/cap24/fig-24-54.webp" width="620" height="675" loading="lazy" decoding="async" alt="Figura 24.54. Feocromocitoma rodeado de corteza atenuada, con zonas de hemorragia y restos de la suprarrenal residual. Robbins y Cotran, 10ª ed., p. 1128.">
+  </a>
+  <figcaption>
+    <strong>Figura 24.54.</strong> Feocromocitoma rodeado de corteza atenuada, con zonas de hemorragia y restos de la suprarrenal residual.
+    <span class="fig-source">Robbins y Cotran, <em>Patología estructural y funcional</em>, 10ª ed., Elsevier España, 2021, p. 1128. <a href="../creditos.html#fig-24-54">Ver créditos</a></span>
+  </figcaption>
+</figure>
+
+</section><section id="sec-07-sindromes-poliglandulares" class="card">
+<div class="section-kicker"><span class="n">07</span> pp. 1129-1130</div>
+<h2>Síndromes poliglandulares</h2>
+<ul>
+<li>Los síndromes MEN son enfermedades hereditarias con lesiones proliferativas (hiperplasia, adenoma, carcinoma) en varios órganos endocrinos. Rasgos frente a los tumores esporádicos: aparición más temprana, afectación sincrónica o metacrónica de múltiples órganos, <strong>multifocalidad</strong>, fase de hiperplasia previa (por ejemplo hiperplasia de células C en MEN-2) y mayor agresividad y recidiva <span class="cite">p. 1129</span>.</li>
+<li><strong>MEN-1 (síndrome de Werner)</strong>, prevalencia ~2/100.000; mutación de línea germinal de <strong>MEN1</strong> (menina, reguladora de la transcripción que frena a JunD y colabora con KMT2A). Regla de las tres P: <strong>Paratiroides</strong> (hiperparatiroidismo primario en 80-95%, manifestación inicial, 40-50 años), <strong>Páncreas</strong> (PanNET agresivas, causa principal de morbimortalidad; muchas secretan polipéptido pancreático sin síndrome; síndrome de Zollinger-Ellison por gastrinomas, sobre todo <strong>duodenales</strong>, e insulinomas con hipoglucemia) e <strong>Hipófisis</strong> (prolactinoma sobre todo, a veces acromegalia). El espectro incluye además tumores carcinoides, adenomas tiroideos y suprarrenales y lipomas; la conducta maligna de algún tumor suele ser la causa de muerte <span class="cite">p. 1129-1130</span>.</li>
+<li><strong>MEN-2A (síndrome de Sipple)</strong>: carcinoma medular de tiroides casi en el 100% (multifocal, con hiperplasia de células C, agresivo), feocromocitoma en 40-50% (a menudo bilateral o extrasuprarrenal) e hiperplasia paratiroidea en 10-20%. Causada por mutaciones <strong>activadoras de línea germinal de RET</strong> (receptor tirosina cinasa); las mutaciones pérdida de función de RET dan enfermedad de Hirschsprung <span class="cite">p. 1130</span>.</li>
+<li><strong>MEN-2B</strong>: carcinoma medular más agresivo y multifocal, feocromocitoma, <strong>sin hiperparatiroidismo</strong>; con <strong>neuromas o ganglioneuromas</strong> de piel, mucosas, ojos y tubo digestivo y <strong>hábito marfanoide</strong>; casi todos por una sustitución de un aminoácido en el dominio cinasa de RET con activación constitutiva. Detección genética familiar con <strong>tiroidectomía profiláctica precoz</strong>; se recomienda testar RET en línea germinal a todo carcinoma medular, incluso "esporádico" <span class="cite">p. 1130</span>.</li>
+<li><strong>MEN-4</strong>: similar a MEN-1 pero con mutaciones de línea germinal en <strong>CDKN1B</strong> (p27) <span class="cite">p. 1130</span>.</li>
+<li><strong>Glándula pineal</strong>: órgano de 100-180 mg entre los colículos superiores, con pineocitos neuroendocrinos que secretan <strong>melatonina</strong> (ritmos circadianos, uso en el desfase horario). Los tumores pineales (100-180 mg glandulares) son raros: la mayoría (50-70%) son de células germinales (germinomas como el seminoma testicular, carcinomas embrionarios, coriocarcinomas); el término pinealoma debe limitarse a los tumores de pineocitos, divididos en <strong>pineoblastomas y pineocitomas</strong> según la diferenciación <span class="cite">p. 1130-1131</span>.</li>
+</ul>
+
+<div class="warnbox"><span class="box-title">MEN: precoces, multifocales y precedidos de hiperplasia</span>MEN-1 (menina, tres P) frente a MEN-2A y 2B (RET activador, carcinoma medular casi constante); en MEN-2 el tamizaje genético familiar permite la tiroidectomía profiláctica antes del carcinoma medular <span class="cite">p. 1129-1130</span>.</div>
+</section><section id="sec-08-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">08</span> pp. 1066-1129</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Factores de transcripción hipofisarios: PIT-1 (somatótropo, lactótropo, tirótropo), TPIT (corticótropo), SF-1/GATA-2 (gonadótropo); células nulas sin marcadores, solo efectos de masa <span class="cite">p. 1066, 1068, 1072</span>.</li>
+<li>Adenoma hipofisario: monomorfismo y pérdida de reticulina; macroadenoma &gt;1 cm; hemianopsia bitemporal; apoplejía hipofisaria = urgencia neuroquirúrgica; GNAS en somatótropos y USP8 en corticótropos <span class="cite">p. 1067, 1068-1070</span>.</li>
+<li>Adenoma lactótropo causa ~25% de las amenorreas; la hiperprolactinemia leve con un adenoma puede ser efecto de masa y no secretora; bromocriptina encoge el tumor <span class="cite">p. 1071</span>.</li>
+<li>Somatótropo: GH e IGF-1 altos <strong>sin supresión de GH tras sobrecarga oral de glucosa</strong>; granulación escasa = más agresiva y menos sensible a análogos de somatostatina <span class="cite">p. 1071</span>.</li>
+<li>Sheehan: necrosis posparto de la hipófisis anterior (duplica su tamaño sin más flujo); silla vacía; la posterior se salva por irrigación arterial directa <span class="cite">p. 1073</span>.</li>
+<li>Diabetes insípida central vs nefrógena; SIADH con hiponatremia sin edema periférico, causa prototípica carcinoma pulmonar microcítico <span class="cite">p. 1073-1074</span>.</li>
+<li>Craneofaringioma adamantinomatoso (niños, calcificaciones, CTNNB1, queratina húmeda) vs papilar (adultos, BRAF V600E, sin calcificación) <span class="cite">p. 1074</span>.</li>
+<li>TSH como cribado; captación de yodo diferencial: Graves difusa alta, adenoma tóxico caliente, tiroiditis baja <span class="cite">p. 1077</span>.</li>
+<li>Graves: TSI contra el receptor de TSH en ~90%; oftalmopatía y dermopatía exclusivas; coloide festoneado con papilas sin eje fibrovascular <span class="cite">p. 1081-1082</span>.</li>
+<li>Hashimoto: causa más frecuente de hipotiroidismo en zonas con yodo; células de Húrthle, centros germinales; riesgo de linfoma B de zona marginal; hashitoxicosis transitoria posible <span class="cite">p. 1078, 1080</span>.</li>
+<li>De Quervain: dolorosa, postvírica, células gigantes con coloide, captación de yodo baja, autolimitada en semanas <span class="cite">p. 1080-1081</span>.</li>
+<li>Bocio multinodular: síndrome de Plummer (tóxico); cáncer &lt;5%; alertar ante cambio de tamaño o ronquera <span class="cite">p. 1084</span>.</li>
+<li>CPT: núcleos en vidrio esmerilado, seudoinclusiones, surcos, psamoma; metástasis ganglionares frecuentes sin cambiar el pronóstico; supervivencia a 10 años &gt;95%; microcarcinoma &lt;1 cm; variante de células altas = BRAF casi obligatorio y agresiva; la lesión encapsulada sin invasión pasa a llamarse neoplasia tiroidea folicular no invasiva con características nucleares de tipo papilar <span class="cite">p. 1088-1089</span>.</li>
+<li>Carcinoma folicular vs adenoma: solo la invasión capsular y/o vascular (evaluar la cápsula); diseminación hematógena (hueso, pulmón, hígado); seguimiento con tiroglobulina; zonas con déficit de yodo lo multiplican <span class="cite">p. 1089-1090</span>.</li>
+<li>Anaplásico: mortalidad casi 100%, desdiferenciación con TP53, CTNNB1 y TERT; pierde tiroglobulina <span class="cite">p. 1090-1091</span>.</li>
+<li>Medular: calcitonina + CEA, amiloide, hiperplasia de células C multicéntrica = sospecha familiar; RET en línea germinal; MEN-2B más agresivo, con neuromas y hábito marfanoide, sin hiperparatiroidismo <span class="cite">p. 1091-1092, 1130</span>.</li>
+<li>Hipercalcemia: PTH alta = hiperparatiroidismo (adenoma 85-95%); PTH baja = cáncer (PTHrP 80%), vitamina D, sarcoidosis, inmovilización, diuréticos tiazídicos <span class="cite">p. 1095</span>.</li>
+<li>Osteítis fibrosa quística de Recklinghausen: osteítis disecante + tumores pardos; hoy infrecuente por diagnóstico bioquímico precoz <span class="cite">p. 1095</span>.</li>
+<li>Hipoparatiroidismo: Chvostek y Trousseau, laringoespasmo, QT largo, cataratas, calcificación de ganglios basales; seudohipoparatiroidismo con PTH alta por resistencia <span class="cite">p. 1097</span>.</li>
+<li>Diabetes: HbA1c ≥6,5% diagnostica; objetivo &lt;7%; péptido C como marcador de masa β; incretinas GIP/GLP-1 y DPP-4 como dianas terapéuticas <span class="cite">p. 1099-1101, 1108</span>.</li>
+<li>DT1: HLA-DR3/DR4, tres estadios presintomáticos, insulitis, debut tras perder &gt;90% de células β; cetoacidosis con Kussmaul y olor a fruta <span class="cite">p. 1101-1103, 1106</span>.</li>
+<li>DT2: resistencia a la insulina (AGL, adipocinas, inflamación con IL-1β vía inflamasoma, adiponectina baja) más fallo de célula β (lipotoxicidad, glucotoxicidad, amiloide islotal); obesidad visceral &gt; subcutánea <span class="cite">p. 1104-1105</span>.</li>
+<li>Estado hiperglucémico hiperosmolar: glucemia 600-1.200 mg/dl, sin cetosis, en ancianos deshidratados; la hipoglucemia iatrogénica es la complicación más frecuente del tratamiento <span class="cite">p. 1107</span>.</li>
+<li>Complicaciones crónicas: AGE-RAGE, PKC, polioles (sorbitol, cataratas), hexosamina; infarto de miocardio primera causa de muerte; microalbuminuria como primer marcador renal; glomeruloesclerosis nodular de Kimmelstiel-Wilson PAS+; retinopatía proliferativa por VEGF (antiangiogénicos); polineuropatía "en guante y calcetín" <span class="cite">p. 1108-1112</span>.</li>
+<li>PanNET: malignidad solo por metástasis o invasión; insulinoma benigno en 90% con hipoglucemia en ayuno corregida con glucosa; gastrinoma: úlceras yeyunales resistentes, triángulo del gastrinoma, 25% en MEN-1; glucagonoma (eritema migratorio necrolítico), somatostatinoma, VIPoma (WDHA); ATRX/DAXX con ALT <span class="cite">p. 1113-1114</span>.</li>
+<li>Cushing: cortisol libre urinario de 24 h y pérdida del ritmo diurno; dexametasona: hipofisario suprime con dosis alta, ectópico y suprarrenal no se suprimen, suprarrenal con ACTH baja; cambio de Crooke en la hipófisis; adenoma funcional = suprarrenales atróficas <span class="cite">p. 1117-1118</span>.</li>
+<li>Conn: cociente aldosterona/renina alto; KCNJ5 en 50% de los adenomas; cuerpos de espironolactona; hipertensión secundaria más frecuente <span class="cite">p. 1119-1120</span>.</li>
+<li>HSC: 21-hidroxilasa (CYP21A2) &gt;90%; formas con pérdida de sal, virilizante simple y no clásica; ACTH alta con hiperplasia suprarrenal bilateral <span class="cite">p. 1121</span>.</li>
+<li>Addison: ≥90% de la corteza destruida para sintomatología; hiperpigmentación por POMC/MSH solo en el primario; APS-1 (AIRE, candidiasis + hipoparatiroidismo + Addison) vs APS-2 (Addison + tiroiditis ± DT1); Waterhouse-Friderichsen con CID y púrpura <span class="cite">p. 1122-1124</span>.</li>
+<li>Feocromocitoma: regla del 10 actualizada (25% hereditarios: RET, NF1, VHL, EPAS1, SDHx); malignidad solo por metástasis; zellballen, sal y pimienta, S-100 en sustentaculares; diagnóstico por metanefrinas y ácido vanilmandélico urinarios; bloqueo adrenérgico antes de operar <span class="cite">p. 1127-1129</span>.</li>
+<li>MEN-1 = menina, tres P; MEN-2A = Sipple (medular + feo + paratiroides) y MEN-2B (sin paratiroides, con neuromas y hábito marfanoide); tiroidectomía profiláctica en portadores de RET; MEN-4 = CDKN1B <span class="cite">p. 1129-1130</span>.</li>
+</ul>
+
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras del capítulo</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-24-3" aria-label="Figura 24.3"><img src="../assets/fig/cap24/fig-24-3.webp" loading="lazy" decoding="async" alt="Figura 24.3"><span>Figura 24.3</span></a><a class="fig-thumb" href="#fig-24-4" aria-label="Figura 24.4"><img src="../assets/fig/cap24/fig-24-4.webp" loading="lazy" decoding="async" alt="Figura 24.4"><span>Figura 24.4</span></a><a class="fig-thumb" href="#fig-24-13" aria-label="Figura 24.13"><img src="../assets/fig/cap24/fig-24-13.webp" loading="lazy" decoding="async" alt="Figura 24.13"><span>Figura 24.13</span></a><a class="fig-thumb" href="#fig-24-19" aria-label="Figura 24.19"><img src="../assets/fig/cap24/fig-24-19.webp" loading="lazy" decoding="async" alt="Figura 24.19"><span>Figura 24.19</span></a><a class="fig-thumb" href="#fig-24-22" aria-label="Figura 24.22"><img src="../assets/fig/cap24/fig-24-22.webp" loading="lazy" decoding="async" alt="Figura 24.22"><span>Figura 24.22</span></a><a class="fig-thumb" href="#fig-24-41" aria-label="Figura 24.41"><img src="../assets/fig/cap24/fig-24-41.webp" loading="lazy" decoding="async" alt="Figura 24.41"><span>Figura 24.41</span></a><a class="fig-thumb" href="#fig-24-50" aria-label="Figura 24.50"><img src="../assets/fig/cap24/fig-24-50.webp" loading="lazy" decoding="async" alt="Figura 24.50"><span>Figura 24.50</span></a><a class="fig-thumb" href="#fig-24-54" aria-label="Figura 24.54"><img src="../assets/fig/cap24/fig-24-54.webp" loading="lazy" decoding="async" alt="Figura 24.54"><span>Figura 24.54</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Anatomía Patológica · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Robbins y Cotran, <em>Patología Estructural y Funcional</em>, 10ª ed. No se distribuyen los PDF originales.</p>
+  <p><a href="../creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

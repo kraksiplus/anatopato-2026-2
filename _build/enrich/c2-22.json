@@ -1,0 +1,36 @@
+{
+  "page_id": "c2-22",
+  "essentials": [
+    "El VPH de alto riesgo (VPH-16 ~60%, VPH-18 ~10%) causa casi todas las lesiones precursoras y cánceres cervicales; E6 degrada p53 y E7 degrada RB, y la integración del ADN vírico aumenta la expresión de E6/E7 [p. 996-997].",
+    "Las SIL cervicales se clasifican en LSIL (CIN I, infección productiva; regresa en 60% a 2 años) y HSIL (CIN II/III, atipia en los dos tercios superiores; progresa a carcinoma en 10% a 2-10 años) [p. 997-999].",
+    "El carcinoma de endometrio es el cáncer más frecuente del aparato genital femenino: tipo I endometrioide (80-85%, estrogenodependiente, PTEN) vs tipo II seroso (~15%, atrofia, TP53 en >90%, recidiva en 80%) [p. 1008, 1011-1012].",
+    "La endometriosis (glándulas y estroma endometrial extrauterinos, ~10% de las mujeres) causa dismenorrea e infertilidad; produce estrógenos por aromatasa y puede preceder al carcinoma ovárico endometrioide y de células claras [p. 1004-1006].",
+    "Los carcinomas serosos ováricos de alto grado (tipo II) nacen del epitelio tubárico (CITS) o de quistes de inclusión, con TP53 mutado; de ahí la ovariosalpingectomía profiláctica en portadoras de BRCA1/2 [p. 1018].",
+    "La preeclampsia (3-5% de las gestantes) se debe a la falla de remodelación de las arterias espirales y al exceso de sFlt1 y endoglina soluble; puede cursar con eclampsia y síndrome HELLP, y el parto es el tratamiento definitivo [p. 1031-1033]."
+  ],
+  "topics": [
+    "Infecciones del aparato genital inferior (VHS, molusco, Cándida, Trichomonas, Gardnerella) y enfermedad inflamática pélvica",
+    "Vulva: líquen escleroso, hiperplasia escamosa, VIN clásica y diferenciada, carcinoma de vulva VPH-dependiente e independiente, enfermedad de Paget",
+    "Cuello uterino: unión escamocolumnar, zona de transformación, patogenia del VPH, SIL, carcinoma cervical y su estadificación, cribado y vacunación",
+    "Endometrio: ciclo menstrual, hemorragia disfuncional y ciclo anovulatorio, endometriosis y adenomiosis, hiperplasia y carcinoma endometrial (tipos I y II, subtipos moleculares)",
+    "Miometrio y trompas: leiomioma vs leiomiosarcoma, sarcomas del estroma endometrial, salpingitis",
+    "Ovario y placenta: clasificación OMS de tumores ováricos, tumores epiteliales, germinales y de cordones sexuales, preeclampsia, mola hidatidiforme, coriocarcinoma y TTLP"
+  ],
+  "callouts": [
+    {
+      "section": "Cuello uterino",
+      "title": "VPH: de la infección al carcinoma",
+      "text": "Solo la infección persistente en células basales inmaduras de la zona de transformación conduce a lesión; las LSIL regresa en 60% y las HSIL progresan a carcinoma en 10% a los 2 años, con progresión a invasor que tarda varias décadas, base de la eficacia del cribado citológico [p. 996-999]."
+    },
+    {
+      "section": "Cuerpo del útero y endometrio",
+      "title": "Duelo de cánceres: tipo I contra tipo II",
+      "text": "El carcinoma endometrioide (tipo I) surge de hiperplasia atípica con estimulación estrogénica, PTEN y vía PI3K/AKT; el seroso (tipo II) surge en endometrio atrófico con TP53 mutado ya en su precursor in situ, disemina por la trompa al peritoneo y recidiva en 80% incluso limitado al útero [p. 1008, 1011-1012]."
+    },
+    {
+      "section": "Placenta y gestación",
+      "title": "Mola completa vs parcial y riesgo de coriocarcinoma",
+      "text": "La mola completa es diploide androgenética (46,XX, 90%), sin tejido fetal, con hCG muy elevada, riesgo de mola invasiva de 15% y coriocarcinoma de 2,5%; la parcial es triploide con tejido fetal y proliferación trofoblástica focal, y no se asocia a coriocarcinoma [p. 1033-1034]."
+    }
+  ]
+}

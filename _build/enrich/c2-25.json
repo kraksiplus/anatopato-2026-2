@@ -1,0 +1,35 @@
+{
+  "essentials": [
+    "Las ampollas se clasifican por nivel: pénfigo foliáceo subcórneo (anti-Dsg1), pénfigo vulgar suprabasal (anti-Dsg1 y Dsg3, IgG reticular), penfigoide ampolloso subepidérmico (anti-BPAG2, depósito lineal) y dermatitis herpetiforme con IgA granular papilar [p. 1159-1163].",
+    "Melanoma: promotor de TERT mutado cerca del 70%, BRAF 40-50%, RAS 15-20% y CDKN2A en el 40% de las familias; el espesor de Breslow y el ganglio centinela definen el pronóstico [p. 1139-1142].",
+    "Crecimiento radial (horizontal, sin metástasis; lentigo maligno, extensión superficial, lentiginoso acro/mucoso) vs crecimiento vertical (nódulo, subclón metastásico) [p. 1141].",
+    "CBC: cáncer invasivo más frecuente (~1 millón/año en EE. UU.), vía Hedgehog PTCH-SMO-GLI1, empalizada e hendiduras, casi nunca metastatiza; síndrome de Gorlin por PTCH [p. 1147-1148].",
+    "CEC: segundo tumor solar, surge de queratosis actínica con TP53 temprano, VPH 5 y 8 en inmunodeprimidos, menos del 5% de metástasis [p. 1145-1147].",
+    "Dermatosis por mecanismo: urticaria tipo I (habones de menos de 24 h), eccema tipo IV (espongiosis), eritema multiforme CD8+ en diana, psoriasis Th1/Th17 (Munro, Auspitz), liquen plano con dermatitis de interfase [p. 1153-1159]."
+  ],
+  "topics": [
+    "Estructura de la piel y circuito inmunitario cutáneo: Langerhans, dendrocitos, CLA, CCR4 y CCR10",
+    "Lesiones pigmentadas benignas: peca, lentigo, nevos de la unión, compuestos e intradérmicos",
+    "Nevos displásicos y melanoma: patogenia, fases radial y vertical, Breslow, ABCDE y ganglio centinela",
+    "Tumores benignos y premalignos: queratosis seborreica, acantosis nigricans, anejos, dermatofibroma, DFSP, queratosis actínica",
+    "Enfermedades ampollosas: pénfigo, penfigoide ampolloso, dermatitis herpetiforme, epidermólisis ampollosa y porfiria",
+    "Infecciones cutáneas y anejos: verrugas por VPH, molusco, impétigo, tiñas, acné, rosácea y paniculitis"
+  ],
+  "callouts": [
+    {
+      "section": "Enfermedades vesiculoampollosas",
+      "title": "El diferencial ampolloso en una tabla",
+      "text": "Pénfigo vulgar: 40-70 años, ampolla frágil suprabasal con fila de lápidas, IgG anti-Dsg1/3 reticular. Penfigoide ampolloso: anciano, ampolla tensa estable, eosinófilos, IgG anti-BPAG2 lineal. Dermatitis herpetiforme: hombre joven, lesiones agrupadas muy pruriginosas, IgA granular en puntas papilares y celiaca [p. 1159-1163]."
+    },
+    {
+      "section": "Carcinoma basocelular",
+      "title": "CBC vs CEC para certamen",
+      "text": "CBC: más frecuente, pápula perlada telangiectásica, ulcera rodora, Hedgehog con PTCH, hendiduras de retracción, metástasis casi nulas. CEC: segundo, nace de queratosis actínica con TP53 temprano, nódulo hiperqueratósico ulcerado, metástasis en menos del 5% solo si invade en profundidad [p. 1146-1148]."
+    },
+    {
+      "section": "Puntos de examen",
+      "title": "Impétigo vs pénfigo foliáceo",
+      "text": "Mismo plano de ampolla subcórnea por pérdida de la desmogleina 1: en el impétigo por una toxina bacteriana que la escinde y cura sin cicatriz; en el pénfigo foliáceo por autoanticuerpos IgG y de curso crónico [p. 1168]."
+    }
+  ]
+}

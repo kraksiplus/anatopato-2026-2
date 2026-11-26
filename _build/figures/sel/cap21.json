@@ -1,0 +1,78 @@
+{
+  "chapter": 21,
+  "page_id": "c2-21",
+  "figures": [
+    {
+      "number": "21.5",
+      "page": 958,
+      "caption": "Factores de riesgo ambientales y principales vías moleculares del desarrollo del cáncer de vejiga a partir del carcinoma in situ y las neoplasias papilares.",
+      "section": "Vejiga y uréteres",
+      "after_text": "Los cánceres papilares recidivan con frecuencia, pero invaden el músculo en solo el 20% de los casos aproximadamente",
+      "kind": "mechanism",
+      "why": "Resume las dos vías (FGFR3/RAS papilar frente a p53/RB del CIS) que estructuran el pronóstico del tumor urotelial."
+    },
+    {
+      "number": "21.8",
+      "page": 960,
+      "caption": "Carcinoma in situ de vejiga: urotelio normal frente a urotelio desorganizado con células de núcleos pleomorfos y muy agrandados.",
+      "section": "Vejiga y uréteres",
+      "after_text": "CIS aislado: muerte 7% frente a 45% del CIS con carcinoma infiltrante",
+      "kind": "diagnostic",
+      "why": "El CIS es lesión plana que imita la cistitis intersticial; la comparación con el urotelio normal fija su citología de alto grado."
+    },
+    {
+      "number": "21.9",
+      "page": 960,
+      "caption": "Carcinoma urotelial infiltrante de alto grado en estadio avanzado, con neoplasia multinodular ulcerada y necrótica que crece hacia la luz vesical.",
+      "section": "Vejiga y uréteres",
+      "after_text": "Aproximadamente la mitad de los cánceres infiltrantes ya han invadido la pared al diagnóstico, sin precursor visible",
+      "kind": "diagnostic",
+      "why": "Muestra el extremo del espectro cuya mortalidad a 5 años alcanza el 30% tras invadir la muscular propia."
+    },
+    {
+      "number": "21.15",
+      "page": 967,
+      "caption": "Criptorquidia: testículo normal con espermatogenia activa frente a testículo atrófico con túbulos de solo células de Sertoli y membranas basales engrosadas.",
+      "section": "Testículo y epidídimo",
+      "after_text": "hay espermatogenia deficiente en 10-60% y el riesgo de cáncer no desaparece",
+      "kind": "diagnostic",
+      "why": "Fija el sustrato histológico de la esterilidad y el riesgo tumoral que justifican la orquiopexia precoz."
+    },
+    {
+      "number": "21.19",
+      "page": 970,
+      "caption": "Seminoma testicular: masa homogénea, carnosa, pálida y bien circunscrita al corte, sin hemorragia ni necrosis.",
+      "section": "Testículo y epidídimo",
+      "after_text": "El mejor: radiosensible y quimiosensible",
+      "kind": "diagnostic",
+      "why": "La superficie de corte homogénea sin hemorragia es la clave macroscópica que separa al seminoma del carcinoma embrionario."
+    },
+    {
+      "number": "21.28",
+      "page": 976,
+      "caption": "Patogenia de la hiperplasia benigna de próstata: síntesis de DHT por la 5-reductasa del estroma y papel de los estrógenos en el equilibrio proliferación y muerte epitelial.",
+      "section": "Próstata",
+      "after_text": "aumentan la proliferación estromal y disminuyen la muerte de células epiteliales",
+      "kind": "mechanism",
+      "why": "Explica por qué el estroma es la diana de la DHT y de los inhibidores de la 5-reductasa en el tratamiento."
+    },
+    {
+      "number": "21.29",
+      "page": 977,
+      "caption": "Hiperplasia benigna de próstata: nódulos bien definidos que comprimen la uretra hasta una luz en hendidura y glándulas hiperplásicas de dos capas celulares.",
+      "section": "Próstata",
+      "after_text": "nódulos en la zona de transición que comprimen la uretra hasta dejar una luz en hendidura",
+      "kind": "diagnostic",
+      "why": "Contrasta la zona de transición de la HBP con la zona periférica del carcinoma y con la glándula de dos capas."
+    },
+    {
+      "number": "21.35",
+      "page": 981,
+      "caption": "Gradación de Gleason del adenocarcinoma de próstata: desde glándulas bien formadas adosadas hasta láminas de células sin formación glandular.",
+      "section": "Próstata",
+      "after_text": "Se suman patrón primario (dominante) y secundario; el patrón único se duplica",
+      "kind": "diagnostic",
+      "why": "El sistema de Gleason con sus grupos de grado 1 a 5 es el factor pronóstico principal junto al estadio pTNM."
+    }
+  ]
+}

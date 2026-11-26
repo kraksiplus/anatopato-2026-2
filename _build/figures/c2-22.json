@@ -1,0 +1,103 @@
+{
+  "chapter": 22,
+  "page_id": "c2-22",
+  "source": "Robbins y Cotran, Patología estructural y funcional, 10ª ed., Elsevier España, 2021",
+  "figures": [
+    {
+      "number": "22.14",
+      "page": 998,
+      "caption": "Espectro de la neoplasia intraepitelial cervical: epitelio escamoso normal, CIN I con atipia coilocítica, CIN II con expansión de células basales inmaduras sobre el tercio inferior y CIN III con atipia difusa hasta la superficie.",
+      "section": "Cuello uterino",
+      "after_text": "Si las células inmaduras se confinan al tercio inferior del epitelio es LSIL; si ocupan los dos tercios superiores es HSIL",
+      "kind": "mechanism",
+      "why": "La progresión CIN I a CIN III por expansión de la zona basal es la base conceptual del cribado y del tratamiento de las SIL.",
+      "image": "assets/fig/cap22/fig-22-14.webp",
+      "width": 1476,
+      "height": 553
+    },
+    {
+      "number": "22.16",
+      "page": 999,
+      "caption": "Carcinoma epidermoide de cérvix: A. invasión precoz con un nido infiltrante que atraviesa la membrana basal de una lesión escamosa intraepitelial de alto grado; B. carcinoma epidermoide invasivo.",
+      "section": "Cuello uterino",
+      "after_text": "El epidermoide son nidos y lengüetas de epitelio escamoso maligno que invaden el estroma",
+      "kind": "diagnostic",
+      "why": "Marca el punto de corte histológico entre HSIL y carcinoma invasivo, diferencia clave para el tratamiento quirúrgico.",
+      "image": "assets/fig/cap22/fig-22-16.webp",
+      "width": 699,
+      "height": 712
+    },
+    {
+      "number": "22.22",
+      "page": 1005,
+      "caption": "Patogenia de la endometriosis: interacción entre los factores expresados en los implantes endometriósicos (PGE2, IL-1β, IL-6, IL-8, VEGF, MMP, aromatasa) y los macrófagos activados.",
+      "section": "Cuerpo del útero y endometrio",
+      "after_text": "producen estrógenos y ácido retinoico por aromatasa, enzima ausente en el estroma endometrial normal",
+      "kind": "mechanism",
+      "why": "Explica por qué los inhibidores de la aromatasa sirven para tratar la endometriosis y su relación con el cáncer ovárico.",
+      "image": "assets/fig/cap22/fig-22-22.webp",
+      "width": 752,
+      "height": 689
+    },
+    {
+      "number": "22.28",
+      "page": 1014,
+      "caption": "Leiomiomas del miometrio uterino: útero abierto con múltiples tumores de localización submucosa e intramural, bien delimitados y de patrón espiral al corte.",
+      "section": "Cuerpo del útero y endometrio",
+      "after_text": "intramural, submucoso o subseroso; mitosis escasas",
+      "kind": "diagnostic",
+      "why": "Reconocer la localización submucosa, subserosa o intramural explica la clínica de hemorragia y los problemas obstétricos.",
+      "image": "assets/fig/cap22/fig-22-28.webp",
+      "width": 1417,
+      "height": 528
+    },
+    {
+      "number": "22.24",
+      "page": 1009,
+      "caption": "Desarrollo esquemático del carcinoma endometrial de tipo I (hiperplasia atípica con PTEN, MLH1, PIK3CA, KRAS) y de tipo II (endometrio atrófico con TP53, FBXW7, CCNE1).",
+      "section": "Cuerpo del útero y endometrio",
+      "after_text": "Las mutaciones idénticas de PTEN en la hiperplasia atípica y el carcinoma en piezas de histerectomía apoyan la progresión precursor → carcinoma",
+      "kind": "mechanism",
+      "why": "Resume la carcinogenesis dual del endometrio, tema recurrente de certamen por sus correlaciones clínicas.",
+      "image": "assets/fig/cap22/fig-22-24.webp",
+      "width": 1460,
+      "height": 875
+    },
+    {
+      "number": "22.30",
+      "page": 1018,
+      "caption": "Patogenia de los tumores epiteliales ováricos: los tumores de tipo I progresan de benignos a borderline y carcinomas de bajo grado; los de tipo II surgen de quistes de inclusión o del epitelio de la trompa (CITS).",
+      "section": "Ovario",
+      "after_text": "Los carcinomas ováricos se dividen en tipo I (bajo grado, asociados a tumores borderline o endometriosis: serosos, endometrioides y mucinosos de bajo grado) y tipo II (alto grado, serosos en su mayoría, que surgen de CITS o quistes de inclusión, con precursores intraepiteliales frecuentemente no identificados)",
+      "kind": "mechanism",
+      "why": "El modelo dual del cáncer ovárico y el origen tubárico del seroso de alto grado son conceptos nuevos y muy preguntados.",
+      "image": "assets/fig/cap22/fig-22-30.webp",
+      "width": 714,
+      "height": 645
+    },
+    {
+      "number": "22.38",
+      "page": 1023,
+      "caption": "Teratoma quístico maduro (quiste dermoide) de ovario abierto: quiste con pelo y mezcla de tejidos evidente al corte.",
+      "section": "Ovario",
+      "after_text": "quiste de una cavidad con pared de epidermis, anejos, pelo, estructuras dentarias y calcificaciones",
+      "kind": "diagnostic",
+      "why": "Imagen clásica de reconocimiento directo en el certamen; el tumor germinativo más frecuente del ovario.",
+      "image": "assets/fig/cap22/fig-22-38.webp",
+      "width": 751,
+      "height": 478
+    },
+    {
+      "number": "22.50",
+      "page": 1032,
+      "caption": "Alteraciones fisiológicas en las arterias espirales uterinas y ausencia de remodelación en la preeclampsia: comparación entre la conversión normal de los vasos por el trofoblasto y la persistencia de túnica muscular.",
+      "section": "Placenta y gestación",
+      "after_text": "en la preeclampsia la remodelación no ocurre y se instaura isquemia placentaria",
+      "kind": "mechanism",
+      "why": "Ilustra el defecto primario de la preeclampsia y conecta con sFlt1, endoglina y el síndrome HELLP.",
+      "image": "assets/fig/cap22/fig-22-50.webp",
+      "width": 758,
+      "height": 1123
+    }
+  ]
+}

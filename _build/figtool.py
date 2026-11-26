@@ -29,7 +29,7 @@ PDFS = ANATOPATO / "Capitulos"
 PREVIEW = Path("/tmp/opencode/anatopato_fig/preview")
 DPI = 200
 
-FIG_RE = re.compile(r"Fig[uú]ra\s+([I1l0-9]{1,2})\s*(\d{0,2})\s*[.,]\s*([I1l0-9]{1,2})", re.I)
+FIG_RE = re.compile(r"Fig[uú]ra\s*[.:]?\s*([I1l0-9]{1,2})\s*(\d{0,2})\s*[.,]\s*([I1l0-9]{1,2})", re.I)
 
 _engine = None
 

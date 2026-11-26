@@ -1,0 +1,78 @@
+{
+  "chapter": 20,
+  "page_id": "c2-20",
+  "figures": [
+    {
+      "number": "20.3",
+      "page": 900,
+      "caption": "Esquema simplificado de las proteínas del diafragma en hendidura glomerular: nefrina, podocina, CD2AP y el anclaje al citoesqueleto de actina de los podocitos.",
+      "section": "Glomerulopatías: estructura, respuestas y mecanismos",
+      "after_text": "Las mutaciones de estas proteínas alteran la permeabilidad y causan síndrome nefrótico",
+      "kind": "mechanism",
+      "why": "La nefrina y la podocina explican las GEFS hereditarias y el síndrome nefrótico congénito, tema recurrente de certamen."
+    },
+    {
+      "number": "20.5",
+      "page": 903,
+      "caption": "Localización de los depósitos de inmunocomplejos en el glomérulo: subepiteliales (nefropatía membranosa), subendoteliales (nefritis lúpica, GNMP) y mesangiales (nefropatía IgA).",
+      "section": "Glomerulopatías: estructura, respuestas y mecanismos",
+      "after_text": "enfermedad por depósitos densos y glomerulopatías por C3, SHU atípico",
+      "kind": "mechanism",
+      "why": "La localización del depósito define el patrón morfológico y el diagnóstico diferencial de las glomerulopatías."
+    },
+    {
+      "number": "20.8",
+      "page": 908,
+      "caption": "Glomerulonefritis proliferativa aguda: hipercelularidad por leucocitos intracapilares y proliferación endotelial, jorobas subepiteliales electrodensas y depósitos granulares de C3 por inmunofluorescencia.",
+      "section": "Síndrome nefrítico y glomerulonefritis proliferativas",
+      "after_text": "El prototipo con antígenos exógenos es la glomerulonefritis postestreptocócica",
+      "kind": "diagnostic",
+      "why": "Las jorobas subepiteliales y el C3 bajo son el sello diagnóstico de la GN postestreptocócica del niño."
+    },
+    {
+      "number": "20.14",
+      "page": 917,
+      "caption": "Glomeruloesclerosis focal y segmentaria: esclerosis segmentaria del ovillo con insudación hialina y gotículas lipídicas en la zona esclerótica.",
+      "section": "Síndrome nefrótico",
+      "after_text": "de síndrome nefrótico en adultos en EE. UU.",
+      "kind": "diagnostic",
+      "why": "Permite diferenciar la GEFS de los cambios mínimos y de la nefropatía membranosa en el síndrome nefrótico del adulto."
+    },
+    {
+      "number": "20.19",
+      "page": 921,
+      "caption": "Nefropatía IgA: proliferación mesangial al microscopio óptico y depósito mesangial característico de IgA por inmunofluorescencia.",
+      "section": "Glomerulopatías con hematuria aislada y enfermedades sistémicas",
+      "after_text": "el diagnóstico exige demostrar los depósitos de IgA por inmunofluorescencia",
+      "kind": "diagnostic",
+      "why": "Es la glomerulonefritis más frecuente del mundo y el diagnóstico se confirma solo con la tinción de IgA mesangial."
+    },
+    {
+      "number": "20.24",
+      "page": 927,
+      "caption": "Vías de infección renal: diseminación hematógena por bacteriemia y, más frecuentemente, vía ascendente con colonización vesical, reflujo vesicoureteral y reflujo intrarrenal.",
+      "section": "Nefropatías tubulointersticiales",
+      "after_text": "que se unen a receptores uroteliales",
+      "kind": "mechanism",
+      "why": "Explica por qué la obstrucción y el reflujo predisponen a la pielonefritis y por qué predominan los gérmenes entéricos."
+    },
+    {
+      "number": "20.43",
+      "page": 943,
+      "caption": "Nefropatías poliquísticas: riñón agrandado con numerosos quistes en la forma autosómica dominante del adulto; canales dilatados en ángulo recto con la corteza en la forma recesiva infantil; quistes hepáticos asociados.",
+      "section": "Nefropatías quísticas",
+      "after_text": "al corte, quistes pequeños en corteza y médula con aspecto esponjoso",
+      "kind": "diagnostic",
+      "why": "Diferencia macroscópicamente la poliquistosis del adulto de la infantil y de sus hallazgos hepáticos asociados."
+    },
+    {
+      "number": "20.51",
+      "page": 951,
+      "caption": "Carcinoma de células renales: células claras con citoplasma rico en lípidos, tipo papilar con macrófagos espumosos en el eje y tipo cromófobo con halo perinuclear.",
+      "section": "Tumores renales",
+      "after_text": "relevante por su tendencia a la hemorragia espontánea",
+      "kind": "diagnostic",
+      "why": "La histología de los tres subtipos principales se correlaciona con su genética y pronóstico, base de las preguntas de certamen."
+    }
+  ]
+}
